@@ -21,7 +21,7 @@ A separate fresh-source memory pilot correctly routed 17/17 queries and recalled
 
 ## Model release status
 
-The new joint visual/memory SFT is a separate run. Its model will be published as [win10/Lfm2-MaleCNS-Titans-VL-3B-V2-JSpace-SFT](https://huggingface.co/win10/Lfm2-MaleCNS-Titans-VL-3B-V2-JSpace-SFT) after completion, LoRA merge, lens recalibration, and fresh-process checks. Until a release receipt is committed here, the pre-SFT measurements above must not be attributed to that new checkpoint.
+The new joint visual/memory SFT is a separate run. Training, LoRA merge, lens recalibration, and fresh-process checks are being completed locally. The project owner will choose the Hugging Face model name after training; automatic publication is on hold. Until a release receipt is committed here, the pre-SFT measurements above must not be attributed to that new checkpoint.
 
 ## Reproduce the functional tests
 
