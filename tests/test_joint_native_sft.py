@@ -18,6 +18,17 @@ def test_removed_writer_and_reader_branches_cannot_be_selected():
     assert not hasattr(model.dream_memory.weight_vae,'decode_fast')
 
 
+def test_public_physical_writer_uses_the_unified_write_path():
+    model=dream_model().train()
+    ids=torch.tensor([[1,3,5,7]])
+    state,receipt=model.write_physical_memory(dict(input_ids=ids,labels=ids),create_graph=True)
+    query=model(input_ids=ids,labels=ids,physical_memory_state=state,use_cache=False)
+    query.loss.backward()
+    assert state.graph.commits==1 and state.adapters.commits==1
+    assert receipt['write_gradient']=='first_order'
+    assert any(p.grad is not None and p.grad.abs().sum()>0 for p in model.memory.parameters())
+
+
 def test_shared_initial_graph_read_matches_independent_rows_and_larger_tiles():
     from lfm2_titans.batched_memory import BatchedMemoryBlock
     model=dream_model().train();model.memory.residual_recall=False

@@ -1,0 +1,6 @@
+{
+  "body_fixed": true,
+  "stored_memory_unchanged": true,
+  "diagnostic_max_new_tokens": 256,
+  "scope": "Controlled BOS relocation and native source-visible chat; no benchmark score substituted"
+}

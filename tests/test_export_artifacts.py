@@ -35,3 +35,15 @@ def test_missing_dependency_does_not_partially_replace_existing_runtime(tmp_path
     with pytest.raises(FileNotFoundError):
         artifacts.sync_runtime(source, export)
     assert (export/'model.py').read_text() == 'old model\n'
+
+
+def test_actual_hf_loader_finds_the_memory_training_dependency(tmp_path):
+    from transformers import AutoModelForImageTextToText
+    from current_memory_fixture import dream_model
+    model=dream_model().eval().requires_grad_(False)
+    target=tmp_path/'fresh-hf-export';model.save_pretrained(target)
+    root=Path(__file__).resolve().parents[1]
+    artifacts.sync_runtime(root/'src/lfm2_titans',target)
+    assert (target/'memory_recall_training.py').is_file()
+    loaded=AutoModelForImageTextToText.from_pretrained(target,trust_remote_code=True,attn_implementation='eager')
+    assert loaded.config.model_type=='lfm2_titans'

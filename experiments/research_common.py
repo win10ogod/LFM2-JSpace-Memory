@@ -62,6 +62,11 @@ def question_inputs(processor, question):
         tokenize=True, add_generation_prompt=True, return_tensors='pt', return_dict=True).to('cuda')
 
 
+def address_inputs(processor,question):
+    """Index the complete user text; generation keeps its native chat frame."""
+    return processor(text=question,return_tensors='pt',truncation=False).to('cuda')
+
+
 def generated(processor, question, call, **kwargs):
     inputs = question_inputs(processor, question)
     output = paced(call, **inputs, max_new_tokens=64, do_sample=False, **kwargs)

@@ -205,9 +205,23 @@ def prepare_ordered_inputs(model, sequences, inputs, *, max_new_tokens=None, max
     if length + ids.shape[1] + reserve > limit:
         raise ValueError(f'selected memory + query + output ({length + ids.shape[1] + reserve}) exceeds native context {limit}; select smaller units, no truncation performed')
     embeddings = model.get_input_embeddings()(ids)
-    prefix = torch.cat([decode_segment(model, segment) for segment in sequences]).to(embeddings)[None]
-    return dict(inputs, inputs_embeds=torch.cat((prefix, embeddings), dim=1),
+    prefix = torch.cat([decode_segment(model, segment) for segment in sequences]).to(embeddings)
+    bos=getattr(model.config,'bos_token_id',None)
+    if bos is None:bos=getattr(model.config.text_config,'bos_token_id',None)
+    combined,_=assemble_memory_query(prefix,embeddings[0],ids[0],bos)
+    return dict(inputs, inputs_embeds=combined[None],
                 attention_mask=torch.ones((1, length + ids.shape[1]), device=ids.device, dtype=mask.dtype))
+
+
+def assemble_memory_query(prefix,query,query_ids,bos_token_id):
+    """Keep the native start token before recalled observations and the query.
+
+    No feature or query token is omitted. Inserting a new conversation start
+    after the recalled observations can make the model treat them as outside
+    the current conversation. The same ordering is used by training and recall.
+    """
+    leading=int(bos_token_id is not None and len(query_ids)>0 and int(query_ids[0])==bos_token_id)
+    return torch.cat((query[:leading],prefix,query[leading:]),dim=0),leading
 
 
 def sequence_tensors(segments):

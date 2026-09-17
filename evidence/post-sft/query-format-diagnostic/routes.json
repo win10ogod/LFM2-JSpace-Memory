@@ -1,0 +1,1838 @@
+[
+  {
+    "id": "code-0",
+    "variant": "full-chat",
+    "expected": "01789659580128297362_d5b5ca66e1cb4ec1aa0aa0cd0f71776c",
+    "matches": [
+      {
+        "unit_id": "01789659619631553975_c641492813474ff0845f2c452cb098f0",
+        "memory_hash": "dd2d4cf0d7810904c50b813e968fd64ee57066f28f7bcf242f01815fe379c8c4",
+        "score": 0.30147045850753784,
+        "recorded_ns": 1789659620248899302,
+        "event_ns": null,
+        "logical_time": 1,
+        "parents": []
+      },
+      {
+        "unit_id": "01789659613960757039_8b8d0169d81449b09b30df4a7b452dae",
+        "memory_hash": "ebfb41173e903eca144000437de2283bdd23372f26dcd294d15bd783353600fa",
+        "score": 0.2934516370296478,
+        "recorded_ns": 1789659614518897072,
+        "event_ns": null,
+        "logical_time": 1,
+        "parents": []
+      },
+      {
+        "unit_id": "01789659580128297362_d5b5ca66e1cb4ec1aa0aa0cd0f71776c",
+        "memory_hash": "be3ee9a790e307174e7e984ddf54834bf34c68e107c8bb022fcf192e0e148116",
+        "score": 0.2807238698005676,
+        "recorded_ns": 1789659580982364501,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      }
+    ],
+    "top1": false,
+    "user_text_unchanged": true
+  },
+  {
+    "id": "code-0",
+    "variant": "raw-complete-question",
+    "expected": "01789659580128297362_d5b5ca66e1cb4ec1aa0aa0cd0f71776c",
+    "matches": [
+      {
+        "unit_id": "01789659580128297362_d5b5ca66e1cb4ec1aa0aa0cd0f71776c",
+        "memory_hash": "be3ee9a790e307174e7e984ddf54834bf34c68e107c8bb022fcf192e0e148116",
+        "score": 0.38856133818626404,
+        "recorded_ns": 1789659580982364501,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      },
+      {
+        "unit_id": "01789659592346206659_abdb1d8fd3774acfb3f1a792a6e2de9b",
+        "memory_hash": "18ecae077a5cb8dc36dec318ffb4fa7dcbfb8f498c8ebb429d858ca8c3b78061",
+        "score": 0.30500054359436035,
+        "recorded_ns": 1789659592790112775,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      },
+      {
+        "unit_id": "01789659595939067131_0aed494b4b334a67bf19eb3914d3c73c",
+        "memory_hash": "1b5361b7e49292e8721ee5408b273abc4dc4444975464a6874c8fc46b62cd9e3",
+        "score": 0.28816094994544983,
+        "recorded_ns": 1789659596333288161,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      }
+    ],
+    "top1": true,
+    "user_text_unchanged": true
+  },
+  {
+    "id": "code-0",
+    "variant": "chat-context-content-positions",
+    "expected": "01789659580128297362_d5b5ca66e1cb4ec1aa0aa0cd0f71776c",
+    "matches": [
+      {
+        "unit_id": "01789659580128297362_d5b5ca66e1cb4ec1aa0aa0cd0f71776c",
+        "memory_hash": "be3ee9a790e307174e7e984ddf54834bf34c68e107c8bb022fcf192e0e148116",
+        "score": 0.3238222599029541,
+        "recorded_ns": 1789659580982364501,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      },
+      {
+        "unit_id": "01789659585097362830_da520a80ce4a4d3c826f1961daddcbc4",
+        "memory_hash": "8c56ebb5fd64b0fb52168c85f4a8b2ae7417650c242e94984a83a6671b198b98",
+        "score": 0.2650720477104187,
+        "recorded_ns": 1789659585545076080,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      },
+      {
+        "unit_id": "01789659592346206659_abdb1d8fd3774acfb3f1a792a6e2de9b",
+        "memory_hash": "18ecae077a5cb8dc36dec318ffb4fa7dcbfb8f498c8ebb429d858ca8c3b78061",
+        "score": 0.2632489502429962,
+        "recorded_ns": 1789659592790112775,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      }
+    ],
+    "top1": true,
+    "user_text_unchanged": true
+  },
+  {
+    "id": "tag-0",
+    "variant": "full-chat",
+    "expected": "01789659580128297362_d5b5ca66e1cb4ec1aa0aa0cd0f71776c",
+    "matches": [
+      {
+        "unit_id": "01789659580128297362_d5b5ca66e1cb4ec1aa0aa0cd0f71776c",
+        "memory_hash": "be3ee9a790e307174e7e984ddf54834bf34c68e107c8bb022fcf192e0e148116",
+        "score": 0.26784569025039673,
+        "recorded_ns": 1789659580982364501,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      },
+      {
+        "unit_id": "01789659619631553975_c641492813474ff0845f2c452cb098f0",
+        "memory_hash": "dd2d4cf0d7810904c50b813e968fd64ee57066f28f7bcf242f01815fe379c8c4",
+        "score": 0.25148940086364746,
+        "recorded_ns": 1789659620248899302,
+        "event_ns": null,
+        "logical_time": 1,
+        "parents": []
+      },
+      {
+        "unit_id": "01789659613960757039_8b8d0169d81449b09b30df4a7b452dae",
+        "memory_hash": "ebfb41173e903eca144000437de2283bdd23372f26dcd294d15bd783353600fa",
+        "score": 0.2454110085964203,
+        "recorded_ns": 1789659614518897072,
+        "event_ns": null,
+        "logical_time": 1,
+        "parents": []
+      }
+    ],
+    "top1": true,
+    "user_text_unchanged": true
+  },
+  {
+    "id": "tag-0",
+    "variant": "raw-complete-question",
+    "expected": "01789659580128297362_d5b5ca66e1cb4ec1aa0aa0cd0f71776c",
+    "matches": [
+      {
+        "unit_id": "01789659580128297362_d5b5ca66e1cb4ec1aa0aa0cd0f71776c",
+        "memory_hash": "be3ee9a790e307174e7e984ddf54834bf34c68e107c8bb022fcf192e0e148116",
+        "score": 0.3502303957939148,
+        "recorded_ns": 1789659580982364501,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      },
+      {
+        "unit_id": "01789659592346206659_abdb1d8fd3774acfb3f1a792a6e2de9b",
+        "memory_hash": "18ecae077a5cb8dc36dec318ffb4fa7dcbfb8f498c8ebb429d858ca8c3b78061",
+        "score": 0.28923070430755615,
+        "recorded_ns": 1789659592790112775,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      },
+      {
+        "unit_id": "01789659599767253039_584811d182194dd1ad1fe01a089c48d6",
+        "memory_hash": "304d29533dd0815e64d3fe1c87a9a31ab5e60713e52ae593f684750b8e700acc",
+        "score": 0.2853177487850189,
+        "recorded_ns": 1789659600182507850,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      }
+    ],
+    "top1": true,
+    "user_text_unchanged": true
+  },
+  {
+    "id": "tag-0",
+    "variant": "chat-context-content-positions",
+    "expected": "01789659580128297362_d5b5ca66e1cb4ec1aa0aa0cd0f71776c",
+    "matches": [
+      {
+        "unit_id": "01789659580128297362_d5b5ca66e1cb4ec1aa0aa0cd0f71776c",
+        "memory_hash": "be3ee9a790e307174e7e984ddf54834bf34c68e107c8bb022fcf192e0e148116",
+        "score": 0.2936224341392517,
+        "recorded_ns": 1789659580982364501,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      },
+      {
+        "unit_id": "01789659595939067131_0aed494b4b334a67bf19eb3914d3c73c",
+        "memory_hash": "1b5361b7e49292e8721ee5408b273abc4dc4444975464a6874c8fc46b62cd9e3",
+        "score": 0.25357717275619507,
+        "recorded_ns": 1789659596333288161,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      },
+      {
+        "unit_id": "01789659592346206659_abdb1d8fd3774acfb3f1a792a6e2de9b",
+        "memory_hash": "18ecae077a5cb8dc36dec318ffb4fa7dcbfb8f498c8ebb429d858ca8c3b78061",
+        "score": 0.24587135016918182,
+        "recorded_ns": 1789659592790112775,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      }
+    ],
+    "top1": true,
+    "user_text_unchanged": true
+  },
+  {
+    "id": "code-1",
+    "variant": "full-chat",
+    "expected": "01789659585097362830_da520a80ce4a4d3c826f1961daddcbc4",
+    "matches": [
+      {
+        "unit_id": "01789659619631553975_c641492813474ff0845f2c452cb098f0",
+        "memory_hash": "dd2d4cf0d7810904c50b813e968fd64ee57066f28f7bcf242f01815fe379c8c4",
+        "score": 0.31405460834503174,
+        "recorded_ns": 1789659620248899302,
+        "event_ns": null,
+        "logical_time": 1,
+        "parents": []
+      },
+      {
+        "unit_id": "01789659613960757039_8b8d0169d81449b09b30df4a7b452dae",
+        "memory_hash": "ebfb41173e903eca144000437de2283bdd23372f26dcd294d15bd783353600fa",
+        "score": 0.3093775510787964,
+        "recorded_ns": 1789659614518897072,
+        "event_ns": null,
+        "logical_time": 1,
+        "parents": []
+      },
+      {
+        "unit_id": "01789659585097362830_da520a80ce4a4d3c826f1961daddcbc4",
+        "memory_hash": "8c56ebb5fd64b0fb52168c85f4a8b2ae7417650c242e94984a83a6671b198b98",
+        "score": 0.301622211933136,
+        "recorded_ns": 1789659585545076080,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      }
+    ],
+    "top1": false,
+    "user_text_unchanged": true
+  },
+  {
+    "id": "code-1",
+    "variant": "raw-complete-question",
+    "expected": "01789659585097362830_da520a80ce4a4d3c826f1961daddcbc4",
+    "matches": [
+      {
+        "unit_id": "01789659585097362830_da520a80ce4a4d3c826f1961daddcbc4",
+        "memory_hash": "8c56ebb5fd64b0fb52168c85f4a8b2ae7417650c242e94984a83a6671b198b98",
+        "score": 0.4060734510421753,
+        "recorded_ns": 1789659585545076080,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      },
+      {
+        "unit_id": "01789659595939067131_0aed494b4b334a67bf19eb3914d3c73c",
+        "memory_hash": "1b5361b7e49292e8721ee5408b273abc4dc4444975464a6874c8fc46b62cd9e3",
+        "score": 0.3138800263404846,
+        "recorded_ns": 1789659596333288161,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      },
+      {
+        "unit_id": "01789659592346206659_abdb1d8fd3774acfb3f1a792a6e2de9b",
+        "memory_hash": "18ecae077a5cb8dc36dec318ffb4fa7dcbfb8f498c8ebb429d858ca8c3b78061",
+        "score": 0.30260324478149414,
+        "recorded_ns": 1789659592790112775,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      }
+    ],
+    "top1": true,
+    "user_text_unchanged": true
+  },
+  {
+    "id": "code-1",
+    "variant": "chat-context-content-positions",
+    "expected": "01789659585097362830_da520a80ce4a4d3c826f1961daddcbc4",
+    "matches": [
+      {
+        "unit_id": "01789659585097362830_da520a80ce4a4d3c826f1961daddcbc4",
+        "memory_hash": "8c56ebb5fd64b0fb52168c85f4a8b2ae7417650c242e94984a83a6671b198b98",
+        "score": 0.3578636050224304,
+        "recorded_ns": 1789659585545076080,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      },
+      {
+        "unit_id": "01789659595939067131_0aed494b4b334a67bf19eb3914d3c73c",
+        "memory_hash": "1b5361b7e49292e8721ee5408b273abc4dc4444975464a6874c8fc46b62cd9e3",
+        "score": 0.2623457908630371,
+        "recorded_ns": 1789659596333288161,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      },
+      {
+        "unit_id": "01789659592346206659_abdb1d8fd3774acfb3f1a792a6e2de9b",
+        "memory_hash": "18ecae077a5cb8dc36dec318ffb4fa7dcbfb8f498c8ebb429d858ca8c3b78061",
+        "score": 0.26118022203445435,
+        "recorded_ns": 1789659592790112775,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      }
+    ],
+    "top1": true,
+    "user_text_unchanged": true
+  },
+  {
+    "id": "tag-1",
+    "variant": "full-chat",
+    "expected": "01789659585097362830_da520a80ce4a4d3c826f1961daddcbc4",
+    "matches": [
+      {
+        "unit_id": "01789659585097362830_da520a80ce4a4d3c826f1961daddcbc4",
+        "memory_hash": "8c56ebb5fd64b0fb52168c85f4a8b2ae7417650c242e94984a83a6671b198b98",
+        "score": 0.27074694633483887,
+        "recorded_ns": 1789659585545076080,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      },
+      {
+        "unit_id": "01789659619631553975_c641492813474ff0845f2c452cb098f0",
+        "memory_hash": "dd2d4cf0d7810904c50b813e968fd64ee57066f28f7bcf242f01815fe379c8c4",
+        "score": 0.2619085907936096,
+        "recorded_ns": 1789659620248899302,
+        "event_ns": null,
+        "logical_time": 1,
+        "parents": []
+      },
+      {
+        "unit_id": "01789659613960757039_8b8d0169d81449b09b30df4a7b452dae",
+        "memory_hash": "ebfb41173e903eca144000437de2283bdd23372f26dcd294d15bd783353600fa",
+        "score": 0.2587026059627533,
+        "recorded_ns": 1789659614518897072,
+        "event_ns": null,
+        "logical_time": 1,
+        "parents": []
+      }
+    ],
+    "top1": true,
+    "user_text_unchanged": true
+  },
+  {
+    "id": "tag-1",
+    "variant": "raw-complete-question",
+    "expected": "01789659585097362830_da520a80ce4a4d3c826f1961daddcbc4",
+    "matches": [
+      {
+        "unit_id": "01789659585097362830_da520a80ce4a4d3c826f1961daddcbc4",
+        "memory_hash": "8c56ebb5fd64b0fb52168c85f4a8b2ae7417650c242e94984a83a6671b198b98",
+        "score": 0.35268712043762207,
+        "recorded_ns": 1789659585545076080,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      },
+      {
+        "unit_id": "01789659595939067131_0aed494b4b334a67bf19eb3914d3c73c",
+        "memory_hash": "1b5361b7e49292e8721ee5408b273abc4dc4444975464a6874c8fc46b62cd9e3",
+        "score": 0.2906911373138428,
+        "recorded_ns": 1789659596333288161,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      },
+      {
+        "unit_id": "01789659592346206659_abdb1d8fd3774acfb3f1a792a6e2de9b",
+        "memory_hash": "18ecae077a5cb8dc36dec318ffb4fa7dcbfb8f498c8ebb429d858ca8c3b78061",
+        "score": 0.2831622064113617,
+        "recorded_ns": 1789659592790112775,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      }
+    ],
+    "top1": true,
+    "user_text_unchanged": true
+  },
+  {
+    "id": "tag-1",
+    "variant": "chat-context-content-positions",
+    "expected": "01789659585097362830_da520a80ce4a4d3c826f1961daddcbc4",
+    "matches": [
+      {
+        "unit_id": "01789659585097362830_da520a80ce4a4d3c826f1961daddcbc4",
+        "memory_hash": "8c56ebb5fd64b0fb52168c85f4a8b2ae7417650c242e94984a83a6671b198b98",
+        "score": 0.29756200313568115,
+        "recorded_ns": 1789659585545076080,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      },
+      {
+        "unit_id": "01789659595939067131_0aed494b4b334a67bf19eb3914d3c73c",
+        "memory_hash": "1b5361b7e49292e8721ee5408b273abc4dc4444975464a6874c8fc46b62cd9e3",
+        "score": 0.254401832818985,
+        "recorded_ns": 1789659596333288161,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      },
+      {
+        "unit_id": "01789659599767253039_584811d182194dd1ad1fe01a089c48d6",
+        "memory_hash": "304d29533dd0815e64d3fe1c87a9a31ab5e60713e52ae593f684750b8e700acc",
+        "score": 0.2393435686826706,
+        "recorded_ns": 1789659600182507850,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      }
+    ],
+    "top1": true,
+    "user_text_unchanged": true
+  },
+  {
+    "id": "code-2",
+    "variant": "full-chat",
+    "expected": "01789659589207512558_200ad097a2164b2d9875b879aba27c28",
+    "matches": [
+      {
+        "unit_id": "01789659619631553975_c641492813474ff0845f2c452cb098f0",
+        "memory_hash": "dd2d4cf0d7810904c50b813e968fd64ee57066f28f7bcf242f01815fe379c8c4",
+        "score": 0.3002699017524719,
+        "recorded_ns": 1789659620248899302,
+        "event_ns": null,
+        "logical_time": 1,
+        "parents": []
+      },
+      {
+        "unit_id": "01789659613960757039_8b8d0169d81449b09b30df4a7b452dae",
+        "memory_hash": "ebfb41173e903eca144000437de2283bdd23372f26dcd294d15bd783353600fa",
+        "score": 0.29906338453292847,
+        "recorded_ns": 1789659614518897072,
+        "event_ns": null,
+        "logical_time": 1,
+        "parents": []
+      },
+      {
+        "unit_id": "01789659589207512558_200ad097a2164b2d9875b879aba27c28",
+        "memory_hash": "4e7868846770cbd40157f5bfeedfc143f3d2b8ed72e441022673a00c29b27f80",
+        "score": 0.2776794731616974,
+        "recorded_ns": 1789659589509255266,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      }
+    ],
+    "top1": false,
+    "user_text_unchanged": true
+  },
+  {
+    "id": "code-2",
+    "variant": "raw-complete-question",
+    "expected": "01789659589207512558_200ad097a2164b2d9875b879aba27c28",
+    "matches": [
+      {
+        "unit_id": "01789659589207512558_200ad097a2164b2d9875b879aba27c28",
+        "memory_hash": "4e7868846770cbd40157f5bfeedfc143f3d2b8ed72e441022673a00c29b27f80",
+        "score": 0.35881340503692627,
+        "recorded_ns": 1789659589509255266,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      },
+      {
+        "unit_id": "01789659592346206659_abdb1d8fd3774acfb3f1a792a6e2de9b",
+        "memory_hash": "18ecae077a5cb8dc36dec318ffb4fa7dcbfb8f498c8ebb429d858ca8c3b78061",
+        "score": 0.2952018082141876,
+        "recorded_ns": 1789659592790112775,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      },
+      {
+        "unit_id": "01789659585097362830_da520a80ce4a4d3c826f1961daddcbc4",
+        "memory_hash": "8c56ebb5fd64b0fb52168c85f4a8b2ae7417650c242e94984a83a6671b198b98",
+        "score": 0.28173109889030457,
+        "recorded_ns": 1789659585545076080,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      }
+    ],
+    "top1": true,
+    "user_text_unchanged": true
+  },
+  {
+    "id": "code-2",
+    "variant": "chat-context-content-positions",
+    "expected": "01789659589207512558_200ad097a2164b2d9875b879aba27c28",
+    "matches": [
+      {
+        "unit_id": "01789659589207512558_200ad097a2164b2d9875b879aba27c28",
+        "memory_hash": "4e7868846770cbd40157f5bfeedfc143f3d2b8ed72e441022673a00c29b27f80",
+        "score": 0.32372021675109863,
+        "recorded_ns": 1789659589509255266,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      },
+      {
+        "unit_id": "01789659595939067131_0aed494b4b334a67bf19eb3914d3c73c",
+        "memory_hash": "1b5361b7e49292e8721ee5408b273abc4dc4444975464a6874c8fc46b62cd9e3",
+        "score": 0.24046771228313446,
+        "recorded_ns": 1789659596333288161,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      },
+      {
+        "unit_id": "01789659585097362830_da520a80ce4a4d3c826f1961daddcbc4",
+        "memory_hash": "8c56ebb5fd64b0fb52168c85f4a8b2ae7417650c242e94984a83a6671b198b98",
+        "score": 0.24007485806941986,
+        "recorded_ns": 1789659585545076080,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      }
+    ],
+    "top1": true,
+    "user_text_unchanged": true
+  },
+  {
+    "id": "tag-2",
+    "variant": "full-chat",
+    "expected": "01789659589207512558_200ad097a2164b2d9875b879aba27c28",
+    "matches": [
+      {
+        "unit_id": "01789659589207512558_200ad097a2164b2d9875b879aba27c28",
+        "memory_hash": "4e7868846770cbd40157f5bfeedfc143f3d2b8ed72e441022673a00c29b27f80",
+        "score": 0.2637864053249359,
+        "recorded_ns": 1789659589509255266,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      },
+      {
+        "unit_id": "01789659613960757039_8b8d0169d81449b09b30df4a7b452dae",
+        "memory_hash": "ebfb41173e903eca144000437de2283bdd23372f26dcd294d15bd783353600fa",
+        "score": 0.2501896023750305,
+        "recorded_ns": 1789659614518897072,
+        "event_ns": null,
+        "logical_time": 1,
+        "parents": []
+      },
+      {
+        "unit_id": "01789659619631553975_c641492813474ff0845f2c452cb098f0",
+        "memory_hash": "dd2d4cf0d7810904c50b813e968fd64ee57066f28f7bcf242f01815fe379c8c4",
+        "score": 0.2500973641872406,
+        "recorded_ns": 1789659620248899302,
+        "event_ns": null,
+        "logical_time": 1,
+        "parents": []
+      }
+    ],
+    "top1": true,
+    "user_text_unchanged": true
+  },
+  {
+    "id": "tag-2",
+    "variant": "raw-complete-question",
+    "expected": "01789659589207512558_200ad097a2164b2d9875b879aba27c28",
+    "matches": [
+      {
+        "unit_id": "01789659589207512558_200ad097a2164b2d9875b879aba27c28",
+        "memory_hash": "4e7868846770cbd40157f5bfeedfc143f3d2b8ed72e441022673a00c29b27f80",
+        "score": 0.3173646926879883,
+        "recorded_ns": 1789659589509255266,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      },
+      {
+        "unit_id": "01789659595939067131_0aed494b4b334a67bf19eb3914d3c73c",
+        "memory_hash": "1b5361b7e49292e8721ee5408b273abc4dc4444975464a6874c8fc46b62cd9e3",
+        "score": 0.28071486949920654,
+        "recorded_ns": 1789659596333288161,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      },
+      {
+        "unit_id": "01789659592346206659_abdb1d8fd3774acfb3f1a792a6e2de9b",
+        "memory_hash": "18ecae077a5cb8dc36dec318ffb4fa7dcbfb8f498c8ebb429d858ca8c3b78061",
+        "score": 0.2783794403076172,
+        "recorded_ns": 1789659592790112775,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      }
+    ],
+    "top1": true,
+    "user_text_unchanged": true
+  },
+  {
+    "id": "tag-2",
+    "variant": "chat-context-content-positions",
+    "expected": "01789659589207512558_200ad097a2164b2d9875b879aba27c28",
+    "matches": [
+      {
+        "unit_id": "01789659589207512558_200ad097a2164b2d9875b879aba27c28",
+        "memory_hash": "4e7868846770cbd40157f5bfeedfc143f3d2b8ed72e441022673a00c29b27f80",
+        "score": 0.2877933382987976,
+        "recorded_ns": 1789659589509255266,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      },
+      {
+        "unit_id": "01789659595939067131_0aed494b4b334a67bf19eb3914d3c73c",
+        "memory_hash": "1b5361b7e49292e8721ee5408b273abc4dc4444975464a6874c8fc46b62cd9e3",
+        "score": 0.24503064155578613,
+        "recorded_ns": 1789659596333288161,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      },
+      {
+        "unit_id": "01789659599767253039_584811d182194dd1ad1fe01a089c48d6",
+        "memory_hash": "304d29533dd0815e64d3fe1c87a9a31ab5e60713e52ae593f684750b8e700acc",
+        "score": 0.23385870456695557,
+        "recorded_ns": 1789659600182507850,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      }
+    ],
+    "top1": true,
+    "user_text_unchanged": true
+  },
+  {
+    "id": "code-3",
+    "variant": "full-chat",
+    "expected": "01789659592346206659_abdb1d8fd3774acfb3f1a792a6e2de9b",
+    "matches": [
+      {
+        "unit_id": "01789659613960757039_8b8d0169d81449b09b30df4a7b452dae",
+        "memory_hash": "ebfb41173e903eca144000437de2283bdd23372f26dcd294d15bd783353600fa",
+        "score": 0.31872400641441345,
+        "recorded_ns": 1789659614518897072,
+        "event_ns": null,
+        "logical_time": 1,
+        "parents": []
+      },
+      {
+        "unit_id": "01789659592346206659_abdb1d8fd3774acfb3f1a792a6e2de9b",
+        "memory_hash": "18ecae077a5cb8dc36dec318ffb4fa7dcbfb8f498c8ebb429d858ca8c3b78061",
+        "score": 0.3011012673377991,
+        "recorded_ns": 1789659592790112775,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      },
+      {
+        "unit_id": "01789659619631553975_c641492813474ff0845f2c452cb098f0",
+        "memory_hash": "dd2d4cf0d7810904c50b813e968fd64ee57066f28f7bcf242f01815fe379c8c4",
+        "score": 0.2893829345703125,
+        "recorded_ns": 1789659620248899302,
+        "event_ns": null,
+        "logical_time": 1,
+        "parents": []
+      }
+    ],
+    "top1": false,
+    "user_text_unchanged": true
+  },
+  {
+    "id": "code-3",
+    "variant": "raw-complete-question",
+    "expected": "01789659592346206659_abdb1d8fd3774acfb3f1a792a6e2de9b",
+    "matches": [
+      {
+        "unit_id": "01789659592346206659_abdb1d8fd3774acfb3f1a792a6e2de9b",
+        "memory_hash": "18ecae077a5cb8dc36dec318ffb4fa7dcbfb8f498c8ebb429d858ca8c3b78061",
+        "score": 0.38687464594841003,
+        "recorded_ns": 1789659592790112775,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      },
+      {
+        "unit_id": "01789659589207512558_200ad097a2164b2d9875b879aba27c28",
+        "memory_hash": "4e7868846770cbd40157f5bfeedfc143f3d2b8ed72e441022673a00c29b27f80",
+        "score": 0.27059924602508545,
+        "recorded_ns": 1789659589509255266,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      },
+      {
+        "unit_id": "01789659585097362830_da520a80ce4a4d3c826f1961daddcbc4",
+        "memory_hash": "8c56ebb5fd64b0fb52168c85f4a8b2ae7417650c242e94984a83a6671b198b98",
+        "score": 0.2699374556541443,
+        "recorded_ns": 1789659585545076080,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      }
+    ],
+    "top1": true,
+    "user_text_unchanged": true
+  },
+  {
+    "id": "code-3",
+    "variant": "chat-context-content-positions",
+    "expected": "01789659592346206659_abdb1d8fd3774acfb3f1a792a6e2de9b",
+    "matches": [
+      {
+        "unit_id": "01789659592346206659_abdb1d8fd3774acfb3f1a792a6e2de9b",
+        "memory_hash": "18ecae077a5cb8dc36dec318ffb4fa7dcbfb8f498c8ebb429d858ca8c3b78061",
+        "score": 0.3493848741054535,
+        "recorded_ns": 1789659592790112775,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      },
+      {
+        "unit_id": "01789659599767253039_584811d182194dd1ad1fe01a089c48d6",
+        "memory_hash": "304d29533dd0815e64d3fe1c87a9a31ab5e60713e52ae593f684750b8e700acc",
+        "score": 0.25304490327835083,
+        "recorded_ns": 1789659600182507850,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      },
+      {
+        "unit_id": "01789659585097362830_da520a80ce4a4d3c826f1961daddcbc4",
+        "memory_hash": "8c56ebb5fd64b0fb52168c85f4a8b2ae7417650c242e94984a83a6671b198b98",
+        "score": 0.2516305148601532,
+        "recorded_ns": 1789659585545076080,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      }
+    ],
+    "top1": true,
+    "user_text_unchanged": true
+  },
+  {
+    "id": "tag-3",
+    "variant": "full-chat",
+    "expected": "01789659592346206659_abdb1d8fd3774acfb3f1a792a6e2de9b",
+    "matches": [
+      {
+        "unit_id": "01789659592346206659_abdb1d8fd3774acfb3f1a792a6e2de9b",
+        "memory_hash": "18ecae077a5cb8dc36dec318ffb4fa7dcbfb8f498c8ebb429d858ca8c3b78061",
+        "score": 0.27700191736221313,
+        "recorded_ns": 1789659592790112775,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      },
+      {
+        "unit_id": "01789659613960757039_8b8d0169d81449b09b30df4a7b452dae",
+        "memory_hash": "ebfb41173e903eca144000437de2283bdd23372f26dcd294d15bd783353600fa",
+        "score": 0.2652733325958252,
+        "recorded_ns": 1789659614518897072,
+        "event_ns": null,
+        "logical_time": 1,
+        "parents": []
+      },
+      {
+        "unit_id": "01789659619631553975_c641492813474ff0845f2c452cb098f0",
+        "memory_hash": "dd2d4cf0d7810904c50b813e968fd64ee57066f28f7bcf242f01815fe379c8c4",
+        "score": 0.24594217538833618,
+        "recorded_ns": 1789659620248899302,
+        "event_ns": null,
+        "logical_time": 1,
+        "parents": []
+      }
+    ],
+    "top1": true,
+    "user_text_unchanged": true
+  },
+  {
+    "id": "tag-3",
+    "variant": "raw-complete-question",
+    "expected": "01789659592346206659_abdb1d8fd3774acfb3f1a792a6e2de9b",
+    "matches": [
+      {
+        "unit_id": "01789659592346206659_abdb1d8fd3774acfb3f1a792a6e2de9b",
+        "memory_hash": "18ecae077a5cb8dc36dec318ffb4fa7dcbfb8f498c8ebb429d858ca8c3b78061",
+        "score": 0.3282986283302307,
+        "recorded_ns": 1789659592790112775,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      },
+      {
+        "unit_id": "01789659595939067131_0aed494b4b334a67bf19eb3914d3c73c",
+        "memory_hash": "1b5361b7e49292e8721ee5408b273abc4dc4444975464a6874c8fc46b62cd9e3",
+        "score": 0.26370710134506226,
+        "recorded_ns": 1789659596333288161,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      },
+      {
+        "unit_id": "01789659580128297362_d5b5ca66e1cb4ec1aa0aa0cd0f71776c",
+        "memory_hash": "be3ee9a790e307174e7e984ddf54834bf34c68e107c8bb022fcf192e0e148116",
+        "score": 0.26032936573028564,
+        "recorded_ns": 1789659580982364501,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      }
+    ],
+    "top1": true,
+    "user_text_unchanged": true
+  },
+  {
+    "id": "tag-3",
+    "variant": "chat-context-content-positions",
+    "expected": "01789659592346206659_abdb1d8fd3774acfb3f1a792a6e2de9b",
+    "matches": [
+      {
+        "unit_id": "01789659592346206659_abdb1d8fd3774acfb3f1a792a6e2de9b",
+        "memory_hash": "18ecae077a5cb8dc36dec318ffb4fa7dcbfb8f498c8ebb429d858ca8c3b78061",
+        "score": 0.3024021089076996,
+        "recorded_ns": 1789659592790112775,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      },
+      {
+        "unit_id": "01789659595939067131_0aed494b4b334a67bf19eb3914d3c73c",
+        "memory_hash": "1b5361b7e49292e8721ee5408b273abc4dc4444975464a6874c8fc46b62cd9e3",
+        "score": 0.24566750228405,
+        "recorded_ns": 1789659596333288161,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      },
+      {
+        "unit_id": "01789659599767253039_584811d182194dd1ad1fe01a089c48d6",
+        "memory_hash": "304d29533dd0815e64d3fe1c87a9a31ab5e60713e52ae593f684750b8e700acc",
+        "score": 0.24166515469551086,
+        "recorded_ns": 1789659600182507850,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      }
+    ],
+    "top1": true,
+    "user_text_unchanged": true
+  },
+  {
+    "id": "code-4",
+    "variant": "full-chat",
+    "expected": "01789659595939067131_0aed494b4b334a67bf19eb3914d3c73c",
+    "matches": [
+      {
+        "unit_id": "01789659619631553975_c641492813474ff0845f2c452cb098f0",
+        "memory_hash": "dd2d4cf0d7810904c50b813e968fd64ee57066f28f7bcf242f01815fe379c8c4",
+        "score": 0.3228079676628113,
+        "recorded_ns": 1789659620248899302,
+        "event_ns": null,
+        "logical_time": 1,
+        "parents": []
+      },
+      {
+        "unit_id": "01789659595939067131_0aed494b4b334a67bf19eb3914d3c73c",
+        "memory_hash": "1b5361b7e49292e8721ee5408b273abc4dc4444975464a6874c8fc46b62cd9e3",
+        "score": 0.3157604932785034,
+        "recorded_ns": 1789659596333288161,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      },
+      {
+        "unit_id": "01789659613960757039_8b8d0169d81449b09b30df4a7b452dae",
+        "memory_hash": "ebfb41173e903eca144000437de2283bdd23372f26dcd294d15bd783353600fa",
+        "score": 0.3157380521297455,
+        "recorded_ns": 1789659614518897072,
+        "event_ns": null,
+        "logical_time": 1,
+        "parents": []
+      }
+    ],
+    "top1": false,
+    "user_text_unchanged": true
+  },
+  {
+    "id": "code-4",
+    "variant": "raw-complete-question",
+    "expected": "01789659595939067131_0aed494b4b334a67bf19eb3914d3c73c",
+    "matches": [
+      {
+        "unit_id": "01789659595939067131_0aed494b4b334a67bf19eb3914d3c73c",
+        "memory_hash": "1b5361b7e49292e8721ee5408b273abc4dc4444975464a6874c8fc46b62cd9e3",
+        "score": 0.41048258543014526,
+        "recorded_ns": 1789659596333288161,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      },
+      {
+        "unit_id": "01789659592346206659_abdb1d8fd3774acfb3f1a792a6e2de9b",
+        "memory_hash": "18ecae077a5cb8dc36dec318ffb4fa7dcbfb8f498c8ebb429d858ca8c3b78061",
+        "score": 0.275840163230896,
+        "recorded_ns": 1789659592790112775,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      },
+      {
+        "unit_id": "01789659589207512558_200ad097a2164b2d9875b879aba27c28",
+        "memory_hash": "4e7868846770cbd40157f5bfeedfc143f3d2b8ed72e441022673a00c29b27f80",
+        "score": 0.2725677490234375,
+        "recorded_ns": 1789659589509255266,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      }
+    ],
+    "top1": true,
+    "user_text_unchanged": true
+  },
+  {
+    "id": "code-4",
+    "variant": "chat-context-content-positions",
+    "expected": "01789659595939067131_0aed494b4b334a67bf19eb3914d3c73c",
+    "matches": [
+      {
+        "unit_id": "01789659595939067131_0aed494b4b334a67bf19eb3914d3c73c",
+        "memory_hash": "1b5361b7e49292e8721ee5408b273abc4dc4444975464a6874c8fc46b62cd9e3",
+        "score": 0.3729051351547241,
+        "recorded_ns": 1789659596333288161,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      },
+      {
+        "unit_id": "01789659589207512558_200ad097a2164b2d9875b879aba27c28",
+        "memory_hash": "4e7868846770cbd40157f5bfeedfc143f3d2b8ed72e441022673a00c29b27f80",
+        "score": 0.2455075979232788,
+        "recorded_ns": 1789659589509255266,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      },
+      {
+        "unit_id": "01789659585097362830_da520a80ce4a4d3c826f1961daddcbc4",
+        "memory_hash": "8c56ebb5fd64b0fb52168c85f4a8b2ae7417650c242e94984a83a6671b198b98",
+        "score": 0.24401891231536865,
+        "recorded_ns": 1789659585545076080,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      }
+    ],
+    "top1": true,
+    "user_text_unchanged": true
+  },
+  {
+    "id": "tag-4",
+    "variant": "full-chat",
+    "expected": "01789659595939067131_0aed494b4b334a67bf19eb3914d3c73c",
+    "matches": [
+      {
+        "unit_id": "01789659595939067131_0aed494b4b334a67bf19eb3914d3c73c",
+        "memory_hash": "1b5361b7e49292e8721ee5408b273abc4dc4444975464a6874c8fc46b62cd9e3",
+        "score": 0.2962879538536072,
+        "recorded_ns": 1789659596333288161,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      },
+      {
+        "unit_id": "01789659619631553975_c641492813474ff0845f2c452cb098f0",
+        "memory_hash": "dd2d4cf0d7810904c50b813e968fd64ee57066f28f7bcf242f01815fe379c8c4",
+        "score": 0.2659015655517578,
+        "recorded_ns": 1789659620248899302,
+        "event_ns": null,
+        "logical_time": 1,
+        "parents": []
+      },
+      {
+        "unit_id": "01789659613960757039_8b8d0169d81449b09b30df4a7b452dae",
+        "memory_hash": "ebfb41173e903eca144000437de2283bdd23372f26dcd294d15bd783353600fa",
+        "score": 0.2633638381958008,
+        "recorded_ns": 1789659614518897072,
+        "event_ns": null,
+        "logical_time": 1,
+        "parents": []
+      }
+    ],
+    "top1": true,
+    "user_text_unchanged": true
+  },
+  {
+    "id": "tag-4",
+    "variant": "raw-complete-question",
+    "expected": "01789659595939067131_0aed494b4b334a67bf19eb3914d3c73c",
+    "matches": [
+      {
+        "unit_id": "01789659595939067131_0aed494b4b334a67bf19eb3914d3c73c",
+        "memory_hash": "1b5361b7e49292e8721ee5408b273abc4dc4444975464a6874c8fc46b62cd9e3",
+        "score": 0.36181730031967163,
+        "recorded_ns": 1789659596333288161,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      },
+      {
+        "unit_id": "01789659592346206659_abdb1d8fd3774acfb3f1a792a6e2de9b",
+        "memory_hash": "18ecae077a5cb8dc36dec318ffb4fa7dcbfb8f498c8ebb429d858ca8c3b78061",
+        "score": 0.2803727388381958,
+        "recorded_ns": 1789659592790112775,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      },
+      {
+        "unit_id": "01789659580128297362_d5b5ca66e1cb4ec1aa0aa0cd0f71776c",
+        "memory_hash": "be3ee9a790e307174e7e984ddf54834bf34c68e107c8bb022fcf192e0e148116",
+        "score": 0.2739986181259155,
+        "recorded_ns": 1789659580982364501,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      }
+    ],
+    "top1": true,
+    "user_text_unchanged": true
+  },
+  {
+    "id": "tag-4",
+    "variant": "chat-context-content-positions",
+    "expected": "01789659595939067131_0aed494b4b334a67bf19eb3914d3c73c",
+    "matches": [
+      {
+        "unit_id": "01789659595939067131_0aed494b4b334a67bf19eb3914d3c73c",
+        "memory_hash": "1b5361b7e49292e8721ee5408b273abc4dc4444975464a6874c8fc46b62cd9e3",
+        "score": 0.3299306035041809,
+        "recorded_ns": 1789659596333288161,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      },
+      {
+        "unit_id": "01789659599767253039_584811d182194dd1ad1fe01a089c48d6",
+        "memory_hash": "304d29533dd0815e64d3fe1c87a9a31ab5e60713e52ae593f684750b8e700acc",
+        "score": 0.24006269872188568,
+        "recorded_ns": 1789659600182507850,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      },
+      {
+        "unit_id": "01789659585097362830_da520a80ce4a4d3c826f1961daddcbc4",
+        "memory_hash": "8c56ebb5fd64b0fb52168c85f4a8b2ae7417650c242e94984a83a6671b198b98",
+        "score": 0.23687146604061127,
+        "recorded_ns": 1789659585545076080,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      }
+    ],
+    "top1": true,
+    "user_text_unchanged": true
+  },
+  {
+    "id": "code-5",
+    "variant": "full-chat",
+    "expected": "01789659599767253039_584811d182194dd1ad1fe01a089c48d6",
+    "matches": [
+      {
+        "unit_id": "01789659619631553975_c641492813474ff0845f2c452cb098f0",
+        "memory_hash": "dd2d4cf0d7810904c50b813e968fd64ee57066f28f7bcf242f01815fe379c8c4",
+        "score": 0.3033319413661957,
+        "recorded_ns": 1789659620248899302,
+        "event_ns": null,
+        "logical_time": 1,
+        "parents": []
+      },
+      {
+        "unit_id": "01789659613960757039_8b8d0169d81449b09b30df4a7b452dae",
+        "memory_hash": "ebfb41173e903eca144000437de2283bdd23372f26dcd294d15bd783353600fa",
+        "score": 0.29550647735595703,
+        "recorded_ns": 1789659614518897072,
+        "event_ns": null,
+        "logical_time": 1,
+        "parents": []
+      },
+      {
+        "unit_id": "01789659599767253039_584811d182194dd1ad1fe01a089c48d6",
+        "memory_hash": "304d29533dd0815e64d3fe1c87a9a31ab5e60713e52ae593f684750b8e700acc",
+        "score": 0.2891348898410797,
+        "recorded_ns": 1789659600182507850,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      }
+    ],
+    "top1": false,
+    "user_text_unchanged": true
+  },
+  {
+    "id": "code-5",
+    "variant": "raw-complete-question",
+    "expected": "01789659599767253039_584811d182194dd1ad1fe01a089c48d6",
+    "matches": [
+      {
+        "unit_id": "01789659599767253039_584811d182194dd1ad1fe01a089c48d6",
+        "memory_hash": "304d29533dd0815e64d3fe1c87a9a31ab5e60713e52ae593f684750b8e700acc",
+        "score": 0.37298160791397095,
+        "recorded_ns": 1789659600182507850,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      },
+      {
+        "unit_id": "01789659592346206659_abdb1d8fd3774acfb3f1a792a6e2de9b",
+        "memory_hash": "18ecae077a5cb8dc36dec318ffb4fa7dcbfb8f498c8ebb429d858ca8c3b78061",
+        "score": 0.2970937490463257,
+        "recorded_ns": 1789659592790112775,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      },
+      {
+        "unit_id": "01789659589207512558_200ad097a2164b2d9875b879aba27c28",
+        "memory_hash": "4e7868846770cbd40157f5bfeedfc143f3d2b8ed72e441022673a00c29b27f80",
+        "score": 0.2956728935241699,
+        "recorded_ns": 1789659589509255266,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      }
+    ],
+    "top1": true,
+    "user_text_unchanged": true
+  },
+  {
+    "id": "code-5",
+    "variant": "chat-context-content-positions",
+    "expected": "01789659599767253039_584811d182194dd1ad1fe01a089c48d6",
+    "matches": [
+      {
+        "unit_id": "01789659599767253039_584811d182194dd1ad1fe01a089c48d6",
+        "memory_hash": "304d29533dd0815e64d3fe1c87a9a31ab5e60713e52ae593f684750b8e700acc",
+        "score": 0.34046220779418945,
+        "recorded_ns": 1789659600182507850,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      },
+      {
+        "unit_id": "01789659595939067131_0aed494b4b334a67bf19eb3914d3c73c",
+        "memory_hash": "1b5361b7e49292e8721ee5408b273abc4dc4444975464a6874c8fc46b62cd9e3",
+        "score": 0.26976627111434937,
+        "recorded_ns": 1789659596333288161,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      },
+      {
+        "unit_id": "01789659585097362830_da520a80ce4a4d3c826f1961daddcbc4",
+        "memory_hash": "8c56ebb5fd64b0fb52168c85f4a8b2ae7417650c242e94984a83a6671b198b98",
+        "score": 0.2630265951156616,
+        "recorded_ns": 1789659585545076080,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      }
+    ],
+    "top1": true,
+    "user_text_unchanged": true
+  },
+  {
+    "id": "tag-5",
+    "variant": "full-chat",
+    "expected": "01789659599767253039_584811d182194dd1ad1fe01a089c48d6",
+    "matches": [
+      {
+        "unit_id": "01789659599767253039_584811d182194dd1ad1fe01a089c48d6",
+        "memory_hash": "304d29533dd0815e64d3fe1c87a9a31ab5e60713e52ae593f684750b8e700acc",
+        "score": 0.2782628536224365,
+        "recorded_ns": 1789659600182507850,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      },
+      {
+        "unit_id": "01789659619631553975_c641492813474ff0845f2c452cb098f0",
+        "memory_hash": "dd2d4cf0d7810904c50b813e968fd64ee57066f28f7bcf242f01815fe379c8c4",
+        "score": 0.25686949491500854,
+        "recorded_ns": 1789659620248899302,
+        "event_ns": null,
+        "logical_time": 1,
+        "parents": []
+      },
+      {
+        "unit_id": "01789659613960757039_8b8d0169d81449b09b30df4a7b452dae",
+        "memory_hash": "ebfb41173e903eca144000437de2283bdd23372f26dcd294d15bd783353600fa",
+        "score": 0.2503116726875305,
+        "recorded_ns": 1789659614518897072,
+        "event_ns": null,
+        "logical_time": 1,
+        "parents": []
+      }
+    ],
+    "top1": true,
+    "user_text_unchanged": true
+  },
+  {
+    "id": "tag-5",
+    "variant": "raw-complete-question",
+    "expected": "01789659599767253039_584811d182194dd1ad1fe01a089c48d6",
+    "matches": [
+      {
+        "unit_id": "01789659599767253039_584811d182194dd1ad1fe01a089c48d6",
+        "memory_hash": "304d29533dd0815e64d3fe1c87a9a31ab5e60713e52ae593f684750b8e700acc",
+        "score": 0.3479171395301819,
+        "recorded_ns": 1789659600182507850,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      },
+      {
+        "unit_id": "01789659592346206659_abdb1d8fd3774acfb3f1a792a6e2de9b",
+        "memory_hash": "18ecae077a5cb8dc36dec318ffb4fa7dcbfb8f498c8ebb429d858ca8c3b78061",
+        "score": 0.2964666485786438,
+        "recorded_ns": 1789659592790112775,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      },
+      {
+        "unit_id": "01789659589207512558_200ad097a2164b2d9875b879aba27c28",
+        "memory_hash": "4e7868846770cbd40157f5bfeedfc143f3d2b8ed72e441022673a00c29b27f80",
+        "score": 0.2947985529899597,
+        "recorded_ns": 1789659589509255266,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      }
+    ],
+    "top1": true,
+    "user_text_unchanged": true
+  },
+  {
+    "id": "tag-5",
+    "variant": "chat-context-content-positions",
+    "expected": "01789659599767253039_584811d182194dd1ad1fe01a089c48d6",
+    "matches": [
+      {
+        "unit_id": "01789659599767253039_584811d182194dd1ad1fe01a089c48d6",
+        "memory_hash": "304d29533dd0815e64d3fe1c87a9a31ab5e60713e52ae593f684750b8e700acc",
+        "score": 0.3059624433517456,
+        "recorded_ns": 1789659600182507850,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      },
+      {
+        "unit_id": "01789659595939067131_0aed494b4b334a67bf19eb3914d3c73c",
+        "memory_hash": "1b5361b7e49292e8721ee5408b273abc4dc4444975464a6874c8fc46b62cd9e3",
+        "score": 0.2688615024089813,
+        "recorded_ns": 1789659596333288161,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      },
+      {
+        "unit_id": "01789659580128297362_d5b5ca66e1cb4ec1aa0aa0cd0f71776c",
+        "memory_hash": "be3ee9a790e307174e7e984ddf54834bf34c68e107c8bb022fcf192e0e148116",
+        "score": 0.2597495913505554,
+        "recorded_ns": 1789659580982364501,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      }
+    ],
+    "top1": true,
+    "user_text_unchanged": true
+  },
+  {
+    "id": "hop1",
+    "variant": "full-chat",
+    "expected": "01789659604819000341_8e9b5ebe40534138a7d50f72b2be46f2",
+    "matches": [
+      {
+        "unit_id": "01789659604819000341_8e9b5ebe40534138a7d50f72b2be46f2",
+        "memory_hash": "d903af2b55252811d2bb1f0e19ca7547c192b64c31507942ff2cb30e32da539e",
+        "score": 0.2744740843772888,
+        "recorded_ns": 1789659607667061574,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      },
+      {
+        "unit_id": "01789659619631553975_c641492813474ff0845f2c452cb098f0",
+        "memory_hash": "dd2d4cf0d7810904c50b813e968fd64ee57066f28f7bcf242f01815fe379c8c4",
+        "score": 0.25637975335121155,
+        "recorded_ns": 1789659620248899302,
+        "event_ns": null,
+        "logical_time": 1,
+        "parents": []
+      },
+      {
+        "unit_id": "01789659613960757039_8b8d0169d81449b09b30df4a7b452dae",
+        "memory_hash": "ebfb41173e903eca144000437de2283bdd23372f26dcd294d15bd783353600fa",
+        "score": 0.24890384078025818,
+        "recorded_ns": 1789659614518897072,
+        "event_ns": null,
+        "logical_time": 1,
+        "parents": []
+      }
+    ],
+    "top1": true,
+    "user_text_unchanged": true
+  },
+  {
+    "id": "hop1",
+    "variant": "raw-complete-question",
+    "expected": "01789659604819000341_8e9b5ebe40534138a7d50f72b2be46f2",
+    "matches": [
+      {
+        "unit_id": "01789659604819000341_8e9b5ebe40534138a7d50f72b2be46f2",
+        "memory_hash": "d903af2b55252811d2bb1f0e19ca7547c192b64c31507942ff2cb30e32da539e",
+        "score": 0.41322529315948486,
+        "recorded_ns": 1789659607667061574,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      },
+      {
+        "unit_id": "01789659595939067131_0aed494b4b334a67bf19eb3914d3c73c",
+        "memory_hash": "1b5361b7e49292e8721ee5408b273abc4dc4444975464a6874c8fc46b62cd9e3",
+        "score": 0.18391761183738708,
+        "recorded_ns": 1789659596333288161,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      },
+      {
+        "unit_id": "01789659592346206659_abdb1d8fd3774acfb3f1a792a6e2de9b",
+        "memory_hash": "18ecae077a5cb8dc36dec318ffb4fa7dcbfb8f498c8ebb429d858ca8c3b78061",
+        "score": 0.17831623554229736,
+        "recorded_ns": 1789659592790112775,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      }
+    ],
+    "top1": true,
+    "user_text_unchanged": true
+  },
+  {
+    "id": "hop1",
+    "variant": "chat-context-content-positions",
+    "expected": "01789659604819000341_8e9b5ebe40534138a7d50f72b2be46f2",
+    "matches": [
+      {
+        "unit_id": "01789659604819000341_8e9b5ebe40534138a7d50f72b2be46f2",
+        "memory_hash": "d903af2b55252811d2bb1f0e19ca7547c192b64c31507942ff2cb30e32da539e",
+        "score": 0.3021244406700134,
+        "recorded_ns": 1789659607667061574,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      },
+      {
+        "unit_id": "01789659619631553975_c641492813474ff0845f2c452cb098f0",
+        "memory_hash": "dd2d4cf0d7810904c50b813e968fd64ee57066f28f7bcf242f01815fe379c8c4",
+        "score": 0.1721051186323166,
+        "recorded_ns": 1789659620248899302,
+        "event_ns": null,
+        "logical_time": 1,
+        "parents": []
+      },
+      {
+        "unit_id": "01789659595939067131_0aed494b4b334a67bf19eb3914d3c73c",
+        "memory_hash": "1b5361b7e49292e8721ee5408b273abc4dc4444975464a6874c8fc46b62cd9e3",
+        "score": 0.1642908900976181,
+        "recorded_ns": 1789659596333288161,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      }
+    ],
+    "top1": true,
+    "user_text_unchanged": true
+  },
+  {
+    "id": "hop3-all",
+    "variant": "full-chat",
+    "expected": "01789659604819000341_8e9b5ebe40534138a7d50f72b2be46f2",
+    "matches": [
+      {
+        "unit_id": "01789659604819000341_8e9b5ebe40534138a7d50f72b2be46f2",
+        "memory_hash": "d903af2b55252811d2bb1f0e19ca7547c192b64c31507942ff2cb30e32da539e",
+        "score": 0.246102973818779,
+        "recorded_ns": 1789659607667061574,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      },
+      {
+        "unit_id": "01789659613960757039_8b8d0169d81449b09b30df4a7b452dae",
+        "memory_hash": "ebfb41173e903eca144000437de2283bdd23372f26dcd294d15bd783353600fa",
+        "score": 0.21218323707580566,
+        "recorded_ns": 1789659614518897072,
+        "event_ns": null,
+        "logical_time": 1,
+        "parents": []
+      },
+      {
+        "unit_id": "01789659619631553975_c641492813474ff0845f2c452cb098f0",
+        "memory_hash": "dd2d4cf0d7810904c50b813e968fd64ee57066f28f7bcf242f01815fe379c8c4",
+        "score": 0.21160510182380676,
+        "recorded_ns": 1789659620248899302,
+        "event_ns": null,
+        "logical_time": 1,
+        "parents": []
+      }
+    ],
+    "top1": true,
+    "user_text_unchanged": true
+  },
+  {
+    "id": "hop3-all",
+    "variant": "raw-complete-question",
+    "expected": "01789659604819000341_8e9b5ebe40534138a7d50f72b2be46f2",
+    "matches": [
+      {
+        "unit_id": "01789659604819000341_8e9b5ebe40534138a7d50f72b2be46f2",
+        "memory_hash": "d903af2b55252811d2bb1f0e19ca7547c192b64c31507942ff2cb30e32da539e",
+        "score": 0.3521992564201355,
+        "recorded_ns": 1789659607667061574,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      },
+      {
+        "unit_id": "01789659595939067131_0aed494b4b334a67bf19eb3914d3c73c",
+        "memory_hash": "1b5361b7e49292e8721ee5408b273abc4dc4444975464a6874c8fc46b62cd9e3",
+        "score": 0.16059410572052002,
+        "recorded_ns": 1789659596333288161,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      },
+      {
+        "unit_id": "01789659580128297362_d5b5ca66e1cb4ec1aa0aa0cd0f71776c",
+        "memory_hash": "be3ee9a790e307174e7e984ddf54834bf34c68e107c8bb022fcf192e0e148116",
+        "score": 0.1569761037826538,
+        "recorded_ns": 1789659580982364501,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      }
+    ],
+    "top1": true,
+    "user_text_unchanged": true
+  },
+  {
+    "id": "hop3-all",
+    "variant": "chat-context-content-positions",
+    "expected": "01789659604819000341_8e9b5ebe40534138a7d50f72b2be46f2",
+    "matches": [
+      {
+        "unit_id": "01789659604819000341_8e9b5ebe40534138a7d50f72b2be46f2",
+        "memory_hash": "d903af2b55252811d2bb1f0e19ca7547c192b64c31507942ff2cb30e32da539e",
+        "score": 0.2616052031517029,
+        "recorded_ns": 1789659607667061574,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      },
+      {
+        "unit_id": "01789659613960757039_8b8d0169d81449b09b30df4a7b452dae",
+        "memory_hash": "ebfb41173e903eca144000437de2283bdd23372f26dcd294d15bd783353600fa",
+        "score": 0.1433834582567215,
+        "recorded_ns": 1789659614518897072,
+        "event_ns": null,
+        "logical_time": 1,
+        "parents": []
+      },
+      {
+        "unit_id": "01789659619631553975_c641492813474ff0845f2c452cb098f0",
+        "memory_hash": "dd2d4cf0d7810904c50b813e968fd64ee57066f28f7bcf242f01815fe379c8c4",
+        "score": 0.1431940644979477,
+        "recorded_ns": 1789659620248899302,
+        "event_ns": null,
+        "logical_time": 1,
+        "parents": []
+      }
+    ],
+    "top1": true,
+    "user_text_unchanged": true
+  },
+  {
+    "id": "hop3-final",
+    "variant": "full-chat",
+    "expected": "01789659604819000341_8e9b5ebe40534138a7d50f72b2be46f2",
+    "matches": [
+      {
+        "unit_id": "01789659604819000341_8e9b5ebe40534138a7d50f72b2be46f2",
+        "memory_hash": "d903af2b55252811d2bb1f0e19ca7547c192b64c31507942ff2cb30e32da539e",
+        "score": 0.24920599162578583,
+        "recorded_ns": 1789659607667061574,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      },
+      {
+        "unit_id": "01789659619631553975_c641492813474ff0845f2c452cb098f0",
+        "memory_hash": "dd2d4cf0d7810904c50b813e968fd64ee57066f28f7bcf242f01815fe379c8c4",
+        "score": 0.21439312398433685,
+        "recorded_ns": 1789659620248899302,
+        "event_ns": null,
+        "logical_time": 1,
+        "parents": []
+      },
+      {
+        "unit_id": "01789659613960757039_8b8d0169d81449b09b30df4a7b452dae",
+        "memory_hash": "ebfb41173e903eca144000437de2283bdd23372f26dcd294d15bd783353600fa",
+        "score": 0.2131747603416443,
+        "recorded_ns": 1789659614518897072,
+        "event_ns": null,
+        "logical_time": 1,
+        "parents": []
+      }
+    ],
+    "top1": true,
+    "user_text_unchanged": true
+  },
+  {
+    "id": "hop3-final",
+    "variant": "raw-complete-question",
+    "expected": "01789659604819000341_8e9b5ebe40534138a7d50f72b2be46f2",
+    "matches": [
+      {
+        "unit_id": "01789659604819000341_8e9b5ebe40534138a7d50f72b2be46f2",
+        "memory_hash": "d903af2b55252811d2bb1f0e19ca7547c192b64c31507942ff2cb30e32da539e",
+        "score": 0.36392372846603394,
+        "recorded_ns": 1789659607667061574,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      },
+      {
+        "unit_id": "01789659595939067131_0aed494b4b334a67bf19eb3914d3c73c",
+        "memory_hash": "1b5361b7e49292e8721ee5408b273abc4dc4444975464a6874c8fc46b62cd9e3",
+        "score": 0.16538289189338684,
+        "recorded_ns": 1789659596333288161,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      },
+      {
+        "unit_id": "01789659599767253039_584811d182194dd1ad1fe01a089c48d6",
+        "memory_hash": "304d29533dd0815e64d3fe1c87a9a31ab5e60713e52ae593f684750b8e700acc",
+        "score": 0.16033616662025452,
+        "recorded_ns": 1789659600182507850,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      }
+    ],
+    "top1": true,
+    "user_text_unchanged": true
+  },
+  {
+    "id": "hop3-final",
+    "variant": "chat-context-content-positions",
+    "expected": "01789659604819000341_8e9b5ebe40534138a7d50f72b2be46f2",
+    "matches": [
+      {
+        "unit_id": "01789659604819000341_8e9b5ebe40534138a7d50f72b2be46f2",
+        "memory_hash": "d903af2b55252811d2bb1f0e19ca7547c192b64c31507942ff2cb30e32da539e",
+        "score": 0.26524558663368225,
+        "recorded_ns": 1789659607667061574,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      },
+      {
+        "unit_id": "01789659595939067131_0aed494b4b334a67bf19eb3914d3c73c",
+        "memory_hash": "1b5361b7e49292e8721ee5408b273abc4dc4444975464a6874c8fc46b62cd9e3",
+        "score": 0.14670589566230774,
+        "recorded_ns": 1789659596333288161,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      },
+      {
+        "unit_id": "01789659619631553975_c641492813474ff0845f2c452cb098f0",
+        "memory_hash": "dd2d4cf0d7810904c50b813e968fd64ee57066f28f7bcf242f01815fe379c8c4",
+        "score": 0.14532774686813354,
+        "recorded_ns": 1789659620248899302,
+        "event_ns": null,
+        "logical_time": 1,
+        "parents": []
+      }
+    ],
+    "top1": true,
+    "user_text_unchanged": true
+  },
+  {
+    "id": "visual-0",
+    "variant": "full-chat",
+    "expected": "01789659613960757039_8b8d0169d81449b09b30df4a7b452dae",
+    "matches": [
+      {
+        "unit_id": "01789659613960757039_8b8d0169d81449b09b30df4a7b452dae",
+        "memory_hash": "ebfb41173e903eca144000437de2283bdd23372f26dcd294d15bd783353600fa",
+        "score": 0.39579805731773376,
+        "recorded_ns": 1789659614518897072,
+        "event_ns": null,
+        "logical_time": 1,
+        "parents": []
+      },
+      {
+        "unit_id": "01789659619631553975_c641492813474ff0845f2c452cb098f0",
+        "memory_hash": "dd2d4cf0d7810904c50b813e968fd64ee57066f28f7bcf242f01815fe379c8c4",
+        "score": 0.34422624111175537,
+        "recorded_ns": 1789659620248899302,
+        "event_ns": null,
+        "logical_time": 1,
+        "parents": []
+      },
+      {
+        "unit_id": "01789659595939067131_0aed494b4b334a67bf19eb3914d3c73c",
+        "memory_hash": "1b5361b7e49292e8721ee5408b273abc4dc4444975464a6874c8fc46b62cd9e3",
+        "score": 0.16918306052684784,
+        "recorded_ns": 1789659596333288161,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      }
+    ],
+    "top1": true,
+    "user_text_unchanged": true
+  },
+  {
+    "id": "visual-0",
+    "variant": "raw-complete-question",
+    "expected": "01789659613960757039_8b8d0169d81449b09b30df4a7b452dae",
+    "matches": [
+      {
+        "unit_id": "01789659613960757039_8b8d0169d81449b09b30df4a7b452dae",
+        "memory_hash": "ebfb41173e903eca144000437de2283bdd23372f26dcd294d15bd783353600fa",
+        "score": 0.2670324444770813,
+        "recorded_ns": 1789659614518897072,
+        "event_ns": null,
+        "logical_time": 1,
+        "parents": []
+      },
+      {
+        "unit_id": "01789659619631553975_c641492813474ff0845f2c452cb098f0",
+        "memory_hash": "dd2d4cf0d7810904c50b813e968fd64ee57066f28f7bcf242f01815fe379c8c4",
+        "score": 0.24381303787231445,
+        "recorded_ns": 1789659620248899302,
+        "event_ns": null,
+        "logical_time": 1,
+        "parents": []
+      },
+      {
+        "unit_id": "01789659599767253039_584811d182194dd1ad1fe01a089c48d6",
+        "memory_hash": "304d29533dd0815e64d3fe1c87a9a31ab5e60713e52ae593f684750b8e700acc",
+        "score": 0.1841202825307846,
+        "recorded_ns": 1789659600182507850,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      }
+    ],
+    "top1": true,
+    "user_text_unchanged": true
+  },
+  {
+    "id": "visual-0",
+    "variant": "chat-context-content-positions",
+    "expected": "01789659613960757039_8b8d0169d81449b09b30df4a7b452dae",
+    "matches": [
+      {
+        "unit_id": "01789659613960757039_8b8d0169d81449b09b30df4a7b452dae",
+        "memory_hash": "ebfb41173e903eca144000437de2283bdd23372f26dcd294d15bd783353600fa",
+        "score": 0.3416996896266937,
+        "recorded_ns": 1789659614518897072,
+        "event_ns": null,
+        "logical_time": 1,
+        "parents": []
+      },
+      {
+        "unit_id": "01789659619631553975_c641492813474ff0845f2c452cb098f0",
+        "memory_hash": "dd2d4cf0d7810904c50b813e968fd64ee57066f28f7bcf242f01815fe379c8c4",
+        "score": 0.2741242051124573,
+        "recorded_ns": 1789659620248899302,
+        "event_ns": null,
+        "logical_time": 1,
+        "parents": []
+      },
+      {
+        "unit_id": "01789659595939067131_0aed494b4b334a67bf19eb3914d3c73c",
+        "memory_hash": "1b5361b7e49292e8721ee5408b273abc4dc4444975464a6874c8fc46b62cd9e3",
+        "score": 0.1645110547542572,
+        "recorded_ns": 1789659596333288161,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      }
+    ],
+    "top1": true,
+    "user_text_unchanged": true
+  },
+  {
+    "id": "visual-1",
+    "variant": "full-chat",
+    "expected": "01789659619631553975_c641492813474ff0845f2c452cb098f0",
+    "matches": [
+      {
+        "unit_id": "01789659619631553975_c641492813474ff0845f2c452cb098f0",
+        "memory_hash": "dd2d4cf0d7810904c50b813e968fd64ee57066f28f7bcf242f01815fe379c8c4",
+        "score": 0.3869073987007141,
+        "recorded_ns": 1789659620248899302,
+        "event_ns": null,
+        "logical_time": 1,
+        "parents": []
+      },
+      {
+        "unit_id": "01789659613960757039_8b8d0169d81449b09b30df4a7b452dae",
+        "memory_hash": "ebfb41173e903eca144000437de2283bdd23372f26dcd294d15bd783353600fa",
+        "score": 0.32799649238586426,
+        "recorded_ns": 1789659614518897072,
+        "event_ns": null,
+        "logical_time": 1,
+        "parents": []
+      },
+      {
+        "unit_id": "01789659595939067131_0aed494b4b334a67bf19eb3914d3c73c",
+        "memory_hash": "1b5361b7e49292e8721ee5408b273abc4dc4444975464a6874c8fc46b62cd9e3",
+        "score": 0.17020562291145325,
+        "recorded_ns": 1789659596333288161,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      }
+    ],
+    "top1": true,
+    "user_text_unchanged": true
+  },
+  {
+    "id": "visual-1",
+    "variant": "raw-complete-question",
+    "expected": "01789659619631553975_c641492813474ff0845f2c452cb098f0",
+    "matches": [
+      {
+        "unit_id": "01789659619631553975_c641492813474ff0845f2c452cb098f0",
+        "memory_hash": "dd2d4cf0d7810904c50b813e968fd64ee57066f28f7bcf242f01815fe379c8c4",
+        "score": 0.27339112758636475,
+        "recorded_ns": 1789659620248899302,
+        "event_ns": null,
+        "logical_time": 1,
+        "parents": []
+      },
+      {
+        "unit_id": "01789659613960757039_8b8d0169d81449b09b30df4a7b452dae",
+        "memory_hash": "ebfb41173e903eca144000437de2283bdd23372f26dcd294d15bd783353600fa",
+        "score": 0.22417345643043518,
+        "recorded_ns": 1789659614518897072,
+        "event_ns": null,
+        "logical_time": 1,
+        "parents": []
+      },
+      {
+        "unit_id": "01789659599767253039_584811d182194dd1ad1fe01a089c48d6",
+        "memory_hash": "304d29533dd0815e64d3fe1c87a9a31ab5e60713e52ae593f684750b8e700acc",
+        "score": 0.1808008849620819,
+        "recorded_ns": 1789659600182507850,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      }
+    ],
+    "top1": true,
+    "user_text_unchanged": true
+  },
+  {
+    "id": "visual-1",
+    "variant": "chat-context-content-positions",
+    "expected": "01789659619631553975_c641492813474ff0845f2c452cb098f0",
+    "matches": [
+      {
+        "unit_id": "01789659619631553975_c641492813474ff0845f2c452cb098f0",
+        "memory_hash": "dd2d4cf0d7810904c50b813e968fd64ee57066f28f7bcf242f01815fe379c8c4",
+        "score": 0.33094358444213867,
+        "recorded_ns": 1789659620248899302,
+        "event_ns": null,
+        "logical_time": 1,
+        "parents": []
+      },
+      {
+        "unit_id": "01789659613960757039_8b8d0169d81449b09b30df4a7b452dae",
+        "memory_hash": "ebfb41173e903eca144000437de2283bdd23372f26dcd294d15bd783353600fa",
+        "score": 0.25745582580566406,
+        "recorded_ns": 1789659614518897072,
+        "event_ns": null,
+        "logical_time": 1,
+        "parents": []
+      },
+      {
+        "unit_id": "01789659595939067131_0aed494b4b334a67bf19eb3914d3c73c",
+        "memory_hash": "1b5361b7e49292e8721ee5408b273abc4dc4444975464a6874c8fc46b62cd9e3",
+        "score": 0.16852334141731262,
+        "recorded_ns": 1789659596333288161,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      }
+    ],
+    "top1": true,
+    "user_text_unchanged": true
+  }
+]

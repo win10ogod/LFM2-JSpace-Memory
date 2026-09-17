@@ -1,0 +1,193 @@
+{
+  "repository": "win10/Lfm2-MaleCNS-Titans-VL-3B-V2-SFT",
+  "stage": "sft",
+  "native_platform": "Windows",
+  "checkpoint_id": "95c663dda67d4dbe8ec77a4681db3fc2",
+  "files": [
+    {
+      "path": "LICENSE",
+      "size": 10645,
+      "sha256": "ee33e399da3f8f70d3101567f6ab7d3f29ce174397a137fe0b02f4603489f132"
+    },
+    {
+      "path": "README.md",
+      "size": 27043,
+      "sha256": "a938adbb305319cafff8da4092f7cfec8c8e91c17299376efa6b73a340e25ca1"
+    },
+    {
+      "path": "batched_memory.py",
+      "size": 3572,
+      "sha256": "321814b73659106eae3b08d593eaba2f6485627bd2c574128a59cb5f94eb3a26"
+    },
+    {
+      "path": "capacity.py",
+      "size": 3181,
+      "sha256": "f7e248971a487096faba57df5607f51e738b78e8b16c099818fd7bd001427d33"
+    },
+    {
+      "path": "chat_template.jinja",
+      "size": 5436,
+      "sha256": "86f4770449a4797c9b4212d110b0cc70fb993c1ce960095bcfb12eea22f61cca"
+    },
+    {
+      "path": "compiled_connectome.py",
+      "size": 4734,
+      "sha256": "e8aafd3da10fab436314312adcdcf016e02735e4ca755a6169a85753caabadf9"
+    },
+    {
+      "path": "concept_capture.py",
+      "size": 1375,
+      "sha256": "8708be27fcfb8cc70f1e2cc8c2fbbd40a65bf91383c83ffa9ae7a5bbaa7347fd"
+    },
+    {
+      "path": "config.json",
+      "size": 426821,
+      "sha256": "643116d505b701cd5757ce87d7c9a0a1f598f9e66160c480e4ea85bd1c1d217a"
+    },
+    {
+      "path": "configuration_lfm2_titans.py",
+      "size": 2579,
+      "sha256": "9004e8f368e5536b3fb9724eb054f991e2f922ae039bf17986a22a44908a4f8a"
+    },
+    {
+      "path": "connectome_ops.py",
+      "size": 4718,
+      "sha256": "ff9a10b20ad214717c25b21e3cfc9c2bf86b62f5eef511793b42ee109553c2de"
+    },
+    {
+      "path": "dream_memory.py",
+      "size": 5712,
+      "sha256": "af0f36476b78ffbd1b29df4814a7ad8cee8fa84caa24a75c3802bad3f0de2180"
+    },
+    {
+      "path": "episodic_adapters.py",
+      "size": 20696,
+      "sha256": "55e7cb44e8a42c65847954a2db1df6032f71f15f24d3758f05741c176f2e0e45"
+    },
+    {
+      "path": "generation_config.json",
+      "size": 327,
+      "sha256": "57c36bdcd093ffb6affa1e00988b99bb496ea8f985cf70d48aaafca569311b5e"
+    },
+    {
+      "path": "integrated_dream.py",
+      "size": 5797,
+      "sha256": "ddcabdbe82dff864a50fac60788ed8426009b3843a1bfb9db3fb5c48ac424020"
+    },
+    {
+      "path": "latent_memory.py",
+      "size": 1994,
+      "sha256": "12a73a4b403644df8e7d366e7a1e01bb5795728785e204c6eb60b69917150f0a"
+    },
+    {
+      "path": "lfm_multiport.py",
+      "size": 7336,
+      "sha256": "b5edb3622f1993f7d312474fdeebe7831f1c723ba6eb9bdb87989916efb8a960"
+    },
+    {
+      "path": "memory_address.py",
+      "size": 991,
+      "sha256": "9e46b3eba092eaf273d53a86355d0506826d15f2d00965505a4ee84c98f1b7d1"
+    },
+    {
+      "path": "memory_concept_lens.safetensors",
+      "size": 100663760,
+      "sha256": "f0ecf4ca229ee1393081aeba93dba945fbdd8daa7f2c08693268408e2c1b0b39"
+    },
+    {
+      "path": "memory_graph.safetensors",
+      "size": 15868952,
+      "sha256": "ebc54371539ac47a459d607aae28d8c14b59db1de72da59daba695aebf80d5f7"
+    },
+    {
+      "path": "memory_integrity.py",
+      "size": 328,
+      "sha256": "404b4f6ebcc088bd1e17aedb3bbcbb8ec93e92f0941d7d9bace194b6b5d032a9"
+    },
+    {
+      "path": "memory_recall_training.py",
+      "size": 12411,
+      "sha256": "495dfa806e3e9b93bda09ff991c263f60cc6823685712baa9f6e767f7e60e9b0"
+    },
+    {
+      "path": "model-00001-of-00002.safetensors",
+      "size": 3975606444,
+      "sha256": "a2f3c4a868a97f6437d2fe9f69475b24d5af5ba238176e87466f3bb4b07c8725"
+    },
+    {
+      "path": "model-00002-of-00002.safetensors",
+      "size": 3383165988,
+      "sha256": "4856ec7a31eb345efa78da06bdbc17633c875a6af6af655394a44c68eba5cb38"
+    },
+    {
+      "path": "model.safetensors.index.json",
+      "size": 86002,
+      "sha256": "662e90cfa7094b428629fa5dbe37c8e7fd9e303165bb7fdc46f8beebefeaf9c0"
+    },
+    {
+      "path": "modeling_lfm2_titans.py",
+      "size": 27111,
+      "sha256": "dbb39f8d66a91bcc95e85314fa22f5f99d19314ad2d63ce1fd90d7d9eb160e68"
+    },
+    {
+      "path": "multiport_connectome.py",
+      "size": 32040,
+      "sha256": "d7e33e525ad3493fc7e65400ad519c12c778715d056b11512d93139f4152cbc6"
+    },
+    {
+      "path": "native_concepts.py",
+      "size": 14139,
+      "sha256": "230480064c1ef2cb3b1b532b60b68880b8de7d623e43af81042235db796ed1a7"
+    },
+    {
+      "path": "native_sft_memory.py",
+      "size": 13164,
+      "sha256": "f73357d4faa6604d9aa6c3689514972e0592d50cf9c65d049fb2bccec0434962"
+    },
+    {
+      "path": "physical_archive.py",
+      "size": 9211,
+      "sha256": "b0a3796f31f9b53eb72f98c157626035d5099d14b10d4e2e4988b75afb89d529"
+    },
+    {
+      "path": "physical_ffn.py",
+      "size": 1777,
+      "sha256": "9adb5e56ee18070de897884c8d7ff1acdfe4988389ef45101113c89cd31b796d"
+    },
+    {
+      "path": "physical_memory.py",
+      "size": 13584,
+      "sha256": "04cda4d99b0c3f1fdd9a4e35999961e4ac7ae4297586de14b23afbb74dbd5b0f"
+    },
+    {
+      "path": "processor_config.json",
+      "size": 824,
+      "sha256": "b9b82ad34a69e2f70a9033741e11f82b8a98bb5f8e6c13b3b2d5efdd3935d916"
+    },
+    {
+      "path": "sequence_memory.py",
+      "size": 14108,
+      "sha256": "fb7b4ea67e3a295b7e25a8c96ceef8e846d7eae21a3e64d123e4475b60967086"
+    },
+    {
+      "path": "sft_lora.py",
+      "size": 13391,
+      "sha256": "684c05b270c680e5b1877ab09972b02bc7f8b15fd9cacf2d62c9797ef03ba763"
+    },
+    {
+      "path": "sleep_controller.py",
+      "size": 6749,
+      "sha256": "bc9c1a85dc019790548b7b98ca12ef236367e78c0a96bc81747505eb92602081"
+    },
+    {
+      "path": "tokenizer.json",
+      "size": 17905589,
+      "sha256": "c4687c0046da6579aba6f9aa713e9bed61e5fd210b0e012028ae57751d028689"
+    },
+    {
+      "path": "tokenizer_config.json",
+      "size": 506,
+      "sha256": "880b960c1ea99a84bc16cb759e2e343ea8126f8e86ecb3bcb0a837b2aebb8c1d"
+    }
+  ]
+}

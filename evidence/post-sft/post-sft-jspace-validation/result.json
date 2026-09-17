@@ -1,0 +1,155 @@
+{
+  "groups": {
+    "clean": {
+      "n": 16,
+      "original_prefix": 8,
+      "counterfactual_prefix": 0,
+      "mean_counterfactual_log_odds": -9.423687210772187,
+      "mean_output_kl": 0.0
+    },
+    "swap_20": {
+      "n": 16,
+      "original_prefix": 9,
+      "counterfactual_prefix": 0,
+      "mean_counterfactual_log_odds": -6.9548977967351675,
+      "mean_output_kl": 0.10704232385614887
+    },
+    "swap_26": {
+      "n": 16,
+      "original_prefix": 5,
+      "counterfactual_prefix": 2,
+      "mean_counterfactual_log_odds": -1.3830527822719887,
+      "mean_output_kl": 2.9400622583925724
+    },
+    "swap_28": {
+      "n": 16,
+      "original_prefix": 4,
+      "counterfactual_prefix": 2,
+      "mean_counterfactual_log_odds": -1.2648264784074854,
+      "mean_output_kl": 3.4368458120152354
+    },
+    "swap_26_28": {
+      "n": 16,
+      "original_prefix": 9,
+      "counterfactual_prefix": 0,
+      "mean_counterfactual_log_odds": -8.61547783203423,
+      "mean_output_kl": 0.08640089380787686
+    },
+    "random_26_0": {
+      "n": 16,
+      "original_prefix": 10,
+      "counterfactual_prefix": 0,
+      "mean_counterfactual_log_odds": -9.375121415127069,
+      "mean_output_kl": 0.06889964308356866
+    },
+    "random_26_1": {
+      "n": 16,
+      "original_prefix": 10,
+      "counterfactual_prefix": 0,
+      "mean_counterfactual_log_odds": -9.237594558857381,
+      "mean_output_kl": 0.07300176762510091
+    },
+    "random_26_2": {
+      "n": 16,
+      "original_prefix": 9,
+      "counterfactual_prefix": 0,
+      "mean_counterfactual_log_odds": -9.048073447309434,
+      "mean_output_kl": 0.04427518672309816
+    },
+    "wrong_concept_26": {
+      "n": 16,
+      "original_prefix": 8,
+      "counterfactual_prefix": 0,
+      "mean_counterfactual_log_odds": -8.903283702209592,
+      "mean_output_kl": 0.5264858077280223
+    },
+    "position_control_26": {
+      "n": 16,
+      "original_prefix": 10,
+      "counterfactual_prefix": 0,
+      "mean_counterfactual_log_odds": -8.923156996257603,
+      "mean_output_kl": 0.04677424975670874
+    },
+    "ablate_26": {
+      "n": 16,
+      "original_prefix": 4,
+      "counterfactual_prefix": 0,
+      "mean_counterfactual_log_odds": -6.413029761984944,
+      "mean_output_kl": 2.661960461176932
+    },
+    "ablate_26_rescue_28": {
+      "n": 16,
+      "original_prefix": 10,
+      "counterfactual_prefix": 0,
+      "mean_counterfactual_log_odds": -9.666798574849963,
+      "mean_output_kl": 0.07696696522179991
+    },
+    "swap_26_clamp_28": {
+      "n": 16,
+      "original_prefix": 10,
+      "counterfactual_prefix": 0,
+      "mean_counterfactual_log_odds": -9.126859868876636,
+      "mean_output_kl": 0.08157175953965634
+    },
+    "answer_swap_20": {
+      "n": 16,
+      "original_prefix": 7,
+      "counterfactual_prefix": 1,
+      "mean_counterfactual_log_odds": -7.697989902459085,
+      "mean_output_kl": 0.2512956252321601
+    },
+    "answer_swap_26": {
+      "n": 16,
+      "original_prefix": 3,
+      "counterfactual_prefix": 6,
+      "mean_counterfactual_log_odds": 3.6414626360638067,
+      "mean_output_kl": 2.6001378123182803
+    }
+  },
+  "body_fixed": true,
+  "calibration": {
+    "checkpoint_id": "95c663dda67d4dbe8ec77a4681db3fc2",
+    "calibration_prompts": 12,
+    "calibration_tokens": [
+      128,
+      128,
+      128,
+      128,
+      128,
+      128,
+      128,
+      128,
+      128,
+      128,
+      128,
+      128
+    ],
+    "calibration_sha256": "bfb1414569467340db8b9a26ca3e6848d7fe0fba496642d20fbd44eb253f1aec",
+    "full_matrix": true,
+    "hidden_width": 2048,
+    "source_layers": [
+      4,
+      8,
+      14,
+      20,
+      26,
+      28
+    ],
+    "target_layer": 29,
+    "skip_first": 16,
+    "exclude_last": true,
+    "estimator": "sum over valid causal targets; mean over valid sources; mean over prompts",
+    "scope": "native frozen language stack; memory inactive; diagnostic only",
+    "calibration_scope": "six selected VisualWeb and six selected image-only Omnimodal texts",
+    "attention": "kernels-community/flash-attn2@f50dc99ed079b35990bc895d43fd353ea0cb376d",
+    "rest_ratio": 1.0
+  },
+  "global_workspace_established": false,
+  "missing_evidence": [
+    "small fixed concept set",
+    "lens has 12 calibration prompts",
+    "pair-orthogonal controls are not the full non-J-space remainder",
+    "no general workspace conclusion from this pilot alone"
+  ],
+  "peak_vram_gib": 6.878066539764404
+}

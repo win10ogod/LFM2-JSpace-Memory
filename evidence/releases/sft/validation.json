@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "stage": "sft",
+  "completed_steps": 464,
+  "functional_results_in_model_card": true,
+  "model": "<local-artifact>",
+  "checkpoint_id": "95c663dda67d4dbe8ec77a4681db3fc2"
+}

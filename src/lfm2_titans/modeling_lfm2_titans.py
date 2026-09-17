@@ -42,6 +42,7 @@ from .native_concepts import NativeConceptLens
 from .memory_integrity import _checksum
 from .concept_capture import install_concept_capture
 from .native_sft_memory import NativeSFTMemory,NativeMemoryCheckpoint
+from .memory_recall_training import split_episodes
 from .batched_memory import BatchedMemoryBlock
 from .sft_lora import load_custom_lora,save_custom_lora,checkpoint_weight_contexts
 
@@ -192,8 +193,7 @@ class Lfm2TitansForConditionalGeneration(Lfm2VlForConditionalGeneration):
             output=self(**dict(inputs,use_cache=False),physical_memory_state=state,memory_write=update_graph,
                 memory_create_graph=create_graph and update_graph,
                 dream_capture=capture_dream or self.config.latent_memory is not None,
-                memory_capture_keys=True,
-                memory_write_gradient_scope='local' if create_graph and update_graph else 'full')
+                memory_capture_keys=True)
             adapters,receipt=self._episodic_adapter_bank.commit(state.adapters,output.loss,
                 learning_rate=learning_rate,first_order_graph=create_graph)
         graph=output.memory_state if create_graph else output.memory_state.detach()

@@ -1,0 +1,183 @@
+{
+  "items": [
+    {
+      "id": "Kenya-report",
+      "task": "report",
+      "prompt": "The country home to Lake Turkana and the Maasai Mara is",
+      "original": "Kenya",
+      "target": "Norway",
+      "answer": "Kenya",
+      "counterfactual": "Norway"
+    },
+    {
+      "id": "Kenya-capital",
+      "task": "capital",
+      "prompt": "The capital city of the country home to Lake Turkana and the Maasai Mara is",
+      "original": "Kenya",
+      "target": "Norway",
+      "answer": "Nairobi",
+      "counterfactual": "Oslo"
+    },
+    {
+      "id": "Kenya-language",
+      "task": "language",
+      "prompt": "The main language spoken in the country home to Lake Turkana and the Maasai Mara is",
+      "original": "Kenya",
+      "target": "Norway",
+      "answer": "Swahili",
+      "counterfactual": "Norwegian"
+    },
+    {
+      "id": "Kenya-continent",
+      "task": "continent",
+      "prompt": "The continent containing the country home to Lake Turkana and the Maasai Mara is",
+      "original": "Kenya",
+      "target": "Norway",
+      "answer": "Africa",
+      "counterfactual": "Europe"
+    },
+    {
+      "id": "Norway-report",
+      "task": "report",
+      "prompt": "The country home to Bergen and the Lofoten islands is",
+      "original": "Norway",
+      "target": "Kenya",
+      "answer": "Norway",
+      "counterfactual": "Kenya"
+    },
+    {
+      "id": "Norway-capital",
+      "task": "capital",
+      "prompt": "The capital city of the country home to Bergen and the Lofoten islands is",
+      "original": "Norway",
+      "target": "Kenya",
+      "answer": "Oslo",
+      "counterfactual": "Nairobi"
+    },
+    {
+      "id": "Norway-language",
+      "task": "language",
+      "prompt": "The main language spoken in the country home to Bergen and the Lofoten islands is",
+      "original": "Norway",
+      "target": "Kenya",
+      "answer": "Norwegian",
+      "counterfactual": "Swahili"
+    },
+    {
+      "id": "Norway-continent",
+      "task": "continent",
+      "prompt": "The continent containing the country home to Bergen and the Lofoten islands is",
+      "original": "Norway",
+      "target": "Kenya",
+      "answer": "Europe",
+      "counterfactual": "Africa"
+    },
+    {
+      "id": "Canada-report",
+      "task": "report",
+      "prompt": "The country whose flag has a red maple leaf is",
+      "original": "Canada",
+      "target": "Vietnam",
+      "answer": "Canada",
+      "counterfactual": "Vietnam"
+    },
+    {
+      "id": "Canada-capital",
+      "task": "capital",
+      "prompt": "The capital city of the country whose flag has a red maple leaf is",
+      "original": "Canada",
+      "target": "Vietnam",
+      "answer": "Ottawa",
+      "counterfactual": "Hanoi"
+    },
+    {
+      "id": "Canada-language",
+      "task": "language",
+      "prompt": "The main language spoken in the country whose flag has a red maple leaf is",
+      "original": "Canada",
+      "target": "Vietnam",
+      "answer": "English",
+      "counterfactual": "Vietnamese"
+    },
+    {
+      "id": "Canada-continent",
+      "task": "continent",
+      "prompt": "The continent containing the country whose flag has a red maple leaf is",
+      "original": "Canada",
+      "target": "Vietnam",
+      "answer": "North America",
+      "counterfactual": "Asia"
+    },
+    {
+      "id": "Vietnam-report",
+      "task": "report",
+      "prompt": "The country home to Ha Long Bay is",
+      "original": "Vietnam",
+      "target": "Canada",
+      "answer": "Vietnam",
+      "counterfactual": "Canada"
+    },
+    {
+      "id": "Vietnam-capital",
+      "task": "capital",
+      "prompt": "The capital city of the country home to Ha Long Bay is",
+      "original": "Vietnam",
+      "target": "Canada",
+      "answer": "Hanoi",
+      "counterfactual": "Ottawa"
+    },
+    {
+      "id": "Vietnam-language",
+      "task": "language",
+      "prompt": "The main language spoken in the country home to Ha Long Bay is",
+      "original": "Vietnam",
+      "target": "Canada",
+      "answer": "Vietnamese",
+      "counterfactual": "English"
+    },
+    {
+      "id": "Vietnam-continent",
+      "task": "continent",
+      "prompt": "The continent containing the country home to Ha Long Bay is",
+      "original": "Vietnam",
+      "target": "Canada",
+      "answer": "Asia",
+      "counterfactual": "North America"
+    }
+  ],
+  "conditions": [
+    "clean",
+    "swap_20",
+    "swap_26",
+    "swap_28",
+    "swap_26_28",
+    "random_26_0",
+    "random_26_1",
+    "random_26_2",
+    "wrong_concept_26",
+    "position_control_26",
+    "ablate_26",
+    "ablate_26_rescue_28",
+    "swap_26_clamp_28",
+    "answer_swap_20",
+    "answer_swap_26"
+  ],
+  "seed": 19473,
+  "strength": 1.0,
+  "generation": {
+    "max_new_tokens": 12,
+    "do_sample": false
+  },
+  "primary": "counterfactual full-answer log odds and unforced completion prefix; all clean failures retained",
+  "evidence_scope": "functional pilot on merged LFM2.5-VL-3B derivative, not unmodified upstream weights",
+  "no_tuning_on_results": true,
+  "validation": true,
+  "window_selection": "layer 26 selected on disjoint France/Japan/Italy/China pilot",
+  "sparse_privilege_test_complete": false,
+  "limitations": [
+    "small fixed concept set",
+    "lens has 12 calibration prompts",
+    "pair-orthogonal controls are not the full non-J-space remainder",
+    "no general workspace conclusion from this pilot alone"
+  ]
+}

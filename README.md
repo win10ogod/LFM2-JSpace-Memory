@@ -21,7 +21,13 @@ A separate fresh-source memory pilot correctly routed 17/17 queries and recalled
 
 ## Model release status
 
-The new joint visual/memory SFT is a separate run. Training, LoRA merge, lens recalibration, and fresh-process checks are being completed locally. The project owner will choose the Hugging Face model name after training; automatic publication is on hold. Until a release receipt is committed here, the pre-SFT measurements above must not be attributed to that new checkpoint.
+- **sft:** [win10/Lfm2-MaleCNS-Titans-VL-3B-V2-SFT](https://huggingface.co/win10/Lfm2-MaleCNS-Titans-VL-3B-V2-SFT), verified commit `2ac76ca36c2ef8fff049be58eca7cae6439c4afe`.
+
+These are separate complete model repositories. Each receipt verifies every remote file against the local package using Windows-native tooling. A stage absent from this list is not yet published.
+
+[Post-SFT evidence](evidence/post-sft) belongs to checkpoint `95c663dda67d4dbe8ec77a4681db3fc2`; the 960 historical conditions above remain separate. Post-SFT functional studies include 688 conditions. Memory/generation results include failures and are not a claim of perfect recall.
+
+[HashHop training and evaluation protocol](HASHHOP.md) describes the subsequent memory-only continuation.
 
 ## Reproduce the functional tests
 

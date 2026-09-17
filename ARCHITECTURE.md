@@ -55,6 +55,8 @@ This is not a fixed-size lossless compressor. Incompressible observations can re
 
 At recall, the selected ordered features are decoded and passed through all native language layers, while the selected graph and FFN physical weights contribute to the forward computation. Native attention/convolution caches are rebuilt and remain ephemeral. Stored token IDs, source strings, pixel arrays, or KV caches are not the serialized representation of the ordered memory.
 
+The native query's leading BOS is placed before the recalled feature sequence. Every recalled feature and query token remains present. This avoids a second conversation-start marker after the memory prefix. The same framing helper is used by the production reader and the memory-dependent training objective.
+
 The current ordered reader accepts a fresh, unpadded, batch-one text query; stored observations may include images. Selected features plus query and generation budget must fit the backbone's native 32,768-position context. Exceeding this raises an explicit error. Unbounded disk growth does not imply unlimited simultaneous attention to every archived observation.
 
 ## 6. J-lens-derived addresses
@@ -64,6 +66,8 @@ For each calibrated layer, a complete 2,048 × 2,048 averaged Jacobian maps that
 The vocabulary output vectors, final normalization weights, and Jacobian define an overcomplete dictionary of directions. Positive matching pursuit followed by projected nonnegative least-squares refitting selects 16 coordinates per observed position. The stored representation includes vocabulary-coordinate indices, nonnegative coefficients, and residual energy. Vocabulary IDs identify numerical dictionary directions; decoding them to words is only a display operation. No hand-written concept list or generated JSON controls storage.
 
 All observed positions at each memory language depth are retained. Query and memory codes are compared using sparse late interaction on CPU or GPU. The present index performs an exact scan; there is no deployed million-unit ANN throughput claim or alternative pooled-key reader. Physical weight tensors load only after the query chooses candidate units.
+
+For text queries, the address encoder receives the complete question text, separately from the native chat serialization used for generation. Role and conversation control tokens do not contribute to the address. This separation does not require source IDs, manually supplied concept labels, or omission of any question text.
 
 Addresses include a checkpoint identity, lens hash, recorded time, optional event time, logical time, and causal parent hashes. A content-derived SHA-256 reference supports exact programmatic lookup. Agent ownership, permissions, and application goals remain caller concerns; the memory layer does not impose a hard-coded multi-agent policy.
 

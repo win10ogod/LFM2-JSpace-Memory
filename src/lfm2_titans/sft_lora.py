@@ -221,6 +221,18 @@ def load_custom_lora(model,directory,*,required=False,trainable=None):
             if saved[name].shape!=p.shape:raise ValueError(f'custom LoRA checkpoint shape differs: {name}')
             p.copy_(saved[name].to(p))
             if trainable is not None:p.requires_grad_(trainable)
+    if trainable:apply_training_scope(native)
+
+
+def apply_training_scope(native):
+    """Memory-only continuation leaves the inherited native weights frozen."""
+    scope=getattr(native.config,'native_memory_recall',None) or {}
+    selected=scope.get('train_scope','all')
+    if selected not in ('all','memory'):raise ValueError('Unknown memory training scope')
+    if selected=='memory':
+        native.model.requires_grad_(False)
+        native.lm_head.requires_grad_(False)
+    return selected
 
 
 def merge_sft_lora(model):

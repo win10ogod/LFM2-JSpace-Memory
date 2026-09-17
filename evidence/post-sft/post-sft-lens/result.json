@@ -1,0 +1,6224 @@
+{
+  "protocol": {
+    "checkpoint_id": "95c663dda67d4dbe8ec77a4681db3fc2",
+    "calibration_prompts": 12,
+    "calibration_tokens": [
+      128,
+      128,
+      128,
+      128,
+      128,
+      128,
+      128,
+      128,
+      128,
+      128,
+      128,
+      128
+    ],
+    "calibration_sha256": "bfb1414569467340db8b9a26ca3e6848d7fe0fba496642d20fbd44eb253f1aec",
+    "full_matrix": true,
+    "hidden_width": 2048,
+    "source_layers": [
+      4,
+      8,
+      14,
+      20,
+      26,
+      28
+    ],
+    "target_layer": 29,
+    "skip_first": 16,
+    "exclude_last": true,
+    "estimator": "sum over valid causal targets; mean over valid sources; mean over prompts",
+    "scope": "native frozen language stack; memory inactive; diagnostic only",
+    "calibration_scope": "six selected VisualWeb and six selected image-only Omnimodal texts",
+    "attention": "kernels-community/flash-attn2@f50dc99ed079b35990bc895d43fd353ea0cb376d",
+    "rest_ratio": 1.0
+  },
+  "convergence": [
+    {
+      "prompt": 0,
+      "tokens": 128,
+      "seconds": 29.064052344998345,
+      "mean_relative_change": {}
+    },
+    {
+      "prompt": 1,
+      "tokens": 128,
+      "seconds": 28.791690902988194,
+      "mean_relative_change": {
+        "4": 0.2403298318386078,
+        "8": 0.2269332855939865,
+        "14": 0.19354499876499176,
+        "20": 0.10481998324394226,
+        "26": 0.03288497030735016,
+        "28": 0.01582120545208454
+      }
+    },
+    {
+      "prompt": 2,
+      "tokens": 128,
+      "seconds": 28.29841324701556,
+      "mean_relative_change": {
+        "4": 0.22055186331272125,
+        "8": 0.18304435908794403,
+        "14": 0.132577046751976,
+        "20": 0.06822335720062256,
+        "26": 0.020590342581272125,
+        "28": 0.008513727225363255
+      }
+    },
+    {
+      "prompt": 3,
+      "tokens": 128,
+      "seconds": 28.91572436998831,
+      "mean_relative_change": {
+        "4": 0.16774268448352814,
+        "8": 0.15729841589927673,
+        "14": 0.10341699421405792,
+        "20": 0.056367598474025726,
+        "26": 0.016881925985217094,
+        "28": 0.007620914373546839
+      }
+    },
+    {
+      "prompt": 4,
+      "tokens": 128,
+      "seconds": 28.677400475979084,
+      "mean_relative_change": {
+        "4": 0.22734485566616058,
+        "8": 0.20329928398132324,
+        "14": 0.1577620804309845,
+        "20": 0.09316833317279816,
+        "26": 0.03106905333697796,
+        "28": 0.012318328954279423
+      }
+    },
+    {
+      "prompt": 5,
+      "tokens": 128,
+      "seconds": 27.648377717996482,
+      "mean_relative_change": {
+        "4": 0.1508215218782425,
+        "8": 0.14339204132556915,
+        "14": 0.11046930402517319,
+        "20": 0.06466595828533173,
+        "26": 0.02069295383989811,
+        "28": 0.008615350350737572
+      }
+    },
+    {
+      "prompt": 6,
+      "tokens": 128,
+      "seconds": 29.61610997200478,
+      "mean_relative_change": {
+        "4": 0.3181639313697815,
+        "8": 0.27350524067878723,
+        "14": 0.21196338534355164,
+        "20": 0.15755115449428558,
+        "26": 0.051586829125881195,
+        "28": 0.026047799736261368
+      }
+    },
+    {
+      "prompt": 7,
+      "tokens": 128,
+      "seconds": 29.463042850984493,
+      "mean_relative_change": {
+        "4": 0.266798198223114,
+        "8": 0.2216038554906845,
+        "14": 0.16869589686393738,
+        "20": 0.11943858861923218,
+        "26": 0.03752061724662781,
+        "28": 0.017835991457104683
+      }
+    },
+    {
+      "prompt": 8,
+      "tokens": 128,
+      "seconds": 27.314527189009823,
+      "mean_relative_change": {
+        "4": 0.2526572346687317,
+        "8": 0.20653945207595825,
+        "14": 0.14279639720916748,
+        "20": 0.0950867310166359,
+        "26": 0.028455214574933052,
+        "28": 0.014349277131259441
+      }
+    },
+    {
+      "prompt": 9,
+      "tokens": 128,
+      "seconds": 39.574105526000494,
+      "mean_relative_change": {
+        "4": 0.187265545129776,
+        "8": 0.16652414202690125,
+        "14": 0.12268790602684021,
+        "20": 0.0801335945725441,
+        "26": 0.023733295500278473,
+        "28": 0.011926096864044666
+      }
+    },
+    {
+      "prompt": 10,
+      "tokens": 128,
+      "seconds": 28.181543151004007,
+      "mean_relative_change": {
+        "4": 0.15812678635120392,
+        "8": 0.13827745616436005,
+        "14": 0.09598840028047562,
+        "20": 0.06563278287649155,
+        "26": 0.02247925102710724,
+        "28": 0.011696635745465755
+      }
+    },
+    {
+      "prompt": 11,
+      "tokens": 128,
+      "seconds": 27.138182707014494,
+      "mean_relative_change": {
+        "4": 0.13857129216194153,
+        "8": 0.11707773804664612,
+        "14": 0.08167050033807755,
+        "20": 0.05452292039990425,
+        "26": 0.017011331394314766,
+        "28": 0.00849793292582035
+      }
+    }
+  ],
+  "split_stability": {
+    "4": {
+      "split_cosine": 0.2576204538345337,
+      "split_relative_difference": 1.2541254758834839
+    },
+    "8": {
+      "split_cosine": 0.3373742997646332,
+      "split_relative_difference": 1.1742759943008423
+    },
+    "14": {
+      "split_cosine": 0.47931423783302307,
+      "split_relative_difference": 1.0406626462936401
+    },
+    "20": {
+      "split_cosine": 0.6673556566238403,
+      "split_relative_difference": 0.8317183256149292
+    },
+    "26": {
+      "split_cosine": 0.9551775455474854,
+      "split_relative_difference": 0.30145666003227234
+    },
+    "28": {
+      "split_cosine": 0.988954484462738,
+      "split_relative_difference": 0.1533903032541275
+    }
+  },
+  "probes": [
+    {
+      "prompt": "The capital of Japan is",
+      "tokens": [
+        "The",
+        " capital",
+        " of",
+        " Japan",
+        " is"
+      ],
+      "layers": [
+        {
+          "layer": 4,
+          "kind": "conv",
+          "cells": [
+            [
+              {
+                "token": "Theta",
+                "probability": 0.005575713701546192
+              },
+              {
+                "token": "θ",
+                "probability": 0.0011687329970300198
+              },
+              {
+                "token": "'])\n\n",
+                "probability": 0.0011327749816700816
+              },
+              {
+                "token": "仕様",
+                "probability": 0.0010641436092555523
+              },
+              {
+                "token": " symmet",
+                "probability": 0.0008550633792765439
+              }
+            ],
+            [
+              {
+                "token": " **",
+                "probability": 0.07002260535955429
+              },
+              {
+                "token": ".**",
+                "probability": 0.0310723427683115
+              },
+              {
+                "token": " capital",
+                "probability": 0.029189765453338623
+              },
+              {
+                "token": " Capital",
+                "probability": 0.021355686709284782
+              },
+              {
+                "token": "**",
+                "probability": 0.018846329301595688
+              }
+            ],
+            [
+              {
+                "token": ")’",
+                "probability": 0.0013085621176287532
+              },
+              {
+                "token": "ocracy",
+                "probability": 0.0011548020411282778
+              },
+              {
+                "token": "\r\n\r\n",
+                "probability": 0.0010191091569140553
+              },
+              {
+                "token": "ampionship",
+                "probability": 0.0008993607480078936
+              },
+              {
+                "token": "\n\n\n\n",
+                "probability": 0.0008993607480078936
+              }
+            ],
+            [
+              {
+                "token": " Japan",
+                "probability": 0.7626959681510925
+              },
+              {
+                "token": "Japan",
+                "probability": 0.09696590900421143
+              },
+              {
+                "token": "日本",
+                "probability": 0.05190211534500122
+              },
+              {
+                "token": " Japanese",
+                "probability": 0.020325159654021263
+              },
+              {
+                "token": "Japanese",
+                "probability": 0.010220132768154144
+              }
+            ],
+            [
+              {
+                "token": "DFS",
+                "probability": 0.002005305141210556
+              },
+              {
+                "token": "\r\n\r\n",
+                "probability": 0.0013782246969640255
+              },
+              {
+                "token": "aiser",
+                "probability": 0.0010403385385870934
+              },
+              {
+                "token": "ampionship",
+                "probability": 0.000761127972509712
+              },
+              {
+                "token": " Hemisphere",
+                "probability": 0.0006510272505693138
+              }
+            ]
+          ]
+        },
+        {
+          "layer": 8,
+          "kind": "conv",
+          "cells": [
+            [
+              {
+                "token": "Blocks",
+                "probability": 0.0037548127584159374
+              },
+              {
+                "token": " Therm",
+                "probability": 0.0020098064560443163
+              },
+              {
+                "token": " Theorem",
+                "probability": 0.0020098064560443163
+              },
+              {
+                "token": " Trees",
+                "probability": 0.0017736480804160237
+              },
+              {
+                "token": "Basic",
+                "probability": 0.0017736480804160237
+              }
+            ],
+            [
+              {
+                "token": " capital",
+                "probability": 0.21199758350849152
+              },
+              {
+                "token": " headquarters",
+                "probability": 0.06073832884430885
+              },
+              {
+                "token": " city",
+                "probability": 0.03921561315655708
+              },
+              {
+                "token": " Capital",
+                "probability": 0.025319501757621765
+              },
+              {
+                "token": " United",
+                "probability": 0.016347499564290047
+              }
+            ],
+            [
+              {
+                "token": " of",
+                "probability": 0.1627943068742752
+              },
+              {
+                "token": " city",
+                "probability": 0.06786275655031204
+              },
+              {
+                "token": " City",
+                "probability": 0.03632431849837303
+              },
+              {
+                "token": " the",
+                "probability": 0.0249653160572052
+              },
+              {
+                "token": " ",
+                "probability": 0.0182650126516819
+              }
+            ],
+            [
+              {
+                "token": " Japan",
+                "probability": 0.8440965414047241
+              },
+              {
+                "token": " Japanese",
+                "probability": 0.1466819792985916
+              },
+              {
+                "token": "Japan",
+                "probability": 0.0044294120743870735
+              },
+              {
+                "token": "日本",
+                "probability": 0.0020923062693327665
+              },
+              {
+                "token": "Japanese",
+                "probability": 0.001119930762797594
+              }
+            ],
+            [
+              {
+                "token": " $",
+                "probability": 0.007384191732853651
+              },
+              {
+                "token": " $.\n\n",
+                "probability": 0.006316034123301506
+              },
+              {
+                "token": " Isa",
+                "probability": 0.004207385238260031
+              },
+              {
+                "token": " $\\",
+                "probability": 0.0031759014818817377
+              },
+              {
+                "token": " $$",
+                "probability": 0.003078188979998231
+              }
+            ]
+          ]
+        },
+        {
+          "layer": 14,
+          "kind": "conv",
+          "cells": [
+            [
+              {
+                "token": " Theorem",
+                "probability": 0.0074038091115653515
+              },
+              {
+                "token": " Problem",
+                "probability": 0.005766092333942652
+              },
+              {
+                "token": " Trees",
+                "probability": 0.004218562971800566
+              },
+              {
+                "token": "Theorem",
+                "probability": 0.003722868859767914
+              },
+              {
+                "token": " theorem",
+                "probability": 0.003497311845421791
+              }
+            ],
+            [
+              {
+                "token": " city",
+                "probability": 0.052422117441892624
+              },
+              {
+                "token": " headquarters",
+                "probability": 0.04626235365867615
+              },
+              {
+                "token": " capital",
+                "probability": 0.04082638397812843
+              },
+              {
+                "token": " geographical",
+                "probability": 0.02185278944671154
+              },
+              {
+                "token": " government",
+                "probability": 0.020528795197606087
+              }
+            ],
+            [
+              {
+                "token": " city",
+                "probability": 0.04636180028319359
+              },
+              {
+                "token": " town",
+                "probability": 0.019326474517583847
+              },
+              {
+                "token": " South",
+                "probability": 0.015051472932100296
+              },
+              {
+                "token": " Republic",
+                "probability": 0.011722099035978317
+              },
+              {
+                "token": " colonial",
+                "probability": 0.01101189386099577
+              }
+            ],
+            [
+              {
+                "token": " Japan",
+                "probability": 0.8099877238273621
+              },
+              {
+                "token": " Japanese",
+                "probability": 0.18073269724845886
+              },
+              {
+                "token": "Japan",
+                "probability": 0.003750987583771348
+              },
+              {
+                "token": "日本",
+                "probability": 0.0015636441530659795
+              },
+              {
+                "token": " Tokyo",
+                "probability": 0.0007862496422603726
+              }
+            ],
+            [
+              {
+                "token": " city",
+                "probability": 0.04091942310333252
+              },
+              {
+                "token": " Beijing",
+                "probability": 0.009130357764661312
+              },
+              {
+                "token": " cities",
+                "probability": 0.009130357764661312
+              },
+              {
+                "token": " **",
+                "probability": 0.008577177301049232
+              },
+              {
+                "token": " town",
+                "probability": 0.007569332141429186
+              }
+            ]
+          ]
+        },
+        {
+          "layer": 20,
+          "kind": "conv",
+          "cells": [
+            [
+              {
+                "token": " Problem",
+                "probability": 0.008082308806478977
+              },
+              {
+                "token": " Definition",
+                "probability": 0.0033692074939608574
+              },
+              {
+                "token": " Formula",
+                "probability": 0.0023156204260885715
+              },
+              {
+                "token": " Triangle",
+                "probability": 0.0019197167130187154
+              },
+              {
+                "token": " Exercise",
+                "probability": 0.0019197167130187154
+              }
+            ],
+            [
+              {
+                "token": " city",
+                "probability": 0.4262842833995819
+              },
+              {
+                "token": " capital",
+                "probability": 0.06537281721830368
+              },
+              {
+                "token": " cities",
+                "probability": 0.06141207739710808
+              },
+              {
+                "token": " geographical",
+                "probability": 0.06141207739710808
+              },
+              {
+                "token": " political",
+                "probability": 0.019937582314014435
+              }
+            ],
+            [
+              {
+                "token": " city",
+                "probability": 0.1154308095574379
+              },
+              {
+                "token": " geographical",
+                "probability": 0.03307148069143295
+              },
+              {
+                "token": " South",
+                "probability": 0.027417222037911415
+              },
+              {
+                "token": " City",
+                "probability": 0.02005886472761631
+              },
+              {
+                "token": " town",
+                "probability": 0.013786244206130505
+              }
+            ],
+            [
+              {
+                "token": " Japan",
+                "probability": 0.7381309866905212
+              },
+              {
+                "token": " Japanese",
+                "probability": 0.23963604867458344
+              },
+              {
+                "token": "Japan",
+                "probability": 0.007236381992697716
+              },
+              {
+                "token": " Tokyo",
+                "probability": 0.004973487462848425
+              },
+              {
+                "token": "日本",
+                "probability": 0.001257494674064219
+              }
+            ],
+            [
+              {
+                "token": " **",
+                "probability": 0.14493052661418915
+              },
+              {
+                "token": " city",
+                "probability": 0.05008665472269058
+              },
+              {
+                "token": " City",
+                "probability": 0.032338373363018036
+              },
+              {
+                "token": " **$",
+                "probability": 0.020879223942756653
+              },
+              {
+                "token": " historically",
+                "probability": 0.01435006596148014
+              }
+            ]
+          ]
+        },
+        {
+          "layer": 26,
+          "kind": "conv",
+          "cells": [
+            [
+              {
+                "token": " formula",
+                "probability": 0.006360684987157583
+              },
+              {
+                "token": " equation",
+                "probability": 0.005975310690701008
+              },
+              {
+                "token": " problem",
+                "probability": 0.004953706171363592
+              },
+              {
+                "token": " function",
+                "probability": 0.003624208737164736
+              },
+              {
+                "token": " argument",
+                "probability": 0.003004574915394187
+              }
+            ],
+            [
+              {
+                "token": " city",
+                "probability": 0.7739108204841614
+              },
+              {
+                "token": " of",
+                "probability": 0.13448552787303925
+              },
+              {
+                "token": " cities",
+                "probability": 0.03619629144668579
+              },
+              {
+                "token": " is",
+                "probability": 0.014174670912325382
+              },
+              {
+                "token": " City",
+                "probability": 0.002463188488036394
+              }
+            ],
+            [
+              {
+                "token": " Indonesia",
+                "probability": 0.11961580067873001
+              },
+              {
+                "token": " Japan",
+                "probability": 0.06402572244405746
+              },
+              {
+                "token": " Thailand",
+                "probability": 0.04400419816374779
+              },
+              {
+                "token": " India",
+                "probability": 0.034270498901605606
+              },
+              {
+                "token": " Vietnam",
+                "probability": 0.03219415619969368
+              }
+            ],
+            [
+              {
+                "token": " is",
+                "probability": 0.9992889165878296
+              },
+              {
+                "token": " was",
+                "probability": 0.00023039591906126589
+              },
+              {
+                "token": " during",
+                "probability": 0.0002033236960414797
+              },
+              {
+                "token": " has",
+                "probability": 0.00015834864461794496
+              },
+              {
+                "token": " consists",
+                "probability": 1.567864092066884e-05
+              }
+            ],
+            [
+              {
+                "token": " Tokyo",
+                "probability": 0.9980644583702087
+              },
+              {
+                "token": " Japan",
+                "probability": 0.001700322492979467
+              },
+              {
+                "token": "Tok",
+                "probability": 6.592865247512236e-05
+              },
+              {
+                "token": " located",
+                "probability": 5.13452869199682e-05
+              },
+              {
+                "token": " Japanese",
+                "probability": 3.998774627689272e-05
+              }
+            ]
+          ]
+        },
+        {
+          "layer": 28,
+          "kind": "conv",
+          "cells": [
+            [
+              {
+                "token": " equation",
+                "probability": 0.0131249213591218
+              },
+              {
+                "token": " problem",
+                "probability": 0.008474086411297321
+              },
+              {
+                "token": " formula",
+                "probability": 0.0079606669023633
+              },
+              {
+                "token": " function",
+                "probability": 0.007478354498744011
+              },
+              {
+                "token": " solution",
+                "probability": 0.006199773866683245
+              }
+            ],
+            [
+              {
+                "token": " is",
+                "probability": 0.4579123854637146
+              },
+              {
+                "token": " of",
+                "probability": 0.4041062593460083
+              },
+              {
+                "token": " city",
+                "probability": 0.11577838659286499
+              },
+              {
+                "token": " has",
+                "probability": 0.0044892155565321445
+              },
+              {
+                "token": " was",
+                "probability": 0.0044892155565321445
+              }
+            ],
+            [
+              {
+                "token": " the",
+                "probability": 0.3892846703529358
+              },
+              {
+                "token": " South",
+                "probability": 0.056081775575876236
+              },
+              {
+                "token": " Indonesia",
+                "probability": 0.046493422240018845
+              },
+              {
+                "token": " India",
+                "probability": 0.04103029891848564
+              },
+              {
+                "token": " Japan",
+                "probability": 0.03195443004369736
+              }
+            ],
+            [
+              {
+                "token": " is",
+                "probability": 0.9994028806686401
+              },
+              {
+                "token": " has",
+                "probability": 0.0003352623025421053
+              },
+              {
+                "token": " was",
+                "probability": 0.0002033468772424385
+              },
+              {
+                "token": " during",
+                "probability": 1.0124043910764158e-05
+              },
+              {
+                "token": ",",
+                "probability": 7.4069093898287974e-06
+              }
+            ],
+            [
+              {
+                "token": " Tokyo",
+                "probability": 0.9696383476257324
+              },
+              {
+                "token": " **",
+                "probability": 0.015672743320465088
+              },
+              {
+                "token": " located",
+                "probability": 0.010771709494292736
+              },
+              {
+                "token": " known",
+                "probability": 0.0006468914216384292
+              },
+              {
+                "token": " Kyoto",
+                "probability": 0.0002870563475880772
+              }
+            ]
+          ]
+        }
+      ],
+      "metrics": [
+        {
+          "layer": 4,
+          "jacobian_next_token_nll": 15.335006713867188,
+          "identity_lens_next_token_nll": 15.997286796569824,
+          "native_next_token_nll": 3.290088176727295,
+          "top1_agreement": 0.0
+        },
+        {
+          "layer": 8,
+          "jacobian_next_token_nll": 11.917858123779297,
+          "identity_lens_next_token_nll": 11.256307601928711,
+          "native_next_token_nll": 3.290088176727295,
+          "top1_agreement": 0.0
+        },
+        {
+          "layer": 14,
+          "jacobian_next_token_nll": 12.350456237792969,
+          "identity_lens_next_token_nll": 11.8894681930542,
+          "native_next_token_nll": 3.290088176727295,
+          "top1_agreement": 0.0
+        },
+        {
+          "layer": 20,
+          "jacobian_next_token_nll": 9.131017684936523,
+          "identity_lens_next_token_nll": 10.02573013305664,
+          "native_next_token_nll": 3.290088176727295,
+          "top1_agreement": 0.0
+        },
+        {
+          "layer": 26,
+          "jacobian_next_token_nll": 3.281399726867676,
+          "identity_lens_next_token_nll": 5.725377082824707,
+          "native_next_token_nll": 3.290088176727295,
+          "top1_agreement": 0.4000000059604645
+        },
+        {
+          "layer": 28,
+          "jacobian_next_token_nll": 2.998965263366699,
+          "identity_lens_next_token_nll": 4.100865840911865,
+          "native_next_token_nll": 3.290088176727295,
+          "top1_agreement": 0.6000000238418579
+        }
+      ],
+      "native": [
+        [
+          {
+            "token": " problem",
+            "probability": 0.013319756835699081
+          },
+          {
+            "token": " equation",
+            "probability": 0.013319756835699081
+          },
+          {
+            "token": " ",
+            "probability": 0.011754644103348255
+          },
+          {
+            "token": " function",
+            "probability": 0.011042466387152672
+          },
+          {
+            "token": " formula",
+            "probability": 0.010373436845839024
+          }
+        ],
+        [
+          {
+            "token": " of",
+            "probability": 0.5503830909729004
+          },
+          {
+            "token": " city",
+            "probability": 0.2294338047504425
+          },
+          {
+            "token": " is",
+            "probability": 0.10837685316801071
+          },
+          {
+            "token": ",",
+            "probability": 0.022717025130987167
+          },
+          {
+            "token": " moves",
+            "probability": 0.012943770736455917
+          }
+        ],
+        [
+          {
+            "token": " the",
+            "probability": 0.2503201961517334
+          },
+          {
+            "token": " Indonesia",
+            "probability": 0.03606204316020012
+          },
+          {
+            "token": " a",
+            "probability": 0.03387715294957161
+          },
+          {
+            "token": " South",
+            "probability": 0.0205475315451622
+          },
+          {
+            "token": " New",
+            "probability": 0.016002433374524117
+          }
+        ],
+        [
+          {
+            "token": " is",
+            "probability": 0.896111011505127
+          },
+          {
+            "token": ",",
+            "probability": 0.04461473971605301
+          },
+          {
+            "token": " has",
+            "probability": 0.010596929118037224
+          },
+          {
+            "token": " during",
+            "probability": 0.00878516398370266
+          },
+          {
+            "token": " was",
+            "probability": 0.006841891445219517
+          }
+        ],
+        [
+          {
+            "token": " Tokyo",
+            "probability": 0.8934024572372437
+          },
+          {
+            "token": " **",
+            "probability": 0.039253365248441696
+          },
+          {
+            "token": " located",
+            "probability": 0.02534387819468975
+          },
+          {
+            "token": " a",
+            "probability": 0.009323491714894772
+          },
+          {
+            "token": " known",
+            "probability": 0.006019698455929756
+          }
+        ]
+      ]
+    },
+    {
+      "prompt": "An observation can change a memory without changing the whole model.",
+      "tokens": [
+        "An",
+        " observation",
+        " can",
+        " change",
+        " a",
+        " memory",
+        " without",
+        " changing",
+        " the",
+        " whole",
+        " model",
+        "."
+      ],
+      "layers": [
+        {
+          "layer": 4,
+          "kind": "conv",
+          "cells": [
+            [
+              {
+                "token": " Nan",
+                "probability": 0.002097030635923147
+              },
+              {
+                "token": " nan",
+                "probability": 0.0016331690130755305
+              },
+              {
+                "token": "SN",
+                "probability": 0.0014870172599330544
+              },
+              {
+                "token": "ANC",
+                "probability": 0.0014870172599330544
+              },
+              {
+                "token": "anth",
+                "probability": 0.0011580901918932796
+              }
+            ],
+            [
+              {
+                "token": " observational",
+                "probability": 0.05305500701069832
+              },
+              {
+                "token": " observation",
+                "probability": 0.0283983014523983
+              },
+              {
+                "token": " surveillance",
+                "probability": 0.020776638761162758
+              },
+              {
+                "token": " oscillation",
+                "probability": 0.016180861741304398
+              },
+              {
+                "token": " monitoring",
+                "probability": 0.016180861741304398
+              }
+            ],
+            [
+              {
+                "token": ".slice",
+                "probability": 0.0009444389143027365
+              },
+              {
+                "token": "peut",
+                "probability": 0.0008599214488640428
+              },
+              {
+                "token": "�",
+                "probability": 0.0008334644371643662
+              },
+              {
+                "token": "�",
+                "probability": 0.0008334644371643662
+              },
+              {
+                "token": "泄",
+                "probability": 0.0006697074277326465
+              }
+            ],
+            [
+              {
+                "token": " altering",
+                "probability": 0.006982454098761082
+              },
+              {
+                "token": " ‘",
+                "probability": 0.006357596721500158
+              },
+              {
+                "token": " change",
+                "probability": 0.006161993835121393
+              },
+              {
+                "token": " switching",
+                "probability": 0.004951301030814648
+              },
+              {
+                "token": "onChange",
+                "probability": 0.004235072527080774
+              }
+            ],
+            [
+              {
+                "token": "uma",
+                "probability": 0.002499824622645974
+              },
+              {
+                "token": "夹",
+                "probability": 0.002072427421808243
+              },
+              {
+                "token": " chance",
+                "probability": 0.0018869665218517184
+              },
+              {
+                "token": " charge",
+                "probability": 0.0017181026050820947
+              },
+              {
+                "token": "iva",
+                "probability": 0.0016652422491461039
+              }
+            ],
+            [
+              {
+                "token": " memory",
+                "probability": 0.12900099158287048
+              },
+              {
+                "token": " Memory",
+                "probability": 0.03695940598845482
+              },
+              {
+                "token": "Memory",
+                "probability": 0.03261655941605568
+              },
+              {
+                "token": "_memory",
+                "probability": 0.013596604578197002
+              },
+              {
+                "token": " microscopy",
+                "probability": 0.011998960748314857
+              }
+            ],
+            [
+              {
+                "token": " viole",
+                "probability": 0.003489765804260969
+              },
+              {
+                "token": " violating",
+                "probability": 0.002253162208944559
+              },
+              {
+                "token": " infinitesimal",
+                "probability": 0.002051527379080653
+              },
+              {
+                "token": ".flush",
+                "probability": 0.0019272315548732877
+              },
+              {
+                "token": "acent",
+                "probability": 0.001867937040515244
+              }
+            ],
+            [
+              {
+                "token": " unchanged",
+                "probability": 0.02338276617228985
+              },
+              {
+                "token": " switching",
+                "probability": 0.008080868050456047
+              },
+              {
+                "token": " changes",
+                "probability": 0.0071313404478132725
+              },
+              {
+                "token": "onChange",
+                "probability": 0.006699274759739637
+              },
+              {
+                "token": " changing",
+                "probability": 0.005217400379478931
+              }
+            ],
+            [
+              {
+                "token": " |\n\n",
+                "probability": 0.008398308418691158
+              },
+              {
+                "token": ".”\n\n",
+                "probability": 0.007889481261372566
+              },
+              {
+                "token": " difference",
+                "probability": 0.006144333630800247
+              },
+              {
+                "token": " $\n\n",
+                "probability": 0.005422355607151985
+              },
+              {
+                "token": " statement",
+                "probability": 0.004785211756825447
+              }
+            ],
+            [
+              {
+                "token": " neighbourhood",
+                "probability": 0.03766601160168648
+              },
+              {
+                "token": "Behaviour",
+                "probability": 0.014750221744179726
+              },
+              {
+                "token": " ‘",
+                "probability": 0.012616533786058426
+              },
+              {
+                "token": " centre",
+                "probability": 0.010791493579745293
+              },
+              {
+                "token": " organise",
+                "probability": 0.008671208284795284
+              }
+            ],
+            [
+              {
+                "token": " model",
+                "probability": 0.1815878301858902
+              },
+              {
+                "token": " vector",
+                "probability": 0.043130889534950256
+              },
+              {
+                "token": " modeling",
+                "probability": 0.03155523166060448
+              },
+              {
+                "token": " Model",
+                "probability": 0.019139215350151062
+              },
+              {
+                "token": " MODEL",
+                "probability": 0.015866966918110847
+              }
+            ],
+            [
+              {
+                "token": "uty",
+                "probability": 0.002059338381513953
+              },
+              {
+                "token": " toc",
+                "probability": 0.001707251532934606
+              },
+              {
+                "token": "PROC",
+                "probability": 0.0016038143076002598
+              },
+              {
+                "token": "。”",
+                "probability": 0.001210622489452362
+              },
+              {
+                "token": " darf",
+                "probability": 0.0011372745502740145
+              }
+            ]
+          ]
+        },
+        {
+          "layer": 8,
+          "kind": "conv",
+          "cells": [
+            [
+              {
+                "token": " Nan",
+                "probability": 0.005790624767541885
+              },
+              {
+                "token": "gan",
+                "probability": 0.0048005967400968075
+              },
+              {
+                "token": "CN",
+                "probability": 0.004509743303060532
+              },
+              {
+                "token": "BN",
+                "probability": 0.0037387085612863302
+              },
+              {
+                "token": "arn",
+                "probability": 0.003299398347735405
+              }
+            ],
+            [
+              {
+                "token": " observation",
+                "probability": 0.4285833239555359
+              },
+              {
+                "token": " observational",
+                "probability": 0.13071051239967346
+              },
+              {
+                "token": " observations",
+                "probability": 0.07447660714387894
+              },
+              {
+                "token": " Observatory",
+                "probability": 0.031046472489833832
+              },
+              {
+                "token": " observer",
+                "probability": 0.02739841304719448
+              }
+            ],
+            [
+              {
+                "token": " basically",
+                "probability": 0.14972937107086182
+              },
+              {
+                "token": " can",
+                "probability": 0.06241649016737938
+              },
+              {
+                "token": " learnt",
+                "probability": 0.04029911383986473
+              },
+              {
+                "token": " usually",
+                "probability": 0.03340914100408554
+              },
+              {
+                "token": " hence",
+                "probability": 0.022961745038628578
+              }
+            ],
+            [
+              {
+                "token": " change",
+                "probability": 0.2743726968765259
+              },
+              {
+                "token": " changes",
+                "probability": 0.08367893844842911
+              },
+              {
+                "token": " shift",
+                "probability": 0.014541219919919968
+              },
+              {
+                "token": " happening",
+                "probability": 0.012832581996917725
+              },
+              {
+                "token": " changing",
+                "probability": 0.011324713937938213
+              }
+            ],
+            [
+              {
+                "token": " Change",
+                "probability": 0.006584802642464638
+              },
+              {
+                "token": "Change",
+                "probability": 0.004817544482648373
+              },
+              {
+                "token": " change",
+                "probability": 0.0032091764733195305
+              },
+              {
+                "token": " buy",
+                "probability": 0.0024993091356009245
+              },
+              {
+                "token": " Algebra",
+                "probability": 0.0024224137887358665
+              }
+            ],
+            [
+              {
+                "token": " memory",
+                "probability": 0.685479998588562
+              },
+              {
+                "token": " Memory",
+                "probability": 0.18449443578720093
+              },
+              {
+                "token": "Memory",
+                "probability": 0.02345583401620388
+              },
+              {
+                "token": " memories",
+                "probability": 0.018267422914505005
+              },
+              {
+                "token": "memory",
+                "probability": 0.00761499535292387
+              }
+            ],
+            [
+              {
+                "token": "without",
+                "probability": 0.03912010043859482
+              },
+              {
+                "token": "Without",
+                "probability": 0.0345233678817749
+              },
+              {
+                "token": " without",
+                "probability": 0.012309685349464417
+              },
+              {
+                "token": " Without",
+                "probability": 0.005999261979013681
+              },
+              {
+                "token": "468",
+                "probability": 0.0052943299524486065
+              }
+            ],
+            [
+              {
+                "token": " unchanged",
+                "probability": 0.024039579555392265
+              },
+              {
+                "token": " Change",
+                "probability": 0.015521119348704815
+              },
+              {
+                "token": " change",
+                "probability": 0.010667499154806137
+              },
+              {
+                "token": " Changes",
+                "probability": 0.009414034895598888
+              },
+              {
+                "token": " changed",
+                "probability": 0.009414034895598888
+              }
+            ],
+            [
+              {
+                "token": " .\n\n",
+                "probability": 0.03272365406155586
+              },
+              {
+                "token": "”\n\n",
+                "probability": 0.02394113689661026
+              },
+              {
+                "token": " )\n\n",
+                "probability": 0.01751571148633957
+              },
+              {
+                "token": "\n\n",
+                "probability": 0.01751571148633957
+              },
+              {
+                "token": " difference",
+                "probability": 0.008807452395558357
+              }
+            ],
+            [
+              {
+                "token": " whole",
+                "probability": 0.05895709618926048
+              },
+              {
+                "token": " huge",
+                "probability": 0.02308792993426323
+              },
+              {
+                "token": " Whole",
+                "probability": 0.008493575267493725
+              },
+              {
+                "token": " hyperbola",
+                "probability": 0.007495553232729435
+              },
+              {
+                "token": " biggest",
+                "probability": 0.007041421253234148
+              }
+            ],
+            [
+              {
+                "token": " model",
+                "probability": 0.3255756199359894
+              },
+              {
+                "token": " Model",
+                "probability": 0.06824435293674469
+              },
+              {
+                "token": " ML",
+                "probability": 0.017254875972867012
+              },
+              {
+                "token": "Model",
+                "probability": 0.014304794371128082
+              },
+              {
+                "token": " models",
+                "probability": 0.014304794371128082
+              }
+            ],
+            [
+              {
+                "token": ".”\n\n",
+                "probability": 0.018420429900288582
+              },
+              {
+                "token": "。\n\n",
+                "probability": 0.008701195009052753
+              },
+              {
+                "token": ".)\n\n",
+                "probability": 0.006776497699320316
+              },
+              {
+                "token": " \\]\n\n",
+                "probability": 0.005980237852782011
+              },
+              {
+                "token": ".$$",
+                "probability": 0.005277541466057301
+              }
+            ]
+          ]
+        },
+        {
+          "layer": 14,
+          "kind": "conv",
+          "cells": [
+            [
+              {
+                "token": " Sap",
+                "probability": 0.006540837697684765
+              },
+              {
+                "token": " lan",
+                "probability": 0.004223082214593887
+              },
+              {
+                "token": " Lan",
+                "probability": 0.0030896728858351707
+              },
+              {
+                "token": "parallel",
+                "probability": 0.0029024791438132524
+              },
+              {
+                "token": "alan",
+                "probability": 0.002726626582443714
+              }
+            ],
+            [
+              {
+                "token": " observation",
+                "probability": 0.47515806555747986
+              },
+              {
+                "token": " observational",
+                "probability": 0.10602210462093353
+              },
+              {
+                "token": " observations",
+                "probability": 0.08257008343935013
+              },
+              {
+                "token": " observer",
+                "probability": 0.023656727746129036
+              },
+              {
+                "token": " observed",
+                "probability": 0.022223440930247307
+              }
+            ],
+            [
+              {
+                "token": " sometimes",
+                "probability": 0.018752895295619965
+              },
+              {
+                "token": " definitions",
+                "probability": 0.01554669626057148
+              },
+              {
+                "token": " definition",
+                "probability": 0.01068507693707943
+              },
+              {
+                "token": " usually",
+                "probability": 0.01068507693707943
+              },
+              {
+                "token": " normally",
+                "probability": 0.010037701576948166
+              }
+            ],
+            [
+              {
+                "token": " change",
+                "probability": 0.6258276104927063
+              },
+              {
+                "token": " changes",
+                "probability": 0.14864709973335266
+              },
+              {
+                "token": " changing",
+                "probability": 0.025830993428826332
+              },
+              {
+                "token": " shift",
+                "probability": 0.011462433263659477
+              },
+              {
+                "token": " movement",
+                "probability": 0.0074007026851177216
+              }
+            ],
+            [
+              {
+                "token": " change",
+                "probability": 0.08530470728874207
+              },
+              {
+                "token": " changes",
+                "probability": 0.013925610110163689
+              },
+              {
+                "token": " action",
+                "probability": 0.01228930801153183
+              },
+              {
+                "token": " equation",
+                "probability": 0.008446309715509415
+              },
+              {
+                "token": " rule",
+                "probability": 0.008446309715509415
+              }
+            ],
+            [
+              {
+                "token": " memory",
+                "probability": 0.9430914521217346
+              },
+              {
+                "token": " Memory",
+                "probability": 0.036567624658346176
+              },
+              {
+                "token": " memories",
+                "probability": 0.003620685311034322
+              },
+              {
+                "token": "Memory",
+                "probability": 0.0031952434219419956
+              },
+              {
+                "token": " memor",
+                "probability": 0.002819792367517948
+              }
+            ],
+            [
+              {
+                "token": " without",
+                "probability": 0.09496056288480759
+              },
+              {
+                "token": " absence",
+                "probability": 0.030829180032014847
+              },
+              {
+                "token": " lack",
+                "probability": 0.017565937712788582
+              },
+              {
+                "token": "Without",
+                "probability": 0.009402369149029255
+              },
+              {
+                "token": "without",
+                "probability": 0.008297561667859554
+              }
+            ],
+            [
+              {
+                "token": " unchanged",
+                "probability": 0.10973422974348068
+              },
+              {
+                "token": " change",
+                "probability": 0.05517783761024475
+              },
+              {
+                "token": " changes",
+                "probability": 0.019068948924541473
+              },
+              {
+                "token": " changing",
+                "probability": 0.01682829111814499
+              },
+              {
+                "token": " Change",
+                "probability": 0.013951141387224197
+              }
+            ],
+            [
+              {
+                "token": " change",
+                "probability": 0.03962991386651993
+              },
+              {
+                "token": " definition",
+                "probability": 0.009412930347025394
+              },
+              {
+                "token": " motion",
+                "probability": 0.006886646151542664
+              },
+              {
+                "token": " variable",
+                "probability": 0.006469405721873045
+              },
+              {
+                "token": " changes",
+                "probability": 0.006469405721873045
+              }
+            ],
+            [
+              {
+                "token": " whole",
+                "probability": 0.07406081259250641
+              },
+              {
+                "token": " neighbourhood",
+                "probability": 0.02121877856552601
+              },
+              {
+                "token": " loop",
+                "probability": 0.013699873350560665
+              },
+              {
+                "token": " entire",
+                "probability": 0.007805951870977879
+              },
+              {
+                "token": " blob",
+                "probability": 0.007333013694733381
+              }
+            ],
+            [
+              {
+                "token": " model",
+                "probability": 0.44034531712532043
+              },
+              {
+                "token": " Model",
+                "probability": 0.04940536990761757
+              },
+              {
+                "token": " simulation",
+                "probability": 0.033955782651901245
+              },
+              {
+                "token": " algorithm",
+                "probability": 0.02815033309161663
+              },
+              {
+                "token": " models",
+                "probability": 0.021923501044511795
+              }
+            ],
+            [
+              {
+                "token": " conceptual",
+                "probability": 0.009550378657877445
+              },
+              {
+                "token": " concept",
+                "probability": 0.008428179658949375
+              },
+              {
+                "token": " implication",
+                "probability": 0.007917542941868305
+              },
+              {
+                "token": " intuition",
+                "probability": 0.006987206172198057
+              },
+              {
+                "token": " analogy",
+                "probability": 0.005792597774416208
+              }
+            ]
+          ]
+        },
+        {
+          "layer": 20,
+          "kind": "conv",
+          "cells": [
+            [
+              {
+                "token": " Function",
+                "probability": 0.005324963014572859
+              },
+              {
+                "token": " Example",
+                "probability": 0.004414549563080072
+              },
+              {
+                "token": "Example",
+                "probability": 0.00365978991612792
+              },
+              {
+                "token": " Problem",
+                "probability": 0.0026775593869388103
+              },
+              {
+                "token": " Oil",
+                "probability": 0.002515334403142333
+              }
+            ],
+            [
+              {
+                "token": " observation",
+                "probability": 0.741770327091217
+              },
+              {
+                "token": " observations",
+                "probability": 0.08859183639287949
+              },
+              {
+                "token": " observed",
+                "probability": 0.02876155637204647
+              },
+              {
+                "token": " observational",
+                "probability": 0.022399524226784706
+              },
+              {
+                "token": " observing",
+                "probability": 0.018569858744740486
+              }
+            ],
+            [
+              {
+                "token": " either",
+                "probability": 0.2788502275943756
+              },
+              {
+                "token": " sometimes",
+                "probability": 0.19165077805519104
+              },
+              {
+                "token": " only",
+                "probability": 0.0850445106625557
+              },
+              {
+                "token": " can",
+                "probability": 0.06221989914774895
+              },
+              {
+                "token": " if",
+                "probability": 0.04845689982175827
+              }
+            ],
+            [
+              {
+                "token": " change",
+                "probability": 0.5829015970230103
+              },
+              {
+                "token": " changes",
+                "probability": 0.16700410842895508
+              },
+              {
+                "token": " changing",
+                "probability": 0.11478012055158615
+              },
+              {
+                "token": " when",
+                "probability": 0.016535645350813866
+              },
+              {
+                "token": " Change",
+                "probability": 0.012877973727881908
+              }
+            ],
+            [
+              {
+                "token": " change",
+                "probability": 0.36378610134124756
+              },
+              {
+                "token": " Change",
+                "probability": 0.08640678226947784
+              },
+              {
+                "token": " new",
+                "probability": 0.029861383140087128
+              },
+              {
+                "token": " changes",
+                "probability": 0.02475595474243164
+              },
+              {
+                "token": "Change",
+                "probability": 0.014105518348515034
+              }
+            ],
+            [
+              {
+                "token": " memory",
+                "probability": 0.8239025473594666
+              },
+              {
+                "token": " memories",
+                "probability": 0.02487970143556595
+              },
+              {
+                "token": " Memory",
+                "probability": 0.020625997334718704
+              },
+              {
+                "token": " recol",
+                "probability": 0.00859819445759058
+              },
+              {
+                "token": " memor",
+                "probability": 0.008077256381511688
+              }
+            ],
+            [
+              {
+                "token": " if",
+                "probability": 0.282929390668869
+              },
+              {
+                "token": "—if",
+                "probability": 0.282929390668869
+              },
+              {
+                "token": " even",
+                "probability": 0.0523366779088974
+              },
+              {
+                "token": " unless",
+                "probability": 0.03597043454647064
+              },
+              {
+                "token": " without",
+                "probability": 0.023224258795380592
+              }
+            ],
+            [
+              {
+                "token": " change",
+                "probability": 0.3168104290962219
+              },
+              {
+                "token": " changing",
+                "probability": 0.11654805392026901
+              },
+              {
+                "token": " Change",
+                "probability": 0.08526837080717087
+              },
+              {
+                "token": " changes",
+                "probability": 0.06640707701444626
+              },
+              {
+                "token": " changed",
+                "probability": 0.03783760964870453
+              }
+            ],
+            [
+              {
+                "token": " actual",
+                "probability": 0.3868641257286072
+              },
+              {
+                "token": " original",
+                "probability": 0.13369667530059814
+              },
+              {
+                "token": " value",
+                "probability": 0.049184251576662064
+              },
+              {
+                "token": " physical",
+                "probability": 0.01926083117723465
+              },
+              {
+                "token": " underlying",
+                "probability": 0.01596779003739357
+              }
+            ],
+            [
+              {
+                "token": " whole",
+                "probability": 0.44065073132514954
+              },
+              {
+                "token": " entire",
+                "probability": 0.18369054794311523
+              },
+              {
+                "token": " everything",
+                "probability": 0.08676926791667938
+              },
+              {
+                "token": " Whole",
+                "probability": 0.04098689928650856
+              },
+              {
+                "token": " complete",
+                "probability": 0.010363112203776836
+              }
+            ],
+            [
+              {
+                "token": " model",
+                "probability": 0.2187419831752777
+              },
+              {
+                "token": " mathematical",
+                "probability": 0.045850809663534164
+              },
+              {
+                "token": " models",
+                "probability": 0.0296035073697567
+              },
+              {
+                "token": " mathematically",
+                "probability": 0.02780991978943348
+              },
+              {
+                "token": " simulation",
+                "probability": 0.019113460555672646
+              }
+            ],
+            [
+              {
+                "token": " Example",
+                "probability": 0.22439920902252197
+              },
+              {
+                "token": " example",
+                "probability": 0.06843788921833038
+              },
+              {
+                "token": " If",
+                "probability": 0.05673700571060181
+              },
+              {
+                "token": " Examples",
+                "probability": 0.041509680449962616
+              },
+              {
+                "token": "Example",
+                "probability": 0.026800664141774178
+              }
+            ]
+          ]
+        },
+        {
+          "layer": 26,
+          "kind": "conv",
+          "cells": [
+            [
+              {
+                "token": " student",
+                "probability": 0.01699090003967285
+              },
+              {
+                "token": " electrical",
+                "probability": 0.01699090003967285
+              },
+              {
+                "token": " electric",
+                "probability": 0.011677663773298264
+              },
+              {
+                "token": " function",
+                "probability": 0.011677663773298264
+              },
+              {
+                "token": " algebraic",
+                "probability": 0.007539666257798672
+              }
+            ],
+            [
+              {
+                "token": " made",
+                "probability": 0.6970362663269043
+              },
+              {
+                "token": " is",
+                "probability": 0.13725458085536957
+              },
+              {
+                "token": " makes",
+                "probability": 0.06090635061264038
+              },
+              {
+                "token": " record",
+                "probability": 0.008242778480052948
+              },
+              {
+                "token": " taken",
+                "probability": 0.0068335034884512424
+              }
+            ],
+            [
+              {
+                "token": " occur",
+                "probability": 0.3235713541507721
+              },
+              {
+                "token": " be",
+                "probability": 0.3235713541507721
+              },
+              {
+                "token": " observe",
+                "probability": 0.19625595211982727
+              },
+              {
+                "token": " involve",
+                "probability": 0.014216733165085316
+              },
+              {
+                "token": " observation",
+                "probability": 0.011786085553467274
+              }
+            ],
+            [
+              {
+                "token": " depending",
+                "probability": 0.4512622654438019
+              },
+              {
+                "token": " how",
+                "probability": 0.08885879814624786
+              },
+              {
+                "token": " if",
+                "probability": 0.07841761410236359
+              },
+              {
+                "token": " our",
+                "probability": 0.06920330971479416
+              },
+              {
+                "token": " due",
+                "probability": 0.06107170507311821
+              }
+            ],
+            [
+              {
+                "token": " observation",
+                "probability": 0.4096609652042389
+              },
+              {
+                "token": " belief",
+                "probability": 0.4096609652042389
+              },
+              {
+                "token": " prediction",
+                "probability": 0.048927027732133865
+              },
+              {
+                "token": " hypothesis",
+                "probability": 0.038104403764009476
+              },
+              {
+                "token": " observer",
+                "probability": 0.01799924671649933
+              }
+            ],
+            [
+              {
+                "token": " if",
+                "probability": 0.9441524744033813
+              },
+              {
+                "token": " because",
+                "probability": 0.017292756587266922
+              },
+              {
+                "token": " depending",
+                "probability": 0.011165042407810688
+              },
+              {
+                "token": " only",
+                "probability": 0.0031988383270800114
+              },
+              {
+                "token": " unless",
+                "probability": 0.0024912578519433737
+              }
+            ],
+            [
+              {
+                "token": " changing",
+                "probability": 0.8758569955825806
+              },
+              {
+                "token": " altering",
+                "probability": 0.09231464564800262
+              },
+              {
+                "token": " change",
+                "probability": 0.01604188047349453
+              },
+              {
+                "token": " necessarily",
+                "probability": 0.003158833598718047
+              },
+              {
+                "token": " requiring",
+                "probability": 0.002787661040201783
+              }
+            ],
+            [
+              {
+                "token": " anything",
+                "probability": 0.942084014415741
+              },
+              {
+                "token": " any",
+                "probability": 0.04690359905362129
+              },
+              {
+                "token": " the",
+                "probability": 0.0049436031840741634
+              },
+              {
+                "token": " what",
+                "probability": 0.0016049530822783709
+              },
+              {
+                "token": " memory",
+                "probability": 0.0008590694051235914
+              }
+            ],
+            [
+              {
+                "token": " underlying",
+                "probability": 0.8090479373931885
+              },
+              {
+                "token": " memory",
+                "probability": 0.10949273407459259
+              },
+              {
+                "token": " observation",
+                "probability": 0.04028012603521347
+              },
+              {
+                "token": " actual",
+                "probability": 0.01902698539197445
+              },
+              {
+                "token": " original",
+                "probability": 0.0042454940266907215
+              }
+            ],
+            [
+              {
+                "token": " memory",
+                "probability": 0.5993058085441589
+              },
+              {
+                "token": " observation",
+                "probability": 0.3207852840423584
+              },
+              {
+                "token": " experience",
+                "probability": 0.015970958396792412
+              },
+              {
+                "token": " story",
+                "probability": 0.008548637852072716
+              },
+              {
+                "token": " brain",
+                "probability": 0.006657686550170183
+              }
+            ],
+            [
+              {
+                "token": " if",
+                "probability": 0.6618443131446838
+              },
+              {
+                "token": " because",
+                "probability": 0.1476774364709854
+              },
+              {
+                "token": ".\n",
+                "probability": 0.06156110763549805
+              },
+              {
+                "token": " unless",
+                "probability": 0.04231029003858566
+              },
+              {
+                "token": ".",
+                "probability": 0.016568949446082115
+              }
+            ],
+            [
+              {
+                "token": " For",
+                "probability": 0.5717607140541077
+              },
+              {
+                "token": " Example",
+                "probability": 0.03655143827199936
+              },
+              {
+                "token": " changing",
+                "probability": 0.03655143827199936
+              },
+              {
+                "token": " changes",
+                "probability": 0.02359938435256481
+              },
+              {
+                "token": " for",
+                "probability": 0.02216956950724125
+              }
+            ]
+          ]
+        },
+        {
+          "layer": 28,
+          "kind": "conv",
+          "cells": [
+            [
+              {
+                "token": " electric",
+                "probability": 0.02345374785363674
+              },
+              {
+                "token": " electrical",
+                "probability": 0.01611950993537903
+              },
+              {
+                "token": " isosceles",
+                "probability": 0.009776976890861988
+              },
+              {
+                "token": " irregular",
+                "probability": 0.008105399087071419
+              },
+              {
+                "token": " object",
+                "probability": 0.00761431735008955
+              }
+            ],
+            [
+              {
+                "token": " is",
+                "probability": 0.9097573757171631
+              },
+              {
+                "token": " made",
+                "probability": 0.06590260565280914
+              },
+              {
+                "token": " can",
+                "probability": 0.004484728444367647
+              },
+              {
+                "token": " in",
+                "probability": 0.002400502096861601
+              },
+              {
+                "token": " has",
+                "probability": 0.0018695128383114934
+              }
+            ],
+            [
+              {
+                "token": " be",
+                "probability": 0.9084793925285339
+              },
+              {
+                "token": " occur",
+                "probability": 0.012173631228506565
+              },
+              {
+                "token": " provide",
+                "probability": 0.006516074761748314
+              },
+              {
+                "token": " take",
+                "probability": 0.006121286191046238
+              },
+              {
+                "token": " have",
+                "probability": 0.005074724555015564
+              }
+            ],
+            [
+              {
+                "token": " the",
+                "probability": 0.615081787109375
+              },
+              {
+                "token": " if",
+                "probability": 0.05721151828765869
+              },
+              {
+                "token": " our",
+                "probability": 0.05048898980021477
+              },
+              {
+                "token": " how",
+                "probability": 0.044556379318237305
+              },
+              {
+                "token": " from",
+                "probability": 0.03470054268836975
+              }
+            ],
+            [
+              {
+                "token": " variable",
+                "probability": 0.15725576877593994
+              },
+              {
+                "token": " belief",
+                "probability": 0.1387777328491211
+              },
+              {
+                "token": " hypothesis",
+                "probability": 0.122470922768116
+              },
+              {
+                "token": " prediction",
+                "probability": 0.122470922768116
+              },
+              {
+                "token": " probability",
+                "probability": 0.06555395573377609
+              }
+            ],
+            [
+              {
+                "token": " if",
+                "probability": 0.6114726066589355
+              },
+              {
+                "token": ".",
+                "probability": 0.12040608376264572
+              },
+              {
+                "token": " in",
+                "probability": 0.07302998751401901
+              },
+              {
+                "token": " because",
+                "probability": 0.06444873660802841
+              },
+              {
+                "token": ".\n",
+                "probability": 0.026866231113672256
+              }
+            ],
+            [
+              {
+                "token": " changing",
+                "probability": 0.5569929480552673
+              },
+              {
+                "token": " altering",
+                "probability": 0.2631048560142517
+              },
+              {
+                "token": " requiring",
+                "probability": 0.045720767229795456
+              },
+              {
+                "token": " necessarily",
+                "probability": 0.035607367753982544
+              },
+              {
+                "token": " affecting",
+                "probability": 0.021596960723400116
+              }
+            ],
+            [
+              {
+                "token": " the",
+                "probability": 0.8434072732925415
+              },
+              {
+                "token": " anything",
+                "probability": 0.10073063522577286
+              },
+              {
+                "token": " any",
+                "probability": 0.022476041689515114
+              },
+              {
+                "token": " a",
+                "probability": 0.017504358664155006
+              },
+              {
+                "token": " what",
+                "probability": 0.007296902593225241
+              }
+            ],
+            [
+              {
+                "token": " underlying",
+                "probability": 0.5829157829284668
+              },
+              {
+                "token": " actual",
+                "probability": 0.1473841816186905
+              },
+              {
+                "token": " observation",
+                "probability": 0.029021667316555977
+              },
+              {
+                "token": " reality",
+                "probability": 0.029021667316555977
+              },
+              {
+                "token": " fact",
+                "probability": 0.025611532852053642
+              }
+            ],
+            [
+              {
+                "token": " picture",
+                "probability": 0.12981879711151123
+              },
+              {
+                "token": " observation",
+                "probability": 0.08922307193279266
+              },
+              {
+                "token": " memory",
+                "probability": 0.08922307193279266
+              },
+              {
+                "token": " experience",
+                "probability": 0.07873908430337906
+              },
+              {
+                "token": " brain",
+                "probability": 0.06132206320762634
+              }
+            ],
+            [
+              {
+                "token": ".",
+                "probability": 0.8596630096435547
+              },
+              {
+                "token": ".\n",
+                "probability": 0.07056543976068497
+              },
+              {
+                "token": ",",
+                "probability": 0.022909242659807205
+              },
+              {
+                "token": " if",
+                "probability": 0.013895158655941486
+              },
+              {
+                "token": " because",
+                "probability": 0.010821560397744179
+              }
+            ],
+            [
+              {
+                "token": " For",
+                "probability": 0.7840791344642639
+              },
+              {
+                "token": " This",
+                "probability": 0.06436113268136978
+              },
+              {
+                "token": " The",
+                "probability": 0.025204183533787727
+              },
+              {
+                "token": " for",
+                "probability": 0.025204183533787727
+              },
+              {
+                "token": " If",
+                "probability": 0.014360911212861538
+              }
+            ]
+          ]
+        }
+      ],
+      "metrics": [
+        {
+          "layer": 4,
+          "jacobian_next_token_nll": 14.158272743225098,
+          "identity_lens_next_token_nll": 17.239356994628906,
+          "native_next_token_nll": 4.680467128753662,
+          "top1_agreement": 0.0
+        },
+        {
+          "layer": 8,
+          "jacobian_next_token_nll": 11.221930503845215,
+          "identity_lens_next_token_nll": 11.944594383239746,
+          "native_next_token_nll": 4.680467128753662,
+          "top1_agreement": 0.0
+        },
+        {
+          "layer": 14,
+          "jacobian_next_token_nll": 11.504362106323242,
+          "identity_lens_next_token_nll": 10.866518020629883,
+          "native_next_token_nll": 4.680467128753662,
+          "top1_agreement": 0.0
+        },
+        {
+          "layer": 20,
+          "jacobian_next_token_nll": 8.654029846191406,
+          "identity_lens_next_token_nll": 10.393199920654297,
+          "native_next_token_nll": 4.680467128753662,
+          "top1_agreement": 0.0833333358168602
+        },
+        {
+          "layer": 26,
+          "jacobian_next_token_nll": 7.6120452880859375,
+          "identity_lens_next_token_nll": 8.191364288330078,
+          "native_next_token_nll": 4.680467128753662,
+          "top1_agreement": 0.3333333432674408
+        },
+        {
+          "layer": 28,
+          "jacobian_next_token_nll": 5.353100776672363,
+          "identity_lens_next_token_nll": 5.4573655128479,
+          "native_next_token_nll": 4.680467128753662,
+          "top1_agreement": 0.75
+        }
+      ],
+      "native": [
+        [
+          {
+            "token": " electric",
+            "probability": 0.03498770296573639
+          },
+          {
+            "token": " electrical",
+            "probability": 0.032867904752492905
+          },
+          {
+            "token": " object",
+            "probability": 0.029005825519561768
+          },
+          {
+            "token": " equation",
+            "probability": 0.022589759901165962
+          },
+          {
+            "token": " irregular",
+            "probability": 0.01759292185306549
+          }
+        ],
+        [
+          {
+            "token": " is",
+            "probability": 0.3634618818759918
+          },
+          {
+            "token": " made",
+            "probability": 0.11084960401058197
+          },
+          {
+            "token": " of",
+            "probability": 0.06316020339727402
+          },
+          {
+            "token": " in",
+            "probability": 0.06316020339727402
+          },
+          {
+            "token": " at",
+            "probability": 0.035987600684165955
+          }
+        ],
+        [
+          {
+            "token": " be",
+            "probability": 0.8438433408737183
+          },
+          {
+            "token": " only",
+            "probability": 0.027125300839543343
+          },
+          {
+            "token": " take",
+            "probability": 0.010622420348227024
+          },
+          {
+            "token": " have",
+            "probability": 0.009374253451824188
+          },
+          {
+            "token": " lead",
+            "probability": 0.006858350709080696
+          }
+        ],
+        [
+          {
+            "token": " the",
+            "probability": 0.2794807553291321
+          },
+          {
+            "token": " over",
+            "probability": 0.08007257431745529
+          },
+          {
+            "token": " from",
+            "probability": 0.06236058473587036
+          },
+          {
+            "token": " if",
+            "probability": 0.05503302067518234
+          },
+          {
+            "token": " a",
+            "probability": 0.05503302067518234
+          }
+        ],
+        [
+          {
+            "token": " belief",
+            "probability": 0.19876240193843842
+          },
+          {
+            "token": " hypothesis",
+            "probability": 0.07783646881580353
+          },
+          {
+            "token": " prediction",
+            "probability": 0.0645287036895752
+          },
+          {
+            "token": " state",
+            "probability": 0.0645287036895752
+          },
+          {
+            "token": " variable",
+            "probability": 0.06061910465359688
+          }
+        ],
+        [
+          {
+            "token": ".",
+            "probability": 0.17338746786117554
+          },
+          {
+            "token": " if",
+            "probability": 0.17338746786117554
+          },
+          {
+            "token": " in",
+            "probability": 0.11916735768318176
+          },
+          {
+            "token": ",",
+            "probability": 0.08190244436264038
+          },
+          {
+            "token": " or",
+            "probability": 0.04666660726070404
+          }
+        ],
+        [
+          {
+            "token": " changing",
+            "probability": 0.22822105884552002
+          },
+          {
+            "token": " necessarily",
+            "probability": 0.09513668715953827
+          },
+          {
+            "token": " altering",
+            "probability": 0.06960348784923553
+          },
+          {
+            "token": " any",
+            "probability": 0.0614248625934124
+          },
+          {
+            "token": " a",
+            "probability": 0.05770331993699074
+          }
+        ],
+        [
+          {
+            "token": " the",
+            "probability": 0.5825504064559937
+          },
+          {
+            "token": " a",
+            "probability": 0.12998457252979279
+          },
+          {
+            "token": " anything",
+            "probability": 0.07883962988853455
+          },
+          {
+            "token": " an",
+            "probability": 0.042199812829494476
+          },
+          {
+            "token": " any",
+            "probability": 0.03724120184779167
+          }
+        ],
+        [
+          {
+            "token": " actual",
+            "probability": 0.20052668452262878
+          },
+          {
+            "token": " underlying",
+            "probability": 0.12162558734416962
+          },
+          {
+            "token": " original",
+            "probability": 0.06115718185901642
+          },
+          {
+            "token": " observation",
+            "probability": 0.053971026092767715
+          },
+          {
+            "token": " fact",
+            "probability": 0.0507010854780674
+          }
+        ],
+        [
+          {
+            "token": " picture",
+            "probability": 0.08312846720218658
+          },
+          {
+            "token": " experience",
+            "probability": 0.06474051624536514
+          },
+          {
+            "token": " story",
+            "probability": 0.060818083584308624
+          },
+          {
+            "token": " process",
+            "probability": 0.05041996389627457
+          },
+          {
+            "token": " brain",
+            "probability": 0.04736516997218132
+          }
+        ],
+        [
+          {
+            "token": ".",
+            "probability": 0.3648161292076111
+          },
+          {
+            "token": ",",
+            "probability": 0.15207797288894653
+          },
+          {
+            "token": ".\n",
+            "probability": 0.11843845248222351
+          },
+          {
+            "token": " if",
+            "probability": 0.07183654606342316
+          },
+          {
+            "token": " because",
+            "probability": 0.043571073561906815
+          }
+        ],
+        [
+          {
+            "token": " For",
+            "probability": 0.3345474898815155
+          },
+          {
+            "token": " This",
+            "probability": 0.12307315319776535
+          },
+          {
+            "token": " An",
+            "probability": 0.06188506260514259
+          },
+          {
+            "token": " The",
+            "probability": 0.06188506260514259
+          },
+          {
+            "token": " A",
+            "probability": 0.05813562870025635
+          }
+        ]
+      ]
+    },
+    {
+      "prompt": "請比較兩筆不同時間的觀測，保留來源與先後關係。",
+      "tokens": [
+        "請",
+        "比較",
+        "兩",
+        "筆",
+        "不同",
+        "時間",
+        "的",
+        "觀",
+        "測",
+        "，",
+        "保",
+        "留",
+        "來",
+        "源",
+        "與",
+        "先",
+        "後",
+        "關",
+        "係",
+        "。"
+      ],
+      "layers": [
+        {
+          "layer": 4,
+          "kind": "conv",
+          "cells": [
+            [
+              {
+                "token": " behavioural",
+                "probability": 0.032124392688274384
+              },
+              {
+                "token": " tumours",
+                "probability": 0.016153160482645035
+              },
+              {
+                "token": " ageing",
+                "probability": 0.015174489468336105
+              },
+              {
+                "token": " tumour",
+                "probability": 0.015174489468336105
+              },
+              {
+                "token": "Behaviour",
+                "probability": 0.01425511296838522
+              }
+            ],
+            [
+              {
+                "token": " behavioural",
+                "probability": 0.0022745332680642605
+              },
+              {
+                "token": "較",
+                "probability": 0.0017714082496240735
+              },
+              {
+                "token": "Classifier",
+                "probability": 0.0017169078346341848
+              },
+              {
+                "token": " Schlacht",
+                "probability": 0.0008907199953682721
+              },
+              {
+                "token": " Tä",
+                "probability": 0.0008633154793642461
+              }
+            ],
+            [
+              {
+                "token": " behavioural",
+                "probability": 0.06622139364480972
+              },
+              {
+                "token": " behaviours",
+                "probability": 0.045513253659009933
+              },
+              {
+                "token": " organis",
+                "probability": 0.022885501384735107
+              },
+              {
+                "token": " organised",
+                "probability": 0.020837483927607536
+              },
+              {
+                "token": " tumours",
+                "probability": 0.018972747027873993
+              }
+            ],
+            [
+              {
+                "token": " behavioural",
+                "probability": 0.010387931019067764
+              },
+              {
+                "token": "笔",
+                "probability": 0.00490691140294075
+              },
+              {
+                "token": " tumour",
+                "probability": 0.004330333787947893
+              },
+              {
+                "token": " coloured",
+                "probability": 0.0035899728536605835
+              },
+              {
+                "token": "Slice",
+                "probability": 0.002795873675495386
+              }
+            ],
+            [
+              {
+                "token": ")’",
+                "probability": 0.00357845239341259
+              },
+              {
+                "token": "�",
+                "probability": 0.0027011577039957047
+              },
+              {
+                "token": "ymmetric",
+                "probability": 0.0025375026743859053
+              },
+              {
+                "token": " invariant",
+                "probability": 0.002239338355138898
+              },
+              {
+                "token": "�",
+                "probability": 0.001976208994165063
+              }
+            ],
+            [
+              {
+                "token": "ち�",
+                "probability": 0.005958014167845249
+              },
+              {
+                "token": "時間",
+                "probability": 0.0052579292096197605
+              },
+              {
+                "token": " Zeitraum",
+                "probability": 0.004939367529004812
+              },
+              {
+                "token": " hour",
+                "probability": 0.004358976148068905
+              },
+              {
+                "token": " hours",
+                "probability": 0.0032903277315199375
+              }
+            ],
+            [
+              {
+                "token": "）\n\n",
+                "probability": 0.0018959443550556898
+              },
+              {
+                "token": " Mosc",
+                "probability": 0.0017810749122872949
+              },
+              {
+                "token": "」\n\n",
+                "probability": 0.0013444257201626897
+              },
+              {
+                "token": "）。\n\n",
+                "probability": 0.001080276444554329
+              },
+              {
+                "token": "ataka",
+                "probability": 0.001047039870172739
+              }
+            ],
+            [
+              {
+                "token": " behavioural",
+                "probability": 0.10033610463142395
+              },
+              {
+                "token": " behaviour",
+                "probability": 0.030600780621170998
+              },
+              {
+                "token": " behaviours",
+                "probability": 0.015387040562927723
+              },
+              {
+                "token": "Behaviour",
+                "probability": 0.01357901468873024
+              },
+              {
+                "token": " vig",
+                "probability": 0.012756302952766418
+              }
+            ],
+            [
+              {
+                "token": " monitoring",
+                "probability": 0.07075906544923782
+              },
+              {
+                "token": " surveillance",
+                "probability": 0.04291754215955734
+              },
+              {
+                "token": " sensor",
+                "probability": 0.014831905253231525
+              },
+              {
+                "token": " monitored",
+                "probability": 0.008450965397059917
+              },
+              {
+                "token": " Monitoring",
+                "probability": 0.007938946597278118
+              }
+            ],
+            [
+              {
+                "token": "refresh",
+                "probability": 0.0020217462442815304
+              },
+              {
+                "token": ",’",
+                "probability": 0.0017292913980782032
+              },
+              {
+                "token": "！」",
+                "probability": 0.0013467734679579735
+              },
+              {
+                "token": "，the",
+                "probability": 0.001188523368909955
+              },
+              {
+                "token": "_handle",
+                "probability": 0.0010821628384292126
+              }
+            ],
+            [
+              {
+                "token": " vig",
+                "probability": 0.011496447026729584
+              },
+              {
+                "token": " Hosp",
+                "probability": 0.0015080055454745889
+              },
+              {
+                "token": "warning",
+                "probability": 0.0014166401233524084
+              },
+              {
+                "token": "941",
+                "probability": 0.0011032805778086185
+              },
+              {
+                "token": "itary",
+                "probability": 0.0011032805778086185
+              }
+            ],
+            [
+              {
+                "token": " verlor",
+                "probability": 0.001692138030193746
+              },
+              {
+                "token": "）\n\n",
+                "probability": 0.0014933065976947546
+              },
+              {
+                "token": " vig",
+                "probability": 0.0010263336589559913
+              },
+              {
+                "token": "Leave",
+                "probability": 0.0009344873251393437
+              },
+              {
+                "token": "remaining",
+                "probability": 0.0009057362913154066
+              }
+            ],
+            [
+              {
+                "token": "‘",
+                "probability": 0.00809455756098032
+              },
+              {
+                "token": " ’",
+                "probability": 0.004332704469561577
+              },
+              {
+                "token": " ‘",
+                "probability": 0.003944972064346075
+              },
+              {
+                "token": "’ve",
+                "probability": 0.0037059583701193333
+              },
+              {
+                "token": "↑",
+                "probability": 0.0031698739621788263
+              }
+            ],
+            [
+              {
+                "token": "-source",
+                "probability": 0.0035493457689881325
+              },
+              {
+                "token": "源",
+                "probability": 0.0027642331551760435
+              },
+              {
+                "token": "src",
+                "probability": 0.0024394274223595858
+              },
+              {
+                "token": "ecc",
+                "probability": 0.0023643742315471172
+              },
+              {
+                "token": " src",
+                "probability": 0.00202235602773726
+              }
+            ],
+            [
+              {
+                "token": " behavioural",
+                "probability": 0.05381174013018608
+              },
+              {
+                "token": " ‘",
+                "probability": 0.01641165278851986
+              },
+              {
+                "token": ")’",
+                "probability": 0.015417322516441345
+              },
+              {
+                "token": "Behaviour",
+                "probability": 0.010596158914268017
+              },
+              {
+                "token": " behaviours",
+                "probability": 0.008514254353940487
+              }
+            ],
+            [
+              {
+                "token": "�",
+                "probability": 0.003739610081538558
+              },
+              {
+                "token": "尖",
+                "probability": 0.0022681881673634052
+              },
+              {
+                "token": " earnest",
+                "probability": 0.0021307654678821564
+              },
+              {
+                "token": "先",
+                "probability": 0.0021307654678821564
+              },
+              {
+                "token": "\\%$",
+                "probability": 0.001712118275463581
+              }
+            ],
+            [
+              {
+                "token": " behavioural",
+                "probability": 0.005116282030940056
+              },
+              {
+                "token": " ageing",
+                "probability": 0.003743151668459177
+              },
+              {
+                "token": " emphas",
+                "probability": 0.002572628203779459
+              },
+              {
+                "token": " behaviour",
+                "probability": 0.0019419215386733413
+              },
+              {
+                "token": " analyse",
+                "probability": 0.0013346619671210647
+              }
+            ],
+            [
+              {
+                "token": " behavioural",
+                "probability": 0.0036086237523704767
+              },
+              {
+                "token": ")’",
+                "probability": 0.0010667071910575032
+              },
+              {
+                "token": " signIn",
+                "probability": 0.0009712479077279568
+              },
+              {
+                "token": " organise",
+                "probability": 0.0009413657826371491
+              },
+              {
+                "token": " emphas",
+                "probability": 0.0008307523676194251
+              }
+            ],
+            [
+              {
+                "token": "\n\n\n\n\n\n",
+                "probability": 0.005351429805159569
+              },
+              {
+                "token": "relationship",
+                "probability": 0.0037947315722703934
+              },
+              {
+                "token": "）\n\n",
+                "probability": 0.0029553398489952087
+              },
+              {
+                "token": ")**\n\n",
+                "probability": 0.0028644141275435686
+              },
+              {
+                "token": "】",
+                "probability": 0.002301621250808239
+              }
+            ],
+            [
+              {
+                "token": " Soll",
+                "probability": 0.0015302968677133322
+              },
+              {
+                "token": " hindrance",
+                "probability": 0.0013089324347674847
+              },
+              {
+                "token": " ado",
+                "probability": 0.001229628105647862
+              },
+              {
+                "token": " ofic",
+                "probability": 0.0011917963856831193
+              },
+              {
+                "token": " herv",
+                "probability": 0.0010193976340815425
+              }
+            ]
+          ]
+        },
+        {
+          "layer": 8,
+          "kind": "conv",
+          "cells": [
+            [
+              {
+                "token": " organisation",
+                "probability": 0.09448383003473282
+              },
+              {
+                "token": " whilst",
+                "probability": 0.08875934779644012
+              },
+              {
+                "token": " organised",
+                "probability": 0.08338169008493423
+              },
+              {
+                "token": " labour",
+                "probability": 0.05730734020471573
+              },
+              {
+                "token": " defence",
+                "probability": 0.044631004333496094
+              }
+            ],
+            [
+              {
+                "token": " comparing",
+                "probability": 0.31358805298805237
+              },
+              {
+                "token": " analyse",
+                "probability": 0.06997095793485641
+              },
+              {
+                "token": " comparison",
+                "probability": 0.06997095793485641
+              },
+              {
+                "token": " analys",
+                "probability": 0.03745275363326073
+              },
+              {
+                "token": " compare",
+                "probability": 0.031049422919750214
+              }
+            ],
+            [
+              {
+                "token": " organised",
+                "probability": 0.1317388266324997
+              },
+              {
+                "token": " organisations",
+                "probability": 0.12375717610120773
+              },
+              {
+                "token": " coloured",
+                "probability": 0.10259830206632614
+              },
+              {
+                "token": " organis",
+                "probability": 0.06222901865839958
+              },
+              {
+                "token": " organisation",
+                "probability": 0.03129071742296219
+              }
+            ],
+            [
+              {
+                "token": " £",
+                "probability": 0.1560029536485672
+              },
+              {
+                "token": " whilst",
+                "probability": 0.04757821187376976
+              },
+              {
+                "token": " coloured",
+                "probability": 0.025466782972216606
+              },
+              {
+                "token": "笔",
+                "probability": 0.02247435785830021
+              },
+              {
+                "token": "ised",
+                "probability": 0.02247435785830021
+              }
+            ],
+            [
+              {
+                "token": " difference",
+                "probability": 0.08030030876398087
+              },
+              {
+                "token": " different",
+                "probability": 0.013108666054904461
+              },
+              {
+                "token": " differences",
+                "probability": 0.00900944508612156
+              },
+              {
+                "token": " colour",
+                "probability": 0.00659145088866353
+              },
+              {
+                "token": " behaviour",
+                "probability": 0.00619209511205554
+              }
+            ],
+            [
+              {
+                "token": " time",
+                "probability": 0.3675829768180847
+              },
+              {
+                "token": " duration",
+                "probability": 0.18483231961727142
+              },
+              {
+                "token": " hours",
+                "probability": 0.04390152543783188
+              },
+              {
+                "token": " hour",
+                "probability": 0.03419053927063942
+              },
+              {
+                "token": " timing",
+                "probability": 0.028344955295324326
+              }
+            ],
+            [
+              {
+                "token": " organisation",
+                "probability": 0.02467403933405876
+              },
+              {
+                "token": " realised",
+                "probability": 0.018051911145448685
+              },
+              {
+                "token": " ageing",
+                "probability": 0.0062385741621255875
+              },
+              {
+                "token": " labour",
+                "probability": 0.005860598292201757
+              },
+              {
+                "token": "Organisation",
+                "probability": 0.005336135160177946
+              }
+            ],
+            [
+              {
+                "token": " behaviour",
+                "probability": 0.16064700484275818
+              },
+              {
+                "token": " colours",
+                "probability": 0.08598814904689789
+              },
+              {
+                "token": " colour",
+                "probability": 0.08077838271856308
+              },
+              {
+                "token": " emphas",
+                "probability": 0.06696763634681702
+              },
+              {
+                "token": " behavioural",
+                "probability": 0.06291026622056961
+              }
+            ],
+            [
+              {
+                "token": " observation",
+                "probability": 0.090525321662426
+              },
+              {
+                "token": " behaviour",
+                "probability": 0.06221708655357361
+              },
+              {
+                "token": " measurement",
+                "probability": 0.05490638315677643
+              },
+              {
+                "token": " observations",
+                "probability": 0.04017036780714989
+              },
+              {
+                "token": " measurements",
+                "probability": 0.027608662843704224
+              }
+            ],
+            [
+              {
+                "token": " Lai",
+                "probability": 0.00270016654394567
+              },
+              {
+                "token": " suf",
+                "probability": 0.0023828884586691856
+              },
+              {
+                "token": " infiltration",
+                "probability": 0.002102891681715846
+              },
+              {
+                "token": " Cheng",
+                "probability": 0.0019147046841681004
+              },
+              {
+                "token": " Mér",
+                "probability": 0.0017433585599064827
+              }
+            ],
+            [
+              {
+                "token": " vig",
+                "probability": 0.08895329385995865
+              },
+              {
+                "token": " guard",
+                "probability": 0.047613270580768585
+              },
+              {
+                "token": " safegu",
+                "probability": 0.016454705968499184
+              },
+              {
+                "token": " Guard",
+                "probability": 0.009980282746255398
+              },
+              {
+                "token": " safeguard",
+                "probability": 0.008273945190012455
+              }
+            ],
+            [
+              {
+                "token": " preserved",
+                "probability": 0.010460657998919487
+              },
+              {
+                "token": " unchanged",
+                "probability": 0.008146768435835838
+              },
+              {
+                "token": " intact",
+                "probability": 0.007189498282968998
+              },
+              {
+                "token": " original",
+                "probability": 0.005960302893072367
+              },
+              {
+                "token": " retained",
+                "probability": 0.0052599492482841015
+              }
+            ],
+            [
+              {
+                "token": " organised",
+                "probability": 0.07826324552297592
+              },
+              {
+                "token": " organisation",
+                "probability": 0.047469060868024826
+              },
+              {
+                "token": " utilisation",
+                "probability": 0.030648326501250267
+              },
+              {
+                "token": " coloured",
+                "probability": 0.02540835551917553
+              },
+              {
+                "token": " recognised",
+                "probability": 0.022422796115279198
+              }
+            ],
+            [
+              {
+                "token": " source",
+                "probability": 0.21127022802829742
+              },
+              {
+                "token": " origin",
+                "probability": 0.0777219831943512
+              },
+              {
+                "token": " Source",
+                "probability": 0.03671325743198395
+              },
+              {
+                "token": "-source",
+                "probability": 0.025232631713151932
+              },
+              {
+                "token": " Origin",
+                "probability": 0.023703861981630325
+              }
+            ],
+            [
+              {
+                "token": " ‘",
+                "probability": 0.2094784528017044
+              },
+              {
+                "token": " recognised",
+                "probability": 0.0820329338312149
+              },
+              {
+                "token": "‑",
+                "probability": 0.04124874994158745
+              },
+              {
+                "token": "Behaviour",
+                "probability": 0.03874961659312248
+              },
+              {
+                "token": " behavioural",
+                "probability": 0.032124560326337814
+              }
+            ],
+            [
+              {
+                "token": "、先",
+                "probability": 0.013421849347651005
+              },
+              {
+                "token": " pioneer",
+                "probability": 0.012608661316335201
+              },
+              {
+                "token": " Clarke",
+                "probability": 0.011480317451059818
+              },
+              {
+                "token": "先",
+                "probability": 0.011480317451059818
+              },
+              {
+                "token": " pione",
+                "probability": 0.009517516009509563
+              }
+            ],
+            [
+              {
+                "token": " emphas",
+                "probability": 0.025270523503422737
+              },
+              {
+                "token": " ageing",
+                "probability": 0.023739458993077278
+              },
+              {
+                "token": " analyse",
+                "probability": 0.014855773188173771
+              },
+              {
+                "token": " behaviour",
+                "probability": 0.011936950497329235
+              },
+              {
+                "token": "ised",
+                "probability": 0.011569689027965069
+              }
+            ],
+            [
+              {
+                "token": " emphas",
+                "probability": 0.04726436734199524
+              },
+              {
+                "token": " behavioural",
+                "probability": 0.044400766491889954
+              },
+              {
+                "token": " organised",
+                "probability": 0.03248429670929909
+              },
+              {
+                "token": " neighbouring",
+                "probability": 0.026930423453450203
+              },
+              {
+                "token": " organisation",
+                "probability": 0.025298794731497765
+              }
+            ],
+            [
+              {
+                "token": " relationship",
+                "probability": 0.1976354867219925
+              },
+              {
+                "token": " relationships",
+                "probability": 0.08238672465085983
+              },
+              {
+                "token": " Relationship",
+                "probability": 0.04409843683242798
+              },
+              {
+                "token": "：\n\n",
+                "probability": 0.02512652985751629
+              },
+              {
+                "token": ":\n\n",
+                "probability": 0.016222909092903137
+              }
+            ],
+            [
+              {
+                "token": "”**",
+                "probability": 0.00981245469301939
+              },
+              {
+                "token": " Sass",
+                "probability": 0.002559731714427471
+              },
+              {
+                "token": "。”\n",
+                "probability": 0.0011358740739524364
+              },
+              {
+                "token": "healthy",
+                "probability": 0.0010024053044617176
+              },
+              {
+                "token": " Klass",
+                "probability": 0.0009416727116331458
+              }
+            ]
+          ]
+        },
+        {
+          "layer": 14,
+          "kind": "conv",
+          "cells": [
+            [
+              {
+                "token": " defence",
+                "probability": 0.0649518296122551
+              },
+              {
+                "token": " labour",
+                "probability": 0.0649518296122551
+              },
+              {
+                "token": " organised",
+                "probability": 0.06101659685373306
+              },
+              {
+                "token": " authorised",
+                "probability": 0.05058453232049942
+              },
+              {
+                "token": " programme",
+                "probability": 0.04751976951956749
+              }
+            ],
+            [
+              {
+                "token": " comparing",
+                "probability": 0.32158446311950684
+              },
+              {
+                "token": " comparison",
+                "probability": 0.26660290360450745
+              },
+              {
+                "token": " compare",
+                "probability": 0.04931657761335373
+              },
+              {
+                "token": " comparisons",
+                "probability": 0.029912013560533524
+              },
+              {
+                "token": " comparative",
+                "probability": 0.026397259905934334
+              }
+            ],
+            [
+              {
+                "token": " organisations",
+                "probability": 0.09918661415576935
+              },
+              {
+                "token": " organised",
+                "probability": 0.06816989928483963
+              },
+              {
+                "token": " organis",
+                "probability": 0.06816989928483963
+              },
+              {
+                "token": " coloured",
+                "probability": 0.05651482567191124
+              },
+              {
+                "token": " colours",
+                "probability": 0.04134713113307953
+              }
+            ],
+            [
+              {
+                "token": " pencil",
+                "probability": 0.08001942932605743
+              },
+              {
+                "token": " £",
+                "probability": 0.05499649420380592
+              },
+              {
+                "token": " mould",
+                "probability": 0.03133605793118477
+              },
+              {
+                "token": "笔",
+                "probability": 0.01785474829375744
+              },
+              {
+                "token": " coloured",
+                "probability": 0.016772983595728874
+              }
+            ],
+            [
+              {
+                "token": " difference",
+                "probability": 0.5847475528717041
+              },
+              {
+                "token": " differences",
+                "probability": 0.07913697510957718
+              },
+              {
+                "token": " differing",
+                "probability": 0.04235897213220596
+              },
+              {
+                "token": "Difference",
+                "probability": 0.014638870023190975
+              },
+              {
+                "token": " colours",
+                "probability": 0.01291875634342432
+              }
+            ],
+            [
+              {
+                "token": " time",
+                "probability": 0.591687798500061
+              },
+              {
+                "token": " Time",
+                "probability": 0.04286172240972519
+              },
+              {
+                "token": " duration",
+                "probability": 0.035533614456653595
+              },
+              {
+                "token": " timing",
+                "probability": 0.03135830536484718
+              },
+              {
+                "token": " tim",
+                "probability": 0.024421872571110725
+              }
+            ],
+            [
+              {
+                "token": " colours",
+                "probability": 0.06281592696905136
+              },
+              {
+                "token": " colour",
+                "probability": 0.04317271336913109
+              },
+              {
+                "token": " behaviour",
+                "probability": 0.04055701196193695
+              },
+              {
+                "token": " comparison",
+                "probability": 0.03362294286489487
+              },
+              {
+                "token": " emphas",
+                "probability": 0.02039334550499916
+              }
+            ],
+            [
+              {
+                "token": " colours",
+                "probability": 0.22749017179012299
+              },
+              {
+                "token": " colour",
+                "probability": 0.21370723843574524
+              },
+              {
+                "token": " behaviour",
+                "probability": 0.08908642828464508
+              },
+              {
+                "token": " labour",
+                "probability": 0.06517702341079712
+              },
+              {
+                "token": " coloured",
+                "probability": 0.06122814863920212
+              }
+            ],
+            [
+              {
+                "token": " observation",
+                "probability": 0.20988315343856812
+              },
+              {
+                "token": " observations",
+                "probability": 0.10553587228059769
+              },
+              {
+                "token": " measurement",
+                "probability": 0.08749230951070786
+              },
+              {
+                "token": " measurements",
+                "probability": 0.04985161870718002
+              },
+              {
+                "token": " observer",
+                "probability": 0.03218662366271019
+              }
+            ],
+            [
+              {
+                "token": " calculation",
+                "probability": 0.026587286964058876
+              },
+              {
+                "token": " comparing",
+                "probability": 0.016126004979014397
+              },
+              {
+                "token": " understanding",
+                "probability": 0.016126004979014397
+              },
+              {
+                "token": " compare",
+                "probability": 0.016126004979014397
+              },
+              {
+                "token": " comparison",
+                "probability": 0.015148978680372238
+              }
+            ],
+            [
+              {
+                "token": " guard",
+                "probability": 0.08311427384614944
+              },
+              {
+                "token": " safeguard",
+                "probability": 0.03926040604710579
+              },
+              {
+                "token": " safegu",
+                "probability": 0.023812638595700264
+              },
+              {
+                "token": " vig",
+                "probability": 0.021014578640460968
+              },
+              {
+                "token": " Guard",
+                "probability": 0.018545301631093025
+              }
+            ],
+            [
+              {
+                "token": " Original",
+                "probability": 0.027238886803388596
+              },
+              {
+                "token": " original",
+                "probability": 0.025588566437363625
+              },
+              {
+                "token": " **",
+                "probability": 0.022581830620765686
+              },
+              {
+                "token": " unchanged",
+                "probability": 0.011354857124388218
+              },
+              {
+                "token": " preserved",
+                "probability": 0.0057095810770988464
+              }
+            ],
+            [
+              {
+                "token": " coloured",
+                "probability": 0.06218135356903076
+              },
+              {
+                "token": " licence",
+                "probability": 0.02937239408493042
+              },
+              {
+                "token": " travelling",
+                "probability": 0.022875243797898293
+              },
+              {
+                "token": " colour",
+                "probability": 0.022875243797898293
+              },
+              {
+                "token": " organised",
+                "probability": 0.021489301696419716
+              }
+            ],
+            [
+              {
+                "token": " source",
+                "probability": 0.11870162934064865
+              },
+              {
+                "token": " origin",
+                "probability": 0.04366789385676384
+              },
+              {
+                "token": "-source",
+                "probability": 0.02195759490132332
+              },
+              {
+                "token": " RSS",
+                "probability": 0.018203485757112503
+              },
+              {
+                "token": " GPS",
+                "probability": 0.017100591212511063
+              }
+            ],
+            [
+              {
+                "token": " colours",
+                "probability": 0.08903585374355316
+              },
+              {
+                "token": " behaviours",
+                "probability": 0.0651400238275528
+              },
+              {
+                "token": " recognised",
+                "probability": 0.0651400238275528
+              },
+              {
+                "token": " ‘",
+                "probability": 0.06119339168071747
+              },
+              {
+                "token": " coloured",
+                "probability": 0.039509423077106476
+              }
+            ],
+            [
+              {
+                "token": " pion",
+                "probability": 0.012423933483660221
+              },
+              {
+                "token": " chron",
+                "probability": 0.010299802757799625
+              },
+              {
+                "token": " pioneer",
+                "probability": 0.00967576913535595
+              },
+              {
+                "token": " pione",
+                "probability": 0.009089543484151363
+              },
+              {
+                "token": " pioneers",
+                "probability": 0.008538836613297462
+              }
+            ],
+            [
+              {
+                "token": " ageing",
+                "probability": 0.03364652395248413
+              },
+              {
+                "token": " subsequence",
+                "probability": 0.013176167383790016
+              },
+              {
+                "token": " emphas",
+                "probability": 0.013176167383790016
+              },
+              {
+                "token": " succession",
+                "probability": 0.01092342659831047
+              },
+              {
+                "token": " sequence",
+                "probability": 0.01092342659831047
+              }
+            ],
+            [
+              {
+                "token": " emphas",
+                "probability": 0.08384609967470169
+              },
+              {
+                "token": " behaviours",
+                "probability": 0.07399392127990723
+              },
+              {
+                "token": " recognise",
+                "probability": 0.04487958550453186
+              },
+              {
+                "token": " organisations",
+                "probability": 0.03960609436035156
+              },
+              {
+                "token": " signalling",
+                "probability": 0.03720648214221001
+              }
+            ],
+            [
+              {
+                "token": " relationship",
+                "probability": 0.5906213521957397
+              },
+              {
+                "token": " relationships",
+                "probability": 0.1692158579826355
+              },
+              {
+                "token": " Relationship",
+                "probability": 0.02290087379515171
+              },
+              {
+                "token": " relation",
+                "probability": 0.015739524737000465
+              },
+              {
+                "token": " interaction",
+                "probability": 0.004800284747034311
+              }
+            ],
+            [
+              {
+                "token": "”**",
+                "probability": 0.0076639698818326
+              },
+              {
+                "token": " Scheme",
+                "probability": 0.002062729559838772
+              },
+              {
+                "token": " Organis",
+                "probability": 0.001999265979975462
+              },
+              {
+                "token": " Sass",
+                "probability": 0.001999265979975462
+              },
+              {
+                "token": "Scheme",
+                "probability": 0.001878136652521789
+              }
+            ]
+          ]
+        },
+        {
+          "layer": 20,
+          "kind": "conv",
+          "cells": [
+            [
+              {
+                "token": " fisc",
+                "probability": 0.002006078837439418
+              },
+              {
+                "token": " sap",
+                "probability": 0.0011430291924625635
+              },
+              {
+                "token": " kun",
+                "probability": 0.0009776846272870898
+              },
+              {
+                "token": " brom",
+                "probability": 0.0007379952003248036
+              },
+              {
+                "token": "tax",
+                "probability": 0.0007379952003248036
+              }
+            ],
+            [
+              {
+                "token": " comparison",
+                "probability": 0.5568737983703613
+              },
+              {
+                "token": " comparing",
+                "probability": 0.26304858922958374
+              },
+              {
+                "token": " compare",
+                "probability": 0.07536467164754868
+              },
+              {
+                "token": " comparative",
+                "probability": 0.03559974953532219
+              },
+              {
+                "token": " Comparison",
+                "probability": 0.027725113555788994
+              }
+            ],
+            [
+              {
+                "token": "兩",
+                "probability": 0.05003238096833229
+              },
+              {
+                "token": " neighbour",
+                "probability": 0.03438672050833702
+              },
+              {
+                "token": " colour",
+                "probability": 0.02220173366367817
+              },
+              {
+                "token": " two",
+                "probability": 0.02220173366367817
+              },
+              {
+                "token": " Two",
+                "probability": 0.020856598392128944
+              }
+            ],
+            [
+              {
+                "token": " handwriting",
+                "probability": 0.05983546003699303
+              },
+              {
+                "token": " pencil",
+                "probability": 0.03629204258322716
+              },
+              {
+                "token": " £",
+                "probability": 0.01421216782182455
+              },
+              {
+                "token": " maths",
+                "probability": 0.01106844749301672
+              },
+              {
+                "token": " chalk",
+                "probability": 0.010397843085229397
+              }
+            ],
+            [
+              {
+                "token": " difference",
+                "probability": 0.21200676262378693
+              },
+              {
+                "token": " differences",
+                "probability": 0.17575977742671967
+              },
+              {
+                "token": " different",
+                "probability": 0.13688185811042786
+              },
+              {
+                "token": " differing",
+                "probability": 0.044439028948545456
+              },
+              {
+                "token": " colour",
+                "probability": 0.019719699397683144
+              }
+            ],
+            [
+              {
+                "token": " time",
+                "probability": 0.5512915849685669
+              },
+              {
+                "token": " timing",
+                "probability": 0.08454330265522003
+              },
+              {
+                "token": " date",
+                "probability": 0.0658423900604248
+              },
+              {
+                "token": " tim",
+                "probability": 0.0581057034432888
+              },
+              {
+                "token": " period",
+                "probability": 0.04525276646018028
+              }
+            ],
+            [
+              {
+                "token": " measurement",
+                "probability": 0.07308555394411087
+              },
+              {
+                "token": " comparison",
+                "probability": 0.04718758165836334
+              },
+              {
+                "token": " measurements",
+                "probability": 0.03674972429871559
+              },
+              {
+                "token": " Measurement",
+                "probability": 0.01967070996761322
+              },
+              {
+                "token": " difference",
+                "probability": 0.01735934242606163
+              }
+            ],
+            [
+              {
+                "token": "Observer",
+                "probability": 0.04715924337506294
+              },
+              {
+                "token": " colours",
+                "probability": 0.0367276556789875
+              },
+              {
+                "token": " colour",
+                "probability": 0.023713158443570137
+              },
+              {
+                "token": " observer",
+                "probability": 0.018467824906110764
+              },
+              {
+                "token": " behaviour",
+                "probability": 0.018467824906110764
+              }
+            ],
+            [
+              {
+                "token": " observations",
+                "probability": 0.20059087872505188
+              },
+              {
+                "token": " measurements",
+                "probability": 0.1770208328962326
+              },
+              {
+                "token": " measurement",
+                "probability": 0.10736856609582901
+              },
+              {
+                "token": " observation",
+                "probability": 0.10736856609582901
+              },
+              {
+                "token": " telescope",
+                "probability": 0.01546790823340416
+              }
+            ],
+            [
+              {
+                "token": " compare",
+                "probability": 0.1574774980545044
+              },
+              {
+                "token": " then",
+                "probability": 0.1226436048746109
+              },
+              {
+                "token": " comparing",
+                "probability": 0.06988021731376648
+              },
+              {
+                "token": " calculation",
+                "probability": 0.057932741940021515
+              },
+              {
+                "token": " calculate",
+                "probability": 0.03513798117637634
+              }
+            ],
+            [
+              {
+                "token": " ensure",
+                "probability": 0.04502996429800987
+              },
+              {
+                "token": " guard",
+                "probability": 0.025657298043370247
+              },
+              {
+                "token": " ensuring",
+                "probability": 0.022642487660050392
+              },
+              {
+                "token": " guarantee",
+                "probability": 0.018771281465888023
+              },
+              {
+                "token": " vig",
+                "probability": 0.017633985728025436
+              }
+            ],
+            [
+              {
+                "token": " original",
+                "probability": 0.32522138953208923
+              },
+              {
+                "token": " same",
+                "probability": 0.07256670296192169
+              },
+              {
+                "token": " remaining",
+                "probability": 0.04987431690096855
+              },
+              {
+                "token": " Original",
+                "probability": 0.04401392489671707
+              },
+              {
+                "token": " identical",
+                "probability": 0.02507838048040867
+              }
+            ],
+            [
+              {
+                "token": " travelling",
+                "probability": 0.03737052157521248
+              },
+              {
+                "token": " centre",
+                "probability": 0.017652584239840508
+              },
+              {
+                "token": " utilisation",
+                "probability": 0.014634505845606327
+              },
+              {
+                "token": "‑",
+                "probability": 0.013747847639024258
+              },
+              {
+                "token": " catalogue",
+                "probability": 0.013747847639024258
+              }
+            ],
+            [
+              {
+                "token": " source",
+                "probability": 0.42825639247894287
+              },
+              {
+                "token": " origin",
+                "probability": 0.2943360209465027
+              },
+              {
+                "token": " sources",
+                "probability": 0.057958196848630905
+              },
+              {
+                "token": " origins",
+                "probability": 0.042403124272823334
+              },
+              {
+                "token": " Source",
+                "probability": 0.008888177573680878
+              }
+            ],
+            [
+              {
+                "token": " colours",
+                "probability": 0.03401661291718483
+              },
+              {
+                "token": " corresponding",
+                "probability": 0.02820076420903206
+              },
+              {
+                "token": " correspondence",
+                "probability": 0.02649216540157795
+              },
+              {
+                "token": " organisation",
+                "probability": 0.02196277678012848
+              },
+              {
+                "token": " colour",
+                "probability": 0.020632119849324226
+              }
+            ],
+            [
+              {
+                "token": " preceding",
+                "probability": 0.13526389002799988
+              },
+              {
+                "token": " prior",
+                "probability": 0.10534362494945526
+              },
+              {
+                "token": " before",
+                "probability": 0.04391375556588173
+              },
+              {
+                "token": " preced",
+                "probability": 0.018305977806448936
+              },
+              {
+                "token": " initial",
+                "probability": 0.01719687320291996
+              }
+            ],
+            [
+              {
+                "token": " sequence",
+                "probability": 0.23959806561470032
+              },
+              {
+                "token": " preceding",
+                "probability": 0.041635897010564804
+              },
+              {
+                "token": " previous",
+                "probability": 0.03674355521798134
+              },
+              {
+                "token": " consecutive",
+                "probability": 0.03451737388968468
+              },
+              {
+                "token": " before",
+                "probability": 0.03451737388968468
+              }
+            ],
+            [
+              {
+                "token": " relationship",
+                "probability": 0.2442408949136734
+              },
+              {
+                "token": " linking",
+                "probability": 0.07929340749979019
+              },
+              {
+                "token": "relationship",
+                "probability": 0.04244270175695419
+              },
+              {
+                "token": " connection",
+                "probability": 0.03745555505156517
+              },
+              {
+                "token": " relationships",
+                "probability": 0.029170416295528412
+              }
+            ],
+            [
+              {
+                "token": " relationship",
+                "probability": 0.2107524871826172
+              },
+              {
+                "token": ".\n",
+                "probability": 0.14484792947769165
+              },
+              {
+                "token": ".\n\n",
+                "probability": 0.09955243021249771
+              },
+              {
+                "token": " relationships",
+                "probability": 0.08785470575094223
+              },
+              {
+                "token": ":\n",
+                "probability": 0.07753151655197144
+              }
+            ],
+            [
+              {
+                "token": "…)",
+                "probability": 0.0021081625018268824
+              },
+              {
+                "token": "③",
+                "probability": 0.0014489175518974662
+              },
+              {
+                "token": " Mats",
+                "probability": 0.0010937002953141928
+              },
+              {
+                "token": "Originally",
+                "probability": 0.0009958255104720592
+              },
+              {
+                "token": "7²",
+                "probability": 0.0008788128616288304
+              }
+            ]
+          ]
+        },
+        {
+          "layer": 26,
+          "kind": "conv",
+          "cells": [
+            [
+              {
+                "token": " collect",
+                "probability": 0.00031257985392585397
+              },
+              {
+                "token": " calculate",
+                "probability": 0.0002936416130978614
+              },
+              {
+                "token": " res",
+                "probability": 0.0002936416130978614
+              },
+              {
+                "token": " formally",
+                "probability": 0.0002758507616817951
+              },
+              {
+                "token": " plot",
+                "probability": 0.0002758507616817951
+              }
+            ],
+            [
+              {
+                "token": " between",
+                "probability": 0.4390692710876465
+              },
+              {
+                "token": " two",
+                "probability": 0.10428809374570847
+              },
+              {
+                "token": " comparison",
+                "probability": 0.06325393170118332
+              },
+              {
+                "token": " compare",
+                "probability": 0.04926220327615738
+              },
+              {
+                "token": " comparing",
+                "probability": 0.03385738655924797
+              }
+            ],
+            [
+              {
+                "token": "個",
+                "probability": 0.15654487907886505
+              },
+              {
+                "token": " individual",
+                "probability": 0.05758964642882347
+              },
+              {
+                "token": "个",
+                "probability": 0.042133480310440063
+              },
+              {
+                "token": "次",
+                "probability": 0.03492988273501396
+              },
+              {
+                "token": " side",
+                "probability": 0.02895789034664631
+              }
+            ],
+            [
+              {
+                "token": " money",
+                "probability": 0.3457857072353363
+              },
+              {
+                "token": " pen",
+                "probability": 0.1738719791173935
+              },
+              {
+                "token": " cash",
+                "probability": 0.02504863403737545
+              },
+              {
+                "token": " handwriting",
+                "probability": 0.02504863403737545
+              },
+              {
+                "token": " pencil",
+                "probability": 0.02353101409971714
+              }
+            ],
+            [
+              {
+                "token": " height",
+                "probability": 0.16078609228134155
+              },
+              {
+                "token": " length",
+                "probability": 0.14189322292804718
+              },
+              {
+                "token": " amount",
+                "probability": 0.14189322292804718
+              },
+              {
+                "token": " pen",
+                "probability": 0.03587622940540314
+              },
+              {
+                "token": " amounts",
+                "probability": 0.03166065737605095
+              }
+            ],
+            [
+              {
+                "token": " period",
+                "probability": 0.5620112419128418
+              },
+              {
+                "token": " periods",
+                "probability": 0.10396163165569305
+              },
+              {
+                "token": " point",
+                "probability": 0.029785504564642906
+              },
+              {
+                "token": " date",
+                "probability": 0.023196974769234657
+              },
+              {
+                "token": " place",
+                "probability": 0.023196974769234657
+              }
+            ],
+            [
+              {
+                "token": " price",
+                "probability": 0.15501421689987183
+              },
+              {
+                "token": " cash",
+                "probability": 0.13679955899715424
+              },
+              {
+                "token": " payment",
+                "probability": 0.1134108230471611
+              },
+              {
+                "token": " salary",
+                "probability": 0.05702655017375946
+              },
+              {
+                "token": " money",
+                "probability": 0.041721511632204056
+              }
+            ],
+            [
+              {
+                "token": "察",
+                "probability": 0.17947228252887726
+              },
+              {
+                "token": "測",
+                "probability": 0.16859860718250275
+              },
+              {
+                "token": "测",
+                "probability": 0.06202396750450134
+              },
+              {
+                "token": "観",
+                "probability": 0.04830431193113327
+              },
+              {
+                "token": "측",
+                "probability": 0.03761943429708481
+              }
+            ],
+            [
+              {
+                "token": " data",
+                "probability": 0.9667978286743164
+              },
+              {
+                "token": "数据",
+                "probability": 0.008364439941942692
+              },
+              {
+                "token": " results",
+                "probability": 0.004765914287418127
+              },
+              {
+                "token": "データ",
+                "probability": 0.0028906732331961393
+              },
+              {
+                "token": " value",
+                "probability": 0.001866358914412558
+              }
+            ],
+            [
+              {
+                "token": " calculation",
+                "probability": 0.16520142555236816
+              },
+              {
+                "token": " calculate",
+                "probability": 0.1457897424697876
+              },
+              {
+                "token": " calculating",
+                "probability": 0.0780356302857399
+              },
+              {
+                "token": "计算",
+                "probability": 0.07330769300460815
+              },
+              {
+                "token": " determine",
+                "probability": 0.06886620074510574
+              }
+            ],
+            [
+              {
+                "token": "保",
+                "probability": 0.2351599484682083
+              },
+              {
+                "token": "留",
+                "probability": 0.19495445489883423
+              },
+              {
+                "token": " keep",
+                "probability": 0.05585538595914841
+              },
+              {
+                "token": " kept",
+                "probability": 0.052471280097961426
+              },
+              {
+                "token": "守",
+                "probability": 0.029897231608629227
+              }
+            ],
+            [
+              {
+                "token": " same",
+                "probability": 0.4535260796546936
+              },
+              {
+                "token": " original",
+                "probability": 0.35320645570755005
+              },
+              {
+                "token": "原",
+                "probability": 0.025586191564798355
+              },
+              {
+                "token": " identical",
+                "probability": 0.012865545228123665
+              },
+              {
+                "token": " observation",
+                "probability": 0.010665911249816418
+              }
+            ],
+            [
+              {
+                "token": "源",
+                "probability": 0.042270444333553314
+              },
+              {
+                "token": " source",
+                "probability": 0.01655334234237671
+              },
+              {
+                "token": " honour",
+                "probability": 0.012891756370663643
+              },
+              {
+                "token": "自",
+                "probability": 0.010040110908448696
+              },
+              {
+                "token": "訪",
+                "probability": 0.00886036641895771
+              }
+            ],
+            [
+              {
+                "token": " information",
+                "probability": 0.5945762991905212
+              },
+              {
+                "token": " location",
+                "probability": 0.04880579188466072
+              },
+              {
+                "token": " data",
+                "probability": 0.01584492065012455
+              },
+              {
+                "token": "信息",
+                "probability": 0.01398309413343668
+              },
+              {
+                "token": " colours",
+                "probability": 0.013135900720953941
+              }
+            ],
+            [
+              {
+                "token": " direction",
+                "probability": 0.12063808739185333
+              },
+              {
+                "token": " observation",
+                "probability": 0.12063808739185333
+              },
+              {
+                "token": " arrival",
+                "probability": 0.05698540061712265
+              },
+              {
+                "token": " transmission",
+                "probability": 0.03456339240074158
+              },
+              {
+                "token": " measurement",
+                "probability": 0.03246930241584778
+              }
+            ],
+            [
+              {
+                "token": "前",
+                "probability": 0.07353036850690842
+              },
+              {
+                "token": "验",
+                "probability": 0.021066803485155106
+              },
+              {
+                "token": "期",
+                "probability": 0.018591389060020447
+              },
+              {
+                "token": "前の",
+                "probability": 0.009951253421604633
+              },
+              {
+                "token": "往",
+                "probability": 0.007750043645501137
+              }
+            ],
+            [
+              {
+                "token": " time",
+                "probability": 0.7810165882110596
+              },
+              {
+                "token": " order",
+                "probability": 0.044061943888664246
+              },
+              {
+                "token": " temporal",
+                "probability": 0.02672491781413555
+              },
+              {
+                "token": " tim",
+                "probability": 0.020813386887311935
+              },
+              {
+                "token": " timeline",
+                "probability": 0.01955236867070198
+              }
+            ],
+            [
+              {
+                "token": "联",
+                "probability": 0.38438141345977783
+              },
+              {
+                "token": "聯",
+                "probability": 0.1328386664390564
+              },
+              {
+                "token": " relationships",
+                "probability": 0.05894680321216583
+              },
+              {
+                "token": " connection",
+                "probability": 0.048868611454963684
+              },
+              {
+                "token": "連",
+                "probability": 0.040513504296541214
+              }
+            ],
+            [
+              {
+                "token": ".\n\n",
+                "probability": 0.2487790882587433
+              },
+              {
+                "token": ",",
+                "probability": 0.20624510943889618
+              },
+              {
+                "token": ".",
+                "probability": 0.06290120631456375
+              },
+              {
+                "token": "。\n\n",
+                "probability": 0.05214693024754524
+              },
+              {
+                "token": ".\n",
+                "probability": 0.048987504094839096
+              }
+            ],
+            [
+              {
+                "token": " observational",
+                "probability": 0.0015746033750474453
+              },
+              {
+                "token": " secondary",
+                "probability": 0.0007209059549495578
+              },
+              {
+                "token": " organised",
+                "probability": 0.000656392308883369
+              },
+              {
+                "token": " original",
+                "probability": 0.000656392308883369
+              },
+              {
+                "token": " second",
+                "probability": 0.0006361972773447633
+              }
+            ]
+          ]
+        },
+        {
+          "layer": 28,
+          "kind": "conv",
+          "cells": [
+            [
+              {
+                "token": "，",
+                "probability": 0.005094902124255896
+              },
+              {
+                "token": " ",
+                "probability": 0.004357900936156511
+              },
+              {
+                "token": "的",
+                "probability": 0.0021238711196929216
+              },
+              {
+                "token": "2",
+                "probability": 0.00199519214220345
+              },
+              {
+                "token": "、",
+                "probability": 0.0017607511254027486
+              }
+            ],
+            [
+              {
+                "token": " two",
+                "probability": 0.2456694394350052
+              },
+              {
+                "token": " between",
+                "probability": 0.05149511247873306
+              },
+              {
+                "token": " the",
+                "probability": 0.04837517812848091
+              },
+              {
+                "token": "兩",
+                "probability": 0.03767462819814682
+              },
+              {
+                "token": " results",
+                "probability": 0.02146635577082634
+              }
+            ],
+            [
+              {
+                "token": "者",
+                "probability": 0.242643803358078
+              },
+              {
+                "token": "者的",
+                "probability": 0.13825426995754242
+              },
+              {
+                "token": "個",
+                "probability": 0.061349961906671524
+              },
+              {
+                "token": "種",
+                "probability": 0.03961051255464554
+              },
+              {
+                "token": "位",
+                "probability": 0.03721063584089279
+              }
+            ],
+            [
+              {
+                "token": "數",
+                "probability": 0.0975494310259819
+              },
+              {
+                "token": "字",
+                "probability": 0.0916392132639885
+              },
+              {
+                "token": "筆",
+                "probability": 0.04328729584813118
+              },
+              {
+                "token": "笔",
+                "probability": 0.029750892892479897
+              },
+              {
+                "token": " money",
+                "probability": 0.02625507302582264
+              }
+            ],
+            [
+              {
+                "token": "金額",
+                "probability": 0.05494380742311478
+              },
+              {
+                "token": "筆",
+                "probability": 0.048487741500139236
+              },
+              {
+                "token": "日期",
+                "probability": 0.02940930239856243
+              },
+              {
+                "token": " date",
+                "probability": 0.027627483010292053
+              },
+              {
+                "token": "數",
+                "probability": 0.025953618809580803
+              }
+            ],
+            [
+              {
+                "token": "的",
+                "probability": 0.445646733045578
+              },
+              {
+                "token": "段",
+                "probability": 0.05000017583370209
+              },
+              {
+                "token": "點",
+                "probability": 0.04412500187754631
+              },
+              {
+                "token": "時",
+                "probability": 0.02676316536962986
+              },
+              {
+                "token": "下的",
+                "probability": 0.01839403808116913
+              }
+            ],
+            [
+              {
+                "token": " cash",
+                "probability": 0.02653704769909382
+              },
+              {
+                "token": " salary",
+                "probability": 0.020667074248194695
+              },
+              {
+                "token": " wage",
+                "probability": 0.018238628283143044
+              },
+              {
+                "token": " monetary",
+                "probability": 0.01713360659778118
+              },
+              {
+                "token": " interest",
+                "probability": 0.01334366574883461
+              }
+            ],
+            [
+              {
+                "token": "測",
+                "probability": 0.8775956034660339
+              },
+              {
+                "token": "察",
+                "probability": 0.06767290830612183
+              },
+              {
+                "token": "测",
+                "probability": 0.00591319240629673
+              },
+              {
+                "token": "측",
+                "probability": 0.003817843971773982
+              },
+              {
+                "token": "念",
+                "probability": 0.0029733399860560894
+              }
+            ],
+            [
+              {
+                "token": "值",
+                "probability": 0.18436753749847412
+              },
+              {
+                "token": " data",
+                "probability": 0.1528460681438446
+              },
+              {
+                "token": "結果",
+                "probability": 0.1267138421535492
+              },
+              {
+                "token": "數",
+                "probability": 0.11182456463575363
+              },
+              {
+                "token": "数据",
+                "probability": 0.09270582348108292
+              }
+            ],
+            [
+              {
+                "token": "計算",
+                "probability": 0.13994942605495453
+              },
+              {
+                "token": "例如",
+                "probability": 0.051484525203704834
+              },
+              {
+                "token": " calculate",
+                "probability": 0.024319563060998917
+              },
+              {
+                "token": "分析",
+                "probability": 0.02284611575305462
+              },
+              {
+                "token": " determine",
+                "probability": 0.014750560745596886
+              }
+            ],
+            [
+              {
+                "token": "留",
+                "probability": 0.7105536460876465
+              },
+              {
+                "token": "證",
+                "probability": 0.03323303908109665
+              },
+              {
+                "token": "羅",
+                "probability": 0.027551153674721718
+              },
+              {
+                "token": "險",
+                "probability": 0.017788363620638847
+              },
+              {
+                "token": "守",
+                "probability": 0.005425143521279097
+              }
+            ],
+            [
+              {
+                "token": "原",
+                "probability": 0.22941510379314423
+              },
+              {
+                "token": " same",
+                "probability": 0.14812152087688446
+              },
+              {
+                "token": "相同",
+                "probability": 0.11535715311765671
+              },
+              {
+                "token": "同",
+                "probability": 0.08439710736274719
+              },
+              {
+                "token": "時間",
+                "probability": 0.03104795701801777
+              }
+            ],
+            [
+              {
+                "token": "源",
+                "probability": 0.27693256735801697
+              },
+              {
+                "token": "自",
+                "probability": 0.10187781602144241
+              },
+              {
+                "token": "原",
+                "probability": 0.014676889404654503
+              },
+              {
+                "token": " source",
+                "probability": 0.014676889404654503
+              },
+              {
+                "token": "往",
+                "probability": 0.012952310033142567
+              }
+            ],
+            [
+              {
+                "token": "的",
+                "probability": 0.05219091475009918
+              },
+              {
+                "token": "信息",
+                "probability": 0.04326779022812843
+              },
+              {
+                "token": " information",
+                "probability": 0.033696986734867096
+              },
+              {
+                "token": "訊",
+                "probability": 0.031655389815568924
+              },
+              {
+                "token": "時間",
+                "probability": 0.027935784310102463
+              }
+            ],
+            [
+              {
+                "token": "時間",
+                "probability": 0.11168134212493896
+              },
+              {
+                "token": "接收",
+                "probability": 0.06773816049098969
+              },
+              {
+                "token": " time",
+                "probability": 0.041085273027420044
+              },
+              {
+                "token": "觀",
+                "probability": 0.03406088426709175
+              },
+              {
+                "token": " observation",
+                "probability": 0.013338434509932995
+              }
+            ],
+            [
+              {
+                "token": "前",
+                "probability": 0.7664404511451721
+              },
+              {
+                "token": "验",
+                "probability": 0.015906963497400284
+              },
+              {
+                "token": "後",
+                "probability": 0.015906963497400284
+              },
+              {
+                "token": "天",
+                "probability": 0.00663100928068161
+              },
+              {
+                "token": "期",
+                "probability": 0.006229257211089134
+              }
+            ],
+            [
+              {
+                "token": "時間",
+                "probability": 0.5030457973480225
+              },
+              {
+                "token": " time",
+                "probability": 0.23762202262878418
+              },
+              {
+                "token": "时间",
+                "probability": 0.025045175105333328
+              },
+              {
+                "token": "的",
+                "probability": 0.020763181149959564
+              },
+              {
+                "token": "順",
+                "probability": 0.011113729327917099
+              }
+            ],
+            [
+              {
+                "token": "联",
+                "probability": 0.43700411915779114
+              },
+              {
+                "token": "聯",
+                "probability": 0.34033915400505066
+              },
+              {
+                "token": "連",
+                "probability": 0.04326926916837692
+              },
+              {
+                "token": "係",
+                "probability": 0.0358714833855629
+              },
+              {
+                "token": "鍵",
+                "probability": 0.026244137436151505
+              }
+            ],
+            [
+              {
+                "token": "，",
+                "probability": 0.30600595474243164
+              },
+              {
+                "token": ".",
+                "probability": 0.1637931913137436
+              },
+              {
+                "token": "。\n\n",
+                "probability": 0.1275622546672821
+              },
+              {
+                "token": "。",
+                "probability": 0.11983364820480347
+              },
+              {
+                "token": ".\n\n",
+                "probability": 0.07737042009830475
+              }
+            ],
+            [
+              {
+                "token": "2",
+                "probability": 0.007745184004306793
+              },
+              {
+                "token": " ",
+                "probability": 0.006420983467251062
+              },
+              {
+                "token": "3",
+                "probability": 0.003331162268295884
+              },
+              {
+                "token": "1",
+                "probability": 0.0025144931860268116
+              },
+              {
+                "token": "，",
+                "probability": 0.0023621476721018553
+              }
+            ]
+          ]
+        }
+      ],
+      "metrics": [
+        {
+          "layer": 4,
+          "jacobian_next_token_nll": 11.95790958404541,
+          "identity_lens_next_token_nll": 15.349740982055664,
+          "native_next_token_nll": 4.657389163970947,
+          "top1_agreement": 0.0
+        },
+        {
+          "layer": 8,
+          "jacobian_next_token_nll": 12.522778511047363,
+          "identity_lens_next_token_nll": 11.195985794067383,
+          "native_next_token_nll": 4.657389163970947,
+          "top1_agreement": 0.0
+        },
+        {
+          "layer": 14,
+          "jacobian_next_token_nll": 13.159139633178711,
+          "identity_lens_next_token_nll": 11.00322437286377,
+          "native_next_token_nll": 4.657389163970947,
+          "top1_agreement": 0.0
+        },
+        {
+          "layer": 20,
+          "jacobian_next_token_nll": 13.085219383239746,
+          "identity_lens_next_token_nll": 10.240669250488281,
+          "native_next_token_nll": 4.657389163970947,
+          "top1_agreement": 0.0
+        },
+        {
+          "layer": 26,
+          "jacobian_next_token_nll": 9.2185697555542,
+          "identity_lens_next_token_nll": 7.16455078125,
+          "native_next_token_nll": 4.657389163970947,
+          "top1_agreement": 0.10000000149011612
+        },
+        {
+          "layer": 28,
+          "jacobian_next_token_nll": 5.654387950897217,
+          "identity_lens_next_token_nll": 5.774850368499756,
+          "native_next_token_nll": 4.657389163970947,
+          "top1_agreement": 0.45000001788139343
+        }
+      ],
+      "native": [
+        [
+          {
+            "token": "，",
+            "probability": 0.028180157765746117
+          },
+          {
+            "token": "在",
+            "probability": 0.018772033974528313
+          },
+          {
+            "token": "的",
+            "probability": 0.018194478005170822
+          },
+          {
+            "token": "为",
+            "probability": 0.014169872738420963
+          },
+          {
+            "token": "于",
+            "probability": 0.008073750883340836
+          }
+        ],
+        [
+          {
+            "token": "兩",
+            "probability": 0.14117297530174255
+          },
+          {
+            "token": "一下",
+            "probability": 0.08043793588876724
+          },
+          {
+            "token": "以下",
+            "probability": 0.03920232132077217
+          },
+          {
+            "token": "結果",
+            "probability": 0.025310922414064407
+          },
+          {
+            "token": "大小",
+            "probability": 0.016860708594322205
+          }
+        ],
+        [
+          {
+            "token": "個",
+            "probability": 0.1561037003993988
+          },
+          {
+            "token": "種",
+            "probability": 0.14664585888385773
+          },
+          {
+            "token": "者",
+            "probability": 0.11420790106058121
+          },
+          {
+            "token": "次",
+            "probability": 0.0784938707947731
+          },
+          {
+            "token": "年",
+            "probability": 0.07373816519975662
+          }
+        ],
+        [
+          {
+            "token": "數",
+            "probability": 0.20965737104415894
+          },
+          {
+            "token": "的",
+            "probability": 0.06394188106060028
+          },
+          {
+            "token": "字",
+            "probability": 0.06006784737110138
+          },
+          {
+            "token": "筆",
+            "probability": 0.036432985216379166
+          },
+          {
+            "token": "記",
+            "probability": 0.024269603192806244
+          }
+        ],
+        [
+          {
+            "token": "筆",
+            "probability": 0.18896009027957916
+          },
+          {
+            "token": "數",
+            "probability": 0.07399783283472061
+          },
+          {
+            "token": "金額",
+            "probability": 0.04488195851445198
+          },
+          {
+            "token": "字",
+            "probability": 0.026384741067886353
+          },
+          {
+            "token": "長",
+            "probability": 0.02256806381046772
+          }
+        ],
+        [
+          {
+            "token": "的",
+            "probability": 0.46838027238845825
+          },
+          {
+            "token": "點",
+            "probability": 0.11125006526708603
+          },
+          {
+            "token": "時",
+            "probability": 0.03844699263572693
+          },
+          {
+            "token": "段",
+            "probability": 0.03392935171723366
+          },
+          {
+            "token": "、",
+            "probability": 0.019332362338900566
+          }
+        ],
+        [
+          {
+            "token": "折",
+            "probability": 0.03465113416314125
+          },
+          {
+            "token": "長",
+            "probability": 0.024571331217885017
+          },
+          {
+            "token": "數",
+            "probability": 0.02101697400212288
+          },
+          {
+            "token": "預",
+            "probability": 0.016368037089705467
+          },
+          {
+            "token": "�",
+            "probability": 0.015376347117125988
+          }
+        ],
+        [
+          {
+            "token": "測",
+            "probability": 0.7897145748138428
+          },
+          {
+            "token": "察",
+            "probability": 0.12110665440559387
+          },
+          {
+            "token": "念",
+            "probability": 0.009941039606928825
+          },
+          {
+            "token": "賞",
+            "probability": 0.007742089685052633
+          },
+          {
+            "token": "音",
+            "probability": 0.007273019757121801
+          }
+        ],
+        [
+          {
+            "token": "數",
+            "probability": 0.3130958378314972
+          },
+          {
+            "token": "值",
+            "probability": 0.22906579077243805
+          },
+          {
+            "token": "結果",
+            "probability": 0.16758812963962555
+          },
+          {
+            "token": "資料",
+            "probability": 0.04237291216850281
+          },
+          {
+            "token": "量",
+            "probability": 0.011404515244066715
+          }
+        ],
+        [
+          {
+            "token": "計算",
+            "probability": 0.10646075010299683
+          },
+          {
+            "token": "例如",
+            "probability": 0.06873622536659241
+          },
+          {
+            "token": "觀",
+            "probability": 0.02528664469718933
+          },
+          {
+            "token": "利用",
+            "probability": 0.023754604160785675
+          },
+          {
+            "token": "分析",
+            "probability": 0.020963363349437714
+          }
+        ],
+        [
+          {
+            "token": "證",
+            "probability": 0.4825401306152344
+          },
+          {
+            "token": "留",
+            "probability": 0.3758026361465454
+          },
+          {
+            "token": "羅",
+            "probability": 0.02897878736257553
+          },
+          {
+            "token": "險",
+            "probability": 0.014571449719369411
+          },
+          {
+            "token": "全",
+            "probability": 0.004444040823727846
+          }
+        ],
+        [
+          {
+            "token": "原",
+            "probability": 0.10223115980625153
+          },
+          {
+            "token": "時間",
+            "probability": 0.05824955552816391
+          },
+          {
+            "token": "相同",
+            "probability": 0.051405053585767746
+          },
+          {
+            "token": "觀",
+            "probability": 0.0353301465511322
+          },
+          {
+            "token": "同",
+            "probability": 0.033189598470926285
+          }
+        ],
+        [
+          {
+            "token": "自",
+            "probability": 0.7580360174179077
+          },
+          {
+            "token": "源",
+            "probability": 0.16914071142673492
+          },
+          {
+            "token": "回",
+            "probability": 0.005437018815428019
+          },
+          {
+            "token": "原",
+            "probability": 0.00450744666159153
+          },
+          {
+            "token": "測",
+            "probability": 0.003297718707472086
+          }
+        ],
+        [
+          {
+            "token": "的",
+            "probability": 0.1700083315372467
+          },
+          {
+            "token": "頻",
+            "probability": 0.04038051888346672
+          },
+          {
+            "token": "信息",
+            "probability": 0.026071622967720032
+          },
+          {
+            "token": "時間",
+            "probability": 0.02300812490284443
+          },
+          {
+            "token": "資料",
+            "probability": 0.02230023965239525
+          }
+        ],
+        [
+          {
+            "token": "觀",
+            "probability": 0.1404639035463333
+          },
+          {
+            "token": "時間",
+            "probability": 0.08519566804170609
+          },
+          {
+            "token": "信",
+            "probability": 0.027658982202410698
+          },
+          {
+            "token": "接收",
+            "probability": 0.02023574523627758
+          },
+          {
+            "token": "時",
+            "probability": 0.01677602156996727
+          }
+        ],
+        [
+          {
+            "token": "前",
+            "probability": 0.516649067401886
+          },
+          {
+            "token": "後",
+            "probability": 0.2765423357486725
+          },
+          {
+            "token": "進",
+            "probability": 0.03983969986438751
+          },
+          {
+            "token": "行",
+            "probability": 0.02003265917301178
+          },
+          {
+            "token": "天",
+            "probability": 0.018818942829966545
+          }
+        ],
+        [
+          {
+            "token": "時間",
+            "probability": 0.41248801350593567
+          },
+          {
+            "token": "的",
+            "probability": 0.15174588561058044
+          },
+          {
+            "token": "來",
+            "probability": 0.07167966663837433
+          },
+          {
+            "token": "觀",
+            "probability": 0.03836736083030701
+          },
+          {
+            "token": "順",
+            "probability": 0.026369476690888405
+          }
+        ],
+        [
+          {
+            "token": "係",
+            "probability": 0.5388857126235962
+          },
+          {
+            "token": "聯",
+            "probability": 0.3070478141307831
+          },
+          {
+            "token": "系",
+            "probability": 0.072930246591568
+          },
+          {
+            "token": "連",
+            "probability": 0.04708730801939964
+          },
+          {
+            "token": "联",
+            "probability": 0.01732245273888111
+          }
+        ],
+        [
+          {
+            "token": "的",
+            "probability": 0.19445835053920746
+          },
+          {
+            "token": "，",
+            "probability": 0.18267671763896942
+          },
+          {
+            "token": "。",
+            "probability": 0.18267671763896942
+          },
+          {
+            "token": "。\n\n",
+            "probability": 0.09185562282800674
+          },
+          {
+            "token": "，以",
+            "probability": 0.03174445405602455
+          }
+        ],
+        [
+          {
+            "token": "在",
+            "probability": 0.03578800708055496
+          },
+          {
+            "token": "2",
+            "probability": 0.0336197204887867
+          },
+          {
+            "token": "「",
+            "probability": 0.018566573038697243
+          },
+          {
+            "token": "這",
+            "probability": 0.01401478424668312
+          },
+          {
+            "token": "為",
+            "probability": 0.01401478424668312
+          }
+        ]
+      ]
+    }
+  ],
+  "body_fixed": true,
+  "native_outputs_identical": true,
+  "J_space_established": false,
+  "peak_vram_gib": 8.139933109283447
+}

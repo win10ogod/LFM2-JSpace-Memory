@@ -1,0 +1,59 @@
+{
+  "training_examples": 256,
+  "training_graphs": 160,
+  "training_hops": [
+    1,
+    2,
+    4,
+    8
+  ],
+  "evaluation_hash_questions": 42,
+  "coherence_sessions": 2,
+  "coherence_turns": 2,
+  "heldout_hop_length": 10,
+  "train_seed": 913741,
+  "evaluation_seed": 782349,
+  "hash_lengths": [
+    8,
+    16
+  ],
+  "alphabet_size": 52,
+  "disjoint_graphs_and_symbols": true,
+  "shuffled_edges": true,
+  "every_required_edge_present": true,
+  "no_table_name_or_source_location_in_hash_queries": true,
+  "all_distractor_chains_same_depth": true,
+  "reference_article": "https://magic.dev/blog/100m-token-context-windows",
+  "reference_implementation": "https://github.com/magicproduct/hash-hop/blob/main/hashhop/generate.py",
+  "variant": "Magic-style task, arrow notation from the article, whitespace-separated trace answers; native chat wrapper and physical cold-recall controls are local extensions",
+  "zero_shot_baseline_is_not_a_capacity_limit": true,
+  "native_sft_cutoff": 4096,
+  "largest_complete_training_record": 2212,
+  "training_tokens": 241440,
+  "sft_chunking": false,
+  "external_answer_lookup_during_generation": false,
+  "evaluation_controls": [
+    "native-routed",
+    "oracle-units",
+    "wrong-unit",
+    "empty",
+    "source-visible-last"
+  ],
+  "cross_unit_routing": "four candidates; report source coverage separately from answer accuracy",
+  "hash_max_new_tokens": 256,
+  "coherence_max_new_tokens": 1024,
+  "coherence_metrics": "fact preservation, contradiction evidence, repetition, completion and full manual output review; no keyword-only claim of coherence",
+  "training_policy": "Run only after baseline evaluation; native LlamaFactory, small separate continuation; do not alter the ongoing SFT dataset",
+  "source_sha256": "a3f5ab57282854c2ce766ed767f20a7e99f47e628b24989a1c2eb3e7c4681942",
+  "question_sha256": "04474cfd6831dbfffd2deeecbc363bf2e65c28c5250f3c79f76d2067d14b3ecc",
+  "native_mask_history": true,
+  "training_layout": "native observation/acknowledgment/query/answer turns; source-only write and fresh-context query loss",
+  "objective": "dual-memory query CE, physical-weight-only recall and counterfactual contrasts",
+  "evaluation_role": "development set; no universal capacity claim",
+  "component_ablation_scope": "correct-unit oracle: first two tables (8/16 character hashes), hops 1,4,8; cross-unit hop 4; two coherent dialogues",
+  "component_ablations": [
+    "physical weights only",
+    "full corrected latent observations only",
+    "VAE posterior codes plus physical weights, without residual corrections"
+  ]
+}

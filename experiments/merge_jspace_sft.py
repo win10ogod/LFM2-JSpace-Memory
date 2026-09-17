@@ -25,6 +25,7 @@ def main():
     for name in ('base', 'adapter', 'target', 'receipt'):
         parser.add_argument('--' + name, type=Path, required=True)
     parser.add_argument('--expected-steps', type=int, default=464)
+    parser.add_argument('--training-manifest',type=Path)
     args = parser.parse_args()
     gate = os.environ.get('LFM2_START_GATE')
     while gate and not Path(gate).exists():
@@ -76,8 +77,13 @@ def main():
         method='native LlamaFactory, all-module LoRA rank 8 alpha 16, joint memory auxiliary loss',
         dataset_counts=dict(VisualWebInstruct=2718, Omnimodal_image_only=994),
         cutoff_len=4096, physical_batch=8, training_chunks=0, previous_stage=previous)
+    if args.training_manifest is not None:
+        manifest=json.loads(args.training_manifest.read_text())
+        if manifest['expected_steps']!=state['global_step']:raise RuntimeError('Training manifest step mismatch')
+        merged.config.finetuning=dict(stage='memory_recall_sft_merged',native_step=state['global_step'],epochs=state['epoch'],
+            **manifest,previous_stage=previous)
     for name in list(merged.config.to_dict()):
-        if name == 'native_joint_sft' or name.startswith('native_sft_'):
+        if name in ('native_joint_sft','native_memory_recall') or name.startswith('native_sft_'):
             delattr(merged.config, name)
     # Native backbone weights changed. An old lens must not be advertised as current.
     merged.config.concept_memory = None

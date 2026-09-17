@@ -1,0 +1,82 @@
+{
+  "source": "six selected VisualWeb and six selected image-only Omnimodal texts",
+  "records": [
+    {
+      "row": 0,
+      "id": "visualweb:000000000000",
+      "tokens": 128
+    },
+    {
+      "row": 1,
+      "id": "visualweb:000000000001",
+      "tokens": 128
+    },
+    {
+      "row": 2,
+      "id": "visualweb:000000000002",
+      "tokens": 128
+    },
+    {
+      "row": 3,
+      "id": "visualweb:000000000003",
+      "tokens": 128
+    },
+    {
+      "row": 4,
+      "id": "visualweb:000000000004",
+      "tokens": 128
+    },
+    {
+      "row": 5,
+      "id": "visualweb:000000000005",
+      "tokens": 128
+    },
+    {
+      "row": 2718,
+      "id": "omni:",
+      "tokens": 128
+    },
+    {
+      "row": 2719,
+      "id": "omni:",
+      "tokens": 128
+    },
+    {
+      "row": 2720,
+      "id": "omni:",
+      "tokens": 128
+    },
+    {
+      "row": 2721,
+      "id": "omni:",
+      "tokens": 128
+    },
+    {
+      "row": 2722,
+      "id": "omni:",
+      "tokens": 128
+    },
+    {
+      "row": 2723,
+      "id": "omni:",
+      "tokens": 128
+    }
+  ],
+  "token_window": 128,
+  "text_sha256": [
+    "683df5319f70e2540f40ab69867cd05dd19ce16c884f38a079fff6b61d3d9f56",
+    "1a4a29a1a3ab3172041e3bc49e232e5bd5bfa1ba1f66ecd84bfd554bfdcf4a01",
+    "b22c8dcb4d2f9970e563f2491302604a5f3ff6ea06f327dedf7642af9ba73fd4",
+    "8964538441af99cb315a22a7900ecf5e720c3ebb72651785c54a43770949eb7b",
+    "ebc9ce8be4247ab6c5dba07100863fabc8352a4b5c5eb59aab965cd60c61f4fa",
+    "e969034d54adff45c6c5ab0c6df51929dea299a3064f482b843c12962fa56cde",
+    "7e8c747b3ef6f746dc074c34e83173e6cb240393860510e047a10670b201a251",
+    "38d7047891f35831ccb4f79655f5dcb75755c1b49f8091080b5d129b8b138d53",
+    "e2037c5b8da4394ffb123cef74f96d6f0a21f93185905d376f45b0a0a688b5a3",
+    "594d571fb6c589d7088f93dcfaa0bc261e89f1ff8268be0e037f967f37cbed5e",
+    "d7c27cdb0b27b79bb24b981c42ea77384ec7802494134c536f7a63c8c4d74ffe",
+    "147131d24113398f6d8e9919d1cb937a0b7644961fca4625916de3640999d24f"
+  ],
+  "calibration_texts_included": false,
+  "note": "Twelve development calibration texts; several selected records share boilerplate."
+}

@@ -4,55 +4,55 @@
       "path": "experiments/jacobian_diagnostic.py",
       "original_sha256": "133e0e6f7b0c04cb3d46be25c5babacb2d48be535910df85a1c627120c7f2fcc",
       "published_sha256": "1bdf0b88966237cdaab873c780b6bae5c672df2a1cb394f5db1b706f87d6bde2",
-      "transformation": "import of identical shared runtime helpers, if present"
+      "transformation": "Current shared experiment helper; historical result files unchanged"
     },
     {
       "path": "experiments/test_jspace_functions.py",
       "original_sha256": "3d60a78b599cda4515f3992ca976d4bbf6eb9015a6adad0248d4e80c5068dbff",
       "published_sha256": "ed72e79a9e69718e3855478d87ce2ee34db84573c38dc418c878d632904d1f8e",
-      "transformation": "import of identical shared runtime helpers, if present"
+      "transformation": "Current shared experiment helper; historical result files unchanged"
     },
     {
       "path": "experiments/test_jspace_privilege.py",
       "original_sha256": "0f91c62d653666ac774858cf667f77e32d5c8f136b7c6799708b3969be632fc0",
       "published_sha256": "8d475d9cc3e0d8db4445e2d91097f5bc1199cb653f9e48302fa1f4f299664ec5",
-      "transformation": "import of identical shared runtime helpers, if present"
+      "transformation": "Current shared experiment helper; historical result files unchanged"
     },
     {
       "path": "experiments/verify_jspace_transfer.py",
       "original_sha256": "b69d88bdab0d197a00f740eb98ed4fd8b32bd1266dba76076e6a645c8983cb06",
       "published_sha256": "b8c1cd31737ee4013d4ad998d512a31f0aa2b044efd296d6237b93bc0274875e",
-      "transformation": "import of identical shared runtime helpers, if present"
+      "transformation": "Current shared experiment helper; historical result files unchanged"
     },
     {
       "path": "experiments/build_jspace_report.py",
       "original_sha256": "604e2855c5a9a1751278cfdc7dcb4fd7447663579773e078794e787db726eeea",
       "published_sha256": "604e2855c5a9a1751278cfdc7dcb4fd7447663579773e078794e787db726eeea",
-      "transformation": "import of identical shared runtime helpers, if present"
+      "transformation": "Current shared experiment helper; historical result files unchanged"
     },
     {
       "path": "experiments/research_common.py",
-      "original_sha256": "b22e10373a36c39aa9616f0a98a56424e46c607327534a1b48fbfd79bb5175fe",
-      "published_sha256": "b22e10373a36c39aa9616f0a98a56424e46c607327534a1b48fbfd79bb5175fe",
-      "transformation": "import of identical shared runtime helpers, if present"
+      "original_sha256": "069ebe7e9f10211a2a4339e3e83759e07dfaaaf1b44141b8c06f68d5b4007eb5",
+      "published_sha256": "069ebe7e9f10211a2a4339e3e83759e07dfaaaf1b44141b8c06f68d5b4007eb5",
+      "transformation": "Current shared experiment helper; historical result files unchanged"
     },
     {
       "path": "experiments/verify_unified_memory.py",
-      "original_sha256": "40772f309ead27d28b304465b5342d6ae63fffbc11d0bbc22df38bab215c35b9",
-      "published_sha256": "40772f309ead27d28b304465b5342d6ae63fffbc11d0bbc22df38bab215c35b9",
-      "transformation": "import of identical shared runtime helpers, if present"
+      "original_sha256": "faffb2aa96e302ee9caed077b3cd5bb91f46c124a7a46b3240cf300a010537af",
+      "published_sha256": "faffb2aa96e302ee9caed077b3cd5bb91f46c124a7a46b3240cf300a010537af",
+      "transformation": "Current shared experiment helper; historical result files unchanged"
     },
     {
       "path": "experiments/merge_jspace_sft.py",
-      "original_sha256": "78be5ed3ef89d202605f2b98943ead866080681733e83c3d86ed80624362621a",
-      "published_sha256": "78be5ed3ef89d202605f2b98943ead866080681733e83c3d86ed80624362621a",
-      "transformation": "import of identical shared runtime helpers, if present"
+      "original_sha256": "5baaa1dc486728ac4929125dcddfbb270948b5134443a3cbcecfad39bceaeee6",
+      "published_sha256": "5baaa1dc486728ac4929125dcddfbb270948b5134443a3cbcecfad39bceaeee6",
+      "transformation": "Current shared experiment helper; historical result files unchanged"
     },
     {
       "path": "experiments/lfm2_export_artifacts.py",
       "original_sha256": "523ff5f9645122b720b162d9df9018d99f78438f85024137dd679787411312cf",
       "published_sha256": "523ff5f9645122b720b162d9df9018d99f78438f85024137dd679787411312cf",
-      "transformation": "import of identical shared runtime helpers, if present"
+      "transformation": "Current shared experiment helper; historical result files unchanged"
     },
     {
       "path": "evidence/pre-sft/jspace-functions-v1/protocol.json",

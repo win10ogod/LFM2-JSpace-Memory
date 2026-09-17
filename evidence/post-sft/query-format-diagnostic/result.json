@@ -1,0 +1,19 @@
+{
+  "summary": {
+    "full-chat": {
+      "n": 17,
+      "top1": 11
+    },
+    "raw-complete-question": {
+      "n": 17,
+      "top1": 17
+    },
+    "chat-context-content-positions": {
+      "n": 17,
+      "top1": 17
+    }
+  },
+  "body_fixed": true,
+  "stored_memory_changed": false,
+  "role": "development diagnosis of serialization mismatch, not a held-out test or memory training result"
+}

@@ -61,4 +61,10 @@ The starting checkpoint already contained memory PT (536 updates within the prio
 
 The first two genuine optimizer updates of this run used the extra source-gradient auxiliary implementation. Updates three onward reuse the native backward and next-batch FFN replay. Valid first updates were retained; the run resumed from step four with optimizer, RNG, and data position state. This is an auxiliary-training schedule change, not a claim of identical loss to the earlier implementation. Main native CE remained unchanged.
 
-The final package requires all 464 steps, an audit of every merged effective LoRA tensor, fresh J-lens calibration, and cold-process checks. A changed backbone invalidates the previous calibration; reusing its UUID or merely copying its old lens is not accepted. Training logs and optimizer artifacts remain outside the model directory.
+All 464 updates subsequently completed with exit code zero. After a later worker interruption, training resumed from a validated step-352 checkpoint with optimizer, scheduler, RNG and data position retained. The merged checkpoint is `95c663dda67d4dbe8ec77a4681db3fc2`: 424 effective adapter tensors were audited, with no unmerged parameters. The merge probe measured logit KL 0.0007121 and maximum absolute logit difference 0.140625; identical predictions on every input are not claimed.
+
+Fresh J-lens calibration and cold-process checks were performed. A changed backbone invalidates the previous calibration; reusing its UUID or merely copying its old lens is not accepted. Training logs and optimizer artifacts remain outside the model directory.
+
+The original LlamaFactory `lfm2_vl` template lacked the leading BOS emitted by the HF native chat template. This was corrected for the subsequent HashHop continuation, not retroactively for these 464 completed updates. The published ordered reader also places the query BOS before recalled features, and indexes complete query text separately from chat control tokens. Neither repair changes the completed SFT weights. Matched before/after evaluation artifacts identify the reader version.
+
+The subsequent memory-dependent HashHop stage has a separate repository and checkpoint identity. Its extra training must not be attributed to this visual/agent SFT stage.

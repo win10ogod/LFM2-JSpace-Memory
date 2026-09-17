@@ -1,0 +1,34 @@
+{
+  "sft_completed_steps": 464,
+  "original_weights_merged": true,
+  "checkpoint_id": "95c663dda67d4dbe8ec77a4681db3fc2",
+  "baseline_memory": {
+    "native_content": 7,
+    "oracle_content": 13,
+    "n": 17,
+    "misrouted_numeric_queries": 6,
+    "hot_cold_content_correctness_agreement": 17,
+    "hot_cold_exact_outputs": 14
+  },
+  "baseline_hashhop": {
+    "native_exact": 0,
+    "oracle_exact": 0,
+    "n": 42,
+    "native_source_visible_exact": 4,
+    "source_visible_one_hop_correct": 4
+  },
+  "coherence": "Full raw outputs show repetition loops and factual errors under recalled-memory prefixes; proper source-visible chat preserves substantially more facts.",
+  "priorities": [
+    "finish already-running baseline J-space checks",
+    "run query-format and BOS-framing probes on unchanged weights",
+    "fix demonstrated implementation defects before spending more training",
+    "profile and run the prepared memory-dependent HashHop objective",
+    "rerun matched memory and coherence tests"
+  ],
+  "do_not": {
+    "publish_without_name": true,
+    "claim_improvement_before_measurement": true,
+    "replace_primary_scores_with_oracle_or_source_visible": true
+  },
+  "hash_training_ready": "Native 256-row preprocessing and small-model causal/gradient tests passed; no 3B HashHop updates yet"
+}

@@ -50,6 +50,9 @@ class NativeSFTMemory:
 
     def forward(self,native_forward,inputs):
         with shared_effective_weights():
+            if getattr(self.model.config,'native_memory_recall',None):
+                from .memory_recall_training import forward
+                return forward(self,native_forward,inputs)
             return self._forward(native_forward,inputs)
 
     def _forward(self,native_forward,inputs):

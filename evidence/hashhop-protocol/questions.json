@@ -1,0 +1,870 @@
+[
+  {
+    "id": "hash-0-1-jump",
+    "kind": "hash",
+    "hops": 1,
+    "task": "jump",
+    "question": "Using the previously observed hash pairs, start at bJecUVlE and follow exactly 1 arrows. Return only the final value, with no intermediate values. Preserve every character and its case.",
+    "answer": "zbMknyUx",
+    "hash_length": 8,
+    "required_sources": [
+      "hash-0"
+    ],
+    "top_k": 1,
+    "source_pair_positions": [
+      16
+    ]
+  },
+  {
+    "id": "hash-0-2-trace",
+    "kind": "hash",
+    "hops": 2,
+    "task": "trace",
+    "question": "Using the previously observed hash pairs, start at bJecUVlE and follow exactly 2 arrows. Return every visited value in order, separated by single spaces. Do not repeat the starting key. Preserve every character and its case.",
+    "answer": "zbMknyUx NLnnsnKU",
+    "hash_length": 8,
+    "required_sources": [
+      "hash-0"
+    ],
+    "top_k": 1,
+    "source_pair_positions": [
+      16,
+      14
+    ]
+  },
+  {
+    "id": "hash-0-2-jump",
+    "kind": "hash",
+    "hops": 2,
+    "task": "jump",
+    "question": "Using the previously observed hash pairs, start at bJecUVlE and follow exactly 2 arrows. Return only the final value, with no intermediate values. Preserve every character and its case.",
+    "answer": "NLnnsnKU",
+    "hash_length": 8,
+    "required_sources": [
+      "hash-0"
+    ],
+    "top_k": 1,
+    "source_pair_positions": [
+      16,
+      14
+    ]
+  },
+  {
+    "id": "hash-0-4-trace",
+    "kind": "hash",
+    "hops": 4,
+    "task": "trace",
+    "question": "Using the previously observed hash pairs, start at bJecUVlE and follow exactly 4 arrows. Return every visited value in order, separated by single spaces. Do not repeat the starting key. Preserve every character and its case.",
+    "answer": "zbMknyUx NLnnsnKU lvpzaFro JRdLvsXG",
+    "hash_length": 8,
+    "required_sources": [
+      "hash-0"
+    ],
+    "top_k": 1,
+    "source_pair_positions": [
+      16,
+      14,
+      0,
+      26
+    ]
+  },
+  {
+    "id": "hash-0-4-jump",
+    "kind": "hash",
+    "hops": 4,
+    "task": "jump",
+    "question": "Using the previously observed hash pairs, start at bJecUVlE and follow exactly 4 arrows. Return only the final value, with no intermediate values. Preserve every character and its case.",
+    "answer": "JRdLvsXG",
+    "hash_length": 8,
+    "required_sources": [
+      "hash-0"
+    ],
+    "top_k": 1,
+    "source_pair_positions": [
+      16,
+      14,
+      0,
+      26
+    ]
+  },
+  {
+    "id": "hash-0-8-trace",
+    "kind": "hash",
+    "hops": 8,
+    "task": "trace",
+    "question": "Using the previously observed hash pairs, start at bJecUVlE and follow exactly 8 arrows. Return every visited value in order, separated by single spaces. Do not repeat the starting key. Preserve every character and its case.",
+    "answer": "zbMknyUx NLnnsnKU lvpzaFro JRdLvsXG daLqHIXJ zvfpfwZl ImpogCNz DmuBxGrc",
+    "hash_length": 8,
+    "required_sources": [
+      "hash-0"
+    ],
+    "top_k": 1,
+    "source_pair_positions": [
+      16,
+      14,
+      0,
+      26,
+      11,
+      20,
+      2,
+      29
+    ]
+  },
+  {
+    "id": "hash-0-8-jump",
+    "kind": "hash",
+    "hops": 8,
+    "task": "jump",
+    "question": "Using the previously observed hash pairs, start at bJecUVlE and follow exactly 8 arrows. Return only the final value, with no intermediate values. Preserve every character and its case.",
+    "answer": "DmuBxGrc",
+    "hash_length": 8,
+    "required_sources": [
+      "hash-0"
+    ],
+    "top_k": 1,
+    "source_pair_positions": [
+      16,
+      14,
+      0,
+      26,
+      11,
+      20,
+      2,
+      29
+    ]
+  },
+  {
+    "id": "hash-0-10-trace",
+    "kind": "hash",
+    "hops": 10,
+    "task": "trace",
+    "question": "Using the previously observed hash pairs, start at bJecUVlE and follow exactly 10 arrows. Return every visited value in order, separated by single spaces. Do not repeat the starting key. Preserve every character and its case.",
+    "answer": "zbMknyUx NLnnsnKU lvpzaFro JRdLvsXG daLqHIXJ zvfpfwZl ImpogCNz DmuBxGrc GWEvIsGe kjtwyumt",
+    "hash_length": 8,
+    "required_sources": [
+      "hash-0"
+    ],
+    "top_k": 1,
+    "source_pair_positions": [
+      16,
+      14,
+      0,
+      26,
+      11,
+      20,
+      2,
+      29,
+      19,
+      22
+    ]
+  },
+  {
+    "id": "hash-0-10-jump",
+    "kind": "hash",
+    "hops": 10,
+    "task": "jump",
+    "question": "Using the previously observed hash pairs, start at bJecUVlE and follow exactly 10 arrows. Return only the final value, with no intermediate values. Preserve every character and its case.",
+    "answer": "kjtwyumt",
+    "hash_length": 8,
+    "required_sources": [
+      "hash-0"
+    ],
+    "top_k": 1,
+    "source_pair_positions": [
+      16,
+      14,
+      0,
+      26,
+      11,
+      20,
+      2,
+      29,
+      19,
+      22
+    ]
+  },
+  {
+    "id": "hash-1-1-jump",
+    "kind": "hash",
+    "hops": 1,
+    "task": "jump",
+    "question": "Using the previously observed hash pairs, start at teBcnQNYCoPBDDvw and follow exactly 1 arrows. Return only the final value, with no intermediate values. Preserve every character and its case.",
+    "answer": "RrrjThsWvGWitati",
+    "hash_length": 16,
+    "required_sources": [
+      "hash-1"
+    ],
+    "top_k": 1,
+    "source_pair_positions": [
+      38
+    ]
+  },
+  {
+    "id": "hash-1-2-trace",
+    "kind": "hash",
+    "hops": 2,
+    "task": "trace",
+    "question": "Using the previously observed hash pairs, start at teBcnQNYCoPBDDvw and follow exactly 2 arrows. Return every visited value in order, separated by single spaces. Do not repeat the starting key. Preserve every character and its case.",
+    "answer": "RrrjThsWvGWitati JsKjQmAHhZwwVFlK",
+    "hash_length": 16,
+    "required_sources": [
+      "hash-1"
+    ],
+    "top_k": 1,
+    "source_pair_positions": [
+      38,
+      5
+    ]
+  },
+  {
+    "id": "hash-1-2-jump",
+    "kind": "hash",
+    "hops": 2,
+    "task": "jump",
+    "question": "Using the previously observed hash pairs, start at teBcnQNYCoPBDDvw and follow exactly 2 arrows. Return only the final value, with no intermediate values. Preserve every character and its case.",
+    "answer": "JsKjQmAHhZwwVFlK",
+    "hash_length": 16,
+    "required_sources": [
+      "hash-1"
+    ],
+    "top_k": 1,
+    "source_pair_positions": [
+      38,
+      5
+    ]
+  },
+  {
+    "id": "hash-1-4-trace",
+    "kind": "hash",
+    "hops": 4,
+    "task": "trace",
+    "question": "Using the previously observed hash pairs, start at teBcnQNYCoPBDDvw and follow exactly 4 arrows. Return every visited value in order, separated by single spaces. Do not repeat the starting key. Preserve every character and its case.",
+    "answer": "RrrjThsWvGWitati JsKjQmAHhZwwVFlK UbWtPMLpeOajKAms LkurUOWbaaZFKqiH",
+    "hash_length": 16,
+    "required_sources": [
+      "hash-1"
+    ],
+    "top_k": 1,
+    "source_pair_positions": [
+      38,
+      5,
+      23,
+      37
+    ]
+  },
+  {
+    "id": "hash-1-4-jump",
+    "kind": "hash",
+    "hops": 4,
+    "task": "jump",
+    "question": "Using the previously observed hash pairs, start at teBcnQNYCoPBDDvw and follow exactly 4 arrows. Return only the final value, with no intermediate values. Preserve every character and its case.",
+    "answer": "LkurUOWbaaZFKqiH",
+    "hash_length": 16,
+    "required_sources": [
+      "hash-1"
+    ],
+    "top_k": 1,
+    "source_pair_positions": [
+      38,
+      5,
+      23,
+      37
+    ]
+  },
+  {
+    "id": "hash-1-8-trace",
+    "kind": "hash",
+    "hops": 8,
+    "task": "trace",
+    "question": "Using the previously observed hash pairs, start at teBcnQNYCoPBDDvw and follow exactly 8 arrows. Return every visited value in order, separated by single spaces. Do not repeat the starting key. Preserve every character and its case.",
+    "answer": "RrrjThsWvGWitati JsKjQmAHhZwwVFlK UbWtPMLpeOajKAms LkurUOWbaaZFKqiH QCpgibfBoqMLlqkF LNiXNsXXmZydDgXm qyPPdpQkMsGhFOsg MvKyYDpQEoTmcZbI",
+    "hash_length": 16,
+    "required_sources": [
+      "hash-1"
+    ],
+    "top_k": 1,
+    "source_pair_positions": [
+      38,
+      5,
+      23,
+      37,
+      22,
+      45,
+      44,
+      36
+    ]
+  },
+  {
+    "id": "hash-1-8-jump",
+    "kind": "hash",
+    "hops": 8,
+    "task": "jump",
+    "question": "Using the previously observed hash pairs, start at teBcnQNYCoPBDDvw and follow exactly 8 arrows. Return only the final value, with no intermediate values. Preserve every character and its case.",
+    "answer": "MvKyYDpQEoTmcZbI",
+    "hash_length": 16,
+    "required_sources": [
+      "hash-1"
+    ],
+    "top_k": 1,
+    "source_pair_positions": [
+      38,
+      5,
+      23,
+      37,
+      22,
+      45,
+      44,
+      36
+    ]
+  },
+  {
+    "id": "hash-1-10-trace",
+    "kind": "hash",
+    "hops": 10,
+    "task": "trace",
+    "question": "Using the previously observed hash pairs, start at teBcnQNYCoPBDDvw and follow exactly 10 arrows. Return every visited value in order, separated by single spaces. Do not repeat the starting key. Preserve every character and its case.",
+    "answer": "RrrjThsWvGWitati JsKjQmAHhZwwVFlK UbWtPMLpeOajKAms LkurUOWbaaZFKqiH QCpgibfBoqMLlqkF LNiXNsXXmZydDgXm qyPPdpQkMsGhFOsg MvKyYDpQEoTmcZbI dZBfjJUYjlXtUxwi DVqcSpxLVwHmmdxC",
+    "hash_length": 16,
+    "required_sources": [
+      "hash-1"
+    ],
+    "top_k": 1,
+    "source_pair_positions": [
+      38,
+      5,
+      23,
+      37,
+      22,
+      45,
+      44,
+      36,
+      34,
+      19
+    ]
+  },
+  {
+    "id": "hash-1-10-jump",
+    "kind": "hash",
+    "hops": 10,
+    "task": "jump",
+    "question": "Using the previously observed hash pairs, start at teBcnQNYCoPBDDvw and follow exactly 10 arrows. Return only the final value, with no intermediate values. Preserve every character and its case.",
+    "answer": "DVqcSpxLVwHmmdxC",
+    "hash_length": 16,
+    "required_sources": [
+      "hash-1"
+    ],
+    "top_k": 1,
+    "source_pair_positions": [
+      38,
+      5,
+      23,
+      37,
+      22,
+      45,
+      44,
+      36,
+      34,
+      19
+    ]
+  },
+  {
+    "id": "hash-2-1-jump",
+    "kind": "hash",
+    "hops": 1,
+    "task": "jump",
+    "question": "Using the previously observed hash pairs, start at lbBZFGYE and follow exactly 1 arrows. Return only the final value, with no intermediate values. Preserve every character and its case.",
+    "answer": "TyRBCgOw",
+    "hash_length": 8,
+    "required_sources": [
+      "hash-2"
+    ],
+    "top_k": 1,
+    "source_pair_positions": [
+      52
+    ]
+  },
+  {
+    "id": "hash-2-2-trace",
+    "kind": "hash",
+    "hops": 2,
+    "task": "trace",
+    "question": "Using the previously observed hash pairs, start at lbBZFGYE and follow exactly 2 arrows. Return every visited value in order, separated by single spaces. Do not repeat the starting key. Preserve every character and its case.",
+    "answer": "TyRBCgOw qKfYioYG",
+    "hash_length": 8,
+    "required_sources": [
+      "hash-2"
+    ],
+    "top_k": 1,
+    "source_pair_positions": [
+      52,
+      28
+    ]
+  },
+  {
+    "id": "hash-2-2-jump",
+    "kind": "hash",
+    "hops": 2,
+    "task": "jump",
+    "question": "Using the previously observed hash pairs, start at lbBZFGYE and follow exactly 2 arrows. Return only the final value, with no intermediate values. Preserve every character and its case.",
+    "answer": "qKfYioYG",
+    "hash_length": 8,
+    "required_sources": [
+      "hash-2"
+    ],
+    "top_k": 1,
+    "source_pair_positions": [
+      52,
+      28
+    ]
+  },
+  {
+    "id": "hash-2-4-trace",
+    "kind": "hash",
+    "hops": 4,
+    "task": "trace",
+    "question": "Using the previously observed hash pairs, start at lbBZFGYE and follow exactly 4 arrows. Return every visited value in order, separated by single spaces. Do not repeat the starting key. Preserve every character and its case.",
+    "answer": "TyRBCgOw qKfYioYG EZOkCdAM IsiuCJcN",
+    "hash_length": 8,
+    "required_sources": [
+      "hash-2"
+    ],
+    "top_k": 1,
+    "source_pair_positions": [
+      52,
+      28,
+      21,
+      8
+    ]
+  },
+  {
+    "id": "hash-2-4-jump",
+    "kind": "hash",
+    "hops": 4,
+    "task": "jump",
+    "question": "Using the previously observed hash pairs, start at lbBZFGYE and follow exactly 4 arrows. Return only the final value, with no intermediate values. Preserve every character and its case.",
+    "answer": "IsiuCJcN",
+    "hash_length": 8,
+    "required_sources": [
+      "hash-2"
+    ],
+    "top_k": 1,
+    "source_pair_positions": [
+      52,
+      28,
+      21,
+      8
+    ]
+  },
+  {
+    "id": "hash-2-8-trace",
+    "kind": "hash",
+    "hops": 8,
+    "task": "trace",
+    "question": "Using the previously observed hash pairs, start at lbBZFGYE and follow exactly 8 arrows. Return every visited value in order, separated by single spaces. Do not repeat the starting key. Preserve every character and its case.",
+    "answer": "TyRBCgOw qKfYioYG EZOkCdAM IsiuCJcN jaLuMHVp bdThpyID RWaUlIZr sYtXyDpS",
+    "hash_length": 8,
+    "required_sources": [
+      "hash-2"
+    ],
+    "top_k": 1,
+    "source_pair_positions": [
+      52,
+      28,
+      21,
+      8,
+      76,
+      10,
+      45,
+      17
+    ]
+  },
+  {
+    "id": "hash-2-8-jump",
+    "kind": "hash",
+    "hops": 8,
+    "task": "jump",
+    "question": "Using the previously observed hash pairs, start at lbBZFGYE and follow exactly 8 arrows. Return only the final value, with no intermediate values. Preserve every character and its case.",
+    "answer": "sYtXyDpS",
+    "hash_length": 8,
+    "required_sources": [
+      "hash-2"
+    ],
+    "top_k": 1,
+    "source_pair_positions": [
+      52,
+      28,
+      21,
+      8,
+      76,
+      10,
+      45,
+      17
+    ]
+  },
+  {
+    "id": "hash-2-10-trace",
+    "kind": "hash",
+    "hops": 10,
+    "task": "trace",
+    "question": "Using the previously observed hash pairs, start at lbBZFGYE and follow exactly 10 arrows. Return every visited value in order, separated by single spaces. Do not repeat the starting key. Preserve every character and its case.",
+    "answer": "TyRBCgOw qKfYioYG EZOkCdAM IsiuCJcN jaLuMHVp bdThpyID RWaUlIZr sYtXyDpS PavFOYLm rMsxnzZw",
+    "hash_length": 8,
+    "required_sources": [
+      "hash-2"
+    ],
+    "top_k": 1,
+    "source_pair_positions": [
+      52,
+      28,
+      21,
+      8,
+      76,
+      10,
+      45,
+      17,
+      30,
+      29
+    ]
+  },
+  {
+    "id": "hash-2-10-jump",
+    "kind": "hash",
+    "hops": 10,
+    "task": "jump",
+    "question": "Using the previously observed hash pairs, start at lbBZFGYE and follow exactly 10 arrows. Return only the final value, with no intermediate values. Preserve every character and its case.",
+    "answer": "rMsxnzZw",
+    "hash_length": 8,
+    "required_sources": [
+      "hash-2"
+    ],
+    "top_k": 1,
+    "source_pair_positions": [
+      52,
+      28,
+      21,
+      8,
+      76,
+      10,
+      45,
+      17,
+      30,
+      29
+    ]
+  },
+  {
+    "id": "hash-3-1-jump",
+    "kind": "hash",
+    "hops": 1,
+    "task": "jump",
+    "question": "Using the previously observed hash pairs, start at vPlgvvXCtPmRArpe and follow exactly 1 arrows. Return only the final value, with no intermediate values. Preserve every character and its case.",
+    "answer": "AiUPxyrIEtuMRimU",
+    "hash_length": 16,
+    "required_sources": [
+      "hash-3"
+    ],
+    "top_k": 1,
+    "source_pair_positions": [
+      25
+    ]
+  },
+  {
+    "id": "hash-3-2-trace",
+    "kind": "hash",
+    "hops": 2,
+    "task": "trace",
+    "question": "Using the previously observed hash pairs, start at vPlgvvXCtPmRArpe and follow exactly 2 arrows. Return every visited value in order, separated by single spaces. Do not repeat the starting key. Preserve every character and its case.",
+    "answer": "AiUPxyrIEtuMRimU MXhKAxmlnTMHeIxS",
+    "hash_length": 16,
+    "required_sources": [
+      "hash-3"
+    ],
+    "top_k": 1,
+    "source_pair_positions": [
+      25,
+      59
+    ]
+  },
+  {
+    "id": "hash-3-2-jump",
+    "kind": "hash",
+    "hops": 2,
+    "task": "jump",
+    "question": "Using the previously observed hash pairs, start at vPlgvvXCtPmRArpe and follow exactly 2 arrows. Return only the final value, with no intermediate values. Preserve every character and its case.",
+    "answer": "MXhKAxmlnTMHeIxS",
+    "hash_length": 16,
+    "required_sources": [
+      "hash-3"
+    ],
+    "top_k": 1,
+    "source_pair_positions": [
+      25,
+      59
+    ]
+  },
+  {
+    "id": "hash-3-4-trace",
+    "kind": "hash",
+    "hops": 4,
+    "task": "trace",
+    "question": "Using the previously observed hash pairs, start at vPlgvvXCtPmRArpe and follow exactly 4 arrows. Return every visited value in order, separated by single spaces. Do not repeat the starting key. Preserve every character and its case.",
+    "answer": "AiUPxyrIEtuMRimU MXhKAxmlnTMHeIxS WARQQnmwizKBrcXV QfeCnvwldjAlQtta",
+    "hash_length": 16,
+    "required_sources": [
+      "hash-3"
+    ],
+    "top_k": 1,
+    "source_pair_positions": [
+      25,
+      59,
+      19,
+      26
+    ]
+  },
+  {
+    "id": "hash-3-4-jump",
+    "kind": "hash",
+    "hops": 4,
+    "task": "jump",
+    "question": "Using the previously observed hash pairs, start at vPlgvvXCtPmRArpe and follow exactly 4 arrows. Return only the final value, with no intermediate values. Preserve every character and its case.",
+    "answer": "QfeCnvwldjAlQtta",
+    "hash_length": 16,
+    "required_sources": [
+      "hash-3"
+    ],
+    "top_k": 1,
+    "source_pair_positions": [
+      25,
+      59,
+      19,
+      26
+    ]
+  },
+  {
+    "id": "hash-3-8-trace",
+    "kind": "hash",
+    "hops": 8,
+    "task": "trace",
+    "question": "Using the previously observed hash pairs, start at vPlgvvXCtPmRArpe and follow exactly 8 arrows. Return every visited value in order, separated by single spaces. Do not repeat the starting key. Preserve every character and its case.",
+    "answer": "AiUPxyrIEtuMRimU MXhKAxmlnTMHeIxS WARQQnmwizKBrcXV QfeCnvwldjAlQtta aSCcgCzReqjLkWoK uRQUJSAuHfhYDXXe XtaciDVHSudMfQEK ZSVJohZkHUinNhsY",
+    "hash_length": 16,
+    "required_sources": [
+      "hash-3"
+    ],
+    "top_k": 1,
+    "source_pair_positions": [
+      25,
+      59,
+      19,
+      26,
+      86,
+      75,
+      42,
+      73
+    ]
+  },
+  {
+    "id": "hash-3-8-jump",
+    "kind": "hash",
+    "hops": 8,
+    "task": "jump",
+    "question": "Using the previously observed hash pairs, start at vPlgvvXCtPmRArpe and follow exactly 8 arrows. Return only the final value, with no intermediate values. Preserve every character and its case.",
+    "answer": "ZSVJohZkHUinNhsY",
+    "hash_length": 16,
+    "required_sources": [
+      "hash-3"
+    ],
+    "top_k": 1,
+    "source_pair_positions": [
+      25,
+      59,
+      19,
+      26,
+      86,
+      75,
+      42,
+      73
+    ]
+  },
+  {
+    "id": "hash-3-10-trace",
+    "kind": "hash",
+    "hops": 10,
+    "task": "trace",
+    "question": "Using the previously observed hash pairs, start at vPlgvvXCtPmRArpe and follow exactly 10 arrows. Return every visited value in order, separated by single spaces. Do not repeat the starting key. Preserve every character and its case.",
+    "answer": "AiUPxyrIEtuMRimU MXhKAxmlnTMHeIxS WARQQnmwizKBrcXV QfeCnvwldjAlQtta aSCcgCzReqjLkWoK uRQUJSAuHfhYDXXe XtaciDVHSudMfQEK ZSVJohZkHUinNhsY yDLhRRYgNlUgOTpm GNUvEXPdLpjLLHYe",
+    "hash_length": 16,
+    "required_sources": [
+      "hash-3"
+    ],
+    "top_k": 1,
+    "source_pair_positions": [
+      25,
+      59,
+      19,
+      26,
+      86,
+      75,
+      42,
+      73,
+      79,
+      13
+    ]
+  },
+  {
+    "id": "hash-3-10-jump",
+    "kind": "hash",
+    "hops": 10,
+    "task": "jump",
+    "question": "Using the previously observed hash pairs, start at vPlgvvXCtPmRArpe and follow exactly 10 arrows. Return only the final value, with no intermediate values. Preserve every character and its case.",
+    "answer": "GNUvEXPdLpjLLHYe",
+    "hash_length": 16,
+    "required_sources": [
+      "hash-3"
+    ],
+    "top_k": 1,
+    "source_pair_positions": [
+      25,
+      59,
+      19,
+      26,
+      86,
+      75,
+      42,
+      73,
+      79,
+      13
+    ]
+  },
+  {
+    "id": "cross-2-trace",
+    "kind": "hash",
+    "hops": 2,
+    "task": "trace",
+    "question": "Using the previously observed hash pairs, start at pfOqetepMFGqEHSd and follow exactly 2 arrows. Return every visited value in order, separated by single spaces. Do not repeat the starting key. Preserve every character and its case.",
+    "answer": "UTsYniZGVmttUpmZ ApPSxyofcIVwrGsw",
+    "hash_length": 16,
+    "required_sources": [
+      "cross-0",
+      "cross-1"
+    ],
+    "top_k": 4
+  },
+  {
+    "id": "cross-2-jump",
+    "kind": "hash",
+    "hops": 2,
+    "task": "jump",
+    "question": "Using the previously observed hash pairs, start at pfOqetepMFGqEHSd and follow exactly 2 arrows. Return only the final value, with no intermediate values. Preserve every character and its case.",
+    "answer": "ApPSxyofcIVwrGsw",
+    "hash_length": 16,
+    "required_sources": [
+      "cross-0",
+      "cross-1"
+    ],
+    "top_k": 4
+  },
+  {
+    "id": "cross-4-trace",
+    "kind": "hash",
+    "hops": 4,
+    "task": "trace",
+    "question": "Using the previously observed hash pairs, start at pfOqetepMFGqEHSd and follow exactly 4 arrows. Return every visited value in order, separated by single spaces. Do not repeat the starting key. Preserve every character and its case.",
+    "answer": "UTsYniZGVmttUpmZ ApPSxyofcIVwrGsw zWiRBbJIOXnHQjro WnAKeSkCdWQLBasQ",
+    "hash_length": 16,
+    "required_sources": [
+      "cross-0",
+      "cross-1",
+      "cross-2",
+      "cross-3"
+    ],
+    "top_k": 4
+  },
+  {
+    "id": "cross-4-jump",
+    "kind": "hash",
+    "hops": 4,
+    "task": "jump",
+    "question": "Using the previously observed hash pairs, start at pfOqetepMFGqEHSd and follow exactly 4 arrows. Return only the final value, with no intermediate values. Preserve every character and its case.",
+    "answer": "WnAKeSkCdWQLBasQ",
+    "hash_length": 16,
+    "required_sources": [
+      "cross-0",
+      "cross-1",
+      "cross-2",
+      "cross-3"
+    ],
+    "top_k": 4
+  },
+  {
+    "id": "cross-8-trace",
+    "kind": "hash",
+    "hops": 8,
+    "task": "trace",
+    "question": "Using the previously observed hash pairs, start at pfOqetepMFGqEHSd and follow exactly 8 arrows. Return every visited value in order, separated by single spaces. Do not repeat the starting key. Preserve every character and its case.",
+    "answer": "UTsYniZGVmttUpmZ ApPSxyofcIVwrGsw zWiRBbJIOXnHQjro WnAKeSkCdWQLBasQ dPcfByLtZjiQFPbV xPHoevHhsvgkSTkR HYHihQOQQZjpcgXL uOiApXRahffFVFcH",
+    "hash_length": 16,
+    "required_sources": [
+      "cross-0",
+      "cross-1",
+      "cross-2",
+      "cross-3"
+    ],
+    "top_k": 4
+  },
+  {
+    "id": "cross-8-jump",
+    "kind": "hash",
+    "hops": 8,
+    "task": "jump",
+    "question": "Using the previously observed hash pairs, start at pfOqetepMFGqEHSd and follow exactly 8 arrows. Return only the final value, with no intermediate values. Preserve every character and its case.",
+    "answer": "uOiApXRahffFVFcH",
+    "hash_length": 16,
+    "required_sources": [
+      "cross-0",
+      "cross-1",
+      "cross-2",
+      "cross-3"
+    ],
+    "top_k": 4
+  },
+  {
+    "id": "coherence-0",
+    "kind": "coherence",
+    "required_sources": [
+      "coherence-0"
+    ],
+    "top_k": 1,
+    "questions": [
+      "請依照你記住的映杉服務手冊，以三段連貫文字寫約三百字的交接說明。包含部署識別碼、備份檔名、逾時秒數、最多重試次數、重啟順序及校驗失敗處理。不要列點。",
+      "接續上面的說明，解釋映杉服務在第一次請求失敗後應如何處理，以及最多總共嘗試幾次；請保留部署識別碼與備份檔名，寫成連貫段落。"
+    ],
+    "facts": {
+      "code": "rKbVYsCA",
+      "file": "nTqURTpC.bin",
+      "timeout": 17,
+      "retries": 2,
+      "total_attempts": 3
+    },
+    "manual_review_required": true
+  },
+  {
+    "id": "coherence-1",
+    "kind": "coherence",
+    "required_sources": [
+      "coherence-1"
+    ],
+    "top_k": 1,
+    "questions": [
+      "請依照你記住的靜澄服務手冊，以三段連貫文字寫約三百字的交接說明。包含部署識別碼、備份檔名、逾時秒數、最多重試次數、重啟順序及校驗失敗處理。不要列點。",
+      "接續上面的說明，解釋靜澄服務在第一次請求失敗後應如何處理，以及最多總共嘗試幾次；請保留部署識別碼與備份檔名，寫成連貫段落。"
+    ],
+    "facts": {
+      "code": "TZZcCXSJ",
+      "file": "CWNSfVCU.bin",
+      "timeout": 23,
+      "retries": 4,
+      "total_attempts": 5
+    },
+    "manual_review_required": true
+  }
+]

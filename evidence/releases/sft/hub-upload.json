@@ -1,0 +1,233 @@
+{
+  "status": "verified",
+  "repository": "win10/Lfm2-MaleCNS-Titans-VL-3B-V2-SFT",
+  "commit": "2ac76ca36c2ef8fff049be58eca7cae6439c4afe",
+  "url": "https://huggingface.co/win10/Lfm2-MaleCNS-Titans-VL-3B-V2-SFT",
+  "native_platform": "Windows",
+  "native_python": "C:\\Users\\jmes1\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+  "files": [
+    {
+      "path": "LICENSE",
+      "size": 10645,
+      "checksum": "git-sha1",
+      "status": "passed"
+    },
+    {
+      "path": "README.md",
+      "size": 27043,
+      "checksum": "git-sha1",
+      "status": "passed"
+    },
+    {
+      "path": "batched_memory.py",
+      "size": 3572,
+      "checksum": "git-sha1",
+      "status": "passed"
+    },
+    {
+      "path": "capacity.py",
+      "size": 3181,
+      "checksum": "git-sha1",
+      "status": "passed"
+    },
+    {
+      "path": "chat_template.jinja",
+      "size": 5436,
+      "checksum": "git-sha1",
+      "status": "passed"
+    },
+    {
+      "path": "compiled_connectome.py",
+      "size": 4734,
+      "checksum": "git-sha1",
+      "status": "passed"
+    },
+    {
+      "path": "concept_capture.py",
+      "size": 1375,
+      "checksum": "git-sha1",
+      "status": "passed"
+    },
+    {
+      "path": "config.json",
+      "size": 426821,
+      "checksum": "git-sha1",
+      "status": "passed"
+    },
+    {
+      "path": "configuration_lfm2_titans.py",
+      "size": 2579,
+      "checksum": "git-sha1",
+      "status": "passed"
+    },
+    {
+      "path": "connectome_ops.py",
+      "size": 4718,
+      "checksum": "git-sha1",
+      "status": "passed"
+    },
+    {
+      "path": "dream_memory.py",
+      "size": 5712,
+      "checksum": "git-sha1",
+      "status": "passed"
+    },
+    {
+      "path": "episodic_adapters.py",
+      "size": 20696,
+      "checksum": "git-sha1",
+      "status": "passed"
+    },
+    {
+      "path": "generation_config.json",
+      "size": 327,
+      "checksum": "git-sha1",
+      "status": "passed"
+    },
+    {
+      "path": "integrated_dream.py",
+      "size": 5797,
+      "checksum": "git-sha1",
+      "status": "passed"
+    },
+    {
+      "path": "latent_memory.py",
+      "size": 1994,
+      "checksum": "git-sha1",
+      "status": "passed"
+    },
+    {
+      "path": "lfm_multiport.py",
+      "size": 7336,
+      "checksum": "git-sha1",
+      "status": "passed"
+    },
+    {
+      "path": "memory_address.py",
+      "size": 991,
+      "checksum": "git-sha1",
+      "status": "passed"
+    },
+    {
+      "path": "memory_concept_lens.safetensors",
+      "size": 100663760,
+      "checksum": "sha256",
+      "status": "passed"
+    },
+    {
+      "path": "memory_graph.safetensors",
+      "size": 15868952,
+      "checksum": "sha256",
+      "status": "passed"
+    },
+    {
+      "path": "memory_integrity.py",
+      "size": 328,
+      "checksum": "git-sha1",
+      "status": "passed"
+    },
+    {
+      "path": "memory_recall_training.py",
+      "size": 12411,
+      "checksum": "git-sha1",
+      "status": "passed"
+    },
+    {
+      "path": "model-00001-of-00002.safetensors",
+      "size": 3975606444,
+      "checksum": "sha256",
+      "status": "passed"
+    },
+    {
+      "path": "model-00002-of-00002.safetensors",
+      "size": 3383165988,
+      "checksum": "sha256",
+      "status": "passed"
+    },
+    {
+      "path": "model.safetensors.index.json",
+      "size": 86002,
+      "checksum": "git-sha1",
+      "status": "passed"
+    },
+    {
+      "path": "modeling_lfm2_titans.py",
+      "size": 27111,
+      "checksum": "git-sha1",
+      "status": "passed"
+    },
+    {
+      "path": "multiport_connectome.py",
+      "size": 32040,
+      "checksum": "git-sha1",
+      "status": "passed"
+    },
+    {
+      "path": "native_concepts.py",
+      "size": 14139,
+      "checksum": "git-sha1",
+      "status": "passed"
+    },
+    {
+      "path": "native_sft_memory.py",
+      "size": 13164,
+      "checksum": "git-sha1",
+      "status": "passed"
+    },
+    {
+      "path": "physical_archive.py",
+      "size": 9211,
+      "checksum": "git-sha1",
+      "status": "passed"
+    },
+    {
+      "path": "physical_ffn.py",
+      "size": 1777,
+      "checksum": "git-sha1",
+      "status": "passed"
+    },
+    {
+      "path": "physical_memory.py",
+      "size": 13584,
+      "checksum": "git-sha1",
+      "status": "passed"
+    },
+    {
+      "path": "processor_config.json",
+      "size": 824,
+      "checksum": "git-sha1",
+      "status": "passed"
+    },
+    {
+      "path": "sequence_memory.py",
+      "size": 14108,
+      "checksum": "git-sha1",
+      "status": "passed"
+    },
+    {
+      "path": "sft_lora.py",
+      "size": 13391,
+      "checksum": "git-sha1",
+      "status": "passed"
+    },
+    {
+      "path": "sleep_controller.py",
+      "size": 6749,
+      "checksum": "git-sha1",
+      "status": "passed"
+    },
+    {
+      "path": "tokenizer.json",
+      "size": 17905589,
+      "checksum": "sha256",
+      "status": "passed"
+    },
+    {
+      "path": "tokenizer_config.json",
+      "size": 506,
+      "checksum": "git-sha1",
+      "status": "passed"
+    }
+  ],
+  "total_bytes": 7493989035
+}

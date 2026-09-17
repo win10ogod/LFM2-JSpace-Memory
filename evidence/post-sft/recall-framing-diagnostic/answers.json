@@ -1,0 +1,98 @@
+[
+  {
+    "id": "coherence-0",
+    "variant": "original-prefix-before-bos",
+    "physical_weights": false,
+    "tokens": 199,
+    "hit_generation_limit": false,
+    "answer": "影像服務系統的交接流程如下，請參考映杉服務手冊詳細說明。首先，系統需先建立部署識別碼，此識別碼將用於後續的操作追蹤與管理。接著，需準備備份檔名，通常為 nTqURTpC.bin，此檔名應與系統環境相符。接著，設定逾時秒數，此參數可根據需求調整，例如 3600 秒代表 1 小時。接著，設定最多重試次數，例如 3 次，以確保服務的可靠性。最後，需確認重啟順序，通常是先重啟備份檔名，然後重啟部署識別碼，最後進行校驗。若校驗失敗，應立即停止操作，並根據手冊的處理指引進行修復。",
+    "all_source_features_preserved": true,
+    "only_query_bos_relocated": false
+  },
+  {
+    "id": "coherence-0",
+    "variant": "bos-before-memory-prefix",
+    "physical_weights": false,
+    "tokens": 119,
+    "hit_generation_limit": false,
+    "answer": "映杉服務的操作手冊中，部署識別碼為 rKbVYsCA，備份檔名為 nTqURTpC.bin，系統設定逾時門檻為 17 秒，首次嘗試失敗後最多重試 2 次，重啟之前必須先備份並檢查備份校驗值，兩步成功後才能重新啟動，若校驗失敗則保留原服務並禁止刪除原備份，交由值班人員處理。",
+    "all_source_features_preserved": true,
+    "only_query_bos_relocated": true
+  },
+  {
+    "id": "coherence-0",
+    "variant": "original-prefix-before-bos",
+    "physical_weights": true,
+    "tokens": 256,
+    "hit_generation_limit": true,
+    "answer": "影像中顯示的「映杉服務」的交接說明，包含了部署識別碼、備份檔名、逾時秒數、最多重試次數、重啟順序以及校驗失敗處理等內容。部署識別碼為「rKbVYsCA」，備份檔名為「ntqR2b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b",
+    "all_source_features_preserved": true,
+    "only_query_bos_relocated": false
+  },
+  {
+    "id": "coherence-0",
+    "variant": "bos-before-memory-prefix",
+    "physical_weights": true,
+    "tokens": 256,
+    "hit_generation_limit": true,
+    "answer": "映杉服務的部署識別碼為 rKbVYsCA，備份檔名為 nTqURTpC.bin。每次請求逾時門檻為 17 秒，若首次嘗試失敗，服務會重試 2 次。若重試後仍失敗，則需先備份後校驗，校驗值為 0x00000000，若校驗成功則可再進行重启。若校驗失敗，則保留原服務，禁止刪除原備份，交由值班人員處理。若需進行重启，請使用 `systemctl restart` 或 `systemctl restart map` 命令。若需檢查備份是否成功，請使用 `systemctl status` 或 `systemctl status map` 命令。若備份失敗，請使用 `systemctl status` 檢查是否有錯誤訊息。若需檢查是否已成功備份，請使用 `systemctl status map` 確認備份檔名是否存在。若備份檔名不存在或校驗失敗，則需手動檢查備份檔名是否存在，並確認是否有",
+    "all_source_features_preserved": true,
+    "only_query_bos_relocated": true
+  },
+  {
+    "id": "coherence-0",
+    "variant": "native-source-visible-chat",
+    "physical_weights": false,
+    "tokens": 140,
+    "hit_generation_limit": false,
+    "answer": "映杉服務的操作手冊中，部署識別碼為 rKbVYsCA，備份檔名為 nTqURTpC.bin，每次請求逾時門檻為 17 秒，首次嘗試失敗後最多重試 2 次，重啟前必須先備份並檢查備份校驗值，兩步成功後才能重新啟動，遇到校驗失敗時保留原服務，禁止刪除原備份，交由值班人員處理。請務必遵循上述流程，確保服務運作的穩定性與安全性。"
+  },
+  {
+    "id": "coherence-1",
+    "variant": "original-prefix-before-bos",
+    "physical_weights": false,
+    "tokens": 256,
+    "hit_generation_limit": true,
+    "answer": "交接說明如下：部署時需先生成識別碼，將其命名為 TZZcCXSJ，將文件保存至 /var/www/html/交接文件/，並將文件名與部署時的時間戳組合成 CWNSfVCU 後備份檔名，存於 /var/www/html/交接文件/，並將檔名與部署時的時間戳組合成 CWNSfVCU 後重啟服務。重啟順序為：先重啟後端，重啟前需先重啟前端，重啟後端後再重啟前端。若重啟後端失敗，需先重啟前端，重啟前端後再重啟後端。若重啟前端成功後後端仍失敗，需重啟前端後再重啟後端。若重啟後端成功，則可直接重啟前端。若重啟前端失敗，則需重啟後端。若重啟後端成功，則可重啟前端。若重啟前端",
+    "all_source_features_preserved": true,
+    "only_query_bos_relocated": false
+  },
+  {
+    "id": "coherence-1",
+    "variant": "bos-before-memory-prefix",
+    "physical_weights": false,
+    "tokens": 121,
+    "hit_generation_limit": false,
+    "answer": "靜澄服務的操作手冊中，部署識別碼為 TZZcCXSJ，備份檔名為 CWNSfVCU.bin，每次請求逾時門檻為 23 秒，首次嘗試失敗後最多重試 4 次，重啟之前必須先備份並檢查備份校驗值，兩步成功後才能重新啟動，若校驗失敗則保留原服務，禁止刪除原備份，交由值班人員處理。",
+    "all_source_features_preserved": true,
+    "only_query_bos_relocated": true
+  },
+  {
+    "id": "coherence-1",
+    "variant": "original-prefix-before-bos",
+    "physical_weights": true,
+    "tokens": 91,
+    "hit_generation_limit": false,
+    "answer": "您好，您好！根據您的需求，我將交接說明內容整理成三段連貫文字的形式，包含部署識別碼、備份檔名、逾時秒數、最多重試次數、重啟順序及校驗失敗處理等內容。請您提供相關的靜澄服務手冊內容，以便我進行轉換。",
+    "all_source_features_preserved": true,
+    "only_query_bos_relocated": false
+  },
+  {
+    "id": "coherence-1",
+    "variant": "bos-before-memory-prefix",
+    "physical_weights": true,
+    "tokens": 207,
+    "hit_generation_limit": false,
+    "answer": "靜澄服務的部署識別碼為 TZZcCXSJ，備份檔名為 CWNSfVCU.bin。每次請求逾時門檻為 23 秒，若首次嘗試失敗，服務會重試最多 4 次。若重試後仍未成功，則需進行備份檔名的校驗。若校驗失敗，則保留原服務，禁止刪除原備份檔，同時需由值班人員處理。若校驗通過，則可重新啟動服務。若在重試後仍未成功，則需進行備份檔名的校驗，並檢查備份是否完整。若校驗通過，則可重新啟動服務。若校驗失敗，則保留原服務，禁止刪除原備份檔。若需進行更改，請聯絡技術支援團隊協助。",
+    "all_source_features_preserved": true,
+    "only_query_bos_relocated": true
+  },
+  {
+    "id": "coherence-1",
+    "variant": "native-source-visible-chat",
+    "physical_weights": false,
+    "tokens": 135,
+    "hit_generation_limit": false,
+    "answer": "靜澄服務的操作手冊已發布，部署識別碼為 TZZcCXSJ，備份檔名為 CWNSfVCU.bin，系統設定逾時門檻為 23 秒，首次嘗試失敗後最多重試 4 次，重啟前必須先備份並檢查備份校驗值，兩步成功後才能重新啟動，若校驗失敗則保留原服務，禁止刪除原備份，交由值班人員處理。請注意以上流程，確保操作順暢安全。"
+  }
+]

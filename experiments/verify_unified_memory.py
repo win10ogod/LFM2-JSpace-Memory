@@ -1,7 +1,7 @@
 """Fresh-source acceptance of configured native concept storage and routing."""
 from pathlib import Path
 import argparse,hashlib,json,os,random,string,time
-from research_common import load,paced,dump,log,question_inputs,generated,normalized
+from research_common import load,paced,dump,log,question_inputs,generated,normalized,address_inputs
 def observation(processor, source):
     return processor(text=source['source'],return_tensors='pt',truncation=False).to('cuda')
 
@@ -108,7 +108,7 @@ def read(args):
         row=measured(q,answer,condition,**extra);rows.append(row)
         dump(args.work/'answers.json',rows);log('native_storage_recall',**row)
     for q in questions:
-        inputs=question_inputs(processor,q['question']);keys=paced(archive.encode_query,inputs)
+        inputs=question_inputs(processor,q['question']);keys=paced(archive.encode_query,address_inputs(processor,q['question']))
         cpu=archive.query({},encoded_query=keys,top_k=3,device='cpu')
         gpu=archive.query({},encoded_query=keys,top_k=3,device='cuda')
         same=[r['unit_id'] for r in cpu['matches']]==[r['unit_id'] for r in gpu['matches']]
@@ -156,12 +156,14 @@ def read(args):
         hot_cold_identical=same,peak_vram_gib=torch.cuda.max_memory_allocated()/2**30)
     dump(args.work/'result.json',result);log('native_storage_verification_complete',**result)
     archive.close()
-    if not result['passed']:raise RuntimeError('unified memory acceptance gates failed; retain full results')
+    if not result['passed'] and not getattr(args,'report_only',False):
+        raise RuntimeError('unified memory acceptance gates failed; retain full results')
 
 
 if __name__=='__main__':
     p=argparse.ArgumentParser();p.add_argument('mode',choices=['prepare','write','read'])
     p.add_argument('--model',type=Path);p.add_argument('--work',type=Path,required=True)
+    p.add_argument('--report-only',action='store_true',help='Retain failed functional scores and continue other diagnostics; does not mark the result passed')
     a=p.parse_args();gate=os.environ.get('LFM2_START_GATE')
     while gate and not Path(gate).exists():time.sleep(.1)
     if a.mode=='prepare':prepare(a.work)

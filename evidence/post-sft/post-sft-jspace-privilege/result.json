@@ -1,0 +1,44 @@
+{
+  "summary": {
+    "clean": {
+      "n": 16,
+      "counterfactual_prefix": 0,
+      "original_prefix": 8,
+      "mean_counterfactual_log_odds": -9.423687210772187
+    },
+    "full": {
+      "n": 16,
+      "counterfactual_prefix": 3,
+      "original_prefix": 5,
+      "mean_counterfactual_log_odds": -1.1429918333888054
+    },
+    "j_component": {
+      "n": 16,
+      "counterfactual_prefix": 5,
+      "original_prefix": 1,
+      "mean_counterfactual_log_odds": 1.7172791816992685
+    },
+    "remainder": {
+      "n": 16,
+      "counterfactual_prefix": 0,
+      "original_prefix": 8,
+      "mean_counterfactual_log_odds": -6.549762394279242
+    },
+    "remainder_clamp_j": {
+      "n": 16,
+      "counterfactual_prefix": 0,
+      "original_prefix": 12,
+      "mean_counterfactual_log_odds": -7.9690259750932455
+    },
+    "j_clamp_remainder": {
+      "n": 16,
+      "counterfactual_prefix": 4,
+      "original_prefix": 1,
+      "mean_counterfactual_log_odds": 0.874239718541503
+    }
+  },
+  "body_fixed": true,
+  "scope": "fixed functional pilot, matched interventions",
+  "global_workspace_established": false,
+  "peak_vram_gib": 10.524435997009277
+}
