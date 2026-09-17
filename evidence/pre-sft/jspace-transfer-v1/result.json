@@ -1,0 +1,293 @@
+{
+  "summary": {
+    "clean": {
+      "n": 32,
+      "original": 27,
+      "counterfactual": 0,
+      "clean_eligible": 27,
+      "eligible_counterfactual": 0,
+      "mean_delta_log_odds": 0.0,
+      "tasks": {
+        "report": {
+          "n": 8,
+          "counterfactual": 0
+        },
+        "capital": {
+          "n": 8,
+          "counterfactual": 0
+        },
+        "language": {
+          "n": 8,
+          "counterfactual": 0
+        },
+        "continent": {
+          "n": 8,
+          "counterfactual": 0
+        }
+      }
+    },
+    "swap_26": {
+      "n": 32,
+      "original": 18,
+      "counterfactual": 8,
+      "clean_eligible": 27,
+      "eligible_counterfactual": 8,
+      "mean_delta_log_odds": 7.950841769949875,
+      "tasks": {
+        "report": {
+          "n": 8,
+          "counterfactual": 7
+        },
+        "capital": {
+          "n": 8,
+          "counterfactual": 0
+        },
+        "language": {
+          "n": 8,
+          "counterfactual": 1
+        },
+        "continent": {
+          "n": 8,
+          "counterfactual": 0
+        }
+      }
+    },
+    "swap_26_28": {
+      "n": 32,
+      "original": 28,
+      "counterfactual": 0,
+      "clean_eligible": 27,
+      "eligible_counterfactual": 0,
+      "mean_delta_log_odds": 3.06803103136599,
+      "tasks": {
+        "report": {
+          "n": 8,
+          "counterfactual": 0
+        },
+        "capital": {
+          "n": 8,
+          "counterfactual": 0
+        },
+        "language": {
+          "n": 8,
+          "counterfactual": 0
+        },
+        "continent": {
+          "n": 8,
+          "counterfactual": 0
+        }
+      }
+    },
+    "reference_swap_26_28": {
+      "n": 32,
+      "original": 16,
+      "counterfactual": 10,
+      "clean_eligible": 27,
+      "eligible_counterfactual": 10,
+      "mean_delta_log_odds": 9.647969093450229,
+      "tasks": {
+        "report": {
+          "n": 8,
+          "counterfactual": 8
+        },
+        "capital": {
+          "n": 8,
+          "counterfactual": 0
+        },
+        "language": {
+          "n": 8,
+          "counterfactual": 2
+        },
+        "continent": {
+          "n": 8,
+          "counterfactual": 0
+        }
+      }
+    },
+    "reference_swap_20_26_28": {
+      "n": 32,
+      "original": 14,
+      "counterfactual": 13,
+      "clean_eligible": 27,
+      "eligible_counterfactual": 11,
+      "mean_delta_log_odds": 10.486226734068623,
+      "tasks": {
+        "report": {
+          "n": 8,
+          "counterfactual": 8
+        },
+        "capital": {
+          "n": 8,
+          "counterfactual": 1
+        },
+        "language": {
+          "n": 8,
+          "counterfactual": 4
+        },
+        "continent": {
+          "n": 8,
+          "counterfactual": 0
+        }
+      }
+    },
+    "random_26_0": {
+      "n": 32,
+      "original": 28,
+      "counterfactual": 0,
+      "clean_eligible": 27,
+      "eligible_counterfactual": 0,
+      "mean_delta_log_odds": 0.44196143781391584,
+      "tasks": {
+        "report": {
+          "n": 8,
+          "counterfactual": 0
+        },
+        "capital": {
+          "n": 8,
+          "counterfactual": 0
+        },
+        "language": {
+          "n": 8,
+          "counterfactual": 0
+        },
+        "continent": {
+          "n": 8,
+          "counterfactual": 0
+        }
+      }
+    },
+    "reference_random_26_28": {
+      "n": 32,
+      "original": 29,
+      "counterfactual": 0,
+      "clean_eligible": 27,
+      "eligible_counterfactual": 0,
+      "mean_delta_log_odds": 0.8113785003024532,
+      "tasks": {
+        "report": {
+          "n": 8,
+          "counterfactual": 0
+        },
+        "capital": {
+          "n": 8,
+          "counterfactual": 0
+        },
+        "language": {
+          "n": 8,
+          "counterfactual": 0
+        },
+        "continent": {
+          "n": 8,
+          "counterfactual": 0
+        }
+      }
+    },
+    "reference_random_20_26_28": {
+      "n": 32,
+      "original": 28,
+      "counterfactual": 0,
+      "clean_eligible": 27,
+      "eligible_counterfactual": 0,
+      "mean_delta_log_odds": 0.7763801473065541,
+      "tasks": {
+        "report": {
+          "n": 8,
+          "counterfactual": 0
+        },
+        "capital": {
+          "n": 8,
+          "counterfactual": 0
+        },
+        "language": {
+          "n": 8,
+          "counterfactual": 0
+        },
+        "continent": {
+          "n": 8,
+          "counterfactual": 0
+        }
+      }
+    },
+    "wrong_concept_26": {
+      "n": 32,
+      "original": 29,
+      "counterfactual": 0,
+      "clean_eligible": 27,
+      "eligible_counterfactual": 0,
+      "mean_delta_log_odds": 0.3096903482619382,
+      "tasks": {
+        "report": {
+          "n": 8,
+          "counterfactual": 0
+        },
+        "capital": {
+          "n": 8,
+          "counterfactual": 0
+        },
+        "language": {
+          "n": 8,
+          "counterfactual": 0
+        },
+        "continent": {
+          "n": 8,
+          "counterfactual": 0
+        }
+      }
+    },
+    "ablate_26": {
+      "n": 32,
+      "original": 23,
+      "counterfactual": 0,
+      "clean_eligible": 27,
+      "eligible_counterfactual": 0,
+      "mean_delta_log_odds": 2.737663650927061,
+      "tasks": {
+        "report": {
+          "n": 8,
+          "counterfactual": 0
+        },
+        "capital": {
+          "n": 8,
+          "counterfactual": 0
+        },
+        "language": {
+          "n": 8,
+          "counterfactual": 0
+        },
+        "continent": {
+          "n": 8,
+          "counterfactual": 0
+        }
+      }
+    },
+    "ablate_26_rescue_28": {
+      "n": 32,
+      "original": 27,
+      "counterfactual": 0,
+      "clean_eligible": 27,
+      "eligible_counterfactual": 0,
+      "mean_delta_log_odds": 0.5959933348603954,
+      "tasks": {
+        "report": {
+          "n": 8,
+          "counterfactual": 0
+        },
+        "capital": {
+          "n": 8,
+          "counterfactual": 0
+        },
+        "language": {
+          "n": 8,
+          "counterfactual": 0
+        },
+        "continent": {
+          "n": 8,
+          "counterfactual": 0
+        }
+      }
+    }
+  },
+  "body_fixed": true,
+  "scope": "predeclared format-transfer follow-up on known concepts",
+  "global_workspace_established": false
+}

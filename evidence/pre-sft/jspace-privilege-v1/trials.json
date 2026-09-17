@@ -1,0 +1,3826 @@
+[
+  {
+    "id": "Kenya-report",
+    "task": "report",
+    "condition": "clean",
+    "answer": " Kenya. The Maasai Mara National Reserve is located",
+    "original_prefix": true,
+    "counterfactual_prefix": false,
+    "answer_log_probs": {
+      "original": -0.3135165274143219,
+      "counterfactual": -9.126016616821289
+    },
+    "counterfactual_log_odds": -8.812500089406967,
+    "output_kl": 0.0,
+    "top10": [
+      " Kenya",
+      " Tanzania",
+      " the",
+      " **",
+      " located",
+      " South",
+      " Ethiopia",
+      " N",
+      " in",
+      " Ken"
+    ],
+    "edits": [],
+    "answer_direction_control": "first token only; full answer is used for likelihood scoring",
+    "hit_generation_limit": true
+  },
+  {
+    "id": "Kenya-report",
+    "task": "report",
+    "condition": "full",
+    "answer": " Norway. The Maasai Mara is a wildlife reserve",
+    "original_prefix": false,
+    "counterfactual_prefix": true,
+    "answer_log_probs": {
+      "original": -4.292285442352295,
+      "counterfactual": -0.6672854423522949
+    },
+    "counterfactual_log_odds": 3.625,
+    "output_kl": 3.1155550479888916,
+    "top10": [
+      " Norway",
+      " the",
+      " **",
+      " located",
+      " Sweden",
+      " N",
+      " Kenya",
+      " Northern",
+      " in",
+      " northern"
+    ],
+    "edits": [
+      {
+        "layer": 26,
+        "operation": "swap",
+        "delta_norm": 3.6294186115264893,
+        "relative_norm": 0.1772962063550949
+      },
+      {
+        "layer": 26,
+        "operation": "swap",
+        "delta_norm": 3.6294186115264893,
+        "relative_norm": 0.1772962063550949
+      }
+    ],
+    "answer_direction_control": "first token only; full answer is used for likelihood scoring",
+    "hit_generation_limit": true
+  },
+  {
+    "id": "Kenya-report",
+    "task": "report",
+    "condition": "j_component",
+    "answer": " Norway. The Maasai Mara is a wildlife reserve",
+    "original_prefix": false,
+    "counterfactual_prefix": true,
+    "answer_log_probs": {
+      "original": -9.054373741149902,
+      "counterfactual": -0.05437348037958145
+    },
+    "counterfactual_log_odds": 9.000000260770321,
+    "output_kl": 7.287074089050293,
+    "top10": [
+      " Norway",
+      " the",
+      " **",
+      ":",
+      " located",
+      " Nor",
+      " in",
+      " N",
+      " Nar",
+      " northern"
+    ],
+    "edits": [
+      {
+        "layer": 26,
+        "operation": "swap",
+        "delta_norm": 3.62941837310791,
+        "relative_norm": 0.17729619145393372
+      },
+      {
+        "layer": 26,
+        "operation": "swap",
+        "delta_norm": 3.62941837310791,
+        "relative_norm": 0.17729619145393372
+      }
+    ],
+    "answer_direction_control": "first token only; full answer is used for likelihood scoring",
+    "hit_generation_limit": true
+  },
+  {
+    "id": "Kenya-report",
+    "task": "report",
+    "condition": "remainder",
+    "answer": " Kenya. The Maasai Mara National Reserve is located",
+    "original_prefix": true,
+    "counterfactual_prefix": false,
+    "answer_log_probs": {
+      "original": -0.6116735339164734,
+      "counterfactual": -4.986673355102539
+    },
+    "counterfactual_log_odds": -4.374999821186066,
+    "output_kl": 0.20510080456733704,
+    "top10": [
+      " Kenya",
+      " the",
+      " Tanzania",
+      " located",
+      " South",
+      " **",
+      " N",
+      " in",
+      " Sweden",
+      " Northern"
+    ],
+    "edits": [
+      {
+        "layer": 26,
+        "operation": "swap",
+        "delta_norm": 3.6294186115264893,
+        "relative_norm": 0.1772962063550949
+      },
+      {
+        "layer": 26,
+        "operation": "swap",
+        "delta_norm": 3.6294186115264893,
+        "relative_norm": 0.1772962063550949
+      }
+    ],
+    "answer_direction_control": "first token only; full answer is used for likelihood scoring",
+    "hit_generation_limit": true
+  },
+  {
+    "id": "Kenya-report",
+    "task": "report",
+    "condition": "remainder_clamp_j",
+    "answer": " Kenya. The Maasai Mara National Reserve is located",
+    "original_prefix": true,
+    "counterfactual_prefix": false,
+    "answer_log_probs": {
+      "original": -0.31359851360321045,
+      "counterfactual": -7.0635986328125
+    },
+    "counterfactual_log_odds": -6.7500001192092896,
+    "output_kl": 0.09617746621370316,
+    "top10": [
+      " Kenya",
+      " the",
+      " Tanzania",
+      " South",
+      " located",
+      " **",
+      " N",
+      " in",
+      " Sweden",
+      ":\n\n"
+    ],
+    "edits": [
+      {
+        "layer": 26,
+        "operation": "swap",
+        "delta_norm": 3.6294186115264893,
+        "relative_norm": 0.1772962063550949
+      },
+      {
+        "layer": 28,
+        "operation": "clamp",
+        "delta_norm": 0.923875093460083,
+        "relative_norm": 0.03633779287338257
+      }
+    ],
+    "answer_direction_control": "first token only; full answer is used for likelihood scoring",
+    "hit_generation_limit": true
+  },
+  {
+    "id": "Kenya-report",
+    "task": "report",
+    "condition": "j_clamp_remainder",
+    "answer": " Norway. The Maasai Mara is a wildlife reserve",
+    "original_prefix": false,
+    "counterfactual_prefix": true,
+    "answer_log_probs": {
+      "original": -8.194406509399414,
+      "counterfactual": -0.06940676271915436
+    },
+    "counterfactual_log_odds": 8.12499974668026,
+    "output_kl": 6.516012668609619,
+    "top10": [
+      " Norway",
+      " the",
+      " **",
+      ":",
+      " located",
+      " in",
+      " Nor",
+      " N",
+      " Nar",
+      " northern"
+    ],
+    "edits": [
+      {
+        "layer": 26,
+        "operation": "swap",
+        "delta_norm": 3.62941837310791,
+        "relative_norm": 0.17729619145393372
+      },
+      {
+        "layer": 28,
+        "operation": "clamp",
+        "delta_norm": 0.7948938608169556,
+        "relative_norm": 0.031045902520418167
+      }
+    ],
+    "answer_direction_control": "first token only; full answer is used for likelihood scoring",
+    "hit_generation_limit": true
+  },
+  {
+    "id": "Kenya-capital",
+    "task": "capital",
+    "condition": "clean",
+    "answer": " Nairobi. Nairobi is the largest city in",
+    "original_prefix": true,
+    "counterfactual_prefix": false,
+    "answer_log_probs": {
+      "original": -0.37513214349746704,
+      "counterfactual": -12.4954252243042
+    },
+    "counterfactual_log_odds": -12.120293080806732,
+    "output_kl": 0.0,
+    "top10": [
+      " N",
+      " **",
+      " Nak",
+      " Ar",
+      " the",
+      " Nar",
+      " Kis",
+      " located",
+      " Kit",
+      " Kenya"
+    ],
+    "edits": [],
+    "answer_direction_control": "first token only; full answer is used for likelihood scoring",
+    "hit_generation_limit": true
+  },
+  {
+    "id": "Kenya-capital",
+    "task": "capital",
+    "condition": "full",
+    "answer": " Nairobi. Nairobi is the largest city in",
+    "original_prefix": true,
+    "counterfactual_prefix": false,
+    "answer_log_probs": {
+      "original": -0.5073847770690918,
+      "counterfactual": -6.272156715393066
+    },
+    "counterfactual_log_odds": -5.764771938323975,
+    "output_kl": 0.1771291345357895,
+    "top10": [
+      " N",
+      " Nar",
+      " **",
+      " the",
+      " Ar",
+      " Nak",
+      " located",
+      " Nor",
+      " a",
+      " Eld"
+    ],
+    "edits": [
+      {
+        "layer": 26,
+        "operation": "swap",
+        "delta_norm": 3.2879157066345215,
+        "relative_norm": 0.14318273961544037
+      },
+      {
+        "layer": 26,
+        "operation": "swap",
+        "delta_norm": 3.2879157066345215,
+        "relative_norm": 0.14318273961544037
+      }
+    ],
+    "answer_direction_control": "first token only; full answer is used for likelihood scoring",
+    "hit_generation_limit": true
+  },
+  {
+    "id": "Kenya-capital",
+    "task": "capital",
+    "condition": "j_component",
+    "answer": " Nairobi. Nairobi is the largest city in",
+    "original_prefix": true,
+    "counterfactual_prefix": false,
+    "answer_log_probs": {
+      "original": -0.6755321621894836,
+      "counterfactual": -6.06046724319458
+    },
+    "counterfactual_log_odds": -5.384935081005096,
+    "output_kl": 0.3441411852836609,
+    "top10": [
+      " N",
+      " Norway",
+      " **",
+      " Nar",
+      " the",
+      " Ar",
+      " Nor",
+      " Eld",
+      ":",
+      " M"
+    ],
+    "edits": [
+      {
+        "layer": 26,
+        "operation": "swap",
+        "delta_norm": 3.2879157066345215,
+        "relative_norm": 0.14318273961544037
+      },
+      {
+        "layer": 26,
+        "operation": "swap",
+        "delta_norm": 3.2879157066345215,
+        "relative_norm": 0.14318273961544037
+      }
+    ],
+    "answer_direction_control": "first token only; full answer is used for likelihood scoring",
+    "hit_generation_limit": true
+  },
+  {
+    "id": "Kenya-capital",
+    "task": "capital",
+    "condition": "remainder",
+    "answer": " Nairobi. Nairobi is the largest city in",
+    "original_prefix": true,
+    "counterfactual_prefix": false,
+    "answer_log_probs": {
+      "original": -0.43144652247428894,
+      "counterfactual": -8.573171615600586
+    },
+    "counterfactual_log_odds": -8.141725093126297,
+    "output_kl": 0.09092239290475845,
+    "top10": [
+      " N",
+      " Nar",
+      " Ar",
+      " the",
+      " **",
+      " Nak",
+      " located",
+      " a",
+      " Na",
+      " often"
+    ],
+    "edits": [
+      {
+        "layer": 26,
+        "operation": "swap",
+        "delta_norm": 3.2879157066345215,
+        "relative_norm": 0.14318273961544037
+      },
+      {
+        "layer": 26,
+        "operation": "swap",
+        "delta_norm": 3.2879157066345215,
+        "relative_norm": 0.14318273961544037
+      }
+    ],
+    "answer_direction_control": "first token only; full answer is used for likelihood scoring",
+    "hit_generation_limit": true
+  },
+  {
+    "id": "Kenya-capital",
+    "task": "capital",
+    "condition": "remainder_clamp_j",
+    "answer": " Nairobi. Nairobi is the largest city in",
+    "original_prefix": true,
+    "counterfactual_prefix": false,
+    "answer_log_probs": {
+      "original": -0.42610684037208557,
+      "counterfactual": -9.283626556396484
+    },
+    "counterfactual_log_odds": -8.857519716024399,
+    "output_kl": 0.07381559163331985,
+    "top10": [
+      " N",
+      " Ar",
+      " the",
+      " Nak",
+      " **",
+      " Nar",
+      " located",
+      " a",
+      " Na",
+      " Kenya"
+    ],
+    "edits": [
+      {
+        "layer": 26,
+        "operation": "swap",
+        "delta_norm": 3.2879157066345215,
+        "relative_norm": 0.14318273961544037
+      },
+      {
+        "layer": 28,
+        "operation": "clamp",
+        "delta_norm": 0.7804787158966064,
+        "relative_norm": 0.027038531377911568
+      }
+    ],
+    "answer_direction_control": "first token only; full answer is used for likelihood scoring",
+    "hit_generation_limit": true
+  },
+  {
+    "id": "Kenya-capital",
+    "task": "capital",
+    "condition": "j_clamp_remainder",
+    "answer": " Nairobi. Nairobi is the largest city in",
+    "original_prefix": true,
+    "counterfactual_prefix": false,
+    "answer_log_probs": {
+      "original": -0.6515657901763916,
+      "counterfactual": -6.786978244781494
+    },
+    "counterfactual_log_odds": -6.1354124546051025,
+    "output_kl": 0.28630781173706055,
+    "top10": [
+      " N",
+      " Norway",
+      " **",
+      " Nar",
+      " the",
+      " Ar",
+      " Eld",
+      " M",
+      " Nor",
+      " Dod"
+    ],
+    "edits": [
+      {
+        "layer": 26,
+        "operation": "swap",
+        "delta_norm": 3.2879157066345215,
+        "relative_norm": 0.14318273961544037
+      },
+      {
+        "layer": 28,
+        "operation": "clamp",
+        "delta_norm": 0.6996079087257385,
+        "relative_norm": 0.024142134934663773
+      }
+    ],
+    "answer_direction_control": "first token only; full answer is used for likelihood scoring",
+    "hit_generation_limit": true
+  },
+  {
+    "id": "Kenya-language",
+    "task": "language",
+    "condition": "clean",
+    "answer": " Swahili. This language is widely used in Kenya for",
+    "original_prefix": true,
+    "counterfactual_prefix": false,
+    "answer_log_probs": {
+      "original": -0.29273200035095215,
+      "counterfactual": -10.538508415222168
+    },
+    "counterfactual_log_odds": -10.245776414871216,
+    "output_kl": 0.0,
+    "top10": [
+      " Sw",
+      " **",
+      " English",
+      " the",
+      " K",
+      " Ken",
+      " Ma",
+      " Kis",
+      " a",
+      " also"
+    ],
+    "edits": [],
+    "answer_direction_control": "first token only; full answer is used for likelihood scoring",
+    "hit_generation_limit": true
+  },
+  {
+    "id": "Kenya-language",
+    "task": "language",
+    "condition": "full",
+    "answer": " Swahili. This language is widely used in Kenya for",
+    "original_prefix": true,
+    "counterfactual_prefix": false,
+    "answer_log_probs": {
+      "original": -0.5717472434043884,
+      "counterfactual": -3.755038261413574
+    },
+    "counterfactual_log_odds": -3.183291018009186,
+    "output_kl": 0.21480901539325714,
+    "top10": [
+      " Sw",
+      " **",
+      " English",
+      " the",
+      " Norwegian",
+      " Ma",
+      " Swedish",
+      " a",
+      " O",
+      " also"
+    ],
+    "edits": [
+      {
+        "layer": 26,
+        "operation": "swap",
+        "delta_norm": 3.5136303901672363,
+        "relative_norm": 0.14199961721897125
+      },
+      {
+        "layer": 26,
+        "operation": "swap",
+        "delta_norm": 3.5136303901672363,
+        "relative_norm": 0.14199961721897125
+      }
+    ],
+    "answer_direction_control": "first token only; full answer is used for likelihood scoring",
+    "hit_generation_limit": true
+  },
+  {
+    "id": "Kenya-language",
+    "task": "language",
+    "condition": "j_component",
+    "answer": " Swahili. This language is widely used in Kenya for",
+    "original_prefix": true,
+    "counterfactual_prefix": false,
+    "answer_log_probs": {
+      "original": -0.535764217376709,
+      "counterfactual": -4.094727039337158
+    },
+    "counterfactual_log_odds": -3.558962821960449,
+    "output_kl": 0.15083865821361542,
+    "top10": [
+      " Sw",
+      " **",
+      " English",
+      " the",
+      " Norwegian",
+      " K",
+      " Norway",
+      " Ma",
+      " a",
+      " Som"
+    ],
+    "edits": [
+      {
+        "layer": 26,
+        "operation": "swap",
+        "delta_norm": 3.5136303901672363,
+        "relative_norm": 0.14199961721897125
+      },
+      {
+        "layer": 26,
+        "operation": "swap",
+        "delta_norm": 3.5136303901672363,
+        "relative_norm": 0.14199961721897125
+      }
+    ],
+    "answer_direction_control": "first token only; full answer is used for likelihood scoring",
+    "hit_generation_limit": true
+  },
+  {
+    "id": "Kenya-language",
+    "task": "language",
+    "condition": "remainder",
+    "answer": " Swahili. This language is widely used in Kenya for",
+    "original_prefix": true,
+    "counterfactual_prefix": false,
+    "answer_log_probs": {
+      "original": -0.4617129862308502,
+      "counterfactual": -6.020476341247559
+    },
+    "counterfactual_log_odds": -5.558763355016708,
+    "output_kl": 0.11854563653469086,
+    "top10": [
+      " Sw",
+      " **",
+      " English",
+      " the",
+      " Ma",
+      " Swedish",
+      " a",
+      " either",
+      " also",
+      " Se"
+    ],
+    "edits": [
+      {
+        "layer": 26,
+        "operation": "swap",
+        "delta_norm": 3.5136303901672363,
+        "relative_norm": 0.14199961721897125
+      },
+      {
+        "layer": 26,
+        "operation": "swap",
+        "delta_norm": 3.5136303901672363,
+        "relative_norm": 0.14199961721897125
+      }
+    ],
+    "answer_direction_control": "first token only; full answer is used for likelihood scoring",
+    "hit_generation_limit": true
+  },
+  {
+    "id": "Kenya-language",
+    "task": "language",
+    "condition": "remainder_clamp_j",
+    "answer": " Swahili. This language is widely used in Kenya for",
+    "original_prefix": true,
+    "counterfactual_prefix": false,
+    "answer_log_probs": {
+      "original": -0.436031311750412,
+      "counterfactual": -7.557280540466309
+    },
+    "counterfactual_log_odds": -7.121249228715897,
+    "output_kl": 0.0825338363647461,
+    "top10": [
+      " Sw",
+      " **",
+      " English",
+      " the",
+      " Ma",
+      " Ken",
+      " a",
+      " Swedish",
+      " either",
+      " K"
+    ],
+    "edits": [
+      {
+        "layer": 26,
+        "operation": "swap",
+        "delta_norm": 3.5136303901672363,
+        "relative_norm": 0.14199961721897125
+      },
+      {
+        "layer": 28,
+        "operation": "clamp",
+        "delta_norm": 0.9074447751045227,
+        "relative_norm": 0.0295097678899765
+      }
+    ],
+    "answer_direction_control": "first token only; full answer is used for likelihood scoring",
+    "hit_generation_limit": true
+  },
+  {
+    "id": "Kenya-language",
+    "task": "language",
+    "condition": "j_clamp_remainder",
+    "answer": " Swahili. This language is widely used in Kenya for",
+    "original_prefix": true,
+    "counterfactual_prefix": false,
+    "answer_log_probs": {
+      "original": -0.54706209897995,
+      "counterfactual": -4.668533802032471
+    },
+    "counterfactual_log_odds": -4.121471703052521,
+    "output_kl": 0.13237570226192474,
+    "top10": [
+      " Sw",
+      " **",
+      " English",
+      " the",
+      " K",
+      " Norwegian",
+      " Ma",
+      " a",
+      " Norway",
+      " Som"
+    ],
+    "edits": [
+      {
+        "layer": 26,
+        "operation": "swap",
+        "delta_norm": 3.5136303901672363,
+        "relative_norm": 0.14199961721897125
+      },
+      {
+        "layer": 28,
+        "operation": "clamp",
+        "delta_norm": 0.6866989731788635,
+        "relative_norm": 0.022184493020176888
+      }
+    ],
+    "answer_direction_control": "first token only; full answer is used for likelihood scoring",
+    "hit_generation_limit": true
+  },
+  {
+    "id": "Kenya-continent",
+    "task": "continent",
+    "condition": "clean",
+    "answer": " Africa.",
+    "original_prefix": true,
+    "counterfactual_prefix": false,
+    "answer_log_probs": {
+      "original": -0.5393140316009521,
+      "counterfactual": -6.289314270019531
+    },
+    "counterfactual_log_odds": -5.750000238418579,
+    "output_kl": 0.0,
+    "top10": [
+      " Africa",
+      " East",
+      " **",
+      " the",
+      " located",
+      " Kenya",
+      " Sub",
+      " part",
+      " Eastern",
+      " known"
+    ],
+    "edits": [],
+    "answer_direction_control": "first token only; full answer is used for likelihood scoring",
+    "hit_generation_limit": false
+  },
+  {
+    "id": "Kenya-continent",
+    "task": "continent",
+    "condition": "full",
+    "answer": " Africa.",
+    "original_prefix": true,
+    "counterfactual_prefix": false,
+    "answer_log_probs": {
+      "original": -1.3281537294387817,
+      "counterfactual": -2.515653610229492
+    },
+    "counterfactual_log_odds": -1.1874998807907104,
+    "output_kl": 0.4080900549888611,
+    "top10": [
+      " Africa",
+      " East",
+      " the",
+      " Europe",
+      " **",
+      " located",
+      " Eastern",
+      " Northern",
+      " Norway",
+      " part"
+    ],
+    "edits": [
+      {
+        "layer": 26,
+        "operation": "swap",
+        "delta_norm": 3.576162338256836,
+        "relative_norm": 0.15926839411258698
+      },
+      {
+        "layer": 26,
+        "operation": "swap",
+        "delta_norm": 3.576162338256836,
+        "relative_norm": 0.15926839411258698
+      }
+    ],
+    "answer_direction_control": "first token only; full answer is used for likelihood scoring",
+    "hit_generation_limit": false
+  },
+  {
+    "id": "Kenya-continent",
+    "task": "continent",
+    "condition": "j_component",
+    "answer": " Norway. This is incorrect. The country home to Lake Turk",
+    "original_prefix": false,
+    "counterfactual_prefix": false,
+    "answer_log_probs": {
+      "original": -3.32285213470459,
+      "counterfactual": -3.88535213470459
+    },
+    "counterfactual_log_odds": -0.5625,
+    "output_kl": 1.614801287651062,
+    "top10": [
+      " Norway",
+      " East",
+      " **",
+      " the",
+      " Africa",
+      ":",
+      " Europe",
+      " located",
+      " Sub",
+      " Eastern"
+    ],
+    "edits": [
+      {
+        "layer": 26,
+        "operation": "swap",
+        "delta_norm": 3.576162338256836,
+        "relative_norm": 0.15926839411258698
+      },
+      {
+        "layer": 26,
+        "operation": "swap",
+        "delta_norm": 3.576162338256836,
+        "relative_norm": 0.15926839411258698
+      }
+    ],
+    "answer_direction_control": "first token only; full answer is used for likelihood scoring",
+    "hit_generation_limit": true
+  },
+  {
+    "id": "Kenya-continent",
+    "task": "continent",
+    "condition": "remainder",
+    "answer": " Africa.",
+    "original_prefix": true,
+    "counterfactual_prefix": false,
+    "answer_log_probs": {
+      "original": -0.361056387424469,
+      "counterfactual": -3.611056327819824
+    },
+    "counterfactual_log_odds": -3.2499999403953552,
+    "output_kl": 0.13091008365154266,
+    "top10": [
+      " Africa",
+      " East",
+      " the",
+      " located",
+      " Europe",
+      " **",
+      " Eastern",
+      " part",
+      " Northern",
+      " Kenya"
+    ],
+    "edits": [
+      {
+        "layer": 26,
+        "operation": "swap",
+        "delta_norm": 3.576162338256836,
+        "relative_norm": 0.15926839411258698
+      },
+      {
+        "layer": 26,
+        "operation": "swap",
+        "delta_norm": 3.576162338256836,
+        "relative_norm": 0.15926839411258698
+      }
+    ],
+    "answer_direction_control": "first token only; full answer is used for likelihood scoring",
+    "hit_generation_limit": false
+  },
+  {
+    "id": "Kenya-continent",
+    "task": "continent",
+    "condition": "remainder_clamp_j",
+    "answer": " Africa.",
+    "original_prefix": true,
+    "counterfactual_prefix": false,
+    "answer_log_probs": {
+      "original": -0.5080370903015137,
+      "counterfactual": -3.6330370903015137
+    },
+    "counterfactual_log_odds": -3.125,
+    "output_kl": 0.07827141135931015,
+    "top10": [
+      " Africa",
+      " East",
+      " the",
+      " located",
+      " Europe",
+      " **",
+      " Kenya",
+      " Eastern",
+      " part",
+      " known"
+    ],
+    "edits": [
+      {
+        "layer": 26,
+        "operation": "swap",
+        "delta_norm": 3.576162338256836,
+        "relative_norm": 0.15926839411258698
+      },
+      {
+        "layer": 28,
+        "operation": "clamp",
+        "delta_norm": 0.914033830165863,
+        "relative_norm": 0.033004652708768845
+      }
+    ],
+    "answer_direction_control": "first token only; full answer is used for likelihood scoring",
+    "hit_generation_limit": false
+  },
+  {
+    "id": "Kenya-continent",
+    "task": "continent",
+    "condition": "j_clamp_remainder",
+    "answer": " East Africa. This region is known for its diverse landscapes,",
+    "original_prefix": false,
+    "counterfactual_prefix": false,
+    "answer_log_probs": {
+      "original": -3.106390953063965,
+      "counterfactual": -4.231390953063965
+    },
+    "counterfactual_log_odds": -1.125,
+    "output_kl": 1.403169870376587,
+    "top10": [
+      " East",
+      " Norway",
+      " **",
+      " the",
+      " Africa",
+      ":",
+      " located",
+      " Europe",
+      " a",
+      " Sub"
+    ],
+    "edits": [
+      {
+        "layer": 26,
+        "operation": "swap",
+        "delta_norm": 3.576162338256836,
+        "relative_norm": 0.15926839411258698
+      },
+      {
+        "layer": 28,
+        "operation": "clamp",
+        "delta_norm": 0.7733811736106873,
+        "relative_norm": 0.02775423228740692
+      }
+    ],
+    "answer_direction_control": "first token only; full answer is used for likelihood scoring",
+    "hit_generation_limit": true
+  },
+  {
+    "id": "Norway-report",
+    "task": "report",
+    "condition": "clean",
+    "answer": " Trøndelag. The region is known for its rich",
+    "original_prefix": false,
+    "counterfactual_prefix": false,
+    "answer_log_probs": {
+      "original": -1.4597301483154297,
+      "counterfactual": -13.99098014831543
+    },
+    "counterfactual_log_odds": -12.53125,
+    "output_kl": 0.0,
+    "top10": [
+      " Tr",
+      " Norway",
+      " Trom",
+      " the",
+      " Oslo",
+      " Bod",
+      " **",
+      " Nord",
+      " St",
+      " Krist"
+    ],
+    "edits": [],
+    "answer_direction_control": "first token only; full answer is used for likelihood scoring",
+    "hit_generation_limit": true
+  },
+  {
+    "id": "Norway-report",
+    "task": "report",
+    "condition": "full",
+    "answer": " Trøndelag. The region is known for its rich",
+    "original_prefix": false,
+    "counterfactual_prefix": false,
+    "answer_log_probs": {
+      "original": -9.495126724243164,
+      "counterfactual": -4.557626724243164
+    },
+    "counterfactual_log_odds": 4.9375,
+    "output_kl": 2.1520872116088867,
+    "top10": [
+      " Tr",
+      " **",
+      " the",
+      " H",
+      " K",
+      " Trom",
+      " Ham",
+      " T",
+      " known",
+      " Ken"
+    ],
+    "edits": [
+      {
+        "layer": 26,
+        "operation": "swap",
+        "delta_norm": 5.155336380004883,
+        "relative_norm": 0.2739199995994568
+      },
+      {
+        "layer": 26,
+        "operation": "swap",
+        "delta_norm": 5.155336380004883,
+        "relative_norm": 0.2739199995994568
+      }
+    ],
+    "answer_direction_control": "first token only; full answer is used for likelihood scoring",
+    "hit_generation_limit": true
+  },
+  {
+    "id": "Norway-report",
+    "task": "report",
+    "condition": "j_component",
+    "answer": " Trøndelag. The region is known for its rich",
+    "original_prefix": false,
+    "counterfactual_prefix": false,
+    "answer_log_probs": {
+      "original": -11.316139221191406,
+      "counterfactual": -2.9567642211914062
+    },
+    "counterfactual_log_odds": 8.359375,
+    "output_kl": 2.4704959392547607,
+    "top10": [
+      " Tr",
+      " the",
+      " **",
+      " Kenya",
+      " known",
+      " Trom",
+      " St",
+      " Krist",
+      " Bod",
+      " H"
+    ],
+    "edits": [
+      {
+        "layer": 26,
+        "operation": "swap",
+        "delta_norm": 5.155336380004883,
+        "relative_norm": 0.2739199995994568
+      },
+      {
+        "layer": 26,
+        "operation": "swap",
+        "delta_norm": 5.155336380004883,
+        "relative_norm": 0.2739199995994568
+      }
+    ],
+    "answer_direction_control": "first token only; full answer is used for likelihood scoring",
+    "hit_generation_limit": true
+  },
+  {
+    "id": "Norway-report",
+    "task": "report",
+    "condition": "remainder",
+    "answer": " Trøndelag. The region is known for its rich",
+    "original_prefix": false,
+    "counterfactual_prefix": false,
+    "answer_log_probs": {
+      "original": -3.8424017429351807,
+      "counterfactual": -8.842401504516602
+    },
+    "counterfactual_log_odds": -4.999999761581421,
+    "output_kl": 0.6893244385719299,
+    "top10": [
+      " Tr",
+      " **",
+      " the",
+      " H",
+      " Trom",
+      " K",
+      " Norway",
+      " T",
+      " Bod",
+      ":"
+    ],
+    "edits": [
+      {
+        "layer": 26,
+        "operation": "swap",
+        "delta_norm": 5.155336380004883,
+        "relative_norm": 0.2739199995994568
+      },
+      {
+        "layer": 26,
+        "operation": "swap",
+        "delta_norm": 5.155336380004883,
+        "relative_norm": 0.2739199995994568
+      }
+    ],
+    "answer_direction_control": "first token only; full answer is used for likelihood scoring",
+    "hit_generation_limit": true
+  },
+  {
+    "id": "Norway-report",
+    "task": "report",
+    "condition": "remainder_clamp_j",
+    "answer": " Trøndelag. The region is known for its rich",
+    "original_prefix": false,
+    "counterfactual_prefix": false,
+    "answer_log_probs": {
+      "original": -1.7388455867767334,
+      "counterfactual": -12.457595825195312
+    },
+    "counterfactual_log_odds": -10.718750238418579,
+    "output_kl": 0.25812098383903503,
+    "top10": [
+      " Tr",
+      " Norway",
+      " **",
+      " the",
+      " Trom",
+      " H",
+      " T",
+      " K",
+      " Bod",
+      ":"
+    ],
+    "edits": [
+      {
+        "layer": 26,
+        "operation": "swap",
+        "delta_norm": 5.155336380004883,
+        "relative_norm": 0.2739199995994568
+      },
+      {
+        "layer": 28,
+        "operation": "clamp",
+        "delta_norm": 1.3985674381256104,
+        "relative_norm": 0.05967351794242859
+      }
+    ],
+    "answer_direction_control": "first token only; full answer is used for likelihood scoring",
+    "hit_generation_limit": true
+  },
+  {
+    "id": "Norway-report",
+    "task": "report",
+    "condition": "j_clamp_remainder",
+    "answer": " Trøndelag. The region is known for its rich",
+    "original_prefix": false,
+    "counterfactual_prefix": false,
+    "answer_log_probs": {
+      "original": -10.704890251159668,
+      "counterfactual": -3.548640727996826
+    },
+    "counterfactual_log_odds": 7.156249523162842,
+    "output_kl": 2.2367188930511475,
+    "top10": [
+      " Tr",
+      " the",
+      " **",
+      " known",
+      " Kenya",
+      " Trom",
+      " Krist",
+      " Bod",
+      " St",
+      " H"
+    ],
+    "edits": [
+      {
+        "layer": 26,
+        "operation": "swap",
+        "delta_norm": 5.155336380004883,
+        "relative_norm": 0.2739199995994568
+      },
+      {
+        "layer": 28,
+        "operation": "clamp",
+        "delta_norm": 0.9250410795211792,
+        "relative_norm": 0.03981109708547592
+      }
+    ],
+    "answer_direction_control": "first token only; full answer is used for likelihood scoring",
+    "hit_generation_limit": true
+  },
+  {
+    "id": "Norway-capital",
+    "task": "capital",
+    "condition": "clean",
+    "answer": " Oslo. The city is located in the central part of the",
+    "original_prefix": true,
+    "counterfactual_prefix": false,
+    "answer_log_probs": {
+      "original": -0.9954098463058472,
+      "counterfactual": -15.021833419799805
+    },
+    "counterfactual_log_odds": -14.026423573493958,
+    "output_kl": 0.0,
+    "top10": [
+      " Oslo",
+      " Trom",
+      " Tr",
+      " Re",
+      " St",
+      " the",
+      " Mos",
+      " Bod",
+      " Norway",
+      " **"
+    ],
+    "edits": [],
+    "answer_direction_control": "first token only; full answer is used for likelihood scoring",
+    "hit_generation_limit": true
+  },
+  {
+    "id": "Norway-capital",
+    "task": "capital",
+    "condition": "full",
+    "answer": " Tromsø. Tromsø is located in the northern",
+    "original_prefix": false,
+    "counterfactual_prefix": false,
+    "answer_log_probs": {
+      "original": -4.459522247314453,
+      "counterfactual": -15.066912651062012
+    },
+    "counterfactual_log_odds": -10.607390403747559,
+    "output_kl": 1.3705263137817383,
+    "top10": [
+      " Trom",
+      " Tr",
+      " T",
+      " **",
+      " K",
+      " Mos",
+      " the",
+      " H",
+      " Re",
+      " Kir"
+    ],
+    "edits": [
+      {
+        "layer": 26,
+        "operation": "swap",
+        "delta_norm": 4.499969005584717,
+        "relative_norm": 0.21215824782848358
+      },
+      {
+        "layer": 26,
+        "operation": "swap",
+        "delta_norm": 4.510778903961182,
+        "relative_norm": 0.2124929279088974
+      }
+    ],
+    "answer_direction_control": "first token only; full answer is used for likelihood scoring",
+    "hit_generation_limit": true
+  },
+  {
+    "id": "Norway-capital",
+    "task": "capital",
+    "condition": "j_component",
+    "answer": " Tromsø. Tromsø is located in the northern",
+    "original_prefix": false,
+    "counterfactual_prefix": false,
+    "answer_log_probs": {
+      "original": -3.483063220977783,
+      "counterfactual": -14.303247451782227
+    },
+    "counterfactual_log_odds": -10.820184230804443,
+    "output_kl": 0.8627557158470154,
+    "top10": [
+      " Trom",
+      " Tr",
+      " Re",
+      " the",
+      " Oslo",
+      " **",
+      " Mos",
+      " T",
+      " also",
+      " St"
+    ],
+    "edits": [
+      {
+        "layer": 26,
+        "operation": "swap",
+        "delta_norm": 4.499969005584717,
+        "relative_norm": 0.21215824782848358
+      },
+      {
+        "layer": 26,
+        "operation": "swap",
+        "delta_norm": 4.510778903961182,
+        "relative_norm": 0.2124929279088974
+      }
+    ],
+    "answer_direction_control": "first token only; full answer is used for likelihood scoring",
+    "hit_generation_limit": true
+  },
+  {
+    "id": "Norway-capital",
+    "task": "capital",
+    "condition": "remainder",
+    "answer": " Tromsø. Tromsø is located in the northern",
+    "original_prefix": false,
+    "counterfactual_prefix": false,
+    "answer_log_probs": {
+      "original": -2.775750160217285,
+      "counterfactual": -15.393494606018066
+    },
+    "counterfactual_log_odds": -12.617744445800781,
+    "output_kl": 0.6912927627563477,
+    "top10": [
+      " Trom",
+      " Tr",
+      " T",
+      " Oslo",
+      " **",
+      " K",
+      " Mos",
+      " H",
+      " the",
+      ":"
+    ],
+    "edits": [
+      {
+        "layer": 26,
+        "operation": "swap",
+        "delta_norm": 4.499969005584717,
+        "relative_norm": 0.21215824782848358
+      },
+      {
+        "layer": 26,
+        "operation": "swap",
+        "delta_norm": 4.510778903961182,
+        "relative_norm": 0.2124929279088974
+      }
+    ],
+    "answer_direction_control": "first token only; full answer is used for likelihood scoring",
+    "hit_generation_limit": true
+  },
+  {
+    "id": "Norway-capital",
+    "task": "capital",
+    "condition": "remainder_clamp_j",
+    "answer": " Tromsø. Tromsø is located in the northern",
+    "original_prefix": false,
+    "counterfactual_prefix": false,
+    "answer_log_probs": {
+      "original": -2.1248221397399902,
+      "counterfactual": -14.930856704711914
+    },
+    "counterfactual_log_odds": -12.806034564971924,
+    "output_kl": 0.39611998200416565,
+    "top10": [
+      " Trom",
+      " Tr",
+      " Oslo",
+      " T",
+      " **",
+      " Mos",
+      " H",
+      " the",
+      " K",
+      ":"
+    ],
+    "edits": [
+      {
+        "layer": 26,
+        "operation": "swap",
+        "delta_norm": 4.499969005584717,
+        "relative_norm": 0.21215824782848358
+      },
+      {
+        "layer": 28,
+        "operation": "clamp",
+        "delta_norm": 1.2235443592071533,
+        "relative_norm": 0.045752402395009995
+      }
+    ],
+    "answer_direction_control": "first token only; full answer is used for likelihood scoring",
+    "hit_generation_limit": true
+  },
+  {
+    "id": "Norway-capital",
+    "task": "capital",
+    "condition": "j_clamp_remainder",
+    "answer": " Tromsø. Tromsø is located in the northern",
+    "original_prefix": false,
+    "counterfactual_prefix": false,
+    "answer_log_probs": {
+      "original": -2.918243169784546,
+      "counterfactual": -14.117868423461914
+    },
+    "counterfactual_log_odds": -11.199625253677368,
+    "output_kl": 0.6733400821685791,
+    "top10": [
+      " Trom",
+      " Tr",
+      " Re",
+      " Oslo",
+      " the",
+      " **",
+      " Mos",
+      " T",
+      " also",
+      " Krist"
+    ],
+    "edits": [
+      {
+        "layer": 26,
+        "operation": "swap",
+        "delta_norm": 4.499969005584717,
+        "relative_norm": 0.21215824782848358
+      },
+      {
+        "layer": 28,
+        "operation": "clamp",
+        "delta_norm": 0.7846460342407227,
+        "relative_norm": 0.029499568045139313
+      }
+    ],
+    "answer_direction_control": "first token only; full answer is used for likelihood scoring",
+    "hit_generation_limit": true
+  },
+  {
+    "id": "Norway-language",
+    "task": "language",
+    "condition": "clean",
+    "answer": " Norwegian. The Lofoten language is a dialect of Norwegian",
+    "original_prefix": true,
+    "counterfactual_prefix": false,
+    "answer_log_probs": {
+      "original": -0.7947111129760742,
+      "counterfactual": -14.754578590393066
+    },
+    "counterfactual_log_odds": -13.959867477416992,
+    "output_kl": 0.0,
+    "top10": [
+      " Norwegian",
+      " N",
+      " **",
+      " the",
+      " B",
+      " Sam",
+      " Northern",
+      " a",
+      " Swedish",
+      " Danish"
+    ],
+    "edits": [],
+    "answer_direction_control": "first token only; full answer is used for likelihood scoring",
+    "hit_generation_limit": true
+  },
+  {
+    "id": "Norway-language",
+    "task": "language",
+    "condition": "full",
+    "answer": " **Norwegian**. The Lofoten archipelago is located",
+    "original_prefix": false,
+    "counterfactual_prefix": false,
+    "answer_log_probs": {
+      "original": -5.164044380187988,
+      "counterfactual": -13.258419036865234
+    },
+    "counterfactual_log_odds": -8.094374656677246,
+    "output_kl": 2.242323398590088,
+    "top10": [
+      " **",
+      " K",
+      " the",
+      " B",
+      " N",
+      " a",
+      " Sam",
+      " Ken",
+      " East",
+      " H"
+    ],
+    "edits": [
+      {
+        "layer": 26,
+        "operation": "swap",
+        "delta_norm": 5.118325233459473,
+        "relative_norm": 0.22110755741596222
+      },
+      {
+        "layer": 26,
+        "operation": "swap",
+        "delta_norm": 5.118325233459473,
+        "relative_norm": 0.22110755741596222
+      }
+    ],
+    "answer_direction_control": "first token only; full answer is used for likelihood scoring",
+    "hit_generation_limit": true
+  },
+  {
+    "id": "Norway-language",
+    "task": "language",
+    "condition": "j_component",
+    "answer": " **Norwegian**. The Lofoten archipelago is located",
+    "original_prefix": false,
+    "counterfactual_prefix": false,
+    "answer_log_probs": {
+      "original": -5.2044453620910645,
+      "counterfactual": -12.920392990112305
+    },
+    "counterfactual_log_odds": -7.71594762802124,
+    "output_kl": 1.9463399648666382,
+    "top10": [
+      " **",
+      " N",
+      " the",
+      " K",
+      " F",
+      " a",
+      " Afrika",
+      " Sam",
+      " Swedish",
+      " B"
+    ],
+    "edits": [
+      {
+        "layer": 26,
+        "operation": "swap",
+        "delta_norm": 5.1183247566223145,
+        "relative_norm": 0.22110754251480103
+      },
+      {
+        "layer": 26,
+        "operation": "swap",
+        "delta_norm": 5.1183247566223145,
+        "relative_norm": 0.22110754251480103
+      }
+    ],
+    "answer_direction_control": "first token only; full answer is used for likelihood scoring",
+    "hit_generation_limit": true
+  },
+  {
+    "id": "Norway-language",
+    "task": "language",
+    "condition": "remainder",
+    "answer": " **Norwegian**. The Lofoten islands are part of",
+    "original_prefix": false,
+    "counterfactual_prefix": false,
+    "answer_log_probs": {
+      "original": -2.6676278114318848,
+      "counterfactual": -13.764254570007324
+    },
+    "counterfactual_log_odds": -11.09662675857544,
+    "output_kl": 1.1647326946258545,
+    "top10": [
+      " **",
+      " K",
+      " B",
+      " the",
+      " Norwegian",
+      " N",
+      " a",
+      " Sam",
+      " Danish",
+      " Ber"
+    ],
+    "edits": [
+      {
+        "layer": 26,
+        "operation": "swap",
+        "delta_norm": 5.118325233459473,
+        "relative_norm": 0.22110755741596222
+      },
+      {
+        "layer": 26,
+        "operation": "swap",
+        "delta_norm": 5.118325233459473,
+        "relative_norm": 0.22110755741596222
+      }
+    ],
+    "answer_direction_control": "first token only; full answer is used for likelihood scoring",
+    "hit_generation_limit": true
+  },
+  {
+    "id": "Norway-language",
+    "task": "language",
+    "condition": "remainder_clamp_j",
+    "answer": " **Norwegian**. The Lofoten islands are part of",
+    "original_prefix": false,
+    "counterfactual_prefix": false,
+    "answer_log_probs": {
+      "original": -1.5015729665756226,
+      "counterfactual": -14.259124755859375
+    },
+    "counterfactual_log_odds": -12.757551789283752,
+    "output_kl": 0.49285489320755005,
+    "top10": [
+      " **",
+      " Norwegian",
+      " B",
+      " K",
+      " the",
+      " N",
+      " a",
+      " Sam",
+      " Danish",
+      " English"
+    ],
+    "edits": [
+      {
+        "layer": 26,
+        "operation": "swap",
+        "delta_norm": 5.118325233459473,
+        "relative_norm": 0.22110755741596222
+      },
+      {
+        "layer": 28,
+        "operation": "clamp",
+        "delta_norm": 1.3962492942810059,
+        "relative_norm": 0.04848695173859596
+      }
+    ],
+    "answer_direction_control": "first token only; full answer is used for likelihood scoring",
+    "hit_generation_limit": true
+  },
+  {
+    "id": "Norway-language",
+    "task": "language",
+    "condition": "j_clamp_remainder",
+    "answer": " **Norwegian**. The Lofoten archipelago is located",
+    "original_prefix": false,
+    "counterfactual_prefix": false,
+    "answer_log_probs": {
+      "original": -4.641667366027832,
+      "counterfactual": -12.64169979095459
+    },
+    "counterfactual_log_odds": -8.000032424926758,
+    "output_kl": 1.6413943767547607,
+    "top10": [
+      " **",
+      " N",
+      " the",
+      " F",
+      " K",
+      " a",
+      " Swedish",
+      " Afrika",
+      " Sam",
+      " spoken"
+    ],
+    "edits": [
+      {
+        "layer": 26,
+        "operation": "swap",
+        "delta_norm": 5.1183247566223145,
+        "relative_norm": 0.22110754251480103
+      },
+      {
+        "layer": 28,
+        "operation": "clamp",
+        "delta_norm": 0.8420135974884033,
+        "relative_norm": 0.02933809719979763
+      }
+    ],
+    "answer_direction_control": "first token only; full answer is used for likelihood scoring",
+    "hit_generation_limit": true
+  },
+  {
+    "id": "Norway-continent",
+    "task": "continent",
+    "condition": "clean",
+    "answer": " Norway. Bergen is a major city located on the western coast",
+    "original_prefix": false,
+    "counterfactual_prefix": false,
+    "answer_log_probs": {
+      "original": -3.279256820678711,
+      "counterfactual": -10.810506820678711
+    },
+    "counterfactual_log_odds": -7.53125,
+    "output_kl": 0.0,
+    "top10": [
+      " Norway",
+      " Scandin",
+      " **",
+      " Europe",
+      " the",
+      " located",
+      ":\n\n",
+      " known",
+      " Iceland",
+      " part"
+    ],
+    "edits": [],
+    "answer_direction_control": "first token only; full answer is used for likelihood scoring",
+    "hit_generation_limit": true
+  },
+  {
+    "id": "Norway-continent",
+    "task": "continent",
+    "condition": "full",
+    "answer": " **Norway**. \n\nThe Lofoten archipelago is located",
+    "original_prefix": false,
+    "counterfactual_prefix": false,
+    "answer_log_probs": {
+      "original": -4.052392959594727,
+      "counterfactual": -1.9898929595947266
+    },
+    "counterfactual_log_odds": 2.0625,
+    "output_kl": 6.008757591247559,
+    "top10": [
+      " **",
+      " Africa",
+      " the",
+      " Kenya",
+      " located",
+      " part",
+      " Europe",
+      ":\n\n",
+      " known",
+      " Central"
+    ],
+    "edits": [
+      {
+        "layer": 26,
+        "operation": "swap",
+        "delta_norm": 4.956721782684326,
+        "relative_norm": 0.237880676984787
+      },
+      {
+        "layer": 26,
+        "operation": "swap",
+        "delta_norm": 4.956721782684326,
+        "relative_norm": 0.237880676984787
+      }
+    ],
+    "answer_direction_control": "first token only; full answer is used for likelihood scoring",
+    "hit_generation_limit": true
+  },
+  {
+    "id": "Norway-continent",
+    "task": "continent",
+    "condition": "j_component",
+    "answer": " Africa. This is a geographical fact, as Bergen is located",
+    "original_prefix": false,
+    "counterfactual_prefix": true,
+    "answer_log_probs": {
+      "original": -3.872710704803467,
+      "counterfactual": -0.31021079421043396
+    },
+    "counterfactual_log_odds": 3.562499910593033,
+    "output_kl": 10.154165267944336,
+    "top10": [
+      " Africa",
+      " Kenya",
+      " **",
+      " Europe",
+      " the",
+      " located",
+      " part",
+      " known",
+      " South",
+      " characterized"
+    ],
+    "edits": [
+      {
+        "layer": 26,
+        "operation": "swap",
+        "delta_norm": 4.956721782684326,
+        "relative_norm": 0.237880676984787
+      },
+      {
+        "layer": 26,
+        "operation": "swap",
+        "delta_norm": 4.956721782684326,
+        "relative_norm": 0.237880676984787
+      }
+    ],
+    "answer_direction_control": "first token only; full answer is used for likelihood scoring",
+    "hit_generation_limit": true
+  },
+  {
+    "id": "Norway-continent",
+    "task": "continent",
+    "condition": "remainder",
+    "answer": " Norway. Bergen is a major city located on the western coast",
+    "original_prefix": false,
+    "counterfactual_prefix": false,
+    "answer_log_probs": {
+      "original": -3.841102123260498,
+      "counterfactual": -5.966102123260498
+    },
+    "counterfactual_log_odds": -2.125,
+    "output_kl": 0.6373655796051025,
+    "top10": [
+      " Norway",
+      " **",
+      " the",
+      " Europe",
+      ":",
+      " K",
+      ":\n\n",
+      " part",
+      " located",
+      " Central"
+    ],
+    "edits": [
+      {
+        "layer": 26,
+        "operation": "swap",
+        "delta_norm": 4.956721782684326,
+        "relative_norm": 0.237880676984787
+      },
+      {
+        "layer": 26,
+        "operation": "swap",
+        "delta_norm": 4.956721782684326,
+        "relative_norm": 0.237880676984787
+      }
+    ],
+    "answer_direction_control": "first token only; full answer is used for likelihood scoring",
+    "hit_generation_limit": true
+  },
+  {
+    "id": "Norway-continent",
+    "task": "continent",
+    "condition": "remainder_clamp_j",
+    "answer": " Norway. Bergen is a major city located on the western coast",
+    "original_prefix": false,
+    "counterfactual_prefix": false,
+    "answer_log_probs": {
+      "original": -5.63255500793457,
+      "counterfactual": -9.38255500793457
+    },
+    "counterfactual_log_odds": -3.75,
+    "output_kl": 0.5086318850517273,
+    "top10": [
+      " Norway",
+      " **",
+      " the",
+      " located",
+      ":",
+      " Europe",
+      " Nor",
+      ":\n\n",
+      " part",
+      " Scandin"
+    ],
+    "edits": [
+      {
+        "layer": 26,
+        "operation": "swap",
+        "delta_norm": 4.956721782684326,
+        "relative_norm": 0.237880676984787
+      },
+      {
+        "layer": 28,
+        "operation": "clamp",
+        "delta_norm": 1.4092926979064941,
+        "relative_norm": 0.055117037147283554
+      }
+    ],
+    "answer_direction_control": "first token only; full answer is used for likelihood scoring",
+    "hit_generation_limit": true
+  },
+  {
+    "id": "Norway-continent",
+    "task": "continent",
+    "condition": "j_clamp_remainder",
+    "answer": " Africa. This is a geographical fact, as Bergen is located",
+    "original_prefix": false,
+    "counterfactual_prefix": true,
+    "answer_log_probs": {
+      "original": -3.215350866317749,
+      "counterfactual": -0.34035083651542664
+    },
+    "counterfactual_log_odds": 2.8750000298023224,
+    "output_kl": 9.137258529663086,
+    "top10": [
+      " Africa",
+      " **",
+      " Kenya",
+      " Europe",
+      " the",
+      " located",
+      " known",
+      " part",
+      ":\n\n",
+      " South"
+    ],
+    "edits": [
+      {
+        "layer": 26,
+        "operation": "swap",
+        "delta_norm": 4.956721782684326,
+        "relative_norm": 0.237880676984787
+      },
+      {
+        "layer": 28,
+        "operation": "clamp",
+        "delta_norm": 0.9874941110610962,
+        "relative_norm": 0.038965001702308655
+      }
+    ],
+    "answer_direction_control": "first token only; full answer is used for likelihood scoring",
+    "hit_generation_limit": true
+  },
+  {
+    "id": "Canada-report",
+    "task": "report",
+    "condition": "clean",
+    "answer": " Canada. The flag of Canada features a red maple leaf centered",
+    "original_prefix": true,
+    "counterfactual_prefix": false,
+    "answer_log_probs": {
+      "original": -0.09942010045051575,
+      "counterfactual": -12.474420547485352
+    },
+    "counterfactual_log_odds": -12.375000447034836,
+    "output_kl": 0.0,
+    "top10": [
+      " Canada",
+      ":\n\n",
+      " **",
+      " the",
+      " a",
+      ":\n",
+      ":",
+      " located",
+      "...",
+      " known"
+    ],
+    "edits": [],
+    "answer_direction_control": "first token only; full answer is used for likelihood scoring",
+    "hit_generation_limit": true
+  },
+  {
+    "id": "Canada-report",
+    "task": "report",
+    "condition": "full",
+    "answer": " Vietnam. The flag of Vietnam features a red background with a",
+    "original_prefix": false,
+    "counterfactual_prefix": true,
+    "answer_log_probs": {
+      "original": -5.956930637359619,
+      "counterfactual": -0.3319307863712311
+    },
+    "counterfactual_log_odds": 5.624999850988388,
+    "output_kl": 5.221818447113037,
+    "top10": [
+      " Vietnam",
+      ":\n\n",
+      " the",
+      " **",
+      " a",
+      ":\n",
+      ":",
+      " located",
+      " one",
+      " known"
+    ],
+    "edits": [
+      {
+        "layer": 26,
+        "operation": "swap",
+        "delta_norm": 3.947655200958252,
+        "relative_norm": 0.23132172226905823
+      },
+      {
+        "layer": 26,
+        "operation": "swap",
+        "delta_norm": 3.947655200958252,
+        "relative_norm": 0.23132172226905823
+      }
+    ],
+    "answer_direction_control": "first token only; full answer is used for likelihood scoring",
+    "hit_generation_limit": true
+  },
+  {
+    "id": "Canada-report",
+    "task": "report",
+    "condition": "j_component",
+    "answer": " Vietnam. The flag of Vietnam features a red background with a",
+    "original_prefix": false,
+    "counterfactual_prefix": true,
+    "answer_log_probs": {
+      "original": -16.37890625,
+      "counterfactual": -0.0039064777083694935
+    },
+    "counterfactual_log_odds": 16.37499977229163,
+    "output_kl": 15.100058555603027,
+    "top10": [
+      " Vietnam",
+      " **",
+      " Vietnamese",
+      " the",
+      ":\n\n",
+      ":\n",
+      " a",
+      ":",
+      " part",
+      " not"
+    ],
+    "edits": [
+      {
+        "layer": 26,
+        "operation": "swap",
+        "delta_norm": 3.947655200958252,
+        "relative_norm": 0.23132172226905823
+      },
+      {
+        "layer": 26,
+        "operation": "swap",
+        "delta_norm": 3.947655200958252,
+        "relative_norm": 0.23132172226905823
+      }
+    ],
+    "answer_direction_control": "first token only; full answer is used for likelihood scoring",
+    "hit_generation_limit": true
+  },
+  {
+    "id": "Canada-report",
+    "task": "report",
+    "condition": "remainder",
+    "answer": " Canada. The flag of Canada features a red maple leaf centered",
+    "original_prefix": true,
+    "counterfactual_prefix": false,
+    "answer_log_probs": {
+      "original": -0.2715013921260834,
+      "counterfactual": -7.146501541137695
+    },
+    "counterfactual_log_odds": -6.875000149011612,
+    "output_kl": 0.09329622983932495,
+    "top10": [
+      " Canada",
+      " a",
+      " the",
+      ":\n\n",
+      ":\n",
+      ":",
+      " **",
+      " located",
+      " which",
+      " known"
+    ],
+    "edits": [
+      {
+        "layer": 26,
+        "operation": "swap",
+        "delta_norm": 3.947655439376831,
+        "relative_norm": 0.23132172226905823
+      },
+      {
+        "layer": 26,
+        "operation": "swap",
+        "delta_norm": 3.947655439376831,
+        "relative_norm": 0.23132172226905823
+      }
+    ],
+    "answer_direction_control": "first token only; full answer is used for likelihood scoring",
+    "hit_generation_limit": true
+  },
+  {
+    "id": "Canada-report",
+    "task": "report",
+    "condition": "remainder_clamp_j",
+    "answer": " Canada. The flag of Canada features a red maple leaf centered",
+    "original_prefix": true,
+    "counterfactual_prefix": false,
+    "answer_log_probs": {
+      "original": -0.18783441185951233,
+      "counterfactual": -10.062834739685059
+    },
+    "counterfactual_log_odds": -9.875000327825546,
+    "output_kl": 0.046399861574172974,
+    "top10": [
+      " Canada",
+      " a",
+      ":\n\n",
+      " the",
+      ":\n",
+      ":",
+      " **",
+      " located",
+      " which",
+      " known"
+    ],
+    "edits": [
+      {
+        "layer": 26,
+        "operation": "swap",
+        "delta_norm": 3.947655439376831,
+        "relative_norm": 0.23132172226905823
+      },
+      {
+        "layer": 28,
+        "operation": "clamp",
+        "delta_norm": 1.2257317304611206,
+        "relative_norm": 0.05836517736315727
+      }
+    ],
+    "answer_direction_control": "first token only; full answer is used for likelihood scoring",
+    "hit_generation_limit": true
+  },
+  {
+    "id": "Canada-report",
+    "task": "report",
+    "condition": "j_clamp_remainder",
+    "answer": " Vietnam. The flag of Vietnam features a red background with a",
+    "original_prefix": false,
+    "counterfactual_prefix": true,
+    "answer_log_probs": {
+      "original": -15.253161430358887,
+      "counterfactual": -0.0031609591096639633
+    },
+    "counterfactual_log_odds": 15.250000471249223,
+    "output_kl": 14.08960247039795,
+    "top10": [
+      " Vietnam",
+      " **",
+      " Vietnamese",
+      ":\n\n",
+      " the",
+      ":\n",
+      " a",
+      ":",
+      " part",
+      " not"
+    ],
+    "edits": [
+      {
+        "layer": 26,
+        "operation": "swap",
+        "delta_norm": 3.947655200958252,
+        "relative_norm": 0.23132172226905823
+      },
+      {
+        "layer": 28,
+        "operation": "clamp",
+        "delta_norm": 1.5132192373275757,
+        "relative_norm": 0.0720328614115715
+      }
+    ],
+    "answer_direction_control": "first token only; full answer is used for likelihood scoring",
+    "hit_generation_limit": true
+  },
+  {
+    "id": "Canada-capital",
+    "task": "capital",
+    "condition": "clean",
+    "answer": " Canada. The flag of Canada features a red maple leaf centered",
+    "original_prefix": false,
+    "counterfactual_prefix": false,
+    "answer_log_probs": {
+      "original": -1.4804162979125977,
+      "counterfactual": -12.505809783935547
+    },
+    "counterfactual_log_odds": -11.02539348602295,
+    "output_kl": 0.0,
+    "top10": [
+      " Canada",
+      " Ottawa",
+      " located",
+      " Toronto",
+      " Montreal",
+      " **",
+      ":\n\n",
+      " the",
+      " a",
+      " Ontario"
+    ],
+    "edits": [],
+    "answer_direction_control": "first token only; full answer is used for likelihood scoring",
+    "hit_generation_limit": true
+  },
+  {
+    "id": "Canada-capital",
+    "task": "capital",
+    "condition": "full",
+    "answer": " Vietnam. The red maple leaf is a prominent symbol on the",
+    "original_prefix": false,
+    "counterfactual_prefix": false,
+    "answer_log_probs": {
+      "original": -5.188058376312256,
+      "counterfactual": -9.935835838317871
+    },
+    "counterfactual_log_odds": -4.747777462005615,
+    "output_kl": 4.7899017333984375,
+    "top10": [
+      " Vietnam",
+      " located",
+      " the",
+      " **",
+      ":\n\n",
+      " V",
+      " a",
+      " in",
+      " Ottawa",
+      ":\n"
+    ],
+    "edits": [
+      {
+        "layer": 26,
+        "operation": "swap",
+        "delta_norm": 3.750138998031616,
+        "relative_norm": 0.1874604970216751
+      },
+      {
+        "layer": 26,
+        "operation": "swap",
+        "delta_norm": 3.750138998031616,
+        "relative_norm": 0.1874604970216751
+      }
+    ],
+    "answer_direction_control": "first token only; full answer is used for likelihood scoring",
+    "hit_generation_limit": true
+  },
+  {
+    "id": "Canada-capital",
+    "task": "capital",
+    "condition": "j_component",
+    "answer": " Vietnam. The red maple leaf is a prominent symbol on the",
+    "original_prefix": false,
+    "counterfactual_prefix": false,
+    "answer_log_probs": {
+      "original": -9.070103645324707,
+      "counterfactual": -15.375558853149414
+    },
+    "counterfactual_log_odds": -6.305455207824707,
+    "output_kl": 12.57575511932373,
+    "top10": [
+      " Vietnam",
+      " **",
+      " Vietnamese",
+      " located",
+      " the",
+      ":\n\n",
+      " not",
+      "Vietnam",
+      " Ottawa",
+      " a"
+    ],
+    "edits": [
+      {
+        "layer": 26,
+        "operation": "swap",
+        "delta_norm": 3.750138998031616,
+        "relative_norm": 0.1874604970216751
+      },
+      {
+        "layer": 26,
+        "operation": "swap",
+        "delta_norm": 3.750138998031616,
+        "relative_norm": 0.1874604970216751
+      }
+    ],
+    "answer_direction_control": "first token only; full answer is used for likelihood scoring",
+    "hit_generation_limit": true
+  },
+  {
+    "id": "Canada-capital",
+    "task": "capital",
+    "condition": "remainder",
+    "answer": " Canada. The flag of Canada features a red maple leaf centered",
+    "original_prefix": false,
+    "counterfactual_prefix": false,
+    "answer_log_probs": {
+      "original": -3.796773672103882,
+      "counterfactual": -10.101806640625
+    },
+    "counterfactual_log_odds": -6.305032968521118,
+    "output_kl": 0.5001261830329895,
+    "top10": [
+      " Canada",
+      " located",
+      " the",
+      " Montreal",
+      " a",
+      ":\n\n",
+      " Ottawa",
+      " Toronto",
+      " V",
+      " **"
+    ],
+    "edits": [
+      {
+        "layer": 26,
+        "operation": "swap",
+        "delta_norm": 3.750138998031616,
+        "relative_norm": 0.1874604970216751
+      },
+      {
+        "layer": 26,
+        "operation": "swap",
+        "delta_norm": 3.750138998031616,
+        "relative_norm": 0.1874604970216751
+      }
+    ],
+    "answer_direction_control": "first token only; full answer is used for likelihood scoring",
+    "hit_generation_limit": true
+  },
+  {
+    "id": "Canada-capital",
+    "task": "capital",
+    "condition": "remainder_clamp_j",
+    "answer": " Canada. The flag of Canada features a red maple leaf centered",
+    "original_prefix": false,
+    "counterfactual_prefix": false,
+    "answer_log_probs": {
+      "original": -3.7645301818847656,
+      "counterfactual": -10.65304183959961
+    },
+    "counterfactual_log_odds": -6.888511657714844,
+    "output_kl": 0.42010268568992615,
+    "top10": [
+      " Canada",
+      " located",
+      " the",
+      " Montreal",
+      " Toronto",
+      " a",
+      " Ottawa",
+      ":\n\n",
+      " **",
+      " in"
+    ],
+    "edits": [
+      {
+        "layer": 26,
+        "operation": "swap",
+        "delta_norm": 3.750138998031616,
+        "relative_norm": 0.1874604970216751
+      },
+      {
+        "layer": 28,
+        "operation": "clamp",
+        "delta_norm": 1.1122053861618042,
+        "relative_norm": 0.044272538274526596
+      }
+    ],
+    "answer_direction_control": "first token only; full answer is used for likelihood scoring",
+    "hit_generation_limit": true
+  },
+  {
+    "id": "Canada-capital",
+    "task": "capital",
+    "condition": "j_clamp_remainder",
+    "answer": " Vietnam. The red maple leaf is a prominent symbol on the",
+    "original_prefix": false,
+    "counterfactual_prefix": false,
+    "answer_log_probs": {
+      "original": -7.6958160400390625,
+      "counterfactual": -15.465415000915527
+    },
+    "counterfactual_log_odds": -7.769598960876465,
+    "output_kl": 11.556415557861328,
+    "top10": [
+      " Vietnam",
+      " **",
+      " located",
+      " Vietnamese",
+      " the",
+      " Ottawa",
+      ":\n\n",
+      " not",
+      " a",
+      "Vietnam"
+    ],
+    "edits": [
+      {
+        "layer": 26,
+        "operation": "swap",
+        "delta_norm": 3.750138998031616,
+        "relative_norm": 0.1874604970216751
+      },
+      {
+        "layer": 28,
+        "operation": "clamp",
+        "delta_norm": 1.2856802940368652,
+        "relative_norm": 0.0512271523475647
+      }
+    ],
+    "answer_direction_control": "first token only; full answer is used for likelihood scoring",
+    "hit_generation_limit": true
+  },
+  {
+    "id": "Canada-language",
+    "task": "language",
+    "condition": "clean",
+    "answer": " French. This country is Canada, where the flag features a",
+    "original_prefix": false,
+    "counterfactual_prefix": false,
+    "answer_log_probs": {
+      "original": -2.0920794010162354,
+      "counterfactual": -11.217079162597656
+    },
+    "counterfactual_log_odds": -9.124999761581421,
+    "output_kl": 0.0,
+    "top10": [
+      " French",
+      " English",
+      " **",
+      " Canadian",
+      " the",
+      ":\n\n",
+      " a",
+      " Canada",
+      " primarily",
+      " Quebec"
+    ],
+    "edits": [],
+    "answer_direction_control": "first token only; full answer is used for likelihood scoring",
+    "hit_generation_limit": true
+  },
+  {
+    "id": "Canada-language",
+    "task": "language",
+    "condition": "full",
+    "answer": " Vietnamese. This country is Vietnam, which is located in Southeast",
+    "original_prefix": false,
+    "counterfactual_prefix": true,
+    "answer_log_probs": {
+      "original": -4.040398597717285,
+      "counterfactual": -0.7278986573219299
+    },
+    "counterfactual_log_odds": 3.3124999403953552,
+    "output_kl": 1.4242258071899414,
+    "top10": [
+      " Vietnamese",
+      " French",
+      " the",
+      " **",
+      ":\n\n",
+      " English",
+      " a",
+      " Vietnam",
+      " primarily",
+      ":\n"
+    ],
+    "edits": [
+      {
+        "layer": 26,
+        "operation": "swap",
+        "delta_norm": 4.43316125869751,
+        "relative_norm": 0.20179060101509094
+      },
+      {
+        "layer": 26,
+        "operation": "swap",
+        "delta_norm": 4.43316125869751,
+        "relative_norm": 0.20179060101509094
+      }
+    ],
+    "answer_direction_control": "first token only; full answer is used for likelihood scoring",
+    "hit_generation_limit": true
+  },
+  {
+    "id": "Canada-language",
+    "task": "language",
+    "condition": "j_component",
+    "answer": " Vietnamese. This country is Vietnam, which is located in Southeast",
+    "original_prefix": false,
+    "counterfactual_prefix": true,
+    "answer_log_probs": {
+      "original": -5.098124027252197,
+      "counterfactual": -0.1606239676475525
+    },
+    "counterfactual_log_odds": 4.937500059604645,
+    "output_kl": 3.042536497116089,
+    "top10": [
+      " Vietnamese",
+      " French",
+      " Vietnam",
+      " **",
+      " English",
+      " the",
+      ":\n\n",
+      " a",
+      " primarily",
+      " Korean"
+    ],
+    "edits": [
+      {
+        "layer": 26,
+        "operation": "swap",
+        "delta_norm": 4.433160781860352,
+        "relative_norm": 0.20179058611392975
+      },
+      {
+        "layer": 26,
+        "operation": "swap",
+        "delta_norm": 4.433160781860352,
+        "relative_norm": 0.20179058611392975
+      }
+    ],
+    "answer_direction_control": "first token only; full answer is used for likelihood scoring",
+    "hit_generation_limit": true
+  },
+  {
+    "id": "Canada-language",
+    "task": "language",
+    "condition": "remainder",
+    "answer": " French. This country is Canada, where the flag features a",
+    "original_prefix": false,
+    "counterfactual_prefix": false,
+    "answer_log_probs": {
+      "original": -3.213573932647705,
+      "counterfactual": -6.151073932647705
+    },
+    "counterfactual_log_odds": -2.9375,
+    "output_kl": 0.3925406336784363,
+    "top10": [
+      " French",
+      " the",
+      " **",
+      ":\n\n",
+      " a",
+      " English",
+      ":",
+      ":\n",
+      " primarily",
+      " an"
+    ],
+    "edits": [
+      {
+        "layer": 26,
+        "operation": "swap",
+        "delta_norm": 4.43316125869751,
+        "relative_norm": 0.20179060101509094
+      },
+      {
+        "layer": 26,
+        "operation": "swap",
+        "delta_norm": 4.43316125869751,
+        "relative_norm": 0.20179060101509094
+      }
+    ],
+    "answer_direction_control": "first token only; full answer is used for likelihood scoring",
+    "hit_generation_limit": true
+  },
+  {
+    "id": "Canada-language",
+    "task": "language",
+    "condition": "remainder_clamp_j",
+    "answer": " French. This country is Canada, where the flag features a",
+    "original_prefix": false,
+    "counterfactual_prefix": false,
+    "answer_log_probs": {
+      "original": -3.206214427947998,
+      "counterfactual": -8.424964904785156
+    },
+    "counterfactual_log_odds": -5.218750476837158,
+    "output_kl": 0.3265545964241028,
+    "top10": [
+      " French",
+      " the",
+      " **",
+      ":\n\n",
+      " Canadian",
+      " a",
+      " English",
+      ":",
+      " primarily",
+      ":\n"
+    ],
+    "edits": [
+      {
+        "layer": 26,
+        "operation": "swap",
+        "delta_norm": 4.43316125869751,
+        "relative_norm": 0.20179060101509094
+      },
+      {
+        "layer": 28,
+        "operation": "clamp",
+        "delta_norm": 1.3117530345916748,
+        "relative_norm": 0.048214200884103775
+      }
+    ],
+    "answer_direction_control": "first token only; full answer is used for likelihood scoring",
+    "hit_generation_limit": true
+  },
+  {
+    "id": "Canada-language",
+    "task": "language",
+    "condition": "j_clamp_remainder",
+    "answer": " Vietnamese. This country is Vietnam, which is located in Southeast",
+    "original_prefix": false,
+    "counterfactual_prefix": true,
+    "answer_log_probs": {
+      "original": -3.9251761436462402,
+      "counterfactual": -0.4876762628555298
+    },
+    "counterfactual_log_odds": 3.4374998807907104,
+    "output_kl": 1.8545091152191162,
+    "top10": [
+      " Vietnamese",
+      " French",
+      " **",
+      " Vietnam",
+      " English",
+      " the",
+      ":\n\n",
+      " primarily",
+      " a",
+      " Korean"
+    ],
+    "edits": [
+      {
+        "layer": 26,
+        "operation": "swap",
+        "delta_norm": 4.433160781860352,
+        "relative_norm": 0.20179058611392975
+      },
+      {
+        "layer": 28,
+        "operation": "clamp",
+        "delta_norm": 1.571711540222168,
+        "relative_norm": 0.0575864240527153
+      }
+    ],
+    "answer_direction_control": "first token only; full answer is used for likelihood scoring",
+    "hit_generation_limit": true
+  },
+  {
+    "id": "Canada-continent",
+    "task": "continent",
+    "condition": "clean",
+    "answer": " North America. The country with a red maple leaf on its",
+    "original_prefix": true,
+    "counterfactual_prefix": false,
+    "answer_log_probs": {
+      "original": -0.23135873675346375,
+      "counterfactual": -5.106261730194092
+    },
+    "counterfactual_log_odds": -4.874902993440628,
+    "output_kl": 0.0,
+    "top10": [
+      " North",
+      " Canada",
+      " located",
+      " Europe",
+      " **",
+      " the",
+      ":\n\n",
+      " Asia",
+      " South",
+      "..."
+    ],
+    "edits": [],
+    "answer_direction_control": "first token only; full answer is used for likelihood scoring",
+    "hit_generation_limit": true
+  },
+  {
+    "id": "Canada-continent",
+    "task": "continent",
+    "condition": "full",
+    "answer": " North America. The country with a red maple leaf on its",
+    "original_prefix": true,
+    "counterfactual_prefix": false,
+    "answer_log_probs": {
+      "original": -1.1430060863494873,
+      "counterfactual": -2.705399751663208
+    },
+    "counterfactual_log_odds": -1.5623936653137207,
+    "output_kl": 0.8978424072265625,
+    "top10": [
+      " North",
+      " located",
+      " Southeast",
+      " Asia",
+      " Vietnam",
+      " the",
+      " **",
+      ":\n\n",
+      " South",
+      " East"
+    ],
+    "edits": [
+      {
+        "layer": 26,
+        "operation": "swap",
+        "delta_norm": 4.257078170776367,
+        "relative_norm": 0.21962888538837433
+      },
+      {
+        "layer": 26,
+        "operation": "swap",
+        "delta_norm": 4.257078170776367,
+        "relative_norm": 0.21962888538837433
+      }
+    ],
+    "answer_direction_control": "first token only; full answer is used for likelihood scoring",
+    "hit_generation_limit": true
+  },
+  {
+    "id": "Canada-continent",
+    "task": "continent",
+    "condition": "j_component",
+    "answer": " Vietnam. The flag of Vietnam features a red background with a",
+    "original_prefix": false,
+    "counterfactual_prefix": false,
+    "answer_log_probs": {
+      "original": -4.049489974975586,
+      "counterfactual": -3.5493454933166504
+    },
+    "counterfactual_log_odds": 0.5001444816589355,
+    "output_kl": 3.79403018951416,
+    "top10": [
+      " Vietnam",
+      " Asia",
+      " Southeast",
+      " **",
+      " North",
+      " located",
+      " South",
+      " the",
+      " Antarctica",
+      " Europe"
+    ],
+    "edits": [
+      {
+        "layer": 26,
+        "operation": "swap",
+        "delta_norm": 4.257077693939209,
+        "relative_norm": 0.21962885558605194
+      },
+      {
+        "layer": 26,
+        "operation": "swap",
+        "delta_norm": 4.257077693939209,
+        "relative_norm": 0.21962885558605194
+      }
+    ],
+    "answer_direction_control": "first token only; full answer is used for likelihood scoring",
+    "hit_generation_limit": true
+  },
+  {
+    "id": "Canada-continent",
+    "task": "continent",
+    "condition": "remainder",
+    "answer": " North America. The country with a red maple leaf on its",
+    "original_prefix": true,
+    "counterfactual_prefix": false,
+    "answer_log_probs": {
+      "original": -0.36565977334976196,
+      "counterfactual": -3.9905457496643066
+    },
+    "counterfactual_log_odds": -3.6248859763145447,
+    "output_kl": 0.09592821449041367,
+    "top10": [
+      " North",
+      " located",
+      " Canada",
+      " the",
+      " Asia",
+      ":\n\n",
+      " **",
+      " Europe",
+      "...",
+      " East"
+    ],
+    "edits": [
+      {
+        "layer": 26,
+        "operation": "swap",
+        "delta_norm": 4.257078170776367,
+        "relative_norm": 0.21962888538837433
+      },
+      {
+        "layer": 26,
+        "operation": "swap",
+        "delta_norm": 4.257078170776367,
+        "relative_norm": 0.21962888538837433
+      }
+    ],
+    "answer_direction_control": "first token only; full answer is used for likelihood scoring",
+    "hit_generation_limit": true
+  },
+  {
+    "id": "Canada-continent",
+    "task": "continent",
+    "condition": "remainder_clamp_j",
+    "answer": " North America. The country with a red maple leaf on its",
+    "original_prefix": true,
+    "counterfactual_prefix": false,
+    "answer_log_probs": {
+      "original": -0.2848237156867981,
+      "counterfactual": -4.409723281860352
+    },
+    "counterfactual_log_odds": -4.1248995661735535,
+    "output_kl": 0.06287831813097,
+    "top10": [
+      " North",
+      " located",
+      " Canada",
+      " the",
+      " Asia",
+      ":\n\n",
+      " **",
+      " South",
+      " Europe",
+      " East"
+    ],
+    "edits": [
+      {
+        "layer": 26,
+        "operation": "swap",
+        "delta_norm": 4.257078170776367,
+        "relative_norm": 0.21962888538837433
+      },
+      {
+        "layer": 28,
+        "operation": "clamp",
+        "delta_norm": 1.2697083950042725,
+        "relative_norm": 0.053271710872650146
+      }
+    ],
+    "answer_direction_control": "first token only; full answer is used for likelihood scoring",
+    "hit_generation_limit": true
+  },
+  {
+    "id": "Canada-continent",
+    "task": "continent",
+    "condition": "j_clamp_remainder",
+    "answer": " Vietnam. The flag of Vietnam features a red background with a",
+    "original_prefix": false,
+    "counterfactual_prefix": false,
+    "answer_log_probs": {
+      "original": -3.6148931980133057,
+      "counterfactual": -3.3647444248199463
+    },
+    "counterfactual_log_odds": 0.2501487731933594,
+    "output_kl": 3.3166122436523438,
+    "top10": [
+      " Vietnam",
+      " Asia",
+      " **",
+      " located",
+      " North",
+      " Southeast",
+      " South",
+      " the",
+      " Antarctica",
+      " Europe"
+    ],
+    "edits": [
+      {
+        "layer": 26,
+        "operation": "swap",
+        "delta_norm": 4.257077693939209,
+        "relative_norm": 0.21962885558605194
+      },
+      {
+        "layer": 28,
+        "operation": "clamp",
+        "delta_norm": 1.4505239725112915,
+        "relative_norm": 0.060813382267951965
+      }
+    ],
+    "answer_direction_control": "first token only; full answer is used for likelihood scoring",
+    "hit_generation_limit": true
+  },
+  {
+    "id": "Vietnam-report",
+    "task": "report",
+    "condition": "clean",
+    "answer": " the city of **Ninh Binh**. This city",
+    "original_prefix": false,
+    "counterfactual_prefix": false,
+    "answer_log_probs": {
+      "original": -1.7386642694473267,
+      "counterfactual": -9.613664627075195
+    },
+    "counterfactual_log_odds": -7.875000357627869,
+    "output_kl": 0.0,
+    "top10": [
+      " the",
+      " Vietnam",
+      " located",
+      " Ph",
+      " Qu",
+      " Guang",
+      " Ba",
+      " V",
+      " **",
+      " Cao"
+    ],
+    "edits": [],
+    "answer_direction_control": "first token only; full answer is used for likelihood scoring",
+    "hit_generation_limit": true
+  },
+  {
+    "id": "Vietnam-report",
+    "task": "report",
+    "condition": "full",
+    "answer": " the province of Quang Ninh, located in the northern",
+    "original_prefix": false,
+    "counterfactual_prefix": false,
+    "answer_log_probs": {
+      "original": -6.8412322998046875,
+      "counterfactual": -1.7474822998046875
+    },
+    "counterfactual_log_odds": 5.09375,
+    "output_kl": 1.1910614967346191,
+    "top10": [
+      " the",
+      " Canada",
+      " located",
+      " Qu",
+      " C",
+      " Cat",
+      " **",
+      ":\n\n",
+      " in",
+      " Ph"
+    ],
+    "edits": [
+      {
+        "layer": 26,
+        "operation": "swap",
+        "delta_norm": 3.2522854804992676,
+        "relative_norm": 0.2153329700231552
+      },
+      {
+        "layer": 26,
+        "operation": "swap",
+        "delta_norm": 3.2522854804992676,
+        "relative_norm": 0.2153329700231552
+      }
+    ],
+    "answer_direction_control": "first token only; full answer is used for likelihood scoring",
+    "hit_generation_limit": true
+  },
+  {
+    "id": "Vietnam-report",
+    "task": "report",
+    "condition": "j_component",
+    "answer": " Canada. The country home to Ha Long Bay is Canada.",
+    "original_prefix": false,
+    "counterfactual_prefix": true,
+    "answer_log_probs": {
+      "original": -11.563838958740234,
+      "counterfactual": -0.548213541507721
+    },
+    "counterfactual_log_odds": 11.015625417232513,
+    "output_kl": 2.6212215423583984,
+    "top10": [
+      " Canada",
+      " the",
+      " located",
+      " C",
+      " Ba",
+      " in",
+      ":\n\n",
+      " Qu",
+      " **",
+      " a"
+    ],
+    "edits": [
+      {
+        "layer": 26,
+        "operation": "swap",
+        "delta_norm": 3.2522854804992676,
+        "relative_norm": 0.2153329700231552
+      },
+      {
+        "layer": 26,
+        "operation": "swap",
+        "delta_norm": 3.2522854804992676,
+        "relative_norm": 0.2153329700231552
+      }
+    ],
+    "answer_direction_control": "first token only; full answer is used for likelihood scoring",
+    "hit_generation_limit": true
+  },
+  {
+    "id": "Vietnam-report",
+    "task": "report",
+    "condition": "remainder",
+    "answer": " the Socialist Republic of Vietnam. Ha Long Bay is a UNESCO",
+    "original_prefix": false,
+    "counterfactual_prefix": false,
+    "answer_log_probs": {
+      "original": -2.48531436920166,
+      "counterfactual": -6.29781436920166
+    },
+    "counterfactual_log_odds": -3.8125,
+    "output_kl": 0.23021140694618225,
+    "top10": [
+      " the",
+      " Vietnam",
+      " Qu",
+      " located",
+      " Ph",
+      " C",
+      " Cat",
+      " **",
+      " Guang",
+      " Th"
+    ],
+    "edits": [
+      {
+        "layer": 26,
+        "operation": "swap",
+        "delta_norm": 3.2522854804992676,
+        "relative_norm": 0.2153329700231552
+      },
+      {
+        "layer": 26,
+        "operation": "swap",
+        "delta_norm": 3.2522854804992676,
+        "relative_norm": 0.2153329700231552
+      }
+    ],
+    "answer_direction_control": "first token only; full answer is used for likelihood scoring",
+    "hit_generation_limit": true
+  },
+  {
+    "id": "Vietnam-report",
+    "task": "report",
+    "condition": "remainder_clamp_j",
+    "answer": " Vietnam. The bay is located in the northern part of the",
+    "original_prefix": true,
+    "counterfactual_prefix": false,
+    "answer_log_probs": {
+      "original": -1.5625399351119995,
+      "counterfactual": -8.656290054321289
+    },
+    "counterfactual_log_odds": -7.0937501192092896,
+    "output_kl": 0.14535613358020782,
+    "top10": [
+      " Vietnam",
+      " the",
+      " Qu",
+      " located",
+      " Ph",
+      " C",
+      " Cat",
+      " **",
+      " Guang",
+      " Th"
+    ],
+    "edits": [
+      {
+        "layer": 26,
+        "operation": "swap",
+        "delta_norm": 3.2522854804992676,
+        "relative_norm": 0.2153329700231552
+      },
+      {
+        "layer": 28,
+        "operation": "clamp",
+        "delta_norm": 1.017072319984436,
+        "relative_norm": 0.054064154624938965
+      }
+    ],
+    "answer_direction_control": "first token only; full answer is used for likelihood scoring",
+    "hit_generation_limit": true
+  },
+  {
+    "id": "Vietnam-report",
+    "task": "report",
+    "condition": "j_clamp_remainder",
+    "answer": " Canada. The country home to Ha Long Bay is Canada.",
+    "original_prefix": false,
+    "counterfactual_prefix": true,
+    "answer_log_probs": {
+      "original": -10.468849182128906,
+      "counterfactual": -0.8125990033149719
+    },
+    "counterfactual_log_odds": 9.656250178813934,
+    "output_kl": 2.1400718688964844,
+    "top10": [
+      " Canada",
+      " the",
+      " located",
+      " C",
+      " Ba",
+      " in",
+      " Qu",
+      ":\n\n",
+      " **",
+      " a"
+    ],
+    "edits": [
+      {
+        "layer": 26,
+        "operation": "swap",
+        "delta_norm": 3.2522854804992676,
+        "relative_norm": 0.2153329700231552
+      },
+      {
+        "layer": 28,
+        "operation": "clamp",
+        "delta_norm": 1.0806974172592163,
+        "relative_norm": 0.057141855359077454
+      }
+    ],
+    "answer_direction_control": "first token only; full answer is used for likelihood scoring",
+    "hit_generation_limit": true
+  },
+  {
+    "id": "Vietnam-capital",
+    "task": "capital",
+    "condition": "clean",
+    "answer": " Vietnam. The country is located on the mainland, bordering",
+    "original_prefix": false,
+    "counterfactual_prefix": false,
+    "answer_log_probs": {
+      "original": -3.6112184524536133,
+      "counterfactual": -13.312187194824219
+    },
+    "counterfactual_log_odds": -9.700968742370605,
+    "output_kl": 0.0,
+    "top10": [
+      " Vietnam",
+      " the",
+      " **",
+      " H",
+      " V",
+      " Viet",
+      " Guang",
+      ":\n\n",
+      " Cat",
+      " located"
+    ],
+    "edits": [],
+    "answer_direction_control": "first token only; full answer is used for likelihood scoring",
+    "hit_generation_limit": true
+  },
+  {
+    "id": "Vietnam-capital",
+    "task": "capital",
+    "condition": "full",
+    "answer": " Canada. The capital city of Canada is Ottawa. Ottawa is",
+    "original_prefix": false,
+    "counterfactual_prefix": false,
+    "answer_log_probs": {
+      "original": -4.807110786437988,
+      "counterfactual": -9.122102737426758
+    },
+    "counterfactual_log_odds": -4.3149919509887695,
+    "output_kl": 1.7992496490478516,
+    "top10": [
+      " Canada",
+      " the",
+      " C",
+      " **",
+      " China",
+      " Cat",
+      ":\n\n",
+      " located",
+      " Ba",
+      " H"
+    ],
+    "edits": [
+      {
+        "layer": 26,
+        "operation": "swap",
+        "delta_norm": 3.273332118988037,
+        "relative_norm": 0.17812985181808472
+      },
+      {
+        "layer": 26,
+        "operation": "swap",
+        "delta_norm": 3.273332118988037,
+        "relative_norm": 0.17812985181808472
+      }
+    ],
+    "answer_direction_control": "first token only; full answer is used for likelihood scoring",
+    "hit_generation_limit": true
+  },
+  {
+    "id": "Vietnam-capital",
+    "task": "capital",
+    "condition": "j_component",
+    "answer": " Canada. The capital city of Canada is Ottawa. Ottawa is",
+    "original_prefix": false,
+    "counterfactual_prefix": false,
+    "answer_log_probs": {
+      "original": -5.70646858215332,
+      "counterfactual": -10.798097610473633
+    },
+    "counterfactual_log_odds": -5.0916290283203125,
+    "output_kl": 4.242443561553955,
+    "top10": [
+      " Canada",
+      " the",
+      " C",
+      " **",
+      ":\n\n",
+      " located",
+      " Cat",
+      " China",
+      " Ba",
+      " H"
+    ],
+    "edits": [
+      {
+        "layer": 26,
+        "operation": "swap",
+        "delta_norm": 3.273332357406616,
+        "relative_norm": 0.1781298667192459
+      },
+      {
+        "layer": 26,
+        "operation": "swap",
+        "delta_norm": 3.273332357406616,
+        "relative_norm": 0.1781298667192459
+      }
+    ],
+    "answer_direction_control": "first token only; full answer is used for likelihood scoring",
+    "hit_generation_limit": true
+  },
+  {
+    "id": "Vietnam-capital",
+    "task": "capital",
+    "condition": "remainder",
+    "answer": " Vietnam. The country is located on the mainland, bordering",
+    "original_prefix": false,
+    "counterfactual_prefix": false,
+    "answer_log_probs": {
+      "original": -4.502788066864014,
+      "counterfactual": -10.53606128692627
+    },
+    "counterfactual_log_odds": -6.033273220062256,
+    "output_kl": 0.33136314153671265,
+    "top10": [
+      " Vietnam",
+      " **",
+      " the",
+      " C",
+      " Cat",
+      " China",
+      ":\n\n",
+      " Ba",
+      " Guang",
+      " located"
+    ],
+    "edits": [
+      {
+        "layer": 26,
+        "operation": "swap",
+        "delta_norm": 3.273332357406616,
+        "relative_norm": 0.1781298667192459
+      },
+      {
+        "layer": 26,
+        "operation": "swap",
+        "delta_norm": 3.273332357406616,
+        "relative_norm": 0.1781298667192459
+      }
+    ],
+    "answer_direction_control": "first token only; full answer is used for likelihood scoring",
+    "hit_generation_limit": true
+  },
+  {
+    "id": "Vietnam-capital",
+    "task": "capital",
+    "condition": "remainder_clamp_j",
+    "answer": " Vietnam. The country is located on the mainland, bordering",
+    "original_prefix": false,
+    "counterfactual_prefix": false,
+    "answer_log_probs": {
+      "original": -4.561322212219238,
+      "counterfactual": -11.45331859588623
+    },
+    "counterfactual_log_odds": -6.891996383666992,
+    "output_kl": 0.18044093251228333,
+    "top10": [
+      " Vietnam",
+      " **",
+      " the",
+      " C",
+      " Cat",
+      " China",
+      " Guang",
+      " Viet",
+      " located",
+      " H"
+    ],
+    "edits": [
+      {
+        "layer": 26,
+        "operation": "swap",
+        "delta_norm": 3.273332357406616,
+        "relative_norm": 0.1781298667192459
+      },
+      {
+        "layer": 28,
+        "operation": "clamp",
+        "delta_norm": 1.0265448093414307,
+        "relative_norm": 0.04414341226220131
+      }
+    ],
+    "answer_direction_control": "first token only; full answer is used for likelihood scoring",
+    "hit_generation_limit": true
+  },
+  {
+    "id": "Vietnam-capital",
+    "task": "capital",
+    "condition": "j_clamp_remainder",
+    "answer": " Canada. The capital city of Canada is Ottawa. Ottawa is",
+    "original_prefix": false,
+    "counterfactual_prefix": false,
+    "answer_log_probs": {
+      "original": -5.122192859649658,
+      "counterfactual": -11.04218578338623
+    },
+    "counterfactual_log_odds": -5.919992923736572,
+    "output_kl": 3.427830219268799,
+    "top10": [
+      " Canada",
+      " the",
+      " C",
+      " **",
+      ":\n\n",
+      " located",
+      " Ba",
+      " H",
+      " China",
+      " Cat"
+    ],
+    "edits": [
+      {
+        "layer": 26,
+        "operation": "swap",
+        "delta_norm": 3.273332357406616,
+        "relative_norm": 0.1781298667192459
+      },
+      {
+        "layer": 28,
+        "operation": "clamp",
+        "delta_norm": 0.99777752161026,
+        "relative_norm": 0.04279641434550285
+      }
+    ],
+    "answer_direction_control": "first token only; full answer is used for likelihood scoring",
+    "hit_generation_limit": true
+  },
+  {
+    "id": "Vietnam-language",
+    "task": "language",
+    "condition": "clean",
+    "answer": " Vietnamese. The region is part of Vietnam, where Vietnamese is",
+    "original_prefix": true,
+    "counterfactual_prefix": false,
+    "answer_log_probs": {
+      "original": -0.12117310613393784,
+      "counterfactual": -7.308672904968262
+    },
+    "counterfactual_log_odds": -7.187499798834324,
+    "output_kl": 0.0,
+    "top10": [
+      " Vietnamese",
+      " **",
+      " Chinese",
+      " the",
+      " Vietnam",
+      " Thai",
+      " Cant",
+      "Viet",
+      " H",
+      " a"
+    ],
+    "edits": [],
+    "answer_direction_control": "first token only; full answer is used for likelihood scoring",
+    "hit_generation_limit": true
+  },
+  {
+    "id": "Vietnam-language",
+    "task": "language",
+    "condition": "full",
+    "answer": " **Vietnamese**. The region is part of Vietnam, and",
+    "original_prefix": false,
+    "counterfactual_prefix": false,
+    "answer_log_probs": {
+      "original": -2.9026689529418945,
+      "counterfactual": -3.4651689529418945
+    },
+    "counterfactual_log_odds": -0.5625,
+    "output_kl": 2.2653069496154785,
+    "top10": [
+      " **",
+      " Chinese",
+      " Cant",
+      " the",
+      " Vietnamese",
+      " English",
+      " C",
+      " French",
+      " Te",
+      " a"
+    ],
+    "edits": [
+      {
+        "layer": 26,
+        "operation": "swap",
+        "delta_norm": 4.122526168823242,
+        "relative_norm": 0.2017618715763092
+      },
+      {
+        "layer": 26,
+        "operation": "swap",
+        "delta_norm": 4.122526168823242,
+        "relative_norm": 0.2017618715763092
+      }
+    ],
+    "answer_direction_control": "first token only; full answer is used for likelihood scoring",
+    "hit_generation_limit": true
+  },
+  {
+    "id": "Vietnam-language",
+    "task": "language",
+    "condition": "j_component",
+    "answer": " **Vietnamese**. The region is part of Vietnam, and",
+    "original_prefix": false,
+    "counterfactual_prefix": false,
+    "answer_log_probs": {
+      "original": -5.212857723236084,
+      "counterfactual": -4.900357723236084
+    },
+    "counterfactual_log_odds": 0.3125,
+    "output_kl": 4.329836368560791,
+    "top10": [
+      " **",
+      " the",
+      " Cant",
+      " Chinese",
+      " Canada",
+      " Ta",
+      " a",
+      " Te",
+      " C",
+      " H"
+    ],
+    "edits": [
+      {
+        "layer": 26,
+        "operation": "swap",
+        "delta_norm": 4.1225266456604,
+        "relative_norm": 0.2017619013786316
+      },
+      {
+        "layer": 26,
+        "operation": "swap",
+        "delta_norm": 4.1225266456604,
+        "relative_norm": 0.2017619013786316
+      }
+    ],
+    "answer_direction_control": "first token only; full answer is used for likelihood scoring",
+    "hit_generation_limit": true
+  },
+  {
+    "id": "Vietnam-language",
+    "task": "language",
+    "condition": "remainder",
+    "answer": " Vietnamese. The region is part of the larger cultural and linguistic",
+    "original_prefix": true,
+    "counterfactual_prefix": false,
+    "answer_log_probs": {
+      "original": -0.6469884514808655,
+      "counterfactual": -4.084488391876221
+    },
+    "counterfactual_log_odds": -3.4374999403953552,
+    "output_kl": 0.3239153027534485,
+    "top10": [
+      " Vietnamese",
+      " **",
+      " Chinese",
+      " the",
+      " Cant",
+      " English",
+      " C",
+      " Thai",
+      " Ch",
+      " French"
+    ],
+    "edits": [
+      {
+        "layer": 26,
+        "operation": "swap",
+        "delta_norm": 4.1225266456604,
+        "relative_norm": 0.2017619013786316
+      },
+      {
+        "layer": 26,
+        "operation": "swap",
+        "delta_norm": 4.1225266456604,
+        "relative_norm": 0.2017619013786316
+      }
+    ],
+    "answer_direction_control": "first token only; full answer is used for likelihood scoring",
+    "hit_generation_limit": true
+  },
+  {
+    "id": "Vietnam-language",
+    "task": "language",
+    "condition": "remainder_clamp_j",
+    "answer": " Vietnamese. The region is part of the larger cultural and linguistic",
+    "original_prefix": true,
+    "counterfactual_prefix": false,
+    "answer_log_probs": {
+      "original": -0.27230703830718994,
+      "counterfactual": -4.7723069190979
+    },
+    "counterfactual_log_odds": -4.4999998807907104,
+    "output_kl": 0.06601991504430771,
+    "top10": [
+      " Vietnamese",
+      " **",
+      " Chinese",
+      " the",
+      " English",
+      " Cant",
+      " Thai",
+      " C",
+      " French",
+      " Vietnam"
+    ],
+    "edits": [
+      {
+        "layer": 26,
+        "operation": "swap",
+        "delta_norm": 4.1225266456604,
+        "relative_norm": 0.2017619013786316
+      },
+      {
+        "layer": 28,
+        "operation": "clamp",
+        "delta_norm": 1.2984066009521484,
+        "relative_norm": 0.050978709012269974
+      }
+    ],
+    "answer_direction_control": "first token only; full answer is used for likelihood scoring",
+    "hit_generation_limit": true
+  },
+  {
+    "id": "Vietnam-language",
+    "task": "language",
+    "condition": "j_clamp_remainder",
+    "answer": " **Vietnamese**. The region is part of Vietnam, and",
+    "original_prefix": false,
+    "counterfactual_prefix": false,
+    "answer_log_probs": {
+      "original": -4.039492130279541,
+      "counterfactual": -4.976992130279541
+    },
+    "counterfactual_log_odds": -0.9375,
+    "output_kl": 3.281259775161743,
+    "top10": [
+      " **",
+      " the",
+      " Cant",
+      " Chinese",
+      " Canada",
+      " Vietnamese",
+      " Ta",
+      " a",
+      " H",
+      " Te"
+    ],
+    "edits": [
+      {
+        "layer": 26,
+        "operation": "swap",
+        "delta_norm": 4.1225266456604,
+        "relative_norm": 0.2017619013786316
+      },
+      {
+        "layer": 28,
+        "operation": "clamp",
+        "delta_norm": 1.2717294692993164,
+        "relative_norm": 0.04983120411634445
+      }
+    ],
+    "answer_direction_control": "first token only; full answer is used for likelihood scoring",
+    "hit_generation_limit": true
+  },
+  {
+    "id": "Vietnam-continent",
+    "task": "continent",
+    "condition": "clean",
+    "answer": " Southeast Asia. This region is known for its rich biodiversity and",
+    "original_prefix": false,
+    "counterfactual_prefix": false,
+    "answer_log_probs": {
+      "original": -1.7259467840194702,
+      "counterfactual": -8.024540901184082
+    },
+    "counterfactual_log_odds": -6.298594117164612,
+    "output_kl": 0.0,
+    "top10": [
+      " Southeast",
+      " Asia",
+      " East",
+      " located",
+      " China",
+      " Vietnam",
+      " the",
+      " mainland",
+      " South",
+      ":\n\n"
+    ],
+    "edits": [],
+    "answer_direction_control": "first token only; full answer is used for likelihood scoring",
+    "hit_generation_limit": true
+  },
+  {
+    "id": "Vietnam-continent",
+    "task": "continent",
+    "condition": "full",
+    "answer": " Asia. Ha Long Bay is located in Vietnam, which is",
+    "original_prefix": true,
+    "counterfactual_prefix": false,
+    "answer_log_probs": {
+      "original": -1.0328410863876343,
+      "counterfactual": -5.818482875823975
+    },
+    "counterfactual_log_odds": -4.78564178943634,
+    "output_kl": 0.3933405876159668,
+    "top10": [
+      " Asia",
+      " Southeast",
+      " China",
+      " located",
+      " South",
+      " East",
+      " the",
+      " mainland",
+      ":\n\n",
+      " **"
+    ],
+    "edits": [
+      {
+        "layer": 26,
+        "operation": "swap",
+        "delta_norm": 3.8022220134735107,
+        "relative_norm": 0.21412329375743866
+      },
+      {
+        "layer": 26,
+        "operation": "swap",
+        "delta_norm": 3.8022220134735107,
+        "relative_norm": 0.21412329375743866
+      }
+    ],
+    "answer_direction_control": "first token only; full answer is used for likelihood scoring",
+    "hit_generation_limit": true
+  },
+  {
+    "id": "Vietnam-continent",
+    "task": "continent",
+    "condition": "j_component",
+    "answer": " Asia.",
+    "original_prefix": true,
+    "counterfactual_prefix": false,
+    "answer_log_probs": {
+      "original": -1.6388658285140991,
+      "counterfactual": -5.524421691894531
+    },
+    "counterfactual_log_odds": -3.885555863380432,
+    "output_kl": 0.5194450616836548,
+    "top10": [
+      " Asia",
+      " Southeast",
+      " East",
+      " Canada",
+      " located",
+      " China",
+      " the",
+      " mainland",
+      " South",
+      ":\n\n"
+    ],
+    "edits": [
+      {
+        "layer": 26,
+        "operation": "swap",
+        "delta_norm": 3.80222225189209,
+        "relative_norm": 0.21412330865859985
+      },
+      {
+        "layer": 26,
+        "operation": "swap",
+        "delta_norm": 3.80222225189209,
+        "relative_norm": 0.21412330865859985
+      }
+    ],
+    "answer_direction_control": "first token only; full answer is used for likelihood scoring",
+    "hit_generation_limit": false
+  },
+  {
+    "id": "Vietnam-continent",
+    "task": "continent",
+    "condition": "remainder",
+    "answer": " Asia. Ha Long Bay is located in Vietnam, which is",
+    "original_prefix": true,
+    "counterfactual_prefix": false,
+    "answer_log_probs": {
+      "original": -0.9839731454849243,
+      "counterfactual": -6.86422872543335
+    },
+    "counterfactual_log_odds": -5.880255579948425,
+    "output_kl": 0.19701077044010162,
+    "top10": [
+      " Asia",
+      " Southeast",
+      " China",
+      " located",
+      " South",
+      " East",
+      " the",
+      ":\n\n",
+      " mainland",
+      " Vietnam"
+    ],
+    "edits": [
+      {
+        "layer": 26,
+        "operation": "swap",
+        "delta_norm": 3.8022220134735107,
+        "relative_norm": 0.21412329375743866
+      },
+      {
+        "layer": 26,
+        "operation": "swap",
+        "delta_norm": 3.8022220134735107,
+        "relative_norm": 0.21412329375743866
+      }
+    ],
+    "answer_direction_control": "first token only; full answer is used for likelihood scoring",
+    "hit_generation_limit": true
+  },
+  {
+    "id": "Vietnam-continent",
+    "task": "continent",
+    "condition": "remainder_clamp_j",
+    "answer": " Asia. Ha Long Bay is located in Vietnam, which is",
+    "original_prefix": true,
+    "counterfactual_prefix": false,
+    "answer_log_probs": {
+      "original": -1.0419998168945312,
+      "counterfactual": -7.359755992889404
+    },
+    "counterfactual_log_odds": -6.317756175994873,
+    "output_kl": 0.14076267182826996,
+    "top10": [
+      " Asia",
+      " Southeast",
+      " located",
+      " China",
+      " East",
+      " Vietnam",
+      " South",
+      " the",
+      " mainland",
+      ":\n\n"
+    ],
+    "edits": [
+      {
+        "layer": 26,
+        "operation": "swap",
+        "delta_norm": 3.8022220134735107,
+        "relative_norm": 0.21412329375743866
+      },
+      {
+        "layer": 28,
+        "operation": "clamp",
+        "delta_norm": 1.1641764640808105,
+        "relative_norm": 0.053179096430540085
+      }
+    ],
+    "answer_direction_control": "first token only; full answer is used for likelihood scoring",
+    "hit_generation_limit": true
+  },
+  {
+    "id": "Vietnam-continent",
+    "task": "continent",
+    "condition": "j_clamp_remainder",
+    "answer": " Asia.",
+    "original_prefix": true,
+    "counterfactual_prefix": false,
+    "answer_log_probs": {
+      "original": -1.6340458393096924,
+      "counterfactual": -5.642702102661133
+    },
+    "counterfactual_log_odds": -4.00865626335144,
+    "output_kl": 0.41523975133895874,
+    "top10": [
+      " Asia",
+      " Southeast",
+      " East",
+      " located",
+      " China",
+      " the",
+      " Canada",
+      " mainland",
+      " South",
+      ":\n\n"
+    ],
+    "edits": [
+      {
+        "layer": 26,
+        "operation": "swap",
+        "delta_norm": 3.80222225189209,
+        "relative_norm": 0.21412330865859985
+      },
+      {
+        "layer": 28,
+        "operation": "clamp",
+        "delta_norm": 1.2130337953567505,
+        "relative_norm": 0.055267296731472015
+      }
+    ],
+    "answer_direction_control": "first token only; full answer is used for likelihood scoring",
+    "hit_generation_limit": false
+  }
+]

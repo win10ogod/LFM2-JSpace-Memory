@@ -1,0 +1,81 @@
+{
+  "original_protocol_sha256": "2be68dee0d6565174ee7b52d4376db13912df8a3251388d6ea7438b297b20841",
+  "source": "4 authored paragraphs plus first 128 tokens of 8 Formosa raw articles; text column only; no dedup or full preparation",
+  "formosa_records": [
+    {
+      "uuid": "55bd3ff6-0448-431b-b5ef-51c9d4471dcd",
+      "source_tokens": 359,
+      "calibration_window_tokens": 128,
+      "start_token": 0
+    },
+    {
+      "uuid": "4b15073f-e0a7-4d68-bbe1-f7b0d8e3e351",
+      "source_tokens": 507,
+      "calibration_window_tokens": 128,
+      "start_token": 0
+    },
+    {
+      "uuid": "d4680ffa-4cde-4118-83d4-8faaace5b756",
+      "source_tokens": 424,
+      "calibration_window_tokens": 128,
+      "start_token": 0
+    },
+    {
+      "uuid": "580984e1-357c-4f77-9a7d-e44c613c69db",
+      "source_tokens": 394,
+      "calibration_window_tokens": 128,
+      "start_token": 0
+    },
+    {
+      "uuid": "42c75cee-6d9e-4635-84c3-43aa7add72d1",
+      "source_tokens": 398,
+      "calibration_window_tokens": 128,
+      "start_token": 0
+    },
+    {
+      "uuid": "83cc0c46-0d7b-41f9-946c-852207c56cdb",
+      "source_tokens": 410,
+      "calibration_window_tokens": 128,
+      "start_token": 0
+    },
+    {
+      "uuid": "62ef3d3d-ee13-4b5b-b00a-132cbb5677e1",
+      "source_tokens": 330,
+      "calibration_window_tokens": 128,
+      "start_token": 0
+    },
+    {
+      "uuid": "afe76005-abd6-4958-853d-fe370c6f0754",
+      "source_tokens": 330,
+      "calibration_window_tokens": 128,
+      "start_token": 0
+    }
+  ],
+  "authored_calibration": [
+    "The gardener recorded rainfall before watering the vegetables. Young seedlings needed moist soil, while established plants tolerated a short dry spell. A shaded bed dried more slowly than the exposed one. At the end of the week, the notebook helped the gardener compare growth across the beds and decide where to water next.",
+    "A small program reads a configuration file, checks each required field, and reports a useful error when a value is missing. It writes a new result to a temporary file before replacing the previous version. This procedure lets another process continue reading the last complete result while the next version is being prepared.",
+    "圖書館整理新收到的書籍時，先記錄作者、出版年份與主題，再把書放到適合的書架。讀者可以依書名查找，也可以從相關主題找到原先不知道的作品。借閱紀錄中的日期用來區分先後事件，書本的識別碼則用來確認每一冊的身分。",
+    "研究人員比較兩種材料在相同溫度下的變化，分別記錄重量與外觀。為了避免測量順序影響結果，他們交換實驗順序並再次觀察。最後的報告同時列出平均值與每一次測量的差異，使其他人能了解結果是否穩定。"
+  ],
+  "probes": [
+    "The capital city of the country shaped like a boot is",
+    "The animal that spins webs has this many legs:",
+    "小林把紅色杯子放在桌上，把藍色杯子放進櫃子。桌上的杯子顏色是"
+  ],
+  "calibration_text_sha256": [
+    "304449bd6e9e08c2324d32945b35e3734c4e6133c0e79fd313b5e142e972d437",
+    "819f99d651a6860fce2a049102067d990674fd44f16d43e1bdefdd144028ea3b",
+    "6aa5fc57187869059a0326293df2b1ecbfe10c316032c2e4e79bcc7c35a878f6",
+    "fd5322129ec707bedfbf54bbd18dab77d07c515a3fdbdceefa1578a45cae3cbf",
+    "b6ec77905843e08ef34057551df4084a0fb04fe3bb2e006c934a2f5f1493d491",
+    "f3637433d40ab1f8cda02fedd06eafd380b3fe090b2bb04481277e9c7fb13b61",
+    "393fcfb3e4f903328c4ea9ee905c9ffda21f52d00ae29e3459c1bf371a479140",
+    "6266131b67657968e2eb90093c0d7b72560790f253a9401ad1361bff200df846",
+    "793cb0df3927f93bf91ae32ce480692ca45e347dc73335632238cb945478b607",
+    "f7a96dfa8db66b09f4bdd8dbc9043407eedc2df72f2c9ea527b83bff57aba958",
+    "71280821a729b50c0f82c5266adcfc7e4d9784afbe603552395f5a0121561a78",
+    "71280821a729b50c0f82c5266adcfc7e4d9784afbe603552395f5a0121561a78"
+  ],
+  "third_party_article_text_included": false,
+  "reproduction": "Use the release lens, or obtain the eight upstream article records and reconstruct their first 128 tokens with the recorded tokenizer."
+}

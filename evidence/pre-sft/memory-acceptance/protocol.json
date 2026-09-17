@@ -1,0 +1,24 @@
+{
+  "seed": 1403776002639364430,
+  "sources": 9,
+  "questions": 17,
+  "data_scope": "new random codes, case-sensitive strings, shuffled hash chain, new native images with source references",
+  "writer": "default observe + one source-only text next-token update + default append; generation forbidden",
+  "readers": "new process; native router versus pooled router with the identical ordered decoder; oracle and wrong-unit controls",
+  "source_visible_control": "only after every memory-only response",
+  "output_tokens": 64,
+  "rest_ratio": 1.0,
+  "gates": [
+    "all saved units v6",
+    "zero text generation while addressing",
+    "CPU/GPU same routing",
+    "hot/cold oracle identical",
+    "native recall does not regress versus same-decoder pooled router",
+    "no lost answers that correct-unit oracle can recall",
+    "frozen body unchanged"
+  ],
+  "no_tuning_after_answers": true,
+  "no_long_context_claim": true,
+  "sources_sha256": "8274d3318e1f35b9cefdfdeef861f9eeeba44f1da73d375d62e8d46da365eec8",
+  "questions_sha256": "a9f8ca4a74b9580e0a1c74fe4a3dd347f328fd5d6e5f2a9dd8bd35e272c625f9"
+}

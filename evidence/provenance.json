@@ -1,0 +1,236 @@
+{
+  "records": [
+    {
+      "path": "experiments/jacobian_diagnostic.py",
+      "original_sha256": "1be399bbe8899e850f5401f60aca13bb2c2490b630376c5ac965e244687c95b0",
+      "published_sha256": "3c5f516c532db3677fb11f40d2e2e41d8e21756716bf94d6bb81f3bb72fd818c",
+      "transformation": "import of identical shared runtime helpers, if present"
+    },
+    {
+      "path": "experiments/test_jspace_functions.py",
+      "original_sha256": "3d60a78b599cda4515f3992ca976d4bbf6eb9015a6adad0248d4e80c5068dbff",
+      "published_sha256": "ed72e79a9e69718e3855478d87ce2ee34db84573c38dc418c878d632904d1f8e",
+      "transformation": "import of identical shared runtime helpers, if present"
+    },
+    {
+      "path": "experiments/test_jspace_privilege.py",
+      "original_sha256": "0f91c62d653666ac774858cf667f77e32d5c8f136b7c6799708b3969be632fc0",
+      "published_sha256": "8d475d9cc3e0d8db4445e2d91097f5bc1199cb653f9e48302fa1f4f299664ec5",
+      "transformation": "import of identical shared runtime helpers, if present"
+    },
+    {
+      "path": "experiments/verify_jspace_transfer.py",
+      "original_sha256": "b69d88bdab0d197a00f740eb98ed4fd8b32bd1266dba76076e6a645c8983cb06",
+      "published_sha256": "b8c1cd31737ee4013d4ad998d512a31f0aa2b044efd296d6237b93bc0274875e",
+      "transformation": "import of identical shared runtime helpers, if present"
+    },
+    {
+      "path": "experiments/build_jspace_report.py",
+      "original_sha256": "604e2855c5a9a1751278cfdc7dcb4fd7447663579773e078794e787db726eeea",
+      "published_sha256": "604e2855c5a9a1751278cfdc7dcb4fd7447663579773e078794e787db726eeea",
+      "transformation": "import of identical shared runtime helpers, if present"
+    },
+    {
+      "path": "experiments/research_common.py",
+      "original_sha256": "b22e10373a36c39aa9616f0a98a56424e46c607327534a1b48fbfd79bb5175fe",
+      "published_sha256": "b22e10373a36c39aa9616f0a98a56424e46c607327534a1b48fbfd79bb5175fe",
+      "transformation": "import of identical shared runtime helpers, if present"
+    },
+    {
+      "path": "experiments/verify_unified_memory.py",
+      "original_sha256": "79218dea28ffffd33fec58e28343d822f5a38440446faffe78613dd2990f175c",
+      "published_sha256": "79218dea28ffffd33fec58e28343d822f5a38440446faffe78613dd2990f175c",
+      "transformation": "import of identical shared runtime helpers, if present"
+    },
+    {
+      "path": "experiments/merge_jspace_sft.py",
+      "original_sha256": "78be5ed3ef89d202605f2b98943ead866080681733e83c3d86ed80624362621a",
+      "published_sha256": "78be5ed3ef89d202605f2b98943ead866080681733e83c3d86ed80624362621a",
+      "transformation": "import of identical shared runtime helpers, if present"
+    },
+    {
+      "path": "experiments/lfm2_export_artifacts.py",
+      "original_sha256": "523ff5f9645122b720b162d9df9018d99f78438f85024137dd679787411312cf",
+      "published_sha256": "523ff5f9645122b720b162d9df9018d99f78438f85024137dd679787411312cf",
+      "transformation": "import of identical shared runtime helpers, if present"
+    },
+    {
+      "path": "evidence/pre-sft/jspace-functions-v1/protocol.json",
+      "original_sha256": "7605179055afd009ee8258d80239112d97ae3cc186edcb107d3f2fb695160b41",
+      "published_sha256": "7605179055afd009ee8258d80239112d97ae3cc186edcb107d3f2fb695160b41",
+      "transformation": "local path redaction only"
+    },
+    {
+      "path": "evidence/pre-sft/jspace-functions-v1/result.json",
+      "original_sha256": "6f271e0eaedc6768fb91fe8a3834525222aafb0fde028b45c6e79c6b4b4f84e4",
+      "published_sha256": "6f271e0eaedc6768fb91fe8a3834525222aafb0fde028b45c6e79c6b4b4f84e4",
+      "transformation": "local path redaction only"
+    },
+    {
+      "path": "evidence/pre-sft/jspace-functions-v1/trials.json",
+      "original_sha256": "c4fbe614fb9f6e38c342df693c63774382c1852f804547dde619a4280dbdf235",
+      "published_sha256": "c4fbe614fb9f6e38c342df693c63774382c1852f804547dde619a4280dbdf235",
+      "transformation": "local path redaction only"
+    },
+    {
+      "path": "evidence/pre-sft/jspace-functions-v1/modulation.json",
+      "original_sha256": "2a006ac7db316ae3a4125678b2c02bd554955da2c7efe21f17babffe3e75c8f2",
+      "published_sha256": "2a006ac7db316ae3a4125678b2c02bd554955da2c7efe21f17babffe3e75c8f2",
+      "transformation": "local path redaction only"
+    },
+    {
+      "path": "evidence/pre-sft/jspace-validation-v1/protocol.json",
+      "original_sha256": "a4492d457228646df06a76e309bd939e21f3750bfb3e3ada80b588855184e661",
+      "published_sha256": "a4492d457228646df06a76e309bd939e21f3750bfb3e3ada80b588855184e661",
+      "transformation": "local path redaction only"
+    },
+    {
+      "path": "evidence/pre-sft/jspace-validation-v1/result.json",
+      "original_sha256": "6c9a99f1356a69968df97e4deef6c77891fa6f217c40bd1f305c45517050fae3",
+      "published_sha256": "6c9a99f1356a69968df97e4deef6c77891fa6f217c40bd1f305c45517050fae3",
+      "transformation": "local path redaction only"
+    },
+    {
+      "path": "evidence/pre-sft/jspace-validation-v1/trials.json",
+      "original_sha256": "22463c74ce8a7783af7cfc4ac0f15e7de2495d209a606ab2244b054c4f28ca5e",
+      "published_sha256": "22463c74ce8a7783af7cfc4ac0f15e7de2495d209a606ab2244b054c4f28ca5e",
+      "transformation": "local path redaction only"
+    },
+    {
+      "path": "evidence/pre-sft/jspace-validation-v1/modulation.json",
+      "original_sha256": "20137e9cdc8ab698025ee8eaf4a762f4559b7f5ba3041961a5d70b42930d3813",
+      "published_sha256": "20137e9cdc8ab698025ee8eaf4a762f4559b7f5ba3041961a5d70b42930d3813",
+      "transformation": "local path redaction only"
+    },
+    {
+      "path": "evidence/pre-sft/jspace-privilege-v1/protocol.json",
+      "original_sha256": "486d3ed508917c6ac35b3e2c6ff5915a90726315db3e72d32fb599bf0e773638",
+      "published_sha256": "486d3ed508917c6ac35b3e2c6ff5915a90726315db3e72d32fb599bf0e773638",
+      "transformation": "local path redaction only"
+    },
+    {
+      "path": "evidence/pre-sft/jspace-privilege-v1/result.json",
+      "original_sha256": "50d300411dfb5c1ff08c3c6fa8780010c1034a1860059cd150b4c066dd9e9d65",
+      "published_sha256": "50d300411dfb5c1ff08c3c6fa8780010c1034a1860059cd150b4c066dd9e9d65",
+      "transformation": "local path redaction only"
+    },
+    {
+      "path": "evidence/pre-sft/jspace-privilege-v1/trials.json",
+      "original_sha256": "f676b8302ed599fb4c494a334ced477b13ff87958256e3a43acae7f3fee86451",
+      "published_sha256": "f676b8302ed599fb4c494a334ced477b13ff87958256e3a43acae7f3fee86451",
+      "transformation": "local path redaction only"
+    },
+    {
+      "path": "evidence/pre-sft/jspace-privilege-v1/decomposition.json",
+      "original_sha256": "f3ef40750b9cfe3d2853f78807ff5e04edc70b8aa4b272b8f85a2a2f7023fee4",
+      "published_sha256": "f3ef40750b9cfe3d2853f78807ff5e04edc70b8aa4b272b8f85a2a2f7023fee4",
+      "transformation": "local path redaction only"
+    },
+    {
+      "path": "evidence/pre-sft/jspace-transfer-v1/protocol.json",
+      "original_sha256": "800009fca63268332a627f8bfdaa73a0729dc0b15471023f169a1a161b00174e",
+      "published_sha256": "800009fca63268332a627f8bfdaa73a0729dc0b15471023f169a1a161b00174e",
+      "transformation": "local path redaction only"
+    },
+    {
+      "path": "evidence/pre-sft/jspace-transfer-v1/result.json",
+      "original_sha256": "b91a114f247bde2510ed13090cea81bf3e3609a2ced569ee0131af6446819813",
+      "published_sha256": "b91a114f247bde2510ed13090cea81bf3e3609a2ced569ee0131af6446819813",
+      "transformation": "local path redaction only"
+    },
+    {
+      "path": "evidence/pre-sft/jspace-transfer-v1/trials.json",
+      "original_sha256": "90721082712cd1c19e8f46167176eb237a3bf2127fc7f0b3ae0756113124ea69",
+      "published_sha256": "90721082712cd1c19e8f46167176eb237a3bf2127fc7f0b3ae0756113124ea69",
+      "transformation": "local path redaction only"
+    },
+    {
+      "path": "evidence/pre-sft/jacobian-v1/result.json",
+      "original_sha256": "cbcaa71c5cce0a6f34d56ed470d325ad78ed34cfe37e4be38d91e29fe07b93c1",
+      "published_sha256": "cbcaa71c5cce0a6f34d56ed470d325ad78ed34cfe37e4be38d91e29fe07b93c1",
+      "transformation": "local path redaction only"
+    },
+    {
+      "path": "evidence/pre-sft/jacobian-v1/progress.json",
+      "original_sha256": "85591298162845f859f6c8bf35de11da59b490e3c9856c7acc99677099a69c20",
+      "published_sha256": "85591298162845f859f6c8bf35de11da59b490e3c9856c7acc99677099a69c20",
+      "transformation": "local path redaction only"
+    },
+    {
+      "path": "evidence/pre-sft/jacobian-v2/result.json",
+      "original_sha256": "4512856dac369ffb7a86627920e25e58968ed8c5353ff3c2461150f33e00a078",
+      "published_sha256": "4512856dac369ffb7a86627920e25e58968ed8c5353ff3c2461150f33e00a078",
+      "transformation": "local path redaction only"
+    },
+    {
+      "path": "evidence/pre-sft/jacobian-v2/progress.json",
+      "original_sha256": "617aee83aaa684db78a81225d34e3746d97dc6b3725af8e2a5131e94945c71fd",
+      "published_sha256": "617aee83aaa684db78a81225d34e3746d97dc6b3725af8e2a5131e94945c71fd",
+      "transformation": "local path redaction only"
+    },
+    {
+      "path": "evidence/pre-sft/memory-acceptance/result.json",
+      "original_sha256": "ca49b366903b5683a5d9e0524bba38fa043060dd7b813ee83e56c9e207d323ee",
+      "published_sha256": "ca49b366903b5683a5d9e0524bba38fa043060dd7b813ee83e56c9e207d323ee",
+      "transformation": "local path redaction only"
+    },
+    {
+      "path": "evidence/pre-sft/memory-acceptance/protocol.json",
+      "original_sha256": "06c393972756fcfb950b90c1208385718e14aa3856e1e5f0135e1151eec0f39b",
+      "published_sha256": "06c393972756fcfb950b90c1208385718e14aa3856e1e5f0135e1151eec0f39b",
+      "transformation": "local path redaction only"
+    },
+    {
+      "path": "evidence/pre-sft/memory-acceptance/questions.json",
+      "original_sha256": "a9f8ca4a74b9580e0a1c74fe4a3dd347f328fd5d6e5f2a9dd8bd35e272c625f9",
+      "published_sha256": "a9f8ca4a74b9580e0a1c74fe4a3dd347f328fd5d6e5f2a9dd8bd35e272c625f9",
+      "transformation": "local path redaction only"
+    },
+    {
+      "path": "evidence/pre-sft/memory-acceptance/sources.json",
+      "original_sha256": "8274d3318e1f35b9cefdfdeef861f9eeeba44f1da73d375d62e8d46da365eec8",
+      "published_sha256": "5341fe703f2fd318aa18c6a442b0f3e4363f317189f3617ee08372668c96b3a3",
+      "transformation": "local path redaction only"
+    },
+    {
+      "path": "evidence/pre-sft/memory-acceptance/answers.json",
+      "original_sha256": "ee097bbf9ce3dbda1ab081a7ec55a7750ffdb720ac2490e145a053e7af0b6b3d",
+      "published_sha256": "ee097bbf9ce3dbda1ab081a7ec55a7750ffdb720ac2490e145a053e7af0b6b3d",
+      "transformation": "local path redaction only"
+    },
+    {
+      "path": "evidence/pre-sft/memory-acceptance/routes.json",
+      "original_sha256": "ecf54df6c198bf3aae4ad2662b79cad0aaa4fb83303defb722b7d2338766c572",
+      "published_sha256": "ecf54df6c198bf3aae4ad2662b79cad0aaa4fb83303defb722b7d2338766c572",
+      "transformation": "local path redaction only"
+    },
+    {
+      "path": "evidence/pre-sft/memory-acceptance/hot.json",
+      "original_sha256": "44003f645184334b140b73e9d1126e225ad173245ed46702eecf980f1f1964fa",
+      "published_sha256": "44003f645184334b140b73e9d1126e225ad173245ed46702eecf980f1f1964fa",
+      "transformation": "local path redaction only"
+    },
+    {
+      "path": "evidence/pre-sft/memory-acceptance/write-result.json",
+      "original_sha256": "6f0461448ec94a9d1b0bd1b81ad6ce5290117bf8a39b724108e82531ee3e138c",
+      "published_sha256": "6f0461448ec94a9d1b0bd1b81ad6ce5290117bf8a39b724108e82531ee3e138c",
+      "transformation": "local path redaction only"
+    }
+  ],
+  "trials": {
+    "jspace-functions-v1": 272,
+    "jspace-validation-v1": 240,
+    "jspace-privilege-v1": 96,
+    "jspace-transfer-v1": 352
+  },
+  "total_conditions": 960,
+  "measured_checkpoint_id": "1238a963afc04c1ba75e1e08e2572378",
+  "model": "LFM2.5-VL-3B-derived PT + previous partial SFT",
+  "official_unmodified_base_claimed": false,
+  "current_sft_results_included": false,
+  "lens_asset": {
+    "filename": "pre-sft-jacobians.safetensors",
+    "bytes": 100663760,
+    "sha256": "05966825bf8dba6159aa0ea65fc3ef522da5c687f8c54ec2fec0143d696e4ddf"
+  }
+}

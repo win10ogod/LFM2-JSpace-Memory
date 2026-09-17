@@ -1,0 +1,122 @@
+[
+  {
+    "concept": "Kenya",
+    "mode": "focus",
+    "cosine": {
+      "14": -0.01444630790501833,
+      "20": 0.012315099127590656,
+      "26": 0.033914268016815186,
+      "28": 0.05817276984453201,
+      "4": -0.020900072529911995,
+      "8": -0.009994585998356342
+    },
+    "free_copy": "The quiet garden was covered with fresh snow.",
+    "copied_exactly": true,
+    "measurement": "teacher-forced matched surface tokens"
+  },
+  {
+    "concept": "Kenya",
+    "mode": "mention",
+    "cosine": {
+      "14": -0.016079716384410858,
+      "20": 0.01143890991806984,
+      "26": 0.02651817537844181,
+      "28": 0.05170588567852974,
+      "4": -0.020894980058073997,
+      "8": -0.0095790671184659
+    },
+    "free_copy": "The quiet garden was covered with fresh snow.",
+    "copied_exactly": true,
+    "measurement": "teacher-forced matched surface tokens"
+  },
+  {
+    "concept": "Norway",
+    "mode": "focus",
+    "cosine": {
+      "14": -0.009881953708827496,
+      "20": 0.02146724797785282,
+      "26": 0.04903541877865791,
+      "28": 0.05584453418850899,
+      "4": -0.028751075267791748,
+      "8": -0.014191965572535992
+    },
+    "free_copy": "The quiet garden was covered with fresh snow.",
+    "copied_exactly": true,
+    "measurement": "teacher-forced matched surface tokens"
+  },
+  {
+    "concept": "Norway",
+    "mode": "mention",
+    "cosine": {
+      "14": -0.01361036952584982,
+      "20": 0.0131832305341959,
+      "26": 0.04333503544330597,
+      "28": 0.06168534979224205,
+      "4": -0.02879628911614418,
+      "8": -0.014004905708134174
+    },
+    "free_copy": "The quiet garden was covered with fresh snow.",
+    "copied_exactly": true,
+    "measurement": "teacher-forced matched surface tokens"
+  },
+  {
+    "concept": "Canada",
+    "mode": "focus",
+    "cosine": {
+      "14": -0.007931933738291264,
+      "20": 0.010965109802782536,
+      "26": 0.06257424503564835,
+      "28": 0.059470951557159424,
+      "4": -0.014549889601767063,
+      "8": -0.0023485140409320593
+    },
+    "free_copy": "The quiet garden was covered with fresh snow.",
+    "copied_exactly": true,
+    "measurement": "teacher-forced matched surface tokens"
+  },
+  {
+    "concept": "Canada",
+    "mode": "mention",
+    "cosine": {
+      "14": -0.009489049203693867,
+      "20": 0.007382668554782867,
+      "26": 0.05935807526111603,
+      "28": 0.06792756915092468,
+      "4": -0.014314502477645874,
+      "8": -0.0034374946262687445
+    },
+    "free_copy": "The quiet garden was covered with fresh snow.",
+    "copied_exactly": true,
+    "measurement": "teacher-forced matched surface tokens"
+  },
+  {
+    "concept": "Vietnam",
+    "mode": "focus",
+    "cosine": {
+      "14": -0.02689928561449051,
+      "20": 0.010995468124747276,
+      "26": 0.03299025446176529,
+      "28": 0.055377449840307236,
+      "4": -0.0318952314555645,
+      "8": -0.021353544667363167
+    },
+    "free_copy": "The quiet garden was covered with fresh snow.",
+    "copied_exactly": true,
+    "measurement": "teacher-forced matched surface tokens"
+  },
+  {
+    "concept": "Vietnam",
+    "mode": "mention",
+    "cosine": {
+      "14": -0.03043476492166519,
+      "20": 0.009096894413232803,
+      "26": 0.0299330186098814,
+      "28": 0.059903185814619064,
+      "4": -0.031923700124025345,
+      "8": -0.022946864366531372
+    },
+    "free_copy": "The quiet garden was covered with fresh snow.",
+    "copied_exactly": true,
+    "measurement": "teacher-forced matched surface tokens"
+  }
+]

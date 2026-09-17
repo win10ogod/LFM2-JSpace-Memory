@@ -1,0 +1,169 @@
+{
+  "groups": {
+    "clean": {
+      "n": 16,
+      "original_prefix": 9,
+      "counterfactual_prefix": 0,
+      "mean_counterfactual_log_odds": -6.095703155267984,
+      "mean_output_kl": 0.0
+    },
+    "swap_4": {
+      "n": 16,
+      "original_prefix": 9,
+      "counterfactual_prefix": 0,
+      "mean_counterfactual_log_odds": -6.0097657586447895,
+      "mean_output_kl": 0.01868871893384494
+    },
+    "swap_8": {
+      "n": 16,
+      "original_prefix": 9,
+      "counterfactual_prefix": 0,
+      "mean_counterfactual_log_odds": -6.131835928186774,
+      "mean_output_kl": 0.03832288336707279
+    },
+    "swap_14": {
+      "n": 16,
+      "original_prefix": 9,
+      "counterfactual_prefix": 0,
+      "mean_counterfactual_log_odds": -5.863281355239451,
+      "mean_output_kl": 0.08754849451361224
+    },
+    "swap_20": {
+      "n": 16,
+      "original_prefix": 9,
+      "counterfactual_prefix": 0,
+      "mean_counterfactual_log_odds": -4.903320144396275,
+      "mean_output_kl": 0.8494266659254208
+    },
+    "swap_26": {
+      "n": 16,
+      "original_prefix": 5,
+      "counterfactual_prefix": 5,
+      "mean_counterfactual_log_odds": -0.6210937397554517,
+      "mean_output_kl": 0.6407617324730381
+    },
+    "swap_28": {
+      "n": 16,
+      "original_prefix": 4,
+      "counterfactual_prefix": 3,
+      "mean_counterfactual_log_odds": 0.45117188431322575,
+      "mean_output_kl": 1.1443689428269863
+    },
+    "swap_14_20": {
+      "n": 16,
+      "original_prefix": 9,
+      "counterfactual_prefix": 0,
+      "mean_counterfactual_log_odds": -5.939453228842467,
+      "mean_output_kl": 0.37452075694454834
+    },
+    "random_0": {
+      "n": 16,
+      "original_prefix": 9,
+      "counterfactual_prefix": 0,
+      "mean_counterfactual_log_odds": -6.136718662921339,
+      "mean_output_kl": 0.011831778654595837
+    },
+    "random_1": {
+      "n": 16,
+      "original_prefix": 11,
+      "counterfactual_prefix": 0,
+      "mean_counterfactual_log_odds": -6.105468784458935,
+      "mean_output_kl": 0.035303521930472925
+    },
+    "random_2": {
+      "n": 16,
+      "original_prefix": 9,
+      "counterfactual_prefix": 0,
+      "mean_counterfactual_log_odds": -6.021484449040145,
+      "mean_output_kl": 0.0330651065451093
+    },
+    "wrong_concept": {
+      "n": 16,
+      "original_prefix": 10,
+      "counterfactual_prefix": 0,
+      "mean_counterfactual_log_odds": -6.033203120343387,
+      "mean_output_kl": 0.023880888758867513
+    },
+    "position_control": {
+      "n": 16,
+      "original_prefix": 9,
+      "counterfactual_prefix": 0,
+      "mean_counterfactual_log_odds": -5.919921866618097,
+      "mean_output_kl": 0.08397973712999374
+    },
+    "ablate_14": {
+      "n": 16,
+      "original_prefix": 9,
+      "counterfactual_prefix": 0,
+      "mean_counterfactual_log_odds": -5.9765625144355,
+      "mean_output_kl": 0.023956561170052737
+    },
+    "ablate_14_rescue_20": {
+      "n": 16,
+      "original_prefix": 9,
+      "counterfactual_prefix": 0,
+      "mean_counterfactual_log_odds": -6.01855458272621,
+      "mean_output_kl": 0.012671589094679803
+    },
+    "swap_14_clamp_20": {
+      "n": 16,
+      "original_prefix": 9,
+      "counterfactual_prefix": 0,
+      "mean_counterfactual_log_odds": -5.946289029438049,
+      "mean_output_kl": 0.01694438907725271
+    },
+    "answer_swap_14": {
+      "n": 16,
+      "original_prefix": 10,
+      "counterfactual_prefix": 0,
+      "mean_counterfactual_log_odds": -5.691406287252903,
+      "mean_output_kl": 0.06103449971124064
+    }
+  },
+  "body_fixed": true,
+  "calibration": {
+    "checkpoint_id": "1238a963afc04c1ba75e1e08e2572378",
+    "calibration_prompts": 12,
+    "calibration_tokens": [
+      61,
+      58,
+      87,
+      72,
+      128,
+      128,
+      128,
+      128,
+      128,
+      128,
+      128,
+      128
+    ],
+    "calibration_sha256": "2be68dee0d6565174ee7b52d4376db13912df8a3251388d6ea7438b297b20841",
+    "full_matrix": true,
+    "hidden_width": 2048,
+    "source_layers": [
+      4,
+      8,
+      14,
+      20,
+      26,
+      28
+    ],
+    "target_layer": 29,
+    "skip_first": 16,
+    "exclude_last": true,
+    "estimator": "sum over valid causal targets; mean over valid sources; mean over prompts",
+    "scope": "native frozen language stack; memory inactive; diagnostic only",
+    "calibration_scope": "small authored calibration set; not a representative pretraining corpus",
+    "attention": "kernels-community/flash-attn2@f50dc99ed079b35990bc895d43fd353ea0cb376d",
+    "rest_ratio": 1.0
+  },
+  "global_workspace_established": false,
+  "missing_evidence": [
+    "small fixed concept set",
+    "lens has 12 calibration prompts",
+    "pair-orthogonal controls are not the full non-J-space remainder",
+    "no general workspace conclusion from this pilot alone"
+  ],
+  "peak_vram_gib": 6.890383720397949
+}

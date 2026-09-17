@@ -1,0 +1,183 @@
+{
+  "items": [
+    {
+      "id": "France-report",
+      "task": "report",
+      "prompt": "The country home to the Eiffel Tower is",
+      "original": "France",
+      "target": "Japan",
+      "answer": "France",
+      "counterfactual": "Japan"
+    },
+    {
+      "id": "France-capital",
+      "task": "capital",
+      "prompt": "The capital city of the country home to the Eiffel Tower is",
+      "original": "France",
+      "target": "Japan",
+      "answer": "Paris",
+      "counterfactual": "Tokyo"
+    },
+    {
+      "id": "France-language",
+      "task": "language",
+      "prompt": "The main language spoken in the country home to the Eiffel Tower is",
+      "original": "France",
+      "target": "Japan",
+      "answer": "French",
+      "counterfactual": "Japanese"
+    },
+    {
+      "id": "France-continent",
+      "task": "continent",
+      "prompt": "The continent containing the country home to the Eiffel Tower is",
+      "original": "France",
+      "target": "Japan",
+      "answer": "Europe",
+      "counterfactual": "Asia"
+    },
+    {
+      "id": "Japan-report",
+      "task": "report",
+      "prompt": "The country home to Mount Fuji is",
+      "original": "Japan",
+      "target": "France",
+      "answer": "Japan",
+      "counterfactual": "France"
+    },
+    {
+      "id": "Japan-capital",
+      "task": "capital",
+      "prompt": "The capital city of the country home to Mount Fuji is",
+      "original": "Japan",
+      "target": "France",
+      "answer": "Tokyo",
+      "counterfactual": "Paris"
+    },
+    {
+      "id": "Japan-language",
+      "task": "language",
+      "prompt": "The main language spoken in the country home to Mount Fuji is",
+      "original": "Japan",
+      "target": "France",
+      "answer": "Japanese",
+      "counterfactual": "French"
+    },
+    {
+      "id": "Japan-continent",
+      "task": "continent",
+      "prompt": "The continent containing the country home to Mount Fuji is",
+      "original": "Japan",
+      "target": "France",
+      "answer": "Asia",
+      "counterfactual": "Europe"
+    },
+    {
+      "id": "Italy-report",
+      "task": "report",
+      "prompt": "The country shaped like a boot is",
+      "original": "Italy",
+      "target": "China",
+      "answer": "Italy",
+      "counterfactual": "China"
+    },
+    {
+      "id": "Italy-capital",
+      "task": "capital",
+      "prompt": "The capital city of the country shaped like a boot is",
+      "original": "Italy",
+      "target": "China",
+      "answer": "Rome",
+      "counterfactual": "Beijing"
+    },
+    {
+      "id": "Italy-language",
+      "task": "language",
+      "prompt": "The main language spoken in the country shaped like a boot is",
+      "original": "Italy",
+      "target": "China",
+      "answer": "Italian",
+      "counterfactual": "Chinese"
+    },
+    {
+      "id": "Italy-continent",
+      "task": "continent",
+      "prompt": "The continent containing the country shaped like a boot is",
+      "original": "Italy",
+      "target": "China",
+      "answer": "Europe",
+      "counterfactual": "Asia"
+    },
+    {
+      "id": "China-report",
+      "task": "report",
+      "prompt": "The country home to the Great Wall is",
+      "original": "China",
+      "target": "Italy",
+      "answer": "China",
+      "counterfactual": "Italy"
+    },
+    {
+      "id": "China-capital",
+      "task": "capital",
+      "prompt": "The capital city of the country home to the Great Wall is",
+      "original": "China",
+      "target": "Italy",
+      "answer": "Beijing",
+      "counterfactual": "Rome"
+    },
+    {
+      "id": "China-language",
+      "task": "language",
+      "prompt": "The main language spoken in the country home to the Great Wall is",
+      "original": "China",
+      "target": "Italy",
+      "answer": "Chinese",
+      "counterfactual": "Italian"
+    },
+    {
+      "id": "China-continent",
+      "task": "continent",
+      "prompt": "The continent containing the country home to the Great Wall is",
+      "original": "China",
+      "target": "Italy",
+      "answer": "Asia",
+      "counterfactual": "Europe"
+    }
+  ],
+  "conditions": [
+    "clean",
+    "swap_4",
+    "swap_8",
+    "swap_14",
+    "swap_20",
+    "swap_26",
+    "swap_28",
+    "swap_14_20",
+    "random_0",
+    "random_1",
+    "random_2",
+    "wrong_concept",
+    "position_control",
+    "ablate_14",
+    "ablate_14_rescue_20",
+    "swap_14_clamp_20",
+    "answer_swap_14"
+  ],
+  "seed": 19473,
+  "strength": 1.0,
+  "generation": {
+    "max_new_tokens": 12,
+    "do_sample": false
+  },
+  "primary": "counterfactual full-answer log odds and unforced completion prefix; all clean failures retained",
+  "evidence_scope": "functional pilot on merged LFM2.5-VL-3B derivative, not unmodified upstream weights",
+  "no_tuning_on_results": true,
+  "sparse_privilege_test_complete": false,
+  "limitations": [
+    "small fixed concept set",
+    "lens has 12 calibration prompts",
+    "pair-orthogonal controls are not the full non-J-space remainder",
+    "no general workspace conclusion from this pilot alone"
+  ]
+}

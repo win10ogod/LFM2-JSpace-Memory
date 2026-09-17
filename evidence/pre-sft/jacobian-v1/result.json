@@ -1,0 +1,4864 @@
+{
+  "protocol": {
+    "checkpoint_id": "1238a963afc04c1ba75e1e08e2572378",
+    "calibration_prompts": 4,
+    "calibration_tokens": [
+      61,
+      58,
+      87,
+      72
+    ],
+    "calibration_sha256": "e8990df8f2f4636fe3b89cb2452c2baffc83d657a2c1134c72f0c4cb6f7ae723",
+    "full_matrix": true,
+    "hidden_width": 2048,
+    "source_layers": [
+      4,
+      14,
+      26
+    ],
+    "target_layer": 29,
+    "skip_first": 16,
+    "exclude_last": true,
+    "estimator": "sum over valid causal targets; mean over valid sources; mean over prompts",
+    "scope": "native frozen language stack; memory inactive; diagnostic only",
+    "calibration_scope": "small authored calibration set; not a representative pretraining corpus",
+    "attention": "kernels-community/flash-attn2@f50dc99ed079b35990bc895d43fd353ea0cb376d",
+    "rest_ratio": 1.0
+  },
+  "convergence": [
+    {
+      "prompt": 0,
+      "tokens": 61,
+      "seconds": 27.042149649001658,
+      "mean_relative_change": {}
+    },
+    {
+      "prompt": 1,
+      "tokens": 58,
+      "seconds": 28.808147515999735,
+      "mean_relative_change": {
+        "4": 0.8127709627151489,
+        "14": 0.659659743309021,
+        "26": 0.20578676462173462
+      }
+    },
+    {
+      "prompt": 2,
+      "tokens": 87,
+      "seconds": 27.152105332992505,
+      "mean_relative_change": {
+        "4": 0.4754292070865631,
+        "14": 0.41766175627708435,
+        "26": 0.19151495397090912
+      }
+    },
+    {
+      "prompt": 3,
+      "tokens": 72,
+      "seconds": 27.126567926010466,
+      "mean_relative_change": {
+        "4": 0.35265064239501953,
+        "14": 0.2808905243873596,
+        "26": 0.11152888834476471
+      }
+    }
+  ],
+  "split_stability": {
+    "4": {
+      "split_cosine": 0.09675928950309753,
+      "split_relative_difference": 1.3567988872528076
+    },
+    "14": {
+      "split_cosine": 0.2825584411621094,
+      "split_relative_difference": 1.2176892757415771
+    },
+    "26": {
+      "split_cosine": 0.8344157338142395,
+      "split_relative_difference": 0.5828462839126587
+    }
+  },
+  "probes": [
+    {
+      "prompt": "The capital city of the country shaped like a boot is",
+      "tokens": [
+        "The",
+        " capital",
+        " city",
+        " of",
+        " the",
+        " country",
+        " shaped",
+        " like",
+        " a",
+        " boot",
+        " is"
+      ],
+      "layers": [
+        {
+          "layer": 4,
+          "kind": "conv",
+          "cells": [
+            [
+              {
+                "token": "La",
+                "probability": 0.005025194492191076
+              },
+              {
+                "token": " Graham",
+                "probability": 0.0019678943790495396
+              },
+              {
+                "token": "FO",
+                "probability": 0.0015325977001339197
+              },
+              {
+                "token": "Les",
+                "probability": 0.0015325977001339197
+              },
+              {
+                "token": "index",
+                "probability": 0.0014397423947229981
+              }
+            ],
+            [
+              {
+                "token": "此",
+                "probability": 0.005563223734498024
+              },
+              {
+                "token": " publishing",
+                "probability": 0.0035918874200433493
+              },
+              {
+                "token": "�",
+                "probability": 0.0034813766833394766
+              },
+              {
+                "token": " transpose",
+                "probability": 0.003072303719818592
+              },
+              {
+                "token": "出版",
+                "probability": 0.002977779135107994
+              }
+            ],
+            [
+              {
+                "token": " rows",
+                "probability": 0.028070075437426567
+              },
+              {
+                "token": " row",
+                "probability": 0.012456021271646023
+              },
+              {
+                "token": " column",
+                "probability": 0.012456021271646023
+              },
+              {
+                "token": "的",
+                "probability": 0.010326405055820942
+              },
+              {
+                "token": " records",
+                "probability": 0.009700759314000607
+              }
+            ],
+            [
+              {
+                "token": " old",
+                "probability": 0.018954792991280556
+              },
+              {
+                "token": " Old",
+                "probability": 0.004792522173374891
+              },
+              {
+                "token": " age",
+                "probability": 0.004502158146351576
+              },
+              {
+                "token": " collector",
+                "probability": 0.00385090010240674
+              },
+              {
+                "token": " square",
+                "probability": 0.0032938490621745586
+              }
+            ],
+            [
+              {
+                "token": "\n\n",
+                "probability": 0.04634406417608261
+              },
+              {
+                "token": " old",
+                "probability": 0.015523317269980907
+              },
+              {
+                "token": " \n\n",
+                "probability": 0.012869281694293022
+              },
+              {
+                "token": " age",
+                "probability": 0.0078056142665445805
+              },
+              {
+                "token": "第一",
+                "probability": 0.007107092998921871
+              }
+            ],
+            [
+              {
+                "token": " old",
+                "probability": 0.00838690996170044
+              },
+              {
+                "token": " Rank",
+                "probability": 0.006952993106096983
+              },
+              {
+                "token": "'s",
+                "probability": 0.006739071570336819
+              },
+              {
+                "token": " crown",
+                "probability": 0.00613599456846714
+              },
+              {
+                "token": " new",
+                "probability": 0.005764233414083719
+              }
+            ],
+            [
+              {
+                "token": " Row",
+                "probability": 0.0027192034758627415
+              },
+              {
+                "token": " rows",
+                "probability": 0.0022542988881468773
+              },
+              {
+                "token": "阵",
+                "probability": 0.0021177176386117935
+              },
+              {
+                "token": " amid",
+                "probability": 0.0019894116558134556
+              },
+              {
+                "token": " intricate",
+                "probability": 0.0017556496895849705
+              }
+            ],
+            [
+              {
+                "token": "这个",
+                "probability": 0.01459476538002491
+              },
+              {
+                "token": "这样",
+                "probability": 0.007812015246599913
+              },
+              {
+                "token": "順",
+                "probability": 0.00757166463881731
+              },
+              {
+                "token": " pretty",
+                "probability": 0.006476387847214937
+              },
+              {
+                "token": " old",
+                "probability": 0.005539548117667437
+              }
+            ],
+            [
+              {
+                "token": "读",
+                "probability": 0.005585542414337397
+              },
+              {
+                "token": " *\n\n",
+                "probability": 0.003960742149502039
+              },
+              {
+                "token": " Gauss",
+                "probability": 0.0038388834800571203
+              },
+              {
+                "token": "这样",
+                "probability": 0.0038388834800571203
+              },
+              {
+                "token": "理",
+                "probability": 0.0032835707534104586
+              }
+            ],
+            [
+              {
+                "token": " Boot",
+                "probability": 0.013645285740494728
+              },
+              {
+                "token": " boot",
+                "probability": 0.007079080678522587
+              },
+              {
+                "token": " ‘",
+                "probability": 0.005019820295274258
+              },
+              {
+                "token": "�",
+                "probability": 0.004865376744419336
+              },
+              {
+                "token": " Bundle",
+                "probability": 0.0040335385128855705
+              }
+            ],
+            [
+              {
+                "token": " $\\",
+                "probability": 0.008486734703183174
+              },
+              {
+                "token": " $|",
+                "probability": 0.002842700108885765
+              },
+              {
+                "token": "正",
+                "probability": 0.0025883077178150415
+              },
+              {
+                "token": "重量",
+                "probability": 0.0025086740497499704
+              },
+              {
+                "token": "才能",
+                "probability": 0.0021457825787365437
+              }
+            ]
+          ]
+        },
+        {
+          "layer": 14,
+          "kind": "conv",
+          "cells": [
+            [
+              {
+                "token": "**:\n\n",
+                "probability": 0.012925787828862667
+              },
+              {
+                "token": "’.\n\n",
+                "probability": 0.003070143749937415
+              },
+              {
+                "token": ":**\n\n",
+                "probability": 0.002884133253246546
+              },
+              {
+                "token": "|\n\n",
+                "probability": 0.002709392225369811
+              },
+              {
+                "token": " Pine",
+                "probability": 0.002391030313447118
+              }
+            ],
+            [
+              {
+                "token": " warehouse",
+                "probability": 0.01879628747701645
+              },
+              {
+                "token": " residential",
+                "probability": 0.016587665304541588
+              },
+              {
+                "token": " land",
+                "probability": 0.015582669526338577
+              },
+              {
+                "token": " district",
+                "probability": 0.013751656748354435
+              },
+              {
+                "token": " Wal",
+                "probability": 0.012135795317590237
+              }
+            ],
+            [
+              {
+                "token": " city",
+                "probability": 0.03696503862738609
+              },
+              {
+                "token": " campus",
+                "probability": 0.025405675172805786
+              },
+              {
+                "token": " downtown",
+                "probability": 0.016403136774897575
+              },
+              {
+                "token": " hospital",
+                "probability": 0.010590661317110062
+              },
+              {
+                "token": " urban",
+                "probability": 0.00877996627241373
+              }
+            ],
+            [
+              {
+                "token": " residential",
+                "probability": 0.016937509179115295
+              },
+              {
+                "token": " ancient",
+                "probability": 0.00706060416996479
+              },
+              {
+                "token": " mountain",
+                "probability": 0.006632823962718248
+              },
+              {
+                "token": " town",
+                "probability": 0.006230961997061968
+              },
+              {
+                "token": " Town",
+                "probability": 0.005853446666151285
+              }
+            ],
+            [
+              {
+                "token": " ancient",
+                "probability": 0.00758995721116662
+              },
+              {
+                "token": " land",
+                "probability": 0.005552930757403374
+              },
+              {
+                "token": " historical",
+                "probability": 0.00521649606525898
+              },
+              {
+                "token": " departments",
+                "probability": 0.00336802308447659
+              },
+              {
+                "token": " travel",
+                "probability": 0.003163964720442891
+              }
+            ],
+            [
+              {
+                "token": " residential",
+                "probability": 0.007905733771622181
+              },
+              {
+                "token": " land",
+                "probability": 0.00742674944922328
+              },
+              {
+                "token": " countries",
+                "probability": 0.0065540834330022335
+              },
+              {
+                "token": " country",
+                "probability": 0.005433525890111923
+              },
+              {
+                "token": " DNS",
+                "probability": 0.004231634549796581
+              }
+            ],
+            [
+              {
+                "token": " historically",
+                "probability": 0.014010468497872353
+              },
+              {
+                "token": " historical",
+                "probability": 0.00749926408752799
+              },
+              {
+                "token": " mould",
+                "probability": 0.006217108108103275
+              },
+              {
+                "token": " evolve",
+                "probability": 0.0058404323644936085
+              },
+              {
+                "token": " architect",
+                "probability": 0.0058404323644936085
+              }
+            ],
+            [
+              {
+                "token": " \"",
+                "probability": 0.06032771244645119
+              },
+              {
+                "token": " monument",
+                "probability": 0.01048338320106268
+              },
+              {
+                "token": " ancient",
+                "probability": 0.01048338320106268
+              },
+              {
+                "token": " pictures",
+                "probability": 0.009251554496586323
+              },
+              {
+                "token": " famous",
+                "probability": 0.009251554496586323
+              }
+            ],
+            [
+              {
+                "token": " monument",
+                "probability": 0.012571467086672783
+              },
+              {
+                "token": " picture",
+                "probability": 0.0052405670285224915
+              },
+              {
+                "token": " pictures",
+                "probability": 0.004923057276755571
+              },
+              {
+                "token": " pie",
+                "probability": 0.004624784924089909
+              },
+              {
+                "token": " Ge",
+                "probability": 0.004624784924089909
+              }
+            ],
+            [
+              {
+                "token": " boot",
+                "probability": 0.11349586397409439
+              },
+              {
+                "token": " Boot",
+                "probability": 0.050363484770059586
+              },
+              {
+                "token": "Boot",
+                "probability": 0.03461427986621857
+              },
+              {
+                "token": "boot",
+                "probability": 0.014887416735291481
+              },
+              {
+                "token": " boots",
+                "probability": 0.012733882293105125
+              }
+            ],
+            [
+              {
+                "token": " location",
+                "probability": 0.02262510359287262
+              },
+              {
+                "token": " geographical",
+                "probability": 0.02262510359287262
+              },
+              {
+                "token": " located",
+                "probability": 0.007819026708602905
+              },
+              {
+                "token": " mountains",
+                "probability": 0.007345295511186123
+              },
+              {
+                "token": " locations",
+                "probability": 0.004185223486274481
+              }
+            ]
+          ]
+        },
+        {
+          "layer": 26,
+          "kind": "conv",
+          "cells": [
+            [
+              {
+                "token": " formula",
+                "probability": 0.0017448007129132748
+              },
+              {
+                "token": " exercise",
+                "probability": 0.0016911188140511513
+              },
+              {
+                "token": " definition",
+                "probability": 0.0014019868103787303
+              },
+              {
+                "token": " relationship",
+                "probability": 0.0012765234569087625
+              },
+              {
+                "token": " statement",
+                "probability": 0.0011622878955677152
+              }
+            ],
+            [
+              {
+                "token": " city",
+                "probability": 0.9193632006645203
+              },
+              {
+                "token": " cities",
+                "probability": 0.026080327108502388
+              },
+              {
+                "token": " of",
+                "probability": 0.00846704188734293
+              },
+              {
+                "token": "city",
+                "probability": 0.005819307174533606
+              },
+              {
+                "token": " City",
+                "probability": 0.002926131710410118
+              }
+            ],
+            [
+              {
+                "token": " of",
+                "probability": 0.8431724309921265
+              },
+              {
+                "token": " is",
+                "probability": 0.10070259124040604
+              },
+              {
+                "token": " was",
+                "probability": 0.007765349466353655
+              },
+              {
+                "token": " must",
+                "probability": 0.003040954703465104
+              },
+              {
+                "token": " has",
+                "probability": 0.003040954703465104
+              }
+            ],
+            [
+              {
+                "token": " Indonesia",
+                "probability": 0.3160721957683563
+              },
+              {
+                "token": " Vietnam",
+                "probability": 0.11627647280693054
+              },
+              {
+                "token": " Japan",
+                "probability": 0.07991556823253632
+              },
+              {
+                "token": " Thailand",
+                "probability": 0.06223830208182335
+              },
+              {
+                "token": " China",
+                "probability": 0.06223830208182335
+              }
+            ],
+            [
+              {
+                "token": " Republic",
+                "probability": 0.6238772869110107
+              },
+              {
+                "token": " Kingdom",
+                "probability": 0.22951166331768036
+              },
+              {
+                "token": " Philippines",
+                "probability": 0.05121096596121788
+              },
+              {
+                "token": " United",
+                "probability": 0.021347906440496445
+              },
+              {
+                "token": " kingdom",
+                "probability": 0.02005450427532196
+              }
+            ],
+            [
+              {
+                "token": " is",
+                "probability": 0.11878292262554169
+              },
+              {
+                "token": " mentioned",
+                "probability": 0.11878292262554169
+              },
+              {
+                "token": " named",
+                "probability": 0.0925082340836525
+              },
+              {
+                "token": " where",
+                "probability": 0.059727806597948074
+              },
+              {
+                "token": " located",
+                "probability": 0.05610908195376396
+              }
+            ],
+            [
+              {
+                "token": " by",
+                "probability": 0.9805580973625183
+              },
+              {
+                "token": " during",
+                "probability": 0.011595555581152439
+              },
+              {
+                "token": " By",
+                "probability": 0.0027541860472410917
+              },
+              {
+                "token": "By",
+                "probability": 0.0007890874985605478
+              },
+              {
+                "token": "by",
+                "probability": 0.0003501554310787469
+              }
+            ],
+            [
+              {
+                "token": " Mickey",
+                "probability": 0.06485942006111145
+              },
+              {
+                "token": " heart",
+                "probability": 0.036955781280994415
+              },
+              {
+                "token": " Easter",
+                "probability": 0.0326133631169796
+              },
+              {
+                "token": " egg",
+                "probability": 0.027037428691983223
+              },
+              {
+                "token": " pyramids",
+                "probability": 0.017456676810979843
+              }
+            ],
+            [
+              {
+                "token": " rectangle",
+                "probability": 0.11062874644994736
+              },
+              {
+                "token": " panda",
+                "probability": 0.07603395730257034
+              },
+              {
+                "token": " diamond",
+                "probability": 0.07603395730257034
+              },
+              {
+                "token": " triangle",
+                "probability": 0.059215303510427475
+              },
+              {
+                "token": " dragon",
+                "probability": 0.052257321774959564
+              }
+            ],
+            [
+              {
+                "token": " shoe",
+                "probability": 0.40599897503852844
+              },
+              {
+                "token": " foot",
+                "probability": 0.14935868978500366
+              },
+              {
+                "token": " boot",
+                "probability": 0.10927314311265945
+              },
+              {
+                "token": " shaped",
+                "probability": 0.08510200679302216
+              },
+              {
+                "token": " shape",
+                "probability": 0.06226196140050888
+              }
+            ],
+            [
+              {
+                "token": " Bl",
+                "probability": 0.055382393300533295
+              },
+              {
+                "token": " Bras",
+                "probability": 0.03806372731924057
+              },
+              {
+                "token": " Brat",
+                "probability": 0.031555935740470886
+              },
+              {
+                "token": " named",
+                "probability": 0.021688055247068405
+              },
+              {
+                "token": " Ciudad",
+                "probability": 0.02037404663860798
+              }
+            ]
+          ]
+        }
+      ],
+      "metrics": [
+        {
+          "layer": 4,
+          "jacobian_next_token_nll": 11.64234733581543,
+          "identity_lens_next_token_nll": 16.347305297851562,
+          "native_next_token_nll": 3.7009429931640625,
+          "top1_agreement": 0.0
+        },
+        {
+          "layer": 14,
+          "jacobian_next_token_nll": 10.671592712402344,
+          "identity_lens_next_token_nll": 11.524946212768555,
+          "native_next_token_nll": 3.7009429931640625,
+          "top1_agreement": 0.0
+        },
+        {
+          "layer": 26,
+          "jacobian_next_token_nll": 6.623358249664307,
+          "identity_lens_next_token_nll": 6.13792610168457,
+          "native_next_token_nll": 3.7009429931640625,
+          "top1_agreement": 0.3636363744735718
+        }
+      ],
+      "native": [
+        [
+          {
+            "token": " problem",
+            "probability": 0.01393407303839922
+          },
+          {
+            "token": " equation",
+            "probability": 0.013089850544929504
+          },
+          {
+            "token": " function",
+            "probability": 0.01155175268650055
+          },
+          {
+            "token": " ",
+            "probability": 0.01155175268650055
+          },
+          {
+            "token": " formula",
+            "probability": 0.010194385424256325
+          }
+        ],
+        [
+          {
+            "token": " of",
+            "probability": 0.5240733027458191
+          },
+          {
+            "token": " city",
+            "probability": 0.2475547194480896
+          },
+          {
+            "token": " is",
+            "probability": 0.1169365718960762
+          },
+          {
+            "token": ",",
+            "probability": 0.02451123669743538
+          },
+          {
+            "token": " moves",
+            "probability": 0.013119920156896114
+          }
+        ],
+        [
+          {
+            "token": " of",
+            "probability": 0.5496010184288025
+          },
+          {
+            "token": " is",
+            "probability": 0.2291077971458435
+          },
+          {
+            "token": ",",
+            "probability": 0.0423806831240654
+          },
+          {
+            "token": " was",
+            "probability": 0.015590982511639595
+          },
+          {
+            "token": " in",
+            "probability": 0.014646371826529503
+          }
+        ],
+        [
+          {
+            "token": " the",
+            "probability": 0.24241919815540314
+          },
+          {
+            "token": " Indonesia",
+            "probability": 0.07870198786258698
+          },
+          {
+            "token": " Vietnam",
+            "probability": 0.04773516580462456
+          },
+          {
+            "token": " Thailand",
+            "probability": 0.042126137763261795
+          },
+          {
+            "token": " South",
+            "probability": 0.03280787169933319
+          }
+        ],
+        [
+          {
+            "token": " Republic",
+            "probability": 0.258078008890152
+          },
+          {
+            "token": " Philippines",
+            "probability": 0.10758291929960251
+          },
+          {
+            "token": " Kingdom",
+            "probability": 0.06525234133005142
+          },
+          {
+            "token": " United",
+            "probability": 0.05409609153866768
+          },
+          {
+            "token": " country",
+            "probability": 0.04773963242769241
+          }
+        ],
+        [
+          {
+            "token": " is",
+            "probability": 0.46376514434814453
+          },
+          {
+            "token": " of",
+            "probability": 0.11725819110870361
+          },
+          {
+            "token": ",",
+            "probability": 0.043136876076459885
+          },
+          {
+            "token": " located",
+            "probability": 0.03155961260199547
+          },
+          {
+            "token": ".",
+            "probability": 0.02785126119852066
+          }
+        ],
+        [
+          {
+            "token": " by",
+            "probability": 0.7773135304450989
+          },
+          {
+            "token": " during",
+            "probability": 0.04969199001789093
+          },
+          {
+            "token": " the",
+            "probability": 0.0387001596391201
+          },
+          {
+            "token": " in",
+            "probability": 0.03013971447944641
+          },
+          {
+            "token": " its",
+            "probability": 0.011802881956100464
+          }
+        ],
+        [
+          {
+            "token": " a",
+            "probability": 0.46429672837257385
+          },
+          {
+            "token": " an",
+            "probability": 0.17080524563789368
+          },
+          {
+            "token": " the",
+            "probability": 0.12496377527713776
+          },
+          {
+            "token": " like",
+            "probability": 0.02788318693637848
+          },
+          {
+            "token": " \"",
+            "probability": 0.021715449169278145
+          }
+        ],
+        [
+          {
+            "token": " triangle",
+            "probability": 0.12168719619512558
+          },
+          {
+            "token": " fish",
+            "probability": 0.0738070160150528
+          },
+          {
+            "token": " pear",
+            "probability": 0.061188165098428726
+          },
+          {
+            "token": " butterfly",
+            "probability": 0.03950604796409607
+          },
+          {
+            "token": " diamond",
+            "probability": 0.025507021695375443
+          }
+        ],
+        [
+          {
+            "token": " is",
+            "probability": 0.7447737455368042
+          },
+          {
+            "token": ",",
+            "probability": 0.037080101668834686
+          },
+          {
+            "token": " on",
+            "probability": 0.02112760581076145
+          },
+          {
+            "token": ".",
+            "probability": 0.017515400424599648
+          },
+          {
+            "token": " (",
+            "probability": 0.013641007244586945
+          }
+        ],
+        [
+          {
+            "token": " T",
+            "probability": 0.11243969947099686
+          },
+          {
+            "token": " L",
+            "probability": 0.053112756460905075
+          },
+          {
+            "token": " named",
+            "probability": 0.02842920832335949
+          },
+          {
+            "token": " Lu",
+            "probability": 0.02842920832335949
+          },
+          {
+            "token": " N",
+            "probability": 0.026706771925091743
+          }
+        ]
+      ]
+    },
+    {
+      "prompt": "The animal that spins webs has this many legs:",
+      "tokens": [
+        "The",
+        " animal",
+        " that",
+        " spins",
+        " webs",
+        " has",
+        " this",
+        " many",
+        " legs",
+        ":"
+      ],
+      "layers": [
+        {
+          "layer": 4,
+          "kind": "conv",
+          "cells": [
+            [
+              {
+                "token": "La",
+                "probability": 0.005025194492191076
+              },
+              {
+                "token": " Graham",
+                "probability": 0.0019678943790495396
+              },
+              {
+                "token": "FO",
+                "probability": 0.0015325977001339197
+              },
+              {
+                "token": "Les",
+                "probability": 0.0015325977001339197
+              },
+              {
+                "token": "index",
+                "probability": 0.0014397423947229981
+              }
+            ],
+            [
+              {
+                "token": " old",
+                "probability": 0.013179881498217583
+              },
+              {
+                "token": " rock",
+                "probability": 0.007509669754654169
+              },
+              {
+                "token": " under",
+                "probability": 0.006627260707318783
+              },
+              {
+                "token": " root",
+                "probability": 0.005325153470039368
+              },
+              {
+                "token": "\n",
+                "probability": 0.0051613156683743
+              }
+            ],
+            [
+              {
+                "token": " old",
+                "probability": 0.3083235025405884
+              },
+              {
+                "token": "得到",
+                "probability": 0.012726031243801117
+              },
+              {
+                "token": "真正",
+                "probability": 0.005473397672176361
+              },
+              {
+                "token": " again",
+                "probability": 0.005473397672176361
+              },
+              {
+                "token": " turned",
+                "probability": 0.004830256570130587
+              }
+            ],
+            [
+              {
+                "token": "柱",
+                "probability": 0.009085237048566341
+              },
+              {
+                "token": " Sw",
+                "probability": 0.006442396901547909
+              },
+              {
+                "token": " swing",
+                "probability": 0.005685396026819944
+              },
+              {
+                "token": " pillar",
+                "probability": 0.002770840423181653
+              },
+              {
+                "token": " sword",
+                "probability": 0.0026855908799916506
+              }
+            ],
+            [
+              {
+                "token": " webs",
+                "probability": 0.07044277340173721
+              },
+              {
+                "token": " Web",
+                "probability": 0.0038518388755619526
+              },
+              {
+                "token": "webs",
+                "probability": 0.003399235662072897
+              },
+              {
+                "token": " Webb",
+                "probability": 0.0032946523278951645
+              },
+              {
+                "token": " web",
+                "probability": 0.003193286480382085
+              }
+            ],
+            [
+              {
+                "token": " newer",
+                "probability": 0.0069286273792386055
+              },
+              {
+                "token": " old",
+                "probability": 0.002888281363993883
+              },
+              {
+                "token": " neues",
+                "probability": 0.002548899734392762
+              },
+              {
+                "token": " older",
+                "probability": 0.0021801891271024942
+              },
+              {
+                "token": "老",
+                "probability": 0.0018648147815838456
+              }
+            ],
+            [
+              {
+                "token": " record",
+                "probability": 0.003183663822710514
+              },
+              {
+                "token": " Record",
+                "probability": 0.0024031554348766804
+              },
+              {
+                "token": " old",
+                "probability": 0.0021880981512367725
+              },
+              {
+                "token": " variable",
+                "probability": 0.0018715793266892433
+              },
+              {
+                "token": "\n",
+                "probability": 0.0018715793266892433
+              }
+            ],
+            [
+              {
+                "token": " bigger",
+                "probability": 0.014765561558306217
+              },
+              {
+                "token": " old",
+                "probability": 0.0065521784126758575
+              },
+              {
+                "token": " sort",
+                "probability": 0.00436469167470932
+              },
+              {
+                "token": " shapes",
+                "probability": 0.0035071284510195255
+              },
+              {
+                "token": " huge",
+                "probability": 0.0025658695958554745
+              }
+            ],
+            [
+              {
+                "token": "把",
+                "probability": 0.038900792598724365
+              },
+              {
+                "token": "——",
+                "probability": 0.011145263910293579
+              },
+              {
+                "token": "很",
+                "probability": 0.008955471217632294
+              },
+              {
+                "token": "這個",
+                "probability": 0.007660019677132368
+              },
+              {
+                "token": "。\n\n",
+                "probability": 0.003973965998739004
+              }
+            ],
+            [
+              {
+                "token": "：",
+                "probability": 0.0031954434234648943
+              },
+              {
+                "token": "來",
+                "probability": 0.0031954434234648943
+              },
+              {
+                "token": "来",
+                "probability": 0.002819968853145838
+              },
+              {
+                "token": "ramer",
+                "probability": 0.0024120472371578217
+              },
+              {
+                "token": "拉",
+                "probability": 0.0024120472371578217
+              }
+            ]
+          ]
+        },
+        {
+          "layer": 14,
+          "kind": "conv",
+          "cells": [
+            [
+              {
+                "token": "**:\n\n",
+                "probability": 0.012925787828862667
+              },
+              {
+                "token": "’.\n\n",
+                "probability": 0.003070143749937415
+              },
+              {
+                "token": ":**\n\n",
+                "probability": 0.002884133253246546
+              },
+              {
+                "token": "|\n\n",
+                "probability": 0.002709392225369811
+              },
+              {
+                "token": " Pine",
+                "probability": 0.002391030313447118
+              }
+            ],
+            [
+              {
+                "token": " animal",
+                "probability": 0.17534932494163513
+              },
+              {
+                "token": " Animal",
+                "probability": 0.0443352535367012
+              },
+              {
+                "token": "動物",
+                "probability": 0.026890691369771957
+              },
+              {
+                "token": " animals",
+                "probability": 0.025261467322707176
+              },
+              {
+                "token": "动物",
+                "probability": 0.01631002686917782
+              }
+            ],
+            [
+              {
+                "token": "?\n",
+                "probability": 0.05964275822043419
+              },
+              {
+                "token": " ?\n",
+                "probability": 0.018767425790429115
+              },
+              {
+                "token": "...\n",
+                "probability": 0.017087936401367188
+              },
+              {
+                "token": " recorded",
+                "probability": 0.01605263166129589
+              },
+              {
+                "token": "\n",
+                "probability": 0.008865104988217354
+              }
+            ],
+            [
+              {
+                "token": " spinning",
+                "probability": 0.046237293630838394
+              },
+              {
+                "token": " spun",
+                "probability": 0.04343591630458832
+              },
+              {
+                "token": " spind",
+                "probability": 0.019274571910500526
+              },
+              {
+                "token": " spins",
+                "probability": 0.01810678467154503
+              },
+              {
+                "token": " spin",
+                "probability": 0.015979181975126266
+              }
+            ],
+            [
+              {
+                "token": " webs",
+                "probability": 0.18798938393592834
+              },
+              {
+                "token": " wire",
+                "probability": 0.017485735937952995
+              },
+              {
+                "token": " rope",
+                "probability": 0.014496184885501862
+              },
+              {
+                "token": " worm",
+                "probability": 0.013617905788123608
+              },
+              {
+                "token": " tangled",
+                "probability": 0.010605636052787304
+              }
+            ],
+            [
+              {
+                "token": " colour",
+                "probability": 0.053537365049123764
+              },
+              {
+                "token": " ‘",
+                "probability": 0.04438403621315956
+              },
+              {
+                "token": " colours",
+                "probability": 0.041694942861795425
+              },
+              {
+                "token": " neighbouring",
+                "probability": 0.026920277625322342
+              },
+              {
+                "token": " neighbours",
+                "probability": 0.020965533331036568
+              }
+            ],
+            [
+              {
+                "token": ":\n",
+                "probability": 0.25628504157066345
+              },
+              {
+                "token": "\n",
+                "probability": 0.036921363323926926
+              },
+              {
+                "token": "...\n",
+                "probability": 0.021037157624959946
+              },
+              {
+                "token": " :\n",
+                "probability": 0.014458614401519299
+              },
+              {
+                "token": "：\n",
+                "probability": 0.009937250055372715
+              }
+            ],
+            [
+              {
+                "token": ":\n",
+                "probability": 0.16260546445846558
+              },
+              {
+                "token": "\n",
+                "probability": 0.13480466604232788
+              },
+              {
+                "token": "...\n",
+                "probability": 0.08176316320896149
+              },
+              {
+                "token": " ...\n",
+                "probability": 0.05619494989514351
+              },
+              {
+                "token": "!\n",
+                "probability": 0.04376466944813728
+              }
+            ],
+            [
+              {
+                "token": ".\n\n",
+                "probability": 0.027490677312016487
+              },
+              {
+                "token": ":\n\n",
+                "probability": 0.010765503160655499
+              },
+              {
+                "token": ".\n",
+                "probability": 0.010434283874928951
+              },
+              {
+                "token": "...\n\n",
+                "probability": 0.009802103042602539
+              },
+              {
+                "token": "...",
+                "probability": 0.009500524029135704
+              }
+            ],
+            [
+              {
+                "token": ":\n",
+                "probability": 0.3735693395137787
+              },
+              {
+                "token": ":\n\n",
+                "probability": 0.32967379689216614
+              },
+              {
+                "token": ":",
+                "probability": 0.11393220722675323
+              },
+              {
+                "token": "：\n\n",
+                "probability": 0.00775318406522274
+              },
+              {
+                "token": "：\n",
+                "probability": 0.00775318406522274
+              }
+            ]
+          ]
+        },
+        {
+          "layer": 26,
+          "kind": "conv",
+          "cells": [
+            [
+              {
+                "token": " formula",
+                "probability": 0.0017448007129132748
+              },
+              {
+                "token": " exercise",
+                "probability": 0.0016911188140511513
+              },
+              {
+                "token": " definition",
+                "probability": 0.0014019868103787303
+              },
+              {
+                "token": " relationship",
+                "probability": 0.0012765234569087625
+              },
+              {
+                "token": " statement",
+                "probability": 0.0011622878955677152
+              }
+            ],
+            [
+              {
+                "token": " depicted",
+                "probability": 0.764919102191925
+              },
+              {
+                "token": " shown",
+                "probability": 0.11730415374040604
+              },
+              {
+                "token": " mentioned",
+                "probability": 0.023098556324839592
+              },
+              {
+                "token": " described",
+                "probability": 0.009628910571336746
+              },
+              {
+                "token": " represented",
+                "probability": 0.0048417202197015285
+              }
+            ],
+            [
+              {
+                "token": " represents",
+                "probability": 0.17837591469287872
+              },
+              {
+                "token": " typically",
+                "probability": 0.03980104625225067
+              },
+              {
+                "token": " is",
+                "probability": 0.032996226102113724
+              },
+              {
+                "token": " produces",
+                "probability": 0.030997082591056824
+              },
+              {
+                "token": " can",
+                "probability": 0.030997082591056824
+              }
+            ],
+            [
+              {
+                "token": " fastest",
+                "probability": 0.18040192127227783
+              },
+              {
+                "token": " rotational",
+                "probability": 0.08005286753177643
+              },
+              {
+                "token": " around",
+                "probability": 0.05856793001294136
+              },
+              {
+                "token": " clockwise",
+                "probability": 0.055019475519657135
+              },
+              {
+                "token": " itself",
+                "probability": 0.04284921661019325
+              }
+            ],
+            [
+              {
+                "token": " to",
+                "probability": 0.5193324685096741
+              },
+              {
+                "token": " is",
+                "probability": 0.06202542036771774
+              },
+              {
+                "token": " webs",
+                "probability": 0.03762032091617584
+              },
+              {
+                "token": " around",
+                "probability": 0.03118833899497986
+              },
+              {
+                "token": " spiders",
+                "probability": 0.020136704668402672
+              }
+            ],
+            [
+              {
+                "token": " been",
+                "probability": 0.3602381646633148
+              },
+              {
+                "token": " legs",
+                "probability": 0.18113912642002106
+              },
+              {
+                "token": " wings",
+                "probability": 0.17016446590423584
+              },
+              {
+                "token": " evolved",
+                "probability": 0.01793520152568817
+              },
+              {
+                "token": " webs",
+                "probability": 0.013121673837304115
+              }
+            ],
+            [
+              {
+                "token": " characteristic",
+                "probability": 0.3383569121360779
+              },
+              {
+                "token": " feature",
+                "probability": 0.12447456270456314
+              },
+              {
+                "token": " ability",
+                "probability": 0.08036681264638901
+              },
+              {
+                "token": " characteristics",
+                "probability": 0.043017249554395676
+              },
+              {
+                "token": " property",
+                "probability": 0.043017249554395676
+              }
+            ],
+            [
+              {
+                "token": " legs",
+                "probability": 0.7094933390617371
+              },
+              {
+                "token": " strands",
+                "probability": 0.06199483573436737
+              },
+              {
+                "token": " threads",
+                "probability": 0.05823875963687897
+              },
+              {
+                "token": " webs",
+                "probability": 0.029284289106726646
+              },
+              {
+                "token": " spider",
+                "probability": 0.01890735700726509
+              }
+            ],
+            [
+              {
+                "token": ":\n",
+                "probability": 0.44356244802474976
+              },
+              {
+                "token": ":\n\n",
+                "probability": 0.39144250750541687
+              },
+              {
+                "token": ":",
+                "probability": 0.1121501550078392
+              },
+              {
+                "token": "：\n",
+                "probability": 0.011820538900792599
+              },
+              {
+                "token": "：\n\n",
+                "probability": 0.009205845184624195
+              }
+            ],
+            [
+              {
+                "token": " ",
+                "probability": 0.9073907732963562
+              },
+              {
+                "token": " spider",
+                "probability": 0.054493051022291183
+              },
+              {
+                "token": " spiders",
+                "probability": 0.012159042991697788
+              },
+              {
+                "token": " ara",
+                "probability": 0.005395542364567518
+              },
+              {
+                "token": " Spider",
+                "probability": 0.004473061766475439
+              }
+            ]
+          ]
+        }
+      ],
+      "metrics": [
+        {
+          "layer": 4,
+          "jacobian_next_token_nll": 12.303289413452148,
+          "identity_lens_next_token_nll": 15.730209350585938,
+          "native_next_token_nll": 6.003281116485596,
+          "top1_agreement": 0.0
+        },
+        {
+          "layer": 14,
+          "jacobian_next_token_nll": 11.545777320861816,
+          "identity_lens_next_token_nll": 11.650068283081055,
+          "native_next_token_nll": 6.003281116485596,
+          "top1_agreement": 0.0
+        },
+        {
+          "layer": 26,
+          "jacobian_next_token_nll": 8.113153457641602,
+          "identity_lens_next_token_nll": 8.119658470153809,
+          "native_next_token_nll": 6.003281116485596,
+          "top1_agreement": 0.4000000059604645
+        }
+      ],
+      "native": [
+        [
+          {
+            "token": " problem",
+            "probability": 0.01393407303839922
+          },
+          {
+            "token": " equation",
+            "probability": 0.013089850544929504
+          },
+          {
+            "token": " function",
+            "probability": 0.01155175268650055
+          },
+          {
+            "token": " ",
+            "probability": 0.01155175268650055
+          },
+          {
+            "token": " formula",
+            "probability": 0.010194385424256325
+          }
+        ],
+        [
+          {
+            "token": " is",
+            "probability": 0.17786730825901031
+          },
+          {
+            "token": " in",
+            "probability": 0.16709087789058685
+          },
+          {
+            "token": " depicted",
+            "probability": 0.06146930158138275
+          },
+          {
+            "token": " that",
+            "probability": 0.057745061814785004
+          },
+          {
+            "token": " shown",
+            "probability": 0.054246462881565094
+          }
+        ],
+        [
+          {
+            "token": " is",
+            "probability": 0.31500673294067383
+          },
+          {
+            "token": " can",
+            "probability": 0.10226771235466003
+          },
+          {
+            "token": " has",
+            "probability": 0.04830785095691681
+          },
+          {
+            "token": " lives",
+            "probability": 0.04830785095691681
+          },
+          {
+            "token": " was",
+            "probability": 0.03534277528524399
+          }
+        ],
+        [
+          {
+            "token": " around",
+            "probability": 0.11327935010194778
+          },
+          {
+            "token": " when",
+            "probability": 0.10641610622406006
+          },
+          {
+            "token": " is",
+            "probability": 0.08287694305181503
+          },
+          {
+            "token": " to",
+            "probability": 0.077855683863163
+          },
+          {
+            "token": " the",
+            "probability": 0.077855683863163
+          }
+        ],
+        [
+          {
+            "token": " to",
+            "probability": 0.36357438564300537
+          },
+          {
+            "token": " is",
+            "probability": 0.24988079071044922
+          },
+          {
+            "token": " from",
+            "probability": 0.07620932906866074
+          },
+          {
+            "token": " in",
+            "probability": 0.052377860993146896
+          },
+          {
+            "token": " and",
+            "probability": 0.040791913866996765
+          }
+        ],
+        [
+          {
+            "token": " a",
+            "probability": 0.18050958216190338
+          },
+          {
+            "token": " two",
+            "probability": 0.08526669442653656
+          },
+          {
+            "token": " eight",
+            "probability": 0.07068856805562973
+          },
+          {
+            "token": " six",
+            "probability": 0.0664057731628418
+          },
+          {
+            "token": " ",
+            "probability": 0.0664057731628418
+          }
+        ],
+        [
+          {
+            "token": " unique",
+            "probability": 0.11673792451620102
+          },
+          {
+            "token": " characteristic",
+            "probability": 0.09677914530038834
+          },
+          {
+            "token": " name",
+            "probability": 0.055143091827631
+          },
+          {
+            "token": " function",
+            "probability": 0.040343549102544785
+          },
+          {
+            "token": " property",
+            "probability": 0.035603053867816925
+          }
+        ],
+        [
+          {
+            "token": " legs",
+            "probability": 0.46123650670051575
+          },
+          {
+            "token": " different",
+            "probability": 0.04290167614817619
+          },
+          {
+            "token": " silk",
+            "probability": 0.031387537717819214
+          },
+          {
+            "token": " uses",
+            "probability": 0.031387537717819214
+          },
+          {
+            "token": " arms",
+            "probability": 0.027699405327439308
+          }
+        ],
+        [
+          {
+            "token": ":\n",
+            "probability": 0.30853286385536194
+          },
+          {
+            "token": ":",
+            "probability": 0.21205133199691772
+          },
+          {
+            "token": ":\n\n",
+            "probability": 0.18713463842868805
+          },
+          {
+            "token": ".",
+            "probability": 0.05707284063100815
+          },
+          {
+            "token": ".\n",
+            "probability": 0.03922554850578308
+          }
+        ],
+        [
+          {
+            "token": " ",
+            "probability": 0.5140507817268372
+          },
+          {
+            "token": "  \n",
+            "probability": 0.10122258961200714
+          },
+          {
+            "token": " A",
+            "probability": 0.03963933885097504
+          },
+          {
+            "token": " six",
+            "probability": 0.02724369242787361
+          },
+          {
+            "token": " four",
+            "probability": 0.02404247596859932
+          }
+        ]
+      ]
+    },
+    {
+      "prompt": "小林把紅色杯子放在桌上，把藍色杯子放進櫃子。桌上的杯子顏色是",
+      "tokens": [
+        "小",
+        "林",
+        "把",
+        "紅",
+        "色",
+        "杯",
+        "子",
+        "放在",
+        "桌",
+        "上",
+        "，把",
+        "�",
+        "�",
+        "色",
+        "杯",
+        "子",
+        "放",
+        "進",
+        "�",
+        "�",
+        "�",
+        "子",
+        "。",
+        "桌",
+        "上的",
+        "杯",
+        "子",
+        "�",
+        "�",
+        "色",
+        "是"
+      ],
+      "layers": [
+        {
+          "layer": 4,
+          "kind": "conv",
+          "cells": [
+            [
+              {
+                "token": " bigger",
+                "probability": 0.3041625916957855
+              },
+              {
+                "token": " big",
+                "probability": 0.019444463774561882
+              },
+              {
+                "token": " grand",
+                "probability": 0.007153219077736139
+              },
+              {
+                "token": "Size",
+                "probability": 0.004338646307587624
+              },
+              {
+                "token": " biggest",
+                "probability": 0.0035968641750514507
+              }
+            ],
+            [
+              {
+                "token": " *\n",
+                "probability": 0.004047300200909376
+              },
+              {
+                "token": " :\n",
+                "probability": 0.0036851088516414165
+              },
+              {
+                "token": " commented",
+                "probability": 0.002613133518025279
+              },
+              {
+                "token": " (*",
+                "probability": 0.0020997116807848215
+              },
+              {
+                "token": " Leonardo",
+                "probability": 0.0019724967423826456
+              }
+            ],
+            [
+              {
+                "token": "把",
+                "probability": 0.04613061249256134
+              },
+              {
+                "token": "，把",
+                "probability": 0.01029313076287508
+              },
+              {
+                "token": " puts",
+                "probability": 0.006243098992854357
+              },
+              {
+                "token": " old",
+                "probability": 0.005175710655748844
+              },
+              {
+                "token": " got",
+                "probability": 0.00501647125929594
+              }
+            ],
+            [
+              {
+                "token": " colours",
+                "probability": 0.01059667393565178
+              },
+              {
+                "token": " colour",
+                "probability": 0.006427207961678505
+              },
+              {
+                "token": " reds",
+                "probability": 0.003662112867459655
+              },
+              {
+                "token": "640",
+                "probability": 0.003662112867459655
+              },
+              {
+                "token": "‑",
+                "probability": 0.003035997971892357
+              }
+            ],
+            [
+              {
+                "token": " Celsius",
+                "probability": 0.00616934709250927
+              },
+              {
+                "token": " cols",
+                "probability": 0.0026534032076597214
+              },
+              {
+                "token": "�",
+                "probability": 0.002571766497567296
+              },
+              {
+                "token": " categorized",
+                "probability": 0.002199748530983925
+              },
+              {
+                "token": "）\n",
+                "probability": 0.002199748530983925
+              }
+            ],
+            [
+              {
+                "token": "..\n",
+                "probability": 0.011535421945154667
+              },
+              {
+                "token": "rav",
+                "probability": 0.006996586918830872
+              },
+              {
+                "token": ")\n",
+                "probability": 0.005118812434375286
+              },
+              {
+                "token": " Row",
+                "probability": 0.004961322993040085
+              },
+              {
+                "token": " carrot",
+                "probability": 0.0035181045532226562
+              }
+            ],
+            [
+              {
+                "token": " veggies",
+                "probability": 0.009175010956823826
+              },
+              {
+                "token": "。”",
+                "probability": 0.00433396827429533
+              },
+              {
+                "token": "主人",
+                "probability": 0.003824713407084346
+              },
+              {
+                "token": "順",
+                "probability": 0.0035929856821894646
+              },
+              {
+                "token": "itle",
+                "probability": 0.003375298110768199
+              }
+            ],
+            [
+              {
+                "token": " Row",
+                "probability": 0.00766832334920764
+              },
+              {
+                "token": "放在",
+                "probability": 0.004234849940985441
+              },
+              {
+                "token": " ones",
+                "probability": 0.004234849940985441
+              },
+              {
+                "token": " Run",
+                "probability": 0.0032981049735099077
+              },
+              {
+                "token": " Walker",
+                "probability": 0.002734225243330002
+              }
+            ],
+            [
+              {
+                "token": "er",
+                "probability": 0.0476841926574707
+              },
+              {
+                "token": " rows",
+                "probability": 0.039531584829092026
+              },
+              {
+                "token": " Row",
+                "probability": 0.030787229537963867
+              },
+              {
+                "token": "rows",
+                "probability": 0.019877729937434196
+              },
+              {
+                "token": " row",
+                "probability": 0.013661750592291355
+              }
+            ],
+            [
+              {
+                "token": " Row",
+                "probability": 0.0116663733497262
+              },
+              {
+                "token": " row",
+                "probability": 0.008535301312804222
+              },
+              {
+                "token": "行",
+                "probability": 0.008018174208700657
+              },
+              {
+                "token": "rows",
+                "probability": 0.007532377261668444
+              },
+              {
+                "token": "resh",
+                "probability": 0.0066472990438342094
+              }
+            ],
+            [
+              {
+                "token": "把",
+                "probability": 0.12333902716636658
+              },
+              {
+                "token": "，把",
+                "probability": 0.02929558791220188
+              },
+              {
+                "token": " pretty",
+                "probability": 0.009510884992778301
+              },
+              {
+                "token": " puts",
+                "probability": 0.007407084107398987
+              },
+              {
+                "token": " nicely",
+                "probability": 0.005252409726381302
+              }
+            ],
+            [
+              {
+                "token": "�",
+                "probability": 0.00271340343169868
+              },
+              {
+                "token": " anth",
+                "probability": 0.00271340343169868
+              },
+              {
+                "token": "kopf",
+                "probability": 0.002629920607432723
+              },
+              {
+                "token": "LAS",
+                "probability": 0.0025490066036581993
+              },
+              {
+                "token": " Edel",
+                "probability": 0.0022494904696941376
+              }
+            ],
+            [
+              {
+                "token": " colour",
+                "probability": 0.04224080592393875
+              },
+              {
+                "token": " colours",
+                "probability": 0.024068085476756096
+              },
+              {
+                "token": "-cut",
+                "probability": 0.007813763804733753
+              },
+              {
+                "token": "�",
+                "probability": 0.002309744246304035
+              },
+              {
+                "token": " Blanco",
+                "probability": 0.0022386808414012194
+              }
+            ],
+            [
+              {
+                "token": " temp",
+                "probability": 0.0033788923174142838
+              },
+              {
+                "token": " Celsius",
+                "probability": 0.002114456845447421
+              },
+              {
+                "token": "�",
+                "probability": 0.0020494016353040934
+              },
+              {
+                "token": "�",
+                "probability": 0.0019252346828579903
+              },
+              {
+                "token": "順",
+                "probability": 0.0017529461765661836
+              }
+            ],
+            [
+              {
+                "token": " Row",
+                "probability": 0.012254086323082447
+              },
+              {
+                "token": " Column",
+                "probability": 0.004651126451790333
+              },
+              {
+                "token": "..\n",
+                "probability": 0.003978319466114044
+              },
+              {
+                "token": "瓶",
+                "probability": 0.0038559192325919867
+              },
+              {
+                "token": " Fuller",
+                "probability": 0.0032981426920741796
+              }
+            ],
+            [
+              {
+                "token": "順",
+                "probability": 0.005288780201226473
+              },
+              {
+                "token": " veggies",
+                "probability": 0.004815489053726196
+              },
+              {
+                "token": "<|im_end|>",
+                "probability": 0.004249654244631529
+              },
+              {
+                "token": "主人",
+                "probability": 0.0036349219735711813
+              },
+              {
+                "token": "。”",
+                "probability": 0.0031091133132576942
+              }
+            ],
+            [
+              {
+                "token": " lines",
+                "probability": 0.013267572969198227
+              },
+              {
+                "token": " Line",
+                "probability": 0.0073270490393042564
+              },
+              {
+                "token": "ged",
+                "probability": 0.005706312134861946
+              },
+              {
+                "token": " Lines",
+                "probability": 0.0051956563256680965
+              },
+              {
+                "token": "线",
+                "probability": 0.004585150629281998
+              }
+            ],
+            [
+              {
+                "token": " Row",
+                "probability": 0.007271233480423689
+              },
+              {
+                "token": " organised",
+                "probability": 0.005662842653691769
+              },
+              {
+                "token": " pushes",
+                "probability": 0.003656205954030156
+              },
+              {
+                "token": " colours",
+                "probability": 0.0032265903428196907
+              },
+              {
+                "token": " Till",
+                "probability": 0.0030311010777950287
+              }
+            ],
+            [
+              {
+                "token": " tendr",
+                "probability": 0.02452005445957184
+              },
+              {
+                "token": " coloured",
+                "probability": 0.006808972917497158
+              },
+              {
+                "token": " ‘",
+                "probability": 0.006199640687555075
+              },
+              {
+                "token": " colours",
+                "probability": 0.005824023857712746
+              },
+              {
+                "token": " tumour",
+                "probability": 0.0038796362932771444
+              }
+            ],
+            [
+              {
+                "token": " colours",
+                "probability": 0.006570340134203434
+              },
+              {
+                "token": " organised",
+                "probability": 0.004515724256634712
+              },
+              {
+                "token": " Lak",
+                "probability": 0.003516849596053362
+              },
+              {
+                "token": " colour",
+                "probability": 0.0034086473751813173
+              },
+              {
+                "token": " coloured",
+                "probability": 0.003202127991244197
+              }
+            ],
+            [
+              {
+                "token": "行",
+                "probability": 0.020001890137791634
+              },
+              {
+                "token": " rows",
+                "probability": 0.012131758965551853
+              },
+              {
+                "token": " Row",
+                "probability": 0.0061002313159406185
+              },
+              {
+                "token": " row",
+                "probability": 0.005730637349188328
+              },
+              {
+                "token": "每",
+                "probability": 0.004063630476593971
+              }
+            ],
+            [
+              {
+                "token": " rows",
+                "probability": 0.0169755257666111
+              },
+              {
+                "token": "里的",
+                "probability": 0.009672362357378006
+              },
+              {
+                "token": " ligne",
+                "probability": 0.005511146038770676
+              },
+              {
+                "token": " row",
+                "probability": 0.005341585725545883
+              },
+              {
+                "token": " lines",
+                "probability": 0.0047139329835772514
+              }
+            ],
+            [
+              {
+                "token": "若",
+                "probability": 0.014733408577740192
+              },
+              {
+                "token": "到",
+                "probability": 0.007408423349261284
+              },
+              {
+                "token": "读",
+                "probability": 0.002901179948821664
+              },
+              {
+                "token": "的时候",
+                "probability": 0.002901179948821664
+              },
+              {
+                "token": "热",
+                "probability": 0.0027254067827016115
+              }
+            ],
+            [
+              {
+                "token": "front",
+                "probability": 0.020046571269631386
+              },
+              {
+                "token": "er",
+                "probability": 0.011422191746532917
+              },
+              {
+                "token": "桌",
+                "probability": 0.006927909795194864
+              },
+              {
+                "token": "line",
+                "probability": 0.0047614783979952335
+              },
+              {
+                "token": "mates",
+                "probability": 0.0032725129276514053
+              }
+            ],
+            [
+              {
+                "token": " totals",
+                "probability": 0.005144727881997824
+              },
+              {
+                "token": " Olympics",
+                "probability": 0.003535916330292821
+              },
+              {
+                "token": " DataFrame",
+                "probability": 0.003120435168966651
+              },
+              {
+                "token": " Trends",
+                "probability": 0.003120435168966651
+              },
+              {
+                "token": " rows",
+                "probability": 0.0017779703484848142
+              }
+            ],
+            [
+              {
+                "token": "瓶",
+                "probability": 0.007659190334379673
+              },
+              {
+                "token": " Row",
+                "probability": 0.004502605646848679
+              },
+              {
+                "token": " carrot",
+                "probability": 0.003851282875984907
+              },
+              {
+                "token": "杯",
+                "probability": 0.0036179455928504467
+              },
+              {
+                "token": "rav",
+                "probability": 0.00350663298740983
+              }
+            ],
+            [
+              {
+                "token": "<|im_end|>",
+                "probability": 0.005759506020694971
+              },
+              {
+                "token": " organize",
+                "probability": 0.004485507495701313
+              },
+              {
+                "token": "先生",
+                "probability": 0.0040841009467840195
+              },
+              {
+                "token": " totals",
+                "probability": 0.003958446905016899
+              },
+              {
+                "token": "用",
+                "probability": 0.0038366583175957203
+              }
+            ],
+            [
+              {
+                "token": "etters",
+                "probability": 0.00305555178783834
+              },
+              {
+                "token": "Dot",
+                "probability": 0.002961542224511504
+              },
+              {
+                "token": " spor",
+                "probability": 0.0024552049580961466
+              },
+              {
+                "token": " decade",
+                "probability": 0.002379666082561016
+              },
+              {
+                "token": " detr",
+                "probability": 0.0017410008003935218
+              }
+            ],
+            [
+              {
+                "token": " colours",
+                "probability": 0.3824489712715149
+              },
+              {
+                "token": " colour",
+                "probability": 0.2047101855278015
+              },
+              {
+                "token": " organised",
+                "probability": 0.02296784520149231
+              },
+              {
+                "token": " recognised",
+                "probability": 0.011548957787454128
+              },
+              {
+                "token": " emphas",
+                "probability": 0.007456568069756031
+              }
+            ],
+            [
+              {
+                "token": "順",
+                "probability": 0.008867751806974411
+              },
+              {
+                "token": "排序",
+                "probability": 0.004458985291421413
+              },
+              {
+                "token": " breeze",
+                "probability": 0.004188829567283392
+              },
+              {
+                "token": "的重要",
+                "probability": 0.003696628613397479
+              },
+              {
+                "token": "�",
+                "probability": 0.003064613090828061
+              }
+            ],
+            [
+              {
+                "token": "的时候",
+                "probability": 0.0047922199591994286
+              },
+              {
+                "token": " Ellis",
+                "probability": 0.0023355414159595966
+              },
+              {
+                "token": "832",
+                "probability": 0.002126534702256322
+              },
+              {
+                "token": "主人",
+                "probability": 0.0019976943731307983
+              },
+              {
+                "token": "这样",
+                "probability": 0.0018766602734103799
+              }
+            ]
+          ]
+        },
+        {
+          "layer": 14,
+          "kind": "conv",
+          "cells": [
+            [
+              {
+                "token": " bigger",
+                "probability": 0.0542084202170372
+              },
+              {
+                "token": " big",
+                "probability": 0.02901567704975605
+              },
+              {
+                "token": "big",
+                "probability": 0.007809463422745466
+              },
+              {
+                "token": "round",
+                "probability": 0.003926844801753759
+              },
+              {
+                "token": "Big",
+                "probability": 0.0030582298059016466
+              }
+            ],
+            [
+              {
+                "token": " Lisa",
+                "probability": 0.005609739106148481
+              },
+              {
+                "token": " Baker",
+                "probability": 0.0049505773931741714
+              },
+              {
+                "token": " Rom",
+                "probability": 0.0038555136416107416
+              },
+              {
+                "token": "竹",
+                "probability": 0.0036219197791069746
+              },
+              {
+                "token": "林",
+                "probability": 0.0036219197791069746
+              }
+            ],
+            [
+              {
+                "token": " colours",
+                "probability": 0.005835324060171843
+              },
+              {
+                "token": "‑c",
+                "probability": 0.004544555209577084
+              },
+              {
+                "token": ")’",
+                "probability": 0.004544555209577084
+              },
+              {
+                "token": " Gim",
+                "probability": 0.0042692143470048904
+              },
+              {
+                "token": " neighbours",
+                "probability": 0.004010555800050497
+              }
+            ],
+            [
+              {
+                "token": " colours",
+                "probability": 0.1867104172706604
+              },
+              {
+                "token": " colour",
+                "probability": 0.11324559897184372
+              },
+              {
+                "token": " maths",
+                "probability": 0.008732562884688377
+              },
+              {
+                "token": " coloured",
+                "probability": 0.008203483186662197
+              },
+              {
+                "token": " neighbour",
+                "probability": 0.007706460077315569
+              }
+            ],
+            [
+              {
+                "token": " colour",
+                "probability": 0.10157132148742676
+              },
+              {
+                "token": " symbol",
+                "probability": 0.029100671410560608
+              },
+              {
+                "token": " colours",
+                "probability": 0.025681251659989357
+              },
+              {
+                "token": " hue",
+                "probability": 0.016581062227487564
+              },
+              {
+                "token": " ‘",
+                "probability": 0.016581062227487564
+              }
+            ],
+            [
+              {
+                "token": " cup",
+                "probability": 0.04017204791307449
+              },
+              {
+                "token": "杯",
+                "probability": 0.029390497133135796
+              },
+              {
+                "token": " holder",
+                "probability": 0.015731599181890488
+              },
+              {
+                "token": " labelled",
+                "probability": 0.015731599181890488
+              },
+              {
+                "token": " colour",
+                "probability": 0.00698085455223918
+              }
+            ],
+            [
+              {
+                "token": " girl",
+                "probability": 0.013164890930056572
+              },
+              {
+                "token": "“",
+                "probability": 0.005487943068146706
+              },
+              {
+                "token": " discard",
+                "probability": 0.004843093454837799
+              },
+              {
+                "token": " “",
+                "probability": 0.004549664910882711
+              },
+              {
+                "token": " bamboo",
+                "probability": 0.0038915344048291445
+              }
+            ],
+            [
+              {
+                "token": "放在",
+                "probability": 0.022321395576000214
+              },
+              {
+                "token": " place",
+                "probability": 0.01633067987859249
+              },
+              {
+                "token": "搬",
+                "probability": 0.015341255813837051
+              },
+              {
+                "token": " ‘",
+                "probability": 0.008741183206439018
+              },
+              {
+                "token": " **“",
+                "probability": 0.007958939298987389
+              }
+            ],
+            [
+              {
+                "token": "桌",
+                "probability": 0.055307384580373764
+              },
+              {
+                "token": "room",
+                "probability": 0.038012173026800156
+              },
+              {
+                "token": "table",
+                "probability": 0.017955677583813667
+              },
+              {
+                "token": "side",
+                "probability": 0.01313665509223938
+              },
+              {
+                "token": "display",
+                "probability": 0.012340745888650417
+              }
+            ],
+            [
+              {
+                "token": " vis",
+                "probability": 0.0037163409870117903
+              },
+              {
+                "token": " res",
+                "probability": 0.0031787550542503595
+              },
+              {
+                "token": " **$",
+                "probability": 0.0028942893259227276
+              },
+              {
+                "token": " handle",
+                "probability": 0.002554201288148761
+              },
+              {
+                "token": " **",
+                "probability": 0.002325626788660884
+              }
+            ],
+            [
+              {
+                "token": "把",
+                "probability": 0.04150408133864403
+              },
+              {
+                "token": "，把",
+                "probability": 0.007677482906728983
+              },
+              {
+                "token": "拿",
+                "probability": 0.00597922969609499
+              },
+              {
+                "token": " put",
+                "probability": 0.0039830259047448635
+              },
+              {
+                "token": "握",
+                "probability": 0.003406862262636423
+              }
+            ],
+            [
+              {
+                "token": "’)",
+                "probability": 0.00727565074339509
+              },
+              {
+                "token": " labelled",
+                "probability": 0.006031726486980915
+              },
+              {
+                "token": " colours",
+                "probability": 0.005322979763150215
+              },
+              {
+                "token": " colour",
+                "probability": 0.003894375404343009
+              },
+              {
+                "token": " coloured",
+                "probability": 0.0022189479786902666
+              }
+            ],
+            [
+              {
+                "token": " colour",
+                "probability": 0.6786947846412659
+              },
+              {
+                "token": " colours",
+                "probability": 0.17160092294216156
+              },
+              {
+                "token": " coloured",
+                "probability": 0.02981976792216301
+              },
+              {
+                "token": "ised",
+                "probability": 0.008543507196009159
+              },
+              {
+                "token": " grey",
+                "probability": 0.002773670479655266
+              }
+            ],
+            [
+              {
+                "token": " color",
+                "probability": 0.018762841820716858
+              },
+              {
+                "token": " colour",
+                "probability": 0.011380238458514214
+              },
+              {
+                "token": " bin",
+                "probability": 0.007821515202522278
+              },
+              {
+                "token": " class",
+                "probability": 0.00690246419981122
+              },
+              {
+                "token": " blue",
+                "probability": 0.006091402377933264
+              }
+            ],
+            [
+              {
+                "token": "杯",
+                "probability": 0.07290462404489517
+              },
+              {
+                "token": " cup",
+                "probability": 0.039023034274578094
+              },
+              {
+                "token": " colour",
+                "probability": 0.017316367477178574
+              },
+              {
+                "token": "”\n",
+                "probability": 0.009563005529344082
+              },
+              {
+                "token": " holder",
+                "probability": 0.008707216009497643
+              }
+            ],
+            [
+              {
+                "token": "放在",
+                "probability": 0.03199286758899689
+              },
+              {
+                "token": " inside",
+                "probability": 0.009457073174417019
+              },
+              {
+                "token": " next",
+                "probability": 0.0073651764541864395
+              },
+              {
+                "token": " arranged",
+                "probability": 0.005222692154347897
+              },
+              {
+                "token": " placed",
+                "probability": 0.005062006879597902
+              }
+            ],
+            [
+              {
+                "token": " transfer",
+                "probability": 0.009763781912624836
+              },
+              {
+                "token": "copy",
+                "probability": 0.009172224439680576
+              },
+              {
+                "token": " place",
+                "probability": 0.008616507053375244
+              },
+              {
+                "token": "ed",
+                "probability": 0.0071433354169130325
+              },
+              {
+                "token": "置",
+                "probability": 0.005922033451497555
+              }
+            ],
+            [
+              {
+                "token": " ‘",
+                "probability": 0.19436880946159363
+              },
+              {
+                "token": " util",
+                "probability": 0.01167275384068489
+              },
+              {
+                "token": "ised",
+                "probability": 0.009090750478208065
+              },
+              {
+                "token": " labelled",
+                "probability": 0.00853997003287077
+              },
+              {
+                "token": "到了",
+                "probability": 0.008022558875381947
+              }
+            ],
+            [
+              {
+                "token": " centres",
+                "probability": 0.010602492839097977
+              },
+              {
+                "token": " fibres",
+                "probability": 0.010602492839097977
+              },
+              {
+                "token": " whilst",
+                "probability": 0.009960120543837547
+              },
+              {
+                "token": " coloured",
+                "probability": 0.007756948936730623
+              },
+              {
+                "token": " util",
+                "probability": 0.005008263047784567
+              }
+            ],
+            [
+              {
+                "token": " fibres",
+                "probability": 0.01619178242981434
+              },
+              {
+                "token": " coloured",
+                "probability": 0.01112843956798315
+              },
+              {
+                "token": " labelled",
+                "probability": 0.008666837587952614
+              },
+              {
+                "token": " emphas",
+                "probability": 0.008666837587952614
+              },
+              {
+                "token": " colours",
+                "probability": 0.007648457307368517
+              }
+            ],
+            [
+              {
+                "token": " cabinet",
+                "probability": 0.03174808621406555
+              },
+              {
+                "token": " shelves",
+                "probability": 0.028017587959766388
+              },
+              {
+                "token": " drawer",
+                "probability": 0.020498106256127357
+              },
+              {
+                "token": " shelf",
+                "probability": 0.01808951422572136
+              },
+              {
+                "token": " boxes",
+                "probability": 0.014088127762079239
+              }
+            ],
+            [
+              {
+                "token": " inside",
+                "probability": 0.013776100240647793
+              },
+              {
+                "token": "里",
+                "probability": 0.01335225347429514
+              },
+              {
+                "token": " empt",
+                "probability": 0.004334841854870319
+              },
+              {
+                "token": "里的",
+                "probability": 0.004201472736895084
+              },
+              {
+                "token": " empty",
+                "probability": 0.003946918994188309
+              }
+            ],
+            [
+              {
+                "token": "”.\n\n",
+                "probability": 0.007178684696555138
+              },
+              {
+                "token": ".”\n\n",
+                "probability": 0.005951338913291693
+              },
+              {
+                "token": " fibre",
+                "probability": 0.005951338913291693
+              },
+              {
+                "token": " util",
+                "probability": 0.00493383314460516
+              },
+              {
+                "token": "”\n\n",
+                "probability": 0.004782035481184721
+              }
+            ],
+            [
+              {
+                "token": "桌",
+                "probability": 0.17971190810203552
+              },
+              {
+                "token": "er",
+                "probability": 0.03122924268245697
+              },
+              {
+                "token": "room",
+                "probability": 0.018941493704915047
+              },
+              {
+                "token": " table",
+                "probability": 0.018941493704915047
+              },
+              {
+                "token": " organisation",
+                "probability": 0.01671580970287323
+              }
+            ],
+            [
+              {
+                "token": " neighbours",
+                "probability": 0.018190542235970497
+              },
+              {
+                "token": " colours",
+                "probability": 0.007123518269509077
+              },
+              {
+                "token": " labelled",
+                "probability": 0.005905603989958763
+              },
+              {
+                "token": " neighbouring",
+                "probability": 0.005905603989958763
+              },
+              {
+                "token": " picture",
+                "probability": 0.005905603989958763
+              }
+            ],
+            [
+              {
+                "token": " cup",
+                "probability": 0.16624432802200317
+              },
+              {
+                "token": "杯",
+                "probability": 0.04762979969382286
+              },
+              {
+                "token": " Cup",
+                "probability": 0.027138641104102135
+              },
+              {
+                "token": " labelled",
+                "probability": 0.023949768394231796
+              },
+              {
+                "token": "cup",
+                "probability": 0.0224987231194973
+              }
+            ],
+            [
+              {
+                "token": " arranged",
+                "probability": 0.02201896533370018
+              },
+              {
+                "token": " empty",
+                "probability": 0.02004849724471569
+              },
+              {
+                "token": " arrangement",
+                "probability": 0.016109418123960495
+              },
+              {
+                "token": " order",
+                "probability": 0.011071830987930298
+              },
+              {
+                "token": " inside",
+                "probability": 0.008896466344594955
+              }
+            ],
+            [
+              {
+                "token": " latter",
+                "probability": 0.0035857881885021925
+              },
+              {
+                "token": " labelled",
+                "probability": 0.0031644469127058983
+              },
+              {
+                "token": "DEN",
+                "probability": 0.002623418578878045
+              },
+              {
+                "token": " spor",
+                "probability": 0.002315158722922206
+              },
+              {
+                "token": "Phot",
+                "probability": 0.0021748903673142195
+              }
+            ],
+            [
+              {
+                "token": " colours",
+                "probability": 0.5994839072227478
+              },
+              {
+                "token": " colour",
+                "probability": 0.320880651473999
+              },
+              {
+                "token": " coloured",
+                "probability": 0.012441891245543957
+              },
+              {
+                "token": " labelled",
+                "probability": 0.0037945625372231007
+              },
+              {
+                "token": " emphas",
+                "probability": 0.0035646616015583277
+              }
+            ],
+            [
+              {
+                "token": " different",
+                "probability": 0.155430868268013
+              },
+              {
+                "token": " color",
+                "probability": 0.13716726005077362
+              },
+              {
+                "token": " colour",
+                "probability": 0.05046101287007332
+              },
+              {
+                "token": "颜色",
+                "probability": 0.0445316880941391
+              },
+              {
+                "token": " colors",
+                "probability": 0.015389739535748959
+              }
+            ],
+            [
+              {
+                "token": " colour",
+                "probability": 0.02266811765730381
+              },
+              {
+                "token": " “",
+                "probability": 0.01879253052175045
+              },
+              {
+                "token": " colours",
+                "probability": 0.009749436751008034
+              },
+              {
+                "token": " inside",
+                "probability": 0.009749436751008034
+              },
+              {
+                "token": " ‘",
+                "probability": 0.00833913590759039
+              }
+            ]
+          ]
+        },
+        {
+          "layer": 26,
+          "kind": "conv",
+          "cells": [
+            [
+              {
+                "token": "小",
+                "probability": 0.046339001506567
+              },
+              {
+                "token": "路",
+                "probability": 0.040894024074077606
+              },
+              {
+                "token": "山",
+                "probability": 0.022583825513720512
+              },
+              {
+                "token": " kid",
+                "probability": 0.021215541288256645
+              },
+              {
+                "token": " kids",
+                "probability": 0.020562807098031044
+              }
+            ],
+            [
+              {
+                "token": " small",
+                "probability": 0.13426566123962402
+              },
+              {
+                "token": "小",
+                "probability": 0.08668842911720276
+              },
+              {
+                "token": "林",
+                "probability": 0.05597025528550148
+              },
+              {
+                "token": "的小",
+                "probability": 0.04094871133565903
+              },
+              {
+                "token": " mini",
+                "probability": 0.02995872125029564
+              }
+            ],
+            [
+              {
+                "token": "小",
+                "probability": 0.09598410129547119
+              },
+              {
+                "token": "自己",
+                "probability": 0.08470567315816879
+              },
+              {
+                "token": " himself",
+                "probability": 0.07475249469280243
+              },
+              {
+                "token": " small",
+                "probability": 0.0453396812081337
+              },
+              {
+                "token": "木",
+                "probability": 0.025833770632743835
+              }
+            ],
+            [
+              {
+                "token": " Red",
+                "probability": 0.6982772350311279
+              },
+              {
+                "token": " red",
+                "probability": 0.12134237587451935
+              },
+              {
+                "token": "红",
+                "probability": 0.06913881003856659
+              },
+              {
+                "token": "Red",
+                "probability": 0.04751836135983467
+              },
+              {
+                "token": "-red",
+                "probability": 0.011286599561572075
+              }
+            ],
+            [
+              {
+                "token": " colour",
+                "probability": 0.6851410865783691
+              },
+              {
+                "token": "色",
+                "probability": 0.06372804939746857
+              },
+              {
+                "token": "染",
+                "probability": 0.038653019815683365
+              },
+              {
+                "token": " paint",
+                "probability": 0.038653019815683365
+              },
+              {
+                "token": " dye",
+                "probability": 0.03631114959716797
+              }
+            ],
+            [
+              {
+                "token": "子的",
+                "probability": 0.19874635338783264
+              },
+              {
+                "token": "子",
+                "probability": 0.07311470061540604
+              },
+              {
+                "token": " cup",
+                "probability": 0.0606142096221447
+              },
+              {
+                "token": "瓶",
+                "probability": 0.05349185690283775
+              },
+              {
+                "token": "杯",
+                "probability": 0.02863212861120701
+              }
+            ],
+            [
+              {
+                "token": "放在",
+                "probability": 0.49274981021881104
+              },
+              {
+                "token": "放",
+                "probability": 0.1929635852575302
+              },
+              {
+                "token": " placed",
+                "probability": 0.13262180984020233
+              },
+              {
+                "token": " placing",
+                "probability": 0.02779904194176197
+              },
+              {
+                "token": "置",
+                "probability": 0.026114782318472862
+              }
+            ],
+            [
+              {
+                "token": " floor",
+                "probability": 0.21427206695079803
+              },
+              {
+                "token": "桌",
+                "probability": 0.12208852916955948
+              },
+              {
+                "token": "屋",
+                "probability": 0.04491386190056801
+              },
+              {
+                "token": " table",
+                "probability": 0.04491386190056801
+              },
+              {
+                "token": " wooden",
+                "probability": 0.037234898656606674
+              }
+            ],
+            [
+              {
+                "token": "上",
+                "probability": 0.5998353958129883
+              },
+              {
+                "token": " top",
+                "probability": 0.1338413655757904
+              },
+              {
+                "token": "top",
+                "probability": 0.10423575341701508
+              },
+              {
+                "token": "上的",
+                "probability": 0.06729966402053833
+              },
+              {
+                "token": "上面",
+                "probability": 0.038346193730831146
+              }
+            ],
+            [
+              {
+                "token": "，",
+                "probability": 0.26268208026885986
+              },
+              {
+                "token": "。",
+                "probability": 0.14967171847820282
+              },
+              {
+                "token": ".",
+                "probability": 0.13208484649658203
+              },
+              {
+                "token": ",",
+                "probability": 0.09663534164428711
+              },
+              {
+                "token": " centre",
+                "probability": 0.08528038114309311
+              }
+            ],
+            [
+              {
+                "token": " red",
+                "probability": 0.29215678572654724
+              },
+              {
+                "token": "紅",
+                "probability": 0.21374647319316864
+              },
+              {
+                "token": " glass",
+                "probability": 0.10747849196195602
+              },
+              {
+                "token": "红",
+                "probability": 0.06939332187175751
+              },
+              {
+                "token": " Red",
+                "probability": 0.022528713569045067
+              }
+            ],
+            [
+              {
+                "token": " blue",
+                "probability": 0.2047291100025177
+              },
+              {
+                "token": " blu",
+                "probability": 0.04291355237364769
+              },
+              {
+                "token": " red",
+                "probability": 0.03139622509479523
+              },
+              {
+                "token": " colour",
+                "probability": 0.021578287705779076
+              },
+              {
+                "token": " purple",
+                "probability": 0.020270926877856255
+              }
+            ],
+            [
+              {
+                "token": "色",
+                "probability": 0.7203530073165894
+              },
+              {
+                "token": " colour",
+                "probability": 0.1418459117412567
+              },
+              {
+                "token": " color",
+                "probability": 0.07592464238405228
+              },
+              {
+                "token": "色的",
+                "probability": 0.03586426377296448
+              },
+              {
+                "token": "色の",
+                "probability": 0.009067906066775322
+              }
+            ],
+            [
+              {
+                "token": "杯",
+                "probability": 0.2552433907985687
+              },
+              {
+                "token": " glass",
+                "probability": 0.16479752957820892
+              },
+              {
+                "token": " cup",
+                "probability": 0.1132635697722435
+              },
+              {
+                "token": " container",
+                "probability": 0.07784483581781387
+              },
+              {
+                "token": "容器",
+                "probability": 0.06869783252477646
+              }
+            ],
+            [
+              {
+                "token": "子的",
+                "probability": 0.5528420805931091
+              },
+              {
+                "token": "子",
+                "probability": 0.20337925851345062
+              },
+              {
+                "token": "放在",
+                "probability": 0.07481903582811356
+              },
+              {
+                "token": " placed",
+                "probability": 0.0353420116007328
+              },
+              {
+                "token": "子の",
+                "probability": 0.01384013146162033
+              }
+            ],
+            [
+              {
+                "token": "放在",
+                "probability": 0.7818285822868347
+              },
+              {
+                "token": "放",
+                "probability": 0.08771873265504837
+              },
+              {
+                "token": " placed",
+                "probability": 0.06417639553546906
+              },
+              {
+                "token": "置",
+                "probability": 0.014319690875709057
+              },
+              {
+                "token": " put",
+                "probability": 0.014319690875709057
+              }
+            ],
+            [
+              {
+                "token": "置",
+                "probability": 0.5421025156974792
+              },
+              {
+                "token": " into",
+                "probability": 0.14590492844581604
+              },
+              {
+                "token": " onto",
+                "probability": 0.10674631595611572
+              },
+              {
+                "token": " aside",
+                "probability": 0.023818323388695717
+              },
+              {
+                "token": "到",
+                "probability": 0.017425857484340668
+              }
+            ],
+            [
+              {
+                "token": "去",
+                "probability": 0.17179831862449646
+              },
+              {
+                "token": " goes",
+                "probability": 0.03601088374853134
+              },
+              {
+                "token": " going",
+                "probability": 0.031779494136571884
+              },
+              {
+                "token": "水",
+                "probability": 0.024749895557761192
+              },
+              {
+                "token": "去了",
+                "probability": 0.021841702982783318
+              }
+            ],
+            [
+              {
+                "token": " cl",
+                "probability": 0.02541535720229149
+              },
+              {
+                "token": "759",
+                "probability": 0.013603860512375832
+              },
+              {
+                "token": "�",
+                "probability": 0.007751245517283678
+              },
+              {
+                "token": "�",
+                "probability": 0.0033337692730128765
+              },
+              {
+                "token": "-Cl",
+                "probability": 0.0032311996910721064
+              }
+            ],
+            [
+              {
+                "token": "pers",
+                "probability": 0.006017202045768499
+              },
+              {
+                "token": "�",
+                "probability": 0.0048349578864872456
+              },
+              {
+                "token": " holders",
+                "probability": 0.004542022477835417
+              },
+              {
+                "token": "�",
+                "probability": 0.004266834817826748
+              },
+              {
+                "token": " hollow",
+                "probability": 0.003884997684508562
+              }
+            ],
+            [
+              {
+                "token": "裡",
+                "probability": 0.6241323351860046
+              },
+              {
+                "token": " middle",
+                "probability": 0.0481279157102108
+              },
+              {
+                "token": " inside",
+                "probability": 0.0227340180426836
+              },
+              {
+                "token": "里",
+                "probability": 0.018847163766622543
+              },
+              {
+                "token": "中",
+                "probability": 0.0121686439961195
+              }
+            ],
+            [
+              {
+                "token": "裡",
+                "probability": 0.8737955689430237
+              },
+              {
+                "token": "里",
+                "probability": 0.06329753994941711
+              },
+              {
+                "token": "中",
+                "probability": 0.020549703389406204
+              },
+              {
+                "token": " middle",
+                "probability": 0.010999463498592377
+              },
+              {
+                "token": " inside",
+                "probability": 0.009706992655992508
+              }
+            ],
+            [
+              {
+                "token": "小",
+                "probability": 0.012857137247920036
+              },
+              {
+                "token": "\n\n",
+                "probability": 0.012461564503610134
+              },
+              {
+                "token": "\n",
+                "probability": 0.008045791648328304
+              },
+              {
+                "token": " small",
+                "probability": 0.0058864266611635685
+              },
+              {
+                "token": " ",
+                "probability": 0.005359652452170849
+              }
+            ],
+            [
+              {
+                "token": "上",
+                "probability": 0.6633116602897644
+              },
+              {
+                "token": "上的",
+                "probability": 0.27650943398475647
+              },
+              {
+                "token": " above",
+                "probability": 0.031023500487208366
+              },
+              {
+                "token": "上の",
+                "probability": 0.010071855038404465
+              },
+              {
+                "token": " 上",
+                "probability": 0.003480740124359727
+              }
+            ],
+            [
+              {
+                "token": " objects",
+                "probability": 0.22429613769054413
+              },
+              {
+                "token": "物",
+                "probability": 0.17468200623989105
+              },
+              {
+                "token": "紅",
+                "probability": 0.1059499979019165
+              },
+              {
+                "token": " glass",
+                "probability": 0.05327500402927399
+              },
+              {
+                "token": " object",
+                "probability": 0.04149061441421509
+              }
+            ],
+            [
+              {
+                "token": " cup",
+                "probability": 0.21678705513477325
+              },
+              {
+                "token": "杯",
+                "probability": 0.19131390750408173
+              },
+              {
+                "token": "子",
+                "probability": 0.14899542927742004
+              },
+              {
+                "token": "瓶",
+                "probability": 0.096198670566082
+              },
+              {
+                "token": " glass",
+                "probability": 0.05149143934249878
+              }
+            ],
+            [
+              {
+                "token": " arrangement",
+                "probability": 0.5043832063674927
+              },
+              {
+                "token": " arranged",
+                "probability": 0.2873888611793518
+              },
+              {
+                "token": "排",
+                "probability": 0.020818380638957024
+              },
+              {
+                "token": " still",
+                "probability": 0.018372155725955963
+              },
+              {
+                "token": " arrangements",
+                "probability": 0.016213372349739075
+              }
+            ],
+            [
+              {
+                "token": " guard",
+                "probability": 0.005486040376126766
+              },
+              {
+                "token": " hide",
+                "probability": 0.0037704966962337494
+              },
+              {
+                "token": "露",
+                "probability": 0.0033274516463279724
+              },
+              {
+                "token": " shadow",
+                "probability": 0.0026736825238913298
+              },
+              {
+                "token": "亮",
+                "probability": 0.0025914220605045557
+              }
+            ],
+            [
+              {
+                "token": "色",
+                "probability": 0.8698551058769226
+              },
+              {
+                "token": " color",
+                "probability": 0.05560797452926636
+              },
+              {
+                "token": " colour",
+                "probability": 0.02626734972000122
+              },
+              {
+                "token": " colors",
+                "probability": 0.023180853575468063
+              },
+              {
+                "token": " colours",
+                "probability": 0.004564580973237753
+              }
+            ],
+            [
+              {
+                "token": "分别",
+                "probability": 0.18925178050994873
+              },
+              {
+                "token": " respectively",
+                "probability": 0.09516177326440811
+              },
+              {
+                "token": "各",
+                "probability": 0.06962184607982635
+              },
+              {
+                "token": " colour",
+                "probability": 0.0478503443300724
+              },
+              {
+                "token": " respective",
+                "probability": 0.044951241463422775
+              }
+            ],
+            [
+              {
+                "token": " red",
+                "probability": 0.9330394864082336
+              },
+              {
+                "token": "红",
+                "probability": 0.03192685544490814
+              },
+              {
+                "token": " Red",
+                "probability": 0.015081178396940231
+              },
+              {
+                "token": "紅",
+                "probability": 0.01174523402005434
+              },
+              {
+                "token": "赤",
+                "probability": 0.003813119139522314
+              }
+            ]
+          ]
+        }
+      ],
+      "metrics": [
+        {
+          "layer": 4,
+          "jacobian_next_token_nll": 11.504982948303223,
+          "identity_lens_next_token_nll": 16.483800888061523,
+          "native_next_token_nll": 3.48032546043396,
+          "top1_agreement": 0.0
+        },
+        {
+          "layer": 14,
+          "jacobian_next_token_nll": 10.157268524169922,
+          "identity_lens_next_token_nll": 11.232641220092773,
+          "native_next_token_nll": 3.48032546043396,
+          "top1_agreement": 0.032258063554763794
+        },
+        {
+          "layer": 26,
+          "jacobian_next_token_nll": 6.596719264984131,
+          "identity_lens_next_token_nll": 7.113026142120361,
+          "native_next_token_nll": 3.48032546043396,
+          "top1_agreement": 0.29032257199287415
+        }
+      ],
+      "native": [
+        [
+          {
+            "token": "路",
+            "probability": 0.17935796082019806
+          },
+          {
+            "token": "山",
+            "probability": 0.0795896127820015
+          },
+          {
+            "token": "小",
+            "probability": 0.061984457075595856
+          },
+          {
+            "token": "屋",
+            "probability": 0.0189041905105114
+          },
+          {
+            "token": "熊",
+            "probability": 0.015672124922275543
+          }
+        ],
+        [
+          {
+            "token": "小",
+            "probability": 0.20017164945602417
+          },
+          {
+            "token": " ",
+            "probability": 0.06704910844564438
+          },
+          {
+            "token": "村",
+            "probability": 0.05735014006495476
+          },
+          {
+            "token": "。",
+            "probability": 0.02505442313849926
+          },
+          {
+            "token": "，",
+            "probability": 0.02077084593474865
+          }
+        ],
+        [
+          {
+            "token": "小",
+            "probability": 0.12259837985038757
+          },
+          {
+            "token": "他",
+            "probability": 0.06164633855223656
+          },
+          {
+            "token": "這",
+            "probability": 0.052728909999132156
+          },
+          {
+            "token": "大",
+            "probability": 0.046533096581697464
+          },
+          {
+            "token": "木",
+            "probability": 0.026513760909438133
+          }
+        ],
+        [
+          {
+            "token": "�",
+            "probability": 0.06059432029724121
+          },
+          {
+            "token": "毛",
+            "probability": 0.05182907357811928
+          },
+          {
+            "token": "色",
+            "probability": 0.04573899134993553
+          },
+          {
+            "token": "頭",
+            "probability": 0.04433175176382065
+          },
+          {
+            "token": "木",
+            "probability": 0.032433804124593735
+          }
+        ],
+        [
+          {
+            "token": "�",
+            "probability": 0.027796493843197823
+          },
+          {
+            "token": "染",
+            "probability": 0.0261123888194561
+          },
+          {
+            "token": "塗",
+            "probability": 0.02453031949698925
+          },
+          {
+            "token": "放",
+            "probability": 0.02453031949698925
+          },
+          {
+            "token": "色",
+            "probability": 0.0163407139480114
+          }
+        ],
+        [
+          {
+            "token": "子",
+            "probability": 0.9330660104751587
+          },
+          {
+            "token": "子的",
+            "probability": 0.03192776441574097
+          },
+          {
+            "token": "放",
+            "probability": 0.002620790619403124
+          },
+          {
+            "token": "放在",
+            "probability": 0.0020410737488418818
+          },
+          {
+            "token": "的",
+            "probability": 0.0018012411892414093
+          }
+        ],
+        [
+          {
+            "token": "放在",
+            "probability": 0.22398953139781952
+          },
+          {
+            "token": "放",
+            "probability": 0.17444323003292084
+          },
+          {
+            "token": "倒",
+            "probability": 0.03434991091489792
+          },
+          {
+            "token": "貼",
+            "probability": 0.028477072715759277
+          },
+          {
+            "token": "拿",
+            "probability": 0.025130927562713623
+          }
+        ],
+        [
+          {
+            "token": "台",
+            "probability": 0.058416783809661865
+          },
+          {
+            "token": "屋",
+            "probability": 0.02847006544470787
+          },
+          {
+            "token": "木",
+            "probability": 0.026745153591036797
+          },
+          {
+            "token": "平",
+            "probability": 0.025922290980815887
+          },
+          {
+            "token": "小",
+            "probability": 0.025124747306108475
+          }
+        ],
+        [
+          {
+            "token": "子",
+            "probability": 0.7758077383041382
+          },
+          {
+            "token": "子的",
+            "probability": 0.09265702217817307
+          },
+          {
+            "token": "上",
+            "probability": 0.06778932362794876
+          },
+          {
+            "token": "上的",
+            "probability": 0.01942196674644947
+          },
+          {
+            "token": "面",
+            "probability": 0.01942196674644947
+          }
+        ],
+        [
+          {
+            "token": "。",
+            "probability": 0.3131224513053894
+          },
+          {
+            "token": "，",
+            "probability": 0.21520571410655975
+          },
+          {
+            "token": "。\n\n",
+            "probability": 0.03980904817581177
+          },
+          {
+            "token": "。\n",
+            "probability": 0.020017247647047043
+          },
+          {
+            "token": "，但",
+            "probability": 0.018804464489221573
+          }
+        ],
+        [
+          {
+            "token": "杯",
+            "probability": 0.07603604346513748
+          },
+          {
+            "token": "紅",
+            "probability": 0.05562915280461311
+          },
+          {
+            "token": "它",
+            "probability": 0.04909255728125572
+          },
+          {
+            "token": "白",
+            "probability": 0.04909255728125572
+          },
+          {
+            "token": "其他",
+            "probability": 0.0348118357360363
+          }
+        ],
+        [
+          {
+            "token": "�",
+            "probability": 0.39750561118125916
+          },
+          {
+            "token": "�",
+            "probability": 0.17639204859733582
+          },
+          {
+            "token": "�",
+            "probability": 0.12123236060142517
+          },
+          {
+            "token": "�",
+            "probability": 0.04747527837753296
+          },
+          {
+            "token": "�",
+            "probability": 0.04747527837753296
+          }
+        ],
+        [
+          {
+            "token": "色",
+            "probability": 0.6983070373535156
+          },
+          {
+            "token": "色的",
+            "probability": 0.2568928301334381
+          },
+          {
+            "token": "白",
+            "probability": 0.005167602561414242
+          },
+          {
+            "token": "紫",
+            "probability": 0.001677675056271255
+          },
+          {
+            "token": "�",
+            "probability": 0.0015760298119857907
+          }
+        ],
+        [
+          {
+            "token": "杯",
+            "probability": 0.37664344906806946
+          },
+          {
+            "token": "和",
+            "probability": 0.11851610988378525
+          },
+          {
+            "token": "的",
+            "probability": 0.07894875109195709
+          },
+          {
+            "token": "玻璃",
+            "probability": 0.0240780096501112
+          },
+          {
+            "token": "、",
+            "probability": 0.02333720587193966
+          }
+        ],
+        [
+          {
+            "token": "子",
+            "probability": 0.9579635262489319
+          },
+          {
+            "token": "子的",
+            "probability": 0.03714427724480629
+          },
+          {
+            "token": "放在",
+            "probability": 0.0011216599959880114
+          },
+          {
+            "token": "子の",
+            "probability": 0.0006803211872465909
+          },
+          {
+            "token": "放",
+            "probability": 0.0005298346513882279
+          }
+        ],
+        [
+          {
+            "token": "放在",
+            "probability": 0.5258826613426208
+          },
+          {
+            "token": "倒",
+            "probability": 0.1035524234175682
+          },
+          {
+            "token": "放",
+            "probability": 0.08584798127412796
+          },
+          {
+            "token": "和",
+            "probability": 0.03361855074763298
+          },
+          {
+            "token": "往",
+            "probability": 0.02170576900243759
+          }
+        ],
+        [
+          {
+            "token": "到",
+            "probability": 0.38015520572662354
+          },
+          {
+            "token": "在",
+            "probability": 0.3571227490901947
+          },
+          {
+            "token": "置",
+            "probability": 0.04006806015968323
+          },
+          {
+            "token": "下",
+            "probability": 0.037640463560819626
+          },
+          {
+            "token": "進",
+            "probability": 0.0353599414229393
+          }
+        ],
+        [
+          {
+            "token": "�",
+            "probability": 0.19098705053329468
+          },
+          {
+            "token": "去",
+            "probability": 0.1794157326221466
+          },
+          {
+            "token": "來",
+            "probability": 0.12331050634384155
+          },
+          {
+            "token": "紅",
+            "probability": 0.05824775621294975
+          },
+          {
+            "token": "小",
+            "probability": 0.034242093563079834
+          }
+        ],
+        [
+          {
+            "token": "�",
+            "probability": 0.8744780421257019
+          },
+          {
+            "token": "��",
+            "probability": 0.059508975595235825
+          },
+          {
+            "token": "�",
+            "probability": 0.005892186425626278
+          },
+          {
+            "token": "�",
+            "probability": 0.0031538603361696005
+          },
+          {
+            "token": "�",
+            "probability": 0.0031538603361696005
+          }
+        ],
+        [
+          {
+            "token": "�",
+            "probability": 0.278960257768631
+          },
+          {
+            "token": "�",
+            "probability": 0.21725445985794067
+          },
+          {
+            "token": "�",
+            "probability": 0.14027002453804016
+          },
+          {
+            "token": "�",
+            "probability": 0.07508113235235214
+          },
+          {
+            "token": "�",
+            "probability": 0.05493052676320076
+          }
+        ],
+        [
+          {
+            "token": "子",
+            "probability": 0.44487494230270386
+          },
+          {
+            "token": "裡",
+            "probability": 0.22369717061519623
+          },
+          {
+            "token": "中",
+            "probability": 0.06822378188371658
+          },
+          {
+            "token": "後",
+            "probability": 0.022149018943309784
+          },
+          {
+            "token": "。",
+            "probability": 0.02080707810819149
+          }
+        ],
+        [
+          {
+            "token": "裡",
+            "probability": 0.6550590395927429
+          },
+          {
+            "token": "里",
+            "probability": 0.0886525958776474
+          },
+          {
+            "token": "中",
+            "probability": 0.07349558174610138
+          },
+          {
+            "token": "。",
+            "probability": 0.060929980129003525
+          },
+          {
+            "token": "裏",
+            "probability": 0.022414887323975563
+          }
+        ],
+        [
+          {
+            "token": "小",
+            "probability": 0.09588244557380676
+          },
+          {
+            "token": "這",
+            "probability": 0.03527318313717842
+          },
+          {
+            "token": "當",
+            "probability": 0.015652379021048546
+          },
+          {
+            "token": "2",
+            "probability": 0.015652379021048546
+          },
+          {
+            "token": "在",
+            "probability": 0.012976277619600296
+          }
+        ],
+        [
+          {
+            "token": "上",
+            "probability": 0.4636325240135193
+          },
+          {
+            "token": "子",
+            "probability": 0.24816462397575378
+          },
+          {
+            "token": "上的",
+            "probability": 0.18156109750270844
+          },
+          {
+            "token": "子的",
+            "probability": 0.033585429191589355
+          },
+          {
+            "token": "面",
+            "probability": 0.010903592221438885
+          }
+        ],
+        [
+          {
+            "token": "紅",
+            "probability": 0.22318394482135773
+          },
+          {
+            "token": "其他",
+            "probability": 0.15339194238185883
+          },
+          {
+            "token": "物",
+            "probability": 0.08740008622407913
+          },
+          {
+            "token": "�",
+            "probability": 0.08210479468107224
+          },
+          {
+            "token": "兩",
+            "probability": 0.034226369112730026
+          }
+        ],
+        [
+          {
+            "token": "子",
+            "probability": 0.9937719702720642
+          },
+          {
+            "token": "子的",
+            "probability": 0.0021738673094660044
+          },
+          {
+            "token": "是",
+            "probability": 0.00020861972006969154
+          },
+          {
+            "token": "瓶",
+            "probability": 0.000152629436342977
+          },
+          {
+            "token": "�",
+            "probability": 0.000152629436342977
+          }
+        ],
+        [
+          {
+            "token": "是",
+            "probability": 0.15116572380065918
+          },
+          {
+            "token": "排",
+            "probability": 0.055610768496990204
+          },
+          {
+            "token": "和",
+            "probability": 0.04330970719456673
+          },
+          {
+            "token": "有",
+            "probability": 0.04330970719456673
+          },
+          {
+            "token": "都是",
+            "probability": 0.027102522552013397
+          }
+        ],
+        [
+          {
+            "token": "�",
+            "probability": 0.6620888710021973
+          },
+          {
+            "token": "�",
+            "probability": 0.21494878828525543
+          },
+          {
+            "token": "�",
+            "probability": 0.01999335177242756
+          },
+          {
+            "token": "�",
+            "probability": 0.01878201588988304
+          },
+          {
+            "token": "�",
+            "probability": 0.017644071951508522
+          }
+        ],
+        [
+          {
+            "token": "色",
+            "probability": 0.9558637738227844
+          },
+          {
+            "token": "色的",
+            "probability": 0.0082698417827487
+          },
+          {
+            "token": "料",
+            "probability": 0.0018452511867508292
+          },
+          {
+            "token": "號",
+            "probability": 0.0014370830031111836
+          },
+          {
+            "token": "彩",
+            "probability": 0.0012682212982326746
+          }
+        ],
+        [
+          {
+            "token": "是",
+            "probability": 0.15984153747558594
+          },
+          {
+            "token": "有",
+            "probability": 0.0855570137500763
+          },
+          {
+            "token": "分",
+            "probability": 0.0803733766078949
+          },
+          {
+            "token": "為",
+            "probability": 0.058802422136068344
+          },
+          {
+            "token": "各",
+            "probability": 0.048748914152383804
+          }
+        ],
+        [
+          {
+            "token": "紅",
+            "probability": 0.5564946532249451
+          },
+          {
+            "token": "：",
+            "probability": 0.051762063056230545
+          },
+          {
+            "token": "�",
+            "probability": 0.04031233862042427
+          },
+          {
+            "token": "白",
+            "probability": 0.04031233862042427
+          },
+          {
+            "token": "粉",
+            "probability": 0.026853805407881737
+          }
+        ]
+      ]
+    }
+  ],
+  "body_fixed": true,
+  "native_outputs_identical": true,
+  "J_space_established": false,
+  "peak_vram_gib": 7.7547607421875
+}
