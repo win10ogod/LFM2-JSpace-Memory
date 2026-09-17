@@ -475,25 +475,6 @@ class MemoryBlock:
             raise ValueError("observation has no valid features")
         self._observations[event_id] = (name, features, prepared_target)
 
-    def independent_write(self):
-        """One-step writer graph for explicit truncated-BPTT training.
-
-        All observed values and the physical snapshot are unchanged. Native
-        history/feature gradients stop here; the next read still differentiates
-        through this commit's writer parameters, including its inner gradient.
-        The inference/default full outer-gradient path never calls this method.
-        """
-        if self._committed: raise RuntimeError('block already committed')
-        if isinstance(self.snapshot,MountedState): raise ValueError('local writer training requires an independent state')
-        with torch.enable_grad():
-            slow=self.memory.slow_weights
-            fast=(slow-slow.detach())+self.snapshot.fast.detach()
-        state=ConnectomeState(fast,self.snapshot.momentum.detach(),self.snapshot.commits)
-        block=MemoryBlock(self.memory,state)
-        block._observations={key:(name,value.detach(),None if target is None else target.detach())
-            for key,(name,value,target) in self._observations.items()}
-        self._observations.clear();self._committed=True
-        return block
 
     def commit(self, *, create_graph: bool):
         if self._committed:

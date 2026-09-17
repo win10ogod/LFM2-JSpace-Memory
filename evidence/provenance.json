@@ -2,8 +2,8 @@
   "records": [
     {
       "path": "experiments/jacobian_diagnostic.py",
-      "original_sha256": "1be399bbe8899e850f5401f60aca13bb2c2490b630376c5ac965e244687c95b0",
-      "published_sha256": "3c5f516c532db3677fb11f40d2e2e41d8e21756716bf94d6bb81f3bb72fd818c",
+      "original_sha256": "133e0e6f7b0c04cb3d46be25c5babacb2d48be535910df85a1c627120c7f2fcc",
+      "published_sha256": "1bdf0b88966237cdaab873c780b6bae5c672df2a1cb394f5db1b706f87d6bde2",
       "transformation": "import of identical shared runtime helpers, if present"
     },
     {
@@ -38,8 +38,8 @@
     },
     {
       "path": "experiments/verify_unified_memory.py",
-      "original_sha256": "79218dea28ffffd33fec58e28343d822f5a38440446faffe78613dd2990f175c",
-      "published_sha256": "79218dea28ffffd33fec58e28343d822f5a38440446faffe78613dd2990f175c",
+      "original_sha256": "40772f309ead27d28b304465b5342d6ae63fffbc11d0bbc22df38bab215c35b9",
+      "published_sha256": "40772f309ead27d28b304465b5342d6ae63fffbc11d0bbc22df38bab215c35b9",
       "transformation": "import of identical shared runtime helpers, if present"
     },
     {

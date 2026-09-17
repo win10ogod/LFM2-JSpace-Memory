@@ -282,9 +282,10 @@ class Lfm2TitansForConditionalGeneration(Lfm2VlForConditionalGeneration):
                 past_key_values=None, inputs_embeds=None, labels=None, use_cache=None,
                 logits_to_keep=0, memory_state=None, memory_write=False,
                 memory_create_graph=False, use_memory=True, memory_capture_keys=False,
-                memory_write_gradient_scope='full', physical_memory_state=None, dream_capture=False,
+                physical_memory_state=None, dream_capture=False,
                 latent_memory_state=None,**kwargs):
         if 'memory_read_mode' in kwargs:raise ValueError('only the unified dual-memory reader is available')
+        if 'memory_write_gradient_scope' in kwargs:raise ValueError('the old local-gradient writer branch was removed')
         if any(k in kwargs for k in ('memory_record','memory_start','memory_end','memory_total','memory_overlap')):
             raise ValueError('SFT windows were removed; pass ordinary native training examples')
         if self.training and labels is not None and getattr(self.config,'native_joint_sft',False):
@@ -313,8 +314,7 @@ class Lfm2TitansForConditionalGeneration(Lfm2VlForConditionalGeneration):
                     logits_to_keep=logits_to_keep,memory_state=physical_memory_state.graph,memory_write=memory_write,
                     memory_create_graph=memory_create_graph,use_memory=True,memory_capture_keys=memory_capture_keys,
                     dream_capture=dream_capture,
-                    latent_memory_state=physical_memory_state.latents,
-                    memory_write_gradient_scope=memory_write_gradient_scope,return_dict=True,**kwargs)
+                    latent_memory_state=physical_memory_state.latents,return_dict=True,**kwargs)
             output.physical_memory_state=PhysicalMemoryUnit(physical_memory_state.adapters,output.memory_state,
                 physical_memory_state.neural_keys,output.latent_memory_state,
                 getattr(physical_memory_state,'sequences',()),
@@ -324,10 +324,6 @@ class Lfm2TitansForConditionalGeneration(Lfm2VlForConditionalGeneration):
             self._check_training_attention()
         if self._memory_context.get() is not None:
             raise RuntimeError("nested memory forward is not allowed")
-        if memory_write_gradient_scope not in ('full','local'):
-            raise ValueError('invalid memory write gradient scope')
-        if memory_write_gradient_scope=='local' and not (memory_write and memory_create_graph):
-            raise ValueError('local writer gradient scope requires a differentiable write')
         return_dict = kwargs.pop("return_dict", None)
         if return_dict is None:
             return_dict = getattr(self.config, "return_dict", True)
@@ -365,7 +361,6 @@ class Lfm2TitansForConditionalGeneration(Lfm2VlForConditionalGeneration):
         native_observations=block.native_observations
         features={name:value.detach() for name,value in native_observations.items()} if dream_capture else None
         if memory_write:
-            if memory_write_gradient_scope=='local':block=block.independent_write()
             state, receipt = block.commit(create_graph=memory_create_graph)
         else:
             receipt = {"observations": 0, "commits": state.commits}

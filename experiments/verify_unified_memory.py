@@ -49,7 +49,8 @@ def prepare(work):
         source_visible_control='only after every memory-only response',output_tokens=64,rest_ratio=1.,
         gates=['all saved units v6','zero text generation while addressing','CPU/GPU same routing',
             'hot/cold oracle identical',
-            'no lost answers that correct-unit oracle can recall','frozen body unchanged'],
+            'no lost answers that correct-unit oracle can recall','frozen body unchanged',
+            'recall exceeds wrong-unit and empty-memory controls','text, random strings, and vision each have successful recall'],
         no_tuning_after_answers=True,no_long_context_claim=True,
         sources_sha256=hashlib.sha256((work/'sources.json').read_bytes()).hexdigest(),
         questions_sha256=hashlib.sha256((work/'questions.json').read_bytes()).hexdigest()))
@@ -144,7 +145,11 @@ def read(args):
     fixed=all(p._version==versions[n] for n,p in model.named_parameters())
     gates=dict(all_v6=all(p['format']==6 for p in pages),body_fixed=fixed,
         cpu_gpu_same=all(r['cpu_gpu_same'] for r in routes),hot_cold_same=same==len(questions),
-        no_oracle_recall_lost=not lost)
+        no_oracle_recall_lost=not lost,
+        recall_exceeds_negative_controls=scores['native-default']['content']>
+            max(scores['wrong-memory']['content'],scores['empty']['content']),
+        text_hash_and_visual_recalled=all(any(r['content_correct'] and r['kind']==kind
+            for r in native.values()) for kind in ('text','hash','visual')))
     result=dict(scores=scores,gates=gates,passed=all(gates.values()),lost_oracle_answers=lost,
         top1_native=sum(r['native'][0]['unit_id']==r['expected'] for r in routes),
         questions=len(questions),

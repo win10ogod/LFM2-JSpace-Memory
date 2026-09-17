@@ -1,10 +1,21 @@
 from copy import deepcopy
 from types import SimpleNamespace
+import pytest
 import torch
 from torch import nn
 from current_memory_fixture import dream_model
 from lfm2_titans.native_sft_memory import capture_supervised_gradients
 from lfm2_titans.sft_lora import WeightLoRALinear,shared_effective_weights
+
+
+def test_removed_writer_and_reader_branches_cannot_be_selected():
+    model=dream_model().eval().requires_grad_(False)
+    ids=torch.tensor([[1,3,5]])
+    for options in ({'memory_write_gradient_scope':'local'}, {'memory_read_mode':'latent'},
+                    {'memory_record':0,'memory_start':0}):
+        with pytest.raises(ValueError):model(input_ids=ids,**options)
+    assert not hasattr(model.memory.begin(model.memory.initial_state()),'independent_write')
+    assert not hasattr(model.dream_memory.weight_vae,'decode_fast')
 
 
 def test_shared_initial_graph_read_matches_independent_rows_and_larger_tiles():

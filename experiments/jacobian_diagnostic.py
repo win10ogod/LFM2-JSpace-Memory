@@ -220,7 +220,7 @@ def main():
         target_layer=len(language_model.layers)-1,skip_first=16,exclude_last=True,
         estimator='sum over valid causal targets; mean over valid sources; mean over prompts',
         scope='native frozen language stack; memory inactive; diagnostic only',
-        calibration_scope='small authored calibration set; not a representative pretraining corpus',
+        calibration_scope=protocol.get('source','small authored calibration set; not a representative pretraining corpus'),
         attention=language_model.config._attn_implementation,rest_ratio=1.),
         convergence=convergence,split_stability=stability,probes=probe_results,
         body_fixed=fixed,native_outputs_identical=same,J_space_established=False,
