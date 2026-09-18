@@ -1,0 +1,130 @@
+{
+  "checkpoint_id": "273e195bd4ad4c10ace63c3bcd5516bd",
+  "steps": 1024,
+  "learning_rate": 0.001,
+  "train_sha256": "7b5788a4fce4d9af2637bcbd17e736a77ab7834c980b445506911cb42b0cef3a",
+  "validation_sha256": "e2d80ddd86fafe5f819c8f72ae0dfcc5af7d8d00e28ea2116651783889e8609c",
+  "scope": "Diagnostic only: LoRA codec optimization on bounded train-source positions; held-out source strings. Not full-model training. No weights saved.",
+  "source_records": {
+    "train": 64,
+    "validation": 128
+  },
+  "positions": {
+    "train": 4096,
+    "validation": 2048
+  },
+  "validation_positions_with_seen_token_identity": 1491,
+  "lora_rank": 8,
+  "lora_alpha": 16,
+  "batch": 128,
+  "kl_weight": 0.001,
+  "initial": {
+    "mean_reconstruction_mse": 0.9719924926757812,
+    "zero_decoder_mse": 0.9646004438400269,
+    "normalized_cosine": 0.0013286321191117167,
+    "kl_per_coordinate": 0.026178335770964622,
+    "posterior_variance": 0.9622668027877808,
+    "token_identity_exact": 0,
+    "token_identity_n": 256,
+    "full_vocabulary_token_ce": 11.73365592956543
+  },
+  "arms": {
+    "mean_and_identity": [
+      {
+        "step": 256,
+        "mean_reconstruction_mse": 0.6288145780563354,
+        "zero_decoder_mse": 0.9646004438400269,
+        "normalized_cosine": 0.5533478260040283,
+        "kl_per_coordinate": 3.569948434829712,
+        "posterior_variance": 0.012720978818833828,
+        "token_identity_exact": 45,
+        "token_identity_n": 256,
+        "full_vocabulary_token_ce": 11.51820182800293
+      },
+      {
+        "step": 512,
+        "mean_reconstruction_mse": 0.6081240177154541,
+        "zero_decoder_mse": 0.9646004438400269,
+        "normalized_cosine": 0.5710222125053406,
+        "kl_per_coordinate": 3.6181564331054688,
+        "posterior_variance": 0.00893430970609188,
+        "token_identity_exact": 65,
+        "token_identity_n": 256,
+        "full_vocabulary_token_ce": 9.717081069946289
+      },
+      {
+        "step": 768,
+        "mean_reconstruction_mse": 0.6031432747840881,
+        "zero_decoder_mse": 0.9646004438400269,
+        "normalized_cosine": 0.5768542289733887,
+        "kl_per_coordinate": 3.4489922523498535,
+        "posterior_variance": 0.007345252670347691,
+        "token_identity_exact": 77,
+        "token_identity_n": 256,
+        "full_vocabulary_token_ce": 10.144600868225098
+      },
+      {
+        "step": 1024,
+        "mean_reconstruction_mse": 0.6028387546539307,
+        "zero_decoder_mse": 0.9646004438400269,
+        "normalized_cosine": 0.5766368508338928,
+        "kl_per_coordinate": 3.412203073501587,
+        "posterior_variance": 0.0069071645848453045,
+        "token_identity_exact": 76,
+        "token_identity_n": 256,
+        "full_vocabulary_token_ce": 10.00657844543457
+      }
+    ],
+    "categorical_reconstruction": [
+      {
+        "step": 256,
+        "mean_reconstruction_mse": 0.8970075845718384,
+        "zero_decoder_mse": 0.9646004438400269,
+        "normalized_cosine": 0.2500981092453003,
+        "kl_per_coordinate": 2.117204189300537,
+        "posterior_variance": 0.053645502775907516,
+        "token_identity_exact": 134,
+        "token_identity_n": 256,
+        "full_vocabulary_token_ce": 3.642051935195923
+      },
+      {
+        "step": 512,
+        "mean_reconstruction_mse": 0.885953426361084,
+        "zero_decoder_mse": 0.9646004438400269,
+        "normalized_cosine": 0.26867711544036865,
+        "kl_per_coordinate": 2.743605613708496,
+        "posterior_variance": 0.02262609265744686,
+        "token_identity_exact": 152,
+        "token_identity_n": 256,
+        "full_vocabulary_token_ce": 3.193551778793335
+      },
+      {
+        "step": 768,
+        "mean_reconstruction_mse": 0.8787784576416016,
+        "zero_decoder_mse": 0.9646004438400269,
+        "normalized_cosine": 0.2801792621612549,
+        "kl_per_coordinate": 2.899592161178589,
+        "posterior_variance": 0.01978204771876335,
+        "token_identity_exact": 157,
+        "token_identity_n": 256,
+        "full_vocabulary_token_ce": 3.071277379989624
+      },
+      {
+        "step": 1024,
+        "mean_reconstruction_mse": 0.8766450881958008,
+        "zero_decoder_mse": 0.9646004438400269,
+        "normalized_cosine": 0.28313642740249634,
+        "kl_per_coordinate": 3.0850353240966797,
+        "posterior_variance": 0.016750067472457886,
+        "token_identity_exact": 158,
+        "token_identity_n": 256,
+        "full_vocabulary_token_ce": 3.0607011318206787
+      }
+    ]
+  },
+  "adapter_sha256": "3a7dea794fd7aca169ff2d0cb0a0a671a5d89940f766092855b16c9df21ca6b8",
+  "token_objective_classes": 5209,
+  "token_objective_temperature": 0.02,
+  "token_objective_class_selection": "All train-position identities plus 4096 seeded random vocabulary draws; validation never used for class selection.",
+  "completed": true
+}

@@ -37,6 +37,7 @@ from .dream_memory import DreamWeightVAE,PortFeatureVAE
 from .sleep_controller import ReplayController
 from .latent_memory import LatentPortMemory,encode_observations
 from .sequence_memory import SequenceMemory,prepare_ordered_inputs,install_sequence_capture
+from .autonomous_memory import autonomous_generate,replay_candidate
 from .memory_address import NativeConceptAddress
 from .native_concepts import NativeConceptLens
 from .memory_integrity import _checksum
@@ -91,6 +92,7 @@ class Lfm2TitansForConditionalGeneration(Lfm2VlForConditionalGeneration):
             self.memory = MultiportConnectome(architecture["nodes"], edges, ports,
                                               **config.memory_parameters).float()
         self._memory_context = ContextVar(f"lfm2_titans_{id(self)}", default=None)
+        self._archive_context = ContextVar(f"lfm2_archive_{id(self)}", default=None)
         self._install_ports()
         install_sequence_capture(self)
         install_concept_capture(self)
@@ -388,7 +390,30 @@ class Lfm2TitansForConditionalGeneration(Lfm2VlForConditionalGeneration):
     def generate(self, *args, **kwargs):
         if kwargs.get("memory_write", False):
             raise ValueError("Write observations with forward(memory_write=True), then generate with the returned memory_state")
+        bound=self._archive_context.get()
+        if bound is not None:
+            archive,settings=bound
+            if args:
+                if len(args)!=1 or 'input_ids' in kwargs:raise ValueError('one native input_ids argument required')
+                kwargs['input_ids']=args[0]
+            query={k:kwargs.pop(k) for k in ('input_ids','attention_mask') if k in kwargs}
+            if 'input_ids' not in query:raise ValueError('bound memory generation requires input_ids')
+            token=self._archive_context.set(None)
+            try:return archive.generate(query,generation_inputs=dict(query,**kwargs),**settings)['tokens']
+            finally:self._archive_context.reset(token)
         return super().generate(*args, **kwargs)
+
+    @contextmanager
+    def use_memory_archive(self,archive,*,top_k=1,index_options=None):
+        """Bind caller-owned storage once; ordinary generate retrieves and reads.
+
+        Context-local association keeps concurrent agents' storage choices
+        separate. The model selects its memory substrate internally.
+        """
+        if archive.model is not self:raise ValueError('archive belongs to another model')
+        token=self._archive_context.set((archive,dict(top_k=top_k,index_options=index_options)))
+        try:yield self
+        finally:self._archive_context.reset(token)
 
     def save_pretrained(self, save_directory, **kwargs):
         lens_source=None

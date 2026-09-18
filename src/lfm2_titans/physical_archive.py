@@ -1,5 +1,6 @@
 """Query neural addresses first; load only selected complete physical weights."""
 import heapq,json,math,os,re,time,uuid
+from contextvars import ContextVar
 from pathlib import Path
 import torch
 from torch.nn import functional as F
@@ -21,8 +22,10 @@ class PhysicalMemoryArchive:
     def __init__(self,model,directory,*,max_readers=1,max_resident_units=8):
         if type(max_resident_units) is not int or max_resident_units<1:raise ValueError('positive resident unit bound required')
         self.max_resident_units=max_resident_units
+        self._last_generation=ContextVar(f'archive_decision_{id(self)}',default=None)
         self.model=model;self.root=Path(directory);self.root.mkdir(parents=True,exist_ok=True)
         self.session=model.open_physical_memory_session(max_readers=max_readers)
+        self.session._history_root=self.root
         self.concept_lens=self.session.concept_lens
         self.identity=json.loads(json.dumps(self.session.bank._identity()))
         self.key_dims={p.name:p.feature_dim for p in model.memory.specs}
@@ -33,6 +36,9 @@ class PhysicalMemoryArchive:
 
     def append(self,*,start_new=True):
         with self.session._writes:
+            # Preserve the parent before assigning the child's chronological
+            # ID. Equal-content index ties must prefer the later revision.
+            self.session._consolidate_pending()
             unit_id=f'{time.time_ns():020d}_{uuid.uuid4().hex}'
             result=self.session.seal(self._path(unit_id),start_new=start_new)
             return dict(result,unit_id=unit_id)
@@ -124,13 +130,17 @@ class PhysicalMemoryArchive:
             graph=MountedState(active.graph,tuple(MemoryPage(m['unit_id'],unit.graph,1.)
                 for m,unit in zip(route['matches'],units)),active_weight=0.)
             ordered=sorted(zip(route['matches'],units),key=lambda pair:pair[0]['unit_id'])
-            prepared=prepare_ordered_inputs(self.model,tuple(s for _,u in ordered for s in u.sequences),
-                generation_inputs,max_new_tokens=generation_options.get('max_new_tokens',generation_inputs.get('max_new_tokens')),
-                max_length=generation_options.get('max_length',generation_inputs.get('max_length')))
-            with self.session.bank.use(adapters):
-                tokens=self.model.generate(**prepared,**generation_options,memory_state=graph)
-        return dict(query=route,tokens=tokens,loaded_units=[m['unit_id'] for m in route['matches']],
-                    composition='independently evaluated graph and FFN memories',latent_recall='ordered',generation_calls=1)
+            from .autonomous_memory import autonomous_generate
+            tokens,_,decision=autonomous_generate(self.model,self.session.bank,adapters,graph,
+                tuple(s for _,u in ordered for s in u.sequences),generation_inputs,**generation_options)
+        result=dict(query=route,tokens=tokens,loaded_units=[m['unit_id'] for m in route['matches']],
+                    composition='independently evaluated graph and FFN memories',latent_recall=decision['action'],
+                    memory_decision=decision,generation_calls=1)
+        self._last_generation.set({k:v for k,v in result.items() if k!='tokens'})
+        return result
+
+    @property
+    def last_generation(self):return self._last_generation.get()
 
     def mount_async(self,unit_id):return self.session.mount_async(self._path(unit_id))
 

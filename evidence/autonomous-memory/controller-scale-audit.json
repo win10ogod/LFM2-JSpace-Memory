@@ -1,0 +1,11 @@
+{
+  "scope": "Inherited controller; synthetic grid within the read-feature ranges, not observed model queries or a global bound.",
+  "nodes": 149,
+  "probes": 81,
+  "minimum_score": -0.0009910655207931995,
+  "maximum_score": 0.008985179476439953,
+  "score_spread": 0.00997624546289444,
+  "most_separated_binary_probability": 0.5024940371513367,
+  "random_binary_ce": 0.6931471805599453,
+  "random_three_way_ce": 1.0986122886681098
+}

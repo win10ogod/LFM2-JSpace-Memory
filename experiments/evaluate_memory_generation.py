@@ -140,7 +140,7 @@ def read(args):
             cap=protocol['coherence_max_new_tokens'] if q['kind']=='coherence' else protocol['hash_max_new_tokens']
             generation=dict(max_new_tokens=cap,do_sample=False)
             required={pages[name]['unit_id'] for name in q['required_sources']}
-            selected=[]
+            selected=[];decision=None
             if condition in ['native-routed','oracle-units']:
                 query_inputs=address_inputs(processor,prompt)
                 keys=paced(archive.encode_query,query_inputs)
@@ -154,7 +154,7 @@ def read(args):
                     with patch.object(archive,'query',return_value=dict(matches=matches,oracle_control=True)):
                         result=paced(archive.generate,{},encoded_query=keys,generation_inputs=dict(inputs),
                             top_k=len(matches),**generation)
-                output=result['tokens'];selected=result['loaded_units']
+                output=result['tokens'];selected=result['loaded_units'];decision=result.get('memory_decision')
                 routes.append(dict(id=q['id'],turn=turn,condition=condition,selected=selected,
                     required=sorted(required),complete_source_coverage=required.issubset(selected)))
             elif condition in ('oracle-physical-only','oracle-latent-only','oracle-codes-and-weights'):
@@ -163,13 +163,14 @@ def read(args):
                 wrong=next(p for p in pages.values() if p['unit_id'] not in required)
                 archive.mount_async(wrong['unit_id']).result()
                 output=paced(archive.session.generate,**inputs,**generation);selected=[wrong['unit_id']]
+                decision=archive.session.last_memory_action
             else:
                 with torch.no_grad():output=paced(model.generate,**inputs,use_memory=False,**generation)
             tokens=output[0,inputs['input_ids'].shape[1]:].tolist()
             answer=processor.tokenizer.decode(tokens,skip_special_tokens=True).strip()
             row=dict(id=q['id'],kind=q['kind'],condition=condition,turn=turn,question=prompt,answer=answer,
                 generated_tokens=len(tokens),hit_generation_limit=len(tokens)>=cap,ended_with_eos=bool(tokens and tokens[-1] in eos),
-                input_tokens=inputs['input_ids'].numel(),selected_units=selected)
+                input_tokens=inputs['input_ids'].numel(),selected_units=selected,memory_decision=decision)
             if q['kind']=='hash':row.update(hops=q['hops'],task=q['task'],hash_length=q['hash_length'],expected=q['answer'],**hash_score(answer,q['answer']))
             else:row.update(facts=q['facts'],diagnostics=coherence_diagnostics(answer,tokens,q['facts']))
             rows.append(row);history.append(dict(role='assistant',content=answer))

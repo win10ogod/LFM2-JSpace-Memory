@@ -201,6 +201,14 @@ class NativeMemoryCheckpoint(TrainerCallback):
         for value in groups.values():
             terms=value.pop('squares');value['gradient_norm']=float(torch.stack(terms).sum().sqrt()) if terms else 0.
         (Path(args.output_dir)/f'gradient-audit-step-{state.global_step+1}.json').write_text(json.dumps(groups,indent=2)+'\n')
+        components={}
+        for prefix in ('dream_memory.controller.','dream_memory.feature_vae.','dream_memory.weight_vae.'):
+            selected=[p for n,p in self.model.named_parameters() if n.startswith(prefix) and p.requires_grad]
+            squares=[p.grad.detach().float().square().sum() for p in selected if p.grad is not None]
+            components[prefix]=dict(parameters=sum(p.numel() for p in selected),
+                with_gradient=sum(p.numel() for p in selected if p.grad is not None),
+                gradient_norm=float(torch.stack(squares).sum().sqrt()) if squares else 0.)
+        (Path(args.output_dir)/f'component-gradient-audit-step-{state.global_step+1}.json').write_text(json.dumps(components,indent=2)+'\n')
         self.gradient_logged=True
     def on_step_end(self,args,state,control,**kwargs):
         elapsed=time.monotonic()-self.tick
@@ -226,10 +234,18 @@ class NativeMemoryCheckpoint(TrainerCallback):
         reports=self.model._native_sft_memory.eval_reports
         if not reports:return
         count=sum(r['physical_batch'] for r in reports)
-        keys=['supervised_loss','compressed_recall_loss','memory_loss','dream_auxiliary_loss','correct_memory_nll','empty_memory_nll','wrong_memory_nll']
+        keys=['supervised_loss','compressed_recall_loss','fast_only_loss','consolidated_recall_loss',
+              'read_policy_loss','consolidation_policy_loss','dream_retention_kl','memory_loss',
+              'read_policy_regret','consolidated_query_gain',
+              'compressed_memory_nll','physical_memory_nll','consolidated_memory_nll',
+              'source_codec_loss',
+              'dream_auxiliary_loss','correct_memory_nll','empty_memory_nll','wrong_memory_nll']
         values={k:sum(r[k]*r['physical_batch'] for r in reports)/count
                 for k in keys if all(r.get(k) is not None for r in reports)}
         value=dict(step=state.global_step,examples=count,**values,
+            policy_temperatures=reports[0].get('policy_temperatures'),
+            read_action_counts={str(i):sum(r.get('read_policy_actions',[]).count(i) for r in reports) for i in range(3)},
+            consolidation_action_counts={str(i):sum(r.get('consolidation_model_actions',[]).count(i) for r in reports) for i in range(2)},
             codec_metrics={k:sum(r['codec_metrics'][k]*r['physical_batch'] for r in reports)/count
                 for k in reports[0].get('codec_metrics',{})},
             query_or_answer_given_to_writer=any(r['query_or_answer_given_to_writer'] for r in reports),
@@ -237,6 +253,16 @@ class NativeMemoryCheckpoint(TrainerCallback):
             evaluation_checkpointed_layers=max(r.get('evaluation_checkpointed_layers',0) for r in reports),
             peak_allocated_gib=max(r.get('peak_allocated_gib',0.) for r in reports),
             native_evaluation_loss=(metrics or {}).get('eval_loss'))
+        for name in ('read_policy_statistics','consolidation_policy_statistics'):
+            if all(name in r for r in reports):
+                value[name]={k:sum(r[name][k]*r['physical_batch'] for r in reports)/count for k in reports[0][name]}
+        if all('per_example' in r for r in reports):value['per_example']=[x for r in reports for x in r['per_example']]
+        if all('consolidation_gain_sum' in r for r in reports):
+            total=sum(r['consolidation_gain_sum'] for r in reports)
+            squares=sum(r['consolidation_gain_square_sum'] for r in reports)
+            mean=total/count;variance=max(0.,(squares-count*mean*mean)/max(1,count-1))
+            value['consolidation_gain_normal_95_lower']=mean-1.96*(variance/count)**.5
+            value['consolidation_gain_ci_scope']='approximate per-question interval; paired source correlation not modeled'
         (Path(args.output_dir)/f'memory-eval-step-{state.global_step}.json').write_text(json.dumps(value,indent=2)+'\n')
         print(json.dumps(dict(stage='heldout_memory_evaluation',**value)),flush=True)
         reports.clear()

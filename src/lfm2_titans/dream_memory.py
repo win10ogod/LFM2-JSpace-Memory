@@ -72,8 +72,9 @@ class PortFeatureVAE(nn.Module):
     """Independent per-port compression and decoding heads shared across units.
 
     In the dual-memory architecture these same heads encode persistent latent
-    memory during ordinary writes and decode it during ordinary recall. Dreams
-    additionally sample source-conditioned posteriors. Native multiport feature
+    memory during ordinary writes and decode it during ordinary recall. Codec
+    training also samples posteriors; current consolidation decodes their means.
+    Native multiport feature
     dimensions stay independent; there is no shared cross-port bottleneck.
     """
     def __init__(self, port_dims, hidden_size=64, latent_size=16):
@@ -86,23 +87,61 @@ class PortFeatureVAE(nn.Module):
         return self.loss_terms(name,features,beta=beta)[0]
 
     def loss_terms(self,name,features,beta=.001):
-        """Expose codec distortion and KL independently of downstream answer CE.
+        """Learn sampled replay AND deterministic, distinguishable recall.
 
-        This preserves the existing objective and posterior sampling. Mean
-        decoding diagnostics are detached and consume no additional RNG.
+        Exact repeated features are positives in the discrimination objective.
+        No text labels, token IDs, or answer-derived concepts are required.
         """
         normalized = F.layer_norm(features.detach().float(), (features.shape[-1],))
         decoded, mean, logvar = self.heads[name](normalized, sample=self.training)
         distortion = F.mse_loss(decoded, normalized)
         kl = .5 * (mean.square() + logvar.exp() - 1 - logvar).mean()
-        with torch.no_grad():
-            deterministic=self.heads[name].decoder(mean.detach())
-            mean_distortion=F.mse_loss(deterministic,normalized)
-            mean_cosine=F.cosine_similarity(deterministic,normalized,dim=-1).mean()
-        return distortion + beta * kl,dict(distortion=distortion,kl=kl,
+        deterministic=self.heads[name].decoder(mean)
+        mean_distortion=F.mse_loss(deterministic,normalized)
+        x=normalized.reshape(-1,normalized.shape[-1]);d=deterministic.reshape_as(x)
+        scores=F.normalize(d,dim=-1)@F.normalize(x,dim=-1).T/.1
+        same=(x[:,None,:]==x[None,:,:]).all(-1)
+        discrimination=(scores.logsumexp(-1)-scores.masked_fill(~same,-torch.inf).logsumexp(-1)).mean()
+        mean_cosine=F.cosine_similarity(d.detach(),x,dim=-1).mean()
+        return distortion + mean_distortion + .25*discrimination + beta * kl,dict(distortion=distortion,kl=kl,
+            discrimination=discrimination,
             mean_distortion=mean_distortion,mean_cosine=mean_cosine,
             zero_decoder_distortion=normalized.square().mean().detach(),
             posterior_variance=logvar.detach().exp().mean())
+
+    def token_reconstruction_loss(self,name,posterior,token_ids,embedding_weight,*,temperature=.02,chunk_size=64):
+        """Categorical reconstruction of OBSERVED text, never query answers.
+
+        A frozen native embedding dictionary defines the training likelihood.
+        Inference still decodes features with the VAE and runs the language
+        model. No token lookup is added to the memory reader. All source
+        positions contribute; chunks bound the output-head buffer only.
+        """
+        from torch.utils.checkpoint import checkpoint
+        if not math.isfinite(temperature) or temperature<=0 or type(chunk_size) is not int or chunk_size<1:
+            raise ValueError('positive codec temperature and output buffer required')
+        if token_ids.ndim!=1 or len(token_ids)!=posterior.count or not len(token_ids):
+            raise ValueError('one observed token target per posterior position required')
+        head=self.heads[name];sampled=self.training
+        with torch.no_grad(),torch.autocast(device_type=token_ids.device.type,enabled=False):
+            dictionary=F.normalize(embedding_weight.detach().float(),dim=-1)
+        def loss_for(mu,logvar,mean,scale,targets):
+            with torch.autocast(device_type=mu.device.type,enabled=False):
+                def score(z):
+                    reconstructed=head.decoder(z)*scale+mean
+                    logits=F.linear(F.normalize(reconstructed,dim=-1),dictionary)/temperature
+                    return F.cross_entropy(logits,targets,reduction='sum')
+                loss=score(mu)
+                if sampled:loss=(loss+score(mu+torch.randn_like(mu)*(.5*logvar).exp()))*.5
+                return loss
+        total=posterior.mu.new_zeros(())
+        for start in range(0,len(token_ids),chunk_size):
+            args=tuple(x[start:start+chunk_size] for x in posterior.tensors())
+            # LatentPortMemory order is mu, logvar, mean, scale.
+            targets=token_ids[start:start+chunk_size]
+            if torch.is_grad_enabled():total=total+checkpoint(loss_for,*args,targets,use_reentrant=False)
+            else:total=total+loss_for(*args,targets)
+        return total/len(token_ids)
 
     @torch.no_grad()
     def source_replay(self, name, observed_features, *, source_page_id, count=4,

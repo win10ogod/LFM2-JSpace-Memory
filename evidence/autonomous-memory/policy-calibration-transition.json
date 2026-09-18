@@ -1,0 +1,10 @@
+{
+  "stage": "resumed",
+  "pid": 418069,
+  "time": 1789729292.201988,
+  "checkpoint_step": 32,
+  "coordinator_pid": 418552,
+  "watcher_pid": 418563,
+  "all_completed_updates_preserved": true,
+  "weights_uploaded": false
+}

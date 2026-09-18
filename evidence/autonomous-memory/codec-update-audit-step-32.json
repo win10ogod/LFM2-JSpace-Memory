@@ -1,0 +1,51 @@
+{
+  "controller": {
+    "tensors": 8,
+    "changed": 8,
+    "delta_square": 0.015070048586494522,
+    "initial_square": 1.9534632483846508,
+    "final_square": 1.9932726258248294
+  },
+  "language_14": {
+    "tensors": 8,
+    "changed": 8,
+    "delta_square": 0.664934683823958,
+    "initial_square": 10.199077606201172,
+    "final_square": 11.064063897822052
+  },
+  "language_26": {
+    "tensors": 8,
+    "changed": 8,
+    "delta_square": 0.5918335448950529,
+    "initial_square": 10.348924160003662,
+    "final_square": 11.061872815247625
+  },
+  "language_4": {
+    "tensors": 8,
+    "changed": 8,
+    "delta_square": 0.4737646821886301,
+    "initial_square": 10.6190767288208,
+    "final_square": 11.27605136949569
+  },
+  "native_input": {
+    "tensors": 8,
+    "changed": 8,
+    "delta_square": 0.03582414505217457,
+    "initial_square": 10.792956113815308,
+    "final_square": 10.817916275758762
+  },
+  "visual": {
+    "tensors": 8,
+    "changed": 0,
+    "delta_square": 0.0,
+    "initial_square": 10.280020475387573,
+    "final_square": 10.280020475387573
+  },
+  "weight_vae": {
+    "tensors": 8,
+    "changed": 8,
+    "delta_square": 0.361251815687865,
+    "initial_square": 10.766533374786377,
+    "final_square": 11.641080459579825
+  }
+}

@@ -1,0 +1,225 @@
+{
+  "assessment": "not_established",
+  "claim_of_convergence": false,
+  "latest_training_step": 41,
+  "fixed_validation_steps": [
+    2,
+    32
+  ],
+  "stable": {
+    "supervised_loss": false,
+    "compressed_recall_loss": false,
+    "fast_only_loss": false,
+    "consolidated_recall_loss": false
+  },
+  "useful_screening": {
+    "reconstruction_beats_zero": false,
+    "compressed_beats_empty_and_wrong": null,
+    "physical_beats_empty_and_wrong": null,
+    "post_dream_better": false,
+    "policy_regret_small": true
+  },
+  "criteria": {
+    "fixed_validation_points": 3,
+    "relative_range_tolerance": 0.01,
+    "maximum_selected_read_regret_nats_per_token": 0.05
+  },
+  "teacher_forced_screening_is_not_generation_accuracy": true,
+  "free_generation_finished": false,
+  "paired_cluster_confidence_intervals": null,
+  "limitations": [
+    "Different training batches cannot establish convergence.",
+    "Soft policy CE has a moving target-entropy floor; compare excess KL and decision regret.",
+    "Some older reports lack entropy-floor and paired-gain statistics.",
+    "A stable but ineffective memory substrate does not pass.",
+    "Final free-generation, retention, coherence and checkpoint-to-checkpoint review are required."
+  ],
+  "latest_validation": {
+    "step": 32,
+    "examples": 128,
+    "supervised_loss": 0.2068970820400864,
+    "compressed_recall_loss": 6.127383679151535,
+    "fast_only_loss": 6.158470839262009,
+    "consolidated_recall_loss": 6.1543494164943695,
+    "read_policy_loss": 1.0971911326050758,
+    "consolidation_policy_loss": 0.6931764893233776,
+    "dream_retention_kl": 0.04501121980138123,
+    "memory_loss": 5.027930170297623,
+    "read_policy_regret": 0.0,
+    "consolidated_query_gain": -0.028252795338630676,
+    "dream_auxiliary_loss": 4.776849567890167,
+    "correct_memory_nll": 0.36657374259084463,
+    "empty_memory_nll": 5.876007258892059,
+    "wrong_memory_nll": 6.408310830593109,
+    "read_action_counts": {
+      "0": 128,
+      "1": 0,
+      "2": 0
+    },
+    "consolidation_action_counts": {
+      "0": 0,
+      "1": 128
+    },
+    "codec_metrics": {
+      "distortion": 0.9719956107437611,
+      "kl": 0.026199759682640433,
+      "discrimination": 3.266881510615349,
+      "mean_distortion": 0.9719956107437611,
+      "mean_cosine": 0.0016817401265143417,
+      "zero_decoder_distortion": 0.9646678827702999,
+      "posterior_variance": 0.9649498462677002
+    },
+    "query_or_answer_given_to_writer": false,
+    "outer_meta_gradients": false,
+    "evaluation_checkpointed_layers": 30,
+    "peak_allocated_gib": 45.297430992126465,
+    "native_evaluation_loss": 5.234827041625977,
+    "artifact_sha256": "ab091cec39b99ea322e2d69b9a637d4ece678dea408f4c9f302ae882a4cf88cc"
+  },
+  "training_tail": [
+    {
+      "step": 34,
+      "supervised_loss": 0.009430922567844391,
+      "compressed_recall_loss": 6.837906837463379,
+      "fast_only_loss": 6.838962554931641,
+      "consolidated_recall_loss": 6.842058181762695,
+      "read_policy_regret": 0.0,
+      "consolidated_query_gain": 0.003810584545135498,
+      "codec_metrics": {
+        "distortion": 0.9971160888671875,
+        "kl": 0.025666363537311554,
+        "discrimination": 3.32364821434021,
+        "mean_distortion": 0.9709163904190063,
+        "mean_cosine": 0.0017506289295852184,
+        "zero_decoder_distortion": 0.9636017084121704,
+        "posterior_variance": 0.9637966752052307
+      }
+    },
+    {
+      "step": 35,
+      "supervised_loss": 0.5493493676185608,
+      "compressed_recall_loss": 6.500922679901123,
+      "fast_only_loss": 6.48707389831543,
+      "consolidated_recall_loss": 6.4972615242004395,
+      "read_policy_regret": 0.0,
+      "consolidated_query_gain": 0.004909336566925049,
+      "codec_metrics": {
+        "distortion": 0.9997408390045166,
+        "kl": 0.025667857378721237,
+        "discrimination": 3.3147151470184326,
+        "mean_distortion": 0.9720152020454407,
+        "mean_cosine": -0.0003228944551665336,
+        "zero_decoder_distortion": 0.9643238186836243,
+        "posterior_variance": 0.9650095105171204
+      }
+    },
+    {
+      "step": 36,
+      "supervised_loss": 0.4381468594074249,
+      "compressed_recall_loss": 6.2371826171875,
+      "fast_only_loss": 6.226339817047119,
+      "consolidated_recall_loss": 6.2536396980285645,
+      "read_policy_regret": 0.0,
+      "consolidated_query_gain": -0.016514956951141357,
+      "codec_metrics": {
+        "distortion": 1.0004527568817139,
+        "kl": 0.025561850517988205,
+        "discrimination": 3.344277858734131,
+        "mean_distortion": 0.9725101590156555,
+        "mean_cosine": 0.0011685809586197138,
+        "zero_decoder_distortion": 0.9650797843933105,
+        "posterior_variance": 0.9739863872528076
+      }
+    },
+    {
+      "step": 37,
+      "supervised_loss": 0.15559601783752441,
+      "compressed_recall_loss": 6.512112140655518,
+      "fast_only_loss": 6.4803547859191895,
+      "consolidated_recall_loss": 6.51497745513916,
+      "read_policy_regret": 0.0,
+      "consolidated_query_gain": -0.0100211501121521,
+      "codec_metrics": {
+        "distortion": 0.9981904029846191,
+        "kl": 0.026090815663337708,
+        "discrimination": 3.352687358856201,
+        "mean_distortion": 0.9730105996131897,
+        "mean_cosine": -0.0001064661773853004,
+        "zero_decoder_distortion": 0.965373158454895,
+        "posterior_variance": 0.9670283198356628
+      }
+    },
+    {
+      "step": 38,
+      "supervised_loss": 0.31755393743515015,
+      "compressed_recall_loss": 6.324915409088135,
+      "fast_only_loss": 6.307934284210205,
+      "consolidated_recall_loss": 6.329296588897705,
+      "read_policy_regret": 0.0,
+      "consolidated_query_gain": -0.0035952329635620117,
+      "codec_metrics": {
+        "distortion": 1.0024826526641846,
+        "kl": 0.027257846668362617,
+        "discrimination": 3.3835372924804688,
+        "mean_distortion": 0.973598301410675,
+        "mean_cosine": 0.0002242683549411595,
+        "zero_decoder_distortion": 0.9659890532493591,
+        "posterior_variance": 0.9652401208877563
+      }
+    },
+    {
+      "step": 39,
+      "supervised_loss": 0.070501409471035,
+      "compressed_recall_loss": 6.364297866821289,
+      "fast_only_loss": 6.35906457901001,
+      "consolidated_recall_loss": 6.3740644454956055,
+      "read_policy_regret": 0.0,
+      "consolidated_query_gain": -0.003112494945526123,
+      "codec_metrics": {
+        "distortion": 1.000174880027771,
+        "kl": 0.024933725595474243,
+        "discrimination": 3.3724441528320312,
+        "mean_distortion": 0.9727283120155334,
+        "mean_cosine": -0.002317315200343728,
+        "zero_decoder_distortion": 0.9646899700164795,
+        "posterior_variance": 0.9734224081039429
+      }
+    },
+    {
+      "step": 40,
+      "supervised_loss": 0.214603990316391,
+      "compressed_recall_loss": 6.029324531555176,
+      "fast_only_loss": 6.057892322540283,
+      "consolidated_recall_loss": 6.073300361633301,
+      "read_policy_regret": 0.0,
+      "consolidated_query_gain": -0.04268902540206909,
+      "codec_metrics": {
+        "distortion": 0.9984300136566162,
+        "kl": 0.025973070412874222,
+        "discrimination": 3.403043270111084,
+        "mean_distortion": 0.972256064414978,
+        "mean_cosine": -0.001724969712086022,
+        "zero_decoder_distortion": 0.964379072189331,
+        "posterior_variance": 0.9507935643196106
+      }
+    },
+    {
+      "step": 41,
+      "supervised_loss": 0.1374422162771225,
+      "compressed_recall_loss": 5.91806173324585,
+      "fast_only_loss": 5.991358280181885,
+      "consolidated_recall_loss": 5.9421586990356445,
+      "read_policy_regret": 0.0,
+      "consolidated_query_gain": -0.024317443370819092,
+      "codec_metrics": {
+        "distortion": 0.9997768402099609,
+        "kl": 0.02573402039706707,
+        "discrimination": 3.3198206424713135,
+        "mean_distortion": 0.9705610275268555,
+        "mean_cosine": 0.003047273261472583,
+        "zero_decoder_distortion": 0.9634912014007568,
+        "posterior_variance": 0.9493855237960815
+      }
+    }
+  ]
+}

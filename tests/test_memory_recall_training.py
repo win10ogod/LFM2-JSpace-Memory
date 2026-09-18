@@ -71,8 +71,12 @@ def test_actual_write_then_read_reaches_both_memories_without_source_cache():
     batch=inputs();output=model(**batch)
     output.loss.backward();handle.remove()
     report=model._native_sft_memory.last
-    assert len(observed)==7  # observation, FFN learn; complete/code recall and three read-only controls.
-    assert [r['grad_enabled'] for r in observed]==[False,True,True,True,False,False,False]
+    # Source writer; three positive reads; source-only Dream replay/retention;
+    # a positive post-Dream read; two read-only negative controls.
+    assert len(observed)==13
+    assert [r['grad_enabled'] for r in observed[:5]]==[False,True,True,True,True]
+    assert all(not r['grad_enabled'] for r in observed[5:10])
+    assert [r['grad_enabled'] for r in observed[-3:]]==[True,False,False]
     torch.testing.assert_close(observed[2]['embeddings'][:,1:5],observed[0]['embeddings'],rtol=0,atol=0)
     assert all(row['cache'] is None and row['use_cache'] is False for row in observed)
     assert report['source_observation_tokens']==8 and report['stored_posterior_positions']==8
@@ -82,7 +86,8 @@ def test_actual_write_then_read_reaches_both_memories_without_source_cache():
     assert report['negative_control_gradients'] is False
     assert report['write_order']=='observe_graph_then_learn_ffn'
     for prefix in ['memory.','physical_memory.','dream_memory.feature_vae.heads.native_input.encoder',
-                   'dream_memory.feature_vae.heads.native_input.decoder']:
+                   'dream_memory.feature_vae.heads.native_input.decoder','dream_memory.weight_vae.',
+                   'dream_memory.controller.']:
         grads=[p.grad for name,p in model.named_parameters() if name.startswith(prefix) and p.grad is not None]
         assert grads and all(torch.isfinite(g).all() for g in grads),prefix
         assert sum(float(g.abs().sum()) for g in grads)>0,prefix
@@ -94,7 +99,8 @@ def test_native_eval_executes_memory_writes_without_updating_parameters():
         first=model(**inputs());second=model(**inputs())
     assert not first.loss.requires_grad and not first.logits.requires_grad
     torch.testing.assert_close(first.loss,second.loss,rtol=0,atol=0)
-    assert model._native_sft_memory.last['source_forward_passes']==2
+    assert model._native_sft_memory.last['initial_source_forward_passes']==2
+    assert model._native_sft_memory.last['source_forward_passes']==7
     assert len(model._native_sft_memory.eval_reports)==2
     assert all(p._version==versions[n] for n,p in model.named_parameters())
 
@@ -138,6 +144,35 @@ def test_positive_objective_has_no_negative_context_gradient():
     assert wrong_memory_rows([dict(source=torch.tensor([i])) for i in range(8)])==[1,2,3,4,5,6,7,0]
 
 
+def test_joint_objective_has_declared_positive_gradients_and_rejects_negative_weights():
+    from lfm2_titans.memory_recall_training import joint_recall_objective
+    values=[torch.tensor(float(i+1),requires_grad=True) for i in range(7)]
+    loss,parts=joint_recall_objective(*values,{})
+    loss.backward()
+    for value,expected in zip(values,[1.,.25,.25,.25,.1,.1,.05]):
+        torch.testing.assert_close(value.grad,torch.tensor(expected))
+    torch.testing.assert_close(loss,sum(parts.values()))
+    with pytest.raises(ValueError,match='nonnegative'):
+        joint_recall_objective(*values,dict(physical_recall_weight=-1.))
+
+
+def test_source_codec_supervision_is_observation_only_and_adds_no_parameters():
+    m=recall_model();m.config.native_memory_recall.update(source_codec_weight=.25,source_codec_chunk_size=3)
+    count=sum(p.numel() for p in m.parameters());batch=inputs()
+    output=m(**batch);output.loss.backward()
+    assert m._native_sft_memory.last['source_codec_positions']==8
+    assert m._native_sft_memory.last['source_codec_loss']>0
+    assert sum(p.numel() for p in m.parameters())==count
+    m.eval()
+    with torch.no_grad():m(**batch)
+    before=m._native_sft_memory.last['source_codec_loss']
+    changed={k:v.clone() for k,v in batch.items()}
+    changed['input_ids'][:,-3:-1]=torch.tensor([[23,24],[25,26]])
+    changed['labels'][:,-3:-1]=changed['input_ids'][:,-3:-1]
+    with torch.no_grad():m(**changed)
+    assert m._native_sft_memory.last['source_codec_loss']==before
+
+
 def test_changing_future_queries_and_answers_cannot_change_written_memory(monkeypatch):
     from lfm2_titans.multiport_connectome import MemoryBlock
     import lfm2_titans.memory_recall_training as objective
@@ -164,8 +199,8 @@ def test_changing_future_queries_and_answers_cannot_change_written_memory(monkey
     changed['labels'][:,-3:-1]=changed['input_ids'][:,-3:-1]
     changed['input_ids'][:,15]=torch.tensor([14,15])
     model(**changed)
-    assert len(written)==4
-    for a,b in zip(written[:2],written[2:]):torch.testing.assert_close(a,b,rtol=0,atol=0)
+    assert len(written)==8  # Observation and source-only consolidation per row.
+    for a,b in zip(written[:4],written[4:]):torch.testing.assert_close(a,b,rtol=0,atol=0)
     for a,b in zip(ffn[:2],ffn[2:]):
         for key in a:torch.testing.assert_close(a[key],b[key],rtol=0,atol=0)
     for a,b in zip(posteriors[:2],posteriors[2:]):
@@ -191,6 +226,8 @@ def test_lora_compiled_writer_supports_two_phase_checkpointed_backward(tmp_path,
     native.memory.load_state_dict(old.state_dict(),strict=False);native.config.memory_parameters=options
     model,_,_,_,_=apply_sft_lora(native,factory,rank=2)
     native.config.native_memory_recall['train_scope']=scope
+    native.config.native_memory_recall.update(source_codec_weight=.25,source_codec_chunk_size=3,
+        policy_score_temperature=.01)
     apply_training_scope(native)
     frozen={name:p.detach().clone() for name,p in native.model.named_parameters()}
     assert any(p.requires_grad for p in native.model.parameters())==(scope=='all')

@@ -34,6 +34,10 @@ These are separate complete model repositories. Each receipt verifies every remo
 
 The completed 128-update continuation improved matched native recall to 13/42 and correct-unit recall to 20/42, but compressed-code recall remained 0/12. It has not replaced the public model. [The diagnosis](HASHHOP-CORRECTED.md) includes actual Dream before/after generation, VAE objective controls, storage costs, counterfactual recall and all coherence failures. [Raw evidence](evidence/hashhop-corrected) is kept separate from the earlier checkpoints.
 
+## Autonomous memory development
+
+[The new architecture](AUTONOMOUS-MEMORY.md) wires model-owned read comparison and source-only Dream consolidation with retention checks into ordinary inference and native training, using the existing controller and no new learned parameters. [The real GPU probe and gradient evidence](evidence/autonomous-memory) passed; continued training and quality verification are in progress. No autonomous-memory checkpoint has been published yet.
+
 ## Reproduce the functional tests
 
 Use the recorded environment in [evidence/environment.json](evidence/environment.json), the appropriate checkpoint, and its matching lens directory containing `jacobians.safetensors` and `result.json`.

@@ -1,0 +1,75 @@
+{
+  "files": [
+    {
+      "path": "evidence/autonomous-memory/training-manifest.json",
+      "original_sha256": "cfd1d29c403428d6382bb82321401476a9f97814c36c84a7a8844668e49c2f22",
+      "published_sha256": "cfd1d29c403428d6382bb82321401476a9f97814c36c84a7a8844668e49c2f22"
+    },
+    {
+      "path": "evidence/autonomous-memory/adapter-inheritance.json",
+      "original_sha256": "6022d607c06f3bccd46fe231e368570a33f81f72b139590a5fd9654892dc6fb5",
+      "published_sha256": "6022d607c06f3bccd46fe231e368570a33f81f72b139590a5fd9654892dc6fb5"
+    },
+    {
+      "path": "evidence/autonomous-memory/probe-validation.json",
+      "original_sha256": "2dcdf43f67c4cdecb7918722872746976724fca9cb71cf50244eda133fa8a3ff",
+      "published_sha256": "2dcdf43f67c4cdecb7918722872746976724fca9cb71cf50244eda133fa8a3ff"
+    },
+    {
+      "path": "evidence/autonomous-memory/training/memory-eval-step-2.json",
+      "original_sha256": "112389cb9d995d4ad662dd38ff88c398e3b56a76051aee5b9a6eb53fefdb6ef1",
+      "published_sha256": "112389cb9d995d4ad662dd38ff88c398e3b56a76051aee5b9a6eb53fefdb6ef1"
+    },
+    {
+      "path": "evidence/autonomous-memory/training/component-gradient-audit-step-1.json",
+      "original_sha256": "d0ec78722a53346afaa949c26c78697cb4529609f5f169c885975d7f27073e6d",
+      "published_sha256": "d0ec78722a53346afaa949c26c78697cb4529609f5f169c885975d7f27073e6d"
+    },
+    {
+      "path": "evidence/autonomous-memory/training/progress.json",
+      "original_sha256": "4431783aa0131ef563b8def0af98bbe6487c56c883b12a1020be5f450719c962",
+      "published_sha256": "4431783aa0131ef563b8def0af98bbe6487c56c883b12a1020be5f450719c962"
+    },
+    {
+      "path": "evidence/autonomous-memory/runtime-at-resume.json",
+      "original_sha256": "e259d81b88d8009fe356b0d8a2c64c19e47f79dcfc5908539f20ef46cadf08e5",
+      "published_sha256": "e259d81b88d8009fe356b0d8a2c64c19e47f79dcfc5908539f20ef46cadf08e5"
+    },
+    {
+      "path": "evidence/autonomous-memory/controller-scale-audit.json",
+      "original_sha256": "589d224368553885c536265926fbf29954976a7d82ae02641ac4871590dbdaf7",
+      "published_sha256": "589d224368553885c536265926fbf29954976a7d82ae02641ac4871590dbdaf7"
+    },
+    {
+      "path": "evidence/autonomous-memory/convergence-audit.json",
+      "original_sha256": "f0c9098b457481eb0056631bf9e9c74329e3f98647db4eab7b90e004446ddc96",
+      "published_sha256": "f0c9098b457481eb0056631bf9e9c74329e3f98647db4eab7b90e004446ddc96"
+    },
+    {
+      "path": "evidence/autonomous-memory/policy-calibration-transition.json",
+      "original_sha256": "58e2b5b7a8748b88bf433794a007a92697197331b9133d18e49ac40ae32fe132",
+      "published_sha256": "58e2b5b7a8748b88bf433794a007a92697197331b9133d18e49ac40ae32fe132"
+    },
+    {
+      "path": "evidence/autonomous-memory/source-codec-transition.json",
+      "original_sha256": "74f271380bfadc3854fb0b9084771ad087c4e65aa87717d25a0c982309c494c5",
+      "published_sha256": "74f271380bfadc3854fb0b9084771ad087c4e65aa87717d25a0c982309c494c5"
+    },
+    {
+      "path": "evidence/autonomous-memory/codec-update-audit-step-32.json",
+      "original_sha256": "9fecf20420d98348190d821e20e9a3897ec448075028712d8bf8485d61686ecd",
+      "published_sha256": "9fecf20420d98348190d821e20e9a3897ec448075028712d8bf8485d61686ecd"
+    },
+    {
+      "path": "evidence/autonomous-memory/vae-categorical-probe.json",
+      "original_sha256": "c8fac6f8fd47701803f83f6fb4eead99b268511edf5706b006b7a5b48bfe95f9",
+      "published_sha256": "c8fac6f8fd47701803f83f6fb4eead99b268511edf5706b006b7a5b48bfe95f9"
+    },
+    {
+      "path": "evidence/autonomous-memory/training/memory-eval-step-32.json",
+      "original_sha256": "ab091cec39b99ea322e2d69b9a637d4ece678dea408f4c9f302ae882a4cf88cc",
+      "published_sha256": "ab091cec39b99ea322e2d69b9a637d4ece678dea408f4c9f302ae882a4cf88cc"
+    }
+  ],
+  "scope": "Development snapshot, not a completed training result."
+}

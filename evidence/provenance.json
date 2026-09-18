@@ -38,9 +38,9 @@
     },
     {
       "path": "experiments/verify_unified_memory.py",
-      "original_sha256": "faffb2aa96e302ee9caed077b3cd5bb91f46c124a7a46b3240cf300a010537af",
-      "published_sha256": "faffb2aa96e302ee9caed077b3cd5bb91f46c124a7a46b3240cf300a010537af",
-      "transformation": "Current shared experiment helper; historical result files unchanged"
+      "original_sha256": "5ad61d5667adb139ec0d35cee74ffbda6df64db8923f778cd0446ba74e1117f3",
+      "published_sha256": "5ad61d5667adb139ec0d35cee74ffbda6df64db8923f778cd0446ba74e1117f3",
+      "transformation": "Current reader instrumentation; historical result files unchanged."
     },
     {
       "path": "experiments/merge_jspace_sft.py",

@@ -34,6 +34,8 @@ def main():
     for name in ('model','train','validation','out'):p.add_argument('--'+name,type=Path,required=True)
     p.add_argument('--steps',type=int,default=1024)
     p.add_argument('--learning-rate',type=float,default=.001)
+    p.add_argument('--token-reconstruction',action='store_true')
+    p.add_argument('--adapter',type=Path)
     a=p.parse_args();torch.set_num_threads(2)
     config=json.loads((a.model/'config.json').read_text())
     mapping=json.loads((a.model/'model.safetensors.index.json').read_text())['weight_map']
@@ -44,6 +46,12 @@ def main():
         spec=config['dream_memory']['feature_vae']
         original=DreamWeightVAE(config['text_config']['hidden_size'],spec['hidden_size'],spec['latent_size']).eval()
         original.load_state_dict({n.removeprefix(prefix):readers[mapping[n]].get_tensor(n) for n in names if n.startswith(prefix)})
+        if a.adapter:
+            with safe_open(str(a.adapter),framework='pt',device='cpu') as trained,torch.no_grad():
+                for n,module in original.named_modules():
+                    if isinstance(module,nn.Linear):
+                        module.weight.add_((trained.get_tensor(prefix+n+'.adapter_B')@
+                                            trained.get_tensor(prefix+n+'.adapter_A'))*2.)
         embedding=readers[mapping[names[-1]]].get_tensor(names[-1])
         processor=AutoProcessor.from_pretrained(a.model,local_files_only=True,trust_remote_code=True)
 
@@ -59,11 +67,14 @@ def main():
             mean=raw.mean(-1,keepdim=True);scale=(raw.var(-1,unbiased=False,keepdim=True)+1e-5).sqrt()
             return ids,(raw-mean)/scale,mean,scale
 
-        train_ids,train,_,_=observations(a.train,64,4096)
+        train_ids,train,train_mean,train_scale=observations(a.train,64,4096)
         val_ids,val,val_mean,val_scale=observations(a.validation,128,2048)
         # Whole vocabulary for the bounded identity test; this is not a model
         # recall implementation and does not use evaluation answers.
         vocabulary=F.normalize(embedding.float(),dim=-1)
+        generator=torch.Generator().manual_seed(711)
+        vocabulary_ids=torch.unique(torch.cat((train_ids,torch.randint(len(vocabulary),(4096,),generator=generator))))
+        sampled_vocabulary=vocabulary[vocabulary_ids]
 
         @torch.no_grad()
         def evaluate(head):
@@ -71,20 +82,25 @@ def main():
             mse=float(F.mse_loss(decoded,val));cos=float(F.cosine_similarity(decoded,val).mean())
             selected=torch.linspace(0,len(val)-1,min(256,len(val))).long()
             restored=decoded[selected]*val_scale[selected]+val_mean[selected]
-            predicted=(F.normalize(restored,dim=-1)@vocabulary.T).argmax(-1)
+            similarities=F.normalize(restored,dim=-1)@vocabulary.T
+            predicted=similarities.argmax(-1)
             return dict(mean_reconstruction_mse=mse,zero_decoder_mse=float(val.square().mean()),
                 normalized_cosine=cos,kl_per_coordinate=float(.5*(mu.square()+logvar.exp()-1-logvar).mean()),
                 posterior_variance=float(logvar.exp().mean()),token_identity_exact=int((predicted==val_ids[selected]).sum()),
-                token_identity_n=len(selected))
+                token_identity_n=len(selected),full_vocabulary_token_ce=float(F.cross_entropy(similarities/.02,val_ids[selected])))
 
         result=dict(checkpoint_id=config['memory_checkpoint_id'],steps=a.steps,learning_rate=a.learning_rate,
             train_sha256=digest(a.train),validation_sha256=digest(a.validation),
             scope='Diagnostic only: LoRA codec optimization on bounded train-source positions; held-out source strings. Not full-model training. No weights saved.',
             source_records=dict(train=64,validation=128),positions=dict(train=len(train),validation=len(val)),
             validation_positions_with_seen_token_identity=int(torch.isin(val_ids,train_ids).sum()),
-            lora_rank=8,lora_alpha=16,batch=128,kl_weight=.001,initial=evaluate(original),arms={})
+            lora_rank=8,lora_alpha=16,batch=128,kl_weight=.001,initial=evaluate(original),arms={},
+            adapter_sha256=digest(a.adapter) if a.adapter else None,
+            token_objective_classes=len(vocabulary_ids),token_objective_temperature=.02,
+            token_objective_class_selection='All train-position identities plus 4096 seeded random vocabulary draws; validation never used for class selection.')
         dump(a.out,result);print(json.dumps(dict(stage='initial',**result['initial'])),flush=True)
-        for objective in ('existing_vae','mean_and_identity'):
+        objectives=('mean_and_identity','categorical_reconstruction') if a.token_reconstruction else ('existing_vae','mean_and_identity')
+        for objective in objectives:
             torch.manual_seed(731);head=deepcopy(original).train()
             for name,module in list(head.named_modules()):
                 if isinstance(module,nn.Linear):
@@ -96,9 +112,13 @@ def main():
                 rows=torch.randint(len(train),(128,));x=train[rows]
                 decoded,mu,logvar=head(x,sample=True)
                 loss=F.mse_loss(decoded,x)+.001*.5*(mu.square()+logvar.exp()-1-logvar).mean()
-                if objective=='mean_and_identity':
+                if objective in ('mean_and_identity','categorical_reconstruction'):
                     deterministic=head.decoder(mu)
                     loss=loss+F.mse_loss(deterministic,x)+.25*discrimination(deterministic,x,train_ids[rows])
+                if objective=='categorical_reconstruction':
+                    restored=deterministic*train_scale[rows]+train_mean[rows]
+                    logits=F.normalize(restored,dim=-1)@sampled_vocabulary.T/.02
+                    loss=loss+F.cross_entropy(logits,torch.searchsorted(vocabulary_ids,train_ids[rows]))
                 opt.zero_grad();loss.backward();opt.step()
                 time.sleep(time.monotonic()-tick)
                 if (step+1)%256==0:

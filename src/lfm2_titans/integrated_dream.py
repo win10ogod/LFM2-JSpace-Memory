@@ -35,16 +35,10 @@ class IntegratedDreamMemory(nn.Module):
         if not features:raise ValueError('dream training requires actual observed native features')
         feature_results={n:self.feature_vae.loss_terms(n,x,beta=self.spec['kl_weight']) for n,x in features.items()}
         feature_loss=torch.stack([loss for loss,_ in feature_results.values()]).mean()
-        # This auxiliary only ranks an observed item above a zero-signal item.
-        # It is not supervision for actual consolidation benefit or a learned
-        # comparison between compressed and physical recall.
-        error=terms['distortion'].detach()
-        signals=torch.zeros(2,6,device=error.device);signals[0,0]=error
-        signals[0,1]=1.;signals[0,4]=1.
-        logits,_=self.controller(signals,self.controller.initial_state())
-        schedule=F.cross_entropy(logits[None],torch.zeros(1,device=error.device,dtype=torch.long))
-        loss=terms['distortion']+self.spec['kl_weight']*terms['kl']+feature_loss+.01*schedule
-        return loss,dict(**terms,feature_vae=feature_loss,scheduler=schedule,
+        # Controller targets now come from measured fresh-query read and
+        # consolidation outcomes, not an observed-item versus dummy ranking.
+        loss=terms['distortion']+self.spec['kl_weight']*terms['kl']+feature_loss
+        return loss,dict(**terms,feature_vae=feature_loss,
             feature_terms={n:{key:value.detach() for key,value in item.items()} for n,(_,item) in feature_results.items()})
 
     def weight_replay_loss(self,deltas):

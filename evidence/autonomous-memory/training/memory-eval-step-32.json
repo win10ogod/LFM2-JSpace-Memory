@@ -1,0 +1,41 @@
+{
+  "step": 32,
+  "examples": 128,
+  "supervised_loss": 0.2068970820400864,
+  "compressed_recall_loss": 6.127383679151535,
+  "fast_only_loss": 6.158470839262009,
+  "consolidated_recall_loss": 6.1543494164943695,
+  "read_policy_loss": 1.0971911326050758,
+  "consolidation_policy_loss": 0.6931764893233776,
+  "dream_retention_kl": 0.04501121980138123,
+  "memory_loss": 5.027930170297623,
+  "read_policy_regret": 0.0,
+  "consolidated_query_gain": -0.028252795338630676,
+  "dream_auxiliary_loss": 4.776849567890167,
+  "correct_memory_nll": 0.36657374259084463,
+  "empty_memory_nll": 5.876007258892059,
+  "wrong_memory_nll": 6.408310830593109,
+  "read_action_counts": {
+    "0": 128,
+    "1": 0,
+    "2": 0
+  },
+  "consolidation_action_counts": {
+    "0": 0,
+    "1": 128
+  },
+  "codec_metrics": {
+    "distortion": 0.9719956107437611,
+    "kl": 0.026199759682640433,
+    "discrimination": 3.266881510615349,
+    "mean_distortion": 0.9719956107437611,
+    "mean_cosine": 0.0016817401265143417,
+    "zero_decoder_distortion": 0.9646678827702999,
+    "posterior_variance": 0.9649498462677002
+  },
+  "query_or_answer_given_to_writer": false,
+  "outer_meta_gradients": false,
+  "evaluation_checkpointed_layers": 30,
+  "peak_allocated_gib": 45.297430992126465,
+  "native_evaluation_loss": 5.234827041625977
+}

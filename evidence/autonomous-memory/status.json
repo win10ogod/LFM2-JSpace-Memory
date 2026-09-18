@@ -1,0 +1,20 @@
+{
+  "status": "training_in_progress",
+  "weights_published": false,
+  "source_checkpoint_id": "273e195bd4ad4c10ace63c3bcd5516bd",
+  "target_updates": 128,
+  "actual_gpu_probe": {
+    "optimizer_updates": 2,
+    "validation_examples": 128,
+    "exit_code": 0
+  },
+  "regression_checks": {
+    "current_suite": 35,
+    "post_inference_fix_subset": 12
+  },
+  "claim": "Execution and gradient flow verified. Autonomous recall and consolidation quality are still being trained and must be measured.",
+  "loss_audit": "Positive coefficients, policy entropy floor, like-for-like normalization and paired-source uncertainty checked. Convergence not established.",
+  "policy_temperature_transition_completed_at": 32,
+  "categorical_reconstruction_scheduled_after": 64,
+  "claim_of_convergence": false
+}

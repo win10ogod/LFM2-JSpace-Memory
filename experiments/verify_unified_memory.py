@@ -118,7 +118,14 @@ def read(args):
             index_options=dict(device='cuda'),max_new_tokens=64,do_sample=False)
         tokens=result['tokens'][0,inputs['input_ids'].shape[1]:]
         record(q,dict(answer=processor.tokenizer.decode(tokens,skip_special_tokens=True).strip(),generated_tokens=len(tokens),hit_generation_limit=len(tokens)==64),
-            'native-default',selected=result['loaded_units'])
+            'native-default',selected=result['loaded_units'],memory_decision=result.get('memory_decision'))
+        if hasattr(model,'use_memory_archive'):
+            # Additional explicitly named test of the ordinary model API.
+            # Existing conditions, questions and output limits are unchanged.
+            with model.use_memory_archive(archive,top_k=1,index_options=dict(device='cuda')):
+                answer=generated(processor,q['question'],model.generate)
+            record(q,answer,'bound-model-generate',memory_decision=archive.last_generation['memory_decision'],
+                selected=archive.last_generation['loaded_units'])
         archive.mount_hash_async(by_page[q['page']]['memory_hash']).result()
         record(q,generated(processor,q['question'],archive.session.generate),'oracle-cold')
         wrong=next(p for p in pages if p['page']!=q['page'])
@@ -150,6 +157,8 @@ def read(args):
             max(scores['wrong-memory']['content'],scores['empty']['content']),
         text_hash_and_visual_recalled=all(any(r['content_correct'] and r['kind']==kind
             for r in native.values()) for kind in ('text','hash','visual')))
+    bound={r['id']:r for r in rows if r['condition']=='bound-model-generate'}
+    if bound:gates['bound_generate_no_recall_lost']=all(not r['content_correct'] or bound[k]['content_correct'] for k,r in native.items())
     result=dict(scores=scores,gates=gates,passed=all(gates.values()),lost_oracle_answers=lost,
         top1_native=sum(r['native'][0]['unit_id']==r['expected'] for r in routes),
         questions=len(questions),

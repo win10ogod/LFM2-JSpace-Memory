@@ -4,6 +4,8 @@ from contextlib import contextmanager, nullcontext
 from dataclasses import replace
 import threading
 import random,time
+import uuid
+from pathlib import Path
 import torch
 from torch.nn import functional as F
 from .episodic_adapters import EpisodicAdapterBank,PhysicalMemoryUnit
@@ -33,6 +35,9 @@ class PhysicalMemorySession:
         self._loader=ThreadPoolExecutor(max_workers=1,thread_name_prefix='physical-unit-loader')
         self._state=bank.initial_unit() if _initial_unit is None else _initial_unit
         self.generation=0;self.dirty=False;self.closed=False
+        self._dream_checked_generation=0
+        self.last_memory_action=None;self.last_consolidation=None
+        self._history_root=None;self._consolidation_parent=None
 
     @contextmanager
     def pin(self):
@@ -51,10 +56,43 @@ class PhysicalMemorySession:
             raise ValueError('this architecture has one ordered dual-memory reader')
         if 'memory_state' in inputs or inputs.get('memory_write'):
             raise ValueError('session owns its state; use observe to write')
-        with self.pin() as (state,_),self.bank.use(state.adapters),torch.no_grad():
-            inputs=prepare_ordered_inputs(self.model,state.sequences,inputs,
-                max_new_tokens=inputs.get('max_new_tokens'),max_length=inputs.get('max_length'))
-            return self.model.generate(**inputs,memory_state=state.graph)
+        self._consolidate_pending()
+        from .autonomous_memory import autonomous_generate
+        query={k:inputs.pop(k) for k in ('input_ids','attention_mask') if k in inputs}
+        with self.pin() as (state,_),torch.no_grad():
+            tokens,_,receipt=autonomous_generate(self.model,self.bank,state.adapters,state.graph,
+                state.sequences,query,**inputs)
+        with self._lock:self.last_memory_action=receipt
+        return tokens
+
+    def _consolidate_pending(self):
+        """Ordinary seal/generate calls service writes; callers need no Dream API."""
+        from .autonomous_memory import autonomous_consolidate
+        with self._writes:
+            if not self.dirty or self._dream_checked_generation==self.generation:return
+            with self.pin() as (state,generation):
+                if not state.sequences:return
+                candidate,receipt=autonomous_consolidate(self.model,state)
+            if receipt['accepted']:
+                if self._history_root is None:
+                    # A standalone live session acquires its persistent root
+                    # at seal(). Never discard the pre-Dream physical weights.
+                    receipt.update(accepted=False,deferred_until_seal=True)
+                else:
+                    original=state
+                    if self.concept_lens is not None and original.address is None:
+                        address=self.concept_lens.address_memory(original,
+                            logical_time=original.graph.commits+original.adapters.commits)
+                        original=replace(original,address=address)
+                    path=self._history_root/f'{time.time_ns():020d}_{uuid.uuid4().hex}.safetensors'
+                    history=self.bank.save_unit(original,path)
+                    receipt['preserved_previous_unit']=history
+                    self._consolidation_parent=history['memory_hash']
+            with self._lock:
+                if self.generation!=generation:raise RuntimeError('memory changed during autonomous consolidation')
+                if receipt['accepted']:self._state=candidate;self.generation+=1
+                if not receipt.get('deferred_until_seal'):self._dream_checked_generation=self.generation
+                self.last_consolidation=receipt
 
     def observe(self,*,preserve_sequence=None,sequence_chunk_size=128,**inputs):
         if any(k in inputs for k in ('memory_state','memory_write')):raise ValueError('session owns write options')
@@ -109,15 +147,20 @@ class PhysicalMemorySession:
 
     def seal(self,path,*,start_new=False):
         with self._writes:
+            if self._history_root is None:self._history_root=Path(path).parent
+            self._consolidate_pending()
             if self.concept_lens is not None:
                 with self.pin() as (state,_):address=getattr(state,'address',None)
                 if address is None or getattr(address,'lens_id',None)!=self.concept_lens.lens_id:
-                    self.extract_concepts(self.concept_lens)
+                    self.extract_concepts(self.concept_lens,
+                        parents=(self._consolidation_parent,) if self._consolidation_parent else ())
             with self.pin() as (state,_):
                 receipt=self.bank.save_unit(state,path)
                 replacement=self.bank.initial_unit() if start_new else state
-                with self._lock:self._state=replacement;self.generation+=1;self.dirty=False
-                return dict(receipt,mount_generation=self.generation)
+                with self._lock:
+                    self._state=replacement;self.generation+=1;self.dirty=False
+                    if start_new:self._consolidation_parent=None
+                return dict(receipt,mount_generation=self.generation,autonomous_consolidation=self.last_consolidation)
 
     def extract_concepts(self,lens,*,event_ns=None,logical_time=None,parents=()):
         """Publish continuous native concepts without generating any labels."""
@@ -135,40 +178,21 @@ class PhysicalMemorySession:
         if not source_id or validator is None:raise ValueError('source identity and retention validator are required')
         dream=self.model.dream_memory
         with self._writes,self.pin() as (original,generation),torch.no_grad():
-            if not original.sequences:raise ValueError('dream replay requires ordered VAE observations')
-            count=sum(segment.count for segment in original.sequences)
-            if count>self.model.config.text_config.max_position_embeddings:
-                raise ValueError('dream unit exceeds native context; no observations were truncated')
-            embeddings=torch.cat([decode_segment(self.model,s) for s in original.sequences]).to(
-                device=self.model.memory.slow_weights.device,dtype=self.model.get_input_embeddings().weight.dtype)[None]
-            candidate,terms=dream.reconstruct_unit(self.model,original,sample=False)
-            with self.bank.use(candidate.adapters):
-                replay=self.model(inputs_embeds=embeddings,memory_state=candidate.graph,
-                    dream_capture=True,use_cache=False,logits_to_keep=1)
-            features=replay.dream_features
-            generated,feature_receipts=dream.replay_latents(original.latents or {},source_id=source_id)
-            if self.model.config.vision_port in generated:
-                features[self.model.config.vision_port]=generated[self.model.config.vision_port]
-            block=self.model.memory.begin(candidate.graph)
-            for name,value in features.items():block.observe(name,name,value)
-            graph,_=block.commit(create_graph=False)
-            # Reconstructed FFN factors are frozen decoder outputs here. A
-            # published session must restore independent writable leaf tensors
-            # so the next observation can still perform a physical update.
-            candidate=replace(candidate,graph=graph.detach(),address=None).detach()
+            from .autonomous_memory import replay_candidate,consolidation_observations,rank_reads
+            candidate,replay=replay_candidate(self.model,original,create_graph=False)
+            terms=replay['codec']
             accepted=bool(validator(original,candidate))
-            state=sleep_state or dream.controller.initial_state()
-            if signals is None:
-                signals=torch.tensor([[float(terms['distortion']),1.,0.,1.,1.,0.]],device=embeddings.device)
-            ranking,updated_sleep=dream.controller(signals,state)
+            if signals is not None:raise ValueError('policy signals are derived from actual source predictions')
+            logits,errors,retention=consolidation_observations(self.model,original,candidate)
+            ranking,updated_sleep,_=rank_reads(self.model,logits,errors=errors,state=sleep_state)
             if accepted:
                 with self._lock:
                     if self.closed or self.generation!=generation:raise RuntimeError('memory changed during consolidation')
                     self._state=candidate;self.generation+=1;self.dirty=True
                 updated_sleep=dream.controller.complete(updated_sleep,consolidated_work=1.)
             return dict(published=accepted,source_id=source_id,functional_validator=accepted,
-                replay_source='ordered_vae_source_and_native_features',
-                vae={k:float(v) for k,v in terms.items()},feature_replay=feature_receipts,
+                replay_source=replay['replay'],
+                vae={k:float(v) for k,v in terms.items()},source_positions=replay['source_positions'],
                 sleep_state=updated_sleep.detach(),sleep_priority=ranking.detach().cpu().tolist(),mount_generation=self.generation)
 
     def unload(self):
@@ -177,6 +201,7 @@ class PhysicalMemorySession:
             if self.closed:raise RuntimeError('session closed')
             if self.dirty:raise RuntimeError('seal unsaved memory before unloading')
             self._state=self.bank.initial_unit();self.generation+=1
+            self._consolidation_parent=None
             return dict(mount_generation=self.generation,archived_files_deleted=False)
 
     def mount_async(self,path):
@@ -195,6 +220,7 @@ class PhysicalMemorySession:
                 if self.closed:raise RuntimeError('session closed before mount completed')
                 if self.dirty:raise RuntimeError('a concurrent write must be sealed before mounting')
                 self._state=state;self.generation+=1
+                self._consolidation_parent=None
                 return dict(path=str(path),mount_generation=self.generation)
         finally:self._mount_slot.release()
 

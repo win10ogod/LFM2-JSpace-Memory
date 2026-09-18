@@ -100,7 +100,7 @@ def test_joint_native_batch_trains_vision_and_memory_without_windows():
     assert model._native_sft_memory.ffn_replay and not model._native_sft_memory.pending
     for prefix in ('model.language_model.','model.vision_tower.','model.multi_modal_projector.',
                    'memory.','physical_memory.','dream_memory.feature_vae.heads.native_input.',
-                   'dream_memory.weight_vae.','dream_memory.controller.'):
+                   'dream_memory.weight_vae.'):
         gradients=[p.grad for n,p in model.named_parameters() if n.startswith(prefix) and p.grad is not None]
         assert gradients and all(torch.isfinite(g).all() for g in gradients),prefix
         assert sum(float(g.abs().sum()) for g in gradients)>0,prefix

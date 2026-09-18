@@ -1,0 +1,17 @@
+{
+  "dream_memory.controller.": {
+    "parameters": 3947,
+    "with_gradient": 3947,
+    "gradient_norm": 0.00012502088793553412
+  },
+  "dream_memory.feature_vae.": {
+    "parameters": 161664,
+    "with_gradient": 140800,
+    "gradient_norm": 0.04051506519317627
+  },
+  "dream_memory.weight_vae.": {
+    "parameters": 21248,
+    "with_gradient": 21248,
+    "gradient_norm": 0.00019506036187522113
+  }
+}
