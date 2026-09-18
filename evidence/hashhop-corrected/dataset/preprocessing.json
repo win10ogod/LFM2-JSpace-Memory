@@ -1,0 +1,37 @@
+{
+  "status": "passed",
+  "records": 1024,
+  "validation": {
+    "records": 128,
+    "source_tokens": 103960,
+    "assistant_targets": 2110
+  },
+  "source_tokens": 924080,
+  "assistant_targets": 19709,
+  "max_input_tokens": 2294,
+  "mask_history": true,
+  "custom_sft_chunks": false,
+  "full_source_and_answer_preserved": true,
+  "native_chat_ids_identical": true,
+  "episode_spec": {
+    "user_header_ids": [
+      124899,
+      5922,
+      207
+    ],
+    "turn_end_id": 124900,
+    "write_learning_rate": 0.001,
+    "objective_version": 2,
+    "compressed_recall_weight": 0.25,
+    "reconstruction_weight": 0.05
+  },
+  "columns": [
+    "input_ids",
+    "attention_mask",
+    "labels",
+    "images",
+    "videos",
+    "audios"
+  ],
+  "loader": "llamafactory.data.loader.get_dataset"
+}

@@ -1,0 +1,44 @@
+{
+  "scores": {
+    "native-default": {
+      "n": 17,
+      "exact": 14,
+      "content": 16
+    },
+    "oracle-cold": {
+      "n": 17,
+      "exact": 14,
+      "content": 16
+    },
+    "wrong-memory": {
+      "n": 17,
+      "exact": 0,
+      "content": 0
+    },
+    "empty": {
+      "n": 17,
+      "exact": 0,
+      "content": 0
+    },
+    "source-visible": {
+      "n": 17,
+      "exact": 13,
+      "content": 14
+    }
+  },
+  "gates": {
+    "all_v6": true,
+    "body_fixed": true,
+    "cpu_gpu_same": true,
+    "hot_cold_same": true,
+    "no_oracle_recall_lost": true,
+    "recall_exceeds_negative_controls": true,
+    "text_hash_and_visual_recalled": true
+  },
+  "passed": true,
+  "lost_oracle_answers": [],
+  "top1_native": 17,
+  "questions": 17,
+  "hot_cold_identical": 17,
+  "peak_vram_gib": 11.910581111907959
+}

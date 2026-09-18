@@ -1,0 +1,117 @@
+{
+  "checkpoint_id": "273e195bd4ad4c10ace63c3bcd5516bd",
+  "steps": 1024,
+  "learning_rate": 0.001,
+  "train_sha256": "7b5788a4fce4d9af2637bcbd17e736a77ab7834c980b445506911cb42b0cef3a",
+  "validation_sha256": "e2d80ddd86fafe5f819c8f72ae0dfcc5af7d8d00e28ea2116651783889e8609c",
+  "scope": "Diagnostic only: LoRA codec optimization on bounded train-source positions; held-out source strings. Not full-model training. No weights saved.",
+  "source_records": {
+    "train": 64,
+    "validation": 128
+  },
+  "positions": {
+    "train": 4096,
+    "validation": 2048
+  },
+  "validation_positions_with_seen_token_identity": 1491,
+  "lora_rank": 8,
+  "lora_alpha": 16,
+  "batch": 128,
+  "kl_weight": 0.001,
+  "initial": {
+    "mean_reconstruction_mse": 0.9720177054405212,
+    "zero_decoder_mse": 0.9646004438400269,
+    "normalized_cosine": 0.0012140024919062853,
+    "kl_per_coordinate": 0.02617279253900051,
+    "posterior_variance": 0.9652549028396606,
+    "token_identity_exact": 0,
+    "token_identity_n": 256
+  },
+  "arms": {
+    "existing_vae": [
+      {
+        "step": 256,
+        "mean_reconstruction_mse": 0.6384936571121216,
+        "zero_decoder_mse": 0.9646004438400269,
+        "normalized_cosine": 0.5429753661155701,
+        "kl_per_coordinate": 2.8314990997314453,
+        "posterior_variance": 0.008701451122760773,
+        "token_identity_exact": 44,
+        "token_identity_n": 256
+      },
+      {
+        "step": 512,
+        "mean_reconstruction_mse": 0.6094650030136108,
+        "zero_decoder_mse": 0.9646004438400269,
+        "normalized_cosine": 0.5711624622344971,
+        "kl_per_coordinate": 2.806976795196533,
+        "posterior_variance": 0.007333035115152597,
+        "token_identity_exact": 46,
+        "token_identity_n": 256
+      },
+      {
+        "step": 768,
+        "mean_reconstruction_mse": 0.5951510071754456,
+        "zero_decoder_mse": 0.9646004438400269,
+        "normalized_cosine": 0.5859558582305908,
+        "kl_per_coordinate": 2.851839065551758,
+        "posterior_variance": 0.0067350901663303375,
+        "token_identity_exact": 49,
+        "token_identity_n": 256
+      },
+      {
+        "step": 1024,
+        "mean_reconstruction_mse": 0.587450385093689,
+        "zero_decoder_mse": 0.9646004438400269,
+        "normalized_cosine": 0.5925136208534241,
+        "kl_per_coordinate": 2.818249464035034,
+        "posterior_variance": 0.0059218392707407475,
+        "token_identity_exact": 58,
+        "token_identity_n": 256
+      }
+    ],
+    "mean_and_identity": [
+      {
+        "step": 256,
+        "mean_reconstruction_mse": 0.628899335861206,
+        "zero_decoder_mse": 0.9646004438400269,
+        "normalized_cosine": 0.5532498955726624,
+        "kl_per_coordinate": 3.580949306488037,
+        "posterior_variance": 0.012907782569527626,
+        "token_identity_exact": 45,
+        "token_identity_n": 256
+      },
+      {
+        "step": 512,
+        "mean_reconstruction_mse": 0.6084820032119751,
+        "zero_decoder_mse": 0.9646004438400269,
+        "normalized_cosine": 0.5708715319633484,
+        "kl_per_coordinate": 3.6396260261535645,
+        "posterior_variance": 0.0088685043156147,
+        "token_identity_exact": 65,
+        "token_identity_n": 256
+      },
+      {
+        "step": 768,
+        "mean_reconstruction_mse": 0.6031394004821777,
+        "zero_decoder_mse": 0.9646004438400269,
+        "normalized_cosine": 0.5768436193466187,
+        "kl_per_coordinate": 3.4434993267059326,
+        "posterior_variance": 0.007417292334139347,
+        "token_identity_exact": 77,
+        "token_identity_n": 256
+      },
+      {
+        "step": 1024,
+        "mean_reconstruction_mse": 0.6027237772941589,
+        "zero_decoder_mse": 0.9646004438400269,
+        "normalized_cosine": 0.5767599940299988,
+        "kl_per_coordinate": 3.4101126194000244,
+        "posterior_variance": 0.0068630650639534,
+        "token_identity_exact": 76,
+        "token_identity_n": 256
+      }
+    ]
+  },
+  "completed": true
+}

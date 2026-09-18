@@ -1,0 +1,633 @@
+{
+  "previous": {
+    "checkpoint_id": "0b5ec95eac3849e38867dcba9048c623",
+    "body_fixed": true,
+    "hash_scores": {
+      "native-routed": {
+        "n": 42,
+        "exact": 0,
+        "by_hash_length": {
+          "8": {
+            "n": 18,
+            "exact": 0
+          },
+          "16": {
+            "n": 24,
+            "exact": 0
+          }
+        },
+        "by_hops": {
+          "1": {
+            "n": 4,
+            "exact": 0
+          },
+          "2": {
+            "n": 10,
+            "exact": 0
+          },
+          "4": {
+            "n": 10,
+            "exact": 0
+          },
+          "8": {
+            "n": 10,
+            "exact": 0
+          },
+          "10": {
+            "n": 8,
+            "exact": 0
+          }
+        },
+        "cross_unit": {
+          "n": 6,
+          "exact": 0
+        }
+      },
+      "oracle-units": {
+        "n": 42,
+        "exact": 1,
+        "by_hash_length": {
+          "8": {
+            "n": 18,
+            "exact": 1
+          },
+          "16": {
+            "n": 24,
+            "exact": 0
+          }
+        },
+        "by_hops": {
+          "1": {
+            "n": 4,
+            "exact": 1
+          },
+          "2": {
+            "n": 10,
+            "exact": 0
+          },
+          "4": {
+            "n": 10,
+            "exact": 0
+          },
+          "8": {
+            "n": 10,
+            "exact": 0
+          },
+          "10": {
+            "n": 8,
+            "exact": 0
+          }
+        },
+        "cross_unit": {
+          "n": 6,
+          "exact": 0
+        }
+      },
+      "wrong-unit": {
+        "n": 42,
+        "exact": 0,
+        "by_hash_length": {
+          "8": {
+            "n": 18,
+            "exact": 0
+          },
+          "16": {
+            "n": 24,
+            "exact": 0
+          }
+        },
+        "by_hops": {
+          "1": {
+            "n": 4,
+            "exact": 0
+          },
+          "2": {
+            "n": 10,
+            "exact": 0
+          },
+          "4": {
+            "n": 10,
+            "exact": 0
+          },
+          "8": {
+            "n": 10,
+            "exact": 0
+          },
+          "10": {
+            "n": 8,
+            "exact": 0
+          }
+        },
+        "cross_unit": {
+          "n": 6,
+          "exact": 0
+        }
+      },
+      "empty": {
+        "n": 42,
+        "exact": 0,
+        "by_hash_length": {
+          "8": {
+            "n": 18,
+            "exact": 0
+          },
+          "16": {
+            "n": 24,
+            "exact": 0
+          }
+        },
+        "by_hops": {
+          "1": {
+            "n": 4,
+            "exact": 0
+          },
+          "2": {
+            "n": 10,
+            "exact": 0
+          },
+          "4": {
+            "n": 10,
+            "exact": 0
+          },
+          "8": {
+            "n": 10,
+            "exact": 0
+          },
+          "10": {
+            "n": 8,
+            "exact": 0
+          }
+        },
+        "cross_unit": {
+          "n": 6,
+          "exact": 0
+        }
+      },
+      "source-visible": {
+        "n": 42,
+        "exact": 4,
+        "by_hash_length": {
+          "8": {
+            "n": 18,
+            "exact": 2
+          },
+          "16": {
+            "n": 24,
+            "exact": 2
+          }
+        },
+        "by_hops": {
+          "1": {
+            "n": 4,
+            "exact": 4
+          },
+          "2": {
+            "n": 10,
+            "exact": 0
+          },
+          "4": {
+            "n": 10,
+            "exact": 0
+          },
+          "8": {
+            "n": 10,
+            "exact": 0
+          },
+          "10": {
+            "n": 8,
+            "exact": 0
+          }
+        },
+        "cross_unit": {
+          "n": 6,
+          "exact": 0
+        }
+      },
+      "oracle-physical-only": {
+        "n": 12,
+        "exact": 0,
+        "by_hash_length": {
+          "8": {
+            "n": 5,
+            "exact": 0
+          },
+          "16": {
+            "n": 7,
+            "exact": 0
+          }
+        },
+        "by_hops": {
+          "1": {
+            "n": 2,
+            "exact": 0
+          },
+          "4": {
+            "n": 6,
+            "exact": 0
+          },
+          "8": {
+            "n": 4,
+            "exact": 0
+          }
+        },
+        "cross_unit": {
+          "n": 2,
+          "exact": 0
+        }
+      },
+      "oracle-latent-only": {
+        "n": 12,
+        "exact": 1,
+        "by_hash_length": {
+          "8": {
+            "n": 5,
+            "exact": 1
+          },
+          "16": {
+            "n": 7,
+            "exact": 0
+          }
+        },
+        "by_hops": {
+          "1": {
+            "n": 2,
+            "exact": 1
+          },
+          "4": {
+            "n": 6,
+            "exact": 0
+          },
+          "8": {
+            "n": 4,
+            "exact": 0
+          }
+        },
+        "cross_unit": {
+          "n": 2,
+          "exact": 0
+        }
+      },
+      "oracle-codes-and-weights": {
+        "n": 12,
+        "exact": 0,
+        "by_hash_length": {
+          "8": {
+            "n": 5,
+            "exact": 0
+          },
+          "16": {
+            "n": 7,
+            "exact": 0
+          }
+        },
+        "by_hops": {
+          "1": {
+            "n": 2,
+            "exact": 0
+          },
+          "4": {
+            "n": 6,
+            "exact": 0
+          },
+          "8": {
+            "n": 4,
+            "exact": 0
+          }
+        },
+        "cross_unit": {
+          "n": 2,
+          "exact": 0
+        }
+      }
+    },
+    "diagnostic_failure_counts": {
+      "native_decoding": 38,
+      "memory_read": 3,
+      "routing_or_composition": 1
+    },
+    "coherence_outputs": 32,
+    "generation_limit_hits": 53,
+    "coherence_claim": "Pending manual review of full multi-turn outputs; heuristics do not establish coherence",
+    "component_ablation_scope": "hash tables 0/1 at hops 1,4,8; cross-unit hop 4; both coherence dialogues; correct-unit oracle selection",
+    "native_routes_with_all_required_sources": 27,
+    "peak_vram_gib": 12.366234302520752,
+    "training_inputs_never_opened": true,
+    "protocol_sha256": "f98f498b7d54e72c719ab32449aacdb8248719cb3f75cab895e4ac57b5f3d045"
+  },
+  "corrected": {
+    "checkpoint_id": "273e195bd4ad4c10ace63c3bcd5516bd",
+    "body_fixed": true,
+    "hash_scores": {
+      "native-routed": {
+        "n": 42,
+        "exact": 13,
+        "by_hash_length": {
+          "8": {
+            "n": 18,
+            "exact": 4
+          },
+          "16": {
+            "n": 24,
+            "exact": 9
+          }
+        },
+        "by_hops": {
+          "1": {
+            "n": 4,
+            "exact": 3
+          },
+          "2": {
+            "n": 10,
+            "exact": 3
+          },
+          "4": {
+            "n": 10,
+            "exact": 3
+          },
+          "8": {
+            "n": 10,
+            "exact": 2
+          },
+          "10": {
+            "n": 8,
+            "exact": 2
+          }
+        },
+        "cross_unit": {
+          "n": 6,
+          "exact": 0
+        }
+      },
+      "oracle-units": {
+        "n": 42,
+        "exact": 20,
+        "by_hash_length": {
+          "8": {
+            "n": 18,
+            "exact": 8
+          },
+          "16": {
+            "n": 24,
+            "exact": 12
+          }
+        },
+        "by_hops": {
+          "1": {
+            "n": 4,
+            "exact": 4
+          },
+          "2": {
+            "n": 10,
+            "exact": 5
+          },
+          "4": {
+            "n": 10,
+            "exact": 5
+          },
+          "8": {
+            "n": 10,
+            "exact": 3
+          },
+          "10": {
+            "n": 8,
+            "exact": 3
+          }
+        },
+        "cross_unit": {
+          "n": 6,
+          "exact": 3
+        }
+      },
+      "wrong-unit": {
+        "n": 42,
+        "exact": 0,
+        "by_hash_length": {
+          "8": {
+            "n": 18,
+            "exact": 0
+          },
+          "16": {
+            "n": 24,
+            "exact": 0
+          }
+        },
+        "by_hops": {
+          "1": {
+            "n": 4,
+            "exact": 0
+          },
+          "2": {
+            "n": 10,
+            "exact": 0
+          },
+          "4": {
+            "n": 10,
+            "exact": 0
+          },
+          "8": {
+            "n": 10,
+            "exact": 0
+          },
+          "10": {
+            "n": 8,
+            "exact": 0
+          }
+        },
+        "cross_unit": {
+          "n": 6,
+          "exact": 0
+        }
+      },
+      "empty": {
+        "n": 42,
+        "exact": 0,
+        "by_hash_length": {
+          "8": {
+            "n": 18,
+            "exact": 0
+          },
+          "16": {
+            "n": 24,
+            "exact": 0
+          }
+        },
+        "by_hops": {
+          "1": {
+            "n": 4,
+            "exact": 0
+          },
+          "2": {
+            "n": 10,
+            "exact": 0
+          },
+          "4": {
+            "n": 10,
+            "exact": 0
+          },
+          "8": {
+            "n": 10,
+            "exact": 0
+          },
+          "10": {
+            "n": 8,
+            "exact": 0
+          }
+        },
+        "cross_unit": {
+          "n": 6,
+          "exact": 0
+        }
+      },
+      "source-visible": {
+        "n": 42,
+        "exact": 19,
+        "by_hash_length": {
+          "8": {
+            "n": 18,
+            "exact": 7
+          },
+          "16": {
+            "n": 24,
+            "exact": 12
+          }
+        },
+        "by_hops": {
+          "1": {
+            "n": 4,
+            "exact": 4
+          },
+          "2": {
+            "n": 10,
+            "exact": 6
+          },
+          "4": {
+            "n": 10,
+            "exact": 4
+          },
+          "8": {
+            "n": 10,
+            "exact": 2
+          },
+          "10": {
+            "n": 8,
+            "exact": 3
+          }
+        },
+        "cross_unit": {
+          "n": 6,
+          "exact": 4
+        }
+      },
+      "oracle-physical-only": {
+        "n": 12,
+        "exact": 0,
+        "by_hash_length": {
+          "8": {
+            "n": 5,
+            "exact": 0
+          },
+          "16": {
+            "n": 7,
+            "exact": 0
+          }
+        },
+        "by_hops": {
+          "1": {
+            "n": 2,
+            "exact": 0
+          },
+          "4": {
+            "n": 6,
+            "exact": 0
+          },
+          "8": {
+            "n": 4,
+            "exact": 0
+          }
+        },
+        "cross_unit": {
+          "n": 2,
+          "exact": 0
+        }
+      },
+      "oracle-latent-only": {
+        "n": 12,
+        "exact": 5,
+        "by_hash_length": {
+          "8": {
+            "n": 5,
+            "exact": 2
+          },
+          "16": {
+            "n": 7,
+            "exact": 3
+          }
+        },
+        "by_hops": {
+          "1": {
+            "n": 2,
+            "exact": 2
+          },
+          "4": {
+            "n": 6,
+            "exact": 3
+          },
+          "8": {
+            "n": 4,
+            "exact": 0
+          }
+        },
+        "cross_unit": {
+          "n": 2,
+          "exact": 1
+        }
+      },
+      "oracle-codes-and-weights": {
+        "n": 12,
+        "exact": 0,
+        "by_hash_length": {
+          "8": {
+            "n": 5,
+            "exact": 0
+          },
+          "16": {
+            "n": 7,
+            "exact": 0
+          }
+        },
+        "by_hops": {
+          "1": {
+            "n": 2,
+            "exact": 0
+          },
+          "4": {
+            "n": 6,
+            "exact": 0
+          },
+          "8": {
+            "n": 4,
+            "exact": 0
+          }
+        },
+        "cross_unit": {
+          "n": 2,
+          "exact": 0
+        }
+      }
+    },
+    "diagnostic_failure_counts": {
+      "native_decoding": 23,
+      "memory_read": 2,
+      "routing_or_composition": 7
+    },
+    "coherence_outputs": 32,
+    "generation_limit_hits": 11,
+    "coherence_claim": "Pending manual review of full multi-turn outputs; heuristics do not establish coherence",
+    "component_ablation_scope": "hash tables 0/1 at hops 1,4,8; cross-unit hop 4; both coherence dialogues; correct-unit oracle selection",
+    "native_routes_with_all_required_sources": 31,
+    "peak_vram_gib": 12.366234302520752,
+    "training_inputs_never_opened": true,
+    "protocol_sha256": "f98f498b7d54e72c719ab32449aacdb8248719cb3f75cab895e4ac57b5f3d045"
+  },
+  "exact_change": 13
+}

@@ -1,0 +1,395 @@
+{
+  "checkpoint_id": "273e195bd4ad4c10ace63c3bcd5516bd",
+  "seed": 17,
+  "scope": "Three specified units: text-0, chain, visual-0; six existing probes, cap 64. No model or archive updates.",
+  "units": [
+    {
+      "page": "text-0",
+      "source_unit": "01789720359680687722_232f7bae6b5d432fa2c77a26142598be",
+      "vae": {
+        "distortion": 1.0032274723052979,
+        "kl": 0.03699951991438866
+      },
+      "feature_replay": {
+        "language_14": {
+          "proposed": 35,
+          "accepted": 0,
+          "source_id": "01789720359680687722_232f7bae6b5d432fa2c77a26142598be",
+          "min_cosine": 0.8,
+          "source": "persisted_vae_posterior",
+          "criterion": "latent_cycle_consistency_only"
+        },
+        "language_26": {
+          "proposed": 35,
+          "accepted": 12,
+          "source_id": "01789720359680687722_232f7bae6b5d432fa2c77a26142598be",
+          "min_cosine": 0.8,
+          "source": "persisted_vae_posterior",
+          "criterion": "latent_cycle_consistency_only"
+        },
+        "language_4": {
+          "proposed": 35,
+          "accepted": 0,
+          "source_id": "01789720359680687722_232f7bae6b5d432fa2c77a26142598be",
+          "min_cosine": 0.8,
+          "source": "persisted_vae_posterior",
+          "criterion": "latent_cycle_consistency_only"
+        }
+      },
+      "graph_relative_change": 0.006385366432368755,
+      "adapter_change_norm": 1.3693108558654785,
+      "all_sequence_checksums_preserved": true,
+      "candidate_factors_writable": false,
+      "published": false
+    },
+    {
+      "page": "chain",
+      "source_unit": "01789720383789017450_eb1994e84c0d4aa8988c6f172272e97d",
+      "vae": {
+        "distortion": 1.003096580505371,
+        "kl": 0.03626614436507225
+      },
+      "feature_replay": {
+        "language_14": {
+          "proposed": 449,
+          "accepted": 0,
+          "source_id": "01789720383789017450_eb1994e84c0d4aa8988c6f172272e97d",
+          "min_cosine": 0.8,
+          "source": "persisted_vae_posterior",
+          "criterion": "latent_cycle_consistency_only"
+        },
+        "language_26": {
+          "proposed": 449,
+          "accepted": 42,
+          "source_id": "01789720383789017450_eb1994e84c0d4aa8988c6f172272e97d",
+          "min_cosine": 0.8,
+          "source": "persisted_vae_posterior",
+          "criterion": "latent_cycle_consistency_only"
+        },
+        "language_4": {
+          "proposed": 449,
+          "accepted": 0,
+          "source_id": "01789720383789017450_eb1994e84c0d4aa8988c6f172272e97d",
+          "min_cosine": 0.8,
+          "source": "persisted_vae_posterior",
+          "criterion": "latent_cycle_consistency_only"
+        }
+      },
+      "graph_relative_change": 0.005659566726535559,
+      "adapter_change_norm": 1.3684977293014526,
+      "all_sequence_checksums_preserved": true,
+      "candidate_factors_writable": false,
+      "published": false
+    },
+    {
+      "page": "visual-0",
+      "source_unit": "01789720391793421991_2fd53fabd96149819c354d178da2bedf",
+      "vae": {
+        "distortion": 0.055381350219249725,
+        "kl": 0.0036728449631482363
+      },
+      "feature_replay": {
+        "language_14": {
+          "proposed": 96,
+          "accepted": 0,
+          "source_id": "01789720391793421991_2fd53fabd96149819c354d178da2bedf",
+          "min_cosine": 0.8,
+          "source": "persisted_vae_posterior",
+          "criterion": "latent_cycle_consistency_only"
+        },
+        "language_26": {
+          "proposed": 96,
+          "accepted": 3,
+          "source_id": "01789720391793421991_2fd53fabd96149819c354d178da2bedf",
+          "min_cosine": 0.8,
+          "source": "persisted_vae_posterior",
+          "criterion": "latent_cycle_consistency_only"
+        },
+        "language_4": {
+          "proposed": 96,
+          "accepted": 0,
+          "source_id": "01789720391793421991_2fd53fabd96149819c354d178da2bedf",
+          "min_cosine": 0.8,
+          "source": "persisted_vae_posterior",
+          "criterion": "latent_cycle_consistency_only"
+        },
+        "visual": {
+          "proposed": 256,
+          "accepted": 0,
+          "source_id": "01789720391793421991_2fd53fabd96149819c354d178da2bedf",
+          "min_cosine": 0.8,
+          "source": "persisted_vae_posterior",
+          "criterion": "latent_cycle_consistency_only"
+        }
+      },
+      "graph_relative_change": 0.007069529499858618,
+      "adapter_change_norm": 7.22118386420334e-07,
+      "all_sequence_checksums_preserved": true,
+      "candidate_factors_writable": false,
+      "published": false
+    }
+  ],
+  "answers": [
+    {
+      "id": "code-0",
+      "page": "text-0",
+      "condition": "before-complete",
+      "expected": "147349",
+      "answer": "147349",
+      "generated_tokens": 3,
+      "hit_generation_limit": false,
+      "exact": true
+    },
+    {
+      "id": "tag-0",
+      "page": "text-0",
+      "condition": "before-complete",
+      "expected": "lzQvjVHP",
+      "answer": "lzQvjVHP",
+      "generated_tokens": 6,
+      "hit_generation_limit": false,
+      "exact": true
+    },
+    {
+      "id": "code-0",
+      "page": "text-0",
+      "condition": "after-complete",
+      "expected": "147349",
+      "answer": "147349",
+      "generated_tokens": 3,
+      "hit_generation_limit": false,
+      "exact": true
+    },
+    {
+      "id": "tag-0",
+      "page": "text-0",
+      "condition": "after-complete",
+      "expected": "lzQvjVHP",
+      "answer": "lzQvjVHP",
+      "generated_tokens": 6,
+      "hit_generation_limit": false,
+      "exact": true
+    },
+    {
+      "id": "code-0",
+      "page": "text-0",
+      "condition": "before-physical-only",
+      "expected": "147349",
+      "answer": "123456",
+      "generated_tokens": 3,
+      "hit_generation_limit": false,
+      "exact": false
+    },
+    {
+      "id": "tag-0",
+      "page": "text-0",
+      "condition": "before-physical-only",
+      "expected": "lzQvjVHP",
+      "answer": "ZJZZZZZZ",
+      "generated_tokens": 6,
+      "hit_generation_limit": false,
+      "exact": false
+    },
+    {
+      "id": "code-0",
+      "page": "text-0",
+      "condition": "after-physical-only",
+      "expected": "147349",
+      "answer": "123456",
+      "generated_tokens": 3,
+      "hit_generation_limit": false,
+      "exact": false
+    },
+    {
+      "id": "tag-0",
+      "page": "text-0",
+      "condition": "after-physical-only",
+      "expected": "lzQvjVHP",
+      "answer": "ZJZZZZZZ",
+      "generated_tokens": 6,
+      "hit_generation_limit": false,
+      "exact": false
+    },
+    {
+      "id": "hop1",
+      "page": "chain",
+      "condition": "before-complete",
+      "expected": "7cTH8Lfm",
+      "answer": "7cTH8Lfm",
+      "generated_tokens": 7,
+      "hit_generation_limit": false,
+      "exact": true
+    },
+    {
+      "id": "hop3-all",
+      "page": "chain",
+      "condition": "before-complete",
+      "expected": "7cTH8Lfm dr0ILnxJ XG98d9fP",
+      "answer": "7cTH8Lfm dr0ILnxJ XG98d9fP",
+      "generated_tokens": 19,
+      "hit_generation_limit": false,
+      "exact": true
+    },
+    {
+      "id": "hop3-final",
+      "page": "chain",
+      "condition": "before-complete",
+      "expected": "XG98d9fP",
+      "answer": "7cTH8Lfm",
+      "generated_tokens": 7,
+      "hit_generation_limit": false,
+      "exact": false
+    },
+    {
+      "id": "hop1",
+      "page": "chain",
+      "condition": "after-complete",
+      "expected": "7cTH8Lfm",
+      "answer": "7cTH8Lfm",
+      "generated_tokens": 7,
+      "hit_generation_limit": false,
+      "exact": true
+    },
+    {
+      "id": "hop3-all",
+      "page": "chain",
+      "condition": "after-complete",
+      "expected": "7cTH8Lfm dr0ILnxJ XG98d9fP",
+      "answer": "7cTH8Lfm dr0ILnxJ XG98d9fP",
+      "generated_tokens": 19,
+      "hit_generation_limit": false,
+      "exact": true
+    },
+    {
+      "id": "hop3-final",
+      "page": "chain",
+      "condition": "after-complete",
+      "expected": "XG98d9fP",
+      "answer": "7cTH8Lfm",
+      "generated_tokens": 7,
+      "hit_generation_limit": false,
+      "exact": false
+    },
+    {
+      "id": "hop1",
+      "page": "chain",
+      "condition": "before-physical-only",
+      "expected": "7cTH8Lfm",
+      "answer": "YI2Tf7zm",
+      "generated_tokens": 7,
+      "hit_generation_limit": false,
+      "exact": false
+    },
+    {
+      "id": "hop3-all",
+      "page": "chain",
+      "condition": "before-physical-only",
+      "expected": "7cTH8Lfm dr0ILnxJ XG98d9fP",
+      "answer": "YI2Tf7zm TY2TGJG YI2TGJG",
+      "generated_tokens": 21,
+      "hit_generation_limit": false,
+      "exact": false
+    },
+    {
+      "id": "hop3-final",
+      "page": "chain",
+      "condition": "before-physical-only",
+      "expected": "XG98d9fP",
+      "answer": "YI2Tf7zm",
+      "generated_tokens": 7,
+      "hit_generation_limit": false,
+      "exact": false
+    },
+    {
+      "id": "hop1",
+      "page": "chain",
+      "condition": "after-physical-only",
+      "expected": "7cTH8Lfm",
+      "answer": "YI2Tf7zm",
+      "generated_tokens": 7,
+      "hit_generation_limit": false,
+      "exact": false
+    },
+    {
+      "id": "hop3-all",
+      "page": "chain",
+      "condition": "after-physical-only",
+      "expected": "7cTH8Lfm dr0ILnxJ XG98d9fP",
+      "answer": "YI2Tf7zm TY2TGJG YI2TGJG",
+      "generated_tokens": 21,
+      "hit_generation_limit": false,
+      "exact": false
+    },
+    {
+      "id": "hop3-final",
+      "page": "chain",
+      "condition": "after-physical-only",
+      "expected": "XG98d9fP",
+      "answer": "YI2Tf7zm",
+      "generated_tokens": 7,
+      "hit_generation_limit": false,
+      "exact": false
+    },
+    {
+      "id": "visual-0",
+      "page": "visual-0",
+      "condition": "before-complete",
+      "expected": "紅色圓形",
+      "answer": "顏色：紅色\n形狀：圓形",
+      "generated_tokens": 14,
+      "hit_generation_limit": false,
+      "exact": false
+    },
+    {
+      "id": "visual-0",
+      "page": "visual-0",
+      "condition": "after-complete",
+      "expected": "紅色圓形",
+      "answer": "顏色：紅色\n形狀：圓形",
+      "generated_tokens": 14,
+      "hit_generation_limit": false,
+      "exact": false
+    },
+    {
+      "id": "visual-0",
+      "page": "visual-0",
+      "condition": "before-physical-only",
+      "expected": "紅色圓形",
+      "answer": "顏色：紅色\n形狀：圓形",
+      "generated_tokens": 14,
+      "hit_generation_limit": false,
+      "exact": false
+    },
+    {
+      "id": "visual-0",
+      "page": "visual-0",
+      "condition": "after-physical-only",
+      "expected": "紅色圓形",
+      "answer": "顏色：紅色\n形狀：圓形",
+      "generated_tokens": 14,
+      "hit_generation_limit": false,
+      "exact": false
+    }
+  ],
+  "scores": {
+    "before-complete": {
+      "n": 6,
+      "exact": 4
+    },
+    "after-complete": {
+      "n": 6,
+      "exact": 4
+    },
+    "before-physical-only": {
+      "n": 6,
+      "exact": 0
+    },
+    "after-physical-only": {
+      "n": 6,
+      "exact": 0
+    }
+  },
+  "body_fixed": true,
+  "questions_sha256": "ba6c7a66435d8d28e800b66d63dfc1a9daa0d3ee2e8e9f341a44a0ed8241425b",
+  "completed": true
+}

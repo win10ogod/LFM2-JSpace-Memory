@@ -65,22 +65,77 @@ def test_actual_write_then_read_reaches_both_memories_without_source_cache():
     observed=[]
     def capture(module,args,kwargs):
         observed.append(dict(ids=kwargs.get('input_ids'),embedding_shape=tuple(kwargs['inputs_embeds'].shape),
+                             embeddings=kwargs['inputs_embeds'].detach().clone(),grad_enabled=torch.is_grad_enabled(),
                              cache=kwargs.get('past_key_values'),use_cache=kwargs.get('use_cache')))
     handle=model.model.language_model.register_forward_pre_hook(capture,with_kwargs=True)
     batch=inputs();output=model(**batch)
     output.loss.backward();handle.remove()
     report=model._native_sft_memory.last
-    assert len(observed)==5  # source; dual recall; fast-only; empty; wrong unit.
+    assert len(observed)==7  # observation, FFN learn; complete/code recall and three read-only controls.
+    assert [r['grad_enabled'] for r in observed]==[False,True,True,True,False,False,False]
+    torch.testing.assert_close(observed[2]['embeddings'][:,1:5],observed[0]['embeddings'],rtol=0,atol=0)
     assert all(row['cache'] is None and row['use_cache'] is False for row in observed)
     assert report['source_observation_tokens']==8 and report['stored_posterior_positions']==8
     assert report['query_or_answer_given_to_writer'] is False
     assert report['raw_source_given_to_read'] is False
-    assert report['sequence_residual_patches_used_in_training'] is False
+    assert report['sequence_residual_patches_used_in_training'] is True
+    assert report['negative_control_gradients'] is False
+    assert report['write_order']=='observe_graph_then_learn_ffn'
     for prefix in ['memory.','physical_memory.','dream_memory.feature_vae.heads.native_input.encoder',
                    'dream_memory.feature_vae.heads.native_input.decoder']:
         grads=[p.grad for name,p in model.named_parameters() if name.startswith(prefix) and p.grad is not None]
         assert grads and all(torch.isfinite(g).all() for g in grads),prefix
         assert sum(float(g.abs().sum()) for g in grads)>0,prefix
+
+
+def test_native_eval_executes_memory_writes_without_updating_parameters():
+    model=recall_model().eval();versions={n:p._version for n,p in model.named_parameters()}
+    with torch.no_grad():
+        first=model(**inputs());second=model(**inputs())
+    assert not first.loss.requires_grad and not first.logits.requires_grad
+    torch.testing.assert_close(first.loss,second.loss,rtol=0,atol=0)
+    assert model._native_sft_memory.last['source_forward_passes']==2
+    assert len(model._native_sft_memory.eval_reports)==2
+    assert all(p._version==versions[n] for n,p in model.named_parameters())
+
+
+def test_eval_source_checkpointing_matches_reference_and_restores_modes(monkeypatch):
+    from contextlib import contextmanager
+    import lfm2_titans.memory_recall_training as objective
+    model=recall_model().eval()
+    model.gradient_checkpointing_enable(gradient_checkpointing_kwargs={'use_reentrant':False})
+    modes={id(m):m.training for m in model.modules()}
+    flags={id(p):p.requires_grad for p in model.parameters()}
+    with torch.no_grad():optimized=model(**inputs())
+    assert model._native_sft_memory.last['evaluation_checkpointed_layers']==3
+    assert model._native_sft_memory.last['outer_meta_gradients'] is False
+    assert all(m.training==modes[id(m)] for m in model.modules())
+    assert all(p.requires_grad==flags[id(p)] and p.grad is None for p in model.parameters())
+    @contextmanager
+    def reference_context(model):yield 0
+    monkeypatch.setattr(objective,'evaluation_write_context',reference_context)
+    with torch.no_grad():reference=model(**inputs())
+    torch.testing.assert_close(optimized.loss,reference.loss,rtol=1e-6,atol=1e-6)
+    torch.testing.assert_close(optimized.logits,reference.logits,rtol=1e-6,atol=1e-6)
+    # Reproduce the former evaluation's full meta-graph, while keeping every
+    # child (including VAE sampling and dropout) in evaluation mode.
+    model.training=True
+    try:
+        with torch.no_grad():full_graph_reference=model(**inputs())
+    finally:model.training=False
+    torch.testing.assert_close(optimized.loss,full_graph_reference.loss,rtol=1e-6,atol=1e-6)
+    torch.testing.assert_close(optimized.logits,full_graph_reference.logits,rtol=1e-6,atol=1e-6)
+
+
+def test_positive_objective_has_no_negative_context_gradient():
+    from lfm2_titans.memory_recall_training import positive_recall_objective
+    good=torch.tensor(3.,requires_grad=True);compressed=torch.tensor(4.,requires_grad=True)
+    reconstruction=torch.tensor(1.,requires_grad=True);wrong=torch.tensor(9.,requires_grad=True)
+    loss=positive_recall_objective(good,compressed,reconstruction,{})
+    loss.backward()
+    assert good.grad==1 and compressed.grad==.25
+    assert reconstruction.grad>0 and wrong.grad is None
+    assert wrong_memory_rows([dict(source=torch.tensor([i])) for i in range(8)])==[1,2,3,4,5,6,7,0]
 
 
 def test_changing_future_queries_and_answers_cannot_change_written_memory(monkeypatch):
@@ -117,7 +172,8 @@ def test_changing_future_queries_and_answers_cannot_change_written_memory(monkey
         for x,y in zip(a,b):torch.testing.assert_close(x,y,rtol=0,atol=0)
 
 
-def test_lora_compiled_writer_supports_two_phase_checkpointed_backward(tmp_path):
+@pytest.mark.parametrize('scope',['memory','all'])
+def test_lora_compiled_writer_supports_two_phase_checkpointed_backward(tmp_path,scope):
     import os,sys
     from types import SimpleNamespace
     os.environ['DISABLE_VERSION_CHECK']='1'
@@ -134,10 +190,10 @@ def test_lora_compiled_writer_supports_two_phase_checkpointed_backward(tmp_path)
     native.memory=MultiportConnectome(old.nodes,old.indices,old.specs,**options)
     native.memory.load_state_dict(old.state_dict(),strict=False);native.config.memory_parameters=options
     model,_,_,_,_=apply_sft_lora(native,factory,rank=2)
-    native.config.native_memory_recall['train_scope']='memory'
+    native.config.native_memory_recall['train_scope']=scope
     apply_training_scope(native)
     frozen={name:p.detach().clone() for name,p in native.model.named_parameters()}
-    assert not any(p.requires_grad for p in native.model.parameters())
+    assert any(p.requires_grad for p in native.model.parameters())==(scope=='all')
     native.gradient_checkpointing_enable(gradient_checkpointing_kwargs={'use_reentrant':False})
     optimizer=torch.optim.AdamW([p for p in model.parameters() if p.requires_grad],lr=1e-4)
     for _ in range(2):
@@ -145,4 +201,7 @@ def test_lora_compiled_writer_supports_two_phase_checkpointed_backward(tmp_path)
         gradients=[p.grad for p in model.parameters() if p.requires_grad and p.grad is not None]
         assert gradients and all(torch.isfinite(g).all() for g in gradients)
         torch.nn.utils.clip_grad_norm_(model.parameters(),1.);optimizer.step()
-    for name,p in native.model.named_parameters():torch.testing.assert_close(p,frozen[name],rtol=0,atol=0)
+    if scope=='memory':
+        for name,p in native.model.named_parameters():torch.testing.assert_close(p,frozen[name],rtol=0,atol=0)
+    else:
+        assert any(not torch.equal(p,frozen[n]) for n,p in native.model.named_parameters())

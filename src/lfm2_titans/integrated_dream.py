@@ -31,22 +31,25 @@ class IntegratedDreamMemory(nn.Module):
         return replace(unit,adapters=adapters,graph=graph),dict(distortion=distortion,kl=kl)
 
     def training_loss(self,graph_delta,features):
-        _,terms=self.weight_vae.reconstruct(graph_delta.detach().float(),sample=True)
+        _,terms=self.weight_vae.reconstruct(graph_delta.detach().float(),sample=self.training)
         if not features:raise ValueError('dream training requires actual observed native features')
-        feature_loss=torch.stack([self.feature_vae.loss(n,x,beta=self.spec['kl_weight']) for n,x in features.items()]).mean()
-        # A source's measured reconstruction error supplies its scheduling
-        # target. No downstream test answer enters the scheduler.
+        feature_results={n:self.feature_vae.loss_terms(n,x,beta=self.spec['kl_weight']) for n,x in features.items()}
+        feature_loss=torch.stack([loss for loss,_ in feature_results.values()]).mean()
+        # This auxiliary only ranks an observed item above a zero-signal item.
+        # It is not supervision for actual consolidation benefit or a learned
+        # comparison between compressed and physical recall.
         error=terms['distortion'].detach()
         signals=torch.zeros(2,6,device=error.device);signals[0,0]=error
         signals[0,1]=1.;signals[0,4]=1.
         logits,_=self.controller(signals,self.controller.initial_state())
         schedule=F.cross_entropy(logits[None],torch.zeros(1,device=error.device,dtype=torch.long))
         loss=terms['distortion']+self.spec['kl_weight']*terms['kl']+feature_loss+.01*schedule
-        return loss,dict(**terms,feature_vae=feature_loss,scheduler=schedule)
+        return loss,dict(**terms,feature_vae=feature_loss,scheduler=schedule,
+            feature_terms={n:{key:value.detach() for key,value in item.items()} for n,(_,item) in feature_results.items()})
 
     def weight_replay_loss(self,deltas):
         """Train the weight codec on real FFN updates from the preceding batch."""
-        terms=[self.weight_vae.reconstruct(value.detach().float(),sample=True)[1] for value in deltas]
+        terms=[self.weight_vae.reconstruct(value.detach().float(),sample=self.training)[1] for value in deltas]
         if not terms:return next(self.parameters()).new_zeros(())
         return torch.stack([t['distortion']+self.spec['kl_weight']*t['kl'] for t in terms]).mean()
 

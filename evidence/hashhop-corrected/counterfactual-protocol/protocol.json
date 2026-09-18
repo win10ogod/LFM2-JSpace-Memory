@@ -1,0 +1,15 @@
+{
+  "questions": 128,
+  "counterfactual_pairs": 64,
+  "units": 16,
+  "max_new_tokens": 256,
+  "source_sha256": "fa66329df7a4c49b0f0fd2b6a1c39db63e110ce6d5233b09d3c701f51130d4ae",
+  "question_sha256": "1f1ec28d2971e33c68baca5f2b865c1a780b3529f81e68954c06531def6c79cc",
+  "scope": "Caller supplies the current memory unit; no index-selection claim. Independent cold reader process.",
+  "same_question_different_memory_different_answer": true,
+  "conditions": [
+    "provided-memory",
+    "memory-disabled"
+  ],
+  "heldout_source_sha256": "e2d80ddd86fafe5f819c8f72ae0dfcc5af7d8d00e28ea2116651783889e8609c"
+}

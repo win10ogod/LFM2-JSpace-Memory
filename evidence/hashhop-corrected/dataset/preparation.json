@@ -1,0 +1,53 @@
+{
+  "status": "passed",
+  "training": {
+    "records": 1024,
+    "graphs": 128,
+    "counterfactual_query_pairs": 512,
+    "interior_start_records": 576,
+    "terminal_target_records": 112,
+    "ignore_hop_count_solver_correct": 112,
+    "all_targets_verified": true,
+    "hop_counts": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "hash_lengths": [
+      8,
+      16
+    ]
+  },
+  "validation": {
+    "records": 128,
+    "graphs": 16,
+    "counterfactual_query_pairs": 64,
+    "interior_start_records": 80,
+    "terminal_target_records": 12,
+    "ignore_hop_count_solver_correct": 12,
+    "all_targets_verified": true,
+    "hop_counts": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "hash_lengths": [
+      8,
+      16
+    ]
+  },
+  "train_validation_symbols_disjoint": true,
+  "prior_training_and_evaluation_symbols_excluded": true,
+  "train_tokens": 1013885,
+  "validation_tokens": 114694,
+  "max_input_tokens": 2294,
+  "sft_chunking": false,
+  "source_only_writer": true,
+  "prior_evaluation_unchanged": true,
+  "files_sha256": {
+    "train.jsonl": "7b5788a4fce4d9af2637bcbd17e736a77ab7834c980b445506911cb42b0cef3a",
+    "validation.jsonl": "e2d80ddd86fafe5f819c8f72ae0dfcc5af7d8d00e28ea2116651783889e8609c"
+  }
+}

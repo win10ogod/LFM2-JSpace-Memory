@@ -1,0 +1,23 @@
+{
+  "checkpoint_id": "273e195bd4ad4c10ace63c3bcd5516bd",
+  "body_fixed": true,
+  "scores": {
+    "provided-memory": {
+      "exact": 76,
+      "n": 128,
+      "both_memories_correct": 34,
+      "pairs": 64,
+      "output_limit_hits": 0
+    },
+    "memory-disabled": {
+      "exact": 0,
+      "n": 128,
+      "both_memories_correct": 0,
+      "pairs": 64,
+      "output_limit_hits": 2
+    }
+  },
+  "scope": "Caller supplies the current memory unit; no index-selection claim. Independent cold reader process.",
+  "protocol_sha256": "4f90052e5b6a81df9ae116de8338a16037d725ddf597d990378da9efe61a726b",
+  "peak_vram_gib": 8.97887372970581
+}

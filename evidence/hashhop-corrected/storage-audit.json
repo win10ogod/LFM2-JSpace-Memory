@@ -1,0 +1,263 @@
+{
+  "scope": "All nine saved short-suite units; direct safetensors byte offsets, not an assumed compression ratio.",
+  "units": [
+    {
+      "page": "text-0",
+      "positions": 35,
+      "raw_bf16_feature_bytes": 143360,
+      "file_bytes": 85955964,
+      "tensor_bytes_by_prefix": {
+        "sequence": 296560,
+        "factor": 7372800,
+        "first": 7372800,
+        "graph": 63475456,
+        "key": 24576,
+        "latent": 14280,
+        "native_concept": 13860,
+        "second": 7372800
+      },
+      "sequences": [
+        {
+          "checksum": "bc1c0a6e270b044a10418b6b0d3a35f94bbca6e07380c143d613c04816c4f88f",
+          "codec_port": "native_input",
+          "count": 35,
+          "dtype": "bfloat16",
+          "patches": 15,
+          "rank": 35
+        }
+      ]
+    },
+    {
+      "page": "text-1",
+      "positions": 34,
+      "raw_bf16_feature_bytes": 139264,
+      "file_bytes": 85946508,
+      "tensor_bytes_by_prefix": {
+        "sequence": 287908,
+        "factor": 7372800,
+        "first": 7372800,
+        "graph": 63475456,
+        "key": 24576,
+        "latent": 13872,
+        "native_concept": 13464,
+        "second": 7372800
+      },
+      "sequences": [
+        {
+          "checksum": "d289f7f8932724372ee17cdd109d00a472f15714f13ccbd3a636b236d73ec33a",
+          "codec_port": "native_input",
+          "count": 34,
+          "dtype": "bfloat16",
+          "patches": 11,
+          "rank": 34
+        }
+      ]
+    },
+    {
+      "page": "text-2",
+      "positions": 34,
+      "raw_bf16_feature_bytes": 139264,
+      "file_bytes": 85946464,
+      "tensor_bytes_by_prefix": {
+        "sequence": 287872,
+        "factor": 7372800,
+        "first": 7372800,
+        "graph": 63475456,
+        "key": 24576,
+        "latent": 13872,
+        "native_concept": 13464,
+        "second": 7372800
+      },
+      "sequences": [
+        {
+          "checksum": "334bdcf1eceb46e85017b7f9a74c30dbc097ec3da93f9267a3a1c7480b17d278",
+          "codec_port": "native_input",
+          "count": 34,
+          "dtype": "bfloat16",
+          "patches": 8,
+          "rank": 34
+        }
+      ]
+    },
+    {
+      "page": "text-3",
+      "positions": 35,
+      "raw_bf16_feature_bytes": 143360,
+      "file_bytes": 85955928,
+      "tensor_bytes_by_prefix": {
+        "sequence": 296524,
+        "factor": 7372800,
+        "first": 7372800,
+        "graph": 63475456,
+        "key": 24576,
+        "latent": 14280,
+        "native_concept": 13860,
+        "second": 7372800
+      },
+      "sequences": [
+        {
+          "checksum": "648f268cbe4b862653909b20ebaad1438866909cb43937448f939ef40bdd6534",
+          "codec_port": "native_input",
+          "count": 35,
+          "dtype": "bfloat16",
+          "patches": 12,
+          "rank": 35
+        }
+      ]
+    },
+    {
+      "page": "text-4",
+      "positions": 36,
+      "raw_bf16_feature_bytes": 147456,
+      "file_bytes": 85965344,
+      "tensor_bytes_by_prefix": {
+        "sequence": 305136,
+        "factor": 7372800,
+        "first": 7372800,
+        "graph": 63475456,
+        "key": 24576,
+        "latent": 14688,
+        "native_concept": 14256,
+        "second": 7372800
+      },
+      "sequences": [
+        {
+          "checksum": "76320c634943b06f12dee779afa03cd08ca3e58e9f0ea2385503186b37cc4bb0",
+          "codec_port": "native_input",
+          "count": 36,
+          "dtype": "bfloat16",
+          "patches": 12,
+          "rank": 36
+        }
+      ]
+    },
+    {
+      "page": "text-5",
+      "positions": 34,
+      "raw_bf16_feature_bytes": 139264,
+      "file_bytes": 85929864,
+      "tensor_bytes_by_prefix": {
+        "sequence": 271264,
+        "factor": 7372800,
+        "first": 7372800,
+        "graph": 63475456,
+        "key": 24576,
+        "latent": 13872,
+        "native_concept": 13464,
+        "second": 7372800
+      },
+      "sequences": [
+        {
+          "checksum": "fde8d2ab947d18374613415d15753f1581c38952df5ce5ce3b3d6ec2610ab12d",
+          "codec_port": "native_input",
+          "count": 34,
+          "dtype": "bfloat16",
+          "patches": 12,
+          "rank": 32
+        }
+      ]
+    },
+    {
+      "page": "chain",
+      "positions": 449,
+      "raw_bf16_feature_bytes": 1839104,
+      "file_bytes": 89941464,
+      "tensor_bytes_by_prefix": {
+        "sequence": 3946524,
+        "factor": 7372800,
+        "first": 7372800,
+        "graph": 63475456,
+        "key": 24576,
+        "latent": 183192,
+        "native_concept": 177804,
+        "second": 7372800
+      },
+      "sequences": [
+        {
+          "checksum": "3f4535173a7798799ad8b5b892979c0e163b64fdcee741f01d3018246bcb5291",
+          "codec_port": "native_input",
+          "count": 128,
+          "dtype": "bfloat16",
+          "patches": 58,
+          "rank": 128
+        },
+        {
+          "checksum": "24131a193047486581d55180bcebaac2f97359c8c6a9aa8e104051e07b55cb9f",
+          "codec_port": "native_input",
+          "count": 128,
+          "dtype": "bfloat16",
+          "patches": 41,
+          "rank": 128
+        },
+        {
+          "checksum": "7b707d7b5ad00a7a7b47fd59493a69d0bb3b4042e8c3ee2c94b783d842dc7446",
+          "codec_port": "native_input",
+          "count": 128,
+          "dtype": "bfloat16",
+          "patches": 64,
+          "rank": 128
+        },
+        {
+          "checksum": "13106d74a0fd7aebdcc4c8e695bdeb87f07c6add1713fc4c835a8a48616875bb",
+          "codec_port": "native_input",
+          "count": 65,
+          "dtype": "bfloat16",
+          "patches": 20,
+          "rank": 64
+        }
+      ]
+    },
+    {
+      "page": "visual-0",
+      "positions": 96,
+      "raw_bf16_feature_bytes": 393216,
+      "file_bytes": 86585976,
+      "tensor_bytes_by_prefix": {
+        "sequence": 837648,
+        "factor": 7372800,
+        "first": 7372800,
+        "graph": 63475456,
+        "key": 29184,
+        "latent": 73984,
+        "native_concept": 38016,
+        "second": 7372800
+      },
+      "sequences": [
+        {
+          "checksum": "68c8c1a4a743501baa839a68e4fcb58b5f253386dbdedf551f885140a9e53b79",
+          "codec_port": "native_input",
+          "count": 96,
+          "dtype": "bfloat16",
+          "patches": 108,
+          "rank": 96
+        }
+      ]
+    },
+    {
+      "page": "visual-1",
+      "positions": 96,
+      "raw_bf16_feature_bytes": 393216,
+      "file_bytes": 86585836,
+      "tensor_bytes_by_prefix": {
+        "sequence": 837516,
+        "factor": 7372800,
+        "first": 7372800,
+        "graph": 63475456,
+        "key": 29184,
+        "latent": 73984,
+        "native_concept": 38016,
+        "second": 7372800
+      },
+      "sequences": [
+        {
+          "checksum": "aafe53fe23146c6e36d140f2579515e94212190bb5be6d187900d7604376935e",
+          "codec_port": "native_input",
+          "count": 96,
+          "dtype": "bfloat16",
+          "patches": 97,
+          "rank": 96
+        }
+      ]
+    }
+  ]
+}

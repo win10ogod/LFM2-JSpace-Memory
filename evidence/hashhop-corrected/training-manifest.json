@@ -1,0 +1,28 @@
+{
+  "expected_steps": 128,
+  "records": 1024,
+  "validation": {
+    "records": 128,
+    "source_tokens": 103960,
+    "assistant_targets": 2110
+  },
+  "method": "native LlamaFactory complete-memory recall and counterfactual HashHop SFT",
+  "native_lora_rank": 8,
+  "native_lora_alpha": 16,
+  "train_scope": "all",
+  "physical_batch": 8,
+  "cutoff_len": 4096,
+  "mask_history": true,
+  "training_chunks": 0,
+  "source_only_writes": true,
+  "source_kv_reused": false,
+  "inherited_weights_unchanged": true,
+  "trainable_by_group": {
+    "model": 16724802,
+    "memory": 9020026,
+    "physical_memory": 923914,
+    "dream_memory": 186859
+  },
+  "source_checkpoint_id": "0b5ec95eac3849e38867dcba9048c623",
+  "reference": "https://magic.dev/blog/100m-token-context-windows"
+}

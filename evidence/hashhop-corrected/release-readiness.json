@@ -1,0 +1,22 @@
+{
+  "checkpoint_id": "273e195bd4ad4c10ace63c3bcd5516bd",
+  "replace_public_model": false,
+  "training_complete": true,
+  "free_generation_tests_complete": true,
+  "reason": [
+    "Native routing recall 13/42; correct-unit recall 20/42.",
+    "Posterior codes plus weights remain 0/12; physical-only 0/12.",
+    "Coherent multi-turn instruction following has factual and format errors.",
+    "Actual Dream replay showed no benefit in the six-question diagnostic.",
+    "Learned comparison of memory substrates and functional Dream training remain unimplemented."
+  ],
+  "source_documents": [
+    "generation/result.json",
+    "counterfactual-generation/result.json",
+    "coherence-review.json",
+    "vae-codec-audit.json",
+    "vae-objective-probe.json",
+    "dream-retention-probe.json"
+  ],
+  "weights_uploaded": false
+}

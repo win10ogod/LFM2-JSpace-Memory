@@ -1,0 +1,898 @@
+[
+  {
+    "id": "g0-v0-h1-jump",
+    "source_id": "g0-v0",
+    "question": "Using the previously observed hash pairs, start at NpgvPSEG and follow exactly 1 arrows. Return only the final value, with no intermediate values. Preserve every character and its case.",
+    "answer": "IoZcrGJY",
+    "query_pair": "5bfb3e49f2168999e446918d33c11fd07cdd302f133748f5e8231a88e0b9c200"
+  },
+  {
+    "id": "g0-v1-h1-jump",
+    "source_id": "g0-v1",
+    "question": "Using the previously observed hash pairs, start at NpgvPSEG and follow exactly 1 arrows. Return only the final value, with no intermediate values. Preserve every character and its case.",
+    "answer": "SuBXVdsf",
+    "query_pair": "5bfb3e49f2168999e446918d33c11fd07cdd302f133748f5e8231a88e0b9c200"
+  },
+  {
+    "id": "g0-v0-h1-trace",
+    "source_id": "g0-v0",
+    "question": "Using the previously observed hash pairs, start at NpgvPSEG and follow exactly 1 arrows. Return every visited value in order, separated by single spaces. Do not repeat the starting key. Preserve every character and its case.",
+    "answer": "IoZcrGJY",
+    "query_pair": "efd6be973c99fcbd1b52ffed9699676bd8a271e07731875e1183cbe0fc9a78f7"
+  },
+  {
+    "id": "g0-v1-h1-trace",
+    "source_id": "g0-v1",
+    "question": "Using the previously observed hash pairs, start at NpgvPSEG and follow exactly 1 arrows. Return every visited value in order, separated by single spaces. Do not repeat the starting key. Preserve every character and its case.",
+    "answer": "SuBXVdsf",
+    "query_pair": "efd6be973c99fcbd1b52ffed9699676bd8a271e07731875e1183cbe0fc9a78f7"
+  },
+  {
+    "id": "g0-v0-h2-jump",
+    "source_id": "g0-v0",
+    "question": "Using the previously observed hash pairs, start at NpgvPSEG and follow exactly 2 arrows. Return only the final value, with no intermediate values. Preserve every character and its case.",
+    "answer": "MyXnWFnX",
+    "query_pair": "29811da3722b7e0029ff2da6638c24d2f011fc608abc5d5df7a33c3dbb1aa325"
+  },
+  {
+    "id": "g0-v1-h2-jump",
+    "source_id": "g0-v1",
+    "question": "Using the previously observed hash pairs, start at NpgvPSEG and follow exactly 2 arrows. Return only the final value, with no intermediate values. Preserve every character and its case.",
+    "answer": "SapOPGct",
+    "query_pair": "29811da3722b7e0029ff2da6638c24d2f011fc608abc5d5df7a33c3dbb1aa325"
+  },
+  {
+    "id": "g0-v0-h2-trace",
+    "source_id": "g0-v0",
+    "question": "Using the previously observed hash pairs, start at NpgvPSEG and follow exactly 2 arrows. Return every visited value in order, separated by single spaces. Do not repeat the starting key. Preserve every character and its case.",
+    "answer": "IoZcrGJY MyXnWFnX",
+    "query_pair": "0c0ae7563907495a2cab7504f63b64edd419b4114c03a77cfc3a73f070fb04fe"
+  },
+  {
+    "id": "g0-v1-h2-trace",
+    "source_id": "g0-v1",
+    "question": "Using the previously observed hash pairs, start at NpgvPSEG and follow exactly 2 arrows. Return every visited value in order, separated by single spaces. Do not repeat the starting key. Preserve every character and its case.",
+    "answer": "SuBXVdsf SapOPGct",
+    "query_pair": "0c0ae7563907495a2cab7504f63b64edd419b4114c03a77cfc3a73f070fb04fe"
+  },
+  {
+    "id": "g0-v0-h4-jump",
+    "source_id": "g0-v0",
+    "question": "Using the previously observed hash pairs, start at NpgvPSEG and follow exactly 4 arrows. Return only the final value, with no intermediate values. Preserve every character and its case.",
+    "answer": "bNGIfOrN",
+    "query_pair": "b3e819366656665179ed91ee514d4b7d1a988eb689b6bb4e7c7c07c9d3811d10"
+  },
+  {
+    "id": "g0-v1-h4-jump",
+    "source_id": "g0-v1",
+    "question": "Using the previously observed hash pairs, start at NpgvPSEG and follow exactly 4 arrows. Return only the final value, with no intermediate values. Preserve every character and its case.",
+    "answer": "mrQripsT",
+    "query_pair": "b3e819366656665179ed91ee514d4b7d1a988eb689b6bb4e7c7c07c9d3811d10"
+  },
+  {
+    "id": "g0-v0-h4-trace",
+    "source_id": "g0-v0",
+    "question": "Using the previously observed hash pairs, start at NpgvPSEG and follow exactly 4 arrows. Return every visited value in order, separated by single spaces. Do not repeat the starting key. Preserve every character and its case.",
+    "answer": "IoZcrGJY MyXnWFnX ukiuACrR bNGIfOrN",
+    "query_pair": "7e3e18a734d7397816b5f2a2373f0f9b1b73c39a68ce48ea268980dfedad6cd3"
+  },
+  {
+    "id": "g0-v1-h4-trace",
+    "source_id": "g0-v1",
+    "question": "Using the previously observed hash pairs, start at NpgvPSEG and follow exactly 4 arrows. Return every visited value in order, separated by single spaces. Do not repeat the starting key. Preserve every character and its case.",
+    "answer": "SuBXVdsf SapOPGct rpGIjXLC mrQripsT",
+    "query_pair": "7e3e18a734d7397816b5f2a2373f0f9b1b73c39a68ce48ea268980dfedad6cd3"
+  },
+  {
+    "id": "g0-v0-h8-jump",
+    "source_id": "g0-v0",
+    "question": "Using the previously observed hash pairs, start at NpgvPSEG and follow exactly 8 arrows. Return only the final value, with no intermediate values. Preserve every character and its case.",
+    "answer": "AkJWfjNE",
+    "query_pair": "46c888cb44f39747dcac1d75d92e44963ffd68f15a46cb3da6f1c1b6fa75581e"
+  },
+  {
+    "id": "g0-v1-h8-jump",
+    "source_id": "g0-v1",
+    "question": "Using the previously observed hash pairs, start at NpgvPSEG and follow exactly 8 arrows. Return only the final value, with no intermediate values. Preserve every character and its case.",
+    "answer": "pQrwUsYa",
+    "query_pair": "46c888cb44f39747dcac1d75d92e44963ffd68f15a46cb3da6f1c1b6fa75581e"
+  },
+  {
+    "id": "g0-v0-h8-trace",
+    "source_id": "g0-v0",
+    "question": "Using the previously observed hash pairs, start at NpgvPSEG and follow exactly 8 arrows. Return every visited value in order, separated by single spaces. Do not repeat the starting key. Preserve every character and its case.",
+    "answer": "IoZcrGJY MyXnWFnX ukiuACrR bNGIfOrN rzveAtGB IpDVADKB jJDULDqo AkJWfjNE",
+    "query_pair": "80c4f573fbda8fe173c04cef0a3e021907ac5b638e256bb91c3bee515dc458cf"
+  },
+  {
+    "id": "g0-v1-h8-trace",
+    "source_id": "g0-v1",
+    "question": "Using the previously observed hash pairs, start at NpgvPSEG and follow exactly 8 arrows. Return every visited value in order, separated by single spaces. Do not repeat the starting key. Preserve every character and its case.",
+    "answer": "SuBXVdsf SapOPGct rpGIjXLC mrQripsT VeaCzALO koOjtcBk cICrkECY pQrwUsYa",
+    "query_pair": "80c4f573fbda8fe173c04cef0a3e021907ac5b638e256bb91c3bee515dc458cf"
+  },
+  {
+    "id": "g1-v0-h1-jump",
+    "source_id": "g1-v0",
+    "question": "Using the previously observed hash pairs, start at oJfXeuPuSkWLsCVa and follow exactly 1 arrows. Return only the final value, with no intermediate values. Preserve every character and its case.",
+    "answer": "yVNwshwsoqiblOkB",
+    "query_pair": "054b7c8bbf58e84bbf0a1e71ea5a18f8fe82a2e5d8279400e47cbeec5521243f"
+  },
+  {
+    "id": "g1-v1-h1-jump",
+    "source_id": "g1-v1",
+    "question": "Using the previously observed hash pairs, start at oJfXeuPuSkWLsCVa and follow exactly 1 arrows. Return only the final value, with no intermediate values. Preserve every character and its case.",
+    "answer": "dApUxgklmTMphpPf",
+    "query_pair": "054b7c8bbf58e84bbf0a1e71ea5a18f8fe82a2e5d8279400e47cbeec5521243f"
+  },
+  {
+    "id": "g1-v0-h1-trace",
+    "source_id": "g1-v0",
+    "question": "Using the previously observed hash pairs, start at oJfXeuPuSkWLsCVa and follow exactly 1 arrows. Return every visited value in order, separated by single spaces. Do not repeat the starting key. Preserve every character and its case.",
+    "answer": "yVNwshwsoqiblOkB",
+    "query_pair": "f8f657d382cc7cd2fc420db2f6f30848561b05dd1881fa630ad44020c21c04d5"
+  },
+  {
+    "id": "g1-v1-h1-trace",
+    "source_id": "g1-v1",
+    "question": "Using the previously observed hash pairs, start at oJfXeuPuSkWLsCVa and follow exactly 1 arrows. Return every visited value in order, separated by single spaces. Do not repeat the starting key. Preserve every character and its case.",
+    "answer": "dApUxgklmTMphpPf",
+    "query_pair": "f8f657d382cc7cd2fc420db2f6f30848561b05dd1881fa630ad44020c21c04d5"
+  },
+  {
+    "id": "g1-v0-h2-jump",
+    "source_id": "g1-v0",
+    "question": "Using the previously observed hash pairs, start at oJfXeuPuSkWLsCVa and follow exactly 2 arrows. Return only the final value, with no intermediate values. Preserve every character and its case.",
+    "answer": "zFlODlpFQNugnRtA",
+    "query_pair": "d1e8d21e320d587763a0400de1ed68647b483d1fc415362b08885f621daf51cc"
+  },
+  {
+    "id": "g1-v1-h2-jump",
+    "source_id": "g1-v1",
+    "question": "Using the previously observed hash pairs, start at oJfXeuPuSkWLsCVa and follow exactly 2 arrows. Return only the final value, with no intermediate values. Preserve every character and its case.",
+    "answer": "PEPCHNPjGcnmSHfS",
+    "query_pair": "d1e8d21e320d587763a0400de1ed68647b483d1fc415362b08885f621daf51cc"
+  },
+  {
+    "id": "g1-v0-h2-trace",
+    "source_id": "g1-v0",
+    "question": "Using the previously observed hash pairs, start at oJfXeuPuSkWLsCVa and follow exactly 2 arrows. Return every visited value in order, separated by single spaces. Do not repeat the starting key. Preserve every character and its case.",
+    "answer": "yVNwshwsoqiblOkB zFlODlpFQNugnRtA",
+    "query_pair": "94a86b5cfef3fbff6776fd6558783a3fe18cc9882837a07718a65e8393df18ec"
+  },
+  {
+    "id": "g1-v1-h2-trace",
+    "source_id": "g1-v1",
+    "question": "Using the previously observed hash pairs, start at oJfXeuPuSkWLsCVa and follow exactly 2 arrows. Return every visited value in order, separated by single spaces. Do not repeat the starting key. Preserve every character and its case.",
+    "answer": "dApUxgklmTMphpPf PEPCHNPjGcnmSHfS",
+    "query_pair": "94a86b5cfef3fbff6776fd6558783a3fe18cc9882837a07718a65e8393df18ec"
+  },
+  {
+    "id": "g1-v0-h4-jump",
+    "source_id": "g1-v0",
+    "question": "Using the previously observed hash pairs, start at oJfXeuPuSkWLsCVa and follow exactly 4 arrows. Return only the final value, with no intermediate values. Preserve every character and its case.",
+    "answer": "GzWwCtSuEbtKhWDB",
+    "query_pair": "13a663e16a25b1f1824a7a8b19f45f2cc4176c5698e57cc2c23e1b0dd3dcd99c"
+  },
+  {
+    "id": "g1-v1-h4-jump",
+    "source_id": "g1-v1",
+    "question": "Using the previously observed hash pairs, start at oJfXeuPuSkWLsCVa and follow exactly 4 arrows. Return only the final value, with no intermediate values. Preserve every character and its case.",
+    "answer": "fELgiFaPcgAXwxZp",
+    "query_pair": "13a663e16a25b1f1824a7a8b19f45f2cc4176c5698e57cc2c23e1b0dd3dcd99c"
+  },
+  {
+    "id": "g1-v0-h4-trace",
+    "source_id": "g1-v0",
+    "question": "Using the previously observed hash pairs, start at oJfXeuPuSkWLsCVa and follow exactly 4 arrows. Return every visited value in order, separated by single spaces. Do not repeat the starting key. Preserve every character and its case.",
+    "answer": "yVNwshwsoqiblOkB zFlODlpFQNugnRtA cmTfOSfcfNHFNseg GzWwCtSuEbtKhWDB",
+    "query_pair": "248ba9270850ed416ad7886a722fd5e78e7a4c08e55dffc82b51ec3efc8442e7"
+  },
+  {
+    "id": "g1-v1-h4-trace",
+    "source_id": "g1-v1",
+    "question": "Using the previously observed hash pairs, start at oJfXeuPuSkWLsCVa and follow exactly 4 arrows. Return every visited value in order, separated by single spaces. Do not repeat the starting key. Preserve every character and its case.",
+    "answer": "dApUxgklmTMphpPf PEPCHNPjGcnmSHfS ILywAAiudxbqXHhe fELgiFaPcgAXwxZp",
+    "query_pair": "248ba9270850ed416ad7886a722fd5e78e7a4c08e55dffc82b51ec3efc8442e7"
+  },
+  {
+    "id": "g1-v0-h8-jump",
+    "source_id": "g1-v0",
+    "question": "Using the previously observed hash pairs, start at oJfXeuPuSkWLsCVa and follow exactly 8 arrows. Return only the final value, with no intermediate values. Preserve every character and its case.",
+    "answer": "OiXCPoiHsOSaYRkd",
+    "query_pair": "f747ae70bd58da67ac325113d93310a8a941f69ec62857973bc2a95c012ebe78"
+  },
+  {
+    "id": "g1-v1-h8-jump",
+    "source_id": "g1-v1",
+    "question": "Using the previously observed hash pairs, start at oJfXeuPuSkWLsCVa and follow exactly 8 arrows. Return only the final value, with no intermediate values. Preserve every character and its case.",
+    "answer": "gllOzElpbdinIXqz",
+    "query_pair": "f747ae70bd58da67ac325113d93310a8a941f69ec62857973bc2a95c012ebe78"
+  },
+  {
+    "id": "g1-v0-h8-trace",
+    "source_id": "g1-v0",
+    "question": "Using the previously observed hash pairs, start at oJfXeuPuSkWLsCVa and follow exactly 8 arrows. Return every visited value in order, separated by single spaces. Do not repeat the starting key. Preserve every character and its case.",
+    "answer": "yVNwshwsoqiblOkB zFlODlpFQNugnRtA cmTfOSfcfNHFNseg GzWwCtSuEbtKhWDB UyqHJIZyLhoROjBQ PGReKdObwAxvZKmo zXypNOEiyhMgsnno OiXCPoiHsOSaYRkd",
+    "query_pair": "03287d92962b4f1a17c7ee6d7ce6f3a5cf5faee7187ec8b998185460c82faff9"
+  },
+  {
+    "id": "g1-v1-h8-trace",
+    "source_id": "g1-v1",
+    "question": "Using the previously observed hash pairs, start at oJfXeuPuSkWLsCVa and follow exactly 8 arrows. Return every visited value in order, separated by single spaces. Do not repeat the starting key. Preserve every character and its case.",
+    "answer": "dApUxgklmTMphpPf PEPCHNPjGcnmSHfS ILywAAiudxbqXHhe fELgiFaPcgAXwxZp RNHXirdqDMMIvNVn GCoZjKVduptMbLXa EzCTdtNACMRlefWd gllOzElpbdinIXqz",
+    "query_pair": "03287d92962b4f1a17c7ee6d7ce6f3a5cf5faee7187ec8b998185460c82faff9"
+  },
+  {
+    "id": "g2-v0-h1-jump",
+    "source_id": "g2-v0",
+    "question": "Using the previously observed hash pairs, start at ZNEBvhxY and follow exactly 1 arrows. Return only the final value, with no intermediate values. Preserve every character and its case.",
+    "answer": "DozkZPbf",
+    "query_pair": "6e40b64e358f266bcf3742eac676ee633330eb62ada7c5dff215310a6558af85"
+  },
+  {
+    "id": "g2-v1-h1-jump",
+    "source_id": "g2-v1",
+    "question": "Using the previously observed hash pairs, start at ZNEBvhxY and follow exactly 1 arrows. Return only the final value, with no intermediate values. Preserve every character and its case.",
+    "answer": "FefERBto",
+    "query_pair": "6e40b64e358f266bcf3742eac676ee633330eb62ada7c5dff215310a6558af85"
+  },
+  {
+    "id": "g2-v0-h1-trace",
+    "source_id": "g2-v0",
+    "question": "Using the previously observed hash pairs, start at ZNEBvhxY and follow exactly 1 arrows. Return every visited value in order, separated by single spaces. Do not repeat the starting key. Preserve every character and its case.",
+    "answer": "DozkZPbf",
+    "query_pair": "5227e0b0a496b875d85c767976851462486f75c997031cc1d148223f6c14a92c"
+  },
+  {
+    "id": "g2-v1-h1-trace",
+    "source_id": "g2-v1",
+    "question": "Using the previously observed hash pairs, start at ZNEBvhxY and follow exactly 1 arrows. Return every visited value in order, separated by single spaces. Do not repeat the starting key. Preserve every character and its case.",
+    "answer": "FefERBto",
+    "query_pair": "5227e0b0a496b875d85c767976851462486f75c997031cc1d148223f6c14a92c"
+  },
+  {
+    "id": "g2-v0-h2-jump",
+    "source_id": "g2-v0",
+    "question": "Using the previously observed hash pairs, start at ZNEBvhxY and follow exactly 2 arrows. Return only the final value, with no intermediate values. Preserve every character and its case.",
+    "answer": "rJVNtQPg",
+    "query_pair": "f46f2200ea123597470ed3730eb7f19718843f52783f57fdd2c1baafc938fc8a"
+  },
+  {
+    "id": "g2-v1-h2-jump",
+    "source_id": "g2-v1",
+    "question": "Using the previously observed hash pairs, start at ZNEBvhxY and follow exactly 2 arrows. Return only the final value, with no intermediate values. Preserve every character and its case.",
+    "answer": "eatxtsyr",
+    "query_pair": "f46f2200ea123597470ed3730eb7f19718843f52783f57fdd2c1baafc938fc8a"
+  },
+  {
+    "id": "g2-v0-h2-trace",
+    "source_id": "g2-v0",
+    "question": "Using the previously observed hash pairs, start at ZNEBvhxY and follow exactly 2 arrows. Return every visited value in order, separated by single spaces. Do not repeat the starting key. Preserve every character and its case.",
+    "answer": "DozkZPbf rJVNtQPg",
+    "query_pair": "0d78206340c4c4c6baa8374c24dbe659d7fd055a4232c9d9c6bf169414d2fb87"
+  },
+  {
+    "id": "g2-v1-h2-trace",
+    "source_id": "g2-v1",
+    "question": "Using the previously observed hash pairs, start at ZNEBvhxY and follow exactly 2 arrows. Return every visited value in order, separated by single spaces. Do not repeat the starting key. Preserve every character and its case.",
+    "answer": "FefERBto eatxtsyr",
+    "query_pair": "0d78206340c4c4c6baa8374c24dbe659d7fd055a4232c9d9c6bf169414d2fb87"
+  },
+  {
+    "id": "g2-v0-h4-jump",
+    "source_id": "g2-v0",
+    "question": "Using the previously observed hash pairs, start at ZNEBvhxY and follow exactly 4 arrows. Return only the final value, with no intermediate values. Preserve every character and its case.",
+    "answer": "kADGtQju",
+    "query_pair": "82774f90bcc8c58c67806931a9d45d820e8f54ec25c20f72a9b862b85b6e5047"
+  },
+  {
+    "id": "g2-v1-h4-jump",
+    "source_id": "g2-v1",
+    "question": "Using the previously observed hash pairs, start at ZNEBvhxY and follow exactly 4 arrows. Return only the final value, with no intermediate values. Preserve every character and its case.",
+    "answer": "ceotApIQ",
+    "query_pair": "82774f90bcc8c58c67806931a9d45d820e8f54ec25c20f72a9b862b85b6e5047"
+  },
+  {
+    "id": "g2-v0-h4-trace",
+    "source_id": "g2-v0",
+    "question": "Using the previously observed hash pairs, start at ZNEBvhxY and follow exactly 4 arrows. Return every visited value in order, separated by single spaces. Do not repeat the starting key. Preserve every character and its case.",
+    "answer": "DozkZPbf rJVNtQPg DrlIRVki kADGtQju",
+    "query_pair": "751ee92c999f4a40f6ad3c136d0aa73f2b587ef180ed736b4bd565fd29fde1c4"
+  },
+  {
+    "id": "g2-v1-h4-trace",
+    "source_id": "g2-v1",
+    "question": "Using the previously observed hash pairs, start at ZNEBvhxY and follow exactly 4 arrows. Return every visited value in order, separated by single spaces. Do not repeat the starting key. Preserve every character and its case.",
+    "answer": "FefERBto eatxtsyr hJtKzrFI ceotApIQ",
+    "query_pair": "751ee92c999f4a40f6ad3c136d0aa73f2b587ef180ed736b4bd565fd29fde1c4"
+  },
+  {
+    "id": "g2-v0-h8-jump",
+    "source_id": "g2-v0",
+    "question": "Using the previously observed hash pairs, start at ZNEBvhxY and follow exactly 8 arrows. Return only the final value, with no intermediate values. Preserve every character and its case.",
+    "answer": "MdfEVDfA",
+    "query_pair": "878810986f400250187fa4e3bbc266e1022d046ac686b2dbd09aa8b57bff921c"
+  },
+  {
+    "id": "g2-v1-h8-jump",
+    "source_id": "g2-v1",
+    "question": "Using the previously observed hash pairs, start at ZNEBvhxY and follow exactly 8 arrows. Return only the final value, with no intermediate values. Preserve every character and its case.",
+    "answer": "cdMHSYpu",
+    "query_pair": "878810986f400250187fa4e3bbc266e1022d046ac686b2dbd09aa8b57bff921c"
+  },
+  {
+    "id": "g2-v0-h8-trace",
+    "source_id": "g2-v0",
+    "question": "Using the previously observed hash pairs, start at ZNEBvhxY and follow exactly 8 arrows. Return every visited value in order, separated by single spaces. Do not repeat the starting key. Preserve every character and its case.",
+    "answer": "DozkZPbf rJVNtQPg DrlIRVki kADGtQju vthAGxOG JsqXycLc XMJqGxrC MdfEVDfA",
+    "query_pair": "6b446186134d957afee4447f82b5b78c4b8cdb30d1dd599f32a8608a009ed6f4"
+  },
+  {
+    "id": "g2-v1-h8-trace",
+    "source_id": "g2-v1",
+    "question": "Using the previously observed hash pairs, start at ZNEBvhxY and follow exactly 8 arrows. Return every visited value in order, separated by single spaces. Do not repeat the starting key. Preserve every character and its case.",
+    "answer": "FefERBto eatxtsyr hJtKzrFI ceotApIQ fgbDxlUg HLxmfwOG OXhiXXYp cdMHSYpu",
+    "query_pair": "6b446186134d957afee4447f82b5b78c4b8cdb30d1dd599f32a8608a009ed6f4"
+  },
+  {
+    "id": "g3-v0-h1-jump",
+    "source_id": "g3-v0",
+    "question": "Using the previously observed hash pairs, start at orpENQhZ and follow exactly 1 arrows. Return only the final value, with no intermediate values. Preserve every character and its case.",
+    "answer": "TnGDCllw",
+    "query_pair": "98ebab0e65def299e6f4483336f4e16399698811d2aa23cd562d08d95adf7066"
+  },
+  {
+    "id": "g3-v1-h1-jump",
+    "source_id": "g3-v1",
+    "question": "Using the previously observed hash pairs, start at orpENQhZ and follow exactly 1 arrows. Return only the final value, with no intermediate values. Preserve every character and its case.",
+    "answer": "auRgGupO",
+    "query_pair": "98ebab0e65def299e6f4483336f4e16399698811d2aa23cd562d08d95adf7066"
+  },
+  {
+    "id": "g3-v0-h1-trace",
+    "source_id": "g3-v0",
+    "question": "Using the previously observed hash pairs, start at orpENQhZ and follow exactly 1 arrows. Return every visited value in order, separated by single spaces. Do not repeat the starting key. Preserve every character and its case.",
+    "answer": "TnGDCllw",
+    "query_pair": "df958d29092aee6c619d534fbe9d0a5e02c88861874869e20b0ce2ded2c68ede"
+  },
+  {
+    "id": "g3-v1-h1-trace",
+    "source_id": "g3-v1",
+    "question": "Using the previously observed hash pairs, start at orpENQhZ and follow exactly 1 arrows. Return every visited value in order, separated by single spaces. Do not repeat the starting key. Preserve every character and its case.",
+    "answer": "auRgGupO",
+    "query_pair": "df958d29092aee6c619d534fbe9d0a5e02c88861874869e20b0ce2ded2c68ede"
+  },
+  {
+    "id": "g3-v0-h2-jump",
+    "source_id": "g3-v0",
+    "question": "Using the previously observed hash pairs, start at orpENQhZ and follow exactly 2 arrows. Return only the final value, with no intermediate values. Preserve every character and its case.",
+    "answer": "QXMQBkKu",
+    "query_pair": "0a3ffb3f4c1d5e43731801c1e82b8e1836793b155a402916f9ae7b1d60f9064a"
+  },
+  {
+    "id": "g3-v1-h2-jump",
+    "source_id": "g3-v1",
+    "question": "Using the previously observed hash pairs, start at orpENQhZ and follow exactly 2 arrows. Return only the final value, with no intermediate values. Preserve every character and its case.",
+    "answer": "oiUqQubd",
+    "query_pair": "0a3ffb3f4c1d5e43731801c1e82b8e1836793b155a402916f9ae7b1d60f9064a"
+  },
+  {
+    "id": "g3-v0-h2-trace",
+    "source_id": "g3-v0",
+    "question": "Using the previously observed hash pairs, start at orpENQhZ and follow exactly 2 arrows. Return every visited value in order, separated by single spaces. Do not repeat the starting key. Preserve every character and its case.",
+    "answer": "TnGDCllw QXMQBkKu",
+    "query_pair": "720e19c2d96ec2cd28589190b0bec6d6637a3546b4d637dacd1db227e858b691"
+  },
+  {
+    "id": "g3-v1-h2-trace",
+    "source_id": "g3-v1",
+    "question": "Using the previously observed hash pairs, start at orpENQhZ and follow exactly 2 arrows. Return every visited value in order, separated by single spaces. Do not repeat the starting key. Preserve every character and its case.",
+    "answer": "auRgGupO oiUqQubd",
+    "query_pair": "720e19c2d96ec2cd28589190b0bec6d6637a3546b4d637dacd1db227e858b691"
+  },
+  {
+    "id": "g3-v0-h4-jump",
+    "source_id": "g3-v0",
+    "question": "Using the previously observed hash pairs, start at orpENQhZ and follow exactly 4 arrows. Return only the final value, with no intermediate values. Preserve every character and its case.",
+    "answer": "bpoEjuiP",
+    "query_pair": "0e25f57581d385a925747a61ba0e3f06200f0f0d0e6b4eee9f50e4e9f853eb6d"
+  },
+  {
+    "id": "g3-v1-h4-jump",
+    "source_id": "g3-v1",
+    "question": "Using the previously observed hash pairs, start at orpENQhZ and follow exactly 4 arrows. Return only the final value, with no intermediate values. Preserve every character and its case.",
+    "answer": "mxzHFnAb",
+    "query_pair": "0e25f57581d385a925747a61ba0e3f06200f0f0d0e6b4eee9f50e4e9f853eb6d"
+  },
+  {
+    "id": "g3-v0-h4-trace",
+    "source_id": "g3-v0",
+    "question": "Using the previously observed hash pairs, start at orpENQhZ and follow exactly 4 arrows. Return every visited value in order, separated by single spaces. Do not repeat the starting key. Preserve every character and its case.",
+    "answer": "TnGDCllw QXMQBkKu jgeFGrNa bpoEjuiP",
+    "query_pair": "e6a43e954874c01e233f8d0bd7d68a2e8b9a2ca33badc910d7462656c797cae5"
+  },
+  {
+    "id": "g3-v1-h4-trace",
+    "source_id": "g3-v1",
+    "question": "Using the previously observed hash pairs, start at orpENQhZ and follow exactly 4 arrows. Return every visited value in order, separated by single spaces. Do not repeat the starting key. Preserve every character and its case.",
+    "answer": "auRgGupO oiUqQubd AHWjLAQm mxzHFnAb",
+    "query_pair": "e6a43e954874c01e233f8d0bd7d68a2e8b9a2ca33badc910d7462656c797cae5"
+  },
+  {
+    "id": "g3-v0-h8-jump",
+    "source_id": "g3-v0",
+    "question": "Using the previously observed hash pairs, start at orpENQhZ and follow exactly 8 arrows. Return only the final value, with no intermediate values. Preserve every character and its case.",
+    "answer": "JIVmKjre",
+    "query_pair": "d45e5175546624a24a50443fcb18c46ddf5b7ea9a05514f03807cff95f3f0c4a"
+  },
+  {
+    "id": "g3-v1-h8-jump",
+    "source_id": "g3-v1",
+    "question": "Using the previously observed hash pairs, start at orpENQhZ and follow exactly 8 arrows. Return only the final value, with no intermediate values. Preserve every character and its case.",
+    "answer": "RtVGrVZB",
+    "query_pair": "d45e5175546624a24a50443fcb18c46ddf5b7ea9a05514f03807cff95f3f0c4a"
+  },
+  {
+    "id": "g3-v0-h8-trace",
+    "source_id": "g3-v0",
+    "question": "Using the previously observed hash pairs, start at orpENQhZ and follow exactly 8 arrows. Return every visited value in order, separated by single spaces. Do not repeat the starting key. Preserve every character and its case.",
+    "answer": "TnGDCllw QXMQBkKu jgeFGrNa bpoEjuiP FtWWpOpQ UOIZSmhr QDKilAMl JIVmKjre",
+    "query_pair": "c3e5e31fdb1da708fe4dfa0d23e72e11e6bd71c6554c80af4b86b89591f61006"
+  },
+  {
+    "id": "g3-v1-h8-trace",
+    "source_id": "g3-v1",
+    "question": "Using the previously observed hash pairs, start at orpENQhZ and follow exactly 8 arrows. Return every visited value in order, separated by single spaces. Do not repeat the starting key. Preserve every character and its case.",
+    "answer": "auRgGupO oiUqQubd AHWjLAQm mxzHFnAb OBuJKDYf zsKPyCHG rGCmgpQA RtVGrVZB",
+    "query_pair": "c3e5e31fdb1da708fe4dfa0d23e72e11e6bd71c6554c80af4b86b89591f61006"
+  },
+  {
+    "id": "g4-v0-h1-jump",
+    "source_id": "g4-v0",
+    "question": "Using the previously observed hash pairs, start at IzxGRvAS and follow exactly 1 arrows. Return only the final value, with no intermediate values. Preserve every character and its case.",
+    "answer": "lTIbRaMR",
+    "query_pair": "737c19fe869c6897543f30b65368876b9c61608a183b231f8ff476db61d7a426"
+  },
+  {
+    "id": "g4-v1-h1-jump",
+    "source_id": "g4-v1",
+    "question": "Using the previously observed hash pairs, start at IzxGRvAS and follow exactly 1 arrows. Return only the final value, with no intermediate values. Preserve every character and its case.",
+    "answer": "mcxydZSI",
+    "query_pair": "737c19fe869c6897543f30b65368876b9c61608a183b231f8ff476db61d7a426"
+  },
+  {
+    "id": "g4-v0-h1-trace",
+    "source_id": "g4-v0",
+    "question": "Using the previously observed hash pairs, start at IzxGRvAS and follow exactly 1 arrows. Return every visited value in order, separated by single spaces. Do not repeat the starting key. Preserve every character and its case.",
+    "answer": "lTIbRaMR",
+    "query_pair": "f6d852b108fcdb95c0b0d6df1664218728d362b921bc8bc90c99d4b739ef66c2"
+  },
+  {
+    "id": "g4-v1-h1-trace",
+    "source_id": "g4-v1",
+    "question": "Using the previously observed hash pairs, start at IzxGRvAS and follow exactly 1 arrows. Return every visited value in order, separated by single spaces. Do not repeat the starting key. Preserve every character and its case.",
+    "answer": "mcxydZSI",
+    "query_pair": "f6d852b108fcdb95c0b0d6df1664218728d362b921bc8bc90c99d4b739ef66c2"
+  },
+  {
+    "id": "g4-v0-h2-jump",
+    "source_id": "g4-v0",
+    "question": "Using the previously observed hash pairs, start at IzxGRvAS and follow exactly 2 arrows. Return only the final value, with no intermediate values. Preserve every character and its case.",
+    "answer": "WRoqcnab",
+    "query_pair": "21f389bc99ccf9e7f300385c81740346ccdb503250fbe5e4c5abb3a28517da72"
+  },
+  {
+    "id": "g4-v1-h2-jump",
+    "source_id": "g4-v1",
+    "question": "Using the previously observed hash pairs, start at IzxGRvAS and follow exactly 2 arrows. Return only the final value, with no intermediate values. Preserve every character and its case.",
+    "answer": "fqUauKfJ",
+    "query_pair": "21f389bc99ccf9e7f300385c81740346ccdb503250fbe5e4c5abb3a28517da72"
+  },
+  {
+    "id": "g4-v0-h2-trace",
+    "source_id": "g4-v0",
+    "question": "Using the previously observed hash pairs, start at IzxGRvAS and follow exactly 2 arrows. Return every visited value in order, separated by single spaces. Do not repeat the starting key. Preserve every character and its case.",
+    "answer": "lTIbRaMR WRoqcnab",
+    "query_pair": "cb0c843c0242f5c4a9149a2cdc6d2bccc8acd5178bdcd114d9dc538fc56fc4e8"
+  },
+  {
+    "id": "g4-v1-h2-trace",
+    "source_id": "g4-v1",
+    "question": "Using the previously observed hash pairs, start at IzxGRvAS and follow exactly 2 arrows. Return every visited value in order, separated by single spaces. Do not repeat the starting key. Preserve every character and its case.",
+    "answer": "mcxydZSI fqUauKfJ",
+    "query_pair": "cb0c843c0242f5c4a9149a2cdc6d2bccc8acd5178bdcd114d9dc538fc56fc4e8"
+  },
+  {
+    "id": "g4-v0-h4-jump",
+    "source_id": "g4-v0",
+    "question": "Using the previously observed hash pairs, start at IzxGRvAS and follow exactly 4 arrows. Return only the final value, with no intermediate values. Preserve every character and its case.",
+    "answer": "CrgdIiJE",
+    "query_pair": "19fa27640fc6a2d45d51ba45fc7827095ccda8071e9ff5b6226002fe1ad8704b"
+  },
+  {
+    "id": "g4-v1-h4-jump",
+    "source_id": "g4-v1",
+    "question": "Using the previously observed hash pairs, start at IzxGRvAS and follow exactly 4 arrows. Return only the final value, with no intermediate values. Preserve every character and its case.",
+    "answer": "vsKUPmfV",
+    "query_pair": "19fa27640fc6a2d45d51ba45fc7827095ccda8071e9ff5b6226002fe1ad8704b"
+  },
+  {
+    "id": "g4-v0-h4-trace",
+    "source_id": "g4-v0",
+    "question": "Using the previously observed hash pairs, start at IzxGRvAS and follow exactly 4 arrows. Return every visited value in order, separated by single spaces. Do not repeat the starting key. Preserve every character and its case.",
+    "answer": "lTIbRaMR WRoqcnab FREwFlUq CrgdIiJE",
+    "query_pair": "38dc5710b198e9c5a26af19996ea3c51bff4c1b505e73742e420353e3b71347b"
+  },
+  {
+    "id": "g4-v1-h4-trace",
+    "source_id": "g4-v1",
+    "question": "Using the previously observed hash pairs, start at IzxGRvAS and follow exactly 4 arrows. Return every visited value in order, separated by single spaces. Do not repeat the starting key. Preserve every character and its case.",
+    "answer": "mcxydZSI fqUauKfJ MclLjQqh vsKUPmfV",
+    "query_pair": "38dc5710b198e9c5a26af19996ea3c51bff4c1b505e73742e420353e3b71347b"
+  },
+  {
+    "id": "g4-v0-h8-jump",
+    "source_id": "g4-v0",
+    "question": "Using the previously observed hash pairs, start at IzxGRvAS and follow exactly 8 arrows. Return only the final value, with no intermediate values. Preserve every character and its case.",
+    "answer": "qNwYmqJb",
+    "query_pair": "e6e42b7fe68c7cd5b5bb090824cdd53d2f52ba90d5bc26fb8c30e7244e06bcc8"
+  },
+  {
+    "id": "g4-v1-h8-jump",
+    "source_id": "g4-v1",
+    "question": "Using the previously observed hash pairs, start at IzxGRvAS and follow exactly 8 arrows. Return only the final value, with no intermediate values. Preserve every character and its case.",
+    "answer": "EuFzgKbu",
+    "query_pair": "e6e42b7fe68c7cd5b5bb090824cdd53d2f52ba90d5bc26fb8c30e7244e06bcc8"
+  },
+  {
+    "id": "g4-v0-h8-trace",
+    "source_id": "g4-v0",
+    "question": "Using the previously observed hash pairs, start at IzxGRvAS and follow exactly 8 arrows. Return every visited value in order, separated by single spaces. Do not repeat the starting key. Preserve every character and its case.",
+    "answer": "lTIbRaMR WRoqcnab FREwFlUq CrgdIiJE txeIplii SmiUqwcc mNOBXdOY qNwYmqJb",
+    "query_pair": "bd4af2116677bff15ddeeb95eeca669a3428a0f4204de956402ee0d6ac4ea1fc"
+  },
+  {
+    "id": "g4-v1-h8-trace",
+    "source_id": "g4-v1",
+    "question": "Using the previously observed hash pairs, start at IzxGRvAS and follow exactly 8 arrows. Return every visited value in order, separated by single spaces. Do not repeat the starting key. Preserve every character and its case.",
+    "answer": "mcxydZSI fqUauKfJ MclLjQqh vsKUPmfV livdgstF bGmmwsZF YHIJyXgq EuFzgKbu",
+    "query_pair": "bd4af2116677bff15ddeeb95eeca669a3428a0f4204de956402ee0d6ac4ea1fc"
+  },
+  {
+    "id": "g5-v0-h1-jump",
+    "source_id": "g5-v0",
+    "question": "Using the previously observed hash pairs, start at EBuzCEZJ and follow exactly 1 arrows. Return only the final value, with no intermediate values. Preserve every character and its case.",
+    "answer": "cziwxfwn",
+    "query_pair": "360bf37c60e175fa6e95ec78c728fe8e047043f1f34678e49d0a6d36e07d12af"
+  },
+  {
+    "id": "g5-v1-h1-jump",
+    "source_id": "g5-v1",
+    "question": "Using the previously observed hash pairs, start at EBuzCEZJ and follow exactly 1 arrows. Return only the final value, with no intermediate values. Preserve every character and its case.",
+    "answer": "ksaIUigV",
+    "query_pair": "360bf37c60e175fa6e95ec78c728fe8e047043f1f34678e49d0a6d36e07d12af"
+  },
+  {
+    "id": "g5-v0-h1-trace",
+    "source_id": "g5-v0",
+    "question": "Using the previously observed hash pairs, start at EBuzCEZJ and follow exactly 1 arrows. Return every visited value in order, separated by single spaces. Do not repeat the starting key. Preserve every character and its case.",
+    "answer": "cziwxfwn",
+    "query_pair": "fcbd3bb17e093c0d3c3bfeeef98ffe3e306f89dae575f71d61e773378994fb75"
+  },
+  {
+    "id": "g5-v1-h1-trace",
+    "source_id": "g5-v1",
+    "question": "Using the previously observed hash pairs, start at EBuzCEZJ and follow exactly 1 arrows. Return every visited value in order, separated by single spaces. Do not repeat the starting key. Preserve every character and its case.",
+    "answer": "ksaIUigV",
+    "query_pair": "fcbd3bb17e093c0d3c3bfeeef98ffe3e306f89dae575f71d61e773378994fb75"
+  },
+  {
+    "id": "g5-v0-h2-jump",
+    "source_id": "g5-v0",
+    "question": "Using the previously observed hash pairs, start at EBuzCEZJ and follow exactly 2 arrows. Return only the final value, with no intermediate values. Preserve every character and its case.",
+    "answer": "RJpNDuAR",
+    "query_pair": "e0ead509af1613de7bbed7f53ce37029e5123ef774d6a94c619be3b197a8418a"
+  },
+  {
+    "id": "g5-v1-h2-jump",
+    "source_id": "g5-v1",
+    "question": "Using the previously observed hash pairs, start at EBuzCEZJ and follow exactly 2 arrows. Return only the final value, with no intermediate values. Preserve every character and its case.",
+    "answer": "fQltnpEh",
+    "query_pair": "e0ead509af1613de7bbed7f53ce37029e5123ef774d6a94c619be3b197a8418a"
+  },
+  {
+    "id": "g5-v0-h2-trace",
+    "source_id": "g5-v0",
+    "question": "Using the previously observed hash pairs, start at EBuzCEZJ and follow exactly 2 arrows. Return every visited value in order, separated by single spaces. Do not repeat the starting key. Preserve every character and its case.",
+    "answer": "cziwxfwn RJpNDuAR",
+    "query_pair": "b9dbd4a14f1677172c738e161db3ed092f5db70ab45ad3723a49136884933ece"
+  },
+  {
+    "id": "g5-v1-h2-trace",
+    "source_id": "g5-v1",
+    "question": "Using the previously observed hash pairs, start at EBuzCEZJ and follow exactly 2 arrows. Return every visited value in order, separated by single spaces. Do not repeat the starting key. Preserve every character and its case.",
+    "answer": "ksaIUigV fQltnpEh",
+    "query_pair": "b9dbd4a14f1677172c738e161db3ed092f5db70ab45ad3723a49136884933ece"
+  },
+  {
+    "id": "g5-v0-h4-jump",
+    "source_id": "g5-v0",
+    "question": "Using the previously observed hash pairs, start at EBuzCEZJ and follow exactly 4 arrows. Return only the final value, with no intermediate values. Preserve every character and its case.",
+    "answer": "hpckaDFs",
+    "query_pair": "59eb9d80e6eb74835e1043696be14b3c883e5a09b0baf584e62d7cda0cae524c"
+  },
+  {
+    "id": "g5-v1-h4-jump",
+    "source_id": "g5-v1",
+    "question": "Using the previously observed hash pairs, start at EBuzCEZJ and follow exactly 4 arrows. Return only the final value, with no intermediate values. Preserve every character and its case.",
+    "answer": "SXQiTHYs",
+    "query_pair": "59eb9d80e6eb74835e1043696be14b3c883e5a09b0baf584e62d7cda0cae524c"
+  },
+  {
+    "id": "g5-v0-h4-trace",
+    "source_id": "g5-v0",
+    "question": "Using the previously observed hash pairs, start at EBuzCEZJ and follow exactly 4 arrows. Return every visited value in order, separated by single spaces. Do not repeat the starting key. Preserve every character and its case.",
+    "answer": "cziwxfwn RJpNDuAR KrTabOfJ hpckaDFs",
+    "query_pair": "18df11ad967214701eeff8c10489615526728859bddd0c842ae8ec72f94f7ee5"
+  },
+  {
+    "id": "g5-v1-h4-trace",
+    "source_id": "g5-v1",
+    "question": "Using the previously observed hash pairs, start at EBuzCEZJ and follow exactly 4 arrows. Return every visited value in order, separated by single spaces. Do not repeat the starting key. Preserve every character and its case.",
+    "answer": "ksaIUigV fQltnpEh xJkNkAaO SXQiTHYs",
+    "query_pair": "18df11ad967214701eeff8c10489615526728859bddd0c842ae8ec72f94f7ee5"
+  },
+  {
+    "id": "g5-v0-h8-jump",
+    "source_id": "g5-v0",
+    "question": "Using the previously observed hash pairs, start at EBuzCEZJ and follow exactly 8 arrows. Return only the final value, with no intermediate values. Preserve every character and its case.",
+    "answer": "PBaeEmgv",
+    "query_pair": "a67ce036ce17694388946aee8ad2ce81f74fcf23cd528c21ba873c0f05194e33"
+  },
+  {
+    "id": "g5-v1-h8-jump",
+    "source_id": "g5-v1",
+    "question": "Using the previously observed hash pairs, start at EBuzCEZJ and follow exactly 8 arrows. Return only the final value, with no intermediate values. Preserve every character and its case.",
+    "answer": "OdUJmROv",
+    "query_pair": "a67ce036ce17694388946aee8ad2ce81f74fcf23cd528c21ba873c0f05194e33"
+  },
+  {
+    "id": "g5-v0-h8-trace",
+    "source_id": "g5-v0",
+    "question": "Using the previously observed hash pairs, start at EBuzCEZJ and follow exactly 8 arrows. Return every visited value in order, separated by single spaces. Do not repeat the starting key. Preserve every character and its case.",
+    "answer": "cziwxfwn RJpNDuAR KrTabOfJ hpckaDFs XckcFDvp hNnDQGCp ziMwRYtU PBaeEmgv",
+    "query_pair": "7fc4a920c6547ff8b8b97855d2b3e2c103dde3c7780b764711f3cb576bc0f15c"
+  },
+  {
+    "id": "g5-v1-h8-trace",
+    "source_id": "g5-v1",
+    "question": "Using the previously observed hash pairs, start at EBuzCEZJ and follow exactly 8 arrows. Return every visited value in order, separated by single spaces. Do not repeat the starting key. Preserve every character and its case.",
+    "answer": "ksaIUigV fQltnpEh xJkNkAaO SXQiTHYs UnerBTjF GVoeycUL bamOqyxp OdUJmROv",
+    "query_pair": "7fc4a920c6547ff8b8b97855d2b3e2c103dde3c7780b764711f3cb576bc0f15c"
+  },
+  {
+    "id": "g6-v0-h1-jump",
+    "source_id": "g6-v0",
+    "question": "Using the previously observed hash pairs, start at xpKMdSFU and follow exactly 1 arrows. Return only the final value, with no intermediate values. Preserve every character and its case.",
+    "answer": "TWgyhAVD",
+    "query_pair": "a6c966cc54397008b3f2f049ffb80ff55f166ee51176c40bd94dba9a2f3f6f16"
+  },
+  {
+    "id": "g6-v1-h1-jump",
+    "source_id": "g6-v1",
+    "question": "Using the previously observed hash pairs, start at xpKMdSFU and follow exactly 1 arrows. Return only the final value, with no intermediate values. Preserve every character and its case.",
+    "answer": "qSnMtROe",
+    "query_pair": "a6c966cc54397008b3f2f049ffb80ff55f166ee51176c40bd94dba9a2f3f6f16"
+  },
+  {
+    "id": "g6-v0-h1-trace",
+    "source_id": "g6-v0",
+    "question": "Using the previously observed hash pairs, start at xpKMdSFU and follow exactly 1 arrows. Return every visited value in order, separated by single spaces. Do not repeat the starting key. Preserve every character and its case.",
+    "answer": "TWgyhAVD",
+    "query_pair": "e04f5f6e5e225f6033d4751fb0d741e50a1b351afba1c8737233e50d4b29603e"
+  },
+  {
+    "id": "g6-v1-h1-trace",
+    "source_id": "g6-v1",
+    "question": "Using the previously observed hash pairs, start at xpKMdSFU and follow exactly 1 arrows. Return every visited value in order, separated by single spaces. Do not repeat the starting key. Preserve every character and its case.",
+    "answer": "qSnMtROe",
+    "query_pair": "e04f5f6e5e225f6033d4751fb0d741e50a1b351afba1c8737233e50d4b29603e"
+  },
+  {
+    "id": "g6-v0-h2-jump",
+    "source_id": "g6-v0",
+    "question": "Using the previously observed hash pairs, start at xpKMdSFU and follow exactly 2 arrows. Return only the final value, with no intermediate values. Preserve every character and its case.",
+    "answer": "UzOLkiTD",
+    "query_pair": "0d4b0e444788519457dbaea07161d9e3b57b6fa9ed9acb70ecbe25a360b9674f"
+  },
+  {
+    "id": "g6-v1-h2-jump",
+    "source_id": "g6-v1",
+    "question": "Using the previously observed hash pairs, start at xpKMdSFU and follow exactly 2 arrows. Return only the final value, with no intermediate values. Preserve every character and its case.",
+    "answer": "xlNznNuz",
+    "query_pair": "0d4b0e444788519457dbaea07161d9e3b57b6fa9ed9acb70ecbe25a360b9674f"
+  },
+  {
+    "id": "g6-v0-h2-trace",
+    "source_id": "g6-v0",
+    "question": "Using the previously observed hash pairs, start at xpKMdSFU and follow exactly 2 arrows. Return every visited value in order, separated by single spaces. Do not repeat the starting key. Preserve every character and its case.",
+    "answer": "TWgyhAVD UzOLkiTD",
+    "query_pair": "217b4de28c5ba9979eefe79d92b210ba7e86fe92d8a618668bb0e9650d2bb1bd"
+  },
+  {
+    "id": "g6-v1-h2-trace",
+    "source_id": "g6-v1",
+    "question": "Using the previously observed hash pairs, start at xpKMdSFU and follow exactly 2 arrows. Return every visited value in order, separated by single spaces. Do not repeat the starting key. Preserve every character and its case.",
+    "answer": "qSnMtROe xlNznNuz",
+    "query_pair": "217b4de28c5ba9979eefe79d92b210ba7e86fe92d8a618668bb0e9650d2bb1bd"
+  },
+  {
+    "id": "g6-v0-h4-jump",
+    "source_id": "g6-v0",
+    "question": "Using the previously observed hash pairs, start at xpKMdSFU and follow exactly 4 arrows. Return only the final value, with no intermediate values. Preserve every character and its case.",
+    "answer": "crQGqEIu",
+    "query_pair": "2f4cc3dfa616c4c53b36b287c0eddf1323ad1e2175c17eaf098878f9241e0b46"
+  },
+  {
+    "id": "g6-v1-h4-jump",
+    "source_id": "g6-v1",
+    "question": "Using the previously observed hash pairs, start at xpKMdSFU and follow exactly 4 arrows. Return only the final value, with no intermediate values. Preserve every character and its case.",
+    "answer": "ILQJZVEP",
+    "query_pair": "2f4cc3dfa616c4c53b36b287c0eddf1323ad1e2175c17eaf098878f9241e0b46"
+  },
+  {
+    "id": "g6-v0-h4-trace",
+    "source_id": "g6-v0",
+    "question": "Using the previously observed hash pairs, start at xpKMdSFU and follow exactly 4 arrows. Return every visited value in order, separated by single spaces. Do not repeat the starting key. Preserve every character and its case.",
+    "answer": "TWgyhAVD UzOLkiTD jeQPvthT crQGqEIu",
+    "query_pair": "ecdc613d300c5a0c0f5053effba7430b664731236d83e50125855bb11fb27704"
+  },
+  {
+    "id": "g6-v1-h4-trace",
+    "source_id": "g6-v1",
+    "question": "Using the previously observed hash pairs, start at xpKMdSFU and follow exactly 4 arrows. Return every visited value in order, separated by single spaces. Do not repeat the starting key. Preserve every character and its case.",
+    "answer": "qSnMtROe xlNznNuz ItmmKnPs ILQJZVEP",
+    "query_pair": "ecdc613d300c5a0c0f5053effba7430b664731236d83e50125855bb11fb27704"
+  },
+  {
+    "id": "g6-v0-h8-jump",
+    "source_id": "g6-v0",
+    "question": "Using the previously observed hash pairs, start at xpKMdSFU and follow exactly 8 arrows. Return only the final value, with no intermediate values. Preserve every character and its case.",
+    "answer": "aJHVidML",
+    "query_pair": "773614f2f031487244fdbf0beb77ca1b3093edb31dac2f3577a7367f09aec5df"
+  },
+  {
+    "id": "g6-v1-h8-jump",
+    "source_id": "g6-v1",
+    "question": "Using the previously observed hash pairs, start at xpKMdSFU and follow exactly 8 arrows. Return only the final value, with no intermediate values. Preserve every character and its case.",
+    "answer": "diJGhrnP",
+    "query_pair": "773614f2f031487244fdbf0beb77ca1b3093edb31dac2f3577a7367f09aec5df"
+  },
+  {
+    "id": "g6-v0-h8-trace",
+    "source_id": "g6-v0",
+    "question": "Using the previously observed hash pairs, start at xpKMdSFU and follow exactly 8 arrows. Return every visited value in order, separated by single spaces. Do not repeat the starting key. Preserve every character and its case.",
+    "answer": "TWgyhAVD UzOLkiTD jeQPvthT crQGqEIu puLHZXoR sgcZwFVG IDsMJkwu aJHVidML",
+    "query_pair": "93d6b95b9a65b5374388e0983bc631ffff389efbea14a952622b68bff660537e"
+  },
+  {
+    "id": "g6-v1-h8-trace",
+    "source_id": "g6-v1",
+    "question": "Using the previously observed hash pairs, start at xpKMdSFU and follow exactly 8 arrows. Return every visited value in order, separated by single spaces. Do not repeat the starting key. Preserve every character and its case.",
+    "answer": "qSnMtROe xlNznNuz ItmmKnPs ILQJZVEP piBYagsk PkEVCwKH INZPeaPi diJGhrnP",
+    "query_pair": "93d6b95b9a65b5374388e0983bc631ffff389efbea14a952622b68bff660537e"
+  },
+  {
+    "id": "g7-v0-h1-jump",
+    "source_id": "g7-v0",
+    "question": "Using the previously observed hash pairs, start at BybuLyaHFvTNkFAX and follow exactly 1 arrows. Return only the final value, with no intermediate values. Preserve every character and its case.",
+    "answer": "IsexNPIlPKKKOneE",
+    "query_pair": "9722049d139b5a65b0ccdfddc8a5873d48357a2a8f416e3434265a7681c84c32"
+  },
+  {
+    "id": "g7-v1-h1-jump",
+    "source_id": "g7-v1",
+    "question": "Using the previously observed hash pairs, start at BybuLyaHFvTNkFAX and follow exactly 1 arrows. Return only the final value, with no intermediate values. Preserve every character and its case.",
+    "answer": "nKUbBrhDWJkCEnnV",
+    "query_pair": "9722049d139b5a65b0ccdfddc8a5873d48357a2a8f416e3434265a7681c84c32"
+  },
+  {
+    "id": "g7-v0-h1-trace",
+    "source_id": "g7-v0",
+    "question": "Using the previously observed hash pairs, start at BybuLyaHFvTNkFAX and follow exactly 1 arrows. Return every visited value in order, separated by single spaces. Do not repeat the starting key. Preserve every character and its case.",
+    "answer": "IsexNPIlPKKKOneE",
+    "query_pair": "b8f2aabf955a997f16d26601866c82a775fdf1c62034614aee9fed8cfabc433a"
+  },
+  {
+    "id": "g7-v1-h1-trace",
+    "source_id": "g7-v1",
+    "question": "Using the previously observed hash pairs, start at BybuLyaHFvTNkFAX and follow exactly 1 arrows. Return every visited value in order, separated by single spaces. Do not repeat the starting key. Preserve every character and its case.",
+    "answer": "nKUbBrhDWJkCEnnV",
+    "query_pair": "b8f2aabf955a997f16d26601866c82a775fdf1c62034614aee9fed8cfabc433a"
+  },
+  {
+    "id": "g7-v0-h2-jump",
+    "source_id": "g7-v0",
+    "question": "Using the previously observed hash pairs, start at BybuLyaHFvTNkFAX and follow exactly 2 arrows. Return only the final value, with no intermediate values. Preserve every character and its case.",
+    "answer": "dYMMYniqvqFWpZAu",
+    "query_pair": "5196deecb35d4522097daf0822009a53035986c9dac5afea2c1dcabc7205f6bd"
+  },
+  {
+    "id": "g7-v1-h2-jump",
+    "source_id": "g7-v1",
+    "question": "Using the previously observed hash pairs, start at BybuLyaHFvTNkFAX and follow exactly 2 arrows. Return only the final value, with no intermediate values. Preserve every character and its case.",
+    "answer": "JDckaLXItYKOcODR",
+    "query_pair": "5196deecb35d4522097daf0822009a53035986c9dac5afea2c1dcabc7205f6bd"
+  },
+  {
+    "id": "g7-v0-h2-trace",
+    "source_id": "g7-v0",
+    "question": "Using the previously observed hash pairs, start at BybuLyaHFvTNkFAX and follow exactly 2 arrows. Return every visited value in order, separated by single spaces. Do not repeat the starting key. Preserve every character and its case.",
+    "answer": "IsexNPIlPKKKOneE dYMMYniqvqFWpZAu",
+    "query_pair": "d249548f8f3df22a359592503f7634911ecdb4351eed01d577053fd6305ddd77"
+  },
+  {
+    "id": "g7-v1-h2-trace",
+    "source_id": "g7-v1",
+    "question": "Using the previously observed hash pairs, start at BybuLyaHFvTNkFAX and follow exactly 2 arrows. Return every visited value in order, separated by single spaces. Do not repeat the starting key. Preserve every character and its case.",
+    "answer": "nKUbBrhDWJkCEnnV JDckaLXItYKOcODR",
+    "query_pair": "d249548f8f3df22a359592503f7634911ecdb4351eed01d577053fd6305ddd77"
+  },
+  {
+    "id": "g7-v0-h4-jump",
+    "source_id": "g7-v0",
+    "question": "Using the previously observed hash pairs, start at BybuLyaHFvTNkFAX and follow exactly 4 arrows. Return only the final value, with no intermediate values. Preserve every character and its case.",
+    "answer": "gDoljabSjucWMJla",
+    "query_pair": "671f24b44acbdd5e93496f97955122922241b98af3568f85ccf313baea0a601a"
+  },
+  {
+    "id": "g7-v1-h4-jump",
+    "source_id": "g7-v1",
+    "question": "Using the previously observed hash pairs, start at BybuLyaHFvTNkFAX and follow exactly 4 arrows. Return only the final value, with no intermediate values. Preserve every character and its case.",
+    "answer": "TnbHTGUKTwdxwmFz",
+    "query_pair": "671f24b44acbdd5e93496f97955122922241b98af3568f85ccf313baea0a601a"
+  },
+  {
+    "id": "g7-v0-h4-trace",
+    "source_id": "g7-v0",
+    "question": "Using the previously observed hash pairs, start at BybuLyaHFvTNkFAX and follow exactly 4 arrows. Return every visited value in order, separated by single spaces. Do not repeat the starting key. Preserve every character and its case.",
+    "answer": "IsexNPIlPKKKOneE dYMMYniqvqFWpZAu XqRUHJKLOxcYDSQy gDoljabSjucWMJla",
+    "query_pair": "ed53b3690db400bd5249093ecb6eda5613785ef1fa3bd68f54e6e0fc1eb43b0a"
+  },
+  {
+    "id": "g7-v1-h4-trace",
+    "source_id": "g7-v1",
+    "question": "Using the previously observed hash pairs, start at BybuLyaHFvTNkFAX and follow exactly 4 arrows. Return every visited value in order, separated by single spaces. Do not repeat the starting key. Preserve every character and its case.",
+    "answer": "nKUbBrhDWJkCEnnV JDckaLXItYKOcODR PnuvkDLHYrZfPWEn TnbHTGUKTwdxwmFz",
+    "query_pair": "ed53b3690db400bd5249093ecb6eda5613785ef1fa3bd68f54e6e0fc1eb43b0a"
+  },
+  {
+    "id": "g7-v0-h8-jump",
+    "source_id": "g7-v0",
+    "question": "Using the previously observed hash pairs, start at BybuLyaHFvTNkFAX and follow exactly 8 arrows. Return only the final value, with no intermediate values. Preserve every character and its case.",
+    "answer": "MMWjrVyNybAKaULZ",
+    "query_pair": "e4e55db7d53edea093401c1f57d529fd3bd8dc5ffce115d0b24d1cf0756294c3"
+  },
+  {
+    "id": "g7-v1-h8-jump",
+    "source_id": "g7-v1",
+    "question": "Using the previously observed hash pairs, start at BybuLyaHFvTNkFAX and follow exactly 8 arrows. Return only the final value, with no intermediate values. Preserve every character and its case.",
+    "answer": "FcNmgGERIJqunEej",
+    "query_pair": "e4e55db7d53edea093401c1f57d529fd3bd8dc5ffce115d0b24d1cf0756294c3"
+  },
+  {
+    "id": "g7-v0-h8-trace",
+    "source_id": "g7-v0",
+    "question": "Using the previously observed hash pairs, start at BybuLyaHFvTNkFAX and follow exactly 8 arrows. Return every visited value in order, separated by single spaces. Do not repeat the starting key. Preserve every character and its case.",
+    "answer": "IsexNPIlPKKKOneE dYMMYniqvqFWpZAu XqRUHJKLOxcYDSQy gDoljabSjucWMJla PPmBTarSlRLwhczr YFsOuBogKhWFonCh oRzVNjaUoVZrCaFR MMWjrVyNybAKaULZ",
+    "query_pair": "447d8fcd151ca227742fc94109a7d6034b087f26ba9d0b9380c6a5d3f716f61a"
+  },
+  {
+    "id": "g7-v1-h8-trace",
+    "source_id": "g7-v1",
+    "question": "Using the previously observed hash pairs, start at BybuLyaHFvTNkFAX and follow exactly 8 arrows. Return every visited value in order, separated by single spaces. Do not repeat the starting key. Preserve every character and its case.",
+    "answer": "nKUbBrhDWJkCEnnV JDckaLXItYKOcODR PnuvkDLHYrZfPWEn TnbHTGUKTwdxwmFz IZTRPiphXWKxHgml YkOgEuGDyEolhCph CXAhvTPtYiCCTGyI FcNmgGERIJqunEej",
+    "query_pair": "447d8fcd151ca227742fc94109a7d6034b087f26ba9d0b9380c6a5d3f716f61a"
+  }
+]

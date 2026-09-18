@@ -83,11 +83,26 @@ class PortFeatureVAE(nn.Module):
                                    for name, dim in port_dims.items()})
 
     def loss(self, name, features, beta=.001):
+        return self.loss_terms(name,features,beta=beta)[0]
+
+    def loss_terms(self,name,features,beta=.001):
+        """Expose codec distortion and KL independently of downstream answer CE.
+
+        This preserves the existing objective and posterior sampling. Mean
+        decoding diagnostics are detached and consume no additional RNG.
+        """
         normalized = F.layer_norm(features.detach().float(), (features.shape[-1],))
-        decoded, mean, logvar = self.heads[name](normalized, sample=True)
+        decoded, mean, logvar = self.heads[name](normalized, sample=self.training)
         distortion = F.mse_loss(decoded, normalized)
         kl = .5 * (mean.square() + logvar.exp() - 1 - logvar).mean()
-        return distortion + beta * kl
+        with torch.no_grad():
+            deterministic=self.heads[name].decoder(mean.detach())
+            mean_distortion=F.mse_loss(deterministic,normalized)
+            mean_cosine=F.cosine_similarity(deterministic,normalized,dim=-1).mean()
+        return distortion + beta * kl,dict(distortion=distortion,kl=kl,
+            mean_distortion=mean_distortion,mean_cosine=mean_cosine,
+            zero_decoder_distortion=normalized.square().mean().detach(),
+            posterior_variance=logvar.detach().exp().mean())
 
     @torch.no_grad()
     def source_replay(self, name, observed_features, *, source_page_id, count=4,

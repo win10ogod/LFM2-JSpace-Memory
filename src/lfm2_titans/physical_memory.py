@@ -152,7 +152,10 @@ class PhysicalMemorySession:
             block=self.model.memory.begin(candidate.graph)
             for name,value in features.items():block.observe(name,name,value)
             graph,_=block.commit(create_graph=False)
-            candidate=replace(candidate,graph=graph.detach(),address=None)
+            # Reconstructed FFN factors are frozen decoder outputs here. A
+            # published session must restore independent writable leaf tensors
+            # so the next observation can still perform a physical update.
+            candidate=replace(candidate,graph=graph.detach(),address=None).detach()
             accepted=bool(validator(original,candidate))
             state=sleep_state or dream.controller.initial_state()
             if signals is None:

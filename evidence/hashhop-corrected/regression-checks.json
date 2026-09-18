@@ -1,0 +1,34 @@
+{
+  "current_targeted_tests_passed": 22,
+  "commands": [
+    {
+      "files": [
+        "test_vae_loss_terms.py",
+        "test_dream_session_lifecycle.py",
+        "test_memory_recall_training.py"
+      ],
+      "passed": 12
+    },
+    {
+      "files": [
+        "test_joint_native_sft.py",
+        "test_export_artifacts.py"
+      ],
+      "passed": 10
+    }
+  ],
+  "environment": {
+    "LLAMAFACTORY_SRC": "<local-artifact>",
+    "OMP_NUM_THREADS": 2,
+    "MKL_NUM_THREADS": 2
+  },
+  "initial_invocation_failures": "The first invocation omitted LLAMAFACTORY_SRC (two import failures) and included eight stale window-based SFT tests. Current whole-example native tests were then used; no legacy runtime branch was restored.",
+  "scope": "CPU architecture fixtures, actual installed LlamaFactory adapter integration; full-model quality is measured separately.",
+  "changed_runtime_sha256": {
+    "physical_memory.py": "4fcc027f829d8edf51b1cd5a5d15b21cef653cf715f42d2cab448fa8c557c860",
+    "dream_memory.py": "843892be6d8db3dcf2ff40c5fa0fc080859d4ddf7cda6038f1ec8fb57aa1718d",
+    "integrated_dream.py": "00ef74c7c8fad45bc114f51d2b25a98cae8144d4aab0d2ed6172ba4a4c3e8923",
+    "native_sft_memory.py": "4e70a87298310f9c40943aa0184887b724d8ef8e1ce6c4b84e53c55539af3cbd",
+    "memory_recall_training.py": "1e091b6f90334b5b744f783e38e549366b56fe588c3480642a2a24299d13e68d"
+  }
+}

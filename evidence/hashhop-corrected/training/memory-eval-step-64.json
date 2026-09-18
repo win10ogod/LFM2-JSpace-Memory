@@ -1,0 +1,15 @@
+{
+  "step": 64,
+  "examples": 128,
+  "supervised_loss": 0.20652670925483108,
+  "compressed_recall_loss": 6.266028821468353,
+  "memory_loss": 1.7154399529099464,
+  "correct_memory_nll": 0.3700239290483296,
+  "empty_memory_nll": 6.041807621717453,
+  "wrong_memory_nll": 6.301604926586151,
+  "query_or_answer_given_to_writer": false,
+  "outer_meta_gradients": false,
+  "evaluation_checkpointed_layers": 30,
+  "peak_allocated_gib": 43.93455410003662,
+  "native_evaluation_loss": 1.9219666719436646
+}

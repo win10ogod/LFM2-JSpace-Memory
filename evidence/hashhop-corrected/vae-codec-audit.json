@@ -1,0 +1,47 @@
+{
+  "checkpoint_id": "273e195bd4ad4c10ace63c3bcd5516bd",
+  "scope": "CPU native-input feature codec only; all text source positions. This is not end-to-end answer accuracy.",
+  "source_file_sha256": "fa66329df7a4c49b0f0fd2b6a1c39db63e110ce6d5233b09d3c701f51130d4ae",
+  "positions": 12995,
+  "hash_token_positions": 11235,
+  "normalized_reconstruction_mse": 0.9721762281190711,
+  "zero_decoder_mse": 0.964722783921452,
+  "hash_token_mse": 0.9732781089514057,
+  "kl_per_latent_coordinate": 0.02604448765049724,
+  "posterior_variance": 0.9638283469255909,
+  "mean_reconstructed_feature_cosine": 0.005793626371882361,
+  "mu_coordinate_variance": [
+    0.027347397059202194,
+    0.02456696517765522,
+    0.04368950054049492,
+    0.03339194133877754,
+    0.028670040890574455,
+    0.026867670938372612,
+    0.021782107651233673,
+    0.030927667394280434,
+    0.019286783412098885,
+    0.024487799033522606,
+    0.03193644806742668,
+    0.02183918096125126,
+    0.023320360109210014,
+    0.023600254207849503,
+    0.025620725005865097,
+    0.024010097607970238
+  ],
+  "decoder_final_affine_width": 64,
+  "feature_width": 2048,
+  "bounded_token_identity_probe": {
+    "tokens": 256,
+    "decoded_nearest_embedding_accuracy": 0.0,
+    "original_nearest_embedding_accuracy": 1.0,
+    "sampled_posterior_mse": [
+      0.9981850385665894,
+      0.9969995021820068,
+      0.9991982579231262,
+      0.9967613220214844,
+      0.9974720478057861
+    ],
+    "best_rank_hidden_width_mse_on_sample": 0.24443984031677246,
+    "meaning": "Observed-token discrimination diagnostic; no memory question is answered by this embedding lookup."
+  }
+}

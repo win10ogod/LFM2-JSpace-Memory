@@ -41,7 +41,7 @@ def capture_supervised_gradients(units,labels,normalizer,gradient_scale=1.):
 
 class NativeSFTMemory:
     def __init__(self,model):
-        self.model=model;self.batches=0;self.last={};self.pending=[];self.ffn_replay=[];self.gradient_scale=1.
+        self.model=model;self.batches=0;self.last={};self.pending=[];self.ffn_replay=[];self.gradient_scale=1.;self.eval_reports=[]
         self.inputs=ContextVar(f'joint_memory_inputs_{id(model)}',default=None)
         def capture(module,args,kwargs):
             target=self.inputs.get()
@@ -51,8 +51,17 @@ class NativeSFTMemory:
     def forward(self,native_forward,inputs):
         with shared_effective_weights():
             if getattr(self.model.config,'native_memory_recall',None):
-                from .memory_recall_training import forward
-                return forward(self,native_forward,inputs)
+                from .memory_recall_training import forward,evaluation_parameters
+                if not self.model.training and not self.eval_reports and torch.cuda.is_available():
+                    torch.cuda.reset_peak_memory_stats()
+                # Evaluation needs only the source-only inner write gradient.
+                # Query scoring, codecs and meta-gradients must remain disabled.
+                with evaluation_parameters(self.model),torch.set_grad_enabled(self.model.training):
+                    output=forward(self,native_forward,inputs)
+                if not self.model.training:
+                    if torch.cuda.is_available():self.last['peak_allocated_gib']=torch.cuda.max_memory_allocated()/2**30
+                    self.eval_reports.append(dict(self.last))
+                return output
             return self._forward(native_forward,inputs)
 
     def _forward(self,native_forward,inputs):
@@ -81,7 +90,7 @@ class NativeSFTMemory:
         gradient_seconds=time.monotonic()-tick;tick=time.monotonic()
         count=getattr(model.config,'native_sft_aux_features',32)
         if type(count) is not int or count<2:raise ValueError('at least two auxiliary observations required')
-        losses=[];read_before=[];read_after=[];feature_count=0
+        losses=[];read_before=[];read_after=[];feature_count=0;codec_reports=[]
         for row,(unit,block) in enumerate(zip(units,blocks.blocks)):
             writer=model.memory.begin(unit.graph);pairs={};vae_features={}
             for name,features in block.native_observations.items():
@@ -106,6 +115,7 @@ class NativeSFTMemory:
                 if pair is not None:vae_features[codec_port]=pair[0]
             with torch.autocast(device_type=ids.device.type,enabled=False):
                 dream,terms=model.dream_memory.training_loss(written_graph.fast-unit.graph.fast,vae_features)
+            if codec_port in terms['feature_terms']:codec_reports.append(terms['feature_terms'][codec_port])
             if self.ffn_replay:
                 dream=dream-.5*(terms['distortion']+model.dream_memory.spec['kl_weight']*terms['kl'])
             losses.append(torch.stack(recalls).mean()+dream)
@@ -125,6 +135,7 @@ class NativeSFTMemory:
             source_autograd_traversals=0,training_chunks=0,persistent_training_sessions=0,
             ffn_gradient_source='native supervised backward',ffn_replay_tensors=len(self.ffn_replay),
             ffn_replay_loss=float(replay_loss.detach()),
+            codec_metrics={k:float(torch.stack([r[k] for r in codec_reports]).mean()) for k in codec_reports[0]} if codec_reports else {},
             memory_read_before=sum(read_before)/len(read_before),memory_read_after=sum(read_after)/len(read_after),
             native_forward=f'{native_forward.__module__}.{native_forward.__qualname__}')
         if events:
@@ -207,5 +218,27 @@ class NativeMemoryCheckpoint(TrainerCallback):
     def on_save(self,args,state,control,**kwargs):
         directory=Path(args.output_dir)/f'checkpoint-{state.global_step}'
         save_custom_lora(self.model,directory);self.model._native_sft_memory.save_replay(directory)
+    def on_prediction_step(self,args,state,control,**kwargs):
+        if getattr(self.model.config,'native_memory_recall',None):
+            seconds=self.model._native_sft_memory.last.get('forward_seconds',0.)
+            time.sleep(seconds*getattr(self.model.config,'native_sft_rest_ratio',1.))
+    def on_evaluate(self,args,state,control,metrics=None,**kwargs):
+        reports=self.model._native_sft_memory.eval_reports
+        if not reports:return
+        count=sum(r['physical_batch'] for r in reports)
+        keys=['supervised_loss','compressed_recall_loss','memory_loss','dream_auxiliary_loss','correct_memory_nll','empty_memory_nll','wrong_memory_nll']
+        values={k:sum(r[k]*r['physical_batch'] for r in reports)/count
+                for k in keys if all(r.get(k) is not None for r in reports)}
+        value=dict(step=state.global_step,examples=count,**values,
+            codec_metrics={k:sum(r['codec_metrics'][k]*r['physical_batch'] for r in reports)/count
+                for k in reports[0].get('codec_metrics',{})},
+            query_or_answer_given_to_writer=any(r['query_or_answer_given_to_writer'] for r in reports),
+            outer_meta_gradients=any(r.get('outer_meta_gradients',False) for r in reports),
+            evaluation_checkpointed_layers=max(r.get('evaluation_checkpointed_layers',0) for r in reports),
+            peak_allocated_gib=max(r.get('peak_allocated_gib',0.) for r in reports),
+            native_evaluation_loss=(metrics or {}).get('eval_loss'))
+        (Path(args.output_dir)/f'memory-eval-step-{state.global_step}.json').write_text(json.dumps(value,indent=2)+'\n')
+        print(json.dumps(dict(stage='heldout_memory_evaluation',**value)),flush=True)
+        reports.clear()
     def on_train_end(self,args,state,control,**kwargs):
         save_custom_lora(self.model,args.output_dir);self.model._native_sft_memory.save_replay(args.output_dir)

@@ -1,0 +1,231 @@
+{
+  "checkpoint_id": "273e195bd4ad4c10ace63c3bcd5516bd",
+  "review": "Manual reading of all 32 full outputs; no heuristic substituted for semantic review.",
+  "answers_sha256": "eda7f91122c6a8259c062e2e5a66556c54c1f081ff1ce3a0a6164de39ed2342d",
+  "rows": [
+    {
+      "id": "coherence-0",
+      "condition": "native-routed",
+      "turn": 0,
+      "note": "Recalls identifiers, timeout and retries, then contradicts checksum-failure rule and invents redeployment/rebackup actions. One paragraph instead of three.",
+      "meets_full_request": false
+    },
+    {
+      "id": "coherence-0",
+      "condition": "native-routed",
+      "turn": 1,
+      "note": "Omits deployment ID; says 2 total attempts rather than 3; invents redeployment after checksum failure.",
+      "meets_full_request": false
+    },
+    {
+      "id": "coherence-0",
+      "condition": "oracle-units",
+      "turn": 0,
+      "note": "Same unsupported checksum-failure actions and one-paragraph output as native routing.",
+      "meets_full_request": false
+    },
+    {
+      "id": "coherence-0",
+      "condition": "oracle-units",
+      "turn": 1,
+      "note": "Missing deployment ID, incorrect total attempt count, unsupported redeployment instructions.",
+      "meets_full_request": false
+    },
+    {
+      "id": "coherence-0",
+      "condition": "wrong-unit",
+      "turn": 0,
+      "note": "Assigns hashes from an unrelated unit to manual fields; no correct source facts.",
+      "meets_full_request": false
+    },
+    {
+      "id": "coherence-0",
+      "condition": "wrong-unit",
+      "turn": 1,
+      "note": "Continues unrelated hash references; total 3 happens to match but has no grounded manual facts.",
+      "meets_full_request": false
+    },
+    {
+      "id": "coherence-0",
+      "condition": "empty",
+      "turn": 0,
+      "note": "Invents identifiers, timeout, retry count and restart procedure.",
+      "meets_full_request": false
+    },
+    {
+      "id": "coherence-0",
+      "condition": "empty",
+      "turn": 1,
+      "note": "Repeats invented manual with additional restart loop.",
+      "meets_full_request": false
+    },
+    {
+      "id": "coherence-1",
+      "condition": "native-routed",
+      "turn": 0,
+      "note": "Recorded facts are correct; only one short paragraph, not requested three-paragraph handover.",
+      "meets_full_request": false
+    },
+    {
+      "id": "coherence-1",
+      "condition": "native-routed",
+      "turn": 1,
+      "note": "Omits deployment ID; says 4 total attempts rather than 5; changes failure/restart sequencing.",
+      "meets_full_request": false
+    },
+    {
+      "id": "coherence-1",
+      "condition": "oracle-units",
+      "turn": 0,
+      "note": "Recorded facts correct, requested length and three-paragraph format not met.",
+      "meets_full_request": false
+    },
+    {
+      "id": "coherence-1",
+      "condition": "oracle-units",
+      "turn": 1,
+      "note": "Omits both identifiers and gives 4 total attempts rather than 5.",
+      "meets_full_request": false
+    },
+    {
+      "id": "coherence-1",
+      "condition": "wrong-unit",
+      "turn": 0,
+      "note": "Repeats unrelated hash assignments until output limit.",
+      "meets_full_request": false
+    },
+    {
+      "id": "coherence-1",
+      "condition": "wrong-unit",
+      "turn": 1,
+      "note": "Invents a deployment procedure and 3 attempts; expected total is 5.",
+      "meets_full_request": false
+    },
+    {
+      "id": "coherence-1",
+      "condition": "empty",
+      "turn": 0,
+      "note": "Invents identifiers, timeout and retries.",
+      "meets_full_request": false
+    },
+    {
+      "id": "coherence-1",
+      "condition": "empty",
+      "turn": 1,
+      "note": "Continues invented values and contradictory exceed-retry handling.",
+      "meets_full_request": false
+    },
+    {
+      "id": "coherence-0",
+      "condition": "oracle-physical-only",
+      "turn": 0,
+      "note": "Invents shell scripts, deployment ID, paths and remote-copy instructions; no manual recall.",
+      "meets_full_request": false
+    },
+    {
+      "id": "coherence-0",
+      "condition": "oracle-physical-only",
+      "turn": 1,
+      "note": "Continues invented scripts. Total 3 is coincidental, identifiers absent.",
+      "meets_full_request": false
+    },
+    {
+      "id": "coherence-0",
+      "condition": "oracle-latent-only",
+      "turn": 0,
+      "note": "Complete corrected feature representation recovers manual facts; one paragraph rather than three.",
+      "meets_full_request": false
+    },
+    {
+      "id": "coherence-0",
+      "condition": "oracle-latent-only",
+      "turn": 1,
+      "note": "Omits identifiers; says 2 total attempts; immediately restarting changes retry sequencing.",
+      "meets_full_request": false
+    },
+    {
+      "id": "coherence-0",
+      "condition": "oracle-codes-and-weights",
+      "turn": 0,
+      "note": "Invents placeholder identifiers and repeats backup-name text to output limit.",
+      "meets_full_request": false
+    },
+    {
+      "id": "coherence-0",
+      "condition": "oracle-codes-and-weights",
+      "turn": 1,
+      "note": "Continues fabricated filename and repeats to output limit.",
+      "meets_full_request": false
+    },
+    {
+      "id": "coherence-1",
+      "condition": "oracle-physical-only",
+      "turn": 0,
+      "note": "Invents sc commands and repeats recovery instructions to token limit.",
+      "meets_full_request": false
+    },
+    {
+      "id": "coherence-1",
+      "condition": "oracle-physical-only",
+      "turn": 1,
+      "note": "Repeats invented recovery commands to token limit; required identifiers and count absent.",
+      "meets_full_request": false
+    },
+    {
+      "id": "coherence-1",
+      "condition": "oracle-latent-only",
+      "turn": 0,
+      "note": "Recovers recorded facts but one paragraph rather than requested three.",
+      "meets_full_request": false
+    },
+    {
+      "id": "coherence-1",
+      "condition": "oracle-latent-only",
+      "turn": 1,
+      "note": "Omits identifiers and total attempts; describes restarting after first failure.",
+      "meets_full_request": false
+    },
+    {
+      "id": "coherence-1",
+      "condition": "oracle-codes-and-weights",
+      "turn": 0,
+      "note": "Invents SYS-001, backup_data.txt and configuration values.",
+      "meets_full_request": false
+    },
+    {
+      "id": "coherence-1",
+      "condition": "oracle-codes-and-weights",
+      "turn": 1,
+      "note": "Continues invented configuration and gives 3 instead of 5 attempts.",
+      "meets_full_request": false
+    },
+    {
+      "id": "coherence-0",
+      "condition": "source-visible",
+      "turn": 0,
+      "note": "Recorded facts correct with raw source visible, but requested paragraph count/length unmet.",
+      "meets_full_request": false
+    },
+    {
+      "id": "coherence-0",
+      "condition": "source-visible",
+      "turn": 1,
+      "note": "Omits both identifiers and never gives the requested total of 3; describes at most 2 retries.",
+      "meets_full_request": false
+    },
+    {
+      "id": "coherence-1",
+      "condition": "source-visible",
+      "turn": 0,
+      "note": "Recorded facts correct with raw source visible, but requested paragraph count/length unmet.",
+      "meets_full_request": false
+    },
+    {
+      "id": "coherence-1",
+      "condition": "source-visible",
+      "turn": 1,
+      "note": "Omits deployment ID; says total 4 after first failure, does not give total 5; restart sequence changed.",
+      "meets_full_request": false
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "status": "passed",
+  "metrics": {
+    "status": "running",
+    "step": 2,
+    "total_steps": 128,
+    "step_compute_seconds": 84.5022279160039,
+    "batch": 2,
+    "physical_batch": 8,
+    "padded_tokens": 2200,
+    "vision_tiles": 0,
+    "input_tokens": 17410,
+    "target_tokens": 411,
+    "supervised_loss": 0.8387460708618164,
+    "memory_loss": 2.4246575832366943,
+    "source_loss": 4.924638748168945,
+    "fast_only_loss": 7.814548969268799,
+    "compressed_recall_loss": 9.093127250671387,
+    "correct_memory_nll": 0.8499062061309814,
+    "empty_memory_nll": 7.684332847595215,
+    "wrong_memory_nll": 7.517009735107422,
+    "negative_control_gradients": false,
+    "wrong_control_rows": 8,
+    "source_observation_tokens": 16412,
+    "stored_posterior_positions": 16412,
+    "graph_observed_features": 49236,
+    "source_autograd_traversals": 1,
+    "source_forward_passes": 2,
+    "write_order": "observe_graph_then_learn_ffn",
+    "training_chunks": 0,
+    "persistent_training_sessions": 0,
+    "source_kv_reused": false,
+    "raw_source_given_to_read": false,
+    "sequence_residual_patches_used_in_training": true,
+    "query_or_answer_given_to_writer": false,
+    "ffn_gradient_source": "source-only batched first-order VJP",
+    "ffn_replay_tensors": 144,
+    "training_objective": "complete deployed recall CE + separate compressed recall CE + Dream reconstruction",
+    "forward_seconds": 38.12243510800181,
+    "peak_allocated_gib": 43.232094287872314,
+    "allocated_gib": 8.328754901885986,
+    "reserved_gib": 24.775390625
+  },
+  "gradients": {
+    "vision": {
+      "parameters": 4363008,
+      "with_gradient": 0,
+      "gradient_norm": 0.0
+    },
+    "projector": {
+      "parameters": 86016,
+      "with_gradient": 0,
+      "gradient_norm": 0.0
+    },
+    "language": {
+      "parameters": 12275778,
+      "with_gradient": 12275778,
+      "gradient_norm": 0.9924646019935608
+    },
+    "titans": {
+      "parameters": 9020026,
+      "with_gradient": 8776183,
+      "gradient_norm": 0.03491237014532089
+    },
+    "physical_ffn": {
+      "parameters": 923914,
+      "with_gradient": 923914,
+      "gradient_norm": 0.0882863774895668
+    },
+    "dream": {
+      "parameters": 186859,
+      "with_gradient": 165995,
+      "gradient_norm": 0.07746309041976929
+    }
+  },
+  "heldout": {
+    "step": 2,
+    "examples": 128,
+    "supervised_loss": 0.9207802601158619,
+    "compressed_recall_loss": 7.8292356133461,
+    "memory_loss": 2.106234833598137,
+    "correct_memory_nll": 0.9693895615637302,
+    "empty_memory_nll": 6.726996541023254,
+    "wrong_memory_nll": 6.547571301460266,
+    "query_or_answer_given_to_writer": false,
+    "outer_meta_gradients": false,
+    "evaluation_checkpointed_layers": 30,
+    "peak_allocated_gib": 43.93961954116821,
+    "native_evaluation_loss": 3.027015447616577
+  }
+}

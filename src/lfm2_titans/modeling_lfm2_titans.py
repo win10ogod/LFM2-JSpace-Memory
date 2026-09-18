@@ -288,7 +288,7 @@ class Lfm2TitansForConditionalGeneration(Lfm2VlForConditionalGeneration):
         if 'memory_write_gradient_scope' in kwargs:raise ValueError('the old local-gradient writer branch was removed')
         if any(k in kwargs for k in ('memory_record','memory_start','memory_end','memory_total','memory_overlap')):
             raise ValueError('SFT windows were removed; pass ordinary native training examples')
-        if self.training and labels is not None and getattr(self.config,'native_joint_sft',False):
+        if (self.training or getattr(self.config,'native_memory_recall',None)) and labels is not None and getattr(self.config,'native_joint_sft',False):
             if physical_memory_state is not None or memory_state is not None:
                 raise ValueError('SFT memory is owned by the model training session')
             self._check_training_attention()
@@ -297,7 +297,13 @@ class Lfm2TitansForConditionalGeneration(Lfm2VlForConditionalGeneration):
                 position_ids=position_ids,past_key_values=past_key_values,inputs_embeds=inputs_embeds,
                 logits_to_keep=logits_to_keep,**kwargs)
             returned=inputs.pop('return_dict',getattr(self.config,'return_dict',True))
-            output=self._native_sft_memory.forward(super().forward,inputs)
+            outer_grad=torch.is_grad_enabled()
+            # Evaluation must execute the memory objective, not source-visible
+            # SFT. The observation-only inner FFN write still requires a VJP.
+            with torch.enable_grad():output=self._native_sft_memory.forward(super().forward,inputs)
+            if not outer_grad:
+                output.loss=output.loss.detach()
+                output.logits=output.logits.detach()
             return output if returned is not False else output.to_tuple()
         if latent_memory_state and self.config.latent_memory is None:raise ValueError('latent memory architecture is disabled')
         if physical_memory_state is not None:
