@@ -1,8 +1,8 @@
 {
   "status": "verified",
-  "repository": "win10/Lfm2-MaleCNS-Titans-VL-3B-V2-SFT",
-  "commit": "267e2478cf00e0103ee7ac79f9d780dc9fa88f2d",
-  "url": "https://huggingface.co/win10/Lfm2-MaleCNS-Titans-VL-3B-V2-SFT",
+  "repository": "win10/Lfm2-MaleCNS-Titans-VL-3B-V2-HashHop",
+  "commit": "a36b628297ab53b0527efb69ac08369ce9a48372",
+  "url": "https://huggingface.co/win10/Lfm2-MaleCNS-Titans-VL-3B-V2-HashHop",
   "native_platform": "Windows",
   "native_python": "C:\\Users\\jmes1\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
   "files": [
@@ -14,7 +14,7 @@
     },
     {
       "path": "README.md",
-      "size": 26780,
+      "size": 22355,
       "checksum": "git-sha1",
       "status": "passed"
     },
@@ -50,7 +50,7 @@
     },
     {
       "path": "config.json",
-      "size": 426821,
+      "size": 427640,
       "checksum": "git-sha1",
       "status": "passed"
     },
@@ -229,5 +229,5 @@
       "status": "passed"
     }
   ],
-  "total_bytes": 7493988772
+  "total_bytes": 7493985166
 }

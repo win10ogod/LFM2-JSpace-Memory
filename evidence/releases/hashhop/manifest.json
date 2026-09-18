@@ -1,8 +1,8 @@
 {
-  "repository": "win10/Lfm2-MaleCNS-Titans-VL-3B-V2-SFT",
-  "stage": "sft",
+  "repository": "win10/Lfm2-MaleCNS-Titans-VL-3B-V2-HashHop",
+  "stage": "hashhop",
   "native_platform": "Windows",
-  "checkpoint_id": "95c663dda67d4dbe8ec77a4681db3fc2",
+  "checkpoint_id": "0b5ec95eac3849e38867dcba9048c623",
   "files": [
     {
       "path": "LICENSE",
@@ -11,8 +11,8 @@
     },
     {
       "path": "README.md",
-      "size": 26780,
-      "sha256": "0fe922d31319197221d20e9dfb749b0bd5d7b239d3afd1154a473759f6220686"
+      "size": 22355,
+      "sha256": "6264e0a7e6e8410288089984fa3b9e1fce2cdd5e1d0f08413cdc8e921d9bbbfa"
     },
     {
       "path": "batched_memory.py",
@@ -41,8 +41,8 @@
     },
     {
       "path": "config.json",
-      "size": 426821,
-      "sha256": "643116d505b701cd5757ce87d7c9a0a1f598f9e66160c480e4ea85bd1c1d217a"
+      "size": 427640,
+      "sha256": "1d537100bc1cc9a1a7d7ed57893938ba44073da84bae27b785dd268eb38bdfa0"
     },
     {
       "path": "configuration_lfm2_titans.py",
@@ -112,12 +112,12 @@
     {
       "path": "model-00001-of-00002.safetensors",
       "size": 3975606444,
-      "sha256": "a2f3c4a868a97f6437d2fe9f69475b24d5af5ba238176e87466f3bb4b07c8725"
+      "sha256": "4a792f227cadf1017a7ad3840e31755e28a0878b71ae2b0cdca692c4e2f68a86"
     },
     {
       "path": "model-00002-of-00002.safetensors",
       "size": 3383165988,
-      "sha256": "4856ec7a31eb345efa78da06bdbc17633c875a6af6af655394a44c68eba5cb38"
+      "sha256": "5eefb4ad66f38b2f6fa2c99d50a191a008666f4e99327b5cf0e3a1df7f2f25a8"
     },
     {
       "path": "model.safetensors.index.json",

@@ -1,0 +1,22 @@
+{
+  "expected_steps": 32,
+  "records": 256,
+  "method": "native LlamaFactory memory-dependent HashHop SFT",
+  "native_lora_rank": 8,
+  "native_lora_alpha": 16,
+  "train_scope": "memory",
+  "physical_batch": 8,
+  "cutoff_len": 4096,
+  "mask_history": true,
+  "training_chunks": 0,
+  "source_only_writes": true,
+  "source_kv_reused": false,
+  "inherited_weights_unchanged": true,
+  "trainable_by_group": {
+    "memory": 9020026,
+    "physical_memory": 923914,
+    "dream_memory": 186859
+  },
+  "source_checkpoint_id": "95c663dda67d4dbe8ec77a4681db3fc2",
+  "reference": "https://magic.dev/blog/100m-token-context-windows"
+}

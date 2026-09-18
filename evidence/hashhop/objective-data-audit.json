@@ -1,0 +1,50 @@
+{
+  "status": "complete",
+  "training": {
+    "rows": 256,
+    "starts_at_root": 256,
+    "requested_target_is_terminal": 256,
+    "ignore_hop_count_solver_correct": 256
+  },
+  "incorrect_target_ids": [],
+  "independent_training_graphs": 160,
+  "distinct_start_hop_combinations_per_graph": {
+    "1": 160
+  },
+  "same_query_with_different_memory_answers": 0,
+  "evaluation": {
+    "queries": 42,
+    "ignore_hop_count_solver_correct": 10
+  },
+  "contrast_gradient_probe": {
+    "loss": 0.25999999046325684,
+    "correct_nll_gradient": 0.20000000298023224,
+    "empty_nll_gradient": -0.10000000149011612,
+    "wrong_nll_gradient": -0.10000000149011612,
+    "meaning": "This contrast term admits loss reduction by worsening negative contexts. It is an objective loophole, not proof of the learned model taking that shortcut."
+  },
+  "wrong_memory_selection_for_eight_distinct_sources": [
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "inspection_findings": [
+    "Training always supplies one written unit directly. Archive index retrieval and cross-unit composition receive no query-selection supervision.",
+    "Native backbone is frozen in this pilot, and native-concept addressing bypasses the trainable memory branch.",
+    "Training query CE uses decoded posterior means without exact reconstruction corrections; production recall uses the complete corrected observation representation.",
+    "Generation empty controls disable the memory branch; training empty controls use fresh pre-write states."
+  ],
+  "causal_attribution": "The shortcuts and objective gradients are verified. Their causal contribution to the final score requires a controlled continuation with corrected training design and unchanged architecture.",
+  "summary": "Checked 256 training labels; 0 are arithmetically incorrect. 256 queries start at chain roots and 256 end at terminal nodes. A solver that ignores the requested hop count solves 256/256 training rows but only 10/42 evaluation queries. There are 0 same-query/different-memory target pairs. The implemented contrast loss can decrease by raising empty/wrong-context NLL. This pilot also omits retrieval/cross-unit supervision and trains a compressed-only read that differs from production corrected recall. These are training-design defects; the results do not isolate an architectural capacity failure.",
+  "files_sha256": {
+    "train.jsonl": "3e3273dc5a6f2792aced04cd8b8166e74722eb6cdcc583d4ded4d33de9148d9f",
+    "questions.json": "04474cfd6831dbfffd2deeecbc363bf2e65c28c5250f3c79f76d2067d14b3ecc",
+    "src/lfm2_titans/memory_recall_training.py": "495dfa806e3e9b93bda09ff991c263f60cc6823685712baa9f6e767f7e60e9b0",
+    "experiments/hashhop_curriculum.py": "cbc6ce6d96893911e48108603db28f64e0ebeeed4f0908813ce8728f2e496618"
+  }
+}

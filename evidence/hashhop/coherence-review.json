@@ -1,0 +1,242 @@
+{
+  "status": "complete",
+  "candidate_checkpoint": "0b5ec95eac3849e38867dcba9048c623",
+  "reviewed_outputs": 32,
+  "summary": "All 32 recorded coherence outputs were manually reviewed. With correctly selected complete memories, both manuals' initial summaries preserve the deployment identifier, filename, timeout and retry count. However, the first manual's full-memory summary invents checksum 0x00000000; the requested three-paragraph structure is not followed. Follow-up answers omit required identifiers and either miscount retries versus total attempts or omit the total. The second native-routed follow-up still repeats to 1,024 tokens. Relative to matched SFT, native-routed limit hits decrease from 2/4 to 1/4 and oracle limit hits from 2/4 to 0/4; this small-sample reduction in looping is not a pass for factual coherence. Corrected latent-only recall reproduces the initial source facts, while physical-only and posterior-codes-plus-weights controls invent identifiers and settings. Latent-only and source-visible follow-ups also fail identifier retention/attempt-count requirements. Reliable multi-turn memory use is not established.",
+  "criteria": [
+    "Exact preservation of novel identifiers/settings",
+    "Grounded procedural order and no fabricated source facts",
+    "Correct distinction between retries and total attempts",
+    "Requested paragraph form",
+    "No prolonged repetitive output"
+  ],
+  "primary_dialogues_pass": false,
+  "scope": "Two authored manuals, two turns each, eight declared conditions. A development diagnosis, not a broad coherence benchmark.",
+  "entries": [
+    {
+      "id": "coherence-0",
+      "condition": "native-routed",
+      "turn": 0,
+      "answer_sha256": "1374c862b81741082e9000679893594766b16010cb59953e954a67850d419fba",
+      "assessment": "Preserves code, filename, timeout and retry count; invents checksum 0x00000000; adds unsupported procedures; one paragraph instead of three."
+    },
+    {
+      "id": "coherence-0",
+      "condition": "native-routed",
+      "turn": 1,
+      "answer_sha256": "4d59ac4b4fb93252fb0149ae854ade6c75ad43fc1e4cfc2c775bddf150a668fe",
+      "assessment": "Keeps filename but drops deployment code. Says two total attempts instead of three. Invents immediate backup as request-failure response. No prolonged repetition (104 tokens), unlike the parent 1024-token loop."
+    },
+    {
+      "id": "coherence-0",
+      "condition": "oracle-units",
+      "turn": 0,
+      "answer_sha256": "d9d3678ed6a01d5e70d49d4d6ddcf7fb1a0d36b50cab9847b5b9ca734f68c9d5",
+      "assessment": "Same factual retrieval and fabricated checksum as native routing; one paragraph, no prolonged loop."
+    },
+    {
+      "id": "coherence-0",
+      "condition": "oracle-units",
+      "turn": 1,
+      "answer_sha256": "32cb119a91d5ee2ed5a4e50843dfe9657a0d2e1ab7430fe5c915394abb83cfdf",
+      "assessment": "Omits code, retains filename, gives two total attempts instead of three; ungrounded backup procedure. Ends in 125 tokens instead of parent limit."
+    },
+    {
+      "id": "coherence-0",
+      "condition": "wrong-unit",
+      "turn": 0,
+      "answer_sha256": "e068732973a711bf752a78d05ce9ae8c0821a3b585f6438387341d1e47c70d0c",
+      "assessment": "Invents deploy commands, identifier 12345 and backup_12345.tar.gz; repeats filename. Does not recover source facts."
+    },
+    {
+      "id": "coherence-0",
+      "condition": "wrong-unit",
+      "turn": 1,
+      "answer_sha256": "829c7ae5bef8a4d84e2cd446a03ce05d818e516df3bd408e07969eab48e9f0fc",
+      "assessment": "Continues invented deployment details. Mentions three attempts coincidentally but retains neither real identifier; not successful source-conditioned recall."
+    },
+    {
+      "id": "coherence-0",
+      "condition": "empty",
+      "turn": 0,
+      "answer_sha256": "69ad9e02186b6866ba7fc4adf319908483dd6082606126f52b383a2c2595c5ef",
+      "assessment": "Generic ungrounded instructions, no actual identifiers or settings; incorrectly puts restart before validation; one paragraph."
+    },
+    {
+      "id": "coherence-0",
+      "condition": "empty",
+      "turn": 1,
+      "answer_sha256": "ca0b68a1c5db3edfb97bc01f68e1a33455358a39127a68ffd195bb85a1908c48",
+      "assessment": "Generic ungrounded instructions, including restart before validation; no real identifiers or total attempts."
+    },
+    {
+      "id": "coherence-1",
+      "condition": "native-routed",
+      "turn": 0,
+      "answer_sha256": "81a8d7e20c9fc3887bf63776bf30553b12f16583986df1de030fcdd87b0c64d6",
+      "assessment": "Preserves code, filename, timeout and four retries; repeats validation/restart clauses excessively, with 603 tokens and one paragraph. Omits the required backup-before-restart step."
+    },
+    {
+      "id": "coherence-1",
+      "condition": "native-routed",
+      "turn": 1,
+      "answer_sha256": "dbdc7cf04d9614180fa0bdaddbb498a14af71891a07360cfc2eb6e17d670ac00",
+      "assessment": "Repeats validation/restart clauses to the 1024-token limit; omits both identifiers and five total attempts; substitutes validation/restart for the request retry behavior."
+    },
+    {
+      "id": "coherence-1",
+      "condition": "oracle-units",
+      "turn": 0,
+      "answer_sha256": "fb1e5b932beff12514c38ca3939336c8637a93f39847539a13ae898d22d29da9",
+      "assessment": "Preserves core four fields but repeats procedures and omits backup-before-restart; one paragraph. Shorter than the matched parent response."
+    },
+    {
+      "id": "coherence-1",
+      "condition": "oracle-units",
+      "turn": 1,
+      "answer_sha256": "1992a116b1bbbbb02370c09373f341ce14ad6e9ac4d3794bdbab87998f0efd37",
+      "assessment": "Omits both identifiers and says four total attempts instead of five. Ends in 97 tokens; no prolonged loop."
+    },
+    {
+      "id": "coherence-1",
+      "condition": "wrong-unit",
+      "turn": 0,
+      "answer_sha256": "114f33f2c3b72736d1f6d3ea29a1a38d8dc7837b9e1fced174ef970adfc506f4",
+      "assessment": "Invents deploy_id=1, backup.txt, timeout=3600 and retry=3, confusing their meanings. No source-specific facts."
+    },
+    {
+      "id": "coherence-1",
+      "condition": "wrong-unit",
+      "turn": 1,
+      "answer_sha256": "ed4bdafdb96021a9e47933172c4330bef8e41aafcc451a51efc7d99b906f32b7",
+      "assessment": "Continues invented retry=3 restart behavior, with neither source identifier nor correct total."
+    },
+    {
+      "id": "coherence-1",
+      "condition": "empty",
+      "turn": 0,
+      "answer_sha256": "50b662844aced8c477304bc5ab51c2385339c60e00e545d7749bc59ce716ee15",
+      "assessment": "Generic invented server replication/backup description, including IP 10.0.1.1, instead of source facts; repeated prose."
+    },
+    {
+      "id": "coherence-1",
+      "condition": "empty",
+      "turn": 1,
+      "answer_sha256": "e305b7da591529931cc2e30d853d76febbc534920b5b02d37ea4121761803a6c",
+      "assessment": "Repeats generic replication/backup troubleshooting, without source identifiers or the requested attempt count."
+    },
+    {
+      "id": "coherence-0",
+      "condition": "oracle-physical-only",
+      "turn": 0,
+      "answer_sha256": "8e0dd222d352dbedac0080b9548e9330e9e8330660baed18431047337e0d5fd3",
+      "assessment": "Invents LGS-2024 identifiers, backup.tar.gz, 3600 seconds, three retries and UI fields; no source-specific facts."
+    },
+    {
+      "id": "coherence-0",
+      "condition": "oracle-physical-only",
+      "turn": 1,
+      "answer_sha256": "033bb4f56b6e32affdad235780979c396db6cbfd527b4a56bbbea4c14a0d252a",
+      "assessment": "Continues invented UI/restart behavior with extensive repeated success/failure messages to 1024 tokens. Three restarts is not a grounded answer to request attempts; true identifiers are absent."
+    },
+    {
+      "id": "coherence-0",
+      "condition": "oracle-latent-only",
+      "turn": 0,
+      "answer_sha256": "f59d6f9cbb07e0f141389b933859eaaf2e625da65204ec773abffc6a0f1744a9",
+      "assessment": "Faithfully preserves all source facts and backup/validation/restart order, without the fabricated checksum seen with physical memory; one short paragraph instead of the requested three."
+    },
+    {
+      "id": "coherence-0",
+      "condition": "oracle-latent-only",
+      "turn": 1,
+      "answer_sha256": "9ce10f3042bea62b1f615417625d43bbb568db5d7212e084b1a5b04f62c0d789",
+      "assessment": "Omits both identifiers, says two total attempts instead of three, and incorrectly turns initial request failure into a restart requirement."
+    },
+    {
+      "id": "coherence-0",
+      "condition": "oracle-codes-and-weights",
+      "turn": 0,
+      "answer_sha256": "ae50b3c885fef644efdbbcb88e738a7fbbf109d9eb185d9f680fc2214d46d340",
+      "assessment": "Invents ID:12345 and backup_backup.txt, gives three retries instead of two and unsupported restart steps; source facts are absent."
+    },
+    {
+      "id": "coherence-0",
+      "condition": "oracle-codes-and-weights",
+      "turn": 1,
+      "answer_sha256": "f8806e3dfd8129b50d909dee1d7db6fd4b3b2088045a405782e32f2262af05c4",
+      "assessment": "Retains the invented filename and recommends three retries; does not preserve the true identifiers or correctly distinguish total attempts from retries."
+    },
+    {
+      "id": "coherence-1",
+      "condition": "oracle-physical-only",
+      "turn": 0,
+      "answer_sha256": "d72a760b22629c9220b114b65fabdb49389498d63b65a4c0ba3f6affbde29249",
+      "assessment": "Invents backup_20231005.tar.gz, three retries, a three-host restart sequence and a 30-second example; none of the source identifiers/settings are recovered."
+    },
+    {
+      "id": "coherence-1",
+      "condition": "oracle-physical-only",
+      "turn": 1,
+      "answer_sha256": "c92bec633aae0897d95d036148c939693b12997d137cc9ae9971e91c3883822c",
+      "assessment": "Continues invented host/network instructions, omits both identifiers and gives three total attempts instead of five."
+    },
+    {
+      "id": "coherence-1",
+      "condition": "oracle-latent-only",
+      "turn": 0,
+      "answer_sha256": "9ac778d04161e864a6f2b763258987fc76d5834fc14d86f104b7698578191608",
+      "assessment": "Faithfully preserves core facts and backup/validation/restart order; one short paragraph instead of the requested three."
+    },
+    {
+      "id": "coherence-1",
+      "condition": "oracle-latent-only",
+      "turn": 1,
+      "answer_sha256": "35604e0b51a0dfc384f688166e3f942e5819add56863020b5f905ee06bbed1b6",
+      "assessment": "Omits both identifiers and attempt count; substitutes a service restart for the initial request retry behavior."
+    },
+    {
+      "id": "coherence-1",
+      "condition": "oracle-codes-and-weights",
+      "turn": 0,
+      "answer_sha256": "a647609c48be8b6760d2ee21f1a5163f5d125d4e63dbfda486f1cc94f65c2e21",
+      "assessment": "Generic deploy_id and deploy_<deploy_id>.bak placeholders, unrelated safe-mode instructions and repeated prose; no original fields; two paragraphs instead of three."
+    },
+    {
+      "id": "coherence-1",
+      "condition": "oracle-codes-and-weights",
+      "turn": 1,
+      "answer_sha256": "f2541a1e598d2542f101779662096d08c7b3bea3070b0805960241c907e776aa",
+      "assessment": "Keeps invented placeholders and recommends three attempts instead of five; neither true identifier is preserved."
+    },
+    {
+      "id": "coherence-0",
+      "condition": "source-visible",
+      "turn": 0,
+      "answer_sha256": "5027d87ffc1e73b003f7e57ccc667828d8334594f2c1df993a9ace4e94138475",
+      "assessment": "Correct source fields and procedural order in one paragraph; does not fulfill the requested three-paragraph form."
+    },
+    {
+      "id": "coherence-0",
+      "condition": "source-visible",
+      "turn": 1,
+      "answer_sha256": "70bbcf629fbf26b4f1ee2a2276e9a974f6ea17f9f2eb5b53db337e4aa2c46a74",
+      "assessment": "Mentions two retries but fails to state the requested three total attempts and omits both required identifiers; no prolonged loop."
+    },
+    {
+      "id": "coherence-1",
+      "condition": "source-visible",
+      "turn": 0,
+      "answer_sha256": "e077239f32f9ac2f5d74a444b405dcbc68c98100355111389781817a9b48f8e4",
+      "assessment": "Correct source fields and procedural order in one paragraph; does not fulfill the requested three-paragraph form."
+    },
+    {
+      "id": "coherence-1",
+      "condition": "source-visible",
+      "turn": 1,
+      "answer_sha256": "65fc42a9aaa14ade9b24cf9fac2ec30440f48b4be9358949c634ee3262d9a063",
+      "assessment": "Omits both identifiers and explicitly says four total attempts instead of five."
+    }
+  ],
+  "completed_at": 1789703175.7687688
+}

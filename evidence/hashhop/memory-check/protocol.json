@@ -1,0 +1,25 @@
+{
+  "seed": 9128437736968283853,
+  "sources": 9,
+  "questions": 17,
+  "data_scope": "new random codes, case-sensitive strings, shuffled hash chain, new native images with source references",
+  "writer": "default observe + one source-only text next-token update + default append; generation forbidden",
+  "readers": "new process; native router, correct-unit oracle, wrong-unit, empty and source-visible controls",
+  "source_visible_control": "only after every memory-only response",
+  "output_tokens": 64,
+  "rest_ratio": 1.0,
+  "gates": [
+    "all saved units v6",
+    "zero text generation while addressing",
+    "CPU/GPU same routing",
+    "hot/cold oracle identical",
+    "no lost answers that correct-unit oracle can recall",
+    "frozen body unchanged",
+    "recall exceeds wrong-unit and empty-memory controls",
+    "text, random strings, and vision each have successful recall"
+  ],
+  "no_tuning_after_answers": true,
+  "no_long_context_claim": true,
+  "sources_sha256": "b803a8dd195713dbbdec7fa31aeab1a2e940546b998d65efe23d824796baa7eb",
+  "questions_sha256": "ba6c7a66435d8d28e800b66d63dfc1a9daa0d3ee2e8e9f341a44a0ed8241425b"
+}

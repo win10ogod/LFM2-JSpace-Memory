@@ -1,0 +1,18 @@
+{
+  "fixed_at": 1789697045.551405,
+  "original_failure": "Checking Parameter._version treated benign parametrization registration as a numerical weight change.",
+  "verification": "SHA-256 of every inherited parameter including dtype/shape and retained identity, plus zero-output LoRA initialization.",
+  "cpu_regression_tests_passed": 2,
+  "full_model_inheritance": {
+    "status": "passed",
+    "inherited_tensors": 802,
+    "version_changes_without_value_changes": 53,
+    "zero_adapter_outputs": 424,
+    "changed_parameters": [],
+    "nonzero_adapter_outputs": []
+  },
+  "training_settings_changed": false,
+  "first_optimizer_step_completed": 1,
+  "first_step_compute_seconds": 76.67769343400141,
+  "first_step_peak_allocated_gib": 39.56055402755737
+}

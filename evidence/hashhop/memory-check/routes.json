@@ -1,0 +1,580 @@
+[
+  {
+    "id": "code-0",
+    "expected": "01789700053948760678_02204dbce31642648c6c99af93160505",
+    "native": [
+      {
+        "unit_id": "01789700053948760678_02204dbce31642648c6c99af93160505",
+        "memory_hash": "bec0a25bf679910edcc5b6aa817a972c58de916a6451a4f68c817362bb67ea1d",
+        "score": 0.38856133818626404,
+        "recorded_ns": 1789700054806285671,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      },
+      {
+        "unit_id": "01789700065681977935_6e6a2933f31d4e5b965d6f74ba5b2abc",
+        "memory_hash": "a0087d5ba2356e5ba78e46bece75896b7be3eb187b86be76c153a76e4eb66f23",
+        "score": 0.30500054359436035,
+        "recorded_ns": 1789700065996925308,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      },
+      {
+        "unit_id": "01789700071634245344_897a5691044741e984d93b20b120c98f",
+        "memory_hash": "09af41a360ca56f7f824f8f05ba4757244b54cb99ec523014355c7f41b05c712",
+        "score": 0.28816094994544983,
+        "recorded_ns": 1789700071971866403,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      }
+    ],
+    "cpu_gpu_same": true
+  },
+  {
+    "id": "tag-0",
+    "expected": "01789700053948760678_02204dbce31642648c6c99af93160505",
+    "native": [
+      {
+        "unit_id": "01789700053948760678_02204dbce31642648c6c99af93160505",
+        "memory_hash": "bec0a25bf679910edcc5b6aa817a972c58de916a6451a4f68c817362bb67ea1d",
+        "score": 0.3502303957939148,
+        "recorded_ns": 1789700054806285671,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      },
+      {
+        "unit_id": "01789700065681977935_6e6a2933f31d4e5b965d6f74ba5b2abc",
+        "memory_hash": "a0087d5ba2356e5ba78e46bece75896b7be3eb187b86be76c153a76e4eb66f23",
+        "score": 0.28923070430755615,
+        "recorded_ns": 1789700065996925308,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      },
+      {
+        "unit_id": "01789700075152232336_85acb35a17f042bbbd8b84d4673f7d3a",
+        "memory_hash": "be022a730dac992e8de5ac29d5d08bc3553cfa9a78718350882a08ed7dcc4553",
+        "score": 0.2853177487850189,
+        "recorded_ns": 1789700075511677507,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      }
+    ],
+    "cpu_gpu_same": true
+  },
+  {
+    "id": "code-1",
+    "expected": "01789700058228420187_ac0f49cd38134037809dbec8120175e4",
+    "native": [
+      {
+        "unit_id": "01789700058228420187_ac0f49cd38134037809dbec8120175e4",
+        "memory_hash": "c72b720d3b9b8c21d42f4e553733cafbb10e56218fc0df8a987a53a237a11405",
+        "score": 0.4060734510421753,
+        "recorded_ns": 1789700058592163830,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      },
+      {
+        "unit_id": "01789700071634245344_897a5691044741e984d93b20b120c98f",
+        "memory_hash": "09af41a360ca56f7f824f8f05ba4757244b54cb99ec523014355c7f41b05c712",
+        "score": 0.3138800263404846,
+        "recorded_ns": 1789700071971866403,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      },
+      {
+        "unit_id": "01789700065681977935_6e6a2933f31d4e5b965d6f74ba5b2abc",
+        "memory_hash": "a0087d5ba2356e5ba78e46bece75896b7be3eb187b86be76c153a76e4eb66f23",
+        "score": 0.30260324478149414,
+        "recorded_ns": 1789700065996925308,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      }
+    ],
+    "cpu_gpu_same": true
+  },
+  {
+    "id": "tag-1",
+    "expected": "01789700058228420187_ac0f49cd38134037809dbec8120175e4",
+    "native": [
+      {
+        "unit_id": "01789700058228420187_ac0f49cd38134037809dbec8120175e4",
+        "memory_hash": "c72b720d3b9b8c21d42f4e553733cafbb10e56218fc0df8a987a53a237a11405",
+        "score": 0.35268712043762207,
+        "recorded_ns": 1789700058592163830,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      },
+      {
+        "unit_id": "01789700071634245344_897a5691044741e984d93b20b120c98f",
+        "memory_hash": "09af41a360ca56f7f824f8f05ba4757244b54cb99ec523014355c7f41b05c712",
+        "score": 0.2906911373138428,
+        "recorded_ns": 1789700071971866403,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      },
+      {
+        "unit_id": "01789700065681977935_6e6a2933f31d4e5b965d6f74ba5b2abc",
+        "memory_hash": "a0087d5ba2356e5ba78e46bece75896b7be3eb187b86be76c153a76e4eb66f23",
+        "score": 0.2831622064113617,
+        "recorded_ns": 1789700065996925308,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      }
+    ],
+    "cpu_gpu_same": true
+  },
+  {
+    "id": "code-2",
+    "expected": "01789700062068375469_81ac8a2081cf4961a7b56cd62bd20843",
+    "native": [
+      {
+        "unit_id": "01789700062068375469_81ac8a2081cf4961a7b56cd62bd20843",
+        "memory_hash": "ac462cb62f9d82c9a622d0cdedbb7cce31a2b2c850cc47fc59e1fc88e418edc0",
+        "score": 0.35881340503692627,
+        "recorded_ns": 1789700062413929163,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      },
+      {
+        "unit_id": "01789700065681977935_6e6a2933f31d4e5b965d6f74ba5b2abc",
+        "memory_hash": "a0087d5ba2356e5ba78e46bece75896b7be3eb187b86be76c153a76e4eb66f23",
+        "score": 0.2952018082141876,
+        "recorded_ns": 1789700065996925308,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      },
+      {
+        "unit_id": "01789700058228420187_ac0f49cd38134037809dbec8120175e4",
+        "memory_hash": "c72b720d3b9b8c21d42f4e553733cafbb10e56218fc0df8a987a53a237a11405",
+        "score": 0.28173109889030457,
+        "recorded_ns": 1789700058592163830,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      }
+    ],
+    "cpu_gpu_same": true
+  },
+  {
+    "id": "tag-2",
+    "expected": "01789700062068375469_81ac8a2081cf4961a7b56cd62bd20843",
+    "native": [
+      {
+        "unit_id": "01789700062068375469_81ac8a2081cf4961a7b56cd62bd20843",
+        "memory_hash": "ac462cb62f9d82c9a622d0cdedbb7cce31a2b2c850cc47fc59e1fc88e418edc0",
+        "score": 0.3173646926879883,
+        "recorded_ns": 1789700062413929163,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      },
+      {
+        "unit_id": "01789700071634245344_897a5691044741e984d93b20b120c98f",
+        "memory_hash": "09af41a360ca56f7f824f8f05ba4757244b54cb99ec523014355c7f41b05c712",
+        "score": 0.28071486949920654,
+        "recorded_ns": 1789700071971866403,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      },
+      {
+        "unit_id": "01789700065681977935_6e6a2933f31d4e5b965d6f74ba5b2abc",
+        "memory_hash": "a0087d5ba2356e5ba78e46bece75896b7be3eb187b86be76c153a76e4eb66f23",
+        "score": 0.2783794403076172,
+        "recorded_ns": 1789700065996925308,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      }
+    ],
+    "cpu_gpu_same": true
+  },
+  {
+    "id": "code-3",
+    "expected": "01789700065681977935_6e6a2933f31d4e5b965d6f74ba5b2abc",
+    "native": [
+      {
+        "unit_id": "01789700065681977935_6e6a2933f31d4e5b965d6f74ba5b2abc",
+        "memory_hash": "a0087d5ba2356e5ba78e46bece75896b7be3eb187b86be76c153a76e4eb66f23",
+        "score": 0.38687464594841003,
+        "recorded_ns": 1789700065996925308,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      },
+      {
+        "unit_id": "01789700062068375469_81ac8a2081cf4961a7b56cd62bd20843",
+        "memory_hash": "ac462cb62f9d82c9a622d0cdedbb7cce31a2b2c850cc47fc59e1fc88e418edc0",
+        "score": 0.27059924602508545,
+        "recorded_ns": 1789700062413929163,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      },
+      {
+        "unit_id": "01789700058228420187_ac0f49cd38134037809dbec8120175e4",
+        "memory_hash": "c72b720d3b9b8c21d42f4e553733cafbb10e56218fc0df8a987a53a237a11405",
+        "score": 0.2699374556541443,
+        "recorded_ns": 1789700058592163830,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      }
+    ],
+    "cpu_gpu_same": true
+  },
+  {
+    "id": "tag-3",
+    "expected": "01789700065681977935_6e6a2933f31d4e5b965d6f74ba5b2abc",
+    "native": [
+      {
+        "unit_id": "01789700065681977935_6e6a2933f31d4e5b965d6f74ba5b2abc",
+        "memory_hash": "a0087d5ba2356e5ba78e46bece75896b7be3eb187b86be76c153a76e4eb66f23",
+        "score": 0.3282986283302307,
+        "recorded_ns": 1789700065996925308,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      },
+      {
+        "unit_id": "01789700071634245344_897a5691044741e984d93b20b120c98f",
+        "memory_hash": "09af41a360ca56f7f824f8f05ba4757244b54cb99ec523014355c7f41b05c712",
+        "score": 0.26370710134506226,
+        "recorded_ns": 1789700071971866403,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      },
+      {
+        "unit_id": "01789700053948760678_02204dbce31642648c6c99af93160505",
+        "memory_hash": "bec0a25bf679910edcc5b6aa817a972c58de916a6451a4f68c817362bb67ea1d",
+        "score": 0.26032936573028564,
+        "recorded_ns": 1789700054806285671,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      }
+    ],
+    "cpu_gpu_same": true
+  },
+  {
+    "id": "code-4",
+    "expected": "01789700071634245344_897a5691044741e984d93b20b120c98f",
+    "native": [
+      {
+        "unit_id": "01789700071634245344_897a5691044741e984d93b20b120c98f",
+        "memory_hash": "09af41a360ca56f7f824f8f05ba4757244b54cb99ec523014355c7f41b05c712",
+        "score": 0.41048258543014526,
+        "recorded_ns": 1789700071971866403,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      },
+      {
+        "unit_id": "01789700065681977935_6e6a2933f31d4e5b965d6f74ba5b2abc",
+        "memory_hash": "a0087d5ba2356e5ba78e46bece75896b7be3eb187b86be76c153a76e4eb66f23",
+        "score": 0.275840163230896,
+        "recorded_ns": 1789700065996925308,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      },
+      {
+        "unit_id": "01789700062068375469_81ac8a2081cf4961a7b56cd62bd20843",
+        "memory_hash": "ac462cb62f9d82c9a622d0cdedbb7cce31a2b2c850cc47fc59e1fc88e418edc0",
+        "score": 0.2725677490234375,
+        "recorded_ns": 1789700062413929163,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      }
+    ],
+    "cpu_gpu_same": true
+  },
+  {
+    "id": "tag-4",
+    "expected": "01789700071634245344_897a5691044741e984d93b20b120c98f",
+    "native": [
+      {
+        "unit_id": "01789700071634245344_897a5691044741e984d93b20b120c98f",
+        "memory_hash": "09af41a360ca56f7f824f8f05ba4757244b54cb99ec523014355c7f41b05c712",
+        "score": 0.36181730031967163,
+        "recorded_ns": 1789700071971866403,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      },
+      {
+        "unit_id": "01789700065681977935_6e6a2933f31d4e5b965d6f74ba5b2abc",
+        "memory_hash": "a0087d5ba2356e5ba78e46bece75896b7be3eb187b86be76c153a76e4eb66f23",
+        "score": 0.2803727388381958,
+        "recorded_ns": 1789700065996925308,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      },
+      {
+        "unit_id": "01789700053948760678_02204dbce31642648c6c99af93160505",
+        "memory_hash": "bec0a25bf679910edcc5b6aa817a972c58de916a6451a4f68c817362bb67ea1d",
+        "score": 0.2739986181259155,
+        "recorded_ns": 1789700054806285671,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      }
+    ],
+    "cpu_gpu_same": true
+  },
+  {
+    "id": "code-5",
+    "expected": "01789700075152232336_85acb35a17f042bbbd8b84d4673f7d3a",
+    "native": [
+      {
+        "unit_id": "01789700075152232336_85acb35a17f042bbbd8b84d4673f7d3a",
+        "memory_hash": "be022a730dac992e8de5ac29d5d08bc3553cfa9a78718350882a08ed7dcc4553",
+        "score": 0.37298160791397095,
+        "recorded_ns": 1789700075511677507,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      },
+      {
+        "unit_id": "01789700065681977935_6e6a2933f31d4e5b965d6f74ba5b2abc",
+        "memory_hash": "a0087d5ba2356e5ba78e46bece75896b7be3eb187b86be76c153a76e4eb66f23",
+        "score": 0.2970937490463257,
+        "recorded_ns": 1789700065996925308,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      },
+      {
+        "unit_id": "01789700062068375469_81ac8a2081cf4961a7b56cd62bd20843",
+        "memory_hash": "ac462cb62f9d82c9a622d0cdedbb7cce31a2b2c850cc47fc59e1fc88e418edc0",
+        "score": 0.2956728935241699,
+        "recorded_ns": 1789700062413929163,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      }
+    ],
+    "cpu_gpu_same": true
+  },
+  {
+    "id": "tag-5",
+    "expected": "01789700075152232336_85acb35a17f042bbbd8b84d4673f7d3a",
+    "native": [
+      {
+        "unit_id": "01789700075152232336_85acb35a17f042bbbd8b84d4673f7d3a",
+        "memory_hash": "be022a730dac992e8de5ac29d5d08bc3553cfa9a78718350882a08ed7dcc4553",
+        "score": 0.3479171395301819,
+        "recorded_ns": 1789700075511677507,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      },
+      {
+        "unit_id": "01789700065681977935_6e6a2933f31d4e5b965d6f74ba5b2abc",
+        "memory_hash": "a0087d5ba2356e5ba78e46bece75896b7be3eb187b86be76c153a76e4eb66f23",
+        "score": 0.2964666485786438,
+        "recorded_ns": 1789700065996925308,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      },
+      {
+        "unit_id": "01789700062068375469_81ac8a2081cf4961a7b56cd62bd20843",
+        "memory_hash": "ac462cb62f9d82c9a622d0cdedbb7cce31a2b2c850cc47fc59e1fc88e418edc0",
+        "score": 0.2947985529899597,
+        "recorded_ns": 1789700062413929163,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      }
+    ],
+    "cpu_gpu_same": true
+  },
+  {
+    "id": "hop1",
+    "expected": "01789700079756726874_9f41a80a46374b758d948f3e1be802bd",
+    "native": [
+      {
+        "unit_id": "01789700079756726874_9f41a80a46374b758d948f3e1be802bd",
+        "memory_hash": "ca9dda2a5e75bfed4f4d2197698a5a0b56241072100b81ff9b1b404003e16753",
+        "score": 0.41322529315948486,
+        "recorded_ns": 1789700082360920023,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      },
+      {
+        "unit_id": "01789700071634245344_897a5691044741e984d93b20b120c98f",
+        "memory_hash": "09af41a360ca56f7f824f8f05ba4757244b54cb99ec523014355c7f41b05c712",
+        "score": 0.18391761183738708,
+        "recorded_ns": 1789700071971866403,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      },
+      {
+        "unit_id": "01789700065681977935_6e6a2933f31d4e5b965d6f74ba5b2abc",
+        "memory_hash": "a0087d5ba2356e5ba78e46bece75896b7be3eb187b86be76c153a76e4eb66f23",
+        "score": 0.17831623554229736,
+        "recorded_ns": 1789700065996925308,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      }
+    ],
+    "cpu_gpu_same": true
+  },
+  {
+    "id": "hop3-all",
+    "expected": "01789700079756726874_9f41a80a46374b758d948f3e1be802bd",
+    "native": [
+      {
+        "unit_id": "01789700079756726874_9f41a80a46374b758d948f3e1be802bd",
+        "memory_hash": "ca9dda2a5e75bfed4f4d2197698a5a0b56241072100b81ff9b1b404003e16753",
+        "score": 0.3521992564201355,
+        "recorded_ns": 1789700082360920023,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      },
+      {
+        "unit_id": "01789700071634245344_897a5691044741e984d93b20b120c98f",
+        "memory_hash": "09af41a360ca56f7f824f8f05ba4757244b54cb99ec523014355c7f41b05c712",
+        "score": 0.16059410572052002,
+        "recorded_ns": 1789700071971866403,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      },
+      {
+        "unit_id": "01789700053948760678_02204dbce31642648c6c99af93160505",
+        "memory_hash": "bec0a25bf679910edcc5b6aa817a972c58de916a6451a4f68c817362bb67ea1d",
+        "score": 0.1569761037826538,
+        "recorded_ns": 1789700054806285671,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      }
+    ],
+    "cpu_gpu_same": true
+  },
+  {
+    "id": "hop3-final",
+    "expected": "01789700079756726874_9f41a80a46374b758d948f3e1be802bd",
+    "native": [
+      {
+        "unit_id": "01789700079756726874_9f41a80a46374b758d948f3e1be802bd",
+        "memory_hash": "ca9dda2a5e75bfed4f4d2197698a5a0b56241072100b81ff9b1b404003e16753",
+        "score": 0.36392372846603394,
+        "recorded_ns": 1789700082360920023,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      },
+      {
+        "unit_id": "01789700071634245344_897a5691044741e984d93b20b120c98f",
+        "memory_hash": "09af41a360ca56f7f824f8f05ba4757244b54cb99ec523014355c7f41b05c712",
+        "score": 0.16538289189338684,
+        "recorded_ns": 1789700071971866403,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      },
+      {
+        "unit_id": "01789700075152232336_85acb35a17f042bbbd8b84d4673f7d3a",
+        "memory_hash": "be022a730dac992e8de5ac29d5d08bc3553cfa9a78718350882a08ed7dcc4553",
+        "score": 0.16033616662025452,
+        "recorded_ns": 1789700075511677507,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      }
+    ],
+    "cpu_gpu_same": true
+  },
+  {
+    "id": "visual-0",
+    "expected": "01789700088509784461_195e54f51f404fe3864e83710825468c",
+    "native": [
+      {
+        "unit_id": "01789700088509784461_195e54f51f404fe3864e83710825468c",
+        "memory_hash": "91084b9a28686649ddf574b1bcf9156de52b48be9569c6ca769ab172360b374d",
+        "score": 0.2677462697029114,
+        "recorded_ns": 1789700089007641152,
+        "event_ns": null,
+        "logical_time": 1,
+        "parents": []
+      },
+      {
+        "unit_id": "01789700092461787113_ad4e81454f274adeada70b6a3f7a45f9",
+        "memory_hash": "da43ed07766b330dfdaf2fadc18320e4208c9054ca8fcb6792608077644c9d20",
+        "score": 0.24488699436187744,
+        "recorded_ns": 1789700093008498134,
+        "event_ns": null,
+        "logical_time": 1,
+        "parents": []
+      },
+      {
+        "unit_id": "01789700075152232336_85acb35a17f042bbbd8b84d4673f7d3a",
+        "memory_hash": "be022a730dac992e8de5ac29d5d08bc3553cfa9a78718350882a08ed7dcc4553",
+        "score": 0.1841202825307846,
+        "recorded_ns": 1789700075511677507,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      }
+    ],
+    "cpu_gpu_same": true
+  },
+  {
+    "id": "visual-1",
+    "expected": "01789700092461787113_ad4e81454f274adeada70b6a3f7a45f9",
+    "native": [
+      {
+        "unit_id": "01789700092461787113_ad4e81454f274adeada70b6a3f7a45f9",
+        "memory_hash": "da43ed07766b330dfdaf2fadc18320e4208c9054ca8fcb6792608077644c9d20",
+        "score": 0.274518221616745,
+        "recorded_ns": 1789700093008498134,
+        "event_ns": null,
+        "logical_time": 1,
+        "parents": []
+      },
+      {
+        "unit_id": "01789700088509784461_195e54f51f404fe3864e83710825468c",
+        "memory_hash": "91084b9a28686649ddf574b1bcf9156de52b48be9569c6ca769ab172360b374d",
+        "score": 0.22347377240657806,
+        "recorded_ns": 1789700089007641152,
+        "event_ns": null,
+        "logical_time": 1,
+        "parents": []
+      },
+      {
+        "unit_id": "01789700075152232336_85acb35a17f042bbbd8b84d4673f7d3a",
+        "memory_hash": "be022a730dac992e8de5ac29d5d08bc3553cfa9a78718350882a08ed7dcc4553",
+        "score": 0.1808008849620819,
+        "recorded_ns": 1789700075511677507,
+        "event_ns": null,
+        "logical_time": 2,
+        "parents": []
+      }
+    ],
+    "cpu_gpu_same": true
+  }
+]

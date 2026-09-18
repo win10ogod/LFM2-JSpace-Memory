@@ -1,0 +1,56 @@
+{
+  "status": "passed",
+  "metrics": {
+    "status": "running",
+    "step": 2,
+    "total_steps": 32,
+    "step_compute_seconds": 65.5270814949763,
+    "batch": 2,
+    "physical_batch": 8,
+    "padded_tokens": 2104,
+    "vision_tiles": 0,
+    "input_tokens": 12295,
+    "target_tokens": 214,
+    "supervised_loss": 8.732483863830566,
+    "memory_loss": 2.1925268173217773,
+    "source_loss": 5.3878254890441895,
+    "fast_only_loss": 7.575075626373291,
+    "correct_memory_nll": 8.385150909423828,
+    "empty_memory_nll": 7.269320011138916,
+    "wrong_memory_nll": 8.535266876220703,
+    "source_observation_tokens": 11520,
+    "stored_posterior_positions": 11520,
+    "graph_observed_features": 34560,
+    "source_autograd_traversals": 1,
+    "training_chunks": 0,
+    "persistent_training_sessions": 0,
+    "source_kv_reused": false,
+    "raw_source_given_to_read": false,
+    "sequence_residual_patches_used_in_training": false,
+    "query_or_answer_given_to_writer": false,
+    "ffn_gradient_source": "source-only batched first-order VJP",
+    "ffn_replay_tensors": 144,
+    "training_objective": "source write then fresh-context dual-memory recall",
+    "forward_seconds": 25.986893822002457,
+    "peak_allocated_gib": 38.973228454589844,
+    "allocated_gib": 8.20720911026001,
+    "reserved_gib": 25.09765625
+  },
+  "gradients": {
+    "titans": {
+      "parameters": 9020026,
+      "with_gradient": 8776183,
+      "gradient_norm": 0.1743113100528717
+    },
+    "physical_ffn": {
+      "parameters": 923914,
+      "with_gradient": 923914,
+      "gradient_norm": 0.4386160969734192
+    },
+    "dream": {
+      "parameters": 186859,
+      "with_gradient": 165995,
+      "gradient_norm": 0.8816071152687073
+    }
+  }
+}

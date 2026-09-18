@@ -1,0 +1,22 @@
+{
+  "completed_steps": 32,
+  "expected_steps": 32,
+  "mean_online_batch_metrics": {
+    "supervised_loss": 7.9675111919641495,
+    "memory_loss": 2.0741796642541885,
+    "correct_memory_nll": 7.7690186351537704,
+    "empty_memory_nll": 6.9264234602451324,
+    "wrong_memory_nll": 7.854812800884247,
+    "input_tokens": 7545,
+    "target_tokens": 153.53125
+  },
+  "correct_better_than_empty_batches": 0,
+  "correct_better_than_wrong_batches": 26,
+  "source_observation_tokens": 219290,
+  "stored_posterior_positions": 219290,
+  "peak_allocated_gib": 40.01514911651611,
+  "interpretation": "Online training-time teacher-forcing metrics across changing weights and different batches, not a fixed held-out final-checkpoint evaluation. Absolute positive-memory improvement is not established by these results.",
+  "mean_online_batch_total_loss": 10.041690856218338,
+  "resumed_trainer_reported_loss": 9.36134386062622,
+  "trainer_summary_note": "The resumed Trainer accumulated losses for steps 3-32 and divided by global_step=32. The mean_online_batch_total_loss above includes all 32 actual step records."
+}

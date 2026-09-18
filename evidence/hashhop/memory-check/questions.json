@@ -1,0 +1,121 @@
+[
+  {
+    "id": "code-0",
+    "page": "text-0",
+    "kind": "text",
+    "question": "黛蘭修復站的維修碼是什麼？只回答六位數字。",
+    "answer": "147349"
+  },
+  {
+    "id": "tag-0",
+    "page": "text-0",
+    "kind": "hash",
+    "question": "黛蘭修復站的備份識別字串是什麼？只回答八個原始字元，大小寫不變。",
+    "answer": "lzQvjVHP"
+  },
+  {
+    "id": "code-1",
+    "page": "text-1",
+    "kind": "text",
+    "question": "洛青測試站的維修碼是什麼？只回答六位數字。",
+    "answer": "655185"
+  },
+  {
+    "id": "tag-1",
+    "page": "text-1",
+    "kind": "hash",
+    "question": "洛青測試站的備份識別字串是什麼？只回答八個原始字元，大小寫不變。",
+    "answer": "TcI06uf5"
+  },
+  {
+    "id": "code-2",
+    "page": "text-2",
+    "kind": "text",
+    "question": "望嵐研究站的維修碼是什麼？只回答六位數字。",
+    "answer": "665438"
+  },
+  {
+    "id": "tag-2",
+    "page": "text-2",
+    "kind": "hash",
+    "question": "望嵐研究站的備份識別字串是什麼？只回答八個原始字元，大小寫不變。",
+    "answer": "h33e4RPW"
+  },
+  {
+    "id": "code-3",
+    "page": "text-3",
+    "kind": "text",
+    "question": "沐珀維護站的維修碼是什麼？只回答六位數字。",
+    "answer": "577641"
+  },
+  {
+    "id": "tag-3",
+    "page": "text-3",
+    "kind": "hash",
+    "question": "沐珀維護站的備份識別字串是什麼？只回答八個原始字元，大小寫不變。",
+    "answer": "S5htHRLo"
+  },
+  {
+    "id": "code-4",
+    "page": "text-4",
+    "kind": "text",
+    "question": "蒼榆觀測站的維修碼是什麼？只回答六位數字。",
+    "answer": "674832"
+  },
+  {
+    "id": "tag-4",
+    "page": "text-4",
+    "kind": "hash",
+    "question": "蒼榆觀測站的備份識別字串是什麼？只回答八個原始字元，大小寫不變。",
+    "answer": "QWR2QVDt"
+  },
+  {
+    "id": "code-5",
+    "page": "text-5",
+    "kind": "text",
+    "question": "杏澄資料站的維修碼是什麼？只回答六位數字。",
+    "answer": "479221"
+  },
+  {
+    "id": "tag-5",
+    "page": "text-5",
+    "kind": "hash",
+    "question": "杏澄資料站的備份識別字串是什麼？只回答八個原始字元，大小寫不變。",
+    "answer": "cgGXJzhc"
+  },
+  {
+    "id": "hop1",
+    "page": "chain",
+    "kind": "chain",
+    "question": "燦石連結站的映射表中，YI2Tf7zm 的下一站是什麼？只輸出八個原始字元。",
+    "answer": "7cTH8Lfm"
+  },
+  {
+    "id": "hop3-all",
+    "page": "chain",
+    "kind": "chain",
+    "question": "燦石連結站的映射表中，從 YI2Tf7zm 沿箭頭走三次，依序列出三個到達節點，空格分隔並保留大小寫。",
+    "answer": "7cTH8Lfm dr0ILnxJ XG98d9fP"
+  },
+  {
+    "id": "hop3-final",
+    "page": "chain",
+    "kind": "chain",
+    "question": "燦石連結站的映射表中，從 YI2Tf7zm 沿箭頭走三次，最後到哪裡？只回答最後節點的八個原始字元。",
+    "answer": "XG98d9fP"
+  },
+  {
+    "id": "visual-0",
+    "page": "visual-0",
+    "kind": "visual",
+    "question": "艾沐影像站提交的圖片中，主要圖形是什麼顏色、什麼形狀？只輸出顏色與形狀。",
+    "answer": "紅色圓形"
+  },
+  {
+    "id": "visual-1",
+    "page": "visual-1",
+    "kind": "visual",
+    "question": "曦原影像站提交的圖片中，主要圖形是什麼顏色、什麼形狀？只輸出顏色與形狀。",
+    "answer": "藍色正方形"
+  }
+]

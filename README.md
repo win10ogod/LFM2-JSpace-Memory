@@ -21,7 +21,8 @@ A separate fresh-source memory pilot correctly routed 17/17 queries and recalled
 
 ## Model release status
 
-- **sft:** [win10/Lfm2-MaleCNS-Titans-VL-3B-V2-SFT](https://huggingface.co/win10/Lfm2-MaleCNS-Titans-VL-3B-V2-SFT), verified commit `2ac76ca36c2ef8fff049be58eca7cae6439c4afe`.
+- **sft:** [win10/Lfm2-MaleCNS-Titans-VL-3B-V2-SFT](https://huggingface.co/win10/Lfm2-MaleCNS-Titans-VL-3B-V2-SFT), verified commit `267e2478cf00e0103ee7ac79f9d780dc9fa88f2d`.
+- **hashhop:** [win10/Lfm2-MaleCNS-Titans-VL-3B-V2-HashHop](https://huggingface.co/win10/Lfm2-MaleCNS-Titans-VL-3B-V2-HashHop), verified commit `a36b628297ab53b0527efb69ac08369ce9a48372`.
 
 These are separate complete model repositories. Each receipt verifies every remote file against the local package using Windows-native tooling. A stage absent from this list is not yet published.
 

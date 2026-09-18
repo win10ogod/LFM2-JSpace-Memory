@@ -1,0 +1,49 @@
+[
+  {
+    "id": "text-0",
+    "kind": "text",
+    "source": "本次全新資料：黛蘭修復站的維修碼是 147349，備份識別字串是 lzQvjVHP。"
+  },
+  {
+    "id": "text-1",
+    "kind": "text",
+    "source": "本次全新資料：洛青測試站的維修碼是 655185，備份識別字串是 TcI06uf5。"
+  },
+  {
+    "id": "text-2",
+    "kind": "text",
+    "source": "本次全新資料：望嵐研究站的維修碼是 665438，備份識別字串是 h33e4RPW。"
+  },
+  {
+    "id": "text-3",
+    "kind": "text",
+    "source": "本次全新資料：沐珀維護站的維修碼是 577641，備份識別字串是 S5htHRLo。"
+  },
+  {
+    "id": "text-4",
+    "kind": "text",
+    "source": "本次全新資料：蒼榆觀測站的維修碼是 674832，備份識別字串是 QWR2QVDt。"
+  },
+  {
+    "id": "text-5",
+    "kind": "text",
+    "source": "本次全新資料：杏澄資料站的維修碼是 479221，備份識別字串是 cgGXJzhc。"
+  },
+  {
+    "id": "chain",
+    "kind": "text",
+    "source": "燦石連結站的新映射表，每個箭頭通往唯一下一站：\nl1BjgmcZ → 6SrFH7r3\nBvoR26Hw → JkI37tP8\n6SrFH7r3 → 2UnoaVFN\nW6GutLCG → l1BjgmcZ\nolcAmC4W → VV3oywtb\n3cRwmoCK → k4uJZRUa\nZgIq7GaI → C7TX93xU\nNQPNk14A → kq69vhy8\nVV3oywtb → 16snSL3e\nEYQJZG7w → M6m4cgfv\nHuURxQBO → jhGCBzwM\na02ofazI → 9GKSzzGl\n9GKSzzGl → ahFlw65p\nM6m4cgfv → Ur650Hes\nVGwD3NAM → YI2Tf7zm\nXG98d9fP → r21H2nCZ\n16snSL3e → EYQJZG7w\nC7TX93xU → NQPNk14A\nkkhGjbh9 → BvoR26Hw\nlwVS2xWs → VGwD3NAM\nYI2Tf7zm → 7cTH8Lfm\n2UnoaVFN → UGHUD8UF\nUr650Hes → lwVS2xWs\n7cTH8Lfm → dr0ILnxJ\nUGHUD8UF → HuURxQBO\njhGCBzwM → 3cRwmoCK\ndr0ILnxJ → XG98d9fP\niLMKJ8OX → uFl3dj21\nk4uJZRUa → kkhGjbh9\nahFlw65p → olcAmC4W\nr21H2nCZ → iLMKJ8OX\nuFl3dj21 → W6GutLCG\nJkI37tP8 → ZgIq7GaI"
+  },
+  {
+    "id": "visual-0",
+    "kind": "visual",
+    "image": "<local-artifact>",
+    "reference": "這張圖是艾沐影像站本次提交的觀測。請記住圖片內容。"
+  },
+  {
+    "id": "visual-1",
+    "kind": "visual",
+    "image": "<local-artifact>",
+    "reference": "這張圖是曦原影像站本次提交的觀測。請記住圖片內容。"
+  }
+]

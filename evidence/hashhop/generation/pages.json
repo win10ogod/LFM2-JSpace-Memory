@@ -1,0 +1,382 @@
+[
+  {
+    "source_id": "hash-0",
+    "kind": "hash",
+    "source_tokens": 349,
+    "observed": {
+      "observations": 3,
+      "write_loss": 1.1422841548919678,
+      "write_gradient_norm": 2141.5107421875,
+      "raw_write_gradient_norm": 0.013018154539167881,
+      "fast_change_norm": 1.0721561908721924,
+      "commits": 1,
+      "writable_scalars": 6573065,
+      "decay_enabled": false,
+      "latent_features": {
+        "language_4": 349,
+        "language_14": 349,
+        "language_26": 349
+      },
+      "mount_generation": 1,
+      "ordered_features": 349,
+      "ordered_bytes": 3074252
+    },
+    "write": {
+      "loss": 4.493270397186279,
+      "gradient_norm": 0.2704738676548004,
+      "commits": 1,
+      "write_gradient": "inference",
+      "recall_loss": 4.493270397186279,
+      "preservation_kl": null,
+      "mount_generation": 2
+    },
+    "unit_path": "<local-artifact>",
+    "bytes": 88987912,
+    "checksum": "c154bc31adc3c4765e9f4e070403d65241030000743868151412afcc3d0f0675",
+    "memory_hash": "f41bff72aa87d24bbd3cf8336441aafee369c53c2bb6eb3ef77d944e017c573f",
+    "mount_generation": 4,
+    "unit_id": "01789700286810037799_bca8aba9dc8e4fa38e93cf014e049835"
+  },
+  {
+    "source_id": "hash-1",
+    "kind": "hash",
+    "source_tokens": 1066,
+    "observed": {
+      "observations": 3,
+      "write_loss": 1.1424726247787476,
+      "write_gradient_norm": 2156.095703125,
+      "raw_write_gradient_norm": 0.013574421405792236,
+      "fast_change_norm": 1.0794581174850464,
+      "commits": 1,
+      "writable_scalars": 6573065,
+      "decay_enabled": false,
+      "latent_features": {
+        "language_4": 1066,
+        "language_14": 1066,
+        "language_26": 1066
+      },
+      "mount_generation": 5,
+      "ordered_features": 1066,
+      "ordered_bytes": 9415736
+    },
+    "write": {
+      "loss": 4.432624340057373,
+      "gradient_norm": 0.2627813518047333,
+      "commits": 1,
+      "write_gradient": "inference",
+      "recall_loss": 4.432624340057373,
+      "preservation_kl": null,
+      "mount_generation": 6
+    },
+    "unit_path": "<local-artifact>",
+    "bytes": 95911200,
+    "checksum": "d183c78759674ba94d70a80b0e0fc6de2d5a30490f19e5301ada3e133096a373",
+    "memory_hash": "5eee43d72cf2fb92ef43243b9de55a0c9694698632ffa7245feea92ea23717d2",
+    "mount_generation": 8,
+    "unit_id": "01789700298787323891_d89c69af02a948f18fb0eb1cc1efaf3a"
+  },
+  {
+    "source_id": "hash-2",
+    "kind": "hash",
+    "source_tokens": 953,
+    "observed": {
+      "observations": 3,
+      "write_loss": 1.138988971710205,
+      "write_gradient_norm": 2142.1396484375,
+      "raw_write_gradient_norm": 0.01303874608129263,
+      "fast_change_norm": 1.0724709033966064,
+      "commits": 1,
+      "writable_scalars": 6573065,
+      "decay_enabled": false,
+      "latent_features": {
+        "language_4": 953,
+        "language_14": 953,
+        "language_26": 953
+      },
+      "mount_generation": 9,
+      "ordered_features": 953,
+      "ordered_bytes": 8414356
+    },
+    "write": {
+      "loss": 4.5490875244140625,
+      "gradient_norm": 0.38267430663108826,
+      "commits": 1,
+      "write_gradient": "inference",
+      "recall_loss": 4.5490875244140625,
+      "preservation_kl": null,
+      "mount_generation": 10
+    },
+    "unit_path": "<local-artifact>",
+    "bytes": 94818056,
+    "checksum": "64585804500d3bcb4e10b2e26a9b42fbf5604f667fe0445e7f956009546b9535",
+    "memory_hash": "495d2b5eb06316f3fb086917ad5c80a9110df0e470fba0a549dd02955aee14f5",
+    "mount_generation": 12,
+    "unit_id": "01789700316284406868_e3d91fdc99c84c0f8cba09ff27fca936"
+  },
+  {
+    "source_id": "hash-3",
+    "kind": "hash",
+    "source_tokens": 2116,
+    "observed": {
+      "observations": 3,
+      "write_loss": 1.1368740797042847,
+      "write_gradient_norm": 2156.046630859375,
+      "raw_write_gradient_norm": 0.01357084047049284,
+      "fast_change_norm": 1.0794336795806885,
+      "commits": 1,
+      "writable_scalars": 6573065,
+      "decay_enabled": false,
+      "latent_features": {
+        "language_4": 2116,
+        "language_14": 2116,
+        "language_26": 2116
+      },
+      "mount_generation": 13,
+      "ordered_features": 2116,
+      "ordered_bytes": 18668152
+    },
+    "write": {
+      "loss": 5.058919906616211,
+      "gradient_norm": 1.0756053924560547,
+      "commits": 1,
+      "write_gradient": "inference",
+      "recall_loss": 5.058919906616211,
+      "preservation_kl": null,
+      "mount_generation": 14
+    },
+    "unit_path": "<local-artifact>",
+    "bytes": 106015016,
+    "checksum": "a441a06c02153d83287e97e68a8db8a572c18f9166c68562062777f73c3297d9",
+    "memory_hash": "fe243b6649d158e68b8bcb868257a3692d127fe8041a1995d0974624dda13579",
+    "mount_generation": 16,
+    "unit_id": "01789700336531761958_4f107bbf0c554fd0ac2298b90fbe4da5"
+  },
+  {
+    "source_id": "cross-0",
+    "kind": "hash",
+    "source_tokens": 335,
+    "observed": {
+      "observations": 3,
+      "write_loss": 1.1367723941802979,
+      "write_gradient_norm": 2174.108642578125,
+      "raw_write_gradient_norm": 0.014317885041236877,
+      "fast_change_norm": 1.0884764194488525,
+      "commits": 1,
+      "writable_scalars": 6573065,
+      "decay_enabled": false,
+      "latent_features": {
+        "language_4": 335,
+        "language_14": 335,
+        "language_26": 335
+      },
+      "mount_generation": 17,
+      "ordered_features": 335,
+      "ordered_bytes": 2948220
+    },
+    "write": {
+      "loss": 7.356682777404785,
+      "gradient_norm": 0.23311342298984528,
+      "commits": 1,
+      "write_gradient": "inference",
+      "recall_loss": 7.356682777404785,
+      "preservation_kl": null,
+      "mount_generation": 18
+    },
+    "unit_path": "<local-artifact>",
+    "bytes": 88850624,
+    "checksum": "2d8c387e435b8a037e36a20b250127ca525cb9a631f2b5c79bf00c6a14a476cd",
+    "memory_hash": "54fcf5b7f2728352ba95e10d79b0d3325241d30b4d46308e49ecb73be77c584b",
+    "mount_generation": 20,
+    "unit_id": "01789700364035088906_de4c399af33d4c339530b7196cd116cf"
+  },
+  {
+    "source_id": "cross-1",
+    "kind": "hash",
+    "source_tokens": 339,
+    "observed": {
+      "observations": 3,
+      "write_loss": 1.13649320602417,
+      "write_gradient_norm": 2186.45458984375,
+      "raw_write_gradient_norm": 0.01487011555582285,
+      "fast_change_norm": 1.0946574211120605,
+      "commits": 1,
+      "writable_scalars": 6573065,
+      "decay_enabled": false,
+      "latent_features": {
+        "language_4": 339,
+        "language_14": 339,
+        "language_26": 339
+      },
+      "mount_generation": 21,
+      "ordered_features": 339,
+      "ordered_bytes": 2984112
+    },
+    "write": {
+      "loss": 7.0852484703063965,
+      "gradient_norm": 0.24641580879688263,
+      "commits": 1,
+      "write_gradient": "inference",
+      "recall_loss": 7.0852484703063965,
+      "preservation_kl": null,
+      "mount_generation": 22
+    },
+    "unit_path": "<local-artifact>",
+    "bytes": 88889732,
+    "checksum": "0b0babfd27446e9d0deda843389ef55ae7e532f8dc4c35d2d38d0c5fb8c10b7a",
+    "memory_hash": "6ec7acad1152b01f75ab1dde2267aaea002550f582e8c2641689216e4282c811",
+    "mount_generation": 24,
+    "unit_id": "01789700372308634704_6cb740aab25e442ca25c754835818626"
+  },
+  {
+    "source_id": "cross-2",
+    "kind": "hash",
+    "source_tokens": 339,
+    "observed": {
+      "observations": 3,
+      "write_loss": 1.1372801065444946,
+      "write_gradient_norm": 2181.84033203125,
+      "raw_write_gradient_norm": 0.014659317210316658,
+      "fast_change_norm": 1.0923473834991455,
+      "commits": 1,
+      "writable_scalars": 6573065,
+      "decay_enabled": false,
+      "latent_features": {
+        "language_4": 339,
+        "language_14": 339,
+        "language_26": 339
+      },
+      "mount_generation": 25,
+      "ordered_features": 339,
+      "ordered_bytes": 2983764
+    },
+    "write": {
+      "loss": 7.056422710418701,
+      "gradient_norm": 0.23636607825756073,
+      "commits": 1,
+      "write_gradient": "inference",
+      "recall_loss": 7.056422710418701,
+      "preservation_kl": null,
+      "mount_generation": 26
+    },
+    "unit_path": "<local-artifact>",
+    "bytes": 88889384,
+    "checksum": "e0bd188f9b4184d5cc51fdac771b6b9237d32117704c46deefbacfac47f6d683",
+    "memory_hash": "97de9376fed569913a6337b23841e4a3dd5ba77ee854dfbfc15c0ff49507cbc0",
+    "mount_generation": 28,
+    "unit_id": "01789700380288965718_3bd9d4b7e2a54196818a91218fc5f7c4"
+  },
+  {
+    "source_id": "cross-3",
+    "kind": "hash",
+    "source_tokens": 333,
+    "observed": {
+      "observations": 3,
+      "write_loss": 1.1392836570739746,
+      "write_gradient_norm": 2188.022705078125,
+      "raw_write_gradient_norm": 0.01494407095015049,
+      "fast_change_norm": 1.095442533493042,
+      "commits": 1,
+      "writable_scalars": 6573065,
+      "decay_enabled": false,
+      "latent_features": {
+        "language_4": 333,
+        "language_14": 333,
+        "language_26": 333
+      },
+      "mount_generation": 29,
+      "ordered_features": 333,
+      "ordered_bytes": 2929980
+    },
+    "write": {
+      "loss": 7.206999778747559,
+      "gradient_norm": 0.20987384021282196,
+      "commits": 1,
+      "write_gradient": "inference",
+      "recall_loss": 7.206999778747559,
+      "preservation_kl": null,
+      "mount_generation": 30
+    },
+    "unit_path": "<local-artifact>",
+    "bytes": 88830776,
+    "checksum": "222b81f479753f9930bd3c397238d7de9b58be83c731af6adae3b480c66570e2",
+    "memory_hash": "196141616840f6bc9c1438ef85d41edecb05f58b7211ddc44958f89526e1c1d4",
+    "mount_generation": 32,
+    "unit_id": "01789700387620557284_beea8e72a11a4fa9a0aef41fd17bec15"
+  },
+  {
+    "source_id": "coherence-0",
+    "kind": "coherence",
+    "source_tokens": 123,
+    "observed": {
+      "observations": 3,
+      "write_loss": 1.47664213180542,
+      "write_gradient_norm": 2339.87548828125,
+      "raw_write_gradient_norm": 0.02684049680829048,
+      "fast_change_norm": 1.1714682579040527,
+      "commits": 1,
+      "writable_scalars": 6573065,
+      "decay_enabled": false,
+      "latent_features": {
+        "language_4": 123,
+        "language_14": 123,
+        "language_26": 123
+      },
+      "mount_generation": 33,
+      "ordered_features": 123,
+      "ordered_bytes": 1085460
+    },
+    "write": {
+      "loss": 4.345283031463623,
+      "gradient_norm": 0.5374082922935486,
+      "commits": 1,
+      "write_gradient": "inference",
+      "recall_loss": 4.345283031463623,
+      "preservation_kl": null,
+      "mount_generation": 34
+    },
+    "unit_path": "<local-artifact>",
+    "bytes": 86815648,
+    "checksum": "d9a25d9b911d1c118439401b548aafc84f9129c80fd1ddb6dceb385a1ba369bd",
+    "memory_hash": "722facfd6b18b8f5a1938208717178836580d57560273733f7d3d29977a34ae0",
+    "mount_generation": 36,
+    "unit_id": "01789700394538067544_e94ac51fb07c47ae83f3ae6b92c9242e"
+  },
+  {
+    "source_id": "coherence-1",
+    "kind": "coherence",
+    "source_tokens": 125,
+    "observed": {
+      "observations": 3,
+      "write_loss": 1.481459617614746,
+      "write_gradient_norm": 2342.807861328125,
+      "raw_write_gradient_norm": 0.02722926251590252,
+      "fast_change_norm": 1.1729363203048706,
+      "commits": 1,
+      "writable_scalars": 6573065,
+      "decay_enabled": false,
+      "latent_features": {
+        "language_4": 125,
+        "language_14": 125,
+        "language_26": 125
+      },
+      "mount_generation": 37,
+      "ordered_features": 125,
+      "ordered_bytes": 1104208
+    },
+    "write": {
+      "loss": 4.160901069641113,
+      "gradient_norm": 0.556671142578125,
+      "commits": 1,
+      "write_gradient": "inference",
+      "recall_loss": 4.160901069641113,
+      "preservation_kl": null,
+      "mount_generation": 38
+    },
+    "unit_path": "<local-artifact>",
+    "bytes": 86836004,
+    "checksum": "867dab0e3f75c2210de88bfbaea2fc2c0fe3adb63a441c1cf5b20c46d7f8489b",
+    "memory_hash": "a556cb16e5fff91f52582c442048491a9e847108d47e6a3c4170ea2dca8001ab",
+    "mount_generation": 40,
+    "unit_id": "01789700398935173260_aaa5717ca9eb48d8948cf5fad5032295"
+  }
+]
